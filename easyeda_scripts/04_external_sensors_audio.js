@@ -111,8 +111,8 @@ const GRID_Y = 350;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
-  { ref: 'U7', query: 'SHT45-AD1B-R2', token: 'id:SHT45-AD1B-R2', col: 0, row: 0, rot: 0, pinMap: {"VDD": "+3V3", "VSS": "GND", "GND": "GND", "SDA": "I2C_MAIN_SDA", "SCL": "I2C_MAIN_SCL"} },
-  { ref: 'MIC1', query: 'ICS-43434', token: 'id:ICS-43434', col: 1, row: 0, rot: 0, pinMap: {"VDD": "+3V3", "GND": "GND", "SCK": "I2S_BCLK", "WS": "I2S_WS", "SD": "I2S_SD_EXT"} }
+  { ref: 'U7', query: 'SHT45-AD1B-R2', token: 'id:SHT45-AD1B-R2', col: 0, row: 0, rot: 0, pinMap: {"VDD": "+3V3", "VSS": "GND", "GND": "GND", "SDA": "I2C_MAIN_SDA", "SCL": "I2C_MAIN_SCL", "5": null} },
+  { ref: 'MIC1', query: 'ICS-43434', token: 'id:ICS-43434', col: 1, row: 0, rot: 0, pinMap: {"VDD": "+3V3", "GND": "GND", "SCK": "I2S_BCLK", "WS": "I2S_WS", "SD": "I2S_SD_EXT", "LR": "GND"} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]

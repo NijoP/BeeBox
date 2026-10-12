@@ -111,9 +111,9 @@ const GRID_Y = 350;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
-  { ref: 'J2', query: 'FH34SRJ-12S-0.5SH(50)', token: 'id:FH34SRJ-12S-0.5SH(50)', col: 0, row: 0, rot: 0, pinMap: {"1": "GND", "2": "GND", "3": "GND", "4": "VDOCK", "5": "VDOCK", "6": "+3V3_FPC", "7": "DOCK_SDA", "8": "DOCK_SCL", "9": "DOCK_BCLK", "10": "DOCK_WS", "11": "DOCK_SD", "12": "DOCK_PRESENT_ID"} },
-  { ref: 'U8', query: 'SHT45-AD1B-R2', token: 'id:SHT45-AD1B-R2', col: 1, row: 0, rot: 0, pinMap: {"VDD": "+3V3_FPC", "VSS": "GND", "GND": "GND", "SDA": "DOCK_SDA", "SCL": "DOCK_SCL"} },
-  { ref: 'MIC2', query: 'ICS-43434', token: 'id:ICS-43434', col: 2, row: 0, rot: 0, pinMap: {"VDD": "+3V3_FPC", "GND": "GND", "SCK": "DOCK_BCLK", "WS": "DOCK_WS", "SD": "DOCK_SD"} },
+  { ref: 'J2', query: 'FH34SRJ-12S', token: 'id:FH34SRJ-12S-0.5SH(50)', col: 0, row: 0, rot: 0, pinMap: {"1": "GND", "2": "GND", "3": "GND", "4": "VDOCK", "5": "VDOCK", "6": "+3V3_FPC", "7": "DOCK_SDA", "8": "DOCK_SCL", "9": "DOCK_BCLK", "10": "DOCK_WS", "11": "DOCK_SD", "12": "DOCK_PRESENT_ID", "13": null, "14": null} },
+  { ref: 'U8', query: 'SHT45-AD1B-R2', token: 'id:SHT45-AD1B-R2', col: 1, row: 0, rot: 0, pinMap: {"VDD": "+3V3_FPC", "VSS": "GND", "GND": "GND", "SDA": "DOCK_SDA", "SCL": "DOCK_SCL", "5": null} },
+  { ref: 'MIC2', query: 'ICS-43434', token: 'id:ICS-43434', col: 2, row: 0, rot: 0, pinMap: {"VDD": "+3V3_FPC", "GND": "GND", "SCK": "DOCK_BCLK", "WS": "DOCK_WS", "SD": "DOCK_SD", "LR": "GND"} },
   { ref: 'U9', query: 'ICM-42688-P', token: 'id:ICM-42688-P', col: 3, row: 0, rot: 0, pinMap: {"AP_SDO/AP_AD0": "SPI_MISO", "RESV": null, "INT1/INT": "IMU_INT", "VDDIO": "+3V3", "GND": "GND", "VDD": "+3V3", "INT2/FSYNC/CLKIN": null, "AP_CS": "IMU_CS", "AP_SCL/AP_SCLK": "SPI_SCLK", "AP_SDA/AP_SDIO/AP_SDI": "SPI_MOSI"} }
 ];
 

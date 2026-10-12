@@ -111,9 +111,9 @@ const GRID_Y = 350;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
-  { ref: 'U4', query: 'TCA9546APWR', token: 'id:TCA9546APWR', col: 0, row: 0, rot: 0, pinMap: {"VCC": "+3V3", "GND": "GND", "SDA": "I2C_MAIN_SDA", "SCL": "I2C_MAIN_SCL", "SD0": "DOCK_SDA", "SC0": "DOCK_SCL"} },
-  { ref: 'D5', query: 'TPD4E05U06', token: 'tpd4e05', col: 1, row: 0, rot: 0, pinMap: {"GND": "GND"} },
-  { ref: 'J3', query: 'KH-A2009-2X06AB', token: 'id:KH-A2009-2X06AB', col: 2, row: 0, rot: 0, pinMap: {"1": "GND", "2": "GND", "3": "GND", "4": "VDOCK", "5": "VDOCK", "6": "+3V3_FPC", "7": "DOCK_SDA", "8": "DOCK_SCL", "9": "DOCK_BCLK", "10": "DOCK_WS", "11": "DOCK_SD", "12": "DOCK_PRESENT_ID"} }
+  { ref: 'U4', query: 'TCA9546APWR', token: 'id:TCA9546APWR', col: 0, row: 0, rot: 0, pinMap: {"A0": "GND", "A1": "GND", "RESET#": "GND", "SD0": "DOCK_SDA", "SC0": "DOCK_SCL", "SD1": null, "SC1": null, "GND": "GND", "SD2": null, "SC2": null, "SD3": null, "SC3": null, "A2": "GND", "SCL": "I2C_MAIN_SCL", "SDA": "I2C_MAIN_SDA", "VCC": "+3V3"} },
+  { ref: 'D5', query: 'TPD4E05U06DQAR', token: 'id:TPD4E05U06DQAR', col: 1, row: 0, rot: 0, pinMap: {"D1+": "DOCK_D1_P", "D1-": "DOCK_D1_N", "GND": "GND", "D2+": "DOCK_D2_P", "D2-": "DOCK_D2_N", "NC": null} },
+  { ref: 'J3', query: 'KH-A2009-2X06AB', token: 'id:KH-A2009-2X06AB', col: 2, row: 0, rot: 0, pinMap: {"1": "GND", "2": "GND", "3": "GND", "4": "VDOCK", "5": "VDOCK", "6": "+3V3_FPC", "7": "DOCK_SDA", "8": "DOCK_SCL", "9": "DOCK_BCLK", "10": "DOCK_WS", "11": "DOCK_SD", "12": "DOCK_PRESENT_ID", "13": null, "14": null} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]

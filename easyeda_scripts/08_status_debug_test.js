@@ -111,9 +111,7 @@ const GRID_Y = 350;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
-  { ref: 'D2', query: 'LTST-C193KRKT', token: 'ltst-c193krkt', col: 0, row: 0, rot: 0, pinMap: {"A": "LED_R", "K": "GND"} },
-  { ref: 'D3', query: 'LTST-C193KGKT', token: 'ltst-c193k gkt', col: 1, row: 0, rot: 0, pinMap: {"A": "LED_G", "K": "GND"} },
-  { ref: 'D4', query: 'LTST-C193KBKT', token: 'ltst-c193k bkt', col: 2, row: 0, rot: 0, pinMap: {"A": "LED_B", "K": "GND"} }
+  { ref: 'D4', query: 'LTST-C193TBKT-5A', token: 'id:LTST-C193TBKT-5A', col: 2, row: 0, rot: 0, pinMap: {"A":"LED_B","K":"GND","+":"LED_B","-":"GND"} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]
