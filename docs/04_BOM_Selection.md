@@ -24,6 +24,7 @@ The AVL shall prioritize legitimate Indian distributors and assemblers (for exam
 | R/C/L | passives | values per final datasheets | lot | lot | use fab-approved footprints | not frozen |
 
 ## Engineering baseline BOM additions
+The expanded schematic-level baseline and quantity roll-up are now canonical in [24 Final Baseline BOM and Interface Release](24_Final_Baseline_BOM_and_Interface_Release.md). The earlier candidate table below remains useful for comparison; where it conflicts, document 24 controls the V1 baseline.
 The following baseline expands the earlier candidate list into schematic-level line items. Exact supplier AVL and prices remain subject to dated Indian quotation.
 
 ### Main controller PCB — one assembled board

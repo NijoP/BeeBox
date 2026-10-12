@@ -45,22 +45,30 @@ The ESP32-S3 has multiplexed peripherals, but not every pin is equally safe: str
 ## Dock/FPC pin budget
 | Pin class | Count | Purpose | Required decision |
 |---|---:|---|---|
-| Ground/return | ≥2 recommended | low impedance and signal return | connector/pogo geometry |
-| Power | ≥1 | VDOCK or switched VFPC | maximum sensor current |
-| Data | 2 for I²C, or 2+ for differential | selected protocol | SI and endpoint topology |
-| Control | 1–3 | presence/ID/reset/enable/IRQ | hot-plug and population |
-| Shield/guard | optional | ESD/noise | mechanical connector |
+| Ground/return | 3 | three GND contacts | low impedance and return redundancy |
+| Power | 3 | two VDOCK + one +3V3_FPC | distributes sensor current |
+| Data | 5 | SDA/SCL + BCLK/WS/SD | 100 kHz I²C plus I²S microphone |
+| Control | 1 | DOCK_PRESENT/ID | hot-plug and FPC population |
 
-The practical minimum is not frozen until the FPC population and link protocol are fixed.
+The baseline is a 12-contact interface; exact contact geometry and ratings remain hardware-release evidence.
 
 ## Pogo/dock trade study
 | Option | Data pins | Power/ground | Calculated screen | Component impact | Recommendation |
 |---|---:|---:|---|---|---|
-| 100 kHz direct I²C | 2 | ≥3 recommended | 200 pF/4.7 kΩ: 797 ns, pass against 1 µs screen | pull-ups, ESD, hot-plug/load switch | V1 candidate only after measured SI |
+| 100 kHz direct I²C | 2 | 2×VDOCK + 3×GND baseline | 200 pF/2.2 kΩ: 373 ns, pass against 1 µs screen | pull-ups, ESD, hot-plug/load switch | V1 candidate only after measured SI |
 | 400 kHz direct I²C | 2 | ≥3 recommended | 200 pF/4.7 kΩ fails 300 ns; 1 kΩ passes first-order but increases sink current | stronger pull-ups and tighter capacitance | do not freeze without actual Cb |
 | Differential transport | 2 data + endpoint power/ground/control | ≥3 plus transceiver requirements | not calculated until transceiver/protocol/termination selected | two endpoint transceivers, firmware, more BOM/pins | fallback if direct I²C fails |
 
-Pogo contact current rating, resistance, force and cycle life are exact-part data still missing. A direct I²C result is therefore only a timing screen, not a connector reliability pass.
+Pogo contact current rating, resistance, force and cycle life are exact-part data still required from the Mill-Max drawing. For planning only, two parallel VDOCK contacts with an assumed 50 mΩ each have 25 mΩ equivalent resistance; at an assumed 100 mA FPC load, drop is 2.5 mV and dissipation is 0.25 mW. Replace the assumed resistance/current with exact part and worst-case load before release. A direct I²C result is therefore only a timing screen, not a connector reliability pass.
+
+## FPC-length planning scenarios
+| Installed length | Planning capacitance model | 2.2 kΩ rise time | 100 kHz screen | Engineering implication |
+|---:|---:|---:|---|---|
+| 50 mm | 40 pF fixed + 0.8 pF/mm = 80 pF | 149 ns | PASS calculated | preferred compact pilot |
+| 100 mm | 120 pF | 224 ns | PASS calculated | provisional baseline |
+| 200 mm | 200 pF | 373 ns | PASS calculated | use only if mechanical need; I²S noise/return risk increases |
+
+The capacitance model is an explicit planning assumption, not a fabricator measurement. All three scenarios are timing-feasible at 100 kHz under the model; electrical length, contact bounce, EMI and I²S integrity still require hardware validation.
 
 ## Storage/data screening
 | Mode | Example rate | Storage/day | Decision |

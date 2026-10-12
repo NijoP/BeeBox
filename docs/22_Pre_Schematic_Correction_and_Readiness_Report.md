@@ -37,7 +37,7 @@ These are assumption-bound calculations. They are not authorization to claim the
 9. Replace all assumed cost/stock claims with dated Indian supplier quotations and qualified alternatives.
 
 ## Schematic authorization conditions
-The baseline now provides enough information for a **controlled preliminary schematic draft**: a proposed MCU variant, V1 sensor population, draft GPIO map, dimensioned power topology, 11-contact dock pinout, protection line items and explicit DNI options are recorded in [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md). Every provisional item must be marked in the schematic and reviewed.
+The baseline now provides enough information for a **controlled preliminary schematic draft**: a proposed MCU variant, V1 sensor population, draft GPIO map, dimensioned power topology, 12-contact dock pinout, protection line items and explicit DNI options are recorded in [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md). Every provisional item must be marked in the schematic and reviewed.
 
 It may not be released for layout/fabrication until the exact ESP32-S3 suffix/footprint, battery/input, connector/mechanical envelope, USB-PD decision, final dock protocol and client sensor acceptance criteria are closed or explicitly accepted.
 

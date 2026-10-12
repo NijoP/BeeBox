@@ -16,7 +16,8 @@
 | USB-C | USB Type-C receptacle, exact MPN TBD | CC resistors, ESD, mechanical anchors | alternate receptacle validated by fab | MPN not frozen; do not claim stock |
 | External input protection | TI TPS2660 | eFuse/OVP candidate for ~6 V input | discrete fuse + reverse MOSFET: lower cost, less integrated protection | Candidate; [datasheet](https://www.ti.com/lit/ds/symlink/tps2660.pdf) |
 | I²C branch | TI TCA9546A | 4-channel I²C switch for same-address sensors and isolation | TCA9517/TCA4307: buffering/hot swap trade | Candidate; [datasheet](https://www.ti.com/lit/ds/symlink/tca9546a.pdf) |
-| Dock connector | Hirose BM20/BM22 or Molex SlimStack family, exact MPN TBD | fine-pitch options; not a pogo pin by itself | ZIF/FPC connector or spring contacts | mechanical study required |
+| FPC connector | Hirose FH34SRJ-12S-0.5SH(50) | 12-position, 0.5 mm pitch, locking ZIF candidate for 0.3 mm FPC | Molex 503480-1200 class: compare footprint/mating direction | selected baseline; verify current drawing/land pattern at release; [Hirose family](https://www.hirose.com/product/en/fh34) |
+| Dock spring contact | Mill-Max 0906-0-15-20-75-14-11-0 | SMT spring contact candidate for repeated detachable dock | Harwin S1751 family: compare force/travel/cycles | selected candidate; verify exact drawing/rating; [Mill-Max family](https://www.mill-max.com/products/spring-loaded-contacts) |
 
 ## Selection checks before commitment
 Confirm exact package land pattern from manufacturer CAD, voltage/logic compatibility, addresses, I²S channel behavior, exposed-pad assembly, lifecycle/PCN policy, thermal dissipation, and an authorized source. Footprints are not generated yet. Prices, stock, lead time and lifecycle status remain unresolved research actions. 

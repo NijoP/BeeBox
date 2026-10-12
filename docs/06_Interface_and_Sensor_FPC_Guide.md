@@ -5,6 +5,11 @@ Use a two-layer polyimide flex with coverlay, rolled/annealed copper as appropri
 
 Suggested population profiles: `FPC-A` two T/RH; `FPC-B` one T/RH + one mic; `FPC-C` IMU + VOC; all are proposals, not client-approved variants. Audio microphones require a defined I²S clock/data topology and acoustic openings; they are not interchangeable with slow I²C environmental sensors.
 
+## Selected connector baseline
+The permanent FPC interface baseline is Hirose FH34SRJ-12S-0.5SH(50), a 12-position 0.5 mm-pitch locking ZIF candidate for the 0.3 mm FPC class. It is selected for compactness, retention and a single-tail interface; final land pattern, mating direction, insertion cycles and FPC stiffener dimensions must be taken from the current manufacturer drawing. It is distinct from the repeated dock pogo array.
+
+The repeated dock baseline is twelve Mill-Max 0906-0-15-20-75-14-11-0 spring contacts on the controller docking face, with plated fixed mating pads on the hive/FPC carrier. Two contacts are assigned VDOCK and three ground contacts provide redundancy. Contact stroke/force/resistance/cycles and actual current rating must be verified from the exact drawing before release.
+
 ## Connector trade study
 | Option | Benefit | Risk / decision input |
 |---|---|---|

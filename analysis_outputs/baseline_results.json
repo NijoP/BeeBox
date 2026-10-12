@@ -84,6 +84,35 @@
     "criterion_ns": 1000,
     "status": "PASS_CALCULATED_100KHZ_ASSUMPTION_BOUND"
   },
+  "fpc_length_scenarios": [
+    {
+      "length_mm": 50,
+      "capacitance_pF": 80.0,
+      "rise_time_ns": 149.12480000000002,
+      "status_100k": "PASS"
+    },
+    {
+      "length_mm": 100,
+      "capacitance_pF": 120.0,
+      "rise_time_ns": 223.6872,
+      "status_100k": "PASS"
+    },
+    {
+      "length_mm": 200,
+      "capacitance_pF": 200.0,
+      "rise_time_ns": 372.81200000000007,
+      "status_100k": "PASS"
+    }
+  ],
+  "audio_event_mode": {
+    "sample_rate_hz": 16000,
+    "bits": 24,
+    "clip_seconds": 5,
+    "clips_per_hour_per_mic": 12,
+    "clip_bytes": 240000.0,
+    "clip_storage_per_day_bytes": 69120000.0,
+    "clip_storage_per_day_MiB": 65.91796875
+  },
   "notes": [
     "No measured values are included. Replace all estimated currents with exact selected-part maximum/typical data and firmware duty cycles."
   ]

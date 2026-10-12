@@ -1,13 +1,15 @@
 # 07 — Schematic Design Plan
 
 ## Sheet plan
+The preliminary capture baseline is [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md) and the line-item BOM is [24](24_Final_Baseline_BOM_and_Interface_Release.md). Use 0603/1608 metric for general resistors/capacitors; document any larger passive exception.
 1. `01_INPUT_POWER`: USB-C CC/VBUS, external input, OVP, ESD, charger/power path, battery connector, test points.
 2. `02_REGULATED_RAILS`: 3.3 V regulator, enable, sequencing, current monitor option.
 3. `03_ESP32S3`: exact module, strapping, reset/boot, USB, decoupling, antenna keepout note.
 4. `04_LOCAL_SENSORS`: external T/RH, microphone/I²S, optional IMU; thermal/acoustic mechanical notes.
 5. `05_STORAGE_EXPANSION`: SD/flash option, headers, RF module interface.
 6. `06_DOCK_FPC`: canonical pinout, power switch, ESD, level/translation if required, ID and presence.
-7. `07_FPC`: universal connector, optional sensor footprints, DNI/isolation, vents and test pads.
+7. `07_FPC`: Hirose FH34SRJ-12S-0.5SH(50) mating connector, optional sensor footprints, DNI/isolation, vents and test pads.
+8. `08_STATUS_AND_TEST`: three low-current LEDs, 1 kΩ resistors, rail/bus/current test points and firmware-visible fault nets.
 
 ## Net naming and canonical interface
 Use `VBUS_USB`, `VIN_EXT`, `VBAT`, `VSYS`, `+3V3`, `VDOCK`, `VFPC`, `I2C_MAIN_SDA/SCL`, `DOCK_DATA_P/N`, `I2S_BCLK/WS/SD`, `SPI_*`, `UART_*`, `RF_*`, `USB_D_P/N`. The pinout and MPN table in this package become canonical only after client sign-off; no schematic capture is claimed.
@@ -22,5 +24,5 @@ Use `VBUS_USB`, `VIN_EXT`, `VBAT`, `VSYS`, `+3V3`, `VDOCK`, `VFPC`, `I2C_MAIN_SD
 - [ ] Test points, programming/debug, polarity and creepage rules present.
 - [ ] ERC/DRC rules and datasheet pin-by-pin review complete.
 
-Material blockers are tracked in [14](14_Design_Readiness_Review.md); the plan is ready, capture is not. 
+Material final-release gates are tracked in [14](14_Design_Readiness_Review.md) and [22](22_Pre_Schematic_Correction_and_Readiness_Report.md); controlled preliminary capture may proceed from [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md), but layout/fabrication release is not authorized. 
 > Navigation: [README](../README.md) · [Requirements](01_Project_Requirement_Analysis.md) · [Architecture](02_System_Architecture.md) · [BOM](04_BOM_Selection.md) · [Power](05_Power_Architecture.md) · [Interfaces](06_Interface_and_Sensor_FPC_Guide.md) · [DRR](14_Design_Readiness_Review.md)

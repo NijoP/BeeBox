@@ -1,0 +1,91 @@
+# 24 — Final Baseline BOM and Interface Release
+
+**Purpose:** schematic-level baseline for the one-bee-box pilot. This is not a manufacturing AVL. Prices and Indian stock are recorded only when supported by a dated quotation; no live price is claimed in this revision.
+
+## Selected interconnect decisions
+
+### Permanent FPC connection
+**Hirose FH34SRJ-12S-0.5SH(50)**, 12 positions, 0.5 mm pitch, 0.3 mm FPC class, locking ZIF candidate. It is used once during FPC installation/service and is not the repeatedly detached interface. The exact Hirose drawing, recommended land pattern, mating direction, FPC thickness and mating-cycle rating must be archived with the schematic release. Manufacturer product search: [Hirose FH34 family](https://www.hirose.com/product/en/fh34).
+
+### Repeated dock connection
+**Mill-Max 0906-0-15-20-75-14-11-0** surface-mount spring-contact candidate. Contacts are placed on the removable controller docking face; the fixed hive carrier/FPC side uses gold-finished ENIG contact pads with a hard-gold/contact-finish review. Confirm the exact Mill-Max drawing for compressed height, travel, force, resistance, current rating and cycles before PCB footprint release. Manufacturer family reference: [Mill-Max spring-loaded contacts](https://www.mill-max.com/products/spring-loaded-contacts).
+
+The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md). Two VDOCK contacts and three grounds are used so no single contact carries the complete sensor/FPC return current.
+
+## Main controller PCB BOM — one board
+
+| Ref | Manufacturer / MPN or specification | Qty | Package / value | Populated | Evidence / rationale | Alternative / status |
+|---|---|---:|---|---|---|---|
+| U1 | Espressif ESP32-S3-WROOM-1-N16R8 | 1 | module, PCB antenna | Yes | ESP32-S3 RFQ requirement; official datasheet | N16, N8R8 variants; exact AVL confirm |
+| U2 | Texas Instruments BQ24074RGT | 1 | 16-pin RGT package | Yes | 1S charger/power path; 4.2 V regulation, 10.5 V OVP variant | BQ24075/modern equivalent; thermal review |
+| U3 | Texas Instruments TPS62162DSG | 1 | 8-pin WSON | Yes | 3–17 V input, 1 A class 3.3 V buck | equivalent India-sourced buck after efficiency comparison |
+| U4 | Texas Instruments TCA9546APWR | 1 | TSSOP-24 | Yes | four I²C branches; avoids equal-address collision | TCA9517/TCA4307 where topology requires |
+| U5 | Analog Devices MAX17048G+T10 | 1 | TDFN | Yes/option | 1S fuel-gauge telemetry | omit for cost-down only with client approval |
+| U6 | Texas Instruments TPS26600RGET | 1 | 24-pin VQFN | Yes | external ~6 V input eFuse, reverse polarity/OVP family | discrete fuse + reverse MOSFET, lower integration |
+| D1 | TI USB/dock ESD array, exact line-rated MPN after USB selection | 1–2 | low-C TVS array | Yes | exposed connector protection | Nexperia PESD alternative |
+| J1 | USB-C receptacle, exact MPN after mechanical drawing | 1 | 16/24-pin SMT with anchors | Yes | USB-C 5 V baseline | Indian AVL alternative required |
+| J2 | Hirose FH34SRJ-12S-0.5SH(50) | 1 | 12-position ZIF | Yes | permanent FPC connection | Molex 12-way 0.5 mm equivalent |
+| J3 | Mill-Max 0906-0-15-20-75-14-11-0 | 12 contacts | SMT spring contact | Yes | repeated dock contact candidate | Harwin spring contact comparison |
+| BT1 | Protected 1S LiPo, 3.7 V nominal, 2,000 mAh target, ≥1 A continuous/≥2 A transient | 1 | off-board cell | Yes | runtime/current baseline | exact Indian cell MPN required |
+| L1 | TPS62162 datasheet-selected shielded inductor | 1 | saturation/current per final load | Yes | buck ripple/current | exact value from datasheet design calculator |
+| F1 | resettable fuse or fuse, exact rating from input limit | 1 | input protection | Yes | source fault limitation | rated fuse |
+| Q1/IC | VDOCK current-limited load switch, exact MPN after current budget | 1 | load switch | Yes | hot-plug and FPC power control | discrete high-side MOSFET |
+| D2 | Lite-On LTST-C193KRKT-5A | 1 | 0603 red LED | Yes | fault/charge indication | equivalent 0603 red; Indian AVL verify |
+| D3 | Lite-On LTST-C193KGKT-5A | 1 | 0603 green LED | Yes | ready/charge indication | equivalent 0603 green; Indian AVL verify |
+| D4 | Lite-On LTST-C193KBKT-5A | 1 | 0603 blue LED | Yes | logging/connectivity indication | equivalent 0603 blue; Indian AVL verify |
+| R1–R3 | 1.00 kΩ, 1%, 0603 | 1 each | LED current | Yes | 0.5–1.4 mA assumed per channel | 1% 0603 Indian commodity part |
+| R4/R5 | 2.20 kΩ, 1%, 0603 | 1 each | I²C pull-ups | Yes | 373 ns at assumed 200 pF/100 kHz | 4.7 kΩ if measured C permits |
+| R6/R7 | 5.1 kΩ, 1%, 0603 | 1 each | USB-C CC pull-downs | Yes | USB-C sink baseline | standard commodity |
+| R8/R9 | battery divider, 1%, 0603, values from ADC range | 1 each | battery monitor | Yes | ADC2.0/ADC1 conflict review required | MAX17048 only |
+| R10 | dock ID resistor network, 1%, 0603 | 1 network | FPC identification | Yes | service/configuration detection | fixed ID resistor on FPC |
+| C1–C* | 100 nF X7R 0603, one per IC | 10–15 | local decoupling | Yes | datasheet placement rule | exact manufacturer AVL |
+| C* | 1 µF X7R 0603 | 5–8 | local rail transient support | Yes | regulator/sensor support | voltage rating verified |
+| C* | 10–22 µF X7R or polymer, 0805/1206 if required | 2–4 | rail bulk | Yes | ESP/RF/dock transients | larger package exception justified by capacitance/bias |
+| C* | BQ24074 charge/input capacitors per datasheet | 2–4 | charger stability | Yes | datasheet-selected values | exact voltage/ripple review |
+| R/C | BQ24074 ISET/ILIM/termination/timer network | as datasheet | 0603 unless rating exception | Yes | charge-current and input-limit programming | exact calculation required |
+| TP1–TP12 | labelled test pads | ≥12 | rail/bus/debug access | Yes | bring-up and validation | bed-of-nails option |
+
+## Universal sensor FPC BOM — one V1 populated FPC
+
+| Ref | Manufacturer / MPN | Qty | Package / status | Evidence / rationale |
+|---|---|---:|---|---|
+| U-F1 | Sensirion SHT45 | 1 | DFN, populated | hive T/RH |
+| MIC-F1 | TDK InvenSense ICS-43434 | 1 | digital MEMS, populated | internal acoustic waveform |
+| U-F2 | TDK ICM-42688-P | 1 | LGA, populated if client approves IMU | vibration context |
+| U-F3/U-F4 | Sensirion SHT45 | 0–2 | DNI footprints | second position options |
+| MIC-F2 | ICS-43434 | 0–1 | DNI footprint | second microphone option |
+| U-F5 | Sensirion SGP40 | 0/1 | DNI footprint | VOC option, not V1 baseline |
+| J-F1 | Hirose FH34SRJ-12S-0.5SH(50) mating connector | 1 | ZIF | single compact output |
+| C-F* | 100 nF X7R 0603 | 1 per populated IC | local bypass | required |
+| C-F* | 1 µF X7R 0603 | 1 per local branch | rail support | required |
+| R-F1/R-F2 | 2.2–4.7 kΩ 1% 0603 | one pull-up set | DNI/fit after bus ownership | prevent parallel over-pull |
+| TP-F1–TP-F8 | test pads | ≥8 | copper pads | rails, I²C, I²S, ID |
+| FPC-1 | two-layer polyimide/coverlay with connector stiffener | 1 | fab-specific | exact thickness/bend/vendor TBD |
+
+## Dock and mechanical BOM
+
+| Item | Pilot quantity | RFQ 5–10/10–20 batch basis | Status |
+|---|---:|---:|---|
+| Mill-Max pogo contacts | 12 per dock | 12 × number of main/FPC docks | exact drawing confirmation required |
+| Gold/ENIG mating pads | 12 per fixed carrier | one set per FPC | fab finish and wear review |
+| Hirose FPC connectors | 2 mating pieces per FPC/controller pair | 2 × FPC quantity | one installed in controller, one on FPC |
+| Alignment magnets/keyed spacer | 1 set | one set per dock | mechanical design |
+| Strain-relief/stiffener | 1 per FPC tail | one per FPC | fabrication drawing |
+| Silicone/gasket/vent barrier | as required | quote separately | Kerala enclosure review |
+
+## Optional expansion BOM
+
+DNP for the pilot unless approved: nRF52/nRF53/nRF54 module, LoRa/Sub-GHz module, U.FL/I-PEX antenna chain, SGP40, second microphones, SD card socket/card and additional environmental sensors. Expansion connector still includes 3.3 V, GND, SPI/UART, reset, enable, IRQ and spare GPIO where the GPIO map permits.
+
+## Quantity roll-up
+
+| Build | Controller PCBs | FPCs | Pogo contacts | Permanent FPC connectors |
+|---|---:|---:|---:|---:|
+| One-hive engineering pilot | 1 + 1 recommended spare | 1 V1 + 1 recommended spare | 24 for two docks | 4 mating connector pieces |
+| RFQ lower batch | 5 | 10 | 120 contacts for 10 docks | 20 connector pieces |
+| RFQ upper batch | 10 | 20 | 240 contacts for 20 docks | 40 connector pieces |
+
+Add 5–10% passive and connector spares, and one extra exact MPN reel/strip quantity where the assembler requires setup material. Indian supplier price, stock and lead time remain **NOT VERIFIED** until dated quotations are obtained from authorized/traceable sources.
+
+## 0603 policy
+General resistors and capacitors use 0603/1608 metric by default. Exceptions are allowed for the 10–22 µF rail bulk parts if DC-bias, ripple, voltage rating or available capacitance requires 0805/1206; for the TPS62162 inductor, USB-C, connectors, FPC parts, eFuse, charger and thermal/power components, use the manufacturer package rather than forcing 0603.

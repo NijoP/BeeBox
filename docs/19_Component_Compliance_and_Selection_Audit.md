@@ -34,5 +34,16 @@ This audit challenges the previous candidate list. Datasheet links and exact-sou
 - **Dock:** retain I²C only for a short, low-speed, measured link; otherwise compare a complete RS-485/CAN-FD or other differential implementation including two endpoint transceivers and protocol firmware.
 - **Environmental sensor:** retain SHT45 as a candidate, but compare HDC2080/BME280-class parts on accuracy, self-heating, package opening, cost and legitimate Indian sourcing.
 
+## Interconnect and Kerala environment addendum
+
+| Item | Baseline | Environmental/mechanical assessment | Decision |
+|---|---|---|---|
+| FPC ZIF | Hirose FH34SRJ-12S-0.5SH(50) | locking ZIF candidate; needs exact 0.3 mm FPC/stiffener/drawing and contamination protection | RETAIN as baseline; drawing verification required |
+| Pogo | Mill-Max 0906-0-15-20-75-14-11-0 ×12 | repeated wet/humid contact is a corrosion/wear risk; use protected dock, gold/ENIG mating pads and cycle test | RETAIN as candidate; hardware validation required |
+| FPC material | 2-layer polyimide/coverlay, vendor-specific | bend fatigue, adhesive, propolis/wax and condensation not calculated without stackup/vendor | INVESTIGATE |
+| External enclosure | vented/gasketed baseline | Kerala rain/splash and sun heating are not equivalent to an IP rating | CLIENT DECISION REQUIRED |
+
+Kerala pilot design scenarios are 20–35 °C and 30–95% RH non-condensing for the external controller, with a separate 20–40 °C high-humidity/condensation-risk hive scenario. These are engineering scenarios informed by [IMD](https://mausam.imd.gov.in/) and [World Bank India climate data](https://climateknowledgeportal.worldbank.org/country/india), not component qualifications. The weakest assembled-system links are sensor apertures, acoustic ports, exposed contacts, FPC adhesive/coverlay, enclosure condensation and the R8 module temperature class. Selective conformal protection may be used on non-sensing PCB zones; do not coat sensor vents, microphones, ZIF contacts or pogo mating surfaces.
+
 ## Audit conclusion
 No current component is authorized as final solely because it appears in the previous BOM. The ESP32-S3 architecture and 3.3 V sensor concept can be retained; exact MPNs, power topology, dock connector/protocol and battery remain gated.
