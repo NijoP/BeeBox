@@ -50,9 +50,8 @@ async function pick(query, token) {                 // token = "a|b|c" disambigu
     return arr.find(it => it && it.uuid && it.libraryUuid && (it.manufacturerId||'').toLowerCase() === wanted) || null;
   }
   const tks = token.toLowerCase().split("|");
-  for (const it of arr) { if (!it || !it.uuid || !it.libraryUuid || isArrayPart(it.name||it.symbolName||'')) continue; const h = hay(it);
-    for (const t of tks) if (t && h.indexOf(t) >= 0) return it; }
-  return null;                                       // NEVER arr[0] for an IC
+  const matches = arr.filter(it => { if (!it || !it.uuid || !it.libraryUuid || isArrayPart(it.name||it.symbolName||'')) return false; const h = hay(it); return tks.some(t => t && h.indexOf(t) >= 0); });
+  return matches.length === 1 ? matches[0] : null;    // ambiguous matches fail; never accept arr[0]
 }
 function eiaCode(kind, val) {                         // secondary value discriminator
   // e.g. "100n"->"104", "47"->"470"(+letter tol). Fill per your value scheme.
@@ -64,10 +63,7 @@ async function pickPassive(kind, val) {
     (it) => !isArrayPart(it.name) && !isWrongType(it.name, kind));
   const code = eiaCode(kind, val);
   for (const it of arr) if (it && it.uuid && it.libraryUuid && (it.name||"").indexOf(code) >= 0) return it;   // EIA match wins
-  // Verified 0603 library exemplars; the requested electrical value is written explicitly.
-  const exemplar = kind === 'R' ? '0603WAF2201T5E' : '0603B104K500NT_C30926';
-  const exact = unwrap(await searchRetry(exemplar)).find(it => it && it.uuid && it.libraryUuid && (it.manufacturerId === (kind === 'R' ? '0603WAF2201T5E' : '0603B104K500NT')));
-  return exact || null;
+  return null; // exact value/package/manufacturer match is mandatory; fail the section otherwise
 }
 function pinDir(pin, mx, my) {                        // stub direction from rotation + centroid
   const r = ((+pin.rotation || 0) % 360 + 360) % 360;
@@ -113,8 +109,8 @@ const GRID_Y = 500;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
-  { ref: 'U3', query: 'TPS62162', token: 'tps62162', col: 0, row: 0, rot: 0, pinMap: {"VIN": "VSYS", "VOUT": "+3V3", "FB": "FB_3V3"} },
-  { ref: 'Q1', query: 'TPS22919', token: 'tps22919', col: 1, row: 0, rot: 0, pinMap: {"VIN": "VSYS", "VOUT": "VDOCK", "ON": "DOCK_EN"} }
+  { ref: 'U3', query: 'TPS62162DSGR', token: 'id:TPS62162DSGR', col: 0, row: 0, rot: 0, pinMap: {"VIN": "VSYS", "VOUT": "+3V3", "FB": "FB_3V3"} },
+  { ref: 'Q1', query: 'TPS22919DCKR', token: 'id:TPS22919DCKR', col: 1, row: 0, rot: 0, pinMap: {"VIN": "VSYS", "VOUT": "VDOCK", "ON": "DOCK_EN"} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]
@@ -125,7 +121,7 @@ const PASSIVES = [
 ];
 
 /* ============================ DRIVER ======================================== */
-(async () => {
+return await (async () => {
   const log = [];
   const existing = new Set();
   for (const id of (await eda.sch_PrimitiveComponent.getAllPrimitiveId(undefined,true)) || []) {
@@ -152,4 +148,5 @@ const PASSIVES = [
   }
   eda.sys_MessageBox.showInformationMessage(
     `${SECTION}\n` + log.join("\n") + `\n\nNEXT: Design â–¸ Annotate (project-wide).`);
+  return {section:SECTION,log};
 })();

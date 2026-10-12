@@ -1,0 +1,85 @@
+{
+  "ok": true,
+  "v": {
+    "componentCount": 11,
+    "wireCount": 90,
+    "components": [
+      {
+        "id": "ccc32f9b6e3849c1",
+        "name": "",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "id": "69c77db3ab1fba63",
+        "des": "U2",
+        "name": "={Manufacturer Part}",
+        "x": 276,
+        "y": 315
+      },
+      {
+        "id": "b8de5ceda141de0b",
+        "des": "U6",
+        "name": "={Manufacturer Part}",
+        "x": 876,
+        "y": 315
+      },
+      {
+        "id": "26b919109f28b99f",
+        "des": "U11",
+        "name": "={Manufacturer Part}",
+        "x": 1476,
+        "y": 315
+      },
+      {
+        "id": "cfa0021e82debd0f",
+        "des": "J1",
+        "name": "={Manufacturer Part}",
+        "x": 2076,
+        "y": 315
+      },
+      {
+        "id": "9d126d3fbeacf458",
+        "des": "D6",
+        "name": "={Manufacturer Part}",
+        "x": 2676,
+        "y": 315
+      },
+      {
+        "id": "4be5e1cfa8eca450",
+        "des": "J4",
+        "name": "={Manufacturer Part}",
+        "x": 3276,
+        "y": 315
+      },
+      {
+        "id": "52d26bc7baca97f9",
+        "des": "R6",
+        "name": "={Value}",
+        "x": 1800,
+        "y": 800
+      },
+      {
+        "id": "fb0e2e9e02d4df4a",
+        "des": "R7",
+        "name": "={Value}",
+        "x": 2100,
+        "y": 800
+      },
+      {
+        "id": "da47dd6887c683c3",
+        "des": "C21",
+        "name": "={Value}",
+        "x": 1800,
+        "y": 1100
+      },
+      {
+        "id": "f74d4b4052dc8d15",
+        "des": "C22",
+        "name": "={Value}",
+        "x": 2100,
+        "y": 1100
+      }
+    ]
+  }
+}
