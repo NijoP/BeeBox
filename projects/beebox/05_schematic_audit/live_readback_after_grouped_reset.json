@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "v": {
+    "componentCount": 3,
+    "wireCount": 44,
+    "components": [
+      {
+        "id": "a9807ba08812914b",
+        "des": "U2",
+        "name": "BQ24074RGTR",
+        "x": 300,
+        "y": 300
+      },
+      {
+        "id": "ee7fb98e41cb901a",
+        "des": "U6",
+        "name": "TPS26600RHFT",
+        "x": 600,
+        "y": 300
+      },
+      {
+        "id": "b402985f2d6c6f7f",
+        "des": "U11",
+        "name": "TPS2121RUXR",
+        "x": 900,
+        "y": 300
+      }
+    ]
+  }
+}

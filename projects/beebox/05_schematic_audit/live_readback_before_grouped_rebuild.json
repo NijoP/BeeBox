@@ -1,0 +1,863 @@
+{
+  "ok": true,
+  "v": {
+    "componentCount": 122,
+    "wireCount": 353,
+    "components": [
+      {
+        "id": "9b23612ed583a872",
+        "des": "C2",
+        "name": "={Value}",
+        "x": 700,
+        "y": 300
+      },
+      {
+        "id": "f9646d6c84524930",
+        "des": "C3",
+        "name": "={Value}",
+        "x": 1000,
+        "y": 300
+      },
+      {
+        "id": "b1b9cc8e8fc85a7a",
+        "des": "C4",
+        "name": "={Value}",
+        "x": 1600,
+        "y": 300
+      },
+      {
+        "id": "e87f595eb3ad90cb",
+        "des": "C5",
+        "name": "={Value}",
+        "x": 400,
+        "y": 470
+      },
+      {
+        "id": "943571d5017fd5ed",
+        "des": "C_VBUS",
+        "name": "={Value}",
+        "x": 3550,
+        "y": 300
+      },
+      {
+        "id": "0c1ac1d608fe1505",
+        "des": "C_PVDD",
+        "name": "={Value}",
+        "x": 2650,
+        "y": 470
+      },
+      {
+        "id": "5b29639a2b2dd25b",
+        "des": "C_USB2",
+        "name": "={Value}",
+        "x": 1300,
+        "y": 1450
+      },
+      {
+        "id": "697e16e337a5ff93",
+        "des": "Cs1",
+        "name": "={Value}",
+        "x": 1000,
+        "y": 3820
+      },
+      {
+        "id": "d95ccbf60ea7146d",
+        "des": "Cs2",
+        "name": "={Value}",
+        "x": 1300,
+        "y": 3820
+      },
+      {
+        "id": "e952d6c929275577",
+        "des": "Cs3",
+        "name": "={Value}",
+        "x": 1600,
+        "y": 3820
+      },
+      {
+        "id": "36c7b371d50cc73b",
+        "des": "Cs4",
+        "name": "={Value}",
+        "x": 1900,
+        "y": 3820
+      },
+      {
+        "id": "0d2e82a972ede553",
+        "des": "C_OFVb",
+        "name": "={Value}",
+        "x": 2950,
+        "y": 1450
+      },
+      {
+        "id": "eb4ad8a843647fc0",
+        "des": "C_IMUa",
+        "name": "={Value}",
+        "x": 3550,
+        "y": 1450
+      },
+      {
+        "id": "7ff2d009d28a213e",
+        "des": "C_IMUb",
+        "name": "={Value}",
+        "x": 3850,
+        "y": 1450
+      },
+      {
+        "id": "f928f46ebeccabf2",
+        "des": "C_TOFa",
+        "name": "={Value}",
+        "x": 4150,
+        "y": 1450
+      },
+      {
+        "id": "55edc60ce63fd04a",
+        "des": "C_LDOIN",
+        "name": "={Value}",
+        "x": 400,
+        "y": 2600
+      },
+      {
+        "id": "f10061a5c5e7c4e9",
+        "des": "C_3V3b",
+        "name": "={Value}",
+        "x": 1000,
+        "y": 2600
+      },
+      {
+        "id": "b34a283ad703d07a",
+        "des": "C_3V3c",
+        "name": "={Value}",
+        "x": 1300,
+        "y": 2600
+      },
+      {
+        "id": "73ff45eabcb9766c",
+        "des": "C_18IN",
+        "name": "={Value}",
+        "x": 1900,
+        "y": 2600
+      },
+      {
+        "id": "64895ba1a0466add",
+        "des": "C_18a",
+        "name": "={Value}",
+        "x": 400,
+        "y": 2770
+      },
+      {
+        "id": "4b3cfa4bd52999b5",
+        "des": "C_18b",
+        "name": "={Value}",
+        "x": 700,
+        "y": 2770
+      },
+      {
+        "id": "222a8f7849c81a00",
+        "des": "C_VBAT",
+        "name": "={Value}",
+        "x": 1600,
+        "y": 2770
+      },
+      {
+        "id": "c5f99dee94462ae1",
+        "des": "C_SS",
+        "name": "={Value}",
+        "x": 700,
+        "y": 4650
+      },
+      {
+        "id": "7dc9e9b1f05cecd5",
+        "des": "C_ON",
+        "name": "={Value}",
+        "x": 1005,
+        "y": 4650
+      },
+      {
+        "id": "9cdd38acd929895c",
+        "des": "C_T",
+        "name": "={Value}",
+        "x": 1300,
+        "y": 4820
+      },
+      {
+        "id": "123e2a814bc4b91e",
+        "des": "C_WS1",
+        "name": "={Value}",
+        "x": 2950,
+        "y": 2600
+      },
+      {
+        "id": "b20e8ba771624ef0",
+        "des": "C_WS2",
+        "name": "={Value}",
+        "x": 3250,
+        "y": 2600
+      },
+      {
+        "id": "c785a9e9a920515f",
+        "des": "R1",
+        "name": "={Value}",
+        "x": 1300,
+        "y": 300
+      },
+      {
+        "id": "076f61f4f8f2fc0a",
+        "des": "R2",
+        "name": "={Value}",
+        "x": 1900,
+        "y": 300
+      },
+      {
+        "id": "a7a8dd350571270e",
+        "des": "R_NTC",
+        "name": "={Value}",
+        "x": 2950,
+        "y": 300
+      },
+      {
+        "id": "d94200d498e594c7",
+        "des": "R_OFCS",
+        "name": "={Value}",
+        "x": 3250,
+        "y": 1450
+      },
+      {
+        "id": "b2aaeafee85f6a91",
+        "des": "R_TOFX",
+        "name": "={Value}",
+        "x": 2950,
+        "y": 1620
+      },
+      {
+        "id": "6e7e6c3bdb9cf391",
+        "des": "R_TOFI",
+        "name": "={Value}",
+        "x": 3250,
+        "y": 1620
+      },
+      {
+        "id": "4dca07c0a4ca1543",
+        "des": "R_H",
+        "name": "={Value}",
+        "x": 1300,
+        "y": 4650
+      },
+      {
+        "id": "e15eb0e579bf6487",
+        "des": "U1",
+        "name": "={Value}",
+        "x": 580,
+        "y": 900
+      },
+      {
+        "id": "8a0ac05a318bff3a",
+        "des": "R_ISET",
+        "name": "={Value}",
+        "x": 2650,
+        "y": 300
+      },
+      {
+        "id": "38953edb7cb5dd20",
+        "des": "C_BAT",
+        "name": "={Value}",
+        "x": 3250,
+        "y": 300
+      },
+      {
+        "id": "48fa0c447bfc80f2",
+        "des": "C_USB1",
+        "name": "={Value}",
+        "x": 1000,
+        "y": 1450
+      },
+      {
+        "id": "71c899b9cde1c888",
+        "des": "C_TOFb",
+        "name": "={Value}",
+        "x": 2650,
+        "y": 1620
+      },
+      {
+        "id": "d574514a643c2bbd",
+        "des": "C_3V3a",
+        "name": "={Value}",
+        "x": 700,
+        "y": 2600
+      },
+      {
+        "id": "d0e6de3735698913",
+        "des": "R_STAT",
+        "name": "={Value}",
+        "x": 3850,
+        "y": 300
+      },
+      {
+        "id": "b1adc4e9eef417d8",
+        "des": "R_PVDD",
+        "name": "={Value}",
+        "x": 4150,
+        "y": 300
+      },
+      {
+        "id": "242c7dd4a3d702d7",
+        "des": "U_CHG",
+        "name": "={Manufacturer Part}",
+        "x": 2830,
+        "y": 900
+      },
+      {
+        "id": "c180aba8311a22cf",
+        "des": "U_PROT",
+        "name": "={Manufacturer Part}",
+        "x": 3270,
+        "y": 900
+      },
+      {
+        "id": "917d9b4236be88ba",
+        "des": "R_CC1",
+        "name": "={Value}",
+        "x": 400,
+        "y": 1450
+      },
+      {
+        "id": "69e9ea514859baf4",
+        "des": "R_CC2",
+        "name": "={Value}",
+        "x": 700,
+        "y": 1450
+      },
+      {
+        "id": "da67c81488eb5355",
+        "des": "J_USB",
+        "name": "={Manufacturer Part}",
+        "x": 580,
+        "y": 1880
+      },
+      {
+        "id": "a0ae6f530ff2d632",
+        "des": "D_USB",
+        "name": "={Manufacturer Part}",
+        "x": 1060,
+        "y": 1880
+      },
+      {
+        "id": "d0062390c751fd2c",
+        "des": "Rg1",
+        "name": "={Value}",
+        "x": 400,
+        "y": 3650
+      },
+      {
+        "id": "93f92415c29cd1df",
+        "des": "Rg2",
+        "name": "={Value}",
+        "x": 700,
+        "y": 3650
+      },
+      {
+        "id": "93179d0a4a09e251",
+        "des": "Rg3",
+        "name": "={Value}",
+        "x": 1000,
+        "y": 3650
+      },
+      {
+        "id": "271735e13fc99bb9",
+        "des": "Rg4",
+        "name": "={Value}",
+        "x": 1300,
+        "y": 3650
+      },
+      {
+        "id": "71c38077163d1b86",
+        "des": "Rgs1",
+        "name": "={Value}",
+        "x": 1600,
+        "y": 3650
+      },
+      {
+        "id": "c5c1a16b49e6ba9f",
+        "des": "Rgs2",
+        "name": "={Value}",
+        "x": 1900,
+        "y": 3650
+      },
+      {
+        "id": "57c7133ce633a834",
+        "des": "Rgs3",
+        "name": "={Value}",
+        "x": 400,
+        "y": 3820
+      },
+      {
+        "id": "e5366699a4e1d46f",
+        "des": "Rgs4",
+        "name": "={Value}",
+        "x": 700,
+        "y": 3820
+      },
+      {
+        "id": "d1c1bb95d9ffadcf",
+        "des": "R_LDOEN",
+        "name": "={Value}",
+        "x": 1600,
+        "y": 2600
+      },
+      {
+        "id": "df3b8a1cefddbd67",
+        "des": "R_B",
+        "name": "={Value}",
+        "x": 1300,
+        "y": 2770
+      },
+      {
+        "id": "6d5058b2662f2125",
+        "des": "R_G",
+        "name": "={Value}",
+        "x": 400,
+        "y": 4650
+      },
+      {
+        "id": "d4069f1631c794a8",
+        "des": "R_LG",
+        "name": "={Value}",
+        "x": 1600,
+        "y": 4650
+      },
+      {
+        "id": "a6f5958763ab4f35",
+        "des": "R_PU",
+        "name": "={Value}",
+        "x": 1900,
+        "y": 4650
+      },
+      {
+        "id": "e98d198884327243",
+        "des": "R_REF1",
+        "name": "={Value}",
+        "x": 400,
+        "y": 4820
+      },
+      {
+        "id": "4906af84c13708d8",
+        "des": "R_REF2",
+        "name": "={Value}",
+        "x": 700,
+        "y": 4820
+      },
+      {
+        "id": "81fc6f4e8f5f75b6",
+        "des": "Q1",
+        "name": "={Manufacturer Part}",
+        "x": 580,
+        "y": 4420
+      },
+      {
+        "id": "903180801f78962c",
+        "des": "Q2",
+        "name": "={Manufacturer Part}",
+        "x": 940,
+        "y": 4420
+      },
+      {
+        "id": "042b8ee6a7af9328",
+        "des": "Q3",
+        "name": "={Manufacturer Part}",
+        "x": 1300,
+        "y": 4420
+      },
+      {
+        "id": "1749a9444b098588",
+        "des": "Q4",
+        "name": "={Manufacturer Part}",
+        "x": 1660,
+        "y": 4420
+      },
+      {
+        "id": "96e511cdc75ef95c",
+        "des": "D1",
+        "name": "={Manufacturer Part}",
+        "x": 2020,
+        "y": 4420
+      },
+      {
+        "id": "2ecff8eb9ee77b6c",
+        "des": "D2",
+        "name": "={Manufacturer Part}",
+        "x": 2380,
+        "y": 4420
+      },
+      {
+        "id": "3ff17ef5decf7e9c",
+        "des": "D3",
+        "name": "={Manufacturer Part}",
+        "x": 2740,
+        "y": 4420
+      },
+      {
+        "id": "6d251de5c1fb7912",
+        "des": "D4",
+        "name": "={Manufacturer Part}",
+        "x": 3100,
+        "y": 4420
+      },
+      {
+        "id": "00c3ae9eccad8ae1",
+        "des": "C_OFVa",
+        "name": "={Value}",
+        "x": 2650,
+        "y": 1450
+      },
+      {
+        "id": "8bcd6902821662b1",
+        "des": "R_SDA",
+        "name": "={Value}",
+        "x": 3550,
+        "y": 1620
+      },
+      {
+        "id": "34200d27e13dfeec",
+        "des": "R_SCL",
+        "name": "={Value}",
+        "x": 3850,
+        "y": 1620
+      },
+      {
+        "id": "ec214f3f25e3fe20",
+        "des": "R_STAR",
+        "name": "={Value}",
+        "x": 4150,
+        "y": 1620
+      },
+      {
+        "id": "75414695ace992f4",
+        "des": "U_IMU",
+        "name": "={Manufacturer Part}",
+        "x": 2830,
+        "y": 2050
+      },
+      {
+        "id": "5b29dbbcb6838f7f",
+        "des": "U_OF",
+        "name": "={Manufacturer Part}",
+        "x": 3300,
+        "y": 2050
+      },
+      {
+        "id": "daa1cc8fe60fd2d3",
+        "des": "R_A",
+        "name": "={Value}",
+        "x": 1000,
+        "y": 2770
+      },
+      {
+        "id": "52ae88c485e8faa1",
+        "des": "U_LDO3",
+        "name": "={Manufacturer Part}",
+        "x": 580,
+        "y": 3200
+      },
+      {
+        "id": "919c5a773076e3a3",
+        "des": "U_LDO18",
+        "name": "={Manufacturer Part}",
+        "x": 1040,
+        "y": 3200
+      },
+      {
+        "id": "fa56973284e4dce8",
+        "des": "R_T",
+        "name": "={Value}",
+        "x": 1000,
+        "y": 4820
+      },
+      {
+        "id": "c648f7220542f2cd",
+        "des": "Q_LAT",
+        "name": "={Manufacturer Part}",
+        "x": 960,
+        "y": 5250
+      },
+      {
+        "id": "02cf995d9d1f2858",
+        "des": "Q_RST",
+        "name": "={Manufacturer Part}",
+        "x": 1340,
+        "y": 5250
+      },
+      {
+        "id": "8533c855ed473f4b",
+        "des": "Q_KILL",
+        "name": "={Manufacturer Part}",
+        "x": 1720,
+        "y": 5250
+      },
+      {
+        "id": "1a3b8286be80468e",
+        "des": "U_CMP",
+        "name": "={Manufacturer Part}",
+        "x": 2100,
+        "y": 5250
+      },
+      {
+        "id": "71bf44d5fcc58377",
+        "des": "D_OR",
+        "name": "={Manufacturer Part}",
+        "x": 2480,
+        "y": 5250
+      },
+      {
+        "id": "2f4f9fe8ccbfa6cf",
+        "des": "SW1",
+        "name": "={Manufacturer Part}",
+        "x": 2860,
+        "y": 5250
+      },
+      {
+        "id": "3056b68b590bbfa0",
+        "des": "R_WS",
+        "name": "={Value}",
+        "x": 2650,
+        "y": 2600
+      },
+      {
+        "id": "d1a024791db8b4c0",
+        "des": "R_PWR",
+        "name": "={Value}",
+        "x": 3550,
+        "y": 2600
+      },
+      {
+        "id": "c61e26d9e8ca8cce",
+        "des": "R_HB",
+        "name": "={Value}",
+        "x": 3850,
+        "y": 2600
+      },
+      {
+        "id": "e5dd521e4ec1d377",
+        "des": "R_CHG",
+        "name": "={Value}",
+        "x": 4150,
+        "y": 2600
+      },
+      {
+        "id": "dfba28ef2e509738",
+        "des": "LED1",
+        "name": "={Manufacturer Part}",
+        "x": 2830,
+        "y": 3030
+      },
+      {
+        "id": "6b8d3863e75a804f",
+        "des": "LED2",
+        "name": "={Manufacturer Part}",
+        "x": 3210,
+        "y": 3030
+      },
+      {
+        "id": "dd5d12608a2a4ba8",
+        "des": "D_PWR",
+        "name": "={Manufacturer Part}",
+        "x": 3590,
+        "y": 3030
+      },
+      {
+        "id": "4d313b4830e9844a",
+        "des": "D_HB",
+        "name": "={Manufacturer Part}",
+        "x": 3970,
+        "y": 3030
+      },
+      {
+        "id": "249489cf0b502dc8",
+        "des": "D_CHG",
+        "name": "={Manufacturer Part}",
+        "x": 4350,
+        "y": 3030
+      },
+      {
+        "id": "03232a571f30e6ed",
+        "des": "MP1",
+        "name": "={Manufacturer Part}",
+        "x": 3300,
+        "y": 4650
+      },
+      {
+        "id": "454114d3fc4abd74",
+        "des": "MP2",
+        "name": "={Manufacturer Part}",
+        "x": 3600,
+        "y": 4650
+      },
+      {
+        "id": "d1ff3f266378a9ae",
+        "des": "MP3",
+        "name": "={Manufacturer Part}",
+        "x": 3900,
+        "y": 4650
+      },
+      {
+        "id": "87d9e8a2fd80d118",
+        "des": "MP4",
+        "name": "={Manufacturer Part}",
+        "x": 4200,
+        "y": 4650
+      },
+      {
+        "id": "a3396233187de4fe",
+        "des": "MN1",
+        "name": "={Manufacturer Part}",
+        "x": 4500,
+        "y": 4650
+      },
+      {
+        "id": "734aaccd4698ebe4",
+        "des": "MN2",
+        "name": "={Manufacturer Part}",
+        "x": 3300,
+        "y": 4950
+      },
+      {
+        "id": "79b338a8457a8a8e",
+        "des": "MN3",
+        "name": "={Manufacturer Part}",
+        "x": 3600,
+        "y": 4950
+      },
+      {
+        "id": "eb17b118c0dcbebe",
+        "des": "MN4",
+        "name": "={Manufacturer Part}",
+        "x": 3900,
+        "y": 4950
+      },
+      {
+        "id": "7f13321068543a2c",
+        "des": "BATP",
+        "name": "={Manufacturer Part}",
+        "x": 4200,
+        "y": 4950
+      },
+      {
+        "id": "fa0e4d0885f329b7",
+        "des": "BATN",
+        "name": "={Manufacturer Part}",
+        "x": 4500,
+        "y": 4950
+      },
+      {
+        "id": "13278dad45bc433f",
+        "des": "C_M3",
+        "name": "={Manufacturer Part}",
+        "x": 3460,
+        "y": 4420
+      },
+      {
+        "id": "71ceb4a9f25ebcc0",
+        "des": "J_IO",
+        "name": "={Manufacturer Part}",
+        "x": 4200,
+        "y": 3550
+      },
+      {
+        "id": "2d9e2525a4cce076",
+        "des": "SW_RST",
+        "name": "={Manufacturer Part}",
+        "x": 1140,
+        "y": 900
+      },
+      {
+        "id": "8e33647355226657",
+        "des": "SW_BOOT",
+        "name": "={Manufacturer Part}",
+        "x": 1700,
+        "y": 900
+      },
+      {
+        "id": "c801ed94b5ef1027",
+        "des": "SCREW1",
+        "name": "",
+        "x": -2380,
+        "y": 1805
+      },
+      {
+        "id": "5b3c177d80b43795",
+        "des": "SCREW2",
+        "name": "",
+        "x": -2305,
+        "y": 1800
+      },
+      {
+        "id": "b65208661b3d456d",
+        "des": "SCREW3",
+        "name": "",
+        "x": -2210,
+        "y": 1805
+      },
+      {
+        "id": "83df2995c0c1fd07",
+        "des": "SCREW4",
+        "name": "",
+        "x": -2130,
+        "y": 1810
+      },
+      {
+        "id": "64bb69a7a5de1cf7",
+        "des": "D5",
+        "name": "={Manufacturer Part}",
+        "x": 950,
+        "y": 4650
+      },
+      {
+        "id": "1658bfa76e93ea6f",
+        "des": "Q_PROT2",
+        "name": "={Manufacturer Part}",
+        "x": 4150,
+        "y": 900
+      },
+      {
+        "id": "6cf95b0b089828d3",
+        "des": "Q_PROT1",
+        "name": "={Manufacturer Part}",
+        "x": 3945,
+        "y": 895
+      },
+      {
+        "id": "2901458aaf7b6360",
+        "des": "U2",
+        "name": "={Manufacturer Part}",
+        "x": 4200,
+        "y": 1960
+      },
+      {
+        "id": "906ebd170e6933d3",
+        "des": "Q_PWR",
+        "name": "={Manufacturer Part}",
+        "x": 580,
+        "y": 5250
+      },
+      {
+        "id": "9c688e4efbc4eb31",
+        "des": "C_M1",
+        "name": "={Value}",
+        "x": 400,
+        "y": 3990
+      },
+      {
+        "id": "b7fec3302b68b60d",
+        "des": "C_M2",
+        "name": "={Value}",
+        "x": 700,
+        "y": 3990
+      },
+      {
+        "id": "5e9501c9dc829c66",
+        "des": "C1",
+        "name": "={Value}",
+        "x": 400,
+        "y": 300
+      }
+    ]
+  }
+}
