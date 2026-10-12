@@ -1,0 +1,39 @@
+# 02 — System Architecture
+
+## Functional architecture
+```mermaid
+flowchart LR
+  USB[USB-C / optional PD] --> PM[Input protection + power path + charger]
+  SOL[~6 V DC / solar] --> PM
+  BAT[1S Li-ion/LiPo] <--> PM
+  PM --> MCU[ESP32-S3 external controller]
+  MCU --> ENV[External T/RH + MEMS microphone + optional IMU]
+  MCU --> STORE[Flash / microSD option]
+  MCU --> WIFI[Wi-Fi/BLE]
+  MCU --> EXP[GPIO I2C SPI UART I2S ADC PWM debug]
+  MCU --> RF[RF expansion header: nRF/LoRa/Sub-GHz/future]
+  MCU <--> DOCK[Pogo dock: power + defined data link]
+  DOCK <--> FPC[2-layer universal sensor FPC]
+  FPC --> SENS[Optional T/RH, microphones, IMU, VOC/future footprints]
+```
+
+## Boundaries and interfaces
+| Boundary | Initial interface | Decision state |
+|---|---|---|
+| Input → PMIC | USB-C CC/VBUS, ~6 V DC/solar | USB-PD power contract TBD; do not assume 6 V is USB-PD |
+| PMIC → logic | protected battery/system rail → regulated 3.3 V | topology study only |
+| MCU → local sensors | I²C/SPI/I²S/GPIO as required | exact sensors TBD |
+| MCU → dock | power plus I²C only for short, low-speed validated link, or differential bridge | blocking trade study |
+| Dock → FPC | pogo contacts and single FPC connector | pin count/mechanics TBD |
+| MCU → expansion | labelled headers/mezzanine, 3.3 V/GND/reset/enable/IRQ/GPIO | canonical map pending pin allocation |
+| MCU → storage | SDIO/SPI flash or microSD option | SD practicality TBD |
+
+## Pilot versus scalable architecture
+**Single-hive pilot:** one controller, one dock, one or more FPC variants in one bee box; prioritize safe attachment, logging, source transitions and researcher serviceability. **Scalable architecture:** preserve the same external board and universal FPC, add validated docks/FPCs and optional RF modules; multi-hive synchronization and enclosure certification are later scope.
+
+## Data model recommendation
+Each record should include device ID, FPC ID, sensor ID, UTC timestamp, monotonic sequence, sample rate, calibration revision, supply state, firmware version and quality flags. Time synchronization accuracy and offline buffering depth are client questions.
+
+## Decisions not yet frozen
+Exact sensor MPNs, dock protocol, pogo count, battery, enclosure, SD connector, RF expansion mechanical format, and solar/PD requirements. See [06](06_Interface_and_Sensor_FPC_Guide.md), [14](14_Design_Readiness_Review.md).
+> Navigation: [README](../README.md) · [Requirements](01_Project_Requirement_Analysis.md) · [Architecture](02_System_Architecture.md) · [BOM](04_BOM_Selection.md) · [Power](05_Power_Architecture.md) · [Interfaces](06_Interface_and_Sensor_FPC_Guide.md) · [DRR](14_Design_Readiness_Review.md)

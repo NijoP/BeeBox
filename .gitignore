@@ -1,0 +1,20 @@
+# Local/editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Python/tool caches
+__pycache__/
+*.pyc
+
+# Generated/private engineering artifacts
+*.kicad_prl
+*.lck
+*.tmp
+*.bak
+
+# Client-confidential source files
+*Honeybee*RFQ*.pdf
+*.pdf
