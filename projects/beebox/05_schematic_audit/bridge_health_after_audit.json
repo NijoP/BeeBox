@@ -1,0 +1,9 @@
+{
+  "service": "easyeda-bridge",
+  "status": "ok",
+  "edaConnected": true,
+  "edaWindowCount": 2,
+  "activeWindowId": "faa71123-574f-4149-ab29-48dc6128aebe",
+  "pendingRequests": 0,
+  "timestamp": 1791810367583
+}
