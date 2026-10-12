@@ -18,3 +18,5 @@ __pycache__/
 # Client-confidential source files
 *Honeybee*RFQ*.pdf
 *.pdf
+
+firstmate/
