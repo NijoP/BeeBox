@@ -23,9 +23,9 @@ The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Captur
 | U5 | Analog Devices MAX17048G+T10 | 1 | TDFN | Yes/option | 1S fuel-gauge telemetry | omit for cost-down only with client approval |
 | U6 | Texas Instruments TPS26600RGET | 1 | 24-pin VQFN | Yes | external ~6 V input eFuse, reverse polarity/OVP family | discrete fuse + reverse MOSFET, lower integration |
 | U11 | Texas Instruments TPS2121RUXR | 1 | WQFN power mux | Yes | selects protected USB/external source and prevents source backfeed | discrete ideal-diode OR, higher part count |
-| D1 | Texas Instruments TPD4EUSB30A | 1 | USB 2.0 ESD array | Yes | USB D+/D−/CC protection candidate | Nexperia PESD alternative; verify line assignment |
+| D6 | STMicroelectronics USBLC6-2SC6 | 1 | SOT-23-6 USB 2.0 ESD array | Yes | reference USB D+/D− protection baseline | alternate USB ESD only after line-capacitance review |
 | D5 | Texas Instruments TPD4E05U06 | 1 | dock low-C ESD array | Yes | exposed pogo signal protection | Nexperia equivalent |
-| J1 | GCT USB4105-GF-A | 1 | USB-C SMT receptacle | Yes | 5 V USB-C sink baseline; mechanical anchors required | exact alternate only after drawing review |
+| J1 | TYPE-C-31-M-12 | 1 | USB-C SMT receptacle | Yes | reference 5 V USB-C sink baseline; mechanical anchors required | exact alternate only after drawing review |
 | J2 | Hirose FH34SRJ-12S-0.5SH(50) | 1 | 12-position ZIF | Yes | permanent FPC connection | Molex 12-way 0.5 mm equivalent |
 | J3 | Mill-Max 0906-0-15-20-75-14-11-0 | 12 contacts | SMT spring contact | Yes | repeated dock contact candidate | Harwin spring contact comparison |
 | BT1 | Protected 1S LiPo, 3.7 V nominal, 2,000 mAh target, ≥1 A continuous/≥2 A transient | 1 | off-board cell | Yes | runtime/current baseline | exact Indian cell MPN required |
@@ -39,6 +39,8 @@ The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Captur
 | R1–R3 | 1.00 kΩ, 1%, 0603 | 1 each | LED current | Yes | 0.5–1.4 mA assumed per channel | 1% 0603 Indian commodity part |
 | R4/R5 | 2.20 kΩ, 1%, 0603 | 1 each | I²C pull-ups | Yes | 373 ns at assumed 200 pF/100 kHz | 4.7 kΩ if measured C permits |
 | R6/R7 | 5.1 kΩ, 1%, 0603 | 1 each | USB-C CC pull-downs | Yes | USB-C sink baseline | standard commodity |
+| C21 | 10 µF X7R, 10 V minimum | 1 | USB VBUS bulk | Yes | reference USB VBUS baseline | voltage/bias verification |
+| C22 | 10 nF X7R, 25 V minimum | 1 | USB VBUS high-frequency bypass | Yes | reference USB VBUS baseline | voltage/bias verification |
 | R8/R9 | battery divider, 1%, 0603, values from ADC range | 1 each | battery monitor | Yes | ADC2.0/ADC1 conflict review required | MAX17048 only |
 | R10 | dock ID resistor network, 1%, 0603 | 1 network | FPC identification | Yes | service/configuration detection | fixed ID resistor on FPC |
 | R11 | 1.78 kΩ, 1%, 0603 | 1 | BQ24074 ISET | Yes | 0.5 A charge setting, `890 Ω A / 0.5 A` | verify final BQ revision |

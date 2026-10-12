@@ -1,8 +1,13 @@
 sheet,ref,mpn,function,net_or_interface,status
-01_INPUT_POWER,U2,BQ24074RGT,1S charger and dynamic power path,VBUS_USB/VIN_EXT_PROTECTED/VBAT/VSYS,baseline
-01_INPUT_POWER,U6,TPS26600RGET,6V external input eFuse/OVP/reverse protection,VIN_EXT_RAW/VIN_EXT_PROTECTED,baseline
+01_INPUT_POWER,U2,BQ24074RGTR,1S charger and dynamic power path,VIN_CHARGER/VBAT/VSYS,baseline
+01_INPUT_POWER,U6,TPS26600RHFT,6V external input eFuse/OVP/reverse protection,VIN_EXT_RAW/VIN_EXT_PROTECTED,baseline
+01_INPUT_POWER,J1,TYPE-C-31-M-12,USB-C sink connector,VBUS_USB/USB_D_P/USB_D_N/USB_CC1/USB_CC2/GND,baseline-reference
+01_INPUT_POWER,D6,USBLC6-2SC6,USB data ESD,USB_D_P/USB_D_N/GND,baseline-reference
+01_INPUT_POWER,R6-R7,5.1k 1%,USB-C CC pull-downs,USB_CC1/USB_CC2 to GND,baseline
+01_INPUT_POWER,C21,10uF X7R,USB VBUS bulk,VBUS_USB/GND,baseline-reference
+01_INPUT_POWER,C22,10nF X7R,USB VBUS bypass,VBUS_USB/GND,baseline-reference
 02_3V3_REGULATOR,U3,TPS62162DSG,3.3V buck,VSYS/+3V3,baseline
-03_ESP32S3_DEBUG_USB,U1,ESP32-S3-WROOM-1-N16R8,MCU WiFi BLE USB,+3V3/USB/I2C/SPI/I2S/UART,baseline
+03_ESP32S3_DEBUG_USB,U1,ESP32-S3-WROOM-1-N16R8,MCU WiFi BLE USB,+3V3/USB/I2C/SPI/I2S/UART,baseline-provisional
 04_LOCAL_SENSORS,U-EXT1,SHT45,external temperature RH,I2C_MAIN,baseline
 04_LOCAL_SENSORS,MIC-EXT,ICS-43434,external ambient microphone,I2S,baseline
 04_LOCAL_SENSORS,U-IMU,ICM-42688-P,optional motion vibration,I2C_MAIN or SPI,DNI-or-populate

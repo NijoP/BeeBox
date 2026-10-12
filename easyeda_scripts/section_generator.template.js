@@ -124,7 +124,7 @@ const PASSIVES = [
 ];
 
 /* ============================ DRIVER ======================================== */
-(async () => {
+return await (async () => {
   const log = [];
   const existing = new Set();
   for (const id of (await eda.sch_PrimitiveComponent.getAllPrimitiveId(undefined,true)) || []) {
@@ -151,4 +151,5 @@ const PASSIVES = [
   }
   eda.sys_MessageBox.showInformationMessage(
     `${SECTION}\n` + log.join("\n") + `\n\nNEXT: Design ▸ Annotate (project-wide).`);
+  return {section:SECTION,log};
 })();

@@ -45,6 +45,15 @@ Scripts intentionally throw on missing library matches rather than silently plac
 
 The EasyEDA API reference version inspected exposes no ERC invocation method in the installed skill reference. Native EasyEDA ERC must be run manually after the sections are executed; the final verification script reports this limitation.
 
+## Controlled rebuild audit — 2026-10-12
+
+The latest PDF was extracted and rendered to:
+
+- `projects/beebox/03_easyeda_init/current_pdf_overview.png`
+- `projects/beebox/03_easyeda_init/current_pdf_lower_detail.png`
+
+The PDF/live mismatch report is `projects/beebox/05_schematic_audit/root_cause_audit.md`. The active page still reports A4. The existing generated live objects were backed up before the reference-style power rebuild. The reference USB baseline was verified against live EasyEDA library records: `TYPE-C-31-M-12` and `USBLC6-2SC6`. No ERC claim is made.
+
 ## Luna-only execution update
 
 The visual-auditor sub-agent was removed at the user's request. Generation proceeded with Luna-only API/readback checks. Section 01 produced a partial live result: U2, U6, U11, J1, D1, J4 and R11-R13 are present; the live readback recorded 11 total component objects including two pre-existing artifacts and 74 wires. This is not an ERC or final schematic sign-off. The passive generator was corrected to create verified 0603 library exemplars, write the requested value, and wire both terminals rather than logging-only.
