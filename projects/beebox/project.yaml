@@ -1,0 +1,15 @@
+name: beebox
+board: Honeybee Colony Research Sensor Platform
+owner: NijoP
+phase: 04_schematic_generation
+domains:
+  - external_controller_pcb
+  - universal_sensor_fpc
+source_rfq: confidential local Honeybee RFQ, four pages, inspected 2026-10-12
+source_of_truth:
+  build_sheet: 04_schematic/build_sheet.md
+  net_connection: 04_schematic/net_connection.md
+  netlist_components: ../../netlist/components.csv
+  netlist_pin_to_pin: ../../netlist/pin_to_pin.csv
+  bom: ../../bom/consolidated_bom.csv
+verdict: CONDITIONAL(EDA bridge not connected; preliminary source package prepared)

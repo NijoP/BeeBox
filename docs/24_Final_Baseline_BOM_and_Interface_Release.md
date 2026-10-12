@@ -22,6 +22,7 @@ The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Captur
 | U4 | Texas Instruments TCA9546APWR | 1 | TSSOP-24 | Yes | four I²C branches; avoids equal-address collision | TCA9517/TCA4307 where topology requires |
 | U5 | Analog Devices MAX17048G+T10 | 1 | TDFN | Yes/option | 1S fuel-gauge telemetry | omit for cost-down only with client approval |
 | U6 | Texas Instruments TPS26600RGET | 1 | 24-pin VQFN | Yes | external ~6 V input eFuse, reverse polarity/OVP family | discrete fuse + reverse MOSFET, lower integration |
+| U11 | Texas Instruments TPS2121RUXR | 1 | WQFN power mux | Yes | selects protected USB/external source and prevents source backfeed | discrete ideal-diode OR, higher part count |
 | D1 | Texas Instruments TPD4EUSB30A | 1 | USB 2.0 ESD array | Yes | USB D+/D−/CC protection candidate | Nexperia PESD alternative; verify line assignment |
 | D5 | Texas Instruments TPD4E05U06 | 1 | dock low-C ESD array | Yes | exposed pogo signal protection | Nexperia equivalent |
 | J1 | GCT USB4105-GF-A | 1 | USB-C SMT receptacle | Yes | 5 V USB-C sink baseline; mechanical anchors required | exact alternate only after drawing review |

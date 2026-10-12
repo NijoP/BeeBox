@@ -1,0 +1,108 @@
+{
+  "project": "BEEBOX",
+  "page": "P1",
+  "detected_page": "A4 landscape",
+  "units": "EasyEDA internal units",
+  "conversion": {
+    "internal_units_per_mm": 39.3700787,
+    "mm_per_internal_unit": 0.0254
+  },
+  "zones": [
+    {
+      "id": "POWER_INPUTS",
+      "label": "POWER INPUTS / CHARGING",
+      "x_mm": 7,
+      "y_mm": 8,
+      "w_mm": 22,
+      "h_mm": 18,
+      "x": 276,
+      "y": 315,
+      "w": 866,
+      "h": 709
+    },
+    {
+      "id": "REGULATORS",
+      "label": "REGULATORS / POWER DISTRIBUTION",
+      "x_mm": 31,
+      "y_mm": 8,
+      "w_mm": 18,
+      "h_mm": 18,
+      "x": 1220,
+      "y": 315,
+      "w": 709,
+      "h": 709
+    },
+    {
+      "id": "ESP32_CORE",
+      "label": "ESP32-S3 CORE / USB / DEBUG",
+      "x_mm": 51,
+      "y_mm": 8,
+      "w_mm": 20,
+      "h_mm": 18,
+      "x": 2008,
+      "y": 315,
+      "w": 787,
+      "h": 709
+    },
+    {
+      "id": "EXTERNAL_SENSORS",
+      "label": "EXTERNAL SENSORS / AUDIO",
+      "x_mm": 7,
+      "y_mm": 29,
+      "w_mm": 20,
+      "h_mm": 14,
+      "x": 276,
+      "y": 1142,
+      "w": 787,
+      "h": 551
+    },
+    {
+      "id": "STORAGE_RF",
+      "label": "STORAGE / RF EXPANSION",
+      "x_mm": 29,
+      "y_mm": 29,
+      "w_mm": 20,
+      "h_mm": 14,
+      "x": 1142,
+      "y": 1142,
+      "w": 787,
+      "h": 551
+    },
+    {
+      "id": "DOCK",
+      "label": "DOCK / POGO / BOARD INTERFACE",
+      "x_mm": 51,
+      "y_mm": 29,
+      "w_mm": 20,
+      "h_mm": 14,
+      "x": 2008,
+      "y": 1142,
+      "w": 787,
+      "h": 551
+    },
+    {
+      "id": "FPC",
+      "label": "BOARD B \u00e2\u20ac\u201d UNIVERSAL SENSOR FPC",
+      "x_mm": 7,
+      "y_mm": 46,
+      "w_mm": 30,
+      "h_mm": 18,
+      "x": 276,
+      "y": 1811,
+      "w": 1181,
+      "h": 709
+    },
+    {
+      "id": "STATUS_TEST",
+      "label": "STATUS / DEBUG / TEST POINTS",
+      "x_mm": 39,
+      "y_mm": 46,
+      "w_mm": 32,
+      "h_mm": 18,
+      "x": 1535,
+      "y": 1811,
+      "w": 1260,
+      "h": 709
+    }
+  ]
+}

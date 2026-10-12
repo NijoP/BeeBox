@@ -1,0 +1,46 @@
+ref,manufacturer,mpn,function,board,population,source,package_or_note
+U1,Espressif,ESP32-S3-WROOM-1-N16R8,MCU/Wi-Fi/BLE,main,Yes,official datasheet Figure 11-1,symbol/footprint verify
+U2,Texas Instruments,BQ24074RGTR,1S charger/power path,main,Yes,SLUS810N,RGT package
+U3,Texas Instruments,TPS62162DSG,3V3 buck,main,Yes,TPS62162 datasheet,DSG/WSON
+U4,Texas Instruments,TCA9546APWR,I2C branch switch,main,Yes,TCA9546A datasheet,TSSOP-24
+U5,Analog Devices,MAX17048G+T10,fuel gauge,main,DNI/option,MAX17048 datasheet,TDFN
+U6,Texas Instruments,TPS26600RHFT,6V input eFuse,main,Yes,TPS2660 family datasheet,VQFN
+U11,Texas Instruments,TPS2121RUXR,USB/external source power mux,main,Yes,TPS2121 datasheet,WQFN
+U12,Texas Instruments,SN74LVC1G3157DBVR,I2S microphone data source switch,main,Yes,SN74LVC1G3157 datasheet,SOT-23-6
+Q1,Texas Instruments,TPS22919DCK,VDOCK load switch,main,Yes,TPS22919 datasheet,DCK
+D1,Texas Instruments,TPD4EUSB30DQAR,USB ESD,main,Yes,TPD4EUSB30A datasheet,verify package
+D5,Texas Instruments,TPD4E05U06,dock ESD,main,Yes,TPD4E05U06 datasheet,verify package
+J1,GCT,USB4105-GF-A-060,USB-C receptacle,main,Yes,manufacturer drawing,mechanical verify
+J2,Hirose,FH34SRJ-12S-0.5SH(50),FPC ZIF,main,Yes,FH34 family drawing,0.5mm/12pos
+J3,Mill-Max,0906-0-15-20-75-14-11-0 x12,pogo contacts,dock,Yes,manufacturer drawing,12 contacts
+J4,JST,S2B-PH-SM4-TB,battery connector,main,Yes,manufacturer drawing,PH series
+BT1,TBD Indian AVL,Protected 1S 3.7V 2000mAh,battery,main,Yes,client/procurement specification,exact cell TBD
+MIC1,TDK InvenSense,ICS-43434,external I2S microphone,main,Yes,official datasheet,digital MEMS
+U7,Sensirion,SHT45,external temperature/RH,main,Yes,official datasheet,DFN
+MIC2,TDK InvenSense,ICS-43434,internal FPC microphone,fpc,Yes,official datasheet,DNI if audio disabled
+U8,Sensirion,SHT45,internal FPC temperature/RH,fpc,Yes,official datasheet,DFN
+U9,TDK,ICM-42688-P,internal FPC IMU,fpc,Yes,official datasheet,LGA
+U10,Sensirion,SGP40,VOC option,fpc,DNI,official datasheet,optional
+D2,Lite-On,LTST-C193KRKT-5A,red status LED,main,Yes,manufacturer datasheet,0603
+D3,Lite-On,LTST-C193KGKT-5A,green status LED,main,Yes,manufacturer datasheet,0603
+D4,Lite-On,LTST-C193KBKT-5A,blue status LED,main,Yes,manufacturer datasheet,0603
+J-SD,TBD,microSD socket,SPI storage,main,DNI,exact footprint required,DNP option
+J-RF,TBD,RF expansion header,SPI/UART expansion,main,DNI,exact footprint required,DNP option
+U-IMU,TDK,ICM-42688-P,optional external/controller IMU,main,DNI,official datasheet,optional
+R1-R3,Generic/Indian AVL,1.00k 1%,LED resistors,main,Yes,LED current calculation,0603
+R4-R5,Generic/Indian AVL,2.20k 1%,I2C pull-ups,main,Yes,I2C rise-time calculation,0603
+R6-R7,Generic/Indian AVL,5.10k 1%,USB-C CC pull-downs,main,Yes,USB-C sink design,0603
+R8,Generic/Indian AVL,1.0M 1%,battery divider high,main,Yes,ADC loading/battery calculation,0603
+R9,Generic/Indian AVL,330k 1%,battery divider low,main,Yes,ADC scaling calculation,0603
+R10,Generic/Indian AVL,100k 1%,dock ID resistor,fpc,Yes,FPC ID scheme,0603
+R11,Generic/Indian AVL,1.78k 1%,BQ24074 ISET,main,Yes,BQ24074 equation,0603
+R12,Generic/Indian AVL,1.54k 1%,BQ24074 ILIM,main,Yes,BQ24074 equation,0603
+R13,Generic/Indian AVL,46.4k 1%,BQ24074 timer,main,Yes,BQ24074 equation,0603
+R14,Generic/Indian AVL,316k 1%,TPS62162 FB upper,main,Yes,3V3 feedback calculation,0603
+R15,Generic/Indian AVL,100k 1%,TPS62162 FB lower,main,Yes,3V3 feedback calculation,0603
+C1-C12,Generic/Indian AVL,100nF X7R 16V,IC decoupling,main,Yes,manufacturer local-bypass rules,0603
+C13-C17,Generic/Indian AVL,1uF X7R 10V,local rail support,main,Yes,power transient calculation,0603
+C18-C20,Generic/Indian AVL,22uF X7R 10V,rail bulk/charger OUT,main,Yes,BQ24074/TPS62162 support,0805/1206 exception
+L1,Indian AVL,2.2uH shielded >=1.5A,buck inductor,main,Yes,TPS62162 reference design,power inductor
+F1,Bourns,MF-MSMF050-2,input resettable fuse,main,Yes,source fault protection,1206
+TP1-TP12,Indian PCB fab,labelled copper test pads,bring-up test points,main,Yes,validation/test plan,PCB pads

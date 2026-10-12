@@ -20,3 +20,11 @@
 - Added the functional-sheet capture specification and machine-readable preliminary netlist under `schematic/`.
 - Promoted the 12-contact dock, Hirose FH34SRJ-12S-0.5SH(50) FPC ZIF, Mill-Max spring-contact candidate, exact protection/load-switch candidates, BQ24074 programming values, and 0603 passive policy into the capture baseline.
 - Added the ESP32-S3 official land-pattern verification record and retained footprint/CAD review as a layout-release gate.
+
+## 2026-10-12 — PCB Flow A0/layout and EasyEDA preflight
+- Audited the PCB Flow workflow, agents, EasyEDA automation, API probe, section template, bridge/session and reconstruction tooling.
+- Added `projects/beebox/` phase records, canonical `build_sheet.md`, `net_connection.md`, A0/layout configuration and live API-probe evidence.
+- Verified the active EasyEDA project is `BEEBOX/Schematic1/P1`; the actual page metadata reports A4 (4676 × 3304 internal units), not A0. The page was not changed.
+- Verified exact library-object component creation, pin readback and deletion with a 0603 resistor probe.
+- Prepared a corrected PCB Flow-derived section template and A4-coordinate power-input script; no BeeBox schematic section was placed because the user requested manual script review and execution.
+- Recorded the schematic audit as FAIL until a section is run, read back and reconciled against the netlist.

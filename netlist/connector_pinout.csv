@@ -1,0 +1,13 @@
+pin,signal,purpose
+1,GND,return
+2,GND,return
+3,GND,return
+4,VDOCK,power
+5,VDOCK,power
+6,+3V3_FPC,power
+7,DOCK_SDA,I2C SDA
+8,DOCK_SCL,I2C SCL
+9,DOCK_BCLK,I2S BCLK
+10,DOCK_WS,I2S WS
+11,DOCK_SD,I2S SD
+12,DOCK_PRESENT_ID,presence/ID

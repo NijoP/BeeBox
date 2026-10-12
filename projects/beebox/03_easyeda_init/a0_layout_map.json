@@ -1,0 +1,27 @@
+{
+  "project": "BEEBOX",
+  "schematic": "Schematic1",
+  "page": "P1",
+  "page_uuid": "d5e34c82cc3ba89c",
+  "requested_page": "A0 landscape",
+  "detected_page": "A4 landscape",
+  "detected_internal_width": 4676,
+  "detected_internal_height": 3304,
+  "conversion": {"internal_units_per_mm": 39.3700787, "mm_per_internal_unit": 0.0254},
+  "detected_drawing_mm": {"width": 118.80, "height": 83.92},
+  "provisional_margin_mm": {"left": 5, "right": 5, "top": 5, "bottom": 5},
+  "title_block_exclusion_mm": {"right": 42, "bottom": 14},
+  "usable_region_mm": {"x": 5, "y": 5, "width": 68.8, "height": 64.92},
+  "zones": [
+    {"id":"POWER_INPUTS","label":"POWER INPUTS / CHARGING","x_mm":7,"y_mm":8,"w_mm":22,"h_mm":18},
+    {"id":"REGULATORS","label":"REGULATORS / POWER DISTRIBUTION","x_mm":31,"y_mm":8,"w_mm":18,"h_mm":18},
+    {"id":"ESP32_CORE","label":"ESP32-S3 CORE / USB / DEBUG","x_mm":51,"y_mm":8,"w_mm":20,"h_mm":18},
+    {"id":"EXTERNAL_SENSORS","label":"EXTERNAL SENSORS / AUDIO","x_mm":7,"y_mm":29,"w_mm":20,"h_mm":14},
+    {"id":"STORAGE_RF","label":"STORAGE / RF EXPANSION","x_mm":29,"y_mm":29,"w_mm":20,"h_mm":14},
+    {"id":"DOCK","label":"DOCK / POGO / BOARD INTERFACE","x_mm":51,"y_mm":29,"w_mm":20,"h_mm":14},
+    {"id":"FPC","label":"BOARD B — UNIVERSAL SENSOR FPC","x_mm":7,"y_mm":46,"w_mm":30,"h_mm":18},
+    {"id":"STATUS_TEST","label":"STATUS / DEBUG / TEST POINTS","x_mm":39,"y_mm":46,"w_mm":32,"h_mm":18}
+  ],
+  "status": "A4 DETECTED; A0 WAS NOT CONFIRMED. Do not change sheet size in this workflow. Reconcile with user before placing beyond the A4 usable region.",
+  "existing_objects_at_inspection": {"components":2,"wires":0,"note":"Pre-existing blank/title artifact and U? 8-pin test symbol at approximately (100,100); preserved and not treated as BeeBox design content."}
+}

@@ -1,0 +1,6 @@
+ref,mpn,function,qty_pilot,qty_rfq_low,qty_rfq_high,board,population,status
+MIC2,TDK InvenSense ICS-43434,internal FPC microphone,1,5,10,fpc,Yes,baseline
+U8,Sensirion SHT45,internal FPC temperature/RH,1,5,10,fpc,Yes,baseline
+U9,TDK ICM-42688-P,internal FPC IMU,1,5,10,fpc,Yes,baseline
+U10,Sensirion SGP40,VOC option,1,5,10,fpc,DNI,DNI
+R10,Generic/Indian AVL 100k 1%,dock ID resistor,1,5,10,fpc,Yes,baseline

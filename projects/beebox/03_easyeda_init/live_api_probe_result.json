@@ -1,0 +1,9 @@
+{
+  "bridge": {"port":49620,"edaConnected":true,"edaWindowCount":1,"activeWindowId":"faa71123-574f-4149-ab29-48dc6128aebe"},
+  "project": {"friendlyName":"BEEBOX","name":"nijoponnachan/BEEBOX","schematic":"Schematic1","page":"P1"},
+  "page": {"uuid":"d5e34c82cc3ba89c","reportedSize":"A4","width_internal":4676,"height_internal":3304,"titleBlock":"Drawing-Symbol_A4"},
+  "api_probe": {"search": "eda.lib_Device.search(query) returned an Array of 10 items", "component_create": "verified with {libraryUuid, uuid}, x, y, undefined, rotation, mirror, addIntoBom, addIntoPcb", "pin_readback": "verified through getAllPinsByPrimitiveId and getters"},
+  "test_device": {"manufacturerId":"0603WAF2201T5E","libraryUuid":"0819f05c4eef4c71ace90d822a990e87","footprint":"R0603","pin_numbers":["2","1"],"pin_coordinates":[[920,900],[880,900]],"result":"created, read back, deleted"},
+  "preexisting_objects": {"component_count":2,"wire_count":0,"note":"preserved; one U? 8-pin test symbol near (100,100) and one blank/title artifact"},
+  "status":"PASS for API preflight; CONDITIONAL for page requirement because actual active page is A4, not A0. No production BeeBox objects were placed by this audit."
+}
