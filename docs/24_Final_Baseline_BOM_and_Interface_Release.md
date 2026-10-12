@@ -85,7 +85,7 @@ DNP for the pilot unless approved: nRF52/nRF53/nRF54 module, LoRa/Sub-GHz module
 | RFQ lower batch | 5 | 10 | 120 contacts for 10 docks | 20 connector pieces |
 | RFQ upper batch | 10 | 20 | 240 contacts for 20 docks | 40 connector pieces |
 
-Add 5–10% passive and connector spares, and one extra exact MPN reel/strip quantity where the assembler requires setup material. Indian supplier price, stock and lead time remain **NOT VERIFIED** until dated quotations are obtained from authorized/traceable sources.
+Add 5–10% passive and connector spares, and one extra exact MPN reel/strip quantity where the assembler requires setup material. Preferred Indian sourcing route is to obtain dated quotes from Mouser India, Digi-Key India, element14 India, RS India and a qualified Indian PCB/FPC assembler; Robu.in may be considered for commodity/prototype parts only after exact manufacturer variant and authenticity are checked. No live stock, price or lead-time claim is made in this revision. Indian supplier price, stock and lead time remain **NOT VERIFIED** until dated quotations are obtained from authorized/traceable sources.
 
 ## 0603 policy
 General resistors and capacitors use 0603/1608 metric by default. Exceptions are allowed for the 10–22 µF rail bulk parts if DC-bias, ripple, voltage rating or available capacitance requires 0805/1206; for the TPS62162 inductor, USB-C, connectors, FPC parts, eFuse, charger and thermal/power components, use the manufacturer package rather than forcing 0603.
