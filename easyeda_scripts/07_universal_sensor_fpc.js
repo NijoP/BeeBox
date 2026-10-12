@@ -105,17 +105,16 @@ async function placePassive(ref, kind, val, netA, netB, x, y) {
 
 /* ============================ CONFIG (fill this) ============================= */
 const SECTION = "UNIVERSAL_SENSOR_FPC";
-const BASE = [200, 200];                              // tile origin for this section
-const GRID_X = 600;                                   // compact A4/A0-safe section spacing
-const GRID_Y = 500;
+const BASE = [3200,1300];                              // tile origin for this section
+const GRID_X = 300;                                   // compact grouped A0 zone spacing
+const GRID_Y = 350;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
   { ref: 'J2', query: 'FH34SRJ-12S-0.5SH(50)', token: 'id:FH34SRJ-12S-0.5SH(50)', col: 0, row: 0, rot: 0, pinMap: {"1": "GND", "2": "GND", "3": "GND", "4": "VDOCK", "5": "VDOCK", "6": "+3V3_FPC", "7": "DOCK_SDA", "8": "DOCK_SCL", "9": "DOCK_BCLK", "10": "DOCK_WS", "11": "DOCK_SD", "12": "DOCK_PRESENT_ID"} },
-  { ref: 'U8', query: 'SHT45-AD1B-R2', token: 'id:SHT45-AD1B-R2', col: 1, row: 0, rot: 0, pinMap: {"VDD": "+3V3_FPC", "GND": "GND", "SDA": "DOCK_SDA", "SCL": "DOCK_SCL"} },
+  { ref: 'U8', query: 'SHT45-AD1B-R2', token: 'id:SHT45-AD1B-R2', col: 1, row: 0, rot: 0, pinMap: {"VDD": "+3V3_FPC", "VSS": "GND", "GND": "GND", "SDA": "DOCK_SDA", "SCL": "DOCK_SCL"} },
   { ref: 'MIC2', query: 'ICS-43434', token: 'id:ICS-43434', col: 2, row: 0, rot: 0, pinMap: {"VDD": "+3V3_FPC", "GND": "GND", "SCK": "DOCK_BCLK", "WS": "DOCK_WS", "SD": "DOCK_SD"} },
-  { ref: 'U9', query: 'ICM-42688-P', token: 'id:ICM-42688-P', col: 3, row: 0, rot: 0, pinMap: {"VDD": "+3V3_FPC", "GND": "GND", "SDA": "DOCK_SDA", "SCL": "DOCK_SCL"} },
-  { ref: 'U10', query: 'SGP40', token: 'sgp40', col: 4, row: 0, rot: 0, pinMap: {"VDD": "+3V3_FPC", "GND": "GND", "SDA": "DOCK_SDA", "SCL": "DOCK_SCL"} }
+  { ref: 'U9', query: 'ICM-42688-P', token: 'id:ICM-42688-P', col: 3, row: 0, rot: 0, pinMap: {"AP_SDO/AP_AD0": "SPI_MISO", "RESV": null, "INT1/INT": "IMU_INT", "VDDIO": "+3V3", "GND": "GND", "VDD": "+3V3", "INT2/FSYNC/CLKIN": null, "AP_CS": "IMU_CS", "AP_SCL/AP_SCLK": "SPI_SCLK", "AP_SDA/AP_SDIO/AP_SDI": "SPI_MOSI"} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]
@@ -148,7 +147,7 @@ return await (async () => {
     if (existing.has(ref)) throw new Error(`duplicate existing designator ${ref}`);
     const part = await pickPassive(kind, val);
     if (!part) { log.push(`FAIL ${ref}: no ${val} ${kind}`); throw new Error(`missing passive ${ref}`); }
-    await placePassive(ref, kind, val, a, b, BASE[0] + 800 + i * 300, BASE[1] + 600);
+    await placePassive(ref, kind, val, a, b, BASE[0] + 300 + i * 180, BASE[1] + 350);
     log.push(`OK ${ref} ${val} ${a}-${b} <- ${part.name}`);
   }
   eda.sys_MessageBox.showInformationMessage(

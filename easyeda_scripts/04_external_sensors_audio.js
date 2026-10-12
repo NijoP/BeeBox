@@ -105,13 +105,13 @@ async function placePassive(ref, kind, val, netA, netB, x, y) {
 
 /* ============================ CONFIG (fill this) ============================= */
 const SECTION = "EXTERNAL_SENSORS_AUDIO";
-const BASE = [200, 200];                              // tile origin for this section
-const GRID_X = 600;                                   // compact A4/A0-safe section spacing
-const GRID_Y = 500;
+const BASE = [300,1300];                              // tile origin for this section
+const GRID_X = 300;                                   // compact grouped A0 zone spacing
+const GRID_Y = 350;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
-  { ref: 'U7', query: 'SHT45-AD1B-R2', token: 'id:SHT45-AD1B-R2', col: 0, row: 0, rot: 0, pinMap: {"VDD": "+3V3", "GND": "GND", "SDA": "I2C_MAIN_SDA", "SCL": "I2C_MAIN_SCL"} },
+  { ref: 'U7', query: 'SHT45-AD1B-R2', token: 'id:SHT45-AD1B-R2', col: 0, row: 0, rot: 0, pinMap: {"VDD": "+3V3", "VSS": "GND", "GND": "GND", "SDA": "I2C_MAIN_SDA", "SCL": "I2C_MAIN_SCL"} },
   { ref: 'MIC1', query: 'ICS-43434', token: 'id:ICS-43434', col: 1, row: 0, rot: 0, pinMap: {"VDD": "+3V3", "GND": "GND", "SCK": "I2S_BCLK", "WS": "I2S_WS", "SD": "I2S_SD_EXT"} }
 ];
 
@@ -143,7 +143,7 @@ return await (async () => {
     if (existing.has(ref)) throw new Error(`duplicate existing designator ${ref}`);
     const part = await pickPassive(kind, val);
     if (!part) { log.push(`FAIL ${ref}: no ${val} ${kind}`); throw new Error(`missing passive ${ref}`); }
-    await placePassive(ref, kind, val, a, b, BASE[0] + 800 + i * 300, BASE[1] + 600);
+    await placePassive(ref, kind, val, a, b, BASE[0] + 300 + i * 180, BASE[1] + 350);
     log.push(`OK ${ref} ${val} ${a}-${b} <- ${part.name}`);
   }
   eda.sys_MessageBox.showInformationMessage(

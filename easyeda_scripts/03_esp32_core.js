@@ -105,14 +105,14 @@ async function placePassive(ref, kind, val, netA, netB, x, y) {
 
 /* ============================ CONFIG (fill this) ============================= */
 const SECTION = "ESP32_CORE";
-const BASE = [200, 200];                              // tile origin for this section
-const GRID_X = 600;                                   // compact A4/A0-safe section spacing
-const GRID_Y = 500;
+const BASE = [3200,300];                              // tile origin for this section
+const GRID_X = 300;                                   // compact grouped A0 zone spacing
+const GRID_Y = 350;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
-  { ref: 'U1', query: 'ESP32-S3-WROOM-1-N16R8', token: 'id:ESP32-S3-WROOM-1-N16R8', col: 0, row: 0, rot: 0, pinMap: {"VDD33": "+3V3", "GND": "GND", "GPIO0": "ESP_BOOT", "EN": "ESP_EN", "GPIO19": "USB_D_N", "GPIO20": "USB_D_P", "GPIO43": "DEBUG_TX", "GPIO44": "DEBUG_RX", "GPIO4": "I2C_MAIN_SDA", "GPIO5": "I2C_MAIN_SCL", "GPIO11": "I2S_BCLK", "GPIO12": "I2S_WS", "GPIO13": "I2S_SD_EXT", "GPIO47": "LED_R", "GPIO48": "LED_B"} },
-  { ref: 'U12', query: 'SN74LVC1G3157DBVR-JSM', token: 'id:SN74LVC1G3157DBVR-JSM', col: 1, row: 0, rot: 0, pinMap: {"VCC": "+3V3", "GND": "GND", "A": "I2S_SD_EXT", "B": "DOCK_SD", "Y": "I2S_SD", "S": "AUDIO_SEL"} }
+  { ref: 'U1', query: 'ESP32-S3-WROOM-1-N16R8', token: 'id:ESP32-S3-WROOM-1-N16R8', col: 0, row: 0, rot: 0, pinMap: {"GND": "GND", "3V3": "+3V3", "EN": "ESP_EN", "IO4": "I2C_MAIN_SDA", "IO5": "I2C_MAIN_SCL", "IO6": "SPI_SCLK", "IO7": "SPI_MOSI", "IO15": null, "IO16": null, "IO17": "UART1_RX", "IO18": "UART1_TX", "IO8": "SPI_MISO", "IO19": "USB_D_N", "IO20": "USB_D_P", "IO3": null, "IO46": null, "IO9": "SD_CS", "IO10": null, "IO11": "I2S_BCLK", "IO12": "I2S_WS", "IO13": "I2S_SD", "IO14": null, "IO21": "DOCK_PRESENT_ID", "IO47": "LED_R", "IO48": "LED_B", "IO45": null, "IO0": "ESP_BOOT", "IO35": null, "IO36": null, "IO37": null, "IO38": null, "IO39": "AUDIO_SEL", "IO40": "LED_G", "IO41": null, "IO42": null, "RXD0": "DEBUG_RX", "TXD0": "DEBUG_TX", "IO2": null, "IO1": null} },
+  { ref: 'U12', query: 'SN74LVC1G3157DBVR-JSM', token: 'id:SN74LVC1G3157DBVR-JSM', col: 1, row: 0, rot: 0, pinMap: {"VCC": "+3V3", "GND": "GND", "NO": "I2S_SD_EXT", "NC": "DOCK_SD", "COM": "I2S_SD", "IN": "AUDIO_SEL"} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]
@@ -144,7 +144,7 @@ return await (async () => {
     if (existing.has(ref)) throw new Error(`duplicate existing designator ${ref}`);
     const part = await pickPassive(kind, val);
     if (!part) { log.push(`FAIL ${ref}: no ${val} ${kind}`); throw new Error(`missing passive ${ref}`); }
-    await placePassive(ref, kind, val, a, b, BASE[0] + 800 + i * 300, BASE[1] + 600);
+    await placePassive(ref, kind, val, a, b, BASE[0] + 300 + i * 180, BASE[1] + 350);
     log.push(`OK ${ref} ${val} ${a}-${b} <- ${part.name}`);
   }
   eda.sys_MessageBox.showInformationMessage(

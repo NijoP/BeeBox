@@ -105,15 +105,15 @@ async function placePassive(ref, kind, val, netA, netB, x, y) {
 
 /* ============================ CONFIG (fill this) ============================= */
 const SECTION = "DOCKING";
-const BASE = [200, 200];                              // tile origin for this section
-const GRID_X = 600;                                   // compact A4/A0-safe section spacing
-const GRID_Y = 500;
+const BASE = [1700,1300];                              // tile origin for this section
+const GRID_X = 300;                                   // compact grouped A0 zone spacing
+const GRID_Y = 350;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
   { ref: 'U4', query: 'TCA9546APWR', token: 'id:TCA9546APWR', col: 0, row: 0, rot: 0, pinMap: {"VCC": "+3V3", "GND": "GND", "SDA": "I2C_MAIN_SDA", "SCL": "I2C_MAIN_SCL", "SD0": "DOCK_SDA", "SC0": "DOCK_SCL"} },
   { ref: 'D5', query: 'TPD4E05U06', token: 'tpd4e05', col: 1, row: 0, rot: 0, pinMap: {"GND": "GND"} },
-  { ref: 'J3', query: 'Mill-Max 0906', token: 'mill-max|0906', col: 2, row: 0, rot: 0, pinMap: {"1": "GND", "2": "GND", "3": "GND", "4": "VDOCK", "5": "VDOCK", "6": "+3V3_FPC", "7": "DOCK_SDA", "8": "DOCK_SCL", "9": "DOCK_BCLK", "10": "DOCK_WS", "11": "DOCK_SD", "12": "DOCK_PRESENT_ID"} }
+  { ref: 'J3', query: 'KH-A2009-2X06AB', token: 'id:KH-A2009-2X06AB', col: 2, row: 0, rot: 0, pinMap: {"1": "GND", "2": "GND", "3": "GND", "4": "VDOCK", "5": "VDOCK", "6": "+3V3_FPC", "7": "DOCK_SDA", "8": "DOCK_SCL", "9": "DOCK_BCLK", "10": "DOCK_WS", "11": "DOCK_SD", "12": "DOCK_PRESENT_ID"} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]
@@ -145,7 +145,7 @@ return await (async () => {
     if (existing.has(ref)) throw new Error(`duplicate existing designator ${ref}`);
     const part = await pickPassive(kind, val);
     if (!part) { log.push(`FAIL ${ref}: no ${val} ${kind}`); throw new Error(`missing passive ${ref}`); }
-    await placePassive(ref, kind, val, a, b, BASE[0] + 800 + i * 300, BASE[1] + 600);
+    await placePassive(ref, kind, val, a, b, BASE[0] + 300 + i * 180, BASE[1] + 350);
     log.push(`OK ${ref} ${val} ${a}-${b} <- ${part.name}`);
   }
   eda.sys_MessageBox.showInformationMessage(

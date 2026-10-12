@@ -106,8 +106,8 @@ async function placePassive(ref, kind, val, netA, netB, x, y) {
 /* ============================ CONFIG (fill this) ============================= */
 const SECTION = "<BLOCK NAME>";
 const BASE = [200, 200];                              // tile origin for this section
-const GRID_X = 600;                                   // compact A4/A0-safe section spacing
-const GRID_Y = 500;
+const GRID_X = 300;                                   // compact grouped A0 zone spacing
+const GRID_Y = 350;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
@@ -144,7 +144,7 @@ return await (async () => {
     if (existing.has(ref)) throw new Error(`duplicate existing designator ${ref}`);
     const part = await pickPassive(kind, val);
     if (!part) { log.push(`FAIL ${ref}: no ${val} ${kind}`); throw new Error(`missing passive ${ref}`); }
-    await placePassive(ref, kind, val, a, b, BASE[0] + 800 + i * 300, BASE[1] + 600);
+    await placePassive(ref, kind, val, a, b, BASE[0] + 300 + i * 180, BASE[1] + 350);
     log.push(`OK ${ref} ${val} ${a}-${b} <- ${part.name}`);
   }
   eda.sys_MessageBox.showInformationMessage(
