@@ -44,6 +44,7 @@ An independent mathematical/component audit is now included. Screening calculati
 | 22 | [Pre-Schematic Correction and Readiness Report](docs/22_Pre_Schematic_Correction_and_Readiness_Report.md) |
 | 23 | [Baseline Resolution and Schematic-Capture Package](docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md) |
 | 24 | [Final Baseline BOM and Interface Release](docs/24_Final_Baseline_BOM_and_Interface_Release.md) |
+| Capture | [Preliminary Schematic Capture Specification](schematic/Preliminary_Capture_Specification.md) and [netlist](schematic/netlist.csv) |
 
 ## Phase plan
 1. Resolve client mechanical, power, sensor, dock, data and acceptance questions.

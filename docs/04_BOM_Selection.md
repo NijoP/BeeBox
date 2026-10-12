@@ -1,5 +1,7 @@
 # 04 — Preliminary BOM and Selection
 
+> **Controlling baseline:** [24 Final Baseline BOM and Interface Release](24_Final_Baseline_BOM_and_Interface_Release.md) supersedes earlier generic/TBD rows where the two documents differ. This document retains selection rationale and cost/sourcing policy.
+
 This is a design-study BOM, not a purchase list. MPNs marked TBD are deliberately unresolved; no supplier stock or price is invented. Main-board and FPC quantities remain separate.
 
 ## India-first, cost-conscious sourcing policy

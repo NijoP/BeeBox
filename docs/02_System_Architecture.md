@@ -21,12 +21,12 @@ flowchart LR
 | Boundary | Initial interface | Decision state |
 |---|---|---|
 | Input → PMIC | USB-C CC/VBUS, ~6 V DC/solar | USB-PD power contract TBD; do not assume 6 V is USB-PD |
-| PMIC → logic | protected battery/system rail → regulated 3.3 V | topology study only |
-| MCU → local sensors | I²C/SPI/I²S/GPIO as required | exact sensors TBD |
+| PMIC → logic | protected battery/system rail → TPS62162 3.3 V buck | V1 baseline; thermal/efficiency verification required |
+| MCU → local sensors | I²C/SPI/I²S/GPIO | SHT45, ICS-43434 and optional ICM-42688-P baseline |
 | MCU → dock | power plus I²C only for short, low-speed validated link, or differential bridge | blocking trade study |
-| Dock → FPC | pogo contacts and single FPC connector | pin count/mechanics TBD |
+| Dock → FPC | 12 pogo contacts plus Hirose FH34SRJ-12S-0.5SH(50) ZIF | V1 baseline; drawings/cycle test required |
 | MCU → expansion | labelled headers/mezzanine, 3.3 V/GND/reset/enable/IRQ/GPIO | canonical map pending pin allocation |
-| MCU → storage | SDIO/SPI flash or microSD option | SD practicality TBD |
+| MCU → storage | SPI microSD option | DNP/populate decision during schematic review; event audio baseline sized for 32 GB class |
 
 ## Pilot versus scalable architecture
 **Single-hive pilot:** one controller, one dock, one or more FPC variants in one bee box; prioritize safe attachment, logging, source transitions and researcher serviceability. **Scalable architecture:** preserve the same external board and universal FPC, add validated docks/FPCs and optional RF modules; multi-hive synchronization and enclosure certification are later scope.

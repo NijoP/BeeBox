@@ -15,3 +15,8 @@
 - Defined a one-bee-box V1 baseline: ESP32-S3-WROOM-1-N16R8 candidate, SHT45 + ICS-43434 + ICM-42688-P FPC population, 1S 2,000 mAh protected LiPo target, BQ24074/TPS62162 power baseline, TCA9546A bus isolation and an 11-contact dock.
 - Added a draft complete GPIO map, dock pinout, status LED design, expanded schematic-level BOM, preliminary mechanical envelopes and baseline calculations.
 - Authorized controlled preliminary schematic drafting while retaining final-release gates for exact parts, mechanics, battery/input, USB-PD, dock validation and client acceptance criteria.
+
+## 2026-10-12 — Preliminary schematic capture package
+- Added the functional-sheet capture specification and machine-readable preliminary netlist under `schematic/`.
+- Promoted the 12-contact dock, Hirose FH34SRJ-12S-0.5SH(50) FPC ZIF, Mill-Max spring-contact candidate, exact protection/load-switch candidates, BQ24074 programming values, and 0603 passive policy into the capture baseline.
+- Added the ESP32-S3 official land-pattern verification record and retained footprint/CAD review as a layout-release gate.

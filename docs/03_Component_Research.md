@@ -13,9 +13,11 @@
 | 3.3 V regulator | TI TPS62162 buck | efficient, input range suited after power path; inductor/layout required | low-Iq LDO: simpler but thermal/runtime trade | Candidate; [datasheet](https://www.ti.com/lit/ds/symlink/tps62162.pdf) |
 | Fuel gauge | Analog Devices MAX17048 | I²C, 1-cell model-gauge | no gauge + ADC: lower BOM, poorer SoC estimate | Optional; [datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/max17048-max17049.pdf) |
 | ESD | TI TPD4E05U06 | low-capacitance multi-line protection | Nexperia PESD: compare capacitance/package | Candidate at suitable data lines; not input OVP; [datasheet](https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf) |
-| USB-C | USB Type-C receptacle, exact MPN TBD | CC resistors, ESD, mechanical anchors | alternate receptacle validated by fab | MPN not frozen; do not claim stock |
+| USB-C | GCT USB4105-GF-A | USB-C receptacle candidate; CC resistors, ESD, mechanical anchors | exact alternate validated by fab | schematic baseline; drawing/Indian AVL verify |
+| Battery connector | JST S2B-PH-SM4-TB | 2-position SMT PH connector for replaceable 1S cell | JST B2B-PH-K-S | baseline; current/retention/mechanics verify |
 | External input protection | TI TPS2660 | eFuse/OVP candidate for ~6 V input | discrete fuse + reverse MOSFET: lower cost, less integrated protection | Candidate; [datasheet](https://www.ti.com/lit/ds/symlink/tps2660.pdf) |
 | I²C branch | TI TCA9546A | 4-channel I²C switch for same-address sensors and isolation | TCA9517/TCA4307: buffering/hot swap trade | Candidate; [datasheet](https://www.ti.com/lit/ds/symlink/tca9546a.pdf) |
+| FPC load switch | TI TPS22919DCK | 1.5 A class switched VDOCK rail | TPS22918 | candidate; verify reverse-current behavior and current limit |
 | FPC connector | Hirose FH34SRJ-12S-0.5SH(50) | 12-position, 0.5 mm pitch, locking ZIF candidate for 0.3 mm FPC | Molex 503480-1200 class: compare footprint/mating direction | selected baseline; verify current drawing/land pattern at release; [Hirose family](https://www.hirose.com/product/en/fh34) |
 | Dock spring contact | Mill-Max 0906-0-15-20-75-14-11-0 | SMT spring contact candidate for repeated detachable dock | Harwin S1751 family: compare force/travel/cycles | selected candidate; verify exact drawing/rating; [Mill-Max family](https://www.mill-max.com/products/spring-loaded-contacts) |
 

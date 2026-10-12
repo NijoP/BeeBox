@@ -22,14 +22,16 @@ The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Captur
 | U4 | Texas Instruments TCA9546APWR | 1 | TSSOP-24 | Yes | four I²C branches; avoids equal-address collision | TCA9517/TCA4307 where topology requires |
 | U5 | Analog Devices MAX17048G+T10 | 1 | TDFN | Yes/option | 1S fuel-gauge telemetry | omit for cost-down only with client approval |
 | U6 | Texas Instruments TPS26600RGET | 1 | 24-pin VQFN | Yes | external ~6 V input eFuse, reverse polarity/OVP family | discrete fuse + reverse MOSFET, lower integration |
-| D1 | TI USB/dock ESD array, exact line-rated MPN after USB selection | 1–2 | low-C TVS array | Yes | exposed connector protection | Nexperia PESD alternative |
-| J1 | USB-C receptacle, exact MPN after mechanical drawing | 1 | 16/24-pin SMT with anchors | Yes | USB-C 5 V baseline | Indian AVL alternative required |
+| D1 | Texas Instruments TPD4EUSB30A | 1 | USB 2.0 ESD array | Yes | USB D+/D−/CC protection candidate | Nexperia PESD alternative; verify line assignment |
+| D5 | Texas Instruments TPD4E05U06 | 1 | dock low-C ESD array | Yes | exposed pogo signal protection | Nexperia equivalent |
+| J1 | GCT USB4105-GF-A | 1 | USB-C SMT receptacle | Yes | 5 V USB-C sink baseline; mechanical anchors required | exact alternate only after drawing review |
 | J2 | Hirose FH34SRJ-12S-0.5SH(50) | 1 | 12-position ZIF | Yes | permanent FPC connection | Molex 12-way 0.5 mm equivalent |
 | J3 | Mill-Max 0906-0-15-20-75-14-11-0 | 12 contacts | SMT spring contact | Yes | repeated dock contact candidate | Harwin spring contact comparison |
 | BT1 | Protected 1S LiPo, 3.7 V nominal, 2,000 mAh target, ≥1 A continuous/≥2 A transient | 1 | off-board cell | Yes | runtime/current baseline | exact Indian cell MPN required |
-| L1 | TPS62162 datasheet-selected shielded inductor | 1 | saturation/current per final load | Yes | buck ripple/current | exact value from datasheet design calculator |
-| F1 | resettable fuse or fuse, exact rating from input limit | 1 | input protection | Yes | source fault limitation | rated fuse |
-| Q1/IC | VDOCK current-limited load switch, exact MPN after current budget | 1 | load switch | Yes | hot-plug and FPC power control | discrete high-side MOSFET |
+| J4 | JST S2B-PH-SM4-TB | 1 | 2-position PH SMT battery connector | Yes | replaceable cell connection | locking equivalent after mechanical review |
+| L1 | Shielded 2.2 µH inductor, ≥1.5 A saturation, low DCR; exact AVL MPN after quote | 1 | power inductor | Yes | TPS62162 reference design 2.2 µH class | India AVL/saturation verification |
+| F1 | Bourns MF-MSMF050-2 or rated equivalent | 1 | resettable fuse | Yes | source fault limitation | exact hold/trip review |
+| Q1 | Texas Instruments TPS22919DCK | 1 | 1.5 A load switch | Yes | VDOCK hot-plug/current control | TPS22918/19 alternative |
 | D2 | Lite-On LTST-C193KRKT-5A | 1 | 0603 red LED | Yes | fault/charge indication | equivalent 0603 red; Indian AVL verify |
 | D3 | Lite-On LTST-C193KGKT-5A | 1 | 0603 green LED | Yes | ready/charge indication | equivalent 0603 green; Indian AVL verify |
 | D4 | Lite-On LTST-C193KBKT-5A | 1 | 0603 blue LED | Yes | logging/connectivity indication | equivalent 0603 blue; Indian AVL verify |
@@ -38,11 +40,16 @@ The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Captur
 | R6/R7 | 5.1 kΩ, 1%, 0603 | 1 each | USB-C CC pull-downs | Yes | USB-C sink baseline | standard commodity |
 | R8/R9 | battery divider, 1%, 0603, values from ADC range | 1 each | battery monitor | Yes | ADC2.0/ADC1 conflict review required | MAX17048 only |
 | R10 | dock ID resistor network, 1%, 0603 | 1 network | FPC identification | Yes | service/configuration detection | fixed ID resistor on FPC |
+| R11 | 1.78 kΩ, 1%, 0603 | 1 | BQ24074 ISET | Yes | 0.5 A charge setting, `890 Ω A / 0.5 A` | verify final BQ revision |
+| R12 | 1.54 kΩ, 1%, 0603 | 1 | BQ24074 ILIM | Yes | approximately 1.0 A input limit | verify source budget |
+| R13 | 46.4 kΩ, 1%, 0603 | 1 | BQ24074 TMR | Yes | approximately 6.25 h safety timer | shorten if thermal/cell study requires |
+| R14 | 316 kΩ, 1%, 0603 | 1 | TPS62162 feedback upper | Yes | 3.3 V setting with 100 kΩ lower, verify VREF | recalculate with exact VREF |
+| R15 | 100 kΩ, 1%, 0603 | 1 | TPS62162 feedback lower | Yes | 3.3 V setting | standard |
 | C1–C* | 100 nF X7R 0603, one per IC | 10–15 | local decoupling | Yes | datasheet placement rule | exact manufacturer AVL |
 | C* | 1 µF X7R 0603 | 5–8 | local rail transient support | Yes | regulator/sensor support | voltage rating verified |
 | C* | 10–22 µF X7R or polymer, 0805/1206 if required | 2–4 | rail bulk | Yes | ESP/RF/dock transients | larger package exception justified by capacitance/bias |
-| C* | BQ24074 charge/input capacitors per datasheet | 2–4 | charger stability | Yes | datasheet-selected values | exact voltage/ripple review |
-| R/C | BQ24074 ISET/ILIM/termination/timer network | as datasheet | 0603 unless rating exception | Yes | charge-current and input-limit programming | exact calculation required |
+| C* | BQ24074 charge/input capacitors per datasheet | 2–4 | 1 µF input, 22 µF OUT, X7R | Yes | datasheet-required bypass and OUT stability | voltage/ripple review |
+| R/C | BQ24074 ITERM/TS/CE/EN network | as datasheet | 0603 unless rating exception | Yes | termination, temperature and enable behavior | exact battery NTC/logic decision |
 | TP1–TP12 | labelled test pads | ≥12 | rail/bus/debug access | Yes | bring-up and validation | bed-of-nails option |
 
 ## Universal sensor FPC BOM — one V1 populated FPC

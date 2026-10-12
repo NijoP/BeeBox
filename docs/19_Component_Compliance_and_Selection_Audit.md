@@ -1,5 +1,7 @@
 # 19 — Component Compliance and Selection Audit
 
+> **Current baseline note:** Earlier provisional rows in this audit are superseded where applicable by [23 Baseline Resolution](23_Baseline_Resolution_and_Schematic_Capture_Package.md) and [24 Final Baseline BOM](24_Final_Baseline_BOM_and_Interface_Release.md). The exact selected baseline is the controlling reference for preliminary schematic capture.
+
 This audit challenges the previous candidate list. Datasheet links and exact-source actions are in [03](03_Component_Research.md). “PASS” below means compatibility with the stated 3.3 V concept, not system validation.
 
 | Ref | Manufacturer / MPN | Function | Relevant operating point / limit | Margin or issue | Decision |
