@@ -1,0 +1,6 @@
+scenario,total_current_a,battery_power_w,runtime_h,source,status
+battery_idle,0.10300000000000001,0.38110000000000005,13.66990291262136,explicit assumption set in verify_engineering.py,PROVISIONAL
+battery_normal_logging,0.36200000000000004,1.3394000000000001,3.889502762430939,explicit assumption set in verify_engineering.py,PROVISIONAL
+battery_wifi_logging,0.462,1.7094000000000003,3.047619047619048,explicit assumption set in verify_engineering.py,PROVISIONAL
+battery_peak_assumed,0.67,2.479,2.1014925373134328,explicit assumption set in verify_engineering.py,PROVISIONAL
+external_normal,0.36200000000000004,1.3394000000000001,3.889502762430939,explicit assumption set in verify_engineering.py,PROVISIONAL

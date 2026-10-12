@@ -16,5 +16,13 @@ Scores are qualitative 1–5 likelihood × impact and must be revisited after an
 | R-10 | Long-lead or single-source parts | 3 | 4 | 12 | AVL alternatives and dated quotes | Supply open |
 | R-11 | Public repository discloses client IP | 2 | 5 | 10 | do not publish PDF, review artifacts before push | PM active |
 
-Trade-offs and retirement evidence are recorded in [14](14_Design_Readiness_Review.md) and [12](12_Validation_Test_Plan.md). 
+## Verification-phase additions
+| ID | Risk | L | I | Score | Mitigation / trigger | Status |
+|---|---|---:|---:|---:|---|---|
+| R-12 | 6 V linear charging at 0.5 A may dissipate approximately 0.9–1.5 W | 3 | 4 | 12 | calculate exact package thermal path; reduce charge current or select switching/thermally suitable topology | Open |
+| R-13 | 400 kHz direct dock I²C fails 200 pF/4.7 kΩ rise-time screen | 4 | 4 | 16 | constrain 100 kHz with measured Cb or specify complete differential link | Open |
+| R-14 | Continuous raw I²S audio requires approximately 4.83 GiB/day in screening case | 3 | 4 | 12 | choose event/features mode or storage architecture | Open |
+| R-15 | Generic connector family is not sufficient for footprint, mating, cycle or current approval | 4 | 5 | 20 | select exact parts from mechanical drawings and vendor data | Open |
+
+Trade-offs and retirement evidence are recorded in [14](14_Design_Readiness_Review.md), [18](18_Mathematical_Engineering_Analysis.md), [19](19_Component_Compliance_and_Selection_Audit.md) and [12](12_Validation_Test_Plan.md). 
 > Navigation: [README](../README.md) · [Requirements](01_Project_Requirement_Analysis.md) · [Architecture](02_System_Architecture.md) · [BOM](04_BOM_Selection.md) · [Power](05_Power_Architecture.md) · [Interfaces](06_Interface_and_Sensor_FPC_Guide.md) · [DRR](14_Design_Readiness_Review.md)

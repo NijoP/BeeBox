@@ -1,0 +1,163 @@
+{
+  "assumptions": {
+    "battery_v_nom": 3.7,
+    "battery_capacity_ah": 2.0,
+    "usable_fraction": 0.8,
+    "converter_efficiency": 0.88,
+    "battery_v_min": 3.0,
+    "esp32_active_a": 0.24,
+    "esp32_rf_peak_a": 0.43,
+    "local_sensors_typ_a": 0.012,
+    "fpc_sensors_typ_a": 0.01,
+    "storage_typ_a": 0.08,
+    "rf_expansion_typ_a": 0.1,
+    "dock_typ_a": 0.02,
+    "charge_a": 0.5,
+    "input_v": 6.0,
+    "i2c_pullup_ohm": 4700,
+    "i2c_cap_pf": 100,
+    "i2c_cap_worst_pf": 200,
+    "audio_sample_hz": 16000,
+    "audio_bits": 24,
+    "audio_channels": 1,
+    "overhead_factor": 1.25
+  },
+  "power": [
+    {
+      "scenario": "battery_idle",
+      "total_current_a": 0.10300000000000001,
+      "battery_power_w": 0.38110000000000005,
+      "runtime_h": 13.66990291262136,
+      "source": "explicit assumption set in verify_engineering.py",
+      "status": "PROVISIONAL"
+    },
+    {
+      "scenario": "battery_normal_logging",
+      "total_current_a": 0.36200000000000004,
+      "battery_power_w": 1.3394000000000001,
+      "runtime_h": 3.889502762430939,
+      "source": "explicit assumption set in verify_engineering.py",
+      "status": "PROVISIONAL"
+    },
+    {
+      "scenario": "battery_wifi_logging",
+      "total_current_a": 0.462,
+      "battery_power_w": 1.7094000000000003,
+      "runtime_h": 3.047619047619048,
+      "source": "explicit assumption set in verify_engineering.py",
+      "status": "PROVISIONAL"
+    },
+    {
+      "scenario": "battery_peak_assumed",
+      "total_current_a": 0.67,
+      "battery_power_w": 2.479,
+      "runtime_h": 2.1014925373134328,
+      "source": "explicit assumption set in verify_engineering.py",
+      "status": "PROVISIONAL"
+    },
+    {
+      "scenario": "external_normal",
+      "total_current_a": 0.36200000000000004,
+      "battery_power_w": 1.3394000000000001,
+      "runtime_h": 3.889502762430939,
+      "source": "explicit assumption set in verify_engineering.py",
+      "status": "PROVISIONAL"
+    }
+  ],
+  "charger_screening": [
+    {
+      "input_v": 6.0,
+      "battery_v": 3.0,
+      "charge_a": 0.5,
+      "approx_dissipation_w": 1.5,
+      "note": "screening estimate; exact IC thermal model and board theta-JA required"
+    },
+    {
+      "input_v": 6.0,
+      "battery_v": 3.7,
+      "charge_a": 0.5,
+      "approx_dissipation_w": 1.15,
+      "note": "screening estimate; exact IC thermal model and board theta-JA required"
+    },
+    {
+      "input_v": 6.0,
+      "battery_v": 4.2,
+      "charge_a": 0.5,
+      "approx_dissipation_w": 0.8999999999999999,
+      "note": "screening estimate; exact IC thermal model and board theta-JA required"
+    }
+  ],
+  "i2c": [
+    {
+      "capacitance_pf": 100,
+      "pullup_ohm": 4700,
+      "rise_time_ns": 398.23100000000005,
+      "sink_current_ma": 0.7021276595744681,
+      "standard_100k_limit_ns": 1000,
+      "fast_400k_limit_ns": 300,
+      "status_100k": "PASS",
+      "status_400k": "FAIL"
+    },
+    {
+      "capacitance_pf": 100,
+      "pullup_ohm": 2200,
+      "rise_time_ns": 186.40600000000003,
+      "sink_current_ma": 1.4999999999999998,
+      "standard_100k_limit_ns": 1000,
+      "fast_400k_limit_ns": 300,
+      "status_100k": "PASS",
+      "status_400k": "PASS"
+    },
+    {
+      "capacitance_pf": 100,
+      "pullup_ohm": 1000,
+      "rise_time_ns": 84.72999999999999,
+      "sink_current_ma": 3.3,
+      "standard_100k_limit_ns": 1000,
+      "fast_400k_limit_ns": 300,
+      "status_100k": "PASS",
+      "status_400k": "PASS"
+    },
+    {
+      "capacitance_pf": 200,
+      "pullup_ohm": 4700,
+      "rise_time_ns": 796.4620000000001,
+      "sink_current_ma": 0.7021276595744681,
+      "standard_100k_limit_ns": 1000,
+      "fast_400k_limit_ns": 300,
+      "status_100k": "PASS",
+      "status_400k": "FAIL"
+    },
+    {
+      "capacitance_pf": 200,
+      "pullup_ohm": 2200,
+      "rise_time_ns": 372.81200000000007,
+      "sink_current_ma": 1.4999999999999998,
+      "standard_100k_limit_ns": 1000,
+      "fast_400k_limit_ns": 300,
+      "status_100k": "PASS",
+      "status_400k": "FAIL"
+    },
+    {
+      "capacitance_pf": 200,
+      "pullup_ohm": 1000,
+      "rise_time_ns": 169.45999999999998,
+      "sink_current_ma": 3.3,
+      "standard_100k_limit_ns": 1000,
+      "fast_400k_limit_ns": 300,
+      "status_100k": "PASS",
+      "status_400k": "PASS"
+    }
+  ],
+  "audio": {
+    "raw_bps": 384000,
+    "with_overhead_bps": 480000.0,
+    "bytes_per_day": 5184000000.0,
+    "gib_per_day": 4.827976226806641,
+    "note": "continuous raw audio; event/features mode may reduce this"
+  },
+  "limitations": [
+    "Inputs are assumptions pending exact datasheets, client requirements and measurements.",
+    "No result is prototype validation or supplier availability evidence."
+  ]
+}

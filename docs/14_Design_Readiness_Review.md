@@ -1,7 +1,7 @@
 # 14 — Design Readiness Review
 
 ## Gate summary
-**Recommendation: CONDITIONAL GO for requirements clarification, architecture study and placement/power feasibility; NO-GO for final schematic capture and PCB layout.** This is a pre-schematic package. No completion percentage or physical pass is claimed.
+**Recommendation: CONDITIONAL GO for requirements clarification, architecture study and placement/power feasibility; NO-GO for final schematic capture and PCB layout.** The independent audit in [18](18_Mathematical_Engineering_Analysis.md)–[22](22_Pre_Schematic_Correction_and_Readiness_Report.md) confirms a plausible architecture but exposes assumption-bound power, dock timing, audio-storage and component-selection limitations. No completion percentage or physical pass is claimed.
 
 | Area | State | Evidence / next gate |
 |---|---|---|
@@ -16,11 +16,12 @@
 | Validation | Plan ready, execution pending | [12](12_Validation_Test_Plan.md) |
 
 ## Capture blockers
-1. Mechanical/enclosure/dock geometry and FPC bend/installation constraints.
-2. Battery capacity, protection, current, external/solar input and USB-PD decision.
-3. Exact sensor population, accuracy/environmental requirements and audio sampling intent.
-4. Dock pin count, length, cycle life, protocol and signal-integrity acceptance.
-5. ESP32-S3 module variant, expansion connector format and complete I/O priorities.
+1. Exact ESP32-S3 module suffix and conflict-free GPIO/peripheral budget.
+2. V1 sensor population, exact MPNs, addresses, sample rates and audio operating mode.
+3. Mechanical/enclosure/dock geometry and FPC bend/installation constraints.
+4. Battery capacity, protection, current, external/solar input and USB-PD decision.
+5. Dock pin count, length, cycle life, protocol and signal-integrity acceptance.
+6. Expansion connector format and complete I/O priorities.
 
 ## Ready now
 Write requirements, architecture, clarification questions, candidate research, preliminary power model, canonical naming and test procedures. **Not ready:** freeze footprints, capture final schematic, route, release fabrication files, or claim validation. 

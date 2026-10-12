@@ -1,0 +1,4 @@
+input_v,battery_v,charge_a,approx_dissipation_w,note
+6.0,3.0,0.5,1.5,screening estimate; exact IC thermal model and board theta-JA required
+6.0,3.7,0.5,1.15,screening estimate; exact IC thermal model and board theta-JA required
+6.0,4.2,0.5,0.8999999999999999,screening estimate; exact IC thermal model and board theta-JA required
