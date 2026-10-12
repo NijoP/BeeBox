@@ -1,0 +1,90 @@
+{
+  "loads_mA": {
+    "ESP32_S3_active_est": 240,
+    "ESP32_S3_RF_peak_est": 430,
+    "local_SHT45_est": 1,
+    "external_ICS43434_est": 0.7,
+    "FPC_SHT45_est": 1,
+    "FPC_ICS43434_est": 0.7,
+    "IMU_est": 1,
+    "storage_write_est": 80,
+    "dock_logic_est": 10,
+    "status_LED_max": 5
+  },
+  "power": [
+    {
+      "scenario": "sleep_screen",
+      "current_mA": 11,
+      "power_W": 0.0407,
+      "runtime_h": 128.00000000000003,
+      "status": "PROVISIONAL"
+    },
+    {
+      "scenario": "normal_logging",
+      "current_mA": 334.4,
+      "power_W": 1.23728,
+      "runtime_h": 4.210526315789474,
+      "status": "PROVISIONAL"
+    },
+    {
+      "scenario": "wifi_logging",
+      "current_mA": 524.4,
+      "power_W": 1.94028,
+      "runtime_h": 2.6849733028222733,
+      "status": "PROVISIONAL"
+    }
+  ],
+  "charger": [
+    {
+      "vin_V": 6,
+      "vbat_V": 3.0,
+      "ichg_A": 0.5,
+      "loss_W": 1.5,
+      "status": "THERMAL_REVIEW_REQUIRED"
+    },
+    {
+      "vin_V": 6,
+      "vbat_V": 3.7,
+      "ichg_A": 0.5,
+      "loss_W": 1.15,
+      "status": "THERMAL_REVIEW_REQUIRED"
+    },
+    {
+      "vin_V": 6,
+      "vbat_V": 4.2,
+      "ichg_A": 0.5,
+      "loss_W": 0.8999999999999999,
+      "status": "THERMAL_REVIEW_REQUIRED"
+    }
+  ],
+  "status_led": [
+    {
+      "colour": "red",
+      "vf_assumed_V": 1.9,
+      "resistor_ohm": 1000,
+      "current_mA": 1.4
+    },
+    {
+      "colour": "green",
+      "vf_assumed_V": 2.1,
+      "resistor_ohm": 1000,
+      "current_mA": 1.1999999999999997
+    },
+    {
+      "colour": "blue",
+      "vf_assumed_V": 2.8,
+      "resistor_ohm": 1000,
+      "current_mA": 0.5
+    }
+  ],
+  "i2c": {
+    "pullup_ohm": 2200,
+    "capacitance_pF": 200,
+    "rise_time_ns": 372.81200000000007,
+    "criterion_ns": 1000,
+    "status": "PASS_CALCULATED_100KHZ_ASSUMPTION_BOUND"
+  },
+  "notes": [
+    "No measured values are included. Replace all estimated currents with exact selected-part maximum/typical data and firmware duty cycles."
+  ]
+}

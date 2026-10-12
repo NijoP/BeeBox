@@ -1,6 +1,6 @@
 # 22 — Pre-Schematic Correction and Readiness Report
 
-**Audit verdict:** **CONDITIONAL GO for schematic planning; NO-GO for final schematic capture until the listed blockers are resolved.** The mathematical work establishes design direction and exposes margins; it does not establish measured runtime, dock reliability, thermal performance, field suitability or manufacturing yield.
+**Audit verdict:** **GO for a controlled preliminary schematic draft using the baseline in [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md); NO-GO for final schematic release, PCB/FPC layout release or manufacturing.** The mathematical work establishes design direction and exposes margins; it does not establish measured runtime, dock reliability, thermal performance, field suitability or manufacturing yield.
 
 ## Retain / replace / investigate
 | Decision | Item | Reason |
@@ -37,7 +37,9 @@ These are assumption-bound calculations. They are not authorization to claim the
 9. Replace all assumed cost/stock claims with dated Indian supplier quotations and qualified alternatives.
 
 ## Schematic authorization conditions
-Schematic capture may begin for a **controlled draft** when the architecture is recorded, V1 sensor population is selected, exact candidate MPNs are listed, power topology is dimensioned, GPIO budget is conflict-free, and the dock has a defined pinout strategy. It may not be released for layout/fabrication until battery/input, connector/mechanical and dock-protocol blockers are closed or explicitly accepted by the client.
+The baseline now provides enough information for a **controlled preliminary schematic draft**: a proposed MCU variant, V1 sensor population, draft GPIO map, dimensioned power topology, 11-contact dock pinout, protection line items and explicit DNI options are recorded in [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md). Every provisional item must be marked in the schematic and reviewed.
+
+It may not be released for layout/fabrication until the exact ESP32-S3 suffix/footprint, battery/input, connector/mechanical envelope, USB-PD decision, final dock protocol and client sensor acceptance criteria are closed or explicitly accepted.
 
 ## Open issues and corrections (Table E)
 | Issue ID | Existing decision | Evidence | Root cause | Proposed correction | Calculation/BOM impact | Client approval | Blocks schematic? | Owner/status |

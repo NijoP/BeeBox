@@ -12,8 +12,10 @@
 | Charger/power path | TI BQ24074 | 1-cell charger/power-path; configure input limits | Analog Devices LTC4054 plus load switch: simpler, less integrated | Topology candidate; [datasheet](https://www.ti.com/lit/ds/symlink/bq24074.pdf) |
 | 3.3 V regulator | TI TPS62162 buck | efficient, input range suited after power path; inductor/layout required | low-Iq LDO: simpler but thermal/runtime trade | Candidate; [datasheet](https://www.ti.com/lit/ds/symlink/tps62162.pdf) |
 | Fuel gauge | Analog Devices MAX17048 | I²C, 1-cell model-gauge | no gauge + ADC: lower BOM, poorer SoC estimate | Optional; [datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/max17048-max17049.pdf) |
-| ESD | TI TPD4E05U06 | low-capacitance multi-line protection | Nexperia PESD: compare capacitance/package | Candidate at exposed dock/USB; [datasheet](https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf) |
+| ESD | TI TPD4E05U06 | low-capacitance multi-line protection | Nexperia PESD: compare capacitance/package | Candidate at suitable data lines; not input OVP; [datasheet](https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf) |
 | USB-C | USB Type-C receptacle, exact MPN TBD | CC resistors, ESD, mechanical anchors | alternate receptacle validated by fab | MPN not frozen; do not claim stock |
+| External input protection | TI TPS2660 | eFuse/OVP candidate for ~6 V input | discrete fuse + reverse MOSFET: lower cost, less integrated protection | Candidate; [datasheet](https://www.ti.com/lit/ds/symlink/tps2660.pdf) |
+| I²C branch | TI TCA9546A | 4-channel I²C switch for same-address sensors and isolation | TCA9517/TCA4307: buffering/hot swap trade | Candidate; [datasheet](https://www.ti.com/lit/ds/symlink/tca9546a.pdf) |
 | Dock connector | Hirose BM20/BM22 or Molex SlimStack family, exact MPN TBD | fine-pitch options; not a pogo pin by itself | ZIF/FPC connector or spring contacts | mechanical study required |
 
 ## Selection checks before commitment

@@ -34,6 +34,9 @@ flowchart LR
 ## Data model recommendation
 Each record should include device ID, FPC ID, sensor ID, UTC timestamp, monotonic sequence, sample rate, calibration revision, supply state, firmware version and quality flags. Time synchronization accuracy and offline buffering depth are client questions.
 
-## Decisions not yet frozen
-Exact sensor MPNs, dock protocol, pogo count, battery, enclosure, SD connector, RF expansion mechanical format, and solar/PD requirements. See [06](06_Interface_and_Sensor_FPC_Guide.md), [14](14_Design_Readiness_Review.md).
+## V1 baseline resolution
+The proposed one-bee-box baseline is documented in [23 Baseline Resolution](23_Baseline_Resolution_and_Schematic_Capture_Package.md): ESP32-S3-WROOM-1-N16R8 candidate; one internal SHT45, one ICS-43434 and one ICM-42688-P; 1S 2,000 mAh protected LiPo target; BQ24074-class power path; TPS62162 3.3 V buck; TCA9546A I²C branch isolation; 11-contact dock carrying 100 kHz I²C plus I²S. These are engineering baselines, not client-approved final selections.
+
+## Decisions still requiring approval
+Exact sensor MPN confirmation, pogo/FPC connector, battery mechanical part, enclosure, SD connector, RF expansion mechanical format, USB-PD requirement and solar operating envelope remain approval gates. See [06](06_Interface_and_Sensor_FPC_Guide.md), [14](14_Design_Readiness_Review.md), and [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md).
 > Navigation: [README](../README.md) · [Requirements](01_Project_Requirement_Analysis.md) · [Architecture](02_System_Architecture.md) · [BOM](04_BOM_Selection.md) · [Power](05_Power_Architecture.md) · [Interfaces](06_Interface_and_Sensor_FPC_Guide.md) · [DRR](14_Design_Readiness_Review.md)

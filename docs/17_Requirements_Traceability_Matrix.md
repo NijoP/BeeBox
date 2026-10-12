@@ -21,7 +21,7 @@
 | HB-DOC-01/02 | [18](18_Mathematical_Engineering_Analysis.md) I²C rise-time table; [20](20_Interface_and_Power_Budget_Matrices.md) dock trade study | PROVISIONAL; exact Cb, connector data and cycle/SI tests required |
 | HB-IO-01 | [20](20_Interface_and_Power_Budget_Matrices.md) GPIO budget | BLOCKED — exact ESP32-S3 module and allocation required |
 | HB-DATA-01 | [18](18_Mathematical_Engineering_Analysis.md) audio/storage calculation | PROVISIONAL; research audio mode and storage capacity required |
-| HB-FPC-01/02/03 | [19](19_Component_Compliance_and_Selection_Audit.md), [22](22_Pre_Schematic_Correction_and_Readiness_Report.md) | BLOCKED — exact connector, geometry and fab data required |
+| HB-FPC-01/02/03 | [19](19_Component_Compliance_and_Selection_Audit.md), [22](22_Pre_Schematic_Correction_and_Readiness_Report.md), [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md) | PROVISIONAL baseline; exact connector, geometry and fab data required |
 
 This matrix is the canonical cross-reference to [01](01_Project_Requirement_Analysis.md); it intentionally does not create new requirements. 
 > Navigation: [README](../README.md) · [Requirements](01_Project_Requirement_Analysis.md) · [Architecture](02_System_Architecture.md) · [BOM](04_BOM_Selection.md) · [Power](05_Power_Architecture.md) · [Interfaces](06_Interface_and_Sensor_FPC_Guide.md) · [DRR](14_Design_Readiness_Review.md)

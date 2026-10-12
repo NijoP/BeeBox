@@ -1,0 +1,4 @@
+scenario,current_mA,power_W,runtime_h,status
+sleep_screen,11,0.0407,128.00000000000003,PROVISIONAL
+normal_logging,334.4,1.23728,4.210526315789474,PROVISIONAL
+wifi_logging,524.4,1.94028,2.6849733028222733,PROVISIONAL

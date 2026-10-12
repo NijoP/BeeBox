@@ -11,7 +11,7 @@
 | BOM | Provisional | [04](04_BOM_Selection.md); no price/stock claims |
 | Power | Provisional | [05](05_Power_Architecture.md); cell/input/charge specs required |
 | Dock/FPC | Not capture-ready | [06](06_Interface_and_Sensor_FPC_Guide.md); protocol/mechanics blocker |
-| Schematic plan | Plan ready, capture blocked | [07](07_Schematic_Design_Plan.md) |
+| Schematic plan | Controlled preliminary draft authorized; release blocked | [07](07_Schematic_Design_Plan.md), [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md) |
 | PCB/FPC plan | Study ready, layout blocked | [08](08_PCB_Design_Plan.md) and mechanical CAD |
 | Validation | Plan ready, execution pending | [12](12_Validation_Test_Plan.md) |
 
@@ -24,5 +24,5 @@
 6. Expansion connector format and complete I/O priorities.
 
 ## Ready now
-Write requirements, architecture, clarification questions, candidate research, preliminary power model, canonical naming and test procedures. **Not ready:** freeze footprints, capture final schematic, route, release fabrication files, or claim validation. 
+Requirements, architecture, clarification questions, candidate research, preliminary power model, canonical naming and test procedures are ready. A controlled preliminary schematic draft may start from [23](23_Baseline_Resolution_and_Schematic_Capture_Package.md). **Not ready:** freeze footprints, release final schematic, route, release fabrication files, or claim validation. 
 > Navigation: [README](../README.md) · [Requirements](01_Project_Requirement_Analysis.md) · [Architecture](02_System_Architecture.md) · [BOM](04_BOM_Selection.md) · [Power](05_Power_Architecture.md) · [Interfaces](06_Interface_and_Sensor_FPC_Guide.md) · [DRR](14_Design_Readiness_Review.md)

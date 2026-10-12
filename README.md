@@ -32,7 +32,7 @@ The source is `Honeybee_Colony_Research_Sensor_Platform_RFQ(1).pdf`, inspected l
 | 17 | [Requirements Traceability Matrix](docs/17_Requirements_Traceability_Matrix.md) |
 
 ## Verification phase summary
-An independent mathematical/component audit is now included. Screening calculations found the 100 kHz I²C dock case feasible under an assumed 200 pF/4.7 kΩ budget, but 400 kHz fails that same case; charger dissipation at 6 V/0.5 A is potentially material; continuous 16 kHz/24-bit mono audio would require approximately 4.83 GiB/day with framing overhead. These are assumption-bound calculations, not prototype results. See [18](docs/18_Mathematical_Engineering_Analysis.md) and [22](docs/22_Pre_Schematic_Correction_and_Readiness_Report.md).
+An independent mathematical/component audit is now included. Screening calculations found the 100 kHz I²C dock case feasible under an assumed 200 pF/4.7 kΩ budget, but 400 kHz fails that same case; charger dissipation at 6 V/0.5 A is potentially material; continuous 16 kHz/24-bit mono audio would require approximately 4.83 GiB/day with framing overhead. These are assumption-bound calculations, not prototype results. A controlled preliminary schematic draft is now authorized using the documented V1 baseline, while final schematic/layout release remains gated. See [18](docs/18_Mathematical_Engineering_Analysis.md), [22](docs/22_Pre_Schematic_Correction_and_Readiness_Report.md) and [23](docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md).
 
 ## Verification documents
 | # | Document |
@@ -42,6 +42,7 @@ An independent mathematical/component audit is now included. Screening calculati
 | 20 | [Interface and Power Budget Matrices](docs/20_Interface_and_Power_Budget_Matrices.md) |
 | 21 | [Calculation Evidence and Reproduction](docs/21_Calculation_Evidence_and_Reproduction.md) |
 | 22 | [Pre-Schematic Correction and Readiness Report](docs/22_Pre_Schematic_Correction_and_Readiness_Report.md) |
+| 23 | [Baseline Resolution and Schematic-Capture Package](docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md) |
 
 ## Phase plan
 1. Resolve client mechanical, power, sensor, dock, data and acceptance questions.

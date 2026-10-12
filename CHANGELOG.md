@@ -10,3 +10,8 @@
 - Added documents 18–22 covering mathematical analysis, component compliance, interface/power matrices, reproduction evidence and pre-schematic correction/readiness.
 - Corrected the readiness assessment: 100 kHz I²C is only assumption-bound feasible; the 400 kHz worst-case screen fails; charger dissipation and continuous audio storage require further decisions.
 - Retained the ESP32-S3 architecture provisionally while gating exact module, battery, dock, sensor population and power-topology decisions.
+
+## 2026-10-12 — Blocker resolution baseline
+- Defined a one-bee-box V1 baseline: ESP32-S3-WROOM-1-N16R8 candidate, SHT45 + ICS-43434 + ICM-42688-P FPC population, 1S 2,000 mAh protected LiPo target, BQ24074/TPS62162 power baseline, TCA9546A bus isolation and an 11-contact dock.
+- Added a draft complete GPIO map, dock pinout, status LED design, expanded schematic-level BOM, preliminary mechanical envelopes and baseline calculations.
+- Authorized controlled preliminary schematic drafting while retaining final-release gates for exact parts, mechanics, battery/input, USB-PD, dock validation and client acceptance criteria.
