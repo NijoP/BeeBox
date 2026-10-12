@@ -98,7 +98,7 @@ async function placeIC(part, x, y, rot, ref) {
 }
 async function placePassive(ref, kind, val, netA, netB, x, y) {
   const part=await pickPassive(kind,val); if (!part) throw new Error(`no ${kind} ${val} for ${ref}`);
-  const c=await placeIC(part,x,y,0,ref); await eda.sch_PrimitiveComponent.modify(c,{value:val,otherProperty:{MPN:part.manufacturerId||part.name||'',Package:'0603 preliminary'}}); const pins=await eda.sch_PrimitiveComponent.getAllPinsByPrimitiveId(c.getState_PrimitiveId());
+  const c=await placeIC(part,x,y,0,ref); await eda.sch_PrimitiveComponent.modify(c,{designator:ref,value:val,otherProperty:{MPN:part.manufacturerId||part.name||'',Package:'0603 preliminary'}}); const pins=await eda.sch_PrimitiveComponent.getAllPinsByPrimitiveId(c.getState_PrimitiveId());
   if (!pins || pins.length<2) throw new Error(`passive ${ref} does not expose two pins`);
   let mx=0,my=0; for (const p of pins) { mx+=p.getState_X(); my+=p.getState_Y(); } mx/=pins.length; my/=pins.length;
   for (const [p,n] of [[pins[0],netA],[pins[1],netB]]) { const px=p.getState_X(),py=p.getState_Y(); const [dx,dy]=pinDir({rotation:p.getState_Rotation(),x:px,y:py},mx,my); await eda.sch_PrimitiveWire.create([px,py,px+dx*OUT,py+dy*OUT],n); }

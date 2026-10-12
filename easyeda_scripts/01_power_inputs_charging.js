@@ -98,7 +98,7 @@ async function placeIC(part, x, y, rot, ref) {
 }
 async function placePassive(ref, kind, val, netA, netB, x, y) {
   const part=await pickPassive(kind,val); if (!part) throw new Error(`no ${kind} ${val} for ${ref}`);
-  const c=await placeIC(part,x,y,0,ref); await eda.sch_PrimitiveComponent.modify(c,{value:val,otherProperty:{MPN:part.manufacturerId||part.name||'',Package:'0603 preliminary'}}); const pins=await eda.sch_PrimitiveComponent.getAllPinsByPrimitiveId(c.getState_PrimitiveId());
+  const c=await placeIC(part,x,y,0,ref); await eda.sch_PrimitiveComponent.modify(c,{designator:ref,value:val,otherProperty:{MPN:part.manufacturerId||part.name||'',Package:'0603 preliminary'}}); const pins=await eda.sch_PrimitiveComponent.getAllPinsByPrimitiveId(c.getState_PrimitiveId());
   if (!pins || pins.length<2) throw new Error(`passive ${ref} does not expose two pins`);
   let mx=0,my=0; for (const p of pins) { mx+=p.getState_X(); my+=p.getState_Y(); } mx/=pins.length; my/=pins.length;
   for (const [p,n] of [[pins[0],netA],[pins[1],netB]]) { const px=p.getState_X(),py=p.getState_Y(); const [dx,dy]=pinDir({rotation:p.getState_Rotation(),x:px,y:py},mx,my); await eda.sch_PrimitiveWire.create([px,py,px+dx*OUT,py+dy*OUT],n); }
@@ -116,16 +116,20 @@ const PARTS = [
   { ref: 'U2', query: 'BQ24074RGTR', token: 'bq24074rgtr', col: 0, row: 0, rot: 0, pinMap: {"TS": "BATT_TS", "BAT": "VBAT", "CE#": "GND", "EN2": "GND", "EN1": "+3V3", "PGOOD#": "CHARGER_PGOOD", "VSS": "GND", "CHG#": "CHARGER_CHG", "OUT": "VSYS", "ILIM": "CHARGER_ILIM", "IN": "VIN_CHARGER", "TMR": "CHARGER_TMR", "ITERM": "CHARGER_ITERM", "ISET": "CHARGER_ISET", "EP": "GND"} },
   { ref: 'U6', query: 'TPS26600RHFT', token: 'tps26600rhft', col: 1, row: 0, rot: 0, pinMap: {"N.C": null, "IN": "VIN_EXT_RAW", "UVLO": "EXT_UVLO", "OVP": "EXT_OVP", "MODE": "EXT_MODE", "SHDN#": "EXT_SHDN", "RTN": "GND", "GND": "GND", "IMON": "EXT_IMON", "ILIM": "EXT_ILIM", "dVdT": "EXT_DVDT", "FLT#": "EXT_FLT", "OUT": "VIN_EXT_PROTECTED", "EP": "GND"} },
   { ref: 'U11', query: 'TPS2121RUXR', token: 'tps2121ruxr', col: 2, row: 0, rot: 0, pinMap: {"OUT": "VIN_CHARGER", "IN2": "VIN_EXT_PROTECTED", "CP2": "PWRMUX_CP2", "OV2": "PWRMUX_OV2", "OV1": "PWRMUX_OV1", "PR1": "PWRMUX_PR1", "IN1": "VBUS_USB", "ST": "PWRMUX_ST", "ILM": "PWRMUX_ILM", "SS": "PWRMUX_SS", "GND": "GND"} },
-  { ref: 'J1', query: 'USB4105-GF-A-060', token: 'usb4105-gf-a-060', col: 3, row: 0, rot: 0, pinMap: {"GND": "GND", "VBUS": "VBUS_USB", "SBU2": null, "CC1": "USB_CC1", "DN2": "USB_D_N", "DP1": "USB_D_P", "DN1": "USB_D_N", "DP2": "USB_D_P", "SBU1": null, "CC2": "USB_CC2"} },
-  { ref: 'D1', query: 'TPD4EUSB30', token: 'id:TPD4EUSB30DQAR', col: 4, row: 0, rot: 0, pinMap: {"D1+": "USB_D_P", "D1-": "USB_D_N", "GND": "GND", "D2+": "USB_D_P", "D2-": "USB_D_N", "N.C.": null, "NC": null} },
+  { ref: 'J1', query: 'TYPE-C-31-M-12', token: 'id:TYPE-C-31-M-12', col: 3, row: 0, rot: 0, pinMap: {"GND": "GND", "VBUS": "VBUS_USB", "SBU2": null, "CC1": "USB_CC1", "DN2": "USB_D_N", "DP1": "USB_D_P", "DN1": "USB_D_N", "DP2": "USB_D_P", "SBU1": null, "CC2": "USB_CC2", "EH": "GND"} },
+  { ref: 'D6', query: 'USBLC6-2SC6', token: 'id:USBLC6-2SC6', col: 4, row: 0, rot: 0, pinMap: {"1": "USB_D_P", "2": "GND", "3": "USB_D_N", "4": "USB_D_N", "5": "GND", "6": "USB_D_P"} },
   { ref: 'J4', query: 'XY-S2B-PH-SM4-TB', token: 'xy-s2b-ph-sm4-tb', col: 5, row: 0, rot: 0, pinMap: {"1": "VBAT", "2": "VBAT", "3": "GND", "4": "GND"} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]
 const PASSIVES = [
-  ['R11', 'R', '1.78k', 'ISET', 'GND'],
-  ['R12', 'R', '1.54k', 'ILIM', 'GND'],
-  ['R13', 'R', '46.4k', 'TMR', 'GND']
+  ['R6', 'R', '5.1k', 'USB_CC1', 'GND'],
+  ['R7', 'R', '5.1k', 'USB_CC2', 'GND'],
+  ['C21', 'C', '10uF', 'VBUS_USB', 'GND'],
+  ['C22', 'C', '10nF', 'VBUS_USB', 'GND'],
+  ['R11', 'R', '1.78k', 'CHARGER_ISET', 'GND'],
+  ['R12', 'R', '1.54k', 'EXT_ILIM', 'GND'],
+  ['R13', 'R', '46.4k', 'CHARGER_TMR', 'GND']
 ];
 
 /* ============================ DRIVER ======================================== */
