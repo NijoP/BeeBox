@@ -109,8 +109,8 @@ const GRID_Y = 500;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
 const PARTS = [
-  { ref: 'U3', query: 'TPS62162DSGR', token: 'id:TPS62162DSGR', col: 0, row: 0, rot: 0, pinMap: {"VIN": "VSYS", "VOUT": "+3V3", "FB": "FB_3V3"} },
-  { ref: 'Q1', query: 'TPS22919DCKR', token: 'id:TPS22919DCKR', col: 1, row: 0, rot: 0, pinMap: {"VIN": "VSYS", "VOUT": "VDOCK", "ON": "DOCK_EN"} }
+  { ref: 'U3', query: 'TPS62162DSGR', token: 'id:TPS62162DSGR', col: 0, row: 0, rot: 0, pinMap: {"PGND": "GND", "VIN": "VSYS", "EN": "REG_EN", "AGND": "GND", "FB": "FB_3V3", "VOS": "+3V3", "SW": "BUCK_SW", "PG": "REG_PG", "EP": "GND"} },
+  { ref: 'Q1', query: 'TPS22919DCKR', token: 'id:TPS22919DCKR', col: 1, row: 0, rot: 0, pinMap: {"IN": "VSYS", "GND": "GND", "ON": "DOCK_EN", "NC": null, "QOD": "GND", "VOUT": "VDOCK"} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]
