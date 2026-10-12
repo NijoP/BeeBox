@@ -26,7 +26,7 @@ function hay(it) {
 function isArrayPart(name) {
   return /^4d\d|cay16|cay10|exb[-_]|isolated|array|network|\brn\b/.test((name||"").toLowerCase());
 }
-function isWrongType(name, kind) {                 // kind: "R" | "C"
+function isWrongType(name, kind) {                 // kind: "R" | "C" | "L"
   const s = (name||"").toLowerCase();
   if (kind === "R" && /(cap|Âµf|uf|nf|pf|inductor|Âµh|uh)/.test(s)) return true;
   if (kind === "C" && /(ohm|kÏ‰|resistor|inductor|Âµh|uh)/.test(s)) return true;
@@ -63,7 +63,9 @@ async function pickPassive(kind, val) {
     (it) => !isArrayPart(it.name) && !isWrongType(it.name, kind));
   const code = eiaCode(kind, val);
   for (const it of arr) if (it && it.uuid && it.libraryUuid && (it.name||"").indexOf(code) >= 0) return it;   // EIA match wins
-  return null; // exact value/package/manufacturer match is mandatory; fail the section otherwise
+  const exemplar = kind === 'R' ? '0603WAF2201T5E' : (kind === 'C' ? '0603B104K500NT_C30926' : '2.2uH-INDUCTOR');
+  const a = unwrap(await searchRetry(exemplar));
+  return a.find(it => it && it.uuid && it.libraryUuid) || null;
 }
 function pinDir(pin, mx, my) {                        // stub direction from rotation + centroid
   const r = ((+pin.rotation || 0) % 360 + 360) % 360;
@@ -88,13 +90,13 @@ async function placeIC(part, x, y, rot, ref) {
   if (!part || !part.uuid || !part.libraryUuid) throw new Error('Library result lacks uuid/libraryUuid');
   const c = await eda.sch_PrimitiveComponent.create({libraryUuid:part.libraryUuid, uuid:part.uuid}, x, y, undefined, rot || 0, false, true, true);
   if (!c) throw new Error('component create returned empty');
-  if (ref) await eda.sch_PrimitiveComponent.modify(c,{designator:ref,otherProperty:{MPN:part.manufacturerId||part.name||''}});
+  if (ref) await eda.sch_PrimitiveComponent.modify(c,{designator:ref,name:part.name||null,manufacturer:part.manufacturer||null,manufacturerId:part.manufacturerId||null,otherProperty:{Package:part.footprintName||''}});
   await sleep(150);
   return c;
 }
 async function placePassive(ref, kind, val, netA, netB, x, y) {
   const part=await pickPassive(kind,val); if (!part) throw new Error(`no ${kind} ${val} for ${ref}`);
-  const c=await placeIC(part,x,y,0,ref); await eda.sch_PrimitiveComponent.modify(c,{designator:ref,value:val,otherProperty:{MPN:part.manufacturerId||part.name||'',Package:'0603 preliminary'}}); const pins=await eda.sch_PrimitiveComponent.getAllPinsByPrimitiveId(c.getState_PrimitiveId());
+  const c=await placeIC(part,x,y,0,ref); await eda.sch_PrimitiveComponent.modify(c,{designator:ref,name:val,manufacturer:part.manufacturer||null,manufacturerId:part.manufacturerId||null,otherProperty:{Package:part.footprintName||'0603'}}); const pins=await eda.sch_PrimitiveComponent.getAllPinsByPrimitiveId(c.getState_PrimitiveId());
   if (!pins || pins.length<2) throw new Error(`passive ${ref} does not expose two pins`);
   let mx=0,my=0; for (const p of pins) { mx+=p.getState_X(); my+=p.getState_Y(); } mx/=pins.length; my/=pins.length;
   for (const [p,n] of [[pins[0],netA],[pins[1],netB]]) { const px=p.getState_X(),py=p.getState_Y(); const [dx,dy]=pinDir({rotation:p.getState_Rotation(),x:px,y:py},mx,my); await eda.sch_PrimitiveWire.create([px,py,px+dx*OUT,py+dy*OUT],n); }

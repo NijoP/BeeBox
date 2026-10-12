@@ -1,0 +1,121 @@
+{
+  "ok": true,
+  "v": {
+    "componentCount": 16,
+    "wireCount": 91,
+    "components": [
+      {
+        "id": "2421a311c0340148",
+        "des": "U2",
+        "name": "BQ24074RGTR",
+        "x": 276,
+        "y": 315
+      },
+      {
+        "id": "0f9f38380ee11b82",
+        "des": "U6",
+        "name": "TPS26600RHFT",
+        "x": 876,
+        "y": 315
+      },
+      {
+        "id": "d3e98d10ba447c5d",
+        "des": "U11",
+        "name": "TPS2121RUXR",
+        "x": 1476,
+        "y": 315
+      },
+      {
+        "id": "1bbaacc8b88859ff",
+        "des": "J1",
+        "name": "TYPE-C-31-M-12",
+        "x": 2076,
+        "y": 315
+      },
+      {
+        "id": "9a256dcebf27c83b",
+        "des": "D6",
+        "name": "USBLC6-2SC6",
+        "x": 2676,
+        "y": 315
+      },
+      {
+        "id": "e078ceb4c14bffbc",
+        "des": "J4",
+        "name": "XY-S2B-PH-SM4-TB",
+        "x": 3276,
+        "y": 315
+      },
+      {
+        "id": "73c4c87cf5f8bc96",
+        "des": "R6",
+        "name": "5.1k",
+        "x": 1076,
+        "y": 915
+      },
+      {
+        "id": "e15b2db7e2378096",
+        "des": "R7",
+        "name": "5.1k",
+        "x": 1376,
+        "y": 915
+      },
+      {
+        "id": "e1bc0b6872f1aeb5",
+        "des": "C21",
+        "name": "10uF",
+        "x": 1676,
+        "y": 915
+      },
+      {
+        "id": "88c92693c87a27a9",
+        "des": "C22",
+        "name": "10nF",
+        "x": 1976,
+        "y": 915
+      },
+      {
+        "id": "633822d51ff8a64e",
+        "des": "U3",
+        "name": "TPS62162DSGR",
+        "x": 200,
+        "y": 200
+      },
+      {
+        "id": "1614727aa8577e67",
+        "des": "Q1",
+        "name": "TPS22919DCKR",
+        "x": 800,
+        "y": 200
+      },
+      {
+        "id": "96714427db82df15",
+        "des": "L1",
+        "name": "2.2uH",
+        "x": 1076,
+        "y": 915
+      },
+      {
+        "id": "9c1c6fc87bee238b",
+        "des": "R14",
+        "name": "100k",
+        "x": 1376,
+        "y": 915
+      },
+      {
+        "id": "bcd7be6e57bfa5cd",
+        "des": "R15",
+        "name": "100k",
+        "x": 1676,
+        "y": 915
+      },
+      {
+        "id": "389aeedb614fd8c9",
+        "des": "U1",
+        "name": "ESP32-S3-WROOM-1-N16R8",
+        "x": 200,
+        "y": 200
+      }
+    ]
+  }
+}
