@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "v": {
+    "project": "d84c4be0ef2e467fa17955faa23c6314",
+    "page": "d5e34c82cc3ba89c",
+    "removedComponents": 55,
+    "removedWires": 240,
+    "componentCount": 0,
+    "wireCount": 0,
+    "preservedTitleBlock": {
+      "name": "P1",
+      "itemType": "Schematic Page",
+      "uuid": "d5e34c82cc3ba89c",
+      "parentSchematicUuid": "449f9b2562dabacc",
+      "parentSchematicName": "Schematic1",
+      "showTitleBlock": true,
+      "titleBlockData": {}
+    }
+  }
+}

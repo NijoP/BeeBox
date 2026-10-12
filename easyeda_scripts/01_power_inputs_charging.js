@@ -47,25 +47,25 @@ async function pick(query, token) {                 // token = "a|b|c" disambigu
   const arr = unwrap(await searchRetry(query));
   if (token.toLowerCase().startsWith('id:')) {
     const wanted = token.slice(3).toLowerCase();
-    return arr.find(it => it && it.uuid && it.libraryUuid && (it.manufacturerId||'').toLowerCase() === wanted) || null;
+    const matches = arr.filter(it => it && it.uuid && it.libraryUuid && (it.manufacturerId||'').toLowerCase() === wanted);
+    return matches.length === 1 ? matches[0] : null; // duplicate MPN records require a reviewed UUID, not first-match selection
   }
   const tks = token.toLowerCase().split("|");
   const matches = arr.filter(it => { if (!it || !it.uuid || !it.libraryUuid || isArrayPart(it.name||it.symbolName||'')) return false; const h = hay(it); return tks.some(t => t && h.indexOf(t) >= 0); });
   return matches.length === 1 ? matches[0] : null;    // ambiguous matches fail; never accept arr[0]
 }
-function eiaCode(kind, val) {                         // secondary value discriminator
-  // e.g. "100n"->"104", "47"->"470"(+letter tol). Fill per your value scheme.
-  return String(val).replace(/[^0-9]/g, "");
-}
-async function pickPassive(kind, val) {
-  const q = `${val} 0603 ${kind === "R" ? "resistor" : "capacitor"}`;
-  const arr = unwrap(await searchRetry(q)).filter(
-    (it) => !isArrayPart(it.name) && !isWrongType(it.name, kind));
-  const code = eiaCode(kind, val);
-  for (const it of arr) if (it && it.uuid && it.libraryUuid && (it.name||"").indexOf(code) >= 0) return it;   // EIA match wins
-  const exemplar = kind === 'R' ? '0603WAF2201T5E' : (kind === 'C' ? '0603B104K500NT_C30926' : '2.2uH-INDUCTOR');
-  const a = unwrap(await searchRetry(exemplar));
-  return a.find(it => it && it.uuid && it.libraryUuid) || null;
+async function pickPassive(ref, kind, val) {
+  const spec = PASSIVE_LIBRARY[ref];
+  if (!spec || spec.kind !== kind || spec.value !== val)
+    throw new Error(`Unverified passive ${ref}: ${kind} ${val}; no substitutions allowed`);
+  for (const key of ['mpn','manufacturer','package','tolerance','rating','evidence','uuid','libraryUuid'])
+    if (!spec[key]) throw new Error(`${ref}: verified passive lacks ${key}`);
+  if (kind === 'C' && !spec.dielectric) throw new Error(`${ref}: missing dielectric`);
+  const arr = unwrap(await searchRetry(spec.mpn));
+  const matches = arr.filter(it => it.uuid === spec.uuid && it.libraryUuid === spec.libraryUuid
+    && it.manufacturerId === spec.mpn && it.manufacturer === spec.manufacturer);
+  if (matches.length !== 1) throw new Error(`${ref}: exact reviewed library identity unavailable`);
+  return matches[0];
 }
 function pinDir(pin, mx, my) {                        // stub direction from rotation + centroid
   const r = ((+pin.rotation || 0) % 360 + 360) % 360;
@@ -91,21 +91,30 @@ async function placeIC(part, x, y, rot, ref) {
   const c = await eda.sch_PrimitiveComponent.create({libraryUuid:part.libraryUuid, uuid:part.uuid}, x, y, undefined, rot || 0, false, true, true);
   if (!c) throw new Error('component create returned empty');
   if (ref) await eda.sch_PrimitiveComponent.modify(c,{designator:ref,name:part.name||null,manufacturer:part.manufacturer||null,manufacturerId:part.manufacturerId||null,otherProperty:{Package:part.footprintName||''}});
-  await sleep(150);
-  return c;
+  const readback = await eda.sch_PrimitiveComponent.get(c.getState_PrimitiveId());
+  if (!readback || readback.getState_Designator() !== ref
+      || readback.getState_ManufacturerId() !== part.manufacturerId)
+    throw new Error(`Identity readback failed for ${ref}`);
+  return readback;
 }
 async function placePassive(ref, kind, val, netA, netB, x, y) {
-  const part=await pickPassive(kind,val); if (!part) throw new Error(`no ${kind} ${val} for ${ref}`);
+  const part=await pickPassive(ref,kind,val); if (!part) throw new Error(`no ${kind} ${val} for ${ref}`);
   const c=await placeIC(part,x,y,0,ref); await eda.sch_PrimitiveComponent.modify(c,{designator:ref,name:val,manufacturer:part.manufacturer||null,manufacturerId:part.manufacturerId||null,otherProperty:{Package:part.footprintName||'0603'}}); const pins=await eda.sch_PrimitiveComponent.getAllPinsByPrimitiveId(c.getState_PrimitiveId());
-  if (!pins || pins.length<2) throw new Error(`passive ${ref} does not expose two pins`);
+  const verified = await eda.sch_PrimitiveComponent.get(c.getState_PrimitiveId());
+  if (!verified || verified.getState_Name() !== val || verified.getState_Designator() !== ref
+      || verified.getState_ManufacturerId() !== part.manufacturerId)
+    throw new Error(`Passive readback mismatch ${ref}`);
+  if (!pins || pins.length!==2) throw new Error(`passive ${ref} must expose exactly two pins`);
   let mx=0,my=0; for (const p of pins) { mx+=p.getState_X(); my+=p.getState_Y(); } mx/=pins.length; my/=pins.length;
   for (const [p,n] of [[pins[0],netA],[pins[1],netB]]) { const px=p.getState_X(),py=p.getState_Y(); const [dx,dy]=pinDir({rotation:p.getState_Rotation(),x:px,y:py},mx,my); await eda.sch_PrimitiveWire.create([px,py,px+dx*OUT,py+dy*OUT],n); }
   return c;
 }
 
 /* ============================ CONFIG (fill this) ============================= */
+// Filled by the Python generator from the reviewed per-reference manifest.
+const PASSIVE_LIBRARY = {};
 const SECTION = "POWER_INPUTS";
-const BASE = [300,300];                              // tile origin for this section
+const BASE = [200, 200];                              // tile origin for this section
 const GRID_X = 300;                                   // compact grouped A0 zone spacing
 const GRID_Y = 350;
 
@@ -115,8 +124,8 @@ const PARTS = [
   { ref: 'U6', query: 'TPS26600RHFT', token: 'id:TPS26600RHFT', col: 1, row: 0, rot: 0, pinMap: {"N.C": null, "IN": "VIN_EXT_RAW", "UVLO": "EXT_UVLO", "OVP": "EXT_OVP", "MODE": "EXT_MODE", "SHDN#": "EXT_SHDN", "RTN": "GND", "GND": "GND", "IMON": "EXT_IMON", "ILIM": "EXT_ILIM", "dVdT": "EXT_DVDT", "FLT#": "EXT_FLT", "OUT": "VIN_EXT_PROTECTED", "EP": "GND"} },
   { ref: 'U11', query: 'TPS2121RUXR', token: 'id:TPS2121RUXR', col: 2, row: 0, rot: 0, pinMap: {"OUT": "VIN_CHARGER", "IN2": "VIN_EXT_PROTECTED", "CP2": "PWRMUX_CP2", "OV2": "PWRMUX_OV2", "OV1": "PWRMUX_OV1", "PR1": "PWRMUX_PR1", "IN1": "VBUS_USB", "ST": "PWRMUX_ST", "ILM": "PWRMUX_ILM", "SS": "PWRMUX_SS", "GND": "GND"} },
   { ref: 'J1', query: 'TYPE-C-31-M-12', token: 'id:TYPE-C-31-M-12', col: 3, row: 0, rot: 0, pinMap: {"GND": "GND", "VBUS": "VBUS_USB", "SBU2": null, "CC1": "USB_CC1", "DN2": "USB_D_N", "DP1": "USB_D_P", "DN1": "USB_D_N", "DP2": "USB_D_P", "SBU1": null, "CC2": "USB_CC2", "EH": "GND"} },
-  { ref: 'D6', query: 'USBLC6-2SC6', token: 'id:USBLC6-2SC6', col: 4, row: 0, rot: 0, pinMap: {"1": "USB_D_P", "2": "GND", "3": "USB_D_N", "4": "USB_D_N", "5": "GND", "6": "USB_D_P"} },
-  { ref: 'J4', query: 'XY-S2B-PH-SM4-TB', token: 'id:XY-S2B-PH-SM4-TB', col: 5, row: 0, rot: 0, pinMap: {"1": "VBAT", "2": "VBAT", "3": "GND", "4": "GND"} }
+  { ref: 'D6', query: 'USBLC6-2SC6', token: 'id:USBLC6-2SC6', col: 4, row: 0, rot: 0, pinMap: {"1": "USB_D_P", "2": "GND", "3": "USB_D_N", "4": "USB_D_N", "5": "VBUS_USB", "6": "USB_D_P"} },
+  { ref: 'J4', query: 'S2B-PH-SM4-TB', token: 'id:S2B-PH-SM4-TB', col: 5, row: 0, rot: 0, pinMap: {"1": "VBAT", "2": "VBAT", "3": "GND", "4": "GND"} }
 ];
 
 // PASSIVES: [ref, kind("R"|"C"), value, netA, netB]
@@ -126,7 +135,7 @@ const PASSIVES = [
   ['C21', 'C', '10uF', 'VBUS_USB', 'GND'],
   ['C22', 'C', '10nF', 'VBUS_USB', 'GND'],
   ['R11', 'R', '1.78k', 'CHARGER_ISET', 'GND'],
-  ['R12', 'R', '1.54k', 'EXT_ILIM', 'GND'],
+  ['R12', 'R', '1.54k', 'CHARGER_ILIM', 'GND'],
   ['R13', 'R', '46.4k', 'CHARGER_TMR', 'GND']
 ];
 
@@ -139,8 +148,25 @@ return await (async () => {
     const d = old && old.getState_Designator && old.getState_Designator();
     if (d) existing.add(d);
   }
+  // Resolve the entire section before any mutation: a missing passive must not
+  // leave another partial collection of ICs on the sheet.
+  const requested = [...PARTS.map(p=>p.ref), ...PASSIVES.map(p=>p[0])];
+  const seen = new Set();
+  for (const ref of requested) {
+    if (seen.has(ref) || existing.has(ref)) throw new Error(`duplicate designator ${ref}`);
+    seen.add(ref);
+  }
+  const resolved = new Map();
   for (const p of PARTS) {
-    const part = await pick(p.query, p.token);
+    if (p.ref === 'J3' && p.query === '0906-0-15-20-75-14-11-0')
+      throw new Error('J3 requires twelve independently mapped Mill-Max contacts; a one-contact part cannot implement a 12-pin connector');
+    const part = await pick(p.query,p.token);
+    if (!part) throw new Error(`missing exact library part ${p.ref}`);
+    resolved.set(p.ref,part);
+  }
+  for (const [ref,kind,val] of PASSIVES) resolved.set(ref,await pickPassive(ref,kind,val));
+  for (const p of PARTS) {
+    const part = resolved.get(p.ref);
     if (existing.has(p.ref)) throw new Error(`duplicate existing designator ${p.ref}`);
     if (!part) { log.push(`FAIL ${p.ref}: no token match for "${p.query}"`); throw new Error(`missing library part ${p.ref}`); }
     const x = BASE[0] + p.col * GRID_X, y = BASE[1] + p.row * GRID_Y;
@@ -151,12 +177,11 @@ return await (async () => {
   for (let i=0; i<PASSIVES.length; i++) {
     const [ref, kind, val, a, b] = PASSIVES[i];
     if (existing.has(ref)) throw new Error(`duplicate existing designator ${ref}`);
-    const part = await pickPassive(kind, val);
+    const part = resolved.get(ref);
     if (!part) { log.push(`FAIL ${ref}: no ${val} ${kind}`); throw new Error(`missing passive ${ref}`); }
     await placePassive(ref, kind, val, a, b, BASE[0] + 300 + i * 180, BASE[1] + 350);
     log.push(`OK ${ref} ${val} ${a}-${b} <- ${part.name}`);
   }
-  eda.sys_MessageBox.showInformationMessage(
-    `${SECTION}\n` + log.join("\n") + `\n\nNEXT: Design â–¸ Annotate (project-wide).`);
+  // No modal dialog: automation must return a result, not wait for UI input.
   return {section:SECTION,log};
 })();

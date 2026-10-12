@@ -1,5 +1,21 @@
 # EasyEDA script execution log
 
+## Current root-cause revision (supersedes historical statuses below)
+
+- Verified BEEBOX project UUID `d84c4be0ef2e467fa17955faa23c6314`, P1 UUID `d5e34c82cc3ba89c`.
+- Captured native source and 55-component/240-wire/292-pin readback.
+- Recovery probe actually reapplied the exact native source and preserved all 55 references.
+- Successfully API-exported `projects/beebox/05_schematic_audit/before_rootcause.pdf` and rendered/inspected its PNG locally: visual FAIL.
+- Observed 45 wire net names missing from the preliminary net dictionary; 52 pins without geometric wire contact, including possible intended NCs. Not an ERC error count.
+- Native DRC and native netlist extraction exceeded bridge deadlines; retained actual timeout results, no PASS.
+- Reset the verified page: removed 55 devices and 240 wires; preserved project/page/title metadata. Live readback now has zero components and zero wires.
+- Removed unsafe passive guessing/fallbacks; full-section preflight, intra-run duplicate rejection, and identity readback added.
+- Corrected source nets for charger R12, buck L1, LED series paths, and inactive U4 reset; restored specified D4 MPN.
+- Regression tests pass for fail-before-mutation cases. All scripts compile as asynchronous function bodies.
+- Actual power-section preflight rejected ambiguous/unresolved D6 identity before placement. Subsequent live readback remained empty. Section 01 is NOT complete; other sections were NOT executed in this revision.
+- Complete power support design, verified passive manifest, physical-pin canonical table, geometry-aware placement, A0 boundary and final ERC/visual approval are not yet complete. Existing generated section configurations remain preliminary and must not be treated as release-ready.
+
+
 **Date:** 2026-10-12
 
 The installed EasyEDA API skill documentation was inspected. The documented signatures used by the scripts are:

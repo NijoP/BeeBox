@@ -1,0 +1,164 @@
+Honeybee Colony Research Sensor Platform - RFQ
+Page 1
+RFQ - HONEYBEE COLONY RESEARCH SENSOR
+PLATFORM
+Modular Honeybee Hive Environmental & Behaviour Monitoring System
+1. PROJECT OBJECTIVE
+Develop a reusable research and prototyping platform for studying the relationship between external environmental
+conditions, internal hive micro-environment, bee activity and movement, acoustic/vibration behaviour, and colony response
+over time. The system will consist of a detachable external control/sensing unit and multiple internal universal sensor FPCs.
+2. EXTERNAL CONTROL & SENSING UNIT
+• Compact, displayless, Apple-Watch-style module.
+• ESP32-S3 MCU.
+• External temperature + humidity sensing.
+• MEMS microphone.
+• Accelerometer + gyroscope, if required.
+• 3.7 V rechargeable Li-ion/LiPo battery.
+• Battery charging and power-path management.
+• USB-C / USB-PD charging.
+• External ~6 V DC / solar power input.
+• Data logging/storage and Wi-Fi/BLE.
+• Interface to internal hive sensor patches.
+• Extensive accessible I/O for future prototyping.
+• Magnetic attachment to hive and easy removal without disturbing the hive.
+3. POGO-PIN DOCKING INTERFACE
+• Use pogo pins for the removable electrical connection between the external unit and hive.
+• Evaluate power and data through pogo pins, minimum practical pin count, repeated docking/undocking reliability,
+mechanical alignment, polarity/orientation protection, and signal integrity.
+• Critical: evaluate whether I2C is suitable across the pogo-pin/FPC connection. If not, recommend a more robust interface
+such as a differential bus.
+4. INTERNAL UNIVERSAL SENSOR FPC
+• Ultra-thin, flexible 2-layer polyimide FPC for installation inside the hive.
+• Core requirement: one universal FPC design supporting multiple sensor footprints so different experiments do not require
+a new FPC.
+• Possible footprints: Temperature/RH x2, MEMS microphone x2, accelerometer/IMU, VOC/environmental sensor, and
+future experimental sensors.
+• Only 2-3 sensors will normally be populated on each FPC; unused footprints remain empty.
+• Same base FPC must support different sensor combinations.
+5. FPC ELECTRICAL & MECHANICAL REQUIREMENTS
+• Minimum practical size and thickness; flexible and mechanically robust for hive installation.
+• Common power/data routing with minimum number of wires leaving each patch.
+• Prefer a single compact output connector.
+
+Honeybee Colony Research Sensor Platform - RFQ
+Page 2
+• Evaluate I-PEX / Molex / ZIF/FPC connector options.
+• Include pull-ups, decoupling, ESD/protection and appropriate sensor ventilation/openings.
+• Individual sensor footprints must be independently populated or left empty.
+• Target: SENSOR FPC -> SINGLE COMPACT CONNECTOR -> MINIMUM NUMBER OF WIRES -> EXTERNAL
+ESP32-S3 UNIT
+6. EXTERNAL ENVIRONMENTAL SENSORS
+• Position external temperature/humidity sensors so readings are not significantly affected by ESP32-S3, battery, charger,
+PMIC or other heat-generating electronics.
+• Propose suitable enclosure, sensor placement and ventilation.
+• Position the external microphone appropriately for ambient/acoustic measurements.
+7. POWER ARCHITECTURE
+• Primary: External ~6 V DC source / potential solar-powered source.
+• Backup: 3.7 V rechargeable Li-ion/LiPo battery.
+• Charging: USB-C / USB-PD.
+• Support automatic power-path switching: external power available -> system powered externally + battery charging;
+external power removed -> automatic battery backup.
+• External unit should continue operating from its internal battery when detached from the hive.
+8. MAXIMUM PROTOTYPING I/O & EXPANSION
+• Design the ESP32-S3 main board as a highly expandable research/prototyping platform.
+• Expose as many useful resources as practical through labelled test points, headers or compact expansion connectors.
+• Preferred interfaces: multiple GPIO, multiple I2C expansion points, SPI, UART, I2S, ADC, PWM, interrupt-capable GPIO,
+3.3 V, GND, system power outputs where appropriate, USB, and SD card interface if practical.
+• Prioritise maximum accessible I/O, easy debugging, test points and future expansion over extreme miniaturisation of the
+main board.
+9. RF MODULE EXPANSION
+• Provide provisions for prototyping RF modules such as Nordic nRF52/nRF53/nRF54, BLE modules, LoRa modules,
+Sub-GHz modules and other future RF transceivers.
+• Prefer an expansion interface with SPI and/or UART, 3.3 V, GND, reset, enable, IRQ and additional GPIO where practical.
+• Where appropriate, provide RF module footprint/mezzanine connector and U.FL/I-PEX antenna provision.
+• Goal: test different communication technologies without redesigning the main ESP32-S3 PCB.
+10. PROTOTYPING / DEVELOPMENT PHILOSOPHY
+• The external board should initially function as a Honeybee Research + Sensor Development + Prototyping Board, not
+only as a final production controller.
+• Prioritise maximum useful I/O, easy probing/debugging, expansion connectors, sensor experimentation, RF
+experimentation and firmware development.
+11. DATA & RESEARCH ARCHITECTURE
+• Synchronise measurements from external environment, internal hive environment and bee/colony response.
+• External: temperature, humidity, sound, motion/vibration and weather-related parameters.
+• Internal: temperature, humidity, CO2/VOC, sound, vibration and other experimental sensors.
+• Response: bee movement, activity level, acoustic behaviour, foraging activity and changes in colony behaviour.
+
+Honeybee Colony Research Sensor Platform - RFQ
+Page 3
+• Support timestamped data for data analysis, correlation studies, behavioural analysis, anomaly detection and future
+Edge-AI/ML development.
+12. COMPLETE I/O DOCUMENTATION
+• Provide a complete ESP32-S3 I/O map showing used GPIO, available GPIO, ADC channels, I2C, SPI, UART, I2S, PWM,
+interrupt-capable pins, expansion connectors, RF expansion interfaces and reserved/future-use pins.
+• Keep as many useful GPIO/peripheral resources physically accessible as possible.
+13. DELIVERABLES
+1.
+Overall system block diagram
+2.
+Electrical architecture
+3.
+ESP32-S3 main board schematic
+4.
+ESP32-S3 main board PCB layout
+5.
+Universal sensor FPC schematic
+6.
+Universal sensor FPC layout
+7.
+Connector and pinout specification
+8.
+Pogo-pin interface design
+9.
+Power/battery-management design
+10.
+RF expansion interface
+11.
+Complete ESP32-S3 I/O map
+12.
+BOM with alternative components
+13.
+Gerber/fabrication files
+14.
+Assembly files
+15.
+Prototype units
+16.
+Initial firmware/bring-up firmware
+17.
+Signal-integrity assessment of pogo/FPC data connection
+18.
+Power and battery-management analysis
+19.
+Manufacturing/prototype quotation
+20.
+Estimated development and manufacturing lead time
+14. PROTOTYPE QUOTATION
+Item
+Quantity
+ESP32-S3 External Main PCB
+5-10 units
+Universal Sensor FPC
+10-20 units
+PCB/FPC Assembly
+Please quote
+Components
+Please quote
+Pogo pins / connectors
+Please quote
+RF expansion connectors / headers
+Please quote
+
+Honeybee Colony Research Sensor Platform - RFQ
+Page 4
+Item
+Quantity
+Engineering / NRE
+Please quote
+Tooling / setup charges
+Please quote
+Please also provide estimated unit pricing at 100 / 500 / 1,000 units, where possible.
+CORE DESIGN PRINCIPLE
+This is NOT intended to be a single-purpose sensor board. The objective is to develop a modular honeybee research
+platform where we can study EXTERNAL ENVIRONMENT + INTERNAL HIVE ENVIRONMENT + BEE ACTIVITY +
+COLONY RESPONSE using interchangeable sensor configurations, experimental RF modules and future sensors
+while retaining the same ESP32-S3 external platform and universal internal sensor-FPC architecture.
