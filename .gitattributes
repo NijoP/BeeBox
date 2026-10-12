@@ -1,0 +1,5 @@
+# Exported evidence must retain exact bytes (PDF object offsets are byte-based).
+*.pdf binary
+*.png binary
+*.epro binary
+*.epro2 binary
