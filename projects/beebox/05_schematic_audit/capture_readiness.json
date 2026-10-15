@@ -1,0 +1,75 @@
+{
+  "status": "BLOCKED",
+  "scope": "PRE-MUTATION_CAPTURE_GATE",
+  "counts": {
+    "component_rows": 45,
+    "pin_to_pin_rows": 61,
+    "canonical_components": 15,
+    "verified_devices": 3,
+    "verified_passives": 4
+  },
+  "errors": [
+    {
+      "missing_verified_device_records": [
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "J2",
+        "J3",
+        "MIC1",
+        "MIC2",
+        "Q1",
+        "U1",
+        "U11",
+        "U12",
+        "U2",
+        "U3",
+        "U4",
+        "U6",
+        "U7",
+        "U8",
+        "U9"
+      ]
+    },
+    {
+      "missing_verified_passive_records": [
+        "C1",
+        "C10",
+        "C11",
+        "C12",
+        "C2",
+        "C3",
+        "L1",
+        "R1",
+        "R11",
+        "R12",
+        "R13",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ]
+    },
+    {
+      "missing_architecture_definition": "J4 is a 2-contact S2B-PH connector but TS/NTC is required and no approved thermal-sense connection is defined"
+    },
+    {
+      "missing_architecture_definition": "External ~6V input has no approved connector/TVS/threshold-divider component set"
+    },
+    {
+      "missing_architecture_definition": "TPS2121 PR1/CP2/OV1/OV2/ILM/SS networks and values are not fully specified"
+    },
+    {
+      "missing_architecture_definition": "TPS26600 UVLO/OVP/ILIM/dVdT/MODE/SHDN support values are not fully specified"
+    },
+    {
+      "missing_architecture_definition": "TPS62162 fixed-3V3 output cannot regulate at 3.3V over the full depleted 1S battery range"
+    },
+    {
+      "missing_architecture_definition": "Powered-off FPC signal isolation/back-power prevention is not resolved"
+    }
+  ],
+  "warnings": [],
+  "prohibition": "Do not execute sections 01-08 while status is BLOCKED; doing so would create arbitrary or incomplete circuitry."
+}

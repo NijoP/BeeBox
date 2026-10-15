@@ -1,0 +1,118 @@
+{
+  "ok": true,
+  "v": {
+    "engineeringReason": "USB total capacitance ceiling10uF incl tolerance;10uF bulk alone already exceeds it.4.7uF +/-10% leaves budget for other USB-side bypasses. Full inrush budget still must be verified.",
+    "oldId": "63f1fd0b7f64b884",
+    "newId": "f0e28100733d4b5b",
+    "mpn": "CL21B475KOFNNNE",
+    "value": "4.7uF",
+    "labelEdits": [
+      {
+        "wire": "851fdfd2656e5f0c",
+        "attribute": "43e5d422fb31a963",
+        "x": 260,
+        "y": -2785,
+        "rotation": 0,
+        "value": "VBUS_USB",
+        "valueVisible": true
+      },
+      {
+        "wire": "851fdfd2656e5f0c",
+        "attribute": "58b27bc58153365c",
+        "key": "",
+        "value": "",
+        "keyVisible": false,
+        "valueVisible": false
+      },
+      {
+        "wire": "f6facdb3ff873d3f",
+        "attribute": "6d89dc5aea62e94a",
+        "x": 260,
+        "y": -2705,
+        "rotation": 0,
+        "value": "GND",
+        "valueVisible": true
+      },
+      {
+        "wire": "f6facdb3ff873d3f",
+        "attribute": "60c040005e69c043",
+        "key": "",
+        "value": "",
+        "keyVisible": false,
+        "valueVisible": false
+      },
+      {
+        "wire": "638a6a0ca74aeec3",
+        "attribute": "a258d16c402c0197",
+        "x": 300,
+        "y": -3045,
+        "rotation": 0,
+        "value": "VBUS_USB",
+        "valueVisible": true
+      },
+      {
+        "wire": "9c23d2d74d3efac2",
+        "attribute": "d506c178e11d599c",
+        "x": 300,
+        "y": -2955,
+        "rotation": 0,
+        "value": "VBUS_USB",
+        "valueVisible": true
+      },
+      {
+        "wire": "ec1b9ea448460651",
+        "attribute": "e61590aebd26d582",
+        "x": 300,
+        "y": -3055,
+        "rotation": 0,
+        "value": "GND",
+        "valueVisible": true
+      },
+      {
+        "wire": "0787bf658ccc130c",
+        "attribute": "995eacb7975d55e7",
+        "x": 300,
+        "y": -2945,
+        "rotation": 0,
+        "value": "GND",
+        "valueVisible": true
+      },
+      {
+        "wire": "fc272aedb4bb9956",
+        "attribute": "a7aacd53da0c30a9",
+        "x": 100,
+        "y": -2945,
+        "rotation": 0,
+        "value": "GND",
+        "valueVisible": true
+      },
+      {
+        "wire": "30239fb2fc2e2a8b",
+        "attribute": "da2004773a12e4df",
+        "x": 100,
+        "y": -2955,
+        "rotation": 0,
+        "value": "GND",
+        "valueVisible": true
+      },
+      {
+        "wire": "855033ca6aa3e475",
+        "attribute": "a01f3ae9b342007b",
+        "x": 100,
+        "y": -2965,
+        "rotation": 0,
+        "value": "GND",
+        "valueVisible": true
+      },
+      {
+        "wire": "61f372024d8c1361",
+        "attribute": "7e41e3f88a9da467",
+        "x": 100,
+        "y": -2975,
+        "rotation": 0,
+        "value": "GND",
+        "valueVisible": true
+      }
+    ]
+  }
+}

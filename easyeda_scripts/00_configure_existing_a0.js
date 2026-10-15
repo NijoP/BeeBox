@@ -1,0 +1,5 @@
+const page=await eda.dmt_Schematic.getCurrentSchematicPageInfo();if(page.uuid!=='d5e34c82cc3ba89c')throw Error('Wrong page');
+const width=1189/0.254,height=841/0.254;
+const ok=await eda.dmt_Schematic.modifySchematicPageTitleBlock(true,{'Page Size':{value:'A0',showValue:true},Width:{value:String(width)},Height:{value:String(height)},Company:{value:'BeeBox',showValue:true},Name:{value:'Honeybee Research Sensor Platform',showValue:true},Version:{value:'DRAFT',showValue:true},Description:{value:'INCOMPLETE - NOT FOR FABRICATION',showValue:true}});
+const after=await eda.dmt_Schematic.getCurrentSchematicPageInfo();if(!ok||after.titleBlockData['Page Size']?.value!=='A0'||Math.abs(Number(after.titleBlockData.Width?.value)-width)>0.001||Math.abs(Number(after.titleBlockData.Height?.value)-height)>0.001)throw Error('A0 title metadata/dimensions not applied');
+const drawings=(await eda.sch_PrimitiveComponent.getAll()).filter(c=>c.getState_ComponentType()==='sheet');return {page:after,drawings:drawings.map(c=>({id:c.getState_PrimitiveId(),x:c.getState_X(),y:c.getState_Y(),properties:c.getState_OtherProperty()})),dimensionsMm:{width:1189,height:841}};

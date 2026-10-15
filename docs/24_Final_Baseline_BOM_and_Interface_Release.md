@@ -46,8 +46,8 @@ The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Captur
 | R11 | 1.78 kΩ, 1%, 0603 | 1 | BQ24074 ISET | Yes | 0.5 A charge setting, `890 Ω A / 0.5 A` | verify final BQ revision |
 | R12 | 1.54 kΩ, 1%, 0603 | 1 | BQ24074 ILIM | Yes | approximately 1.0 A input limit | verify source budget |
 | R13 | 46.4 kΩ, 1%, 0603 | 1 | BQ24074 TMR | Yes | approximately 6.25 h safety timer | shorten if thermal/cell study requires |
-| R14 | 316 kΩ, 1%, 0603 | 1 | TPS62162 feedback upper | Yes | 3.3 V setting with 100 kΩ lower, verify VREF | recalculate with exact VREF |
-| R15 | 100 kΩ, 1%, 0603 | 1 | TPS62162 feedback lower | Yes | 3.3 V setting | standard |
+| R14 | — | 0 | Removed: TPS62162DSGR is the fixed3.3V variant | Do not populate | FB connects directly to AGND per manufacturer datasheet | corrected after exact-variant review |
+| R15 | — | 0 | Removed: no adjustable feedback divider on fixed3.3V variant | Do not populate | no FB divider | corrected after exact-variant review |
 | C1–C* | 100 nF X7R 0603, one per IC | 10–15 | local decoupling | Yes | datasheet placement rule | exact manufacturer AVL |
 | C* | 1 µF X7R 0603 | 5–8 | local rail transient support | Yes | regulator/sensor support | voltage rating verified |
 | C* | 10–22 µF X7R or polymer, 0805/1206 if required | 2–4 | rail bulk | Yes | ESP/RF/dock transients | larger package exception justified by capacitance/bias |

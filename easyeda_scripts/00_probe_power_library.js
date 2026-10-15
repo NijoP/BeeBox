@@ -1,0 +1,1 @@
+const page=await eda.dmt_Schematic.getCurrentSchematicPageInfo();if(page.uuid!=='d5e34c82cc3ba89c')throw Error('Wrong page');const out=[];for(const query of ['BQ24074RGTR','TPS26600RHFT','TPS2121RUXR','S2B-PH-SM4-TB','103AT-2','MF-MSMF050-2'])out.push({query,results:await eda.lib_Device.search(query,undefined,undefined,undefined,100,1)});return out;

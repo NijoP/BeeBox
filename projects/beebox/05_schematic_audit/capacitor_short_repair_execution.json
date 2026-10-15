@@ -1,0 +1,63 @@
+{
+  "ok": true,
+  "v": {
+    "scope": "ONLY_C21_ORIENTATION_AND_OWNED_BYPASS_WIRE_REPAIR",
+    "removedShortBridge": [
+      195,
+      2760,
+      195,
+      2730
+    ],
+    "created": [
+      {
+        "id": "60def3bea7a8680a",
+        "net": "GND",
+        "line": [
+          [
+            325,
+            2730,
+            325,
+            2705
+          ],
+          [
+            325,
+            2705,
+            195,
+            2705
+          ],
+          [
+            195,
+            2705,
+            195,
+            2730
+          ]
+        ]
+      },
+      {
+        "id": "29cbcc3017a8200f",
+        "net": "VBUS_USB",
+        "line": [
+          [
+            195,
+            2785,
+            195,
+            2760
+          ],
+          [
+            325,
+            2785,
+            195,
+            2785
+          ],
+          [
+            325,
+            2760,
+            325,
+            2785
+          ]
+        ]
+      }
+    ],
+    "requiresIndependentNetlistAndVisualVerification": true
+  }
+}

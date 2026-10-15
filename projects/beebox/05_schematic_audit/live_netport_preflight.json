@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "v": {
+    "method": "function",
+    "stubId": "84a2048f63d59e9e",
+    "stubNet": "__BEEBOX_NETPORT_PREFLIGHT__",
+    "portId": "eada86b295457e96",
+    "portNet": "__BEEBOX_NETPORT_PREFLIGHT__",
+    "componentType": "netport",
+    "x": 2512,
+    "y": 2000,
+    "rollback": "PASS",
+    "componentsAfterRollback": 7,
+    "wiresAfterRollback": 20
+  }
+}

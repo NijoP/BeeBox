@@ -1,42 +1,11 @@
-/* ============================================================================
- * PCB Flow — dump the live schematic to JSON (for headless verification)
- * ----------------------------------------------------------------------------
- * Emits {components, wires} in the shape the netlist reconstructor expects:
- *   components: [{des, name, lcsc, pins:[{num, name, x, y}]}]
- *   wires:      [{net, line:[x1,y1,x2,y2,...]}]
- * Wires carry the net; pins do not — recon.py matches pins to wire vertices.
- *
- * RUN (headless, via the CDP driver):
- *   python3 automation/browser/cdp.py eval automation/easyeda/dump_schematic.js > dump.json
- *   python3 automation/browser/recon.py dump.json netlist.json
- *
- * ⚠️  Field names (designator/pin num) vary by EasyEDA build — run api_probe.js
- *     first and adjust the marked lines if your build differs.
- * ========================================================================== */
-(async () => {
-  const eda = window._EXTAPI_ROOT_ || window.eda;   // CDP context uses _EXTAPI_ROOT_
-
-  const comps = [];
-  const all = await eda.sch_PrimitiveComponent.getAll();
-  for (const c of all) {
-    const pid = c.primitiveId || c.id || c.pid;
-    let pins = [];
-    try { pins = await eda.sch_PrimitiveComponent.getAllPinsByPrimitiveId(pid); } catch (e) {}
-    comps.push({
-      des:  c.designator || c.name || null,          // <- adjust per api_probe.js
-      name: c.device || c.symbolName || c.name || null,
-      lcsc: c.manufacturerId || null,
-      pins: (pins || []).map(p => ({
-        num:  p.num != null ? p.num : (p.number != null ? p.number : p.name),  // <- adjust
-        name: p.name,
-        x: p.x, y: p.y
-      }))
-    });
-  }
-
-  // wires carry .net and a flat point list (.line or .points, build-dependent)
-  const rawWires = await eda.sch_PrimitiveWire.getAll();
-  const wires = (rawWires || []).map(w => ({ net: w.net, line: w.line || w.points || [] }));
-
-  return { components: comps, wires: wires };   // cdp.py returns this as {ok:true, v:{...}}
-})();
+// Live readback only. This is not final schematic approval.
+const page=await eda.dmt_Schematic.getCurrentSchematicPageInfo();
+const project=await eda.dmt_Project.getCurrentProjectInfo();
+if(page.uuid!=='d5e34c82cc3ba89c'||project.uuid!=='d84c4be0ef2e467fa17955faa23c6314')throw Error('Wrong project/page');
+const components=[];
+for(const c of await eda.sch_PrimitiveComponent.getAll()){
+ const id=c.getState_PrimitiveId();const pins=await eda.sch_PrimitiveComponent.getAllPinsByPrimitiveId(id);
+ components.push({id,type:c.getState_ComponentType(),ref:c.getState_Designator(),name:c.getState_Name(),mpn:c.getState_ManufacturerId(),manufacturer:c.getState_Manufacturer(),symbol:c.getState_Symbol(),pins:pins.map(p=>({number:p.getState_PinNumber(),name:p.getState_PinName(),x:p.getState_X(),y:p.getState_Y(),noConnected:p.getState_NoConnected()===true}))});
+}
+const wires=(await eda.sch_PrimitiveWire.getAll()).map(w=>({id:w.getState_PrimitiveId(),net:w.getState_Net(),line:w.getState_Line()}));
+return {status:'READBACK_NOT_FINAL_APPROVAL',projectUuid:project.uuid,pageUuid:page.uuid,components,wires,requiredRemainingChecks:['complete released physical-pin canonical dictionary','native netlist parity','strict native ERC','actual PDF/PNG visual review']};

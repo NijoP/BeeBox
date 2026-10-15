@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "v": [
+    {
+      "pin": "B8",
+      "noConnected": true,
+      "reason": "SBU not used in USB2.0 sink connection"
+    },
+    {
+      "pin": "A8",
+      "noConnected": true,
+      "reason": "SBU not used in USB2.0 sink connection"
+    }
+  ]
+}

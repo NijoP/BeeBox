@@ -1,19 +1,19 @@
 sheet,ref,mpn,function,net_or_interface,status
 01_INPUT_POWER,U2,BQ24074RGTR,1S charger and dynamic power path,VIN_CHARGER/VBAT/VSYS,baseline
 01_INPUT_POWER,U6,TPS26600RHFT,6V external input eFuse/OVP/reverse protection,VIN_EXT_RAW/VIN_EXT_PROTECTED,baseline
-01_INPUT_POWER,J1,TYPE-C-31-M-12,USB-C sink connector,VBUS_USB/USB_D_P/USB_D_N/USB_CC1/USB_CC2/GND,baseline-reference
-01_INPUT_POWER,D6,USBLC6-2SC6,USB data ESD,USB_D_P/USB_D_N/GND,baseline-reference
-01_INPUT_POWER,R6-R7,5.1k 1%,USB-C CC pull-downs,USB_CC1/USB_CC2 to GND,baseline
-01_INPUT_POWER,C21,10uF X7R,USB VBUS bulk,VBUS_USB/GND,baseline-reference
-01_INPUT_POWER,C22,10nF X7R,USB VBUS bypass,VBUS_USB/GND,baseline-reference
-02_3V3_REGULATOR,U3,TPS62162DSG,3.3V buck,VSYS/+3V3,baseline
+01_INPUT_POWER,J1,TYPE-C-31-M-12,USB-C USB2.0 sink receptacle,VBUS_USB/USB_DP_CONN/USB_DN_CONN/USB_CC1/USB_CC2/GND;SBU NC,datasheet-reviewed; full section pending
+01_INPUT_POWER,D6,USBLC6-2SC6,USB data flow-through ESD,USB_DP_CONN->USB_D_P/USB_DN_CONN->USB_D_N/GND/VBUS_USB,datasheet-reviewed; full section pending
+01_INPUT_POWER,R6-R7,0603WAF5101T5E,5.1k 1% USB-C CC pull-downs,USB_CC1/USB_CC2 to GND,datasheet-reviewed; full section pending
+01_INPUT_POWER,C21,CL21B475KOFNNNE,4.7uF X7R 16V USB VBUS bulk; revised for inrush budget,VBUS_USB/GND,datasheet-reviewed; full section pending
+01_INPUT_POWER,C22,CL10B103KB8NNNC,10nF X7R 50V USB VBUS high-frequency bypass,VBUS_USB/GND,datasheet-reviewed; full section pending
+02_3V3_REGULATOR,U3,TPS62162DSGR,fixed 3V3 buck; FB to AGND,VSYS/+3V3,datasheet-reviewed; full section pending
 03_ESP32S3_DEBUG_USB,U1,ESP32-S3-WROOM-1-N16R8,MCU WiFi BLE USB,+3V3/USB/I2C/SPI/I2S/UART,baseline-provisional
 04_LOCAL_SENSORS,U-EXT1,SHT45,external temperature RH,I2C_MAIN,baseline
 04_LOCAL_SENSORS,MIC-EXT,ICS-43434,external ambient microphone,I2S,baseline
 04_LOCAL_SENSORS,U-IMU,ICM-42688-P,optional motion vibration,I2C_MAIN or SPI,DNI-or-populate
 05_STORAGE_RF_EXPANSION,J-SD,SD socket,optional logging storage,SPI,DNI-or-populate
 05_STORAGE_RF_EXPANSION,J-RF,expansion header,RF module SPI UART power control,SPI/UART,DNI-or-populate
-06_DOCK_INTERFACE,U4,TCA9546APWR,I2C branch/address isolation,I2C_MAIN/I2C_FPC,baseline
+06_DOCK_INTERFACE,U4,TCA9546APWR,I2C branch switch,I2C_MAIN/I2C_FPC,datasheet-reviewed; full section pending
 06_DOCK_INTERFACE,J-DOCK,Mill-Max-0906-0-15-20-75-14-11-0-x12,detachable pogo dock,VDOCK/GND/I2C/I2S/ID,baseline-candidate
 07_UNIVERSAL_FPC,J-FPC,Hirose-FH34SRJ-12S-0.5SH-50,permanent FPC ZIF,VFPC/I2C/I2S/ID,baseline-candidate
 07_UNIVERSAL_FPC,U-F1,SHT45,hive temperature RH,I2C_FPC,populate V1

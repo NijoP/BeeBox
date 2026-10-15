@@ -1,0 +1,226 @@
+{
+  "ok": true,
+  "v": {
+    "edits": [
+      {
+        "key": "Width",
+        "value": "4681.102362204724",
+        "id": "4646a7dd5612efe1"
+      },
+      {
+        "key": "Height",
+        "value": "3311.023622047244",
+        "id": "050b1341cc7b1969"
+      },
+      {
+        "key": "Page Size",
+        "value": "A0",
+        "id": "58d5a9ce5d3d69ba"
+      },
+      {
+        "key": "Company",
+        "value": "BeeBox",
+        "id": "9af51c8fa56cb119"
+      },
+      {
+        "key": "Version",
+        "value": "DRAFT",
+        "id": "3ccd9c3d318d3cbc"
+      },
+      {
+        "key": "Name",
+        "value": "Honeybee Research Sensor Platform",
+        "id": "754e6cecf1b7444b"
+      },
+      {
+        "key": "Description",
+        "value": "INCOMPLETE - NOT FOR FABRICATION",
+        "id": "9723a283ad5b0eba"
+      }
+    ],
+    "page": {
+      "name": "P1",
+      "itemType": "Schematic Page",
+      "uuid": "d5e34c82cc3ba89c",
+      "parentSchematicUuid": "449f9b2562dabacc",
+      "parentSchematicName": "Schematic1",
+      "showTitleBlock": true,
+      "titleBlockData": {
+        "Symbol": {
+          "showTitle": false,
+          "showValue": false,
+          "value": "Drawing-Symbol_A0"
+        },
+        "@Project Name": {
+          "showTitle": false,
+          "showValue": false,
+          "value": "BEEBOX"
+        },
+        "@Page Count": {
+          "showTitle": false,
+          "showValue": false,
+          "value": 1
+        },
+        "@Update Date": {
+          "showTitle": false,
+          "showValue": false,
+          "value": "2026-10-13"
+        },
+        "@Create Date": {
+          "showTitle": false,
+          "showValue": false,
+          "value": "2026-10-12"
+        },
+        "@Schematic Name": {
+          "showTitle": false,
+          "showValue": false,
+          "value": "Schematic1"
+        },
+        "@Page No": {
+          "showTitle": false,
+          "showValue": false,
+          "value": 1
+        },
+        "@Page Name": {
+          "showTitle": false,
+          "showValue": false,
+          "value": "P1"
+        },
+        "Company": {
+          "showTitle": false,
+          "showValue": false,
+          "value": "BeeBox"
+        },
+        "Reviewed": {
+          "showTitle": false,
+          "showValue": false,
+          "value": ""
+        },
+        "Version": {
+          "showTitle": false,
+          "showValue": false,
+          "value": "DRAFT"
+        },
+        "Page Size": {
+          "showTitle": false,
+          "showValue": false,
+          "value": "A0"
+        },
+        "Drawn": {
+          "showTitle": false,
+          "showValue": false,
+          "value": ""
+        },
+        "Device": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "Drawing-Symbol_A0"
+        },
+        "Name": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "Honeybee Research Sensor Platform"
+        },
+        "Description": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "INCOMPLETE - NOT FOR FABRICATION"
+        },
+        "@Create Time": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "14:44:49"
+        },
+        "@Update Time": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "01:56:02"
+        },
+        "Border": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "1"
+        },
+        "Width": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "4681.102362204724"
+        },
+        "Height": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "3311.023622047244"
+        },
+        "Region Start": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "1"
+        },
+        "X Region Count": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "6"
+        },
+        "Y Region Count": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "4"
+        },
+        "Blade Width": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "10"
+        },
+        "Color": {
+          "showTitle": null,
+          "showValue": null,
+          "value": ""
+        },
+        "Title Block Position": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "3"
+        },
+        "Title Block": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "1"
+        },
+        "@Board Name": {
+          "showTitle": null,
+          "showValue": null,
+          "value": "Board1"
+        },
+        "ID": {}
+      }
+    },
+    "sheetProperties": {
+      "@Project Name": "BEEBOX",
+      "@Page Count": "1",
+      "@Update Date": "2026-10-13",
+      "@Create Date": "2026-10-12",
+      "@Schematic Name": "Schematic1",
+      "@Page No": "1",
+      "@Page Name": "P1",
+      "Company": "BeeBox",
+      "Reviewed": "",
+      "Version": "DRAFT",
+      "Page Size": "A0",
+      "Drawn": "",
+      "Description": "INCOMPLETE - NOT FOR FABRICATION",
+      "@Create Time": "14:44:49",
+      "@Update Time": "01:56:02",
+      "Border": "1",
+      "Width": "4681.102362204724",
+      "Height": "3311.023622047244",
+      "Region Start": "1",
+      "X Region Count": "6",
+      "Y Region Count": "4",
+      "Blade Width": "10",
+      "Color": "",
+      "Title Block Position": "3",
+      "Title Block": "1",
+      "@Board Name": "Board1"
+    }
+  }
+}

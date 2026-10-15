@@ -1,0 +1,736 @@
+{
+  "ok": true,
+  "v": {
+    "project": {
+      "itemType": "Project",
+      "uuid": "d84c4be0ef2e467fa17955faa23c6314",
+      "friendlyName": "BEEBOX",
+      "name": "nijoponnachan/BEEBOX",
+      "teamUuid": "7db9ad37e8bc4e319ee58552cbf680c9",
+      "description": "",
+      "data": [
+        {
+          "itemType": "Board",
+          "name": "Board1",
+          "schematic": {
+            "itemType": "Schematic",
+            "uuid": "449f9b2562dabacc",
+            "name": "Schematic1",
+            "page": [
+              {
+                "itemType": "Schematic Page",
+                "uuid": "d5e34c82cc3ba89c",
+                "name": "P1",
+                "parentSchematicUuid": "449f9b2562dabacc",
+                "showTitleBlock": true,
+                "titleBlockData": {}
+              }
+            ],
+            "parentProjectUuid": "d84c4be0ef2e467fa17955faa23c6314",
+            "parentBoardName": "Board1"
+          },
+          "pcb": {
+            "itemType": "PCB",
+            "name": "PCB1",
+            "uuid": "f5646de9d966408c",
+            "parentBoardName": "Board1",
+            "parentProjectUuid": "d84c4be0ef2e467fa17955faa23c6314"
+          },
+          "parentProjectUuid": "d84c4be0ef2e467fa17955faa23c6314"
+        },
+        {
+          "itemType": "Panel",
+          "uuid": "29c4008d7970b822",
+          "name": "Panel1",
+          "parentProjectUuid": "d84c4be0ef2e467fa17955faa23c6314"
+        }
+      ]
+    },
+    "page": {
+      "name": "P1",
+      "itemType": "Schematic Page",
+      "uuid": "d5e34c82cc3ba89c",
+      "parentSchematicUuid": "449f9b2562dabacc",
+      "parentSchematicName": "Schematic1",
+      "showTitleBlock": true,
+      "titleBlockData": {}
+    },
+    "source": "{\"type\":\"DOCHEAD\"}||{\"docType\":\"SCH_PAGE\",\"client\":\"56b0a8141e977740\",\"uuid\":\"d5e34c82cc3ba89c\",\"updateTime\":1791835044273,\"version\":\"1791835044273\",\"editVersion\":\"3.2.206\"}|\n{\"type\":\"CANVAS\",\"ticket\":1,\"id\":\"CANVAS\"}||{\"originX\":0,\"originY\":0}|\n{\"type\":\"COMPONENT\",\"ticket\":2,\"id\":\"54da7c3541404b81\"}||{\"partId\":\"TYPE-C-31-M-12.1\",\"x\":195,\"y\":-3000,\"rotation\":0,\"isMirror\":true,\"attrs\":{},\"zIndex\":1172.4999999999995}|\n{\"type\":\"ATTR\",\"ticket\":3,\"id\":\"6f0450e633f00dc8\"}||{\"x\":null,\"y\":null,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"5c1d78c57b2cfbf1\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":1,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":4,\"id\":\"b550114e658ecf1c\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"e4a06c96ed8ff60d\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":65}|\n{\"type\":\"ATTR\",\"ticket\":5,\"id\":\"00d3137ea4f5e91d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"gge1\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Unique ID\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":-2}|\n{\"type\":\"ATTR\",\"ticket\":6,\"id\":\"c159fe68eb1271ca\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":-1}|\n{\"type\":\"ATTR\",\"ticket\":7,\"id\":\"6f969a493eba6604\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":0}|\n{\"type\":\"ATTR\",\"ticket\":8,\"id\":\"02dd388409528625\"}||{\"x\":170,\"y\":-3065,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"J1\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":2,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":9,\"id\":\"9e3ef9aa5f3fa125\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Type-C \u6bcd \u5367\u8d34\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"LCSC Part Name\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":66}|\n{\"type\":\"ATTR\",\"ticket\":10,\"id\":\"89479739a4ce5b8c\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"C165948\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Part\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":67}|\n{\"type\":\"ATTR\",\"ticket\":11,\"id\":\"d53a233ff9bbb36e\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u97e9\u56fd\u97e9\u8363\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":68}|\n{\"type\":\"ATTR\",\"ticket\":12,\"id\":\"bb1b0cd2ef57bfc5\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"TYPE-C-31-M-12\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer Part\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":69}|\n{\"type\":\"ATTR\",\"ticket\":13,\"id\":\"d6b2702de95c1584\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"SMD\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Footprint\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":70}|\n{\"type\":\"ATTR\",\"ticket\":14,\"id\":\"069d17ddee54a881\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Extended Part\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"JLCPCB Part Class\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":71}|\n{\"type\":\"ATTR\",\"ticket\":15,\"id\":\"9426861bac3ecf39\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"https://item.szlcsc.com/datasheet/TYPE-C-31-M-12/177331.html\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Datasheet\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":72}|\n{\"type\":\"ATTR\",\"ticket\":16,\"id\":\"db1b8589c1065ec5\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"LCSC\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":73}|\n{\"type\":\"ATTR\",\"ticket\":17,\"id\":\"6b953136630979b6\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":74}|\n{\"type\":\"ATTR\",\"ticket\":18,\"id\":\"6beb68e793991ebb\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"3D Model\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":75}|\n{\"type\":\"ATTR\",\"ticket\":19,\"id\":\"5d5256ed9c77c425\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"3D Model Title\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":76}|\n{\"type\":\"ATTR\",\"ticket\":20,\"id\":\"4c4f6a3ebbee10cf\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"3D Model Transform\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":77}|\n{\"type\":\"ATTR\",\"ticket\":21,\"id\":\"7232f98756d1f0cd\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Type-C\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Connector Type\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":78}|\n{\"type\":\"ATTR\",\"ticket\":22,\"id\":\"ecdbe5098e9458e1\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"-\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Protocol Standard\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":79}|\n{\"type\":\"ATTR\",\"ticket\":23,\"id\":\"9eaea0aaedc337a6\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Female\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Gender\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":80}|\n{\"type\":\"ATTR\",\"ticket\":24,\"id\":\"a0d1105ac62188ed\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Surface Mount, Right Angle\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Mounting Type\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":81}|\n{\"type\":\"ATTR\",\"ticket\":25,\"id\":\"c038708dff68d326\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"16P\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Number of Contacts\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":82}|\n{\"type\":\"ATTR\",\"ticket\":26,\"id\":\"ef8238794a70d2c0\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"1\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Number of Ports\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":83}|\n{\"type\":\"ATTR\",\"ticket\":27,\"id\":\"861f72a18ca938a7\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"5A\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Current Rating-Power\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":84}|\n{\"type\":\"ATTR\",\"ticket\":28,\"id\":\"a5f4170c30c71754\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"20V\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Voltage Rating\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":85}|\n{\"type\":\"ATTR\",\"ticket\":29,\"id\":\"f5c48efa3e602fdb\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"10,000 cycles\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Connect-Disconnect Life\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":86}|\n{\"type\":\"ATTR\",\"ticket\":30,\"id\":\"93a4a6672db7c4ac\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"7.35mm\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Length\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":87}|\n{\"type\":\"ATTR\",\"ticket\":31,\"id\":\"2c1506e595ba82f2\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"-30\u2103~+80\u2103\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Operating Temperature\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":88}|\n{\"type\":\"ATTR\",\"ticket\":32,\"id\":\"6e40f5e1a4205706\"}||{\"x\":170,\"y\":-2925,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"TYPE-C-31-M-12\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":89}|\n{\"type\":\"ATTR\",\"ticket\":33,\"id\":\"979599b633f575eb\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Connector Type:Type-C Protocol Standard:- Gender:Female Mounting Type:Surface Mount, Right Angle Number of Contacts:16P Number of Ports:1 Current Rating-Power:5A Voltage Rating:20V Connect-Disconnect Life:10,000 cycles Length:7.35mm Operating Temperature:\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Description\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":90}|\n{\"type\":\"ATTR\",\"ticket\":34,\"id\":\"7aee8499f1795d66\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Reuse Block\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":91}|\n{\"type\":\"ATTR\",\"ticket\":35,\"id\":\"e22afc684d6f25a6\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Group ID\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":92}|\n{\"type\":\"ATTR\",\"ticket\":36,\"id\":\"904bdb39dda11473\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Channel ID\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":93}|\n{\"type\":\"ATTR\",\"ticket\":37,\"id\":\"12ed02f546050aab\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"SMD\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Package\",\"fillColor\":null,\"parentId\":\"54da7c3541404b81\",\"zIndex\":94}|\n{\"type\":\"COMPONENT\",\"ticket\":38,\"id\":\"75ab5d349feb27ea\"}||{\"partId\":\"USBLC6-2SC6.1\",\"x\":635,\"y\":-3000,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1173.4999999999995}|\n{\"type\":\"ATTR\",\"ticket\":39,\"id\":\"6396aace41f1ee42\"}||{\"x\":null,\"y\":null,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"f4f2ec63db53f36d\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":1,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":40,\"id\":\"d047f4240bf055cf\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"e038885bbe4d4fd8\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":50}|\n{\"type\":\"ATTR\",\"ticket\":41,\"id\":\"e7e6305238bc5b72\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"gge2\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Unique ID\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":-2}|\n{\"type\":\"ATTR\",\"ticket\":42,\"id\":\"17d8d49e3d326423\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":-1}|\n{\"type\":\"ATTR\",\"ticket\":43,\"id\":\"983e64f80e5d8296\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":0}|\n{\"type\":\"ATTR\",\"ticket\":44,\"id\":\"dd62b1aa7654ff1e\"}||{\"x\":590,\"y\":-3050,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"D6\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":2,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":45,\"id\":\"890b1248f515f53a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":59}|\n{\"type\":\"ATTR\",\"ticket\":46,\"id\":\"4c173406e9761866\"}||{\"x\":590,\"y\":-2940,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USBLC6-2SC6_C7519\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":74}|\n{\"type\":\"ATTR\",\"ticket\":47,\"id\":\"1a0e1d3af2329065\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Reuse Block\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":76}|\n{\"type\":\"ATTR\",\"ticket\":48,\"id\":\"62baeeb70d0ae92c\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Group ID\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":77}|\n{\"type\":\"ATTR\",\"ticket\":49,\"id\":\"b7150981cffe3236\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Channel ID\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":78}|\n{\"type\":\"ATTR\",\"ticket\":50,\"id\":\"2340f7fb162d4b6d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"ST(\u610f\u6cd5\u534a\u5bfc\u4f53)\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":53}|\n{\"type\":\"ATTR\",\"ticket\":51,\"id\":\"b0eb671967f4717b\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USBLC6-2SC6\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer Part\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":54}|\n{\"type\":\"ATTR\",\"ticket\":52,\"id\":\"65b518706058447d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"LCSC\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":58}|\n{\"type\":\"ATTR\",\"ticket\":53,\"id\":\"963fe3613782c67a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"C7519\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Part\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":52}|\n{\"type\":\"ATTR\",\"ticket\":54,\"id\":\"94efd3b9541857c4\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u5355\u5411ESD 5.25V\u622a\u6b62 \u5cf0\u503c\u8109\u51b2\u7535\u6d41\uff1a5A\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"LCSC Part Name\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":51}|\n{\"type\":\"ATTR\",\"ticket\":55,\"id\":\"bf76563072ff3e10\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"SOT-23-6L\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Footprint\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":55}|\n{\"type\":\"ATTR\",\"ticket\":56,\"id\":\"749ea63e7c32b429\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Extended Part\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"JLCPCB Part Class\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":56}|\n{\"type\":\"ATTR\",\"ticket\":57,\"id\":\"2806930455258477\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"https://item.szlcsc.com/datasheet/USBLC6-2SC6/7996.html\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Datasheet\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":57}|\n{\"type\":\"ATTR\",\"ticket\":58,\"id\":\"b000a0aa62975687\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Unidirectional\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Polarity\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":63}|\n{\"type\":\"ATTR\",\"ticket\":59,\"id\":\"ea97aa83a865d906\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"5.25V\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Reverse Stand-Off Voltage (Vrwm)\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":64}|\n{\"type\":\"ATTR\",\"ticket\":60,\"id\":\"57a26414cc1b0b8d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"17V\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Clamping Voltage\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":65}|\n{\"type\":\"ATTR\",\"ticket\":61,\"id\":\"d502b87d3e94b288\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"5A\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Peak Pulse Current (Ipp)\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":66}|\n{\"type\":\"ATTR\",\"ticket\":62,\"id\":\"89ba58034e789a52\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"6V\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Voltage - Breakdown\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":67}|\n{\"type\":\"ATTR\",\"ticket\":63,\"id\":\"3536163d618387e0\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"150nA\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Reverse Leakage Current (Ir)\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":68}|\n{\"type\":\"ATTR\",\"ticket\":64,\"id\":\"f81a3cdc8db05208\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"2\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Number of Channels\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":69}|\n{\"type\":\"ATTR\",\"ticket\":65,\"id\":\"39c4927139223c01\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"-40\u2103~+125\u2103\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Operating Temperature\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":70}|\n{\"type\":\"ATTR\",\"ticket\":66,\"id\":\"ceaaa404104063c3\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"IEC 61000-4-2\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"level of protection\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":71}|\n{\"type\":\"ATTR\",\"ticket\":67,\"id\":\"5fb61cc7c1ce6aa4\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"ESD\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Type\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":72}|\n{\"type\":\"ATTR\",\"ticket\":68,\"id\":\"e199d19749d0ad6d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"3.5pF\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Junction Capacitance\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":73}|\n{\"type\":\"ATTR\",\"ticket\":69,\"id\":\"ba7417ef1f7cff42\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Polarity:Unidirectional Reverse Stand-Off Voltage (Vrwm):5.25V Clamping Voltage:17V Peak Pulse Current (Ipp):5A Voltage - Breakdown:6V Reverse Leakage Current (Ir):150nA Number of Channels:2 Operating Temperature:-40\u2103~+125\u2103 Operating Temperature:-40\u2103~+125\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Description\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":75}|\n{\"type\":\"ATTR\",\"ticket\":70,\"id\":\"e58a8287a4590ffc\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"SOT-23-6L\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Package\",\"fillColor\":null,\"parentId\":\"75ab5d349feb27ea\",\"zIndex\":79}|\n{\"type\":\"COMPONENT\",\"ticket\":71,\"id\":\"93f56bcc982aef6d\"}||{\"partId\":\"0603WAF5101T5E.1\",\"x\":330,\"y\":-3160,\"rotation\":270,\"isMirror\":false,\"attrs\":{},\"zIndex\":1174.4999999999995}|\n{\"type\":\"ATTR\",\"ticket\":72,\"id\":\"b3bf8ac16ec4ccd4\"}||{\"x\":null,\"y\":null,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"9b2a66a24639788d\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":1,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":73,\"id\":\"0d1fada6e015f55a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"870f501880e54ecd\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":74,\"id\":\"dc664ba5352fe3d1\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"gge3\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Unique ID\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":-2}|\n{\"type\":\"ATTR\",\"ticket\":75,\"id\":\"3f57874ba8068280\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":-1}|\n{\"type\":\"ATTR\",\"ticket\":76,\"id\":\"472133e838250c86\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":0}|\n{\"type\":\"ATTR\",\"ticket\":77,\"id\":\"a6a466551fbbb51c\"}||{\"x\":340,\"y\":-3160,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"R6\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":2,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":78,\"id\":\"d20472cd1c9a6e02\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":21}|\n{\"type\":\"ATTR\",\"ticket\":79,\"id\":\"6135c5a3e5ab67c4\"}||{\"x\":340,\"y\":-3150,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"5.1k\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":32}|\n{\"type\":\"ATTR\",\"ticket\":80,\"id\":\"2b18d90ec80b9355\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Reuse Block\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":34}|\n{\"type\":\"ATTR\",\"ticket\":81,\"id\":\"5c09fd5907407cc8\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Group ID\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":35}|\n{\"type\":\"ATTR\",\"ticket\":82,\"id\":\"c279f0ae8649cf6f\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Channel ID\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":36}|\n{\"type\":\"ATTR\",\"ticket\":83,\"id\":\"ea015de5242cee30\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"UNI-ROYAL(\u539a\u58f0)\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":15}|\n{\"type\":\"ATTR\",\"ticket\":84,\"id\":\"0ed73b11d8efe2c1\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0603WAF5101T5E\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer Part\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":16}|\n{\"type\":\"ATTR\",\"ticket\":85,\"id\":\"86543927e5690084\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"LCSC\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":20}|\n{\"type\":\"ATTR\",\"ticket\":86,\"id\":\"c3b8bfb2699fc37a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"C23186\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Part\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":14}|\n{\"type\":\"ATTR\",\"ticket\":87,\"id\":\"7fd557a9f8439d17\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u539a\u819c\u7535\u963b 5.1k\u03a9 \u00b11%\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"LCSC Part Name\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":13}|\n{\"type\":\"ATTR\",\"ticket\":88,\"id\":\"a9bfbdc3057d7994\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0603\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Footprint\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":17}|\n{\"type\":\"ATTR\",\"ticket\":89,\"id\":\"833d657e60077564\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Basic Part\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"JLCPCB Part Class\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":18}|\n{\"type\":\"ATTR\",\"ticket\":90,\"id\":\"69eed1df6057e330\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"https://item.szlcsc.com/datasheet/0603WAF5101T5E/23913.html\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Datasheet\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":19}|\n{\"type\":\"ATTR\",\"ticket\":91,\"id\":\"4b35cf21e5cd4fca\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Thick Film Resistor\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Type\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":25}|\n{\"type\":\"ATTR\",\"ticket\":92,\"id\":\"f09d6568cf9aecdb\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"5.1k\u03a9\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Value\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":26}|\n{\"type\":\"ATTR\",\"ticket\":93,\"id\":\"c479881ab6719df1\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u00b11%\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Tolerance\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":27}|\n{\"type\":\"ATTR\",\"ticket\":94,\"id\":\"1e0b3e02f37addd0\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"100mW\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Power(Watts)\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":28}|\n{\"type\":\"ATTR\",\"ticket\":95,\"id\":\"bb136db1df136a0a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"75V\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Voltage-Supply(Max)\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":29}|\n{\"type\":\"ATTR\",\"ticket\":96,\"id\":\"7562c0d729e3d481\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u00b1100ppm/\u2103\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Temperature Coefficient\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":30}|\n{\"type\":\"ATTR\",\"ticket\":97,\"id\":\"f7e49966b4468d88\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"-55\u2103~+155\u2103\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Operating Temperature\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":31}|\n{\"type\":\"ATTR\",\"ticket\":98,\"id\":\"01e64bdb6044b5a1\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Type:Thick Film Resistor Resistance:5.1k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Description\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":33}|\n{\"type\":\"ATTR\",\"ticket\":99,\"id\":\"afa3d96e7880e0e1\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0603\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Package\",\"fillColor\":null,\"parentId\":\"93f56bcc982aef6d\",\"zIndex\":37}|\n{\"type\":\"COMPONENT\",\"ticket\":100,\"id\":\"e6095b9cc28556a0\"}||{\"partId\":\"0603WAF5101T5E.1\",\"x\":400,\"y\":-2860,\"rotation\":270,\"isMirror\":false,\"attrs\":{},\"zIndex\":1175.4999999999995}|\n{\"type\":\"ATTR\",\"ticket\":101,\"id\":\"544b78af7806418c\"}||{\"x\":null,\"y\":null,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"9b2a66a24639788d\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":1,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":102,\"id\":\"f676448e2c003846\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"870f501880e54ecd\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":103,\"id\":\"0aca99c87030444d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"gge4\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Unique ID\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":-2}|\n{\"type\":\"ATTR\",\"ticket\":104,\"id\":\"fdcb427659da5e50\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":-1}|\n{\"type\":\"ATTR\",\"ticket\":105,\"id\":\"9fb12c0244035770\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":0}|\n{\"type\":\"ATTR\",\"ticket\":106,\"id\":\"7cef1f958d9c09ee\"}||{\"x\":410,\"y\":-2860,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"R7\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":2,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":107,\"id\":\"c254828dd004f713\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":21}|\n{\"type\":\"ATTR\",\"ticket\":108,\"id\":\"aa833a6129a18ad4\"}||{\"x\":410,\"y\":-2850,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"5.1k\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":32}|\n{\"type\":\"ATTR\",\"ticket\":109,\"id\":\"e8fe0f4116f7f5f5\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Reuse Block\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":34}|\n{\"type\":\"ATTR\",\"ticket\":110,\"id\":\"39e7e716768aca2d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Group ID\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":35}|\n{\"type\":\"ATTR\",\"ticket\":111,\"id\":\"00f6315cf218ae5e\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Channel ID\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":36}|\n{\"type\":\"ATTR\",\"ticket\":112,\"id\":\"7059ba83b5cabada\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"UNI-ROYAL(\u539a\u58f0)\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":15}|\n{\"type\":\"ATTR\",\"ticket\":113,\"id\":\"ec489d418f81c4fe\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0603WAF5101T5E\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer Part\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":16}|\n{\"type\":\"ATTR\",\"ticket\":114,\"id\":\"af00117ae5561525\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"LCSC\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":20}|\n{\"type\":\"ATTR\",\"ticket\":115,\"id\":\"48c7ccfd5798a547\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"C23186\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Part\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":14}|\n{\"type\":\"ATTR\",\"ticket\":116,\"id\":\"615870576a73fa3a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u539a\u819c\u7535\u963b 5.1k\u03a9 \u00b11%\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"LCSC Part Name\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":13}|\n{\"type\":\"ATTR\",\"ticket\":117,\"id\":\"17482b02bccc9e12\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0603\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Footprint\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":17}|\n{\"type\":\"ATTR\",\"ticket\":118,\"id\":\"69a024f5423a59cb\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Basic Part\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"JLCPCB Part Class\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":18}|\n{\"type\":\"ATTR\",\"ticket\":119,\"id\":\"e63bc0ce482f9a7c\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"https://item.szlcsc.com/datasheet/0603WAF5101T5E/23913.html\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Datasheet\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":19}|\n{\"type\":\"ATTR\",\"ticket\":120,\"id\":\"ec960f336b3dc936\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Thick Film Resistor\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Type\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":25}|\n{\"type\":\"ATTR\",\"ticket\":121,\"id\":\"26eae8cfd31b692d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"5.1k\u03a9\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Value\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":26}|\n{\"type\":\"ATTR\",\"ticket\":122,\"id\":\"2f48bf3d6aa45fd2\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u00b11%\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Tolerance\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":27}|\n{\"type\":\"ATTR\",\"ticket\":123,\"id\":\"94fc09f18eeff814\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"100mW\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Power(Watts)\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":28}|\n{\"type\":\"ATTR\",\"ticket\":124,\"id\":\"48662cf3364a7b55\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"75V\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Voltage-Supply(Max)\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":29}|\n{\"type\":\"ATTR\",\"ticket\":125,\"id\":\"446971b987e1ed99\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u00b1100ppm/\u2103\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Temperature Coefficient\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":30}|\n{\"type\":\"ATTR\",\"ticket\":126,\"id\":\"e9920528ebc4c38f\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"-55\u2103~+155\u2103\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Operating Temperature\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":31}|\n{\"type\":\"ATTR\",\"ticket\":127,\"id\":\"a2ca528de79239a6\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Type:Thick Film Resistor Resistance:5.1k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Description\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":33}|\n{\"type\":\"ATTR\",\"ticket\":128,\"id\":\"62232bc93612207a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0603\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Package\",\"fillColor\":null,\"parentId\":\"e6095b9cc28556a0\",\"zIndex\":37}|\n{\"type\":\"COMPONENT\",\"ticket\":129,\"id\":\"63f1fd0b7f64b884\"}||{\"partId\":\"GRM21BR71A106KE51L.1\",\"x\":195,\"y\":-2745,\"rotation\":270,\"isMirror\":false,\"attrs\":{},\"zIndex\":1178.4999999999995}|\n{\"type\":\"ATTR\",\"ticket\":130,\"id\":\"0d46f05f6fc25e82\"}||{\"x\":null,\"y\":null,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"af4a92836a1bb3bb\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":1,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":131,\"id\":\"6966a9d7d9fe8b0a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"af1c18b799949db4\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":15}|\n{\"type\":\"ATTR\",\"ticket\":132,\"id\":\"0ecaa00d25303d6d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"gge5\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Unique ID\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":-2}|\n{\"type\":\"ATTR\",\"ticket\":133,\"id\":\"bbf10fb7ff4cf295\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":-1}|\n{\"type\":\"ATTR\",\"ticket\":134,\"id\":\"9023203583cfbedc\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":0}|\n{\"type\":\"ATTR\",\"ticket\":135,\"id\":\"3dbb08ee0aa57b99\"}||{\"x\":210,\"y\":-2745,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"C21\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":2,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":136,\"id\":\"9f16653c03706b33\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":24}|\n{\"type\":\"ATTR\",\"ticket\":137,\"id\":\"896dd63e36c85687\"}||{\"x\":210,\"y\":-2735,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"10uF\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":32}|\n{\"type\":\"ATTR\",\"ticket\":138,\"id\":\"64525a58c12e1bd1\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Reuse Block\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":34}|\n{\"type\":\"ATTR\",\"ticket\":139,\"id\":\"443d65c22d57c197\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Group ID\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":35}|\n{\"type\":\"ATTR\",\"ticket\":140,\"id\":\"039e1364a6799a4c\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Channel ID\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":36}|\n{\"type\":\"ATTR\",\"ticket\":141,\"id\":\"98f00426828422d0\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"muRata(\u6751\u7530)\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":18}|\n{\"type\":\"ATTR\",\"ticket\":142,\"id\":\"e712ac90a16d2174\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GRM21BR71A106KE51L\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer Part\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":19}|\n{\"type\":\"ATTR\",\"ticket\":143,\"id\":\"d387c821e3e512ee\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"LCSC\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":23}|\n{\"type\":\"ATTR\",\"ticket\":144,\"id\":\"bca99cbae47d7036\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"C86038\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Part\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":17}|\n{\"type\":\"ATTR\",\"ticket\":145,\"id\":\"6054c884ba84e5e4\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"10uF \u00b110% 10V\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"LCSC Part Name\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":16}|\n{\"type\":\"ATTR\",\"ticket\":146,\"id\":\"23a692d301586262\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0805\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Footprint\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":20}|\n{\"type\":\"ATTR\",\"ticket\":147,\"id\":\"b9b7ff84fd8c7ddc\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Extended Part\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"JLCPCB Part Class\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":21}|\n{\"type\":\"ATTR\",\"ticket\":148,\"id\":\"63a1709a38418c92\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Datasheet\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":22}|\n{\"type\":\"ATTR\",\"ticket\":149,\"id\":\"696f24f68c3415f6\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"10uF\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Value\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":28}|\n{\"type\":\"ATTR\",\"ticket\":150,\"id\":\"5530b383c873d167\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u00b110%\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Tolerance\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":29}|\n{\"type\":\"ATTR\",\"ticket\":151,\"id\":\"142ac6508cd9a587\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Voltage Rated\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":30}|\n{\"type\":\"ATTR\",\"ticket\":152,\"id\":\"d376cced789dc248\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Temperature Coefficient\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":31}|\n{\"type\":\"ATTR\",\"ticket\":153,\"id\":\"19b0603e9a181375\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Capacitance: Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rated: Temperature Coefficient:\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Description\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":33}|\n{\"type\":\"ATTR\",\"ticket\":154,\"id\":\"362b438df1a5167a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0805\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Package\",\"fillColor\":null,\"parentId\":\"63f1fd0b7f64b884\",\"zIndex\":37}|\n{\"type\":\"COMPONENT\",\"ticket\":155,\"id\":\"04674d300ecc0fe3\"}||{\"partId\":\"CL10B103KB8NNNC.1\",\"x\":325,\"y\":-2745,\"rotation\":270,\"isMirror\":false,\"attrs\":{},\"zIndex\":1179.4999999999995}|\n{\"type\":\"ATTR\",\"ticket\":156,\"id\":\"b314e35a7d217ede\"}||{\"x\":null,\"y\":null,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"390981570ceb0ef1\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":1,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":157,\"id\":\"8a03b4d2e07a367a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"468835573c65a84d\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":15}|\n{\"type\":\"ATTR\",\"ticket\":158,\"id\":\"99afc8f5445e1264\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"gge6\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Unique ID\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":-2}|\n{\"type\":\"ATTR\",\"ticket\":159,\"id\":\"144f6680c8798d5d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":-1}|\n{\"type\":\"ATTR\",\"ticket\":160,\"id\":\"5cfa66731efe8292\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"yes\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":0}|\n{\"type\":\"ATTR\",\"ticket\":161,\"id\":\"8ce2504e2521f3de\"}||{\"x\":340,\"y\":-2740,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":false,\"italic\":false,\"underline\":false,\"align\":null,\"value\":\"C22\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":2,\"locked\":false}|\n{\"type\":\"ATTR\",\"ticket\":162,\"id\":\"2eb0544fd72ea3cf\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":24}|\n{\"type\":\"ATTR\",\"ticket\":163,\"id\":\"e57fe42f25af983f\"}||{\"x\":340,\"y\":-2730,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"10nF\",\"keyVisible\":null,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":32}|\n{\"type\":\"ATTR\",\"ticket\":164,\"id\":\"2cb86d2d4c555af0\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Reuse Block\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":34}|\n{\"type\":\"ATTR\",\"ticket\":165,\"id\":\"c03cf5286ab8b365\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Group ID\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":35}|\n{\"type\":\"ATTR\",\"ticket\":166,\"id\":\"15aafd0c8e0a7d14\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":null,\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Channel ID\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":36}|\n{\"type\":\"ATTR\",\"ticket\":167,\"id\":\"428d0cbcbc4f6cc8\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"SAMSUNG(\u4e09\u661f)\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":18}|\n{\"type\":\"ATTR\",\"ticket\":168,\"id\":\"144fc08b045c2ecb\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"CL10B103KB8NNNC\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Manufacturer Part\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":19}|\n{\"type\":\"ATTR\",\"ticket\":169,\"id\":\"99e90519bcca7aa9\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"LCSC\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":23}|\n{\"type\":\"ATTR\",\"ticket\":170,\"id\":\"a7f16f7120aa649e\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"C1589\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Part\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":17}|\n{\"type\":\"ATTR\",\"ticket\":171,\"id\":\"82a884cf186b445c\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"10nF \u00b110% 50V\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"LCSC Part Name\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":16}|\n{\"type\":\"ATTR\",\"ticket\":172,\"id\":\"f5640f5c4e9480f3\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0603\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Supplier Footprint\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":20}|\n{\"type\":\"ATTR\",\"ticket\":173,\"id\":\"108bf605af14e6ac\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Extended Part\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"JLCPCB Part Class\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":21}|\n{\"type\":\"ATTR\",\"ticket\":174,\"id\":\"ed959d8007122cc0\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"https://item.szlcsc.com/datasheet/CL10B103KB8NNNC/1941.html\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Datasheet\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":22}|\n{\"type\":\"ATTR\",\"ticket\":175,\"id\":\"32ad3669aa06e2b8\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"10nF\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Value\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":28}|\n{\"type\":\"ATTR\",\"ticket\":176,\"id\":\"4b463e28e6012474\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"\u00b110%\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Tolerance\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":29}|\n{\"type\":\"ATTR\",\"ticket\":177,\"id\":\"cd2efa050faa361b\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"50V\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Voltage Rating\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":30}|\n{\"type\":\"ATTR\",\"ticket\":178,\"id\":\"230f43cad5d04499\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"X7R\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Temperature Coefficient\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":31}|\n{\"type\":\"ATTR\",\"ticket\":179,\"id\":\"9f0e9aacfc4afb00\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"Capacitance:10nF Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rating:50V Temperature Coefficient:X7R\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Description\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":33}|\n{\"type\":\"ATTR\",\"ticket\":180,\"id\":\"8d24b8b5dd1e0f53\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"0603\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Package\",\"fillColor\":null,\"parentId\":\"04674d300ecc0fe3\",\"zIndex\":37}|\n{\"type\":\"WIRE\",\"ticket\":181,\"id\":\"5d61b9dfeafb9edb\"}||{\"zIndex\":1180.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":182,\"id\":\"098e4e45af95c7a4\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":570,\"startY\":-3030,\"endX\":270,\"endY\":-3030,\"lineGroup\":\"5d61b9dfeafb9edb\"}|\n{\"type\":\"LINE\",\"ticket\":183,\"id\":\"48bf454af52d0e93\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":270,\"startY\":-3030,\"endX\":270,\"endY\":-3005,\"lineGroup\":\"5d61b9dfeafb9edb\"}|\n{\"type\":\"LINE\",\"ticket\":184,\"id\":\"f564a8ee74d8284e\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":270,\"startY\":-3005,\"endX\":230,\"endY\":-3005,\"lineGroup\":\"5d61b9dfeafb9edb\"}|\n{\"type\":\"ATTR\",\"ticket\":185,\"id\":\"370d150b40b3de5f\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"5d61b9dfeafb9edb\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":186,\"id\":\"fa3406adf6a69e35\"}||{\"x\":400,\"y\":-3030,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USB_DP_CONN\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"5d61b9dfeafb9edb\",\"zIndex\":7}|\n{\"type\":\"LINE\",\"ticket\":187,\"id\":\"137744f17b1bede5\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":270,\"startY\":-2985,\"endX\":270,\"endY\":-3005,\"lineGroup\":\"5d61b9dfeafb9edb\"}|\n{\"type\":\"LINE\",\"ticket\":188,\"id\":\"0e7a253e98772da2\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":270,\"startY\":-2985,\"endX\":230,\"endY\":-2985,\"lineGroup\":\"5d61b9dfeafb9edb\"}|\n{\"type\":\"ATTR\",\"ticket\":189,\"id\":\"fd7a27bb3a9f512c\"}||{\"x\":400,\"y\":-3030,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USB_DP_CONN\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"5d61b9dfeafb9edb\",\"zIndex\":8}|\n{\"type\":\"WIRE\",\"ticket\":190,\"id\":\"1a8e8e17b31eb27e\"}||{\"zIndex\":1182.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":191,\"id\":\"c151e229e77313fa\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":570,\"startY\":-2970,\"endX\":295,\"endY\":-2970,\"lineGroup\":\"1a8e8e17b31eb27e\"}|\n{\"type\":\"LINE\",\"ticket\":192,\"id\":\"826f7a0ff084b0ee\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":295,\"startY\":-2970,\"endX\":295,\"endY\":-2995,\"lineGroup\":\"1a8e8e17b31eb27e\"}|\n{\"type\":\"LINE\",\"ticket\":193,\"id\":\"a0944f584bb0cafb\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":295,\"startY\":-2995,\"endX\":230,\"endY\":-2995,\"lineGroup\":\"1a8e8e17b31eb27e\"}|\n{\"type\":\"ATTR\",\"ticket\":194,\"id\":\"b5f33780313ef4cb\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"1a8e8e17b31eb27e\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":195,\"id\":\"9aa2f960be7c3743\"}||{\"x\":400,\"y\":-2970,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USB_DN_CONN\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"1a8e8e17b31eb27e\",\"zIndex\":7}|\n{\"type\":\"LINE\",\"ticket\":196,\"id\":\"05f2e7c716003c41\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":295,\"startY\":-3015,\"endX\":295,\"endY\":-2995,\"lineGroup\":\"1a8e8e17b31eb27e\"}|\n{\"type\":\"LINE\",\"ticket\":197,\"id\":\"ef07341f01d7d37c\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":295,\"startY\":-3015,\"endX\":230,\"endY\":-3015,\"lineGroup\":\"1a8e8e17b31eb27e\"}|\n{\"type\":\"ATTR\",\"ticket\":198,\"id\":\"47d2174b6a84578b\"}||{\"x\":400,\"y\":-2970,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USB_DN_CONN\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"1a8e8e17b31eb27e\",\"zIndex\":8}|\n{\"type\":\"WIRE\",\"ticket\":199,\"id\":\"e9a47c8d86534b52\"}||{\"zIndex\":1184.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":200,\"id\":\"fcdf7db6972bccfc\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":770,\"startY\":-3030,\"endX\":700,\"endY\":-3030,\"lineGroup\":\"e9a47c8d86534b52\"}|\n{\"type\":\"ATTR\",\"ticket\":201,\"id\":\"e42749662f8e251d\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"e9a47c8d86534b52\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":202,\"id\":\"395525ad6555bc70\"}||{\"x\":735,\"y\":-3030,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USB_D_P\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"e9a47c8d86534b52\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":203,\"id\":\"71199dddbffa1ac6\"}||{\"zIndex\":1185.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":204,\"id\":\"c6f8ef79bfbe1fc5\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":770,\"startY\":-2970,\"endX\":700,\"endY\":-2970,\"lineGroup\":\"71199dddbffa1ac6\"}|\n{\"type\":\"ATTR\",\"ticket\":205,\"id\":\"57b1258ef0a3e494\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"71199dddbffa1ac6\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":206,\"id\":\"3efd2f2e1f9f41b2\"}||{\"x\":735,\"y\":-2970,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USB_D_N\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"71199dddbffa1ac6\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":207,\"id\":\"ca5d86bce3cd55f6\"}||{\"zIndex\":1186.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":208,\"id\":\"495b645278be1626\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":330,\"startY\":-3180,\"endX\":245,\"endY\":-3180,\"lineGroup\":\"ca5d86bce3cd55f6\"}|\n{\"type\":\"LINE\",\"ticket\":209,\"id\":\"9edb98896ad496a6\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":245,\"startY\":-3180,\"endX\":245,\"endY\":-3025,\"lineGroup\":\"ca5d86bce3cd55f6\"}|\n{\"type\":\"LINE\",\"ticket\":210,\"id\":\"209385430fd16f1b\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":245,\"startY\":-3025,\"endX\":230,\"endY\":-3025,\"lineGroup\":\"ca5d86bce3cd55f6\"}|\n{\"type\":\"ATTR\",\"ticket\":211,\"id\":\"3a420518d8085a14\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"ca5d86bce3cd55f6\",\"zIndex\":0}|\n{\"type\":\"ATTR\",\"ticket\":212,\"id\":\"fc8246b2b6f24bd7\"}||{\"x\":245,\"y\":-3102.5,\"rotation\":90,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USB_CC1\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"ca5d86bce3cd55f6\",\"zIndex\":4}|\n{\"type\":\"WIRE\",\"ticket\":213,\"id\":\"719d1c5be03c265b\"}||{\"zIndex\":1187.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":214,\"id\":\"29c2ee35c5445420\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":330,\"startY\":-3105,\"endX\":330,\"endY\":-3140,\"lineGroup\":\"719d1c5be03c265b\"}|\n{\"type\":\"ATTR\",\"ticket\":215,\"id\":\"2b3f7b877a48d018\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"719d1c5be03c265b\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":216,\"id\":\"131ea8472e379613\"}||{\"x\":330,\"y\":-3122.5,\"rotation\":90,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"719d1c5be03c265b\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":217,\"id\":\"d09c64840aefe45d\"}||{\"zIndex\":1188.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":218,\"id\":\"0ba129e3a4f74363\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":400,\"startY\":-2880,\"endX\":245,\"endY\":-2880,\"lineGroup\":\"d09c64840aefe45d\"}|\n{\"type\":\"LINE\",\"ticket\":219,\"id\":\"6533d2188f875382\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":245,\"startY\":-2880,\"endX\":245,\"endY\":-2965,\"lineGroup\":\"d09c64840aefe45d\"}|\n{\"type\":\"LINE\",\"ticket\":220,\"id\":\"b08e251717429b8c\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":245,\"startY\":-2965,\"endX\":230,\"endY\":-2965,\"lineGroup\":\"d09c64840aefe45d\"}|\n{\"type\":\"ATTR\",\"ticket\":221,\"id\":\"ac1114f965c088c1\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"d09c64840aefe45d\",\"zIndex\":0}|\n{\"type\":\"ATTR\",\"ticket\":222,\"id\":\"8f8007d1d3086ee0\"}||{\"x\":315,\"y\":-2880,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"USB_CC2\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"d09c64840aefe45d\",\"zIndex\":4}|\n{\"type\":\"WIRE\",\"ticket\":223,\"id\":\"e5169d205cda59d8\"}||{\"zIndex\":1189.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":224,\"id\":\"e3bf605835d5b456\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":400,\"startY\":-2805,\"endX\":400,\"endY\":-2840,\"lineGroup\":\"e5169d205cda59d8\"}|\n{\"type\":\"ATTR\",\"ticket\":225,\"id\":\"b3815587d9a7f671\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"e5169d205cda59d8\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":226,\"id\":\"6a682e1714ae6ea6\"}||{\"x\":400,\"y\":-2822.5,\"rotation\":90,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"e5169d205cda59d8\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":227,\"id\":\"851fdfd2656e5f0c\"}||{\"zIndex\":1190.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":228,\"id\":\"407cd26903d802c5\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":325,\"startY\":-2760,\"endX\":325,\"endY\":-2790,\"lineGroup\":\"851fdfd2656e5f0c\"}|\n{\"type\":\"LINE\",\"ticket\":229,\"id\":\"1a31ab31972c03e9\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":325,\"startY\":-2790,\"endX\":195,\"endY\":-2790,\"lineGroup\":\"851fdfd2656e5f0c\"}|\n{\"type\":\"LINE\",\"ticket\":230,\"id\":\"be65d1ec3cddc686\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":195,\"startY\":-2790,\"endX\":195,\"endY\":-2765,\"lineGroup\":\"851fdfd2656e5f0c\"}|\n{\"type\":\"ATTR\",\"ticket\":231,\"id\":\"bc29d49f2393ee37\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"851fdfd2656e5f0c\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":232,\"id\":\"43e5d422fb31a963\"}||{\"x\":260,\"y\":2790,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"VBUS_USB\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"851fdfd2656e5f0c\",\"zIndex\":7}|\n{\"type\":\"WIRE\",\"ticket\":233,\"id\":\"f6facdb3ff873d3f\"}||{\"zIndex\":1191.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":234,\"id\":\"e1c0d3c28b4abb85\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":325,\"startY\":-2730,\"endX\":325,\"endY\":-2700,\"lineGroup\":\"f6facdb3ff873d3f\"}|\n{\"type\":\"LINE\",\"ticket\":235,\"id\":\"9f0cb6726e9d8dc8\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":325,\"startY\":-2700,\"endX\":195,\"endY\":-2700,\"lineGroup\":\"f6facdb3ff873d3f\"}|\n{\"type\":\"LINE\",\"ticket\":236,\"id\":\"fab9dc69fb7c622e\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":195,\"startY\":-2700,\"endX\":195,\"endY\":-2725,\"lineGroup\":\"f6facdb3ff873d3f\"}|\n{\"type\":\"ATTR\",\"ticket\":237,\"id\":\"69c556b4026ae787\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"f6facdb3ff873d3f\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":238,\"id\":\"6d89dc5aea62e94a\"}||{\"x\":260,\"y\":2700,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"f6facdb3ff873d3f\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":239,\"id\":\"58b27bc58153365c\"}||{\"x\":195,\"y\":-2782.5,\"rotation\":90,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"VBUS_USB\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"851fdfd2656e5f0c\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":240,\"id\":\"60c040005e69c043\"}||{\"x\":195,\"y\":-2707.5,\"rotation\":90,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"f6facdb3ff873d3f\",\"zIndex\":8}|\n{\"type\":\"WIRE\",\"ticket\":241,\"id\":\"638a6a0ca74aeec3\"}||{\"zIndex\":1194.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":242,\"id\":\"f4b3f9a091042f54\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":340,\"startY\":-3045,\"endX\":230,\"endY\":-3045,\"lineGroup\":\"638a6a0ca74aeec3\"}|\n{\"type\":\"ATTR\",\"ticket\":243,\"id\":\"f55940c5ea129747\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"638a6a0ca74aeec3\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":244,\"id\":\"a258d16c402c0197\"}||{\"x\":300,\"y\":3045,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"VBUS_USB\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"638a6a0ca74aeec3\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":245,\"id\":\"9c23d2d74d3efac2\"}||{\"zIndex\":1195.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":246,\"id\":\"79d9f4e892b860e8\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":340,\"startY\":-2955,\"endX\":230,\"endY\":-2955,\"lineGroup\":\"9c23d2d74d3efac2\"}|\n{\"type\":\"ATTR\",\"ticket\":247,\"id\":\"5bfd67ddae771c3c\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"9c23d2d74d3efac2\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":248,\"id\":\"d506c178e11d599c\"}||{\"x\":300,\"y\":2955,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"VBUS_USB\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"9c23d2d74d3efac2\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":249,\"id\":\"ec1b9ea448460651\"}||{\"zIndex\":1196.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":250,\"id\":\"2ad0df82b47c9661\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":340,\"startY\":-3055,\"endX\":230,\"endY\":-3055,\"lineGroup\":\"ec1b9ea448460651\"}|\n{\"type\":\"ATTR\",\"ticket\":251,\"id\":\"90022451560fe309\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"ec1b9ea448460651\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":252,\"id\":\"e61590aebd26d582\"}||{\"x\":300,\"y\":3055,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"ec1b9ea448460651\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":253,\"id\":\"0787bf658ccc130c\"}||{\"zIndex\":1197.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":254,\"id\":\"be6ba8e3aa5d6967\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":340,\"startY\":-2945,\"endX\":230,\"endY\":-2945,\"lineGroup\":\"0787bf658ccc130c\"}|\n{\"type\":\"ATTR\",\"ticket\":255,\"id\":\"9e9fc06a56a4db24\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"0787bf658ccc130c\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":256,\"id\":\"995eacb7975d55e7\"}||{\"x\":300,\"y\":2945,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"0787bf658ccc130c\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":257,\"id\":\"fc272aedb4bb9956\"}||{\"zIndex\":1198.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":258,\"id\":\"675908e6d4f9544f\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":90,\"startY\":-2945,\"endX\":160,\"endY\":-2945,\"lineGroup\":\"fc272aedb4bb9956\"}|\n{\"type\":\"ATTR\",\"ticket\":259,\"id\":\"62573bc201f3439f\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"fc272aedb4bb9956\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":260,\"id\":\"a7aacd53da0c30a9\"}||{\"x\":100,\"y\":2945,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"fc272aedb4bb9956\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":261,\"id\":\"30239fb2fc2e2a8b\"}||{\"zIndex\":1199.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":262,\"id\":\"ab97ad9f993acb9d\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":90,\"startY\":-2955,\"endX\":160,\"endY\":-2955,\"lineGroup\":\"30239fb2fc2e2a8b\"}|\n{\"type\":\"ATTR\",\"ticket\":263,\"id\":\"aec6dd606bbdf77a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"30239fb2fc2e2a8b\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":264,\"id\":\"da2004773a12e4df\"}||{\"x\":100,\"y\":2955,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"30239fb2fc2e2a8b\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":265,\"id\":\"855033ca6aa3e475\"}||{\"zIndex\":1200.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":266,\"id\":\"2f27750598ef704d\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":90,\"startY\":-2965,\"endX\":160,\"endY\":-2965,\"lineGroup\":\"855033ca6aa3e475\"}|\n{\"type\":\"ATTR\",\"ticket\":267,\"id\":\"eeacb3d07c4a9d04\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"855033ca6aa3e475\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":268,\"id\":\"a01f3ae9b342007b\"}||{\"x\":100,\"y\":2965,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"855033ca6aa3e475\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":269,\"id\":\"61f372024d8c1361\"}||{\"zIndex\":1201.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":270,\"id\":\"b9a3032a16d2fa98\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":90,\"startY\":-2975,\"endX\":160,\"endY\":-2975,\"lineGroup\":\"61f372024d8c1361\"}|\n{\"type\":\"ATTR\",\"ticket\":271,\"id\":\"7f6657b9584f1eb4\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"61f372024d8c1361\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":272,\"id\":\"7e41e3f88a9da467\"}||{\"x\":100,\"y\":2975,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"61f372024d8c1361\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":273,\"id\":\"debf66ba43b2dcf6\"}||{\"zIndex\":1202.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":274,\"id\":\"415a8b294548ae12\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":530,\"startY\":-3000,\"endX\":570,\"endY\":-3000,\"lineGroup\":\"debf66ba43b2dcf6\"}|\n{\"type\":\"ATTR\",\"ticket\":275,\"id\":\"b02e491bd706719a\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"debf66ba43b2dcf6\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":276,\"id\":\"41af9a0e13815a7f\"}||{\"x\":550,\"y\":-3000,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"GND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"debf66ba43b2dcf6\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":277,\"id\":\"331a6f449f253a98\"}||{\"zIndex\":1203.4999999999995}|\n{\"type\":\"LINE\",\"ticket\":278,\"id\":\"0110dfe811147a94\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":null,\"strokeStyle\":null,\"strokeWidth\":null,\"startX\":740,\"startY\":-3000,\"endX\":700,\"endY\":-3000,\"lineGroup\":\"331a6f449f253a98\"}|\n{\"type\":\"ATTR\",\"ticket\":279,\"id\":\"439847fae8772a9c\"}||{\"x\":null,\"y\":null,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"[]\",\"keyVisible\":null,\"valueVisible\":null,\"key\":\"Relevance\",\"fillColor\":null,\"parentId\":\"331a6f449f253a98\",\"zIndex\":2}|\n{\"type\":\"ATTR\",\"ticket\":280,\"id\":\"c4c01f706149b4f4\"}||{\"x\":720,\"y\":-3000,\"rotation\":null,\"color\":null,\"fontFamily\":null,\"fontSize\":null,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":null,\"value\":\"VBUS_USB\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"331a6f449f253a98\",\"zIndex\":3}|\n{\"type\":\"RECT\",\"ticket\":281,\"id\":\"ce51957a5c2a9932\"}||{\"radiusX\":0,\"radiusY\":0,\"dotX1\":70,\"dotX2\":840,\"dotY1\":-3275,\"dotY2\":-2630,\"strokeColor\":\"#555555\",\"strokeStyle\":null,\"fillColor\":null,\"strokeWidth\":1,\"fillStyle\":null,\"rotation\":0,\"zIndex\":1204.4999999999995,\"locked\":false}|\n{\"type\":\"TEXT\",\"ticket\":282,\"id\":\"3723e89683769199\"}||{\"x\":90,\"y\":-3250,\"rotation\":0,\"color\":\"#222222\",\"fontFamily\":null,\"fontSize\":12,\"fontWeight\":true,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"01A  USB-C INPUT / CC / ST USB ESD\",\"fillColor\":\"#222222\",\"zIndex\":1205.4999999999995}",
+    "components": [
+      {
+        "async": true,
+        "primitiveType": "Component",
+        "primitiveId": "54da7c3541404b81",
+        "componentType": "part",
+        "x": 195,
+        "y": 3000,
+        "subPartName": "TYPE-C-31-M-12.1",
+        "rotation": 0,
+        "mirror": true,
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "net": "",
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e4a06c96ed8ff60d",
+          "name": "TYPE-C-31-M-12"
+        },
+        "symbol": {
+          "uuid": "5c1d78c57b2cfbf1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TYPE-C-31-M-12"
+        },
+        "footprint": {
+          "uuid": "988b3b1b1574c8b9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "USB-C_SMD-TYPE-C-31-M-12_1"
+        },
+        "designator": "J1",
+        "name": "TYPE-C-31-M-12",
+        "uniqueId": "gge1",
+        "manufacturer": "\u97e9\u56fd\u97e9\u8363",
+        "manufacturerId": "TYPE-C-31-M-12",
+        "supplier": "LCSC",
+        "supplierId": "C165948",
+        "otherProperty": {
+          "LCSC Part Name": "Type-C \u6bcd \u5367\u8d34",
+          "Supplier Footprint": "SMD",
+          "JLCPCB Part Class": "Extended Part",
+          "Datasheet": "https://item.szlcsc.com/datasheet/TYPE-C-31-M-12/177331.html",
+          "Connector Type": "Type-C",
+          "Protocol Standard": "-",
+          "Gender": "Female",
+          "Mounting Type": "Surface Mount, Right Angle",
+          "Number of Contacts": "16P",
+          "Number of Ports": "1",
+          "Current Rating-Power": "5A",
+          "Voltage Rating": "20V",
+          "Connect-Disconnect Life": "10,000 cycles",
+          "Length": "7.35mm",
+          "Operating Temperature": "-30\u2103~+80\u2103",
+          "Description": "Connector Type:Type-C Protocol Standard:- Gender:Female Mounting Type:Surface Mount, Right Angle Number of Contacts:16P Number of Ports:1 Current Rating-Power:5A Voltage Rating:20V Connect-Disconnect Life:10,000 cycles Length:7.35mm Operating Temperature:",
+          "Package": "SMD"
+        }
+      },
+      {
+        "async": true,
+        "primitiveType": "Component",
+        "primitiveId": "75ab5d349feb27ea",
+        "componentType": "part",
+        "x": 635,
+        "y": 3000,
+        "subPartName": "USBLC6-2SC6.1",
+        "rotation": 0,
+        "mirror": false,
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "net": "",
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e038885bbe4d4fd8",
+          "name": "USBLC6-2SC6_C7519"
+        },
+        "symbol": {
+          "uuid": "f4f2ec63db53f36d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "USBLC6-2SC6"
+        },
+        "footprint": {
+          "uuid": "5bb28dece81db1e0",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL"
+        },
+        "designator": "D6",
+        "name": "USBLC6-2SC6_C7519",
+        "uniqueId": "gge2",
+        "manufacturer": "ST(\u610f\u6cd5\u534a\u5bfc\u4f53)",
+        "manufacturerId": "USBLC6-2SC6",
+        "supplier": "LCSC",
+        "supplierId": "C7519",
+        "otherProperty": {
+          "LCSC Part Name": "\u5355\u5411ESD 5.25V\u622a\u6b62 \u5cf0\u503c\u8109\u51b2\u7535\u6d41\uff1a5A",
+          "Supplier Footprint": "SOT-23-6L",
+          "JLCPCB Part Class": "Extended Part",
+          "Datasheet": "https://item.szlcsc.com/datasheet/USBLC6-2SC6/7996.html",
+          "Polarity": "Unidirectional",
+          "Reverse Stand-Off Voltage (Vrwm)": "5.25V",
+          "Clamping Voltage": "17V",
+          "Peak Pulse Current (Ipp)": "5A",
+          "Voltage - Breakdown": "6V",
+          "Reverse Leakage Current (Ir)": "150nA",
+          "Number of Channels": "2",
+          "Operating Temperature": "-40\u2103~+125\u2103",
+          "level of protection": "IEC 61000-4-2",
+          "Type": "ESD",
+          "Junction Capacitance": "3.5pF",
+          "Description": "Polarity:Unidirectional Reverse Stand-Off Voltage (Vrwm):5.25V Clamping Voltage:17V Peak Pulse Current (Ipp):5A Voltage - Breakdown:6V Reverse Leakage Current (Ir):150nA Number of Channels:2 Operating Temperature:-40\u2103~+125\u2103 Operating Temperature:-40\u2103~+125",
+          "Package": "SOT-23-6L"
+        }
+      },
+      {
+        "async": true,
+        "primitiveType": "Component",
+        "primitiveId": "93f56bcc982aef6d",
+        "componentType": "part",
+        "x": 330,
+        "y": 3160,
+        "subPartName": "0603WAF5101T5E.1",
+        "rotation": 270,
+        "mirror": false,
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "net": "",
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "870f501880e54ecd",
+          "name": "0603WAF5101T5E"
+        },
+        "symbol": {
+          "uuid": "9b2a66a24639788d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF5101T5E"
+        },
+        "footprint": {
+          "uuid": "40e4b5bdc72ea727",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "designator": "R6",
+        "name": "5.1k",
+        "uniqueId": "gge3",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF5101T5E",
+        "supplier": "LCSC",
+        "supplierId": "C23186",
+        "otherProperty": {
+          "LCSC Part Name": "\u539a\u819c\u7535\u963b 5.1k\u03a9 \u00b11%",
+          "Supplier Footprint": "0603",
+          "JLCPCB Part Class": "Basic Part",
+          "Datasheet": "https://item.szlcsc.com/datasheet/0603WAF5101T5E/23913.html",
+          "Type": "Thick Film Resistor",
+          "Value": "5.1k\u03a9",
+          "Tolerance": "\u00b11%",
+          "Power(Watts)": "100mW",
+          "Voltage-Supply(Max)": "75V",
+          "Temperature Coefficient": "\u00b1100ppm/\u2103",
+          "Operating Temperature": "-55\u2103~+155\u2103",
+          "Description": "Type:Thick Film Resistor Resistance:5.1k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103",
+          "Package": "0603"
+        }
+      },
+      {
+        "async": true,
+        "primitiveType": "Component",
+        "primitiveId": "e6095b9cc28556a0",
+        "componentType": "part",
+        "x": 400,
+        "y": 2860,
+        "subPartName": "0603WAF5101T5E.1",
+        "rotation": 270,
+        "mirror": false,
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "net": "",
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "870f501880e54ecd",
+          "name": "0603WAF5101T5E"
+        },
+        "symbol": {
+          "uuid": "9b2a66a24639788d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF5101T5E"
+        },
+        "footprint": {
+          "uuid": "40e4b5bdc72ea727",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "designator": "R7",
+        "name": "5.1k",
+        "uniqueId": "gge4",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF5101T5E",
+        "supplier": "LCSC",
+        "supplierId": "C23186",
+        "otherProperty": {
+          "LCSC Part Name": "\u539a\u819c\u7535\u963b 5.1k\u03a9 \u00b11%",
+          "Supplier Footprint": "0603",
+          "JLCPCB Part Class": "Basic Part",
+          "Datasheet": "https://item.szlcsc.com/datasheet/0603WAF5101T5E/23913.html",
+          "Type": "Thick Film Resistor",
+          "Value": "5.1k\u03a9",
+          "Tolerance": "\u00b11%",
+          "Power(Watts)": "100mW",
+          "Voltage-Supply(Max)": "75V",
+          "Temperature Coefficient": "\u00b1100ppm/\u2103",
+          "Operating Temperature": "-55\u2103~+155\u2103",
+          "Description": "Type:Thick Film Resistor Resistance:5.1k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103",
+          "Package": "0603"
+        }
+      },
+      {
+        "async": true,
+        "primitiveType": "Component",
+        "primitiveId": "63f1fd0b7f64b884",
+        "componentType": "part",
+        "x": 195,
+        "y": 2745,
+        "subPartName": "GRM21BR71A106KE51L.1",
+        "rotation": 270,
+        "mirror": false,
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "net": "",
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "af1c18b799949db4",
+          "name": "GRM21BR71A106KE51L"
+        },
+        "symbol": {
+          "uuid": "af4a92836a1bb3bb",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "GRM21BR71A106KE51L"
+        },
+        "footprint": {
+          "uuid": "5d07ddf7d59ace73",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0805"
+        },
+        "designator": "C21",
+        "name": "10uF",
+        "uniqueId": "gge5",
+        "manufacturer": "muRata(\u6751\u7530)",
+        "manufacturerId": "GRM21BR71A106KE51L",
+        "supplier": "LCSC",
+        "supplierId": "C86038",
+        "otherProperty": {
+          "LCSC Part Name": "10uF \u00b110% 10V",
+          "Supplier Footprint": "0805",
+          "JLCPCB Part Class": "Extended Part",
+          "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf",
+          "Value": "10uF",
+          "Tolerance": "\u00b110%",
+          "Voltage Rated": "",
+          "Temperature Coefficient": "",
+          "Description": "Capacitance: Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rated: Temperature Coefficient:",
+          "Package": "0805"
+        }
+      },
+      {
+        "async": true,
+        "primitiveType": "Component",
+        "primitiveId": "04674d300ecc0fe3",
+        "componentType": "part",
+        "x": 325,
+        "y": 2745,
+        "subPartName": "CL10B103KB8NNNC.1",
+        "rotation": 270,
+        "mirror": false,
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "net": "",
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "468835573c65a84d",
+          "name": "CL10B103KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "390981570ceb0ef1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B103KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "2bdfc42b0da7d550",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "designator": "C22",
+        "name": "10nF",
+        "uniqueId": "gge6",
+        "manufacturer": "SAMSUNG(\u4e09\u661f)",
+        "manufacturerId": "CL10B103KB8NNNC",
+        "supplier": "LCSC",
+        "supplierId": "C1589",
+        "otherProperty": {
+          "LCSC Part Name": "10nF \u00b110% 50V",
+          "Supplier Footprint": "0603",
+          "JLCPCB Part Class": "Extended Part",
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL10B103KB8NNNC/1941.html",
+          "Value": "10nF",
+          "Tolerance": "\u00b110%",
+          "Voltage Rating": "50V",
+          "Temperature Coefficient": "X7R",
+          "Description": "Capacitance:10nF Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rating:50V Temperature Coefficient:X7R",
+          "Package": "0603"
+        }
+      }
+    ],
+    "wires": [
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          570,
+          3030,
+          270,
+          3030,
+          270,
+          3030,
+          270,
+          3005,
+          270,
+          3005,
+          230,
+          3005,
+          270,
+          2985,
+          270,
+          3005,
+          270,
+          2985,
+          230,
+          2985
+        ],
+        "net": "USB_DP_CONN",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "5d61b9dfeafb9edb"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          570,
+          2970,
+          295,
+          2970,
+          295,
+          2970,
+          295,
+          2995,
+          295,
+          2995,
+          230,
+          2995,
+          295,
+          3015,
+          295,
+          2995,
+          295,
+          3015,
+          230,
+          3015
+        ],
+        "net": "USB_DN_CONN",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "1a8e8e17b31eb27e"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          770,
+          3030,
+          700,
+          3030
+        ],
+        "net": "USB_D_P",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "e9a47c8d86534b52"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          770,
+          2970,
+          700,
+          2970
+        ],
+        "net": "USB_D_N",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "71199dddbffa1ac6"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          330,
+          3180,
+          245,
+          3180,
+          245,
+          3180,
+          245,
+          3025,
+          245,
+          3025,
+          230,
+          3025
+        ],
+        "net": "USB_CC1",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "ca5d86bce3cd55f6"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          330,
+          3105,
+          330,
+          3140
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "719d1c5be03c265b"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          400,
+          2880,
+          245,
+          2880,
+          245,
+          2880,
+          245,
+          2965,
+          245,
+          2965,
+          230,
+          2965
+        ],
+        "net": "USB_CC2",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "d09c64840aefe45d"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          400,
+          2805,
+          400,
+          2840
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "e5169d205cda59d8"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          325,
+          2760,
+          325,
+          2790,
+          325,
+          2790,
+          195,
+          2790,
+          195,
+          2790,
+          195,
+          2765
+        ],
+        "net": "VBUS_USB",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "851fdfd2656e5f0c"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          325,
+          2730,
+          325,
+          2700,
+          325,
+          2700,
+          195,
+          2700,
+          195,
+          2700,
+          195,
+          2725
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "f6facdb3ff873d3f"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          340,
+          3045,
+          230,
+          3045
+        ],
+        "net": "VBUS_USB",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "638a6a0ca74aeec3"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          340,
+          2955,
+          230,
+          2955
+        ],
+        "net": "VBUS_USB",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "9c23d2d74d3efac2"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          340,
+          3055,
+          230,
+          3055
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "ec1b9ea448460651"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          340,
+          2945,
+          230,
+          2945
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "0787bf658ccc130c"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          90,
+          2945,
+          160,
+          2945
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "fc272aedb4bb9956"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          90,
+          2955,
+          160,
+          2955
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "30239fb2fc2e2a8b"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          90,
+          2965,
+          160,
+          2965
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "855033ca6aa3e475"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          90,
+          2975,
+          160,
+          2975
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "61f372024d8c1361"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          530,
+          3000,
+          570,
+          3000
+        ],
+        "net": "GND",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "debf66ba43b2dcf6"
+      },
+      {
+        "async": true,
+        "primitiveType": "Wire",
+        "line": [
+          740,
+          3000,
+          700,
+          3000
+        ],
+        "net": "VBUS_USB",
+        "color": null,
+        "lineWidth": null,
+        "lineType": null,
+        "primitiveId": "331a6f449f253a98"
+      }
+    ]
+  }
+}

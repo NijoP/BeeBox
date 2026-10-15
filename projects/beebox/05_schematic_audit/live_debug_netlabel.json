@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "v": {
+    "apiLabel": "function",
+    "apiAttributeGet": "function",
+    "componentCount": 10,
+    "wireCount": 22,
+    "nearComponents": 0,
+    "nearWires": 0,
+    "stubCreated": true,
+    "stubId": "4893f624b5dc534d",
+    "labelCreated": false,
+    "restored": true
+  }
+}

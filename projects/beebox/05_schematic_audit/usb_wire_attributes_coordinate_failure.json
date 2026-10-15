@@ -1,0 +1,485 @@
+{
+  "ok": true,
+  "v": [
+    {
+      "id": "5d61b9dfeafb9edb",
+      "net": "USB_DP_CONN",
+      "line": [
+        570,
+        3030,
+        270,
+        3030,
+        270,
+        3030,
+        270,
+        3005,
+        270,
+        3005,
+        230,
+        3005,
+        270,
+        2985,
+        270,
+        3005,
+        270,
+        2985,
+        230,
+        2985
+      ],
+      "attrs": [
+        {
+          "id": "fa3406adf6a69e35",
+          "key": "Name",
+          "value": "USB_DP_CONN",
+          "x": 400,
+          "y": 3030,
+          "rotation": null
+        },
+        {
+          "id": "fd7a27bb3a9f512c",
+          "key": "Name",
+          "value": "USB_DP_CONN",
+          "x": 400,
+          "y": 3030,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "1a8e8e17b31eb27e",
+      "net": "USB_DN_CONN",
+      "line": [
+        570,
+        2970,
+        295,
+        2970,
+        295,
+        2970,
+        295,
+        2995,
+        295,
+        2995,
+        230,
+        2995,
+        295,
+        3015,
+        295,
+        2995,
+        295,
+        3015,
+        230,
+        3015
+      ],
+      "attrs": [
+        {
+          "id": "9aa2f960be7c3743",
+          "key": "Name",
+          "value": "USB_DN_CONN",
+          "x": 400,
+          "y": 2970,
+          "rotation": null
+        },
+        {
+          "id": "47d2174b6a84578b",
+          "key": "Name",
+          "value": "USB_DN_CONN",
+          "x": 400,
+          "y": 2970,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "e9a47c8d86534b52",
+      "net": "USB_D_P",
+      "line": [
+        770,
+        3030,
+        700,
+        3030
+      ],
+      "attrs": [
+        {
+          "id": "395525ad6555bc70",
+          "key": "Name",
+          "value": "USB_D_P",
+          "x": 735,
+          "y": 3030,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "71199dddbffa1ac6",
+      "net": "USB_D_N",
+      "line": [
+        770,
+        2970,
+        700,
+        2970
+      ],
+      "attrs": [
+        {
+          "id": "3efd2f2e1f9f41b2",
+          "key": "Name",
+          "value": "USB_D_N",
+          "x": 735,
+          "y": 2970,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "ca5d86bce3cd55f6",
+      "net": "USB_CC1",
+      "line": [
+        330,
+        3180,
+        245,
+        3180,
+        245,
+        3180,
+        245,
+        3025,
+        245,
+        3025,
+        230,
+        3025
+      ],
+      "attrs": [
+        {
+          "id": "fc8246b2b6f24bd7",
+          "key": "Name",
+          "value": "USB_CC1",
+          "x": 245,
+          "y": 3102.5,
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "id": "719d1c5be03c265b",
+      "net": "GND",
+      "line": [
+        330,
+        3105,
+        330,
+        3140
+      ],
+      "attrs": [
+        {
+          "id": "131ea8472e379613",
+          "key": "Name",
+          "value": "GND",
+          "x": 330,
+          "y": 3122.5,
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "id": "d09c64840aefe45d",
+      "net": "USB_CC2",
+      "line": [
+        400,
+        2880,
+        245,
+        2880,
+        245,
+        2880,
+        245,
+        2965,
+        245,
+        2965,
+        230,
+        2965
+      ],
+      "attrs": [
+        {
+          "id": "8f8007d1d3086ee0",
+          "key": "Name",
+          "value": "USB_CC2",
+          "x": 315,
+          "y": 2880,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "e5169d205cda59d8",
+      "net": "GND",
+      "line": [
+        400,
+        2805,
+        400,
+        2840
+      ],
+      "attrs": [
+        {
+          "id": "6a682e1714ae6ea6",
+          "key": "Name",
+          "value": "GND",
+          "x": 400,
+          "y": 2822.5,
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "id": "851fdfd2656e5f0c",
+      "net": "VBUS_USB",
+      "line": [
+        325,
+        2760,
+        325,
+        2790,
+        325,
+        2790,
+        195,
+        2790,
+        195,
+        2790,
+        195,
+        2765
+      ],
+      "attrs": [
+        {
+          "id": "43e5d422fb31a963",
+          "key": "Name",
+          "value": "VBUS_USB",
+          "x": 260,
+          "y": -2790,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "f6facdb3ff873d3f",
+      "net": "GND",
+      "line": [
+        325,
+        2730,
+        325,
+        2700,
+        325,
+        2700,
+        195,
+        2700,
+        195,
+        2700,
+        195,
+        2725
+      ],
+      "attrs": [
+        {
+          "id": "6d89dc5aea62e94a",
+          "key": "Name",
+          "value": "GND",
+          "x": 260,
+          "y": -2700,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "638a6a0ca74aeec3",
+      "net": "VBUS_USB",
+      "line": [
+        340,
+        3045,
+        230,
+        3045
+      ],
+      "attrs": [
+        {
+          "id": "a258d16c402c0197",
+          "key": "Name",
+          "value": "VBUS_USB",
+          "x": 300,
+          "y": -3045,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "9c23d2d74d3efac2",
+      "net": "VBUS_USB",
+      "line": [
+        340,
+        2955,
+        230,
+        2955
+      ],
+      "attrs": [
+        {
+          "id": "d506c178e11d599c",
+          "key": "Name",
+          "value": "VBUS_USB",
+          "x": 300,
+          "y": -2955,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "ec1b9ea448460651",
+      "net": "GND",
+      "line": [
+        340,
+        3055,
+        230,
+        3055
+      ],
+      "attrs": [
+        {
+          "id": "e61590aebd26d582",
+          "key": "Name",
+          "value": "GND",
+          "x": 300,
+          "y": -3055,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "0787bf658ccc130c",
+      "net": "GND",
+      "line": [
+        340,
+        2945,
+        230,
+        2945
+      ],
+      "attrs": [
+        {
+          "id": "995eacb7975d55e7",
+          "key": "Name",
+          "value": "GND",
+          "x": 300,
+          "y": -2945,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "fc272aedb4bb9956",
+      "net": "GND",
+      "line": [
+        90,
+        2945,
+        160,
+        2945
+      ],
+      "attrs": [
+        {
+          "id": "a7aacd53da0c30a9",
+          "key": "Name",
+          "value": "GND",
+          "x": 100,
+          "y": -2945,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "30239fb2fc2e2a8b",
+      "net": "GND",
+      "line": [
+        90,
+        2955,
+        160,
+        2955
+      ],
+      "attrs": [
+        {
+          "id": "da2004773a12e4df",
+          "key": "Name",
+          "value": "GND",
+          "x": 100,
+          "y": -2955,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "855033ca6aa3e475",
+      "net": "GND",
+      "line": [
+        90,
+        2965,
+        160,
+        2965
+      ],
+      "attrs": [
+        {
+          "id": "a01f3ae9b342007b",
+          "key": "Name",
+          "value": "GND",
+          "x": 100,
+          "y": -2965,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "61f372024d8c1361",
+      "net": "GND",
+      "line": [
+        90,
+        2975,
+        160,
+        2975
+      ],
+      "attrs": [
+        {
+          "id": "7e41e3f88a9da467",
+          "key": "Name",
+          "value": "GND",
+          "x": 100,
+          "y": -2975,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "id": "debf66ba43b2dcf6",
+      "net": "GND",
+      "line": [
+        530,
+        3000,
+        570,
+        3000
+      ],
+      "attrs": [
+        {
+          "id": "41af9a0e13815a7f",
+          "key": "Name",
+          "value": "GND",
+          "x": 550,
+          "y": 3000,
+          "rotation": null
+        }
+      ]
+    },
+    {
+      "id": "331a6f449f253a98",
+      "net": "VBUS_USB",
+      "line": [
+        740,
+        3000,
+        700,
+        3000
+      ],
+      "attrs": [
+        {
+          "id": "c4c01f706149b4f4",
+          "key": "Name",
+          "value": "VBUS_USB",
+          "x": 720,
+          "y": 3000,
+          "rotation": null
+        }
+      ]
+    }
+  ]
+}

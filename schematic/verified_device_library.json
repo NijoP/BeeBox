@@ -1,0 +1,65 @@
+{
+  "D6": {
+    "mpn": "USBLC6-2SC6",
+    "manufacturer": "ST(意法半导体)",
+    "uuid": "5f9a995bc73746278024add8c7b330e3",
+    "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+    "supplierId": "C7519",
+    "symbolUuid": "a1ce4cdfd8c34673b2774988c19b159e",
+    "evidence": "projects/beebox/05_schematic_audit/d6_library_search.json; datasheets/ST_USBLC6-2.pdf, Doc ID 11265 Rev 5 Figure 1",
+    "physicalPinNets": {
+      "1": "USB_DP_CONN",
+      "2": "GND",
+      "3": "USB_DN_CONN",
+      "4": "USB_D_N",
+      "5": "VBUS_USB",
+      "6": "USB_D_P"
+    },
+    "footprintUuid": "136db59d42184a44ac8441e35d752b13",
+    "package": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL"
+  },
+  "J1": {
+    "manufacturer": "韩国韩荣",
+    "uuid": "730e76758f9742ca9ca85c73f4ec0ecd",
+    "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+    "supplierId": "C165948",
+    "symbolUuid": "e30d694d838e433dbe5423a6e817759e",
+    "footprintUuid": "45d257a27a304edd865bdb43b1945b61",
+    "mpn": "TYPE-C-31-M-12",
+    "package": "USB-C_SMD-TYPE-C-31-M-12_1",
+    "evidence": "datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948",
+    "physicalPinNets": {
+      "A1B12": "GND",
+      "A4B9": "VBUS_USB",
+      "B8": null,
+      "A5": "USB_CC1",
+      "B7": "USB_DN_CONN",
+      "A6": "USB_DP_CONN",
+      "A7": "USB_DN_CONN",
+      "B6": "USB_DP_CONN",
+      "A8": null,
+      "B5": "USB_CC2",
+      "B4A9": "VBUS_USB",
+      "B1A12": "GND",
+      "1": "GND",
+      "2": "GND",
+      "3": "GND",
+      "4": "GND"
+    }
+  },
+  "J4": {
+    "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+    "manufacturer": "JST",
+    "uuid": "e36262a38c7e4ab8a1efe0df793ebdea",
+    "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+    "supplierId": "C295747",
+    "symbolUuid": "949051c2dc9b46d28b8116ac48c62b1a",
+    "footprintUuid": "09ed7394b5f04eccb36be7738c45b2ef",
+    "package": "CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN",
+    "evidence": "projects/beebox/05_schematic_audit/power_library_candidates.json exact JST record; manufacturer 2-position drawing/record",
+    "physicalPinNets": {
+      "1": "VBAT",
+      "2": "GND"
+    }
+  }
+}

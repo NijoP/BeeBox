@@ -8,16 +8,15 @@ This is the connectivity membership oracle. The machine-readable CSVs in `netlis
 
 | Net | Meaning | Domain |
 |---|---|---|
-| `VBUS_USB` | USB-C 5 V input before USB ESD | Board A |
-| `VIN_USB_PROTECTED` | USB input after ESD/current protection | Board A |
+| `VBUS_USB` | USB-C 5V input; D6 uses this only as its ESD reference rail | Board A |
 | `VIN_EXT_RAW` | approximately 6 V external/solar input before eFuse | Board A |
 | `VIN_EXT_PROTECTED` | protected external input | Board A |
 | `VIN_CHARGER` | selected source output from TPS2121 to charger | Board A |
 | `VBAT` | protected 1S LiPo positive | Board A |
 | `VSYS` | charger/power-path system rail | Board A |
 | `+3V3` | TPS62162 regulated logic rail | Board A |
-| `VDOCK` | switched/current-limited FPC rail | A↔B |
-| `VFPC` | FPC sensor supply | A↔B |
+| `VDOCK` | Q1-switched VSYS dock rail (not regulated/current-programmed by Q1) | A↔B |
+| `+3V3_FPC` | separately switched regulated sensor rail; implementation/isolation gate remains | A↔B |
 | `GND` | common return | A↔B |
 | `I2C_MAIN_SDA/SCL` | local controller I²C | Board A |
 | `DOCK_SDA/SCL` | 100 kHz dock I²C | A↔B |
@@ -25,7 +24,8 @@ This is the connectivity membership oracle. The machine-readable CSVs in `netlis
 | `DOCK_BCLK/WS/SD` | internal microphone I²S across dock | A↔B |
 | `SPI_SCLK/MOSI/MISO` | shared storage/RF SPI | Board A |
 | `UART1_TX/RX` | RF expansion UART | Board A |
-| `USB_D_P/USB_D_N` | USB 2.0 data | Board A |
+| `USB_DP_CONN/USB_DN_CONN` | connector-side USB2.0 data before D6 | Board A |
+| `USB_D_P/USB_D_N` | protected MCU-side USB2.0 data after D6 | Board A |
 | `DOCK_PRESENT_ID` | dock presence and resistor-coded FPC ID | A↔B |
 | `LED_R/LED_G/LED_B` | low-current status controls | Board A |
 
@@ -42,8 +42,8 @@ This is the connectivity membership oracle. The machine-readable CSVs in `netlis
 | 11/12/13 | I²S BCLK/WS/SD | external/internal source selection required |
 | 17/18 | UART1 RX/TX | RF expansion |
 | 19/20 | USB D−/D+ | native USB |
-| 21 | dock presence | interrupt-capable |
-| 38 | dock ID | ADC/GPIO option |
+| 21 | `PWRMUX_ST` | digital status input |
+| 38 | `DOCK_PRESENT_ID` | single-contact ADC/GPIO presence and resistor-ID input |
 | 43/44 | debug UART0 | programming/debug |
 | 47/48 | status controls | LED multiplexing |
 
@@ -51,30 +51,36 @@ This is the connectivity membership oracle. The machine-readable CSVs in `netlis
 
 | Net | Members |
 |---|---|
-| `VBUS_USB` | J1.VBUS, D1.VBUS |
-| `VIN_USB_PROTECTED` | D1.VBUS_OUT, U11.IN1 |
+| `VBUS_USB` | J1 VBUS contacts, D6.5 ESD reference, U11.IN1, C21.1, C22.1 |
+| `USB_DP_CONN` | J1.A6/B6, D6.1 |
+| `USB_DN_CONN` | J1.A7/B7, D6.3 |
+| `USB_D_P` | D6.6, U1.GPIO20/USB_D+ |
+| `USB_D_N` | D6.4, U1.GPIO19/USB_D− |
 | `VIN_EXT_PROTECTED` | U6.OUT, U11.IN2 |
 | `VIN_CHARGER` | U11.OUT, U2.IN |
 | `VBAT` | J4.1, U2.BAT, U5.BAT sense |
 | `VSYS` | U2.OUT, U3.VIN, Q1.VIN, bulk capacitors, TP |
 | `+3V3` | U3.VOUT, U1.VDD33, U4.VCC, U7.VDD, MIC1.VDD, status/test |
-| `VDOCK` | Q1.VOUT, J3 pins 4/5 |
-| `VFPC` | J3/J2 power path, FPC sensor supply |
+| `VDOCK` | Q1.VOUT/QOD, J3.4/5, J2.4/5 |
+| `+3V3_FPC` | dedicated switched-3V3 output, J3.6, J2.6, U8/U9/MIC2 supplies |
 | `GND` | all IC grounds, J1 shield/ground, J3 pins 1/2/3, FPC ground, decouplers, test pads |
-| `I2C_MAIN_SDA` | U1.GPIO4, U4.SDA, U7.SDA, pull-up R4, TP |
-| `I2C_MAIN_SCL` | U1.GPIO5, U4.SCL, U7.SCL, pull-up R5, TP |
-| `DOCK_SDA` | U4 selected branch, J3.7, J2.7, FPC I²C devices |
-| `DOCK_SCL` | U4 selected branch, J3.8, J2.8, FPC I²C devices |
+| `I2C_MAIN_SDA` | U1.GPIO4, U4.SDA, pull-up R4, TP |
+| `I2C_MAIN_SCL` | U1.GPIO5, U4.SCL, pull-up R5, TP |
+| `LOCAL_SDA` | U4 channel1 SD1, U7.SDA |
+| `LOCAL_SCL` | U4 channel1 SC1, U7.SCL |
+| `DOCK_SDA` | U4 channel0 SD0, J3.7, J2.7, U8.SDA, U9.SDA |
+| `DOCK_SCL` | U4 channel0 SC0, J3.8, J2.8, U8.SCL, U9.SCL |
 | `I2S_BCLK` | U1.GPIO11, MIC1.SCK, J3.9 source-select path |
 | `I2S_WS` | U1.GPIO12, MIC1.WS, J3.10 source-select path |
 | `I2S_SD_EXT` | MIC1.SD to U12 microphone-data switch input A |
 | `DOCK_SD` | J3.11, MIC2.SD, U1.GPIO13 when FPC source selected |
-| `USB_D_P` | U1.GPIO20/USB_D+, J1.D+ through D1 |
-| `USB_D_N` | U1.GPIO19/USB_D−, J1.D− through D1 |
-| `DOCK_PRESENT_ID` | J3.12, U1.GPIO21/GPIO38, FPC ID resistor R10 |
-| `LED_R` | U1.GPIO47, R1, D2.A |
-| `LED_G` | U1.GPIO40, R2, D3.A |
-| `LED_B` | U1.GPIO48, R3, D4.A |
+| `DOCK_PRESENT_ID` | J3.12, J2.12, U1.GPIO38, FPC ID resistor R10 |
+| `LED_R` | U1.GPIO47, R1.1 |
+| `LED_R_A` | R1.2, D2.A; D2.K→GND |
+| `LED_G` | U1.GPIO40, R2.1 |
+| `LED_G_A` | R2.2, D3.A; D3.K→GND |
+| `LED_B` | U1.GPIO48, R3.1 |
+| `LED_B_A` | R3.2, D4.A; D4.K→GND |
 | `SPI_SCLK` | U1.GPIO6, storage SCLK, RF SCLK |
 | `SPI_MOSI` | U1.GPIO7, storage MOSI, RF MOSI |
 | `SPI_MISO` | U1.GPIO8, storage MISO, RF MISO |

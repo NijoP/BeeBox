@@ -1,0 +1,2307 @@
+                                 Product                  Order  Technical                                                    Tools &       Support &
+                                 Folder                   Now    Documents                                                    Software      Community
+
+                                                                                                                                                                TPS63070
+
+                                                                                                                                        SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+             TPS63070 2-V to 16-V Buck-Boost Converter With 3.6-A Switch Current
+
+1 Features                                                                                                  2 Applications
+
+1· Input Voltage Range: 2.0 V to 16 V                                                                       · Dual Li-Ion Applications
+· Output Voltage Range: 2.5 V to 9 V                                                                        · Industrial Metering Equipment
+· Up to 95% Efficiency                                                                                      · DSC's and Camcorders
+· +/- 1% dc accuracy in PWM mode                                                                            · Notebook Computers
+· +3% / -1% dc accuracy in PFM mode                                                                         · Ultra Mobile PC's and Mobile Internet Devices
+· 2 A Output Current in Buck Mode                                                                           · Personal Medical Products
+· 2 A Output Current in Boost Mode
+                                                                                                            3 Description
+    (VIN = 4 V; Vout = 5 V)
+· Precise ENABLE input allows                                                                               The TPS6307x is a high efficiency, low quiescent
+                                                                                                            current buck-boost converter suitable for applications
+    - user defined undervoltage lockout                                                                     where the input voltage can be higher or lower than
+    - exact sequencing                                                                                      the output voltage. Output currents can go as high as
+· Automatic Transition Between Step Down and                                                                2 A in boost mode and in buck mode. The buck-boost
+    Boost Mode                                                                                              converter is based on a fixed frequency, pulse-width-
+· Typical Device Quiescent Current: 50 A                                                                    modulation (PWM) controller using synchronous
+· Fixed and Adjustable Output Voltage Options                                                               rectification to obtain maximum efficiency. At low load
+· Output Discharge Option                                                                                   currents, the converter enters Power Save Mode to
+· Power Save Mode for Improved Efficiency at Low                                                            maintain high efficiency over a wide load current
+    Output Power                                                                                            range. The converter can be disabled to minimize
+· Forced Fixed Frequency Operation at 2.4 MHz                                                               battery drain. During shutdown, the load is
+    and Synchronization Option                                                                              disconnected from the battery. The device is available
+· Power Good Output                                                                                         in a 2.5 mm x 3 mm QFN package.
+· VSEL simply allows output voltage change
+· Load Disconnect During Shutdown                                                                                                       Device Information(1)
+· Overtemperature Protection
+· Input / Output Overvoltage Protection                                                                                 PART NUMBER         PACKAGE             BODY SIZE (NOM)
+· Available in QFN Package
+                                                                                                            TPS63070                        VQFN                2.5 mm x 3 mm
+                     Simplified Schematic
+                                                                                                            TPS630701                       VQFN                2.5 mm x 3 mm
+                                                    L
+                                                                                                            TPS630702                       VQFN                2.5 mm x 3 mm
+                                                 1.5 µH
+                                                                                                            (1) For all available packages, see the orderable addendum at
+                                                                                                                 the end of the datasheet.
+
+                                                                                                                        Efficiency vs Output Current; Vo = 5 V
+
+                                                                                                                        100%
+
+                        L1 TPS63070 L2                                                                                  90%
+
+VIN = 2.0 V to 16 V C1                     VOUT  C4         VOUT = 2.5 V to 9 V                                         80%
+                        VIN                        10 µF
+CIN          10 µF                                 0603                  COUT                                           70%
+                                                          R1 3x22 µF
+2x10 µF      0603                                                                                                       60%
+                                                                          0805
+0805                                 FB                          R4                                         Efficiency
+                                   FB2                    R2 100 k
+         R5             VSEL                                                                                            50%
+     10 k               EN          PG
+                        PS/SYNC  PGND                                                                                   40%
+                                                                                                                        30%                                     3 V
+CVAUX                   VAUX     GND                                                                                    20%                                     4.2 V
+ 100 nF                                                                                                                 10%                                     5 V
+                                                                                                                                                                7 V
+                                                          Copyright © 2016, Texas Instruments Incorporated                  0           1m  10m        100m     9 V
+                                                                                                                            100P                                12 V
+
+                                                                                                                                            Output Current (A)   12
+
+                                                                                                                                                                          D001
+
+1
+
+         An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+         intellectual property matters and other important disclaimers. PRODUCTION DATA.
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                                       www.ti.com
+
+                                           Table of Contents
+
+   1 Features .................................................................. 1            9 Application and Implementation ........................ 16
+   2 Applications ........................................................... 1                      9.1 Application Information............................................ 16
+   3 Description ............................................................. 1                     9.2 Typical Application for adjustable version .............. 16
+   4 Revision History..................................................... 2                         9.3 Typical Application for Fixed Voltage Version ....... 26
+   5 Device Comparison Table..................................... 3
+   6 Pin Configuration and Functions ......................... 3                              10 Power Supply Recommendations ..................... 31
+   7 Specifications......................................................... 4                       10.1 Thermal Information .............................................. 31
+
+          7.1 Absolute Maximum Ratings ...................................... 4               11 Layout................................................................... 32
+          7.2 ESD Ratings ............................................................ 4             11.1 Layout Guidelines ................................................. 32
+          7.3 Recommended Operating Conditions....................... 4                              11.2 Layout Example .................................................... 32
+          7.4 Thermal Information ................................................. 5
+          7.5 Electrical Characteristics........................................... 6         12 Device and Documentation Support ................. 33
+          7.6 Typical Characteristics .............................................. 8               12.1 Device Support .................................................... 33
+   8 Detailed Description .............................................. 9                           12.2 Related Links ........................................................ 33
+          8.1 Overview ................................................................... 9         12.3 Receiving Notification of Documentation Updates 33
+          8.2 Functional Block Diagram TPS63070 ....................... 9                            12.4 Community Resources.......................................... 33
+          8.3 Functional Block Diagram TPS630701 ................... 10                              12.5 Trademarks ........................................................... 33
+          8.4 Feature Description................................................. 10                12.6 Electrostatic Discharge Caution ............................ 33
+          8.5 Device Functional Modes........................................ 14                     12.7 Glossary ................................................................ 33
+
+                                                                                              13 Mechanical, Packaging, and Orderable
+                                                                                                   Information ........................................................... 34
+
+4 Revision History
+
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+
+Changes from Revision A (August 2016) to Revision B                                             Page
+
+· Added Various minor editorial updates and corrections......................................................................................................... 1
+· Added TPS630702 Variant..................................................................................................................................................... 1
+· Added TPS630702 Variant with "output discharge=on" option .............................................................................................. 3
+· Added TPS630702 VOUT info ............................................................................................................................................... 7
+· Added TPS630702 VFB info at 3 instances ........................................................................................................................... 7
+· Added Parameter Name ROD to output discharge resistance row........................................................................................ 7
+· Added Link to TechNote SLVAE62 ...................................................................................................................................... 13
+· Added more descriptive text for better understanding.......................................................................................................... 15
+· Changed Description of Discharge Feature, reflecting TPS630702..................................................................................... 15
+· Changed description of output voltage programming to match EC table............................................................................. 17
+· Added table of content for application curves ...................................................................................................................... 20
+· Added TPS630702 Variant................................................................................................................................................... 33
+
+Changes from Original (June 2016) to Revision A                                                 Page
+
+· Added full Production Data .................................................................................................................................................... 1
+
+2  Submit Documentation Feedback                                                              Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS63070
+www.ti.com                                                                                                               TPS63070
+
+5 Device Comparison Table                                                              SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+         Device Number               Features                         Output Voltage                                    Marking
+            TPS63070         output discharge = off                      adjustable                                       3070
+            TPS630701        output discharge = off                       fixed 5 V                                       0701
+            TPS630702        output discharge = on                       adjustable                                       0702
+
+6 Pin Configuration and Functions
+
+                                                         QFN PACKAGE
+
+                             Top View                                                  Bottom View
+
+         VIN 12                           L2             8 VOUT  VOUT 8                                  L1         12 VIN
+                                 PGND                                                           PGND
+                        L1                                                             L2
+
+                        13 7                                            7                                           13
+
+         EN 14 11                                      9 6 FB2   FB2 6 9                            11 14 EN
+
+                15              10                     4 5 FB    FB 5 4                   10                 1 15 VSEL
+         VSEL 1              23                                                        32
+
+                                                    GND                                                       PS/S
+
+                                              VAUX                                            PG
+
+                                 PG                                                   VAUX
+
+                        PS/S                                               GND
+
+                                                         Pin Functions
+
+NAME     PIN            I/O                                             DESCRIPTION
+EN                 NO.
+FB                  14  I Enable input. Pull high to enable the device, pull low to disable the device.
+                     5  I Voltage feedback of adjustable versions, must be connected to VOUT on fixed output voltage
+
+GND      4                      versions
+                                Control / logic ground
+L1       11             I Connection for Inductor
+                        I Connection for Inductor
+L2       9              I Pull to low for forced PWM, pull high for PWM/PFM (power save) mode. Apply a clock signal to
+                                synchronize to an external frequency.
+PS/SYNC  1              O Open drain power good output
+                                Power ground
+PG          2           I Supply voltage for power stage
+PGND       10           O Buck-boost converter output
+VIN      12, 13         O Connection for Capacitor of internal voltage regulator. This pin must not be loaded externally.
+VOUT       7,8          I Voltage scaling input. A high level on this pin enables a transistor which pulls pin FB2 to GND.
+VAUX        3           O Voltage scaling output. Connect a resistor from FB to FB2 to change the voltage divider ratio on the
+VSEL       15                   feedback pin. A logic high level on VSEL will change the output voltage to a higher value. Leave the
+FB2         6                   pin open or connect to GND if not used.
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                  Submit Documentation Feedback                  3
+
+                                                       Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                                                            www.ti.com
+
+7 Specifications
+
+7.1 Absolute Maximum Ratings
+
+over operating junction temperature range (unless otherwise noted) (1)
+
+                                                                                        MIN        MAX               UNIT
+
+                     VIN, PS/SYNC, EN, VSEL                                             -0.3       20                V
+                     L1
+                     L1 (transient for t<10ns)(2)                                       -0.3       20                V
+                     L2, PG, VOUT, FB
+                     L2 (transient for t<10ns)(2)                                       -3         25                V
+                     AUX
+Voltage range        FB2                                                                -0.3       12                V
+
+Operating junction                                                                      -3         15                V
+temperature, Tj
+Storage temperature                                                                     -0.3       7                 V
+range, Tstg
+                                                                                        -0.3       3                 V
+
+                                                                                        -40        150               °C
+
+                                                                                        -65 150 °C
+
+(1) Stresses beyond those listed under Absolute Maximum Ratings may cause permanent damage to the device. These are stress ratings
+      only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under Recommended
+      Operating Conditions. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability.
+
+(2) While switching
+
+7.2 ESD Ratings                  Human body model (HBM), per ANSI/ESDA/JEDEC JS-001, all pins(1)   VALUE             UNIT
+                                 Charged device model (CDM), per JEDEC specification JESD22-C101,  ±2000               V
+ V(ESD) Electrostatic discharge  all pins(2)                                                        ±500
+
+(1) JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2) JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+
+7.3 Recommended Operating Conditions                                               MIN        NOM               MAX UNIT
+
+over operating junction temperature range (unless otherwise noted)                 2.0                          16   V
+
+ Supply voltage at VIN                                                             2.5                          9    V
+ Output Voltage
+ Effective Inductance                                                              0.7        1.5               2.8  µH
+ Capacitance connected to VIN pin
+ Capacitance connected to VAUX pin                                                 4.7        10                     µF
+ Total capacitance connected to VOUT pin (1)
+ duty cycle in buck mode over recommended operating conditions                                100                    nF
+ duty cycle in buck mode over recommended operating conditions but effective
+ output capacitance Cout,eff  40uF; effective inductance L,eff = 0.7µH to 1.8uH    15         47                470  µF
+ Operating junction temperature range, TJ
+                                                                                   30                                %
+
+                                                                                   20                                %
+
+                                                                                   -40                          125  °C
+
+(1) Due to the dc bias effect of ceramic capacitors, the effective capacitance is lower than the nominal value when a voltage is applied. This
+      is why the capacitance is specified to allow the selection of the minimal capacitor required with the dc bias effect for this type of
+      capacitor in mind. The capacitance range given above is for the nominal inductance of 1.5 µH. Please also see the detailed design
+      procedure in the application section about the ratio of inductance and minimum output capacitance.
+
+4  Submit Documentation Feedback                                                   Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                                   Product Folder Links: TPS63070
+                                                                                                  TPS63070
+
+www.ti.com                                                                             SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+7.4 Thermal Information                                                                TPS63070x  UNIT
+                                                                                          VQFN
+                                                      THERMAL METRIC(1)                  13 PINS  °C/W
+                                                                                             63   °C/W
+RJA         Junction-to-ambient thermal resistance                                           42   °C/W
+RJC(top)    Junction-to-case (top) thermal resistance                                        13   °C/W
+RJB         Junction-to-board thermal resistance                                            2.4   °C/W
+JT          Junction-to-top characterization parameter                                       13   °C/W
+JB          Junction-to-board characterization parameter                                    n/a
+RJC(bot)    Junction-to-case (bottom) thermal resistance
+
+(1) For more information about traditional and new thermal metrics, see the IC Package Thermal Metrics application report, SPRA953.
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                  Submit Documentation Feedback                 5
+
+                                                       Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                                                       www.ti.com
+
+7.5 Electrical Characteristics
+
+over VIN = 2V to 16V; Tj = -40°C to 125°C; typical values are at Tj = 25°C (unless otherwise noted)
+
+          PARAMETER                           TEST CONDITIONS                   MIN   TYP                 MAX UNIT
+
+SUPPLY
+
+VIN       Input voltage range                 once started; Vout  3.0 V         2.0                       16    V
+
+VIN       Input voltage range                 for start-up; Vout < 3.0 V        3.0                       16    V
+
+IOUT      Output current                      during operation with either                                2     A
+                                              VIN  4.5 V or VOUT  4.5 V
+                                              and the boost factor
+                                              (VOUT/VIN)  1
+
+                                              into VIN; IOUT= 0 mA,
+
+IQ        Quiescent current                   VEN = VIN = 6 V, PFM                                   54   103   A
+
+                                              VOUT = 5 V; Tj = -40°C to 85°C
+
+IQ        Quiescent current                   into VIN; IOUT= 0 mA,                                       133   A
+
+                                              VEN = VIN = 6 V, PFM
+                                              VOUT = 5 V; Tj = -40°C to 125°C
+
+                                              into VOUT; IOUT= 0 mA,
+
+IQ        Quiescent current                   VEN = VIN = 6 V, VOUT = 5 V, PFM                       5    9     A
+
+                                              Tj = -40°C to 85°C
+
+IQ        Quiescent current                   into VOUT; IOUT= 0 mA,                                      17    A
+
+                                              VEN = VIN = 6 V, VOUT = 5 V, PFM
+                                              Tj = -40°C to 125°C
+
+ISD Shutdown current VEN = 0 V; Tj = -40°C to 85°C; VIN = 5V 2                                            12    A
+
+ISD       Shutdown current                    VEN = 0 V; Tj = -40°C to 85°C                               26    A
+
+VUVLO     Undervoltage lockout threshold      VIN voltage falling               1.7   1.85                1.95  V
+
+VUVLO,TH Undervoltage lockout hysteresis      VIN voltage rising                525   850                       mV
+
+TSD       Thermal shutdown                                                            160                       °C
+
+TSD       Thermal shutdown hysteresis                                                                20         °C
+
+LOGIC SIGNALS: EN, PS/SYNC, PG, VSEL
+
+VTHR      Threshold Voltage rising edge for                                     0.77                 0.8  0.83  V
+          EN pin and PS/SYNC used for
+          PWM/PFM mode change
+
+VTHF      Threshold Voltage falling edge for                                    0.67                 0.7  0.73  V
+          EN pin and PS/SYNC used for
+          PWM/PFM mode change
+
+          VSEL low level input voltage;
+
+VIL       PS/SYNC low level input voltage                                                                 0.3   V
+
+          when used for synchronization
+
+          VSEL high level input voltage;                                        1.1
+
+VIH       PS/SYNC high level input voltage                                                                      V
+
+          when used for synchronization
+
+          EN, PS/SYNC, VSEL input current                                                                 0.2   A
+
+VOL       PG output low voltage               IPG = -1 mA                                                 0.4   V
+
+ILKG      PG output leakage current           PG pin high impedance; VPG = 5 V                            0.2   A
+
+IPG       PG sink current                                                                                 1 mA
+
+VTH_PG    Power Good Threshold Voltage,                                         94.5                 96   98.5  %
+          rising Vout
+
+VTH_PG    Power Good Threshold Voltage,                                         90                   92   94.5  %
+          falling Vout
+
+6       Submit Documentation Feedback                                           Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                              Product Folder Links: TPS63070
+                                                                                                                  TPS63070
+
+www.ti.com                                                                                 SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+Electrical Characteristics (continued)
+
+over VIN = 2V to 16V; Tj = -40°C to 125°C; typical values are at Tj = 25°C (unless otherwise noted)
+
+            PARAMETER                                   TEST CONDITIONS                    MIN         TYP   MAX UNIT
+
+OUTPUT
+
+VOUT        TPS63070/TPS630702 output                                                      2.5               9            V
+                             (1)
+            voltage range
+
+VOUT        TPS630701 output voltage                                                                   5.0                V
+
+VFB TPS63070/TPS630702 feedback voltage PS/SYNC = VIN 800                                                                 mV
+
+            feedback impedance                         for fixed voltage versions                      1.5                M
+
+            feedback leakage                           for adjustable version; VFB = 0.8V                    100          nA
+
+VFB TPS63070/TPS630702 feedback voltage accuracy PS/SYNC = GND (PWM mode) -1                                 1            %
+
+VOUT        TPS630701 output voltage accuracy PS/SYNC = GND (PWM mode)                     -1                1            %
+
+VFB         TPS63070/TPS630702 feedback                PS/SYNC = VIN (PFM mode);           -1                3            %
+
+            voltage accuracy                           VIN  3V
+
+VOUT TPS630701 output voltage accuracy PS/SYNC = VIN (PFM mode); -1                                          3            %
+                                                                     VIN  3V
+
+fSW         Oscillator frequency                                                           2100        2400  2700 kHz
+                                                                                                             2800 kHz
+            Frequency range for synchronization                                            2100
+
+IIN,max     Average, positive input current limit      VIN = 5.0V; VOUT = 6.5V;            3050        3600  4150 mA
+                                                       Tj = 0°C to 125°C
+
+IIN,max     Average, negative input current limit VIN = 5.0V; VOUT = 6.5V;                 1100        1800               mA
+                                                                Tj = 0°C to 125°C
+
+RDS(ON)- High side switch on resistance                VIN = 5 V                                       50     80 m
+                                                                                                             160 m
+BUCK        Low side switch on resistance              VIN = 5 V                                       100
+                                                                                                              70 m
+RDS(ON)- High side switch on resistance                VIN = 5 V                                       40    125 m
+
+BOOST       Low side switch on resistance              VIN = 5 V                                       80
+
+RDS(ON)- FB2 resistance to GND 25                                                                            100          
+            with VSEL = high
+FB2
+
+ILKG Input leakage current into FB2 with VSEL=low VFB = VFB2 = 0.8V                                          100          nA
+
+            FB2 sink current                                                                                 100          A
+
+            Line regulation                            Power Save Mode disabled                        0.07       %/V
+
+            Load regulation                            Power Save Mode disabled                        0.2        %/A
+
+                                                       VIN  VOUT; VIN < 6V                 VIN - 0.3         7            V
+                                                       VIN < VOUT
+VAUX        Maximum bias voltage                                                            VOUT -           7V
+                                                                                                  0.3
+
+ROD Output discharge resistance (only in VIN = 5 V; VOUT = 5V 200                                                         
+                 TPS630702)
+
+tdelay Start-up delay time from EN = VIH to device starts switching 70                                                    s
+
+                                                       time to ramp from 5% to 95% of
+
+                                                       Vout; buck mode; VIN = 7.2 V,                   400                s
+
+tSS         soft-start time                            Vout = 3.3 V, Iout = 500 mA
+                                                       time to ramp from 5% to 95% of
+
+                                                       Vout; boost mode; VIN = 3.0 V,                  850                s
+
+                                                       Vout = 3.3 V, Iout = 250 mA
+
+(1) Please observe the minimum duty cycle in buck mode
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                      Submit Documentation Feedback      7
+
+                                                       Product Folder Links: TPS63070
+TPS63070                                                                                                                                             www.ti.com
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+7.6 Typical Characteristics
+
+               90                                                                                                 60
+
+                       -40                                                                                                                           -40
+                                                                                                                                                     30
+               80      30                                                                                         55                                 80
+                                                                                                                                                     125
+                       85
+
+                            125                                                                                   50
+               70
+
+   RDSon [m:]                                                                                         RDSon [m:]  45
+
+               60
+
+                                                                                                                  40
+
+               50
+
+                                                                                                                  35
+
+               40                                                                                                 30
+
+               30                                                                                                 25
+
+               20                                                                                                 20
+
+                   0              5  10       15                   20                                                 0              5  10       15                    20
+
+                                     VIN [V]                        D019                                                                VIN [V]                         D020
+
+                       Vout = 5V                                   I = 1A                                                 Vout = 5V                                    I = 1A
+
+                       Figure 1. Rds(on) of High-side Buck Switch                                                         Figure 2. Rds(on) of High-side Boost Switch
+
+               120                                                                                                150
+
+                                                  -40                                                             140                                -40
+
+               110                                30                                                                                                 30
+
+                                                  85                                                              130                                85
+
+                                                                                                 125                                                 125
+               100
+                                                                                                                  120
+
+   RDSon [m:]  90                                                                                     RDSon [m:]  110
+
+                                                                                                                  100
+
+               80                                                                                                 90
+
+               70                                                                                                 80
+
+                                                                                                                  70
+
+               60                                                                                                 60
+
+               50                                                                                                 50
+
+                    0             5  10       15                   20                                                  0             5  10       15                    20
+
+                                     VIN [V]                        D021                                                                VIN [V]                         D022
+
+                       Vout = 5V                                   I = 1A                                                 Vout = 5V                                    I = 1A
+
+                       Figure 3. Rds(on) of Low-side Boost Switch                                                         Figure 4. Rds(on) of Low-side Buck Switch
+
+8              Submit Documentation Feedback                                                                              Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                                  Product Folder Links: TPS63070
+                                                                                                        TPS63070
+
+www.ti.com                                                                             SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+8 Detailed Description
+
+8.1 Overview
+
+The TPS6307x use 4 internal N-channel MOSFETs to maintain synchronous power conversion at all possible
+operating conditions. This enables the device to keep high efficiency over a wide input voltage and output power
+range. To regulate the output voltage at all possible input voltage conditions, the device automatically switches
+from buck operation to boost operation and back as required by the configuration. It always uses one active
+switch, one rectifying switch, one switch on, and one switch held off. Therefore, it operates as a buck converter
+when the input voltage is higher than the output voltage, and as a boost converter when the input voltage is
+lower than the output voltage. There is no mode of operation in which all 4 switches are switching. The RMS
+current through the switches and the inductor is kept at a minimum, to minimize switching and conduction losses.
+For the remaining 2 switches, one is kept on and the other is kept off, thus causing no switching losses.
+Controlling the switches this way allows the converter to always keep high efficiency over the complete input
+voltage range. The device provides a seamless transition from buck to boost or from boost to buck operation.
+
+8.2 Functional Block Diagram TPS63070
+
+VIN                                                                      L1            L2         VOUT
+         VIN                                                                PGND          PGND
+              VOUT           Current
+                             Sensor
+                Bias
+             Regulator
+
+VAUX                                                   VIN
+                                                       VAUX
+                                                       VOUT   Gate
+                                                             Control
+
+              VAUX                                                       _
+
+                    Device                                   Modulator                 _          FB
+                    Control                                  Oscillator
+                                                                         +             +
+
+         PG                                                                               + VREF
+
+PS/SYNC                                                                                   -
+         EN
+                                                                                                  FB2
+      VSEL
+                                                       Temperature                                                                PGND
+      GND                                               Protection
+                                                                                                           PGND
+                                                                         Copyright © 2016, Texas Instruments Incorporated
+
+                             Figure 5. Functional Block Diagram
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                  Submit Documentation Feedback                    9
+
+                                                       Product Folder Links: TPS63070
+TPS63070                                                                                                                www.ti.com
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+8.3 Functional Block Diagram TPS630701
+
+    VIN           VOUT             Current               L1            L2       VOUT
+             VIN                   Sensor                   PGND          PGND  FB
+
+                    Bias
+                 Regulator
+
+    VAUX                           VIN
+                                   VAUX
+                                   VOUT      Gate
+                                            Control
+
+             PG   VAUX                      Modulator    _
+                                            Oscillator                        _
+    PS/SYNC             Device
+             EN         Control                          +
+                                                                               +
+          VSEL
+                                                                                         +
+          GND                                                                            -
+
+                                                                             VREF
+
+                                                                                                        FB2
+
+                                            Temperature                                                           PGND
+                                             Protection
+                                                                                            PGND
+                                                         Copyright © 2016, Texas Instruments Incorporated
+
+                                   Figure 6. Functional Block Diagram
+
+8.4 Feature Description
+
+8.4.1 Control Loop Description
+
+The controller circuit of the device is based on an average current mode topology. The average inductor current
+is regulated by a fast current regulator loop which is controlled by a voltage control loop.
+
+The non inverting input of the transconductance amplifier gmv can be assumed to be constant. The output of
+gmv defines the average inductor current. The inductor current is reconstructed by measuring the current through
+the high side buck MOSFET. This current corresponds exactly to the inductor current in boost mode. In buck
+mode, the current is measured during the on-time of the same MOSFET. During the off-time, the current is
+reconstructed internally starting from the peak value reached at the end of the on-time cycle. The average
+current is then compared to the desired value and the difference, or current error, is amplified and compared to
+the sawtooth ramp of either the Buck or the Boost. Depending on which of the two ramps is crossed by the
+signal, either the Buck MOSFETs or the Boost MOSFETs are activated. When the input voltage is close to the
+output voltage, one buck cycle is followed by a boost cycle. In this condition, not more than three cycle in a row
+of the same mode are allowed. This control method in the buck-boost region ensures a robust control and the
+highest efficiency.
+
+For an input voltage above 9 V, and Vout below 2.2 V, the switching frequency is reduced by a factor of 2 to
+keep the minimum on-time at a reasonable value. For short circuit protection, at an output voltage below 1.2V,
+the low side input FET and the high side output FET are not actively switched but their back-gate diode used for
+conduction.
+
+TPS6307x also contains a negative current limit. This allows the inductor current to reverse and flow from the
+output to the input. This is required for forced PWM operation at low output current but also for applications that
+require a fairly high current from the output to the input like TEC (thermo electric cooling) applications where the
+TEC cell is placed between input and output of the converter,
+
+10  Submit Documentation Feedback                                  Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                   Product Folder Links: TPS63070
+www.ti.com                                                                                                                          TPS63070
+
+Feature Description (continued)                                                                   SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+                                        Vin                                            L1         L2
+
+                                                                                                             Vout
+
+                                                                   Buck                    Boost
+                                                                   Drive                   Drive
+
+                                                       PWM          PWM   gmc              Rs
+
+                                                        Buck       Boost
+                                                       Ramp        Ramp
+
+                                                                                                  gmv        FB
+
+                                                       Ramp Generator                                  Vref
+                                                                                                       0.8V
+
+                                                                                                                                                                   Copyright © 2016, Texas Instruments Incorporated
+
+                                              Figure 7. Average Current Mode Control
+
+8.4.2 Precise Enable
+
+The enable pin of the TPS63070 is not just a simple digital input but compares the voltage applied to a fixed
+threshold of 0.8V for a rising voltage. This allows to drive the pin by a slowly changing voltage and enables the
+use of an external RC network to achieve a precise power-up delay. The enable input threshold for a falling edge
+is typically 100mV lower than the rising edge threshold. The TPS63070 starts operation when the rising threshold
+is exceeded. For proper operation, the EN pin must be terminated and must not be left floating. Pulling the EN
+pin low forces the device into shutdown. In this mode, the internal high side and low side MOSFETs are turned
+off and the entire internal-control circuitry is switched off. The enable pin can also be used with an external
+voltage divider to set a user-defined minimum supply voltage.
+
+It is recommended to not connect EN directly to VIN but use a resistor in series in the range of 1k to 1M. If
+several inputs like EN and PS/SYNC are connected to VIN, the resistor can be shared. No resistor is required if
+the pin is driven from an analog or digital signal rather than a supply voltage.
+
+8.4.3 Power Good
+
+The device has a built in power good output that indicates whether the output voltage has reached its nominal
+value. The PG signal is generated based on the status of the output voltage monitor. The power good circuit
+operates as long as the converter is enabled and VIN is above the undervoltage lockout threshold.
+
+If the output voltage has not reached the regulated condition, the PG pin is held low. When the regulated
+condition is reached, PG is high impedance.
+
+The PG output needs an external pull-up resistor. This resistor can be pulled to any voltage up to the maximum
+output voltage rating.
+
+                                                       Table 1. Power Good Status
+
+EN                                           output voltage status                                 PG
+                                                                                                   low
+low                                                    output off                          high impedance
+
+high  output voltage above power good                                                              low
+
+                                                       threshold
+
+high  output voltage below power good
+
+      threshold, in thermal shutdown or input /
+
+      output overvoltage protection active
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                             Submit Documentation Feedback  11
+
+                                                       Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                  www.ti.com
+
+8.4.4 Soft Start
+
+To minimize inrush current during start up, the device has a soft start. When the EN pin is set high, after a
+thermal shutdown or after the undervoltage lockout threshold is exceeded, a soft-start cycle is started and the
+input current is ramped until the output voltage reaches regulation. The device ramps up the output voltage in a
+controlled manner, even if a large capacitor is connected at the output. During soft-start, as long as the output
+voltage is below the power good threshold, the input current limit is reduced to typically 1A. The soft-start time is
+defined by the current limit during the soft-start phase along with the load current, output capacitance and the
+input to output voltage ratio.
+
+8.4.5 PS/SYNC
+
+The PS/SYNC pin has two functions:
+
+· switching between forced PWM mode and power save mode
+
+· synchronizing to an external clock applied at pin PS/SYNC
+When PS/SYNC is set high, the device operates in power save mode at low output current. For an average
+inductor current above a certain threshold the device switches to forced PWM mode. The automatic switch-over
+from PFM to PWM and vice versa is done such that the efficiency is kept at the maximum possible level. It is not
+based on a fixed threshold but at a current that depends on input voltage and output voltage to keep the
+efficiency at the maximum possible level.
+
+The power save mode is disabled when PS/SYNC is set low. The device then operates in forced fixed frequency
+PWM mode independent of the output current.
+
+TPS6307x can be synchronized to an external clock applied at pin PS/SYNC. Details about the voltage level and
+frequency range can be found in the electrical characteristics. When an external clock is detected, TPS6307x
+switches from internal clock or power save mode to fixed frequency operation based on the external clock
+frequency. When the external clock is removed, TPS6307x switches back to internal clock or power save mode
+depending on the average inductor current and status of the PS/SYNC pin. The PS/SYNC pin has two parallel
+input stages, a slow one with the precise threshold for PWM/PFM mode change and a fast digital input stage for
+an external clock signal for synchronization.
+
+It is recommended to not connect PS/SYNC directly to VIN but use a resistor in series in the range of 1k to
+1M. If several inputs like EN and PS/SYNC are connected to VIN, the resistor can be shared. No resistor is
+required if the pin is driven from an analog or digital signal rather than a supply voltage.
+
+8.4.6 Short Circuit Protection
+
+The TPS6307x provides short circuit protection to protect itself and the application. When the output voltage is
+below 1.2 V, the back-gate diodes of the low side input FET and high side output FET are used for rectification.
+For an input voltage above 9 V and an output voltage below 2.2 V, the switching frequency is scaled to ½ of its
+nominal value.
+
+12  Submit Documentation Feedback                                          Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS63070
+                                                                                                                                                                        TPS63070
+
+www.ti.com                                                                                                SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+8.4.7 VSEL and FB2 pins
+
+The VSEL pin allows to dynamically select between two different output voltages on the adjustable version. The
+voltage is set by a resistor that is connected between the FB and the FB2 pin. FB2 is connected to GND if VSEL
+= high. FB2 is high impedance if VSEL= low. The transition speed during a voltage change is defined by the loop
+bandwidth of the device and can be adjusted by adding a feed-forward capacitor in parallel to R1.
+
+                                                                        1.5 µH
+
+                                                                   TPS63070
+
+                                                              L1                L2
+
+            VIN = 2.0 V to 16 V                                                         VOUT = Vo1 / Vo2
+
+            2x10 µF                                    10 µF  VIN               VOUT    10 µF
+               0805                                    0603
+                                                                                        0603 R1  3x22 µF
+
+            10 k                                               PS/SYNC            FB    R2 R3
+                                                               EN
+                                                                                FB2
+                                                              VSEL
+                                                                                    PG
+                                                              VAUX              PGND
+
+                                                                                  GND
+
+            100 nF
+
+                                                                                                                      Copyright © 2016, Texas Instruments Incorporated
+
+            Figure 8. Typical Application using VSEL
+
+The resistor values for the feedback divider and FB2 are in the 50-500k range. R3 is calculated as follows:
+
+                                                                                                                                                                     (1)
+
+For more details on how to use VSEL see Technote SLVAE62.
+
+8.4.8 Overvoltage Protection
+
+TPS6307x has a built in over-voltage protection which limits the output voltage. The voltage is internally sensed
+on the VOUT pin. In case the voltage on the feedback pin is not set correctly or the connection is open, this limits
+the output voltage to a value that protects the output stage from a too high voltage by limiting it to a internally set
+value.
+
+Input over-voltage protection forces PFM mode to make sure the device is protected against boosting from the
+output to the input. This may happen if there is a large capacitor charged above the nominal voltage on the
+output and the supply on the input is removed. In PWM mode, the device is able to provide current from the
+output to the input causing a rise in the input voltage. In PFM mode, the current to the input is blocked so the
+input voltage can not rise. The input over-voltage protection does not protect the device from a too high voltage
+applied to the input but just from operating such that the device itself causes a rise of the input voltage above
+critical levels. Both over-voltage sensors are de-glitched by approximately 1µs.
+
+8.4.9 Undervoltage Lockout
+
+When the input voltage drops, the undervoltage lockout prevents mis-operation by switching off the device. The
+converter starts operation when the input voltage exceeds the threshold by a hysteresis of typically 850 mV. This
+relatively large hysteresis is needed to allow operation down to 2-V of supply voltage for the case when the
+output voltage is up at 3-V or above but restrict start-up for the case when the output voltage is zero. For start-up
+when the output voltage has not yet ramped, the rising UVLO threshold was set to a level that allows to start
+TPS63070 at a supply voltage where the load does not demand much load current.
+
+8.4.10 Overtemperature Protection
+
+The junction temperature (Tj) of the device is monitored by an internal temperature sensor. When Tj exceeds the
+thermal shutdown temperature, the device goes into thermal shutdown. The power stage is turned off and PG
+goes low. When Tj decreases below the hysteresis amount, the converter resumes normal operation, beginning
+with a Soft Start cycle. To avoid unstable conditions, a hysteresis of typically 20°C is implemented on the thermal
+shutdown temperature. In addition, the thermal shutdown is debounced by approximately 10 µs.
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                                                                                                   Submit Documentation Feedback  13
+
+                                                       Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                                                     www.ti.com
+
+8.5 Device Functional Modes
+
+8.5.1 Power Save Mode
+
+Depending on the load current, in order to provide the best efficiency over the complete load range, the device
+works in PWM mode at an inductor current of approximately 650 mA or higher. At lighter load, the device
+switches automatically in to Power Save Mode to reduce power consumption and extend battery life. The
+PFM/PWM pin can be used to select between the two different operation modes. To enable Power Save Mode,
+the PFM/PWM pin must be set high.
+
+During Power Save Mode, the part operates with a reduced switching frequency and supply current to maintain
+high efficiency. The output voltage is monitored by a comparator for the threshold "comp low" and "comp high" at
+every clock cycle. When the device enters Power Save Mode, the converter stops operating and the output
+voltage drops. The slope of the output voltage depends on the load and the output capacitance. When the output
+voltage reaches the comp low threshold, at the next clock cycle the device ramps up the output voltage again by
+starting operation. Operation can last for one or several pulses until the "comp high" threshold is reached. At the
+next PFM cycle, if the inductor current is still lower than about 650 mA, the device switches off again and the
+same operation is repeated. Instead, if at the next PFM cycle, the inductor current is above approximately 650
+mA , the device automatically switches to PWM mode.
+
+In order to keep high efficiency in PFM mode, there is only a comparator active to keep the output voltage
+regulated. The AC ripple in this condition is increased, compared to the voltage in PWM mode. The amplitude of
+this voltage ripple typically is 50 mV pk-pk, with 22 µF effective capacitance. In order to avoid a critical voltage
+drop when switching from 0 A to full load, the output voltage in PFM is typically 1 % above the nominal value in
+PWM. This allows the converter to operate with a small output capacitor and still have a low absolute voltage
+drop during heavy load transients.
+
+Power Save Mode can be disabled by programming the PFM/PWM pin low.
+
+                                                       Heavy Load transient step  Comparator high
+
+                                    PFM mode at light load                               50mV ripple in PFM
+                                   current
+                                                                                  Comparator low
+                      +1%*Vo                                                          PWM mode
+
+                          Vo                                                           Absolute Voltage drop
+                                                                                       with positioning
+
+                                      Figure 9. Dynamic Voltage Positioning
+
+8.5.2 Current Limit
+
+it is possible to calculate the output current in the different conditions in boost mode using Equation 2 and
+Equation 3 and in buck mode using Equation 4 and Equation 5.
+
+                              V -V
+    Duty Cycle Boost  D = OUT IN
+                                   V
+                                     OUT                                                                      (2)
+
+    Output Current Boost IOUT = 0 x IIN (1-D)                                                                 (3)
+
+                              V
+    Duty Cycle Buck   D = OUT
+                              V
+                                 IN                                                                           (4)
+
+    Output Current Buck IOUT = ( 0 x IIN ) / D                                                                (5)
+
+14  Submit Documentation Feedback                                                 Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                                Product Folder Links: TPS63070
+                                                                                       TPS63070
+
+www.ti.com                                                                             SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+Device Functional Modes (continued)
+
+With,
+      = Estimated converter efficiency (use the number from the efficiency curves or 0.90 as an assumption)
+     IIN = Minimum average input current
+     The maximum output current TPS63070 can provide, can directly be seen from the graphs "Maximum Load
+     Current vs Input Voltage" for different output voltages at (Figure 43, Figure 20 and Figure 22 ). The start-up
+     current is lower because the current limit is set to typically 1A to limit the inrush current at start-up as long as
+     the power good signal is low. Please see the typical start-up current graphs at Figure 42, Figure 19 and
+     Figure 21. Once the power good comparator indicates "power good", the current limit is set to its nominal
+     value as given in the electrical characteristics.
+
+8.5.3 Output Discharge Function (TPS630702 only)
+
+To make sure the load applied at TPS630702 is powered up from 0 V once TPS630702 is enabled, the device
+features an internal discharge resistor for the output capacitor. The discharge function is enabled as soon as the
+device is disabled, in thermal shutdown or in undervoltage lockout. The minimum supply voltage required for the
+discharge function to remain active when enabled is approximately 2 V. The discharge function is only active
+after the device has been enabled at least once after supply voltage was applied. This feature is only enabled in
+TPS630702 and it is the only difference between TPS63070 and TPS630702.
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                  Submit Documentation Feedback  15
+
+                                                       Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                                                                        www.ti.com
+
+9 Application and Implementation
+
+                                                                  NOTE
+          Information in the following applications sections is not part of the TI component
+          specification, and TI does not warrant its accuracy or completeness. TI's customers are
+          responsible for determining suitability of components for their purposes. Customers should
+          validate and test their design implementation to confirm system functionality.
+
+9.1 Application Information
+
+The TPS6307x is a high efficiency, low quiescent current buck-boost converter suitable for applications where
+the input voltage can be higher or lower than the output voltage. The TPS63070 is internally supplied from the
+higher of the input voltage or output voltage. For proper operation either one or both need to have a voltage of
+3.0 V or above but must not exceed their maximum rating.
+
+9.2 Typical Application for adjustable version
+
+                                                    L
+                                                 1.5 µH
+
+          VIN = 2.0 V to 16 V C1          L1 TPS63070 L2           C4         VOUT = 2.5 V to 9 V
+                                                                     10 µF
+          CIN                      10 µF                     VOUT    0603                  COUT
+                                          VIN                               R1 3x22 µF
+
+          2x10 µF                  0603                                                     0805
+                                                                                   R4
+          0805                                             FB               R2 100 k
+                                                         FB2
+                         R5               VSEL
+                     10 k                 EN              PG
+
+                                          PS/SYNC PGND
+
+                     CVAUX                 VAUX          GND
+                      100 nF
+
+                                                                               Copyright © 2016, Texas Instruments Incorporated
+
+                     Figure 10. Typical Application For Adjustable Version
+
+9.2.1 Design Requirements
+
+The design guidelines provide a component selection to operate the device within the recommended operating
+conditions. The input and output capacitors have been split into a small 0603 size capacitor close to the device
+pins and 0805 size capacitors to get the required capacitance.
+
+                                          Table 2. Bill of Materials
+
+          REFERENCE         DESCRIPTION                          VALUE         MANUFACTURER
+                 IC        TPS63070RNM                                         Texas Instruments
+                  L       XFL4020-152ME                           1.5 µH
+                CIN  GRM21BC71E106ME11L                   2 x 10 µF / 25 V /          Coilcraft
+                                                                                       Murata
+                 C1    TMK107BBJ106MA-T                       X7S / 0805
+                                                         10 µF / 25 V / X5R /      Taiyo Yuden
+               COUT  GRM21BC81C226ME44L
+                                                                   0603                Murata
+                 C4    TMK107BBJ106MA-T                   3 x 22 µF / 16 V /
+                                                                                   Taiyo Yuden
+                                                              X6S / 0805
+                                                         10 µF / 25 V / X5R /
+
+                                                                   0603
+
+16  Submit Documentation Feedback                                           Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                          Product Folder Links: TPS63070
+                                                                                                                            TPS63070
+
+www.ti.com                                                                                 SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+                               Table 2. Bill of Materials (continued)
+
+                REFERENCE            DESCRIPTION                    VALUE                  MANUFACTURER
+                    CVAUX       TMK105B7104MV-FR                                               Taiyo Yuden
+                                                           100 nF / 25V / X7R /
+                    R1, R2     Metal Film Resistor ; 1%               0402
+                       R4      Metal Film Resistor ; 1%
+                                                           depending on desired
+                                                                output voltage
+
+                                                                    100 k
+
+9.2.2 Detailed Design Procedure
+
+The TPS6307x series of buck-boost converter has internal loop compensation. Therefore, the external L-C filter
+has to be selected according to the internal compensation. It's important to consider that the effective inductance,
+due to inductor tolerance and current derating can vary between 20% and -30%. The same for the capacitance
+of the output filter: the effective capacitance can vary between +20% and -80% of the specified datasheet value,
+due to capacitor tolerance and bias voltage. For this reason, Output Filter Selection shows the nominal
+capacitance and inductance value allowed. The effective capacitance of the adjustable version TPS63070 on the
+output (in µF) needs to be at least 10 times higher than the effective inductance (in µH) to ensure a good
+transient response and stable operation.
+
+                                                       Table 3. Output Filter Selection
+
+                  INDUCTOR                                 OUTPUT CAPACITOR VALUE [µF](2)
+                VALUE [µH](1)
+                                                       22  47                              68  100
+                       1.0
+                       1.5                                                                     
+                       2.2
+                                                            (3)                                
+
+                                                                                               
+
+9.2.2.1         (1) Inductor tolerance and current de-rating is anticipated. The effective inductance can vary by +20% and
+                       -30%.
+
+                (2) Capacitance tolerance and bias voltage de-rating of +20% and -50% is anticipated. For capacitors with
+                       larger dc bias effect, a larger nominal value needs to be selected.
+
+                (3) Typical application. Other check marks indicates recommended filter combinations
+
+         Programming The Output Voltage
+
+While the output voltage of the TPS63070 is adjustable, the TPS630701 is set to a fixed voltage. For fixed output
+
+versions, the FB pin must be connected to the output directly. The adjustable version can be programmed for
+
+output voltages from 2.5V to 9V by using a resistive divider from VOUT to GND. The voltage at the FB pin
+
+(VREF)is regulated to 800mV. The value of the output voltage is set by the selection of the resistive divider from
+Equation 6 . It is recommended to choose resistor values which allow a current of at least 2uA, meaning the
+
+value of R2 shouldn't exceed 400k. Lower resistor values are recommended for highest accuracy and most
+
+robust design.
+
+R1 = R2 ç   æ VOUT ö
+                - 1÷
+            è 0.8V ø
+                                                                                                                            (6)
+
+            Output Voltage                             Table 4. Typical Resistor Values               R2
+                   3.3 V                                                                            150 k
+                   5.0 V                                                            R1              130 k
+                   5.3 V                                                         470 k              100 k
+                   5.5 V                                                         680 k              51 k
+                   6.5 V                                                         560 k              51 k
+                    9V                                                           300 k              39 k
+                                                                                 360 k
+                                                                                 402 k
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                      Submit Documentation Feedback    17
+
+                                                           Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                  www.ti.com
+
+9.2.2.2 Inductor Selection
+
+For high efficiencies, the inductor should have a low dc resistance to minimize conduction losses. Especially at
+high switching frequencies, the core material has a higher impact on efficiency. When using small chip inductors,
+the efficiency is reduced mainly due to higher inductor core losses. This needs to be considered when selecting
+the appropriate inductor. The inductor value determines the inductor ripple current. The larger the inductor value,
+the smaller the inductor ripple current and the lower the conduction losses of the converter. Conversely, larger
+inductor values cause a slower load transient response. To avoid saturation of the inductor, the peak current for
+the inductor in steady state operation is calculated using Equation 8. Only the equation which defines the switch
+current in boost mode is shown, because this provides the highest value of current and represents the critical
+current value for selecting the right inductor.
+
+                            V -V
+    Duty Cycle Boost  D = OUT IN
+                            V
+                             OUT                                                           (7)
+
+    IPEAK = Iout + Vin ´ D
+               ´ (1 - D) 2 ´ f ´ L                                                         (8)
+
+Where,
+     D =Duty Cycle in Boost mode
+     f = Converter switching frequency (typical 2.4MHz)
+     L = Selected inductor value
+      = Estimated converter efficiency (use the number from the efficiency curves or 0.90 as an assumption)
+     Note: The calculation must be done for the minimum input voltage which is possible to have in boost mode
+
+Calculating the maximum inductor current using the actual operating conditions gives the minimum saturation
+current of the inductor needed. It is recommended to choose an inductor with a saturation current 20% higher
+than the value calculated from Equation 8. The following inductors are recommended for use:
+
+                                           Table 5. Inductor Selection
+
+    INDUCTOR VALUE          COMPONENT SUPPLIER(1)     SIZE (LxWxH /mm)         Isat/DCR
+             1.2 µH                                                        4.5 A / 18.8 m
+             1.5 µH         Coilcraft, XFL4015-122ME  4 x 4 x 1.5          4.6 A / 14.4 m
+             1.0 µH                                                        5.4 A / 10.8 m
+              1 µH          Coilcraft, XFL4020-152ME  4 x 4 x 2.1           3.7 A / 45 m
+
+                            Coilcraft, XFL4020-102ME  4 x 4 x 2.1
+
+                               Murata, 1277AS-H-1R0M  3.2 x 2.5 x 1.2
+
+(1) See Third-party Products Disclaimer
+
+The inductor value also affects the stability of the feedback loop. In particular the boost transfer function exhibits
+a right half-plane zero. The frequency of the right half plane zero is inverse proportional to the inductor value and
+the load current. This means the higher the value of the inductance and load current, the more the right half
+plane zero is moved to a lower frequency. This degrades the phase margin of the feedback loop. It is
+recommended to choose the inductor's value in order to have the frequency of the right half plane zero >400
+kHz. The frequency of the RHPZ is calculated using Equation 9.
+
+    f RHPZ =  (1 - D)2 ´ Vout
+
+              2p ´Iout ´ L                                                                 (9)
+
+With,
+     D =Duty Cycle in Boost mode
+     Note: The calculation must be done for the minimum input voltage which is possible to have in boost mode
+
+If the operating conditions results in a frequency of the RHPZ of less than 400kHz, more output capacitance
+should be added to reduce the cross over frequency. The RHPZ moves to lowest frequency at lowest input
+voltage (highest boost factor) and largest output current. Device stability should therefore be observed mainly
+under these worst case operating conditions.
+
+18  Submit Documentation Feedback                                          Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS63070
+                                                                                                                     TPS63070
+
+www.ti.com                                                                             SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+9.2.2.3 Capacitor Selection
+
+9.2.2.3.1 Input Capacitor
+
+It is recommended to use a combination of capacitors on the input. A small size ceramic capacitor as close as
+possible from the VIN pin to GND to block high frequency noise and a larger one in parallel for the required
+capacitance on for good transient behavior of the regulator. X5R or X7R ceramic capacitor are recommended.
+The input capacitor needs to be large enough to avoid supply voltage dips shorter than 5us as the undervoltage
+lockout circuitry needs time to react.
+
+9.2.2.3.2 Output Capacitor
+
+Same as the input, the output capacitor should be a combination of capacitors optimized for suppressing high
+frequency noise and a larger capacitor for low output voltage ripple and stable operation. The use of small X5R
+or X7R ceramic capacitors placed as close as possible to the VOUT and GND pins of the IC is recommended. A
+0603 size capacitor close to the pins of the IC and as many 0805 capacitors as required to get the capacitance
+given the output voltage and dc bias effect of the ceramic capacitors is best. The recommended typical output
+capacitor values are outlined in Output Filter Selection. Please also see the Recommended Operating Conditions
+for the minimum and maximum capacitance at the output.
+
+Larger capacitors will cause lower output voltage ripple as well as lower output voltage drop during load
+transients.
+
+                                                       Table 6. Typical Capacitors
+
+VALUE            PART NUMBER                           COMPONENT                                  COMMENT            SIZE (LxWxH mm)
+ 22 µF       EMK212BBJ226MG-T                          SUPPLIER (1)                                                     2 x 1.25 x 1.25
+ 22 µF                                                  Taiyo Yuden                    input capacitor for Vin  8 V     3.2 x 1.6 x 1.6
+ 10 µF         TMK316BBJ226ML                           Taiyo Yuden                                                     1.6 x 0.8 x 0.8
+             TMK107BBJ106MA-T                           Taiyo Yuden                            input capacitor
+ 10 µF                                                                                                                  2 x 1.25 x 1.25
+ 22 µF      GRM21BC71E106ME11                               Murata                     bypass capacitor directly at     2 x 1.25 x 1.25
+            GRM21BC81C226ME44                                                          device pins on VIN to GND
+                                                            Murata
+                                                                                             and VOUT to GND
+
+                                                                                         small body size; 2 parts
+                                                                                       required if used at VIN > 6V
+
+                                                                                         small body size; 3 parts
+                                                                                       required if used at Vo > 5V;
+
+                                                                                              otherwise 2 parts
+
+(1) See Third-party Products Disclaimer
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                  Submit Documentation Feedback  19
+
+                                                       Product Folder Links: TPS63070
+TPS63070                                                                                             www.ti.com
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+9.2.3 Application Curves
+
+            Table 7. Typical Application Curves for Adjustable Version
+
+            Parameter                                            Conditions                Figure
+
+Efficiency                                 VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =  Figure 11
+                                           7 V , PS/SYNC = Low                            Figure 12
+Efficiency vs Output Current (PFM/PWM)                                                    Figure 13
+                                           VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =  Figure 14
+Efficiency vs Output Current (PWM only)    7 V , PS/SYNC = High
+                                                                                          Figure 15
+Efficiency vs Output Current (PFM/PWM)     VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =  Figure 16
+                                           9 V , PS/SYNC = Low                            Figure 17
+Efficiency vs Output Current (PWM only)                                                   Figure 18
+Load Regulation                            VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =
+Load Regulation, PFM/PWM Operation         9 V , PS/SYNC = High                           Figure 19
+                                                                                          Figure 20
+Load Regulation, PWM Operation             VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =  Figure 21
+                                           7 V , PS/SYNC = Low                            Figure 22
+Load Regulation, PFM/PWM Operation
+                                           VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =  Figure 23
+Load Regulation, PWM Operation             7 V , PS/SYNC = High                           Figure 24
+Output Current                                                                            Figure 25
+Typical Start-up Current vs Input Voltage  VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =  Figure 26
+                                           9 V , PS/SYNC = Low                            Figure 27
+Maximum Load Current vs Input Voltage                                                     Figure 28
+                                           VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =
+Typical Start-up Current vs Input Voltage  9 V , PS/SYNC = High                           Figure 29
+                                                                                          Figure 30
+Maximum Load Current vs Input Voltage      VOUT = 7 V, TJ = -40 °C, 25 °C, 85 °C, 125     Figure 31
+Regulation Accuracy                        °C                                             Figure 32
+Load Transient, PFM/PWM Boost Operation                                                   Figure 33
+                                           VOUT = 7 V, TJ = -40 °C, 25 °C, 85 °C, 125     Figure 34
+Load Transient, PFM/PWM Buck Operation     °C, PG = high
+
+Load Transient, PFM/PWM Boost Operation    VOUT = 9 V, TJ = -40 °C, 25 °C, 85 °C, 125
+                                           °C
+Load Transient, PFM/PWM Buck Operation
+                                           VOUT = 9V, TJ = -40 °C, 25 °C, 85 °C, 125
+Line Transient, PFM/PWM Operation          °C, PG = high
+
+Line Transient, PFM/PWM Operation          VIN = 4.2 V, VOUT = 7 V, Load = 100 mA to 1
+Output Voltage Ripple                      A, PS/SYNC = Low
+Output Voltage Ripple, PFM/PWM Operation
+                                           VIN = 12 V, VOUT = 7 V, Load = 200 mA to
+Output Voltage Ripple, PWM Operation       1.8 A, PS/SYNC = Low
+
+Output Voltage Ripple, PFM/PWM Operation   VIN = 4.2 V, VOUT = 9 V, Load = 100 mA to 1
+                                           A, PS/SYNC = Low
+Output Voltage Ripple, PFM/PWM Operation
+                                           VIN = 12 V, VOUT = 9 V, Load = 200 mA to
+Output Voltage Ripple, PWM Operation       1.8 A, PS/SYNC = Low
+
+Output Voltage Ripple, PFM/PWM Operation   VIN = 5 V to 9 V, VOUT = 7 V, Load = 1 A,
+                                           PS/SYNC = Low
+
+                                           VIN = 8 V to 12 V, VOUT = 9 V, Load = 1 A,
+                                           PS/SYNC = Low
+
+                                           VIN = 5 V, VOUT = 7 V, Load = 0.3 A,
+                                           PS/SYNC = Low
+
+                                           VIN = 5 V, VOUT = 7 V, Load = 1 A,
+                                           PS/SYNC = high
+
+                                           VIN = 12 V, VOUT = 7 V, Load = 0.3 A,
+                                           PS/SYNC = Low
+
+                                           VIN = 5 V, VOUT = 9 V, Load = 0.1 A,
+                                           PS/SYNC = Low
+
+                                           VIN = 5 V, VOUT = 9 V, Load = 0.5 A,
+                                           PS/SYNC = high
+
+                                           VIN = 12 V, VOUT = 9 V, Load = 0.1 A,
+                                           PS/SYNC = Low
+
+20  Submit Documentation Feedback                                          Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS63070
+                                                                                                                                                                                                  TPS63070
+
+www.ti.com                                                                                                                                             SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+                                              Table 7. Typical Application Curves for Adjustable Version (continued)
+
+                               Parameter                                                                       Conditions                                                             Figure
+                                                                                                                                                                                     Figure 35
+Startup                                                                                  VIN = 4.5 V, VOUT = 7 V, Load = 0.5 A,                                                      Figure 36
+                                                                                         PS/SYNC = Low
+Start-up Behavior from Rising Enable, PFM/PWM                                            VIN = 7 V, VOUT = 9 V, Load = 0.5 A,
+Operation                                                                                PS/SYNC = Low
+
+Start-up Behavior from Rising Enable, PFM/PWM
+Operation
+
+                          Efficiency (%)100%                                                                                       Efficiency100%
+                                    90%                                                                                                      90%
+                                    80%                                     VIN = 3 V                                                        80%                                     VIN = 3 V
+                                    70%                                     VIN = 4.2 V                                                      70%                                     VIN = 4.2 V
+                                    60%                                     VIN = 5 V                                                        60%                                     VIN = 5 V
+                                    50%                                     VIN = 7 V                                                        50%                                     VIN = 7 V
+                                    40%                                     VIN = 9 V                                                        40%                                     VIN = 9 V
+                                    30%                                     VIN = 12 V                                                       30%                                     VIN = 12 V
+                                    20%                                                                                                      20%
+                                    10%       1m  10m                 100m  12                                                               10%       1m  10m  100m                 1
+                                        0                                                                                                        0
+                                        100P      Output Current (A)               D003                                                          100P      Output Current (A)                   D004
+
+                          Vout = 7 V                   PFM                          T = 25 °C                                      Vout = 7 V                   PWM                            T = 25 °C
+
+                                          Figure 11. Efficiency vs Output Current                                                              Figure 12. Efficiency vs Output Current
+
+                          Efficiency100%                                                                                                   100%Efficiency
+                                    90%                                                                                                      90%
+                                    80%                                     VIN = 3 V                                                        80%                                     VIN = 3 V
+                                    70%                                     VIN = 4.2 V                                                      70%                                     VIN = 4.2 V
+                                    60%                                     VIN = 5 V                                                        60%                                     VIN = 5 V
+                                    50%                                     VIN = 7 V                                                        50%                                     VIN = 7 V
+                                    40%                                     VIN = 9 V                                                        40%                                     VIN = 9 V
+                                    30%                                     VIN = 12 V                                                       30%                                     VIN = 12 V
+                                    20%                                                                                                      20%
+                                    10%       1m  10m                 100m  12                                                               10%       1m  10m                 100m  12
+                                        0                                                                                                        0
+                                        100P      Output Current (A)               D005                                                          100P      Output Current (A)               D006
+
+                          Vout = 9 V                   PFM                          T = 25 °C                                      Vout = 9 V                   PWM                          T = 25 °C
+
+                                          Figure 13. Efficiency vs Output Current                                                              Figure 14. Efficiency vs Output Current
+
+Output Voltage (V)  7.28                                                                 VIN = 3 V       Output Voltage (V)  7.28                                                    VIN = 3 V
+                    7.21                                                                 VIN = 4.2 V                         7.21                                                    VIN = 4.2 V
+                    7.14                                                                 VIN = 5 V                           7.14                                                    VIN = 5 V
+                    7.07                                                                 VIN = 7 V                           7.07                                                    VIN = 7 V
+                                                                                         VIN = 9 V                                                                                   VIN = 9 V
+                                                                                         VIN = 12 V                                                                                  VIN = 12 V
+
+                    7                                                                                                        7
+
+                    6.93                                                                                                     6.93
+
+                    6.86                                                                                                     6.86
+
+                    6.79                                                                                                     6.79
+
+                    100                   1m      10m                 100m                 12                                100µ              1m          10m                 100m                 12
+
+                                                  Output Current (A)                               D009                                                    Output Current (A)                               D010
+
+                          Vout = 7 V                   PFM                               T = 25 °C                                 Vout = 7 V                   PWM                               T = 25 °C
+
+                          Figure 15. Output Voltage vs Output Current                                                              Figure 16. Output Voltage vs Output Current
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                                                                                      Submit Documentation Feedback          21
+
+                                                                            Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                                                                                              www.ti.com
+
+    Output Voltage (V)  9.36                                       VIN = 3 V        Output Voltage (V)      9.36                                       VIN = 3 V
+                        9.27                                       VIN = 4.2 V                              9.27                                       VIN = 4.2 V
+                        9.18                                       VIN = 5 V                                9.18                                       VIN = 5 V
+                        9.09                                       VIN = 7 V                                9.09                                       VIN = 7 V
+                                                                   VIN = 9 V                                                                           VIN = 9 V
+                                                                   VIN = 12 V                                                                          VIN = 12 V
+
+                        9                                                                                   9
+
+                        8.91                                                                                8.91
+
+                        8.82                                                                                8.82
+
+                        8.73                                                                                8.73
+
+                        100µ  1m          10m                100m    12                                     100µ  1m          10m                100m    12
+
+                                          Output Current (A)                  D011                                            Output Current (A)                 D012
+
+                              Vout = 9 V       PFM                 T = 25 °C                                      Vout = 9 V       PWM                 T = 25 °C
+
+                              Figure 17. Output Voltage vs Output Current                                         Figure 18. Output Voltage vs Output Current
+
+                          1                                                                                 4.5
+                        0.9
+                        0.8                                                                                 4
+                        0.7
+                        0.6                                                         Max Output Current (A)  3.5
+                        0.5
+    Output Current (A)  0.4                                                                                 3
+                        0.3
+                        0.2                                                                                 2.5
+                        0.1
+                                                                                                            2
+                          0
+                            3456                                                                            1.5
+
+                              Vout = 7 V                           -40qC                                    1                                          -40qC
+                                                                   25qC
+                                                                   85qC                                                                                25qC
+                                                                   125qC
+                                                                                                            0.5                                        85qC
+
+                                                                                                                                                       125qC
+
+                                                                                                            0
+
+                                          7 8 9 10 11 12 13 14 15 16                                             2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+                                          Input Voltage (V)                D014                                               Input Voltage (V)                D017
+
+                                                                   resistive load                                 Vout = 7 V                           after start-up with
+
+                                                                                                                                                       PG = high
+
+                              Figure 19. Typical Start-up Current
+
+                                                                                                                  Figure 20. Maximum Load Current vs Input Voltage
+
+                          1                                                                                 4.5
+                        0.9
+                        0.8                                                                                 4
+                        0.7
+                        0.6                                                         Max Output Current (A)  3.5
+                        0.5
+    Output Current (A)  0.4                                                                                 3
+                        0.3
+                        0.2                                                                                 2.5
+                        0.1
+                                                                                                            2
+                          0
+                            3456                                                                            1.5
+
+                              Vout = 9 V                           -40qC                                    1                                          -40qC
+                                                                   25qC
+                                                                   85qC                                                                                25qC
+                                                                   125qC
+                                                                                                            0.5                                        85qC
+
+                                                                                                                                                       125qC
+
+                                                                                                            0
+
+                                          7 8 9 10 11 12 13 14 15 16                                             2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+                                          Input Voltage (V)                D015                                               Input Voltage (V)                D018
+
+                                                                   resistive load                                 Vout = 9 V                           after start-up with
+
+                                                                                                                                                       PG = high
+
+                              Figure 21. Typical Start-up Current
+
+                                                                                                                  Figure 22. Maximum Load Current vs Input Voltage
+
+22                      Submit Documentation Feedback                                                             Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                                                   Product Folder Links: TPS63070
+www.ti.com                                                                                                               TPS63070
+
+                                                                                       SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+            Vout = 7 V  PFM                            Vin = 4.2V  Vout = 7 V          PFM                                 Vin = 12V
+
+            Figure 23. Load Transient Response                                         Figure 24. Load Transient Response
+
+            Vout = 9 V  PFM                            Vin = 4.2V  Vout = 9 V          PFM                                 Vin = 12V
+
+            Figure 25. Load Transient Response                                         Figure 26. Load Transient Response
+
+            Vout = 7 V  PFM                            Io = 1A     Vout = 9 V          PFM                                 Io = 1A
+
+            Figure 27. Line Transient Response                                         Figure 28. Line Transient Response
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                  Submit Documentation Feedback       23
+
+                                                       Product Folder Links: TPS63070
+TPS63070                                                                                                     www.ti.com
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+    Vin = 5V; Vout = 7 V   PFM             Io = 0.3A  Vin = 5V; Vout = 7 V   PWM                             Io = 1A
+
+    Figure 29. Output Voltage Ripple                                       Figure 30. Output Voltage Ripple
+
+    Vin = 12V; Vout = 7 V  PFM             Io = 0.3A  Vin = 5V; Vout = 9 V   PFM                             Io = 0.1A
+
+    Figure 31. Output Voltage Ripple                                       Figure 32. Output Voltage Ripple
+
+    Vin = 5V; Vout = 9 V   PWM             Io = 0.5A  Vin = 12V; Vout = 9 V  PFM                             Io = 0.1A
+
+    Figure 33. Output Voltage Ripple                                       Figure 34. Output Voltage Ripple
+
+24  Submit Documentation Feedback                                          Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS63070
+www.ti.com                                                                                                               TPS63070
+
+                                                                                       SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+Vin = 4.5V; Vout = 7 V  PFM                            Io = 0.5A  Vin = 7V; Vout = 9 V  PFM                        Io = 0.5A
+
+            Figure 35. Start-up Timing                                                 Figure 36. Start-up Timing
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                   Submit Documentation Feedback  25
+
+                                                       Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                                                                    www.ti.com
+
+9.3 Typical Application for Fixed Voltage Version
+
+                                         1.5 µH L
+
+                                             TPS630701
+
+                                         L1             L2
+
+          VIN = 2.0 V to 16 V C1                            VOUT  C4                 VOUT = 5 V
+                                         VIN                        10 µF
+          CIN           10 µF                                       0603            COUT
+                                                                                   3x22 µF
+          2x10 µF                  0603
+                                                                                    0805
+          0805                                       FB                      R4
+                                                   FB2                     100 k
+                                         VSEL
+            R5                           EN         PG
+          10 k
+
+                                         PS/SYNC PGND
+
+          CVAUX                          VAUX      GND
+
+                100 nF
+
+                                                                           Copyright © 2016, Texas Instruments Incorporated
+
+    Figure 37. Typical Application For Fixed Voltage Version With Minimum External Part Count And
+                                                        Minimum Soft Start Time
+
+9.3.1 Design Requirements
+
+The design guidelines provide a component selection to operate the device within the recommended operating
+conditions. The input and output capacitors have been split into a small 0603 size capacitor close to the device
+pins and 0805 size capacitors to get the required capacitance.
+
+                                         Table 8. Bill of Materials
+
+          REFERENCE            DESCRIPTION                 VALUE           MANUFACTURER
+                 IC          TPS630701RNM                                  Texas Instruments
+                  L           XFL4020-1.5µH                 1.5 µH
+                CIN     GRM21BC71E106ME11L           2 x 10 µF / 25 V /           Coilcraft
+                                                                                   Murata
+                 C1       TMK107BBJ106MA-T               X7S / 0805
+                                                   10 µF / 25 V / X5R /        Taiyo Yuden
+               COUT     GRM21BC81C226ME44L
+                                                             0603                  Murata
+                 C4       TMK107BBJ106MA-T           3 x 22 µF / 16 V /
+                                                                               Taiyo Yuden
+              CVAUX       TMK105B7104MV-FR               X6S / 0805
+                 R4     Metal Film Resistor ; 1%   10 µF / 25 V / X5R /        Taiyo Yuden
+                                                                                       -
+                                                             0603
+                                                   100 nF / 25V / X7R /
+
+                                                             0402
+                                                            100 k
+
+26  Submit Documentation Feedback                                          Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                         Product Folder Links: TPS63070
+                                                                                                      TPS63070
+
+www.ti.com                                                                             SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+9.3.2 Detailed Design Procedure
+
+The TPS6307x series of buck-boost converter has internal loop compensation. Therefore, the external L-C filter
+has to be selected according to the internal compensation. It's important to consider that the effective inductance,
+due to inductor tolerance and current derating can vary between 20% and -30%. The same for the capacitance
+of the output filter: the effective capacitance can vary between +20% and -80% of the specified datasheet value,
+due to capacitor tolerance and bias voltage. For this reason, Output Filter Selection shows the nominal
+capacitance and inductance value allowed. For the fixed voltage version TPS630701, the effective capacitance
+on the output (in µF) needs to be at least 15 times higher than the effective inductance (in µH) to ensure a good
+transient response and stable operation.
+
+9.3.3 Application Curves
+
+            Table 9. Typical Application Curves for Fixed Voltage Version
+
+            Parameter                                                        Conditions                Figure
+                                                                                                      Figure 38
+Efficiency                                             VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =  Figure 39
+                                                       5 V , PS/SYNC = Low
+Efficiency vs Output Current (PFM/PWM)                 VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =  Figure 40
+                                                       5 V , PS/SYNC = High                           Figure 41
+Efficiency vs Output Current (PWM only)
+Load Regulation                                        VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =  Figure 42
+Load Regulation, PFM/PWM Operation                     5 V , PS/SYNC = Low                            Figure 43
+                                                       VIN = 3 V, 4.2 V, 5 V, 7 V, 9 V, 12 V, VOUT =
+Load Regulation, PWM Operation                         5 V , PS/SYNC = High                           Figure 44
+Output Current                                                                                        Figure 45
+Typical Start-up Current vs Input Voltage              VOUT = 5 V, TJ = -40 °C, 25 °C, 85 °C, 125     Figure 46
+                                                       °C
+Maximum Load Current vs Input Voltage                  VOUT = 5 V, TJ = -40 °C, 25 °C, 85 °C, 125     Figure 47
+Regulation Accuracy                                    °C, PG = high                                  Figure 48
+Load Transient, PFM/PWM Boost Operation                                                               Figure 49
+                                                       VIN = 4.2 V, VOUT = 5 V, Load = 100 mA to 1
+Load Transient, PFM/PWM Buck Operation                 A, PS/SYNC = Low                               Figure 50
+                                                       VIN = 12 V, VOUT = 5 V, Load = 200 mA to
+Line Transient, PFM/PWM Operation                      1.8 A, PS/SYNC = Low
+Output Voltage Ripple                                  VIN = 4.2 V to 7 V, VOUT = 5 V, Load = 1 A,
+Output Voltage Ripple, PFM/PWM Operation               PS/SYNC = Low
+
+Output Voltage Ripple, PWM Operation                   VIN = 4.2 V, VOUT = 5 V, Load = 0.3 A,
+                                                       PS/SYNC = Low
+Output Voltage Ripple, PFM/PWM Operation               VIN = 4.2 V, VOUT = 5 V, Load = 1 A,
+                                                       PS/SYNC = high
+Startup                                                VIN = 7.2 V, VOUT = 5 V, Load = 0.3 A,
+Start-up Behavior from Rising Enable, PFM/PWM          PS/SYNC = Low
+Operation
+                                                       VIN = 4.5 V, VOUT = 5 V, Load = 0.5 A,
+                                                       PS/SYNC = Low
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                  Submit Documentation Feedback  27
+
+                                                       Product Folder Links: TPS63070
+TPS63070                                                                                                                                                          www.ti.com
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+                        100%                                                                                  100%
+
+                        90%                                                                                       90%
+
+                        80%                                                                                       80%
+
+                        70%                                                                                       70%
+
+    Efficiency          60%                                                               Efficiency              60%
+
+                        50%                                                                                       50%
+
+                        40%                                              3 V                                      40%                                              3 V
+                                                                         4.2 V                                                                                     4.2 V
+                        30%                                              5 V                                      30%                                              5 V
+                                                                         7 V                                                                                       7 V
+                        20%                                              9 V                                      20%                                              9 V
+                                                                         12 V                                                                                      12 V
+                        10%                                                                                       10%
+                                                                           12                                                                                        12
+                        0                                                                                         0
+                                                                                    D001                                                                                     D002
+                        100P              1m  10m                 100m                                            100P              1m  10m                 100m
+                                                                        T = 25 °C                                                                                 T = 25 °C
+                                              Output Current (A)                                                                        Output Current (A)
+
+                              Vout = 5 V           PFM                                                                  Vout = 5 V           PWM
+
+                              Figure 38. Efficiency vs Output Current                                                   Figure 39. Efficiency vs Output Current
+
+                        5.25                                                                                      5.2
+
+                                                                        3 V                                                                                       3 V
+
+                        5.2                                             4.2 V                                     5.15                                            4.2 V
+
+                                                                        5 V                                                                                       5 V
+
+                        5.15                                            7 V                                       5.1                                             7 V
+
+    Output Voltage (V)                                                  9 V               Output Voltage (V)                                                      9 V
+
+                        5.1                                             12 V                                                                                      12 V
+
+                                                                                                                  5.05
+
+                        5.05
+
+                                                                                                                  5
+
+                        5
+
+                        4.95                                                                                      4.95
+
+                        4.9                                                                                       4.9
+
+                        4.85                                                                                      4.85
+
+                        100P  1m              10m                100m     12                                      100P  1m              10m                100m     12
+
+                                              Output Current (A)                  D007                                                  Output Current (A)                  D008
+
+                              Vout = 5 V           PFM                  T = 25 °C                                       Vout = 5 V           PWM                  T = 25 °C
+
+                              Figure 40. Output Voltage vs Output Current                                               Figure 41. Output Voltage vs Output Current
+
+                          1                                                                                       4.5
+                        0.9
+                        0.8                                                                                       4
+                        0.7
+                        0.6                                                               Max Output Current (A)  3.5
+                        0.5
+    Output Current (A)  0.4                                                                                       3
+                        0.3
+                        0.2                                                                                       2.5
+                        0.1
+                                                                                                                  2
+                          0
+                            3456                                                                                  1.5
+
+                              Vout = 5 V                                -40qC                                     1                                               -40qC
+                                                                        25qC
+                                                                        85qC                                                                                      25qC
+                                                                        125qC
+                                                                                                                  0.5                                             85qC
+
+                                                                                                                                                                  125qC
+
+                                                                                                                  0
+
+                                              7 8 9 10 11 12 13 14 15 16                                               2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+                                              Input Voltage (V)                D013                                                     Input Voltage (V)                D016
+
+                                                                        resistive load                                  Vout = 5 V                               after start-up with
+
+                                                                                                                                                                  PG = high
+
+                              Figure 42. Typical Start-up Current
+
+                                                                                                                        Figure 43. Maximum Load Current vs Input Voltage
+
+28                      Submit Documentation Feedback                                                                   Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                                                        Product Folder Links: TPS63070
+www.ti.com                                                                                                               TPS63070
+
+                                                                                       SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+            Vout = 5 V  PFM                            Vin = 4.2V  Vout = 5 V              PFM                             Vin = 12V
+
+            Figure 44. Load Transient Response                                         Figure 45. Load Transient Response
+
+            Vout = 5 V  PFM                            Io = 1A     Vin = 4.2V; Vout = 5 V  PFM                             Io = 0.3A
+
+            Figure 46. Line Transient Response                                         Figure 47. Output Voltage Ripple
+
+Vin = 4.2V; Vout = 5 V  PWM                            Io = 1A     Vin = 7.2V; Vout = 5 V  PFM                             Io = 0.3A
+
+            Figure 48. Output Voltage Ripple                                           Figure 49. Output Voltage Ripple
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                      Submit Documentation Feedback   29
+
+                                                       Product Folder Links: TPS63070
+TPS63070                                                                              www.ti.com
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+    Vin = 4.5V; Vout = 5 V                                                       PFM  Io = 0.5A
+                                           Figure 50. Start-up Timing
+
+30  Submit Documentation Feedback                                          Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS63070
+                                                                                       TPS63070
+
+www.ti.com                                                                             SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+10 Power Supply Recommendations
+
+The TPS63070 device family has no special requirements for its power supply. The power supply output current
+needs to be rated according to the supply voltage, output voltage and output current of TPS63070. Please see
+the layout guidelines about the placement of the external components.
+
+10.1 Thermal Information
+
+Implementation of integrated circuits in low-profile and fine-pitch surface-mount packages typically requires
+special attention to power dissipation. Many system-dependent issues such as thermal coupling, airflow, added
+heat sinks and convection surfaces, and the presence of other heat-generating components affect the power-
+dissipation limits of a given component.
+
+Three basic approaches for enhancing thermal performance are listed below.
+· Improving the power dissipation capability of the PCB design
+· Improving the thermal coupling of the component to the PCB by soldering the PowerPADTM
+· Introducing airflow in the system
+
+For more details on how to use the thermal parameters in the dissipation ratings table please check the Thermal
+Characteristics Application Note (SZZA017) and the IC Package Thermal Metrics Application Note (SPRA953).
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                  Submit Documentation Feedback  31
+
+                                                       Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                             www.ti.com
+
+11 Layout
+
+11.1 Layout Guidelines
+
+For all switching power supplies, the layout is an important step in the design, especially at high peak currents
+and high switching frequencies. If the layout is not carefully done, the regulator could show stability problems as
+well as EMI problems. Therefore, use wide and short traces for the main current path and for the power ground
+connection. The input capacitor, output capacitor, and the inductor should be placed as close as possible to the
+IC. Use a common ground node for power ground and a different one for control ground to minimize the effects
+of ground noise. Connect these ground nodes at any place close to one of the ground pin of the IC.
+
+A ceramic capacitor each, as close as possible from the VIN pin to GND and one from the VOUT pin to GND,
+shown as C1 and C4 in the layout proposal are used to suppress high frequency noise. The case size should be
+0603 or smaller for good high frequency performance. Additional 0805 size input and output capacitors are used
+to get the required capacitance on the input and output depending on the supply voltage range and the output
+voltage.
+
+The feedback divider should be placed as close as possible to the feedback pin of the IC. To lay out the control
+ground, short traces are recommended as well, separation from the power ground traces. This avoids ground
+shift problems, which can occur due to superimposition of power ground current and control ground current.
+
+In case any of the digital inputs EN, VSEL or PS/SYNC need to be tied to the input supply voltage VIN, a 10k
+resistor must be used in series. One common resistor for all digital inputs that are tied to VIN is sufficient.
+
+11.2 Layout Example
+
+          GND                                 L1                                 GND
+               CIN                                                          COUT
+                                           C1 C4
+
+                                            VIN            L2         VOUT
+                                                      PGND
+                                            EN   L1                    FB2
+                                           VSEL                        FB
+          VIN                                                    GND        R3  VOUT
+                                                             VAUX           R1
+                                                      PG                    R2
+                                                 PS/S
+
+                                                 CVAUX
+
+                                           Figure 51. EVM Layout
+
+32  Submit Documentation Feedback                                           Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS63070
+www.ti.com                                                                                                               TPS63070
+
+12 Device and Documentation Support                                                    SLVSC58B - JUNE 2016 - REVISED MARCH 2019
+
+12.1 Device Support
+
+12.1.1 Third-Party Products Disclaimer
+
+TI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT
+CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES
+OR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER
+ALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.
+
+12.2 Related Links
+
+The table below lists quick access links. Categories include technical documents, support and community
+resources, tools and software, and quick access to order now.
+
+                                                       Table 10. Related Links
+
+  PARTS    PRODUCT FOLDER                              ORDER NOW     TECHNICAL          TOOLS &     SUPPORT &
+                                                                     DOCUMENTS         SOFTWARE     COMMUNITY
+TPS63070          Click here                             Click here
+TPS630701         Click here                             Click here    Click here       Click here    Click here
+TPS630702         Click here                             Click here    Click here       Click here    Click here
+                                                                       Click here       Click here    Click here
+
+12.3 Receiving Notification of Documentation Updates
+
+To receive notification of documentation updates, navigate to the device product folder on ti.com. In the upper
+right corner, click on Alert me to register and receive a weekly digest of any product information that has
+changed. For change details, review the revision history included in any revised document.
+
+12.4 Community Resources
+
+The following links connect to TI community resources. Linked contents are provided "AS IS" by the respective
+contributors. They do not constitute TI specifications and do not necessarily reflect TI's views; see TI's Terms of
+Use.
+
+TI E2ETM Online Community TI's Engineer-to-Engineer (E2E) Community. Created to foster collaboration
+                  among engineers. At e2e.ti.com, you can ask questions, share knowledge, explore ideas and help
+                  solve problems with fellow engineers.
+
+Design Support TI's Design Support Quickly find helpful E2E forums along with design support tools and
+                  contact information for technical support.
+
+12.5 Trademarks
+
+E2E is a trademark of Texas Instruments.
+All other trademarks are the property of their respective owners.
+
+12.6  Electrostatic Discharge Caution
+
+       This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled with
+       appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+
+      ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may be more
+      susceptible to damage because very small parametric changes could cause the device not to meet its published specifications.
+
+12.7 Glossary
+
+SLYZ022 -- TI Glossary.
+     This glossary lists and explains terms, acronyms, and definitions.
+
+Copyright © 2016-2019, Texas Instruments Incorporated                                  Submit Documentation Feedback  33
+
+                                                       Product Folder Links: TPS63070
+TPS63070
+
+SLVSC58B - JUNE 2016 - REVISED MARCH 2019                                  www.ti.com
+
+13 Mechanical, Packaging, and Orderable Information
+
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+34  Submit Documentation Feedback                                          Copyright © 2016-2019, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS63070
+www.ti.com                                                                                                                                                   PACKAGE OPTION ADDENDUM
+
+                                                                                                                                                                                                                             9-Dec-2025
+
+PACKAGING INFORMATION
+
+Orderable part number  Status   Material type  Package | Pins        Package qty | Carrier  RoHS                   Lead finish/        MSL rating/           Op temp (°C)  Part marking
+                                                                                                                   Ball material       Peak reflow
+                           (1)            (2)                                                  (3)                                                             -40 to 125            (6)
+                                                                                                                             (4)                   (5)         -40 to 125
+ TPS630701RNMR         Active   Production     VQFN-HR (RNM) | 15    3000 | LARGE T&R        Yes                                                               -40 to 125       0701
+TPS630701RNMR.A        Active   Production     VQFN-HR (RNM) | 15    3000 | LARGE T&R        Yes                    Call TI | Sn  Level-1-260C-UNLIM           -40 to 125       0701
+                       Active   Production     VQFN-HR (RNM) | 15     250 | SMALL T&R        Yes                         SN       Level-1-260C-UNLIM           -40 to 125       0701
+ TPS630701RNMT         Active   Production     VQFN-HR (RNM) | 15     250 | SMALL T&R        Yes                                  Level-1-260C-UNLIM           -40 to 125       0701
+TPS630701RNMT.A        Active   Production     VQFN-HR (RNM) | 15    3000 | LARGE T&R        Yes                    Call TI | Sn  Level-1-260C-UNLIM           -40 to 125       0702
+ TPS630702RNMR         Active   Production     VQFN-HR (RNM) | 15    3000 | LARGE T&R        Yes                         SN       Level-1-260C-UNLIM           -40 to 125       0702
+TPS630702RNMR.A        Active   Production     VQFN-HR (RNM) | 15     250 | SMALL T&R        Yes                         SN       Level-1-260C-UNLIM           -40 to 125       0702
+ TPS630702RNMT         Active   Production     VQFN-HR (RNM) | 15     250 | SMALL T&R        Yes                         SN       Level-1-260C-UNLIM           -40 to 125       0702
+TPS630702RNMT.A        Active   Production     VQFN-HR (RNM) | 15    3000 | LARGE T&R        Yes                                  Level-1-260C-UNLIM           -40 to 125       3070
+                       Active   Production     VQFN-HR (RNM) | 15    3000 | LARGE T&R        Yes                    Call TI | Sn  Level-1-260C-UNLIM           -40 to 125       3070
+  TPS63070RNMR         Active   Production     VQFN-HR (RNM) | 15     250 | SMALL T&R        Yes                         SN       Level-1-260C-UNLIM                            3070
+TPS63070RNMR.A         Active   Production     VQFN-HR (RNM) | 15     250 | SMALL T&R        Yes                                  Level-1-260C-UNLIM                            3070
+                                                                                                                    Call TI | Sn  Level-1-260C-UNLIM
+  TPS63070RNMT                                                                                                           SN
+ TPS63070RNMT.A
+                                                                                                                    Call TI | Sn
+                                                                                                                         SN
+
+(1) Status: For more details on status, see our product life cycle.
+
+(2) Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3) RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4) Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5) MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6) Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+                                                                     Addendum-Page 1
+www.ti.com                   PACKAGE OPTION ADDENDUM
+
+                                                                                             9-Dec-2025
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+            Addendum-Page 2
+                                                                      PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                     10-Dec-2025
+
+TAPE AND REEL INFORMATION                                                TAPE DIMENSIONS
+                                                                      K0 P1
+         REEL DIMENSIONS
+
+                                                                                                                             B0 W
+
+                                Reel
+                             Diameter
+
+                                                                      Cavity  A0
+
+                                                    A0 Dimension designed to accommodate the component width
+                                                    B0 Dimension designed to accommodate the component length
+                                                    K0 Dimension designed to accommodate the component thickness
+                                                    W Overall width of the carrier tape
+                                                    P1 Pitch between successive cavity centers
+
+                                          Reel Width (W1)
+                             QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                             Sprocket Holes
+
+                                       Q1 Q2              Q1 Q2               User Direction of Feed
+                                       Q3 Q4              Q3 Q4
+
+                                                    Pocket Quadrants
+
+*All dimensions are nominal  Package Package  Pins  SPQ      Reel Reel         A0    B0                                       K0    P1   W     Pin1
+             Device            Type Drawing               Diameter Width      (mm)  (mm)                                     (mm)  (mm)
+                                                    250
+                                                    3000    (mm) W1 (mm)       2.8   3.3                                      1.2   8.0  (mm) Quadrant
+                                                    3000
+TPS630701RNMT                VQFN- RNM 15           250     180.0 12.4                                                                   12.0  Q1
+TPS630702RNMR                  HR
+TPS63070RNMR                                              330.0       12.4    2.8 3.3 1.2 8.0 12.0                                             Q1
+ TPS63070RNMT                VQFN- RNM 15
+                               HR                         180.0       12.4    2.8 3.3 1.1 4.0 12.0                                             Q1
+
+                             VQFN- RNM 15                 180.0       12.4    2.8 3.3 1.1 4.0 12.0                                             Q1
+                               HR
+
+                             VQFN- RNM 15
+                               HR
+
+                                                    Pack Materials-Page 1
+www.ti.com                                                  PACKAGE MATERIALS INFORMATION
+ TAPE AND REEL BOX DIMENSIONS
+                                                                                                                                                          10-Dec-2025
+
+                                                            Width (mm)
+
+                                                                               H
+
+W                                          L
+
+*All dimensions are nominal  Package Type  Package Drawing  Pins  SPQ             Length (mm)  Width (mm)  Height (mm)
+              Device            VQFN-HR             RNM      15   250                  341.0       182.0        80.0
+                                VQFN-HR             RNM      15   3000                 346.0       346.0        33.0
+      TPS630701RNMT             VQFN-HR             RNM      15   3000                 210.0       185.0        35.0
+      TPS630702RNMR             VQFN-HR             RNM      15   250                  210.0       185.0        35.0
+       TPS63070RNMR
+       TPS63070RNMT
+
+                                           Pack Materials-Page 2
+RNM0015A                                                      SCALE 4.000                            PACKAGE OUTLINE
+
+                                          B                                                          VQFN - 1 mm max height
+                PIN 1 INDEX AREA
+                                                                                                      PLASTIC QUAD FLATPACK - NO LEAD
+
+                                                 2.6                               A
+
+                                                 2.4
+
+                                                                                   3.1
+                                                                                   2.9
+
+            1.0                                                                         C
+            0.8
+                                                 PKG                                       SEATING PLANE
+          0.05                                        7                                    0.08 C
+          0.00
+                                                                           2X 0.775
+                      2X 0.725
+                                      5                                    2X 0.5                         (0.2) TYP
+
+        0.5 TYP                                               8                    2X (0.25)
+                            4
+                                                              1.6
+                1.5                                           1.4
+
+                            1                                                  9
+
+                                                                                     SYMM
+                                                                                                  1
+
+                                                                               11
+
+                                                                                   2X 1.25 1.05
+
+        8X 0.5 0.3                           15       13 12                           2X 0.5 0.3
+
+                                                 15X 0.3 0.2
+
+                                                      0.1 C B A
+                                                      0.05 C
+
+                                                                                                          4222000/B 03/2020
+
+NOTES:
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+
+2. This drawing is subject to change without notice.
+
+                                                              www.ti.com
+RNM0015A                                                             EXAMPLE BOARD LAYOUT
+
+                                                                                VQFN - 1 mm max height
+
+                                                                                        PLASTIC QUAD FLATPACK - NO LEAD
+
+                                        2X (0.725)        2X (0.75)  2X (0.525)
+                                                          13 12            4X (0.6)
+                                    15         14
+
+          8X (0.25)  8X (0.6)
+                     1
+                                                             2X (1.35)
+
+          SYMM                                                             11
+
+                                                                                  2X
+                                                                                 (0.5)
+
+                                                                                                    (2.8)
+
+                 5X (0.5)               (1.7)                              9
+                               4
+                                                                                  3X
+          (R0.05) TYP                                                             (0.25)
+
+                                        5      6          7                  2X (0.25)
+                                                                     8
+                                           (0.6)
+                                        (1.15)                            4X (0.25)
+
+                                                     PKG               2X (0.775)
+
+                                  LAND PATTERN EXAMPLE
+
+                                                 SCALE:20X
+
+          METAL                   SOLDER MASK                SOLDER MASK                                   METAL UNDER
+                                  OPENING                    OPENING                                       SOLDER MASK
+
+      0.05 MAX                                                   0.05 MIN
+ALL AROUND                                                ALL AROUND
+
+                NON SOLDER MASK                                            SOLDER MASK
+                        DEFINED                                                DEFINED
+                                                                              PADS 7-13
+                 PADS 1-6, 14 & 15
+
+                                        SOLDER MASK DETAILS
+
+                                                                                                           4222000/B 03/2020
+
+NOTES: (continued)
+
+3. For more information, see Texas Instruments literature number SLUA271 (www.ti.com/lit/slua271).
+4. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+
+                                                    www.ti.com
+RNM0015A                                                               EXAMPLE STENCIL DESIGN
+
+                                                                                    VQFN - 1 mm max height
+
+                                                                                            PLASTIC QUAD FLATPACK - NO LEAD
+
+                                                                   2X (0.75)
+
+                                           2X (0.725)                           2X (0.525)
+                                                                                       4X (0.6)
+                                                                13          12
+                                    15             14
+
+                          8X (0.6)
+
+14X (0.25)                                                          (1.06)      SOLDER MASK
+                       1                                                              EDGE,TYP
+                                                 3X
+       SYMM                           EXPOSED                                                      11
+
+                                           METAL                                                           2X
+                                                                                                           EXPOSED
+                                    2X (0.72)                                                              METAL
+                                                                                                   10
+
+                                                                                                                    (2.8)
+
+                                                                                                   (0.5)
+                                                                                                   TYP
+
+        5X (0.5)                                   (0.14)                                          9
+                      4
+                                                                                                     4X
+(R0.05) TYP                                                                                          (0.575)
+
+                                                                                2X (0.25)
+
+                                        5          6            7           8      METAL UNDER
+                                                                                   SOLDER MASK
+                                           2X (0.388)                              TYP
+
+                                                                                4X (0.25)
+
+                                           (1.15)                   2X (1.163)
+
+                                                           PKG
+
+                                                                          SOLDER PASTE EXAMPLE                4222000/B 03/2020
+                                                                  BASED ON 0.125 mm THICK STENCIL
+
+                                                                          FOR EXPOSED PADS 9-11
+                                                            85% PRINTED SOLDER COVERAGE BY AREA
+
+                                                                                     SCALE:30X
+
+NOTES: (continued)
+5. For alternate stencil design recommendations, see IPC-7525 or board assembly site preference.
+
+                                                           www.ti.com
+                                 IMPORTANT NOTICE AND DISCLAIMER
+
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES "AS IS"
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+
+TI's products are provided subject to TI's Terms of Sale, TI's General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI's provision of these resources does not expand or otherwise alter TI's applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+
+TI objects to and rejects any additional or different terms you may propose.
+
+IMPORTANT NOTICE
+
+                                                           Copyright © 2025, Texas Instruments Incorporated
+
+                                                                               Last updated 10/2025
+

@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "status": "DATASHEET_RECONCILED_SUBSET_NOT_FULL_RELEASE",
+  "components": {
+    "D6": {
+      "mpn": "USBLC6-2SC6",
+      "evidence": "datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5",
+      "pins": {
+        "1": "USB_DP_CONN",
+        "2": "GND",
+        "3": "USB_DN_CONN",
+        "4": "USB_D_N",
+        "5": "VBUS_USB",
+        "6": "USB_D_P"
+      },
+      "notes": "Shunt ESD with internal flow-through pairs1/6 and3/4. Separate connector-side and MCU-side net names enforce intended PCB entry/exit routing; pairs are electrically joined inside the device. Not a VBUS current limiter."
+    },
+    "J1": {
+      "mpn": "TYPE-C-31-M-12",
+      "evidence": "datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948",
+      "pins": {
+        "A1B12": "GND",
+        "A4B9": "VBUS_USB",
+        "B8": null,
+        "A5": "USB_CC1",
+        "B7": "USB_DN_CONN",
+        "A6": "USB_DP_CONN",
+        "A7": "USB_DN_CONN",
+        "B6": "USB_DP_CONN",
+        "A8": null,
+        "B5": "USB_CC2",
+        "B4A9": "VBUS_USB",
+        "B1A12": "GND",
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "GND"
+      },
+      "noConnects": {
+        "B8": "SBU2 unused in USB2.0 sink; explicit NC marker",
+        "A8": "SBU1 unused in USB2.0 sink; explicit NC marker"
+      },
+      "notes": "HRO manufacturer, not GCT. Four shell anchors grounded."
+    },
+    "U3": {
+      "mpn": "TPS62162DSGR",
+      "evidence": "datasheets/TI_TPS62162.pdf: sections 5 and 6",
+      "pins": {
+        "1": "GND",
+        "2": "VSYS",
+        "3": "VSYS",
+        "4": "GND",
+        "5": "GND",
+        "6": "+3V3",
+        "7": "BUCK_SW",
+        "8": "REG_PG",
+        "9": "GND"
+      },
+      "notes": "Fixed 3.3V version. FB to AGND; R14/R15 adjustable divider removed from populated baseline. PG needs pull-up. Buck does not boost a depleted 1S battery above its input voltage."
+    },
+    "Q1": {
+      "mpn": "TPS22919DCKR",
+      "evidence": "datasheets/TI_TPS22919.pdf: section 6 Pin Functions",
+      "pins": {
+        "1": "VSYS",
+        "2": "GND",
+        "3": "DOCK_EN",
+        "4": null,
+        "5": "VDOCK",
+        "6": "VDOCK"
+      },
+      "noConnects": {
+        "4": "Manufacturer specifies no connect; leave floating."
+      },
+      "notes": "QOD tied to VOUT for internal quick-discharge resistance. Device is not a programmable current limiter. VDOCK is switched VSYS, not a regulated sensor rail."
+    },
+    "Q2": {
+      "mpn": "TPS22919DCKR",
+      "evidence": "datasheets/TI_TPS22919.pdf: section 6 Pin Functions",
+      "pins": {
+        "1": "+3V3",
+        "2": "GND",
+        "3": "DOCK_EN",
+        "4": null,
+        "5": "+3V3_FPC",
+        "6": "+3V3_FPC"
+      },
+      "noConnects": {
+        "4": "Manufacturer specifies no connect; leave floating."
+      },
+      "notes": "New justified support device: separates controlled regulated sensor power from raw switched VDOCK. Synchronize BOM before execution."
+    },
+    "U4": {
+      "mpn": "TCA9546APWR",
+      "evidence": "datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description",
+      "pins": {
+        "1": "GND",
+        "2": "GND",
+        "3": "I2C_MUX_RESET",
+        "4": "DOCK_SDA",
+        "5": "DOCK_SCL",
+        "6": "LOCAL_SDA",
+        "7": "LOCAL_SCL",
+        "8": "GND",
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": "GND",
+        "14": "I2C_MAIN_SCL",
+        "15": "I2C_MAIN_SDA",
+        "16": "+3V3"
+      },
+      "noConnects": {
+        "9": "Unused downstream channel2 SDA",
+        "10": "Unused downstream channel2 SCL",
+        "11": "Unused downstream channel3 SDA",
+        "12": "Unused downstream channel3 SCL"
+      },
+      "notes": "Address0x70. RESET requires pull-up to3V3. External SHT45 goes on channel1 to avoid its0x44 address colliding with internal SHT45 on channel0; firmware must not enable both SHT45 channels simultaneously."
+    },
+    "U12": {
+      "mpn": "SN74LVC1G3157DBVR",
+      "evidence": "datasheets/TI_SN74LVC1G3157.pdf: pin functions and function table",
+      "pins": {
+        "1": "DOCK_SD",
+        "2": "GND",
+        "3": "I2S_SD_EXT",
+        "4": "I2S_SD",
+        "5": "+3V3",
+        "6": "AUDIO_SEL"
+      },
+      "notes": "B1 pin3 selects external microphone when S=0; B2 pin1 selects dock microphone when S=1. TI manufacturer identity is required; JSM clone is not approved."
+    },
+    "U9": {
+      "mpn": "ICM-42688-P",
+      "evidence": "datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5",
+      "pins": {
+        "1": "GND",
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": "+3V3_FPC",
+        "6": "GND",
+        "7": "GND",
+        "8": "+3V3_FPC",
+        "9": "GND",
+        "10": null,
+        "11": null,
+        "12": "+3V3_FPC",
+        "13": "DOCK_SCL",
+        "14": "DOCK_SDA"
+      },
+      "noConnects": {
+        "2": "RESV: manufacturer allows NC or GND",
+        "3": "RESV: manufacturer allows NC or GND",
+        "4": "INT1 output unused; firmware polling/FIFO operation",
+        "10": "RESV: manufacturer allows NC or GND",
+        "11": "RESV: manufacturer allows NC or GND"
+      },
+      "notes": "I2C mode, CS tied VDDIO, AD0=GND gives0x68. Pin7 must be grounded; it is not optional NC. Pin9 grounded because FSYNC/CLKIN unused. Required local supply capacitors must match Figure5."
+    },
+    "U7": {
+      "mpn": "SHT45-AD1B-R2",
+      "evidence": "datasheets/U7_manufacturer_record.pdf: section5.4 Figure14",
+      "pins": {
+        "1": "LOCAL_SDA",
+        "2": "LOCAL_SCL",
+        "3": "+3V3",
+        "4": "GND",
+        "5": null
+      },
+      "noConnects": {
+        "5": "Library die-pad representation; manufacturer states die pad is not directly connected to any pin. Verify footprint drawing before PCB release."
+      },
+      "notes": "0x44 on isolated mux channel1; local100nF required."
+    },
+    "U8": {
+      "mpn": "SHT45-AD1B-R2",
+      "evidence": "datasheets/U7_manufacturer_record.pdf: section5.4 Figure14",
+      "pins": {
+        "1": "DOCK_SDA",
+        "2": "DOCK_SCL",
+        "3": "+3V3_FPC",
+        "4": "GND",
+        "5": null
+      },
+      "noConnects": {
+        "5": "Library die-pad representation; manufacturer states die pad is not directly connected to any pin. Verify footprint drawing before PCB release."
+      },
+      "notes": "0x44 on isolated mux channel0; local100nF required."
+    },
+    "R6": {
+      "mpn": "0603WAF5101T5E",
+      "evidence": "projects/beebox/05_schematic_audit/usb_support_search.json",
+      "pins": {
+        "1": "USB_CC1",
+        "2": "GND"
+      },
+      "notes": "5.1k;0603;1%;100mW,75V"
+    },
+    "R7": {
+      "mpn": "0603WAF5101T5E",
+      "evidence": "projects/beebox/05_schematic_audit/usb_support_search.json",
+      "pins": {
+        "1": "USB_CC2",
+        "2": "GND"
+      },
+      "notes": "5.1k;0603;1%;100mW,75V"
+    },
+    "C21": {
+      "mpn": "CL21B475KOFNNNE",
+      "evidence": "datasheets/C21_Samsung_CL21B475KOFNNNE.pdf: Samsung part numbering; c21_inrush_revision_search.json; TI_BQ24074.pdf section9.3.1 USB inrush discussion:10uF total ceiling",
+      "pins": {
+        "1": "VBUS_USB",
+        "2": "GND"
+      },
+      "notes": "4.7uF;0805;10%;16V"
+    },
+    "C22": {
+      "mpn": "CL10B103KB8NNNC",
+      "evidence": "projects/beebox/05_schematic_audit/usb_support_search.json",
+      "pins": {
+        "1": "VBUS_USB",
+        "2": "GND"
+      },
+      "notes": "10nF;0603;10%;50V"
+    },
+    "J4": {
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "evidence": "projects/beebox/05_schematic_audit/power_library_candidates.json exact JST C295747 record; 1x2P",
+      "pins": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "notes": "Two electrical contacts only. Auxiliary solder tabs are mechanical. This connector cannot carry a battery-pack NTC; charger TS implementation remains a gate."
+    }
+  }
+}

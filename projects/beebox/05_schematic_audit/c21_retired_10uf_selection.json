@@ -1,0 +1,16 @@
+{
+  "manufacturer": "muRata(村田)",
+  "uuid": "c138423e087c497989d3bae38ae915d8",
+  "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+  "supplierId": "C86038",
+  "symbolUuid": "bc6766ce83754bcd8011fd22b5c04954",
+  "footprintUuid": "9376364c15854e01b3fabcf032810a22",
+  "mpn": "GRM21BR71A106KE51L",
+  "kind": "C",
+  "value": "10uF",
+  "package": "0805",
+  "tolerance": "10%",
+  "rating": "10V",
+  "evidence": "projects/beebox/05_schematic_audit/usb_support_search.json; datasheets/C21_Murata_record.pdf, part-number coding",
+  "dielectric": "X7R"
+}

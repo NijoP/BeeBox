@@ -17,7 +17,7 @@ This is the controlled preliminary capture baseline. It is not a released manufa
 
 ## Canonical nets
 
-`VBUS_USB`, `VIN_EXT_RAW`, `VIN_EXT_PROTECTED`, `VBAT`, `VSYS`, `+3V3`, `VDOCK`, `VFPC`, `USB_D_P`, `USB_D_N`, `I2C_MAIN_SDA`, `I2C_MAIN_SCL`, `I2C_FPC_SDA`, `I2C_FPC_SCL`, `I2S_BCLK`, `I2S_WS`, `I2S_SD_EXT`, `I2S_SD_FPC`, `SPI_SCLK`, `SPI_MOSI`, `SPI_MISO`, `SD_CS`, `RF_CS`, `RF_IRQ`, `RF_RST`, `RF_EN`, `UART1_TX`, `UART1_RX`, `DOCK_PRESENT_ID`, `ESP_EN`, `ESP_BOOT`, `LED_R`, `LED_G`, `LED_B`.
+`VBUS_USB`, `VIN_EXT_RAW`, `VIN_EXT_PROTECTED`, `VIN_CHARGER`, `VBAT`, `VSYS`, `+3V3`, `VDOCK`, `+3V3_FPC`, `USB_DP_CONN`, `USB_DN_CONN`, `USB_D_P`, `USB_D_N`, `I2C_MAIN_SDA`, `I2C_MAIN_SCL`, `LOCAL_SDA`, `LOCAL_SCL`, `DOCK_SDA`, `DOCK_SCL`, `I2S_BCLK`, `I2S_WS`, `I2S_SD_EXT`, `DOCK_BCLK`, `DOCK_WS`, `DOCK_SD`, `SPI_SCLK`, `SPI_MOSI`, `SPI_MISO`, `SD_CS`, `RF_CS`, `RF_IRQ`, `RF_RST`, `RF_EN`, `UART1_TX`, `UART1_RX`, `DOCK_PRESENT_ID`, `ESP_EN`, `ESP_BOOT`, `LED_R`, `LED_R_A`, `LED_G`, `LED_G_A`, `LED_B`, `LED_B_A`.
 
 ## Capture rules
 

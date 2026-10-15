@@ -1,0 +1,31 @@
+ref,physical_pin,net,mpn,classification,evidence
+J1,A1B12,GND,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,A4B9,VBUS_USB,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,B8,NC,TYPE-C-31-M-12,intentional_no_connect,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,A5,USB_CC1,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,B7,USB_DN_CONN,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,A6,USB_DP_CONN,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,A7,USB_DN_CONN,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,B6,USB_DP_CONN,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,A8,NC,TYPE-C-31-M-12,intentional_no_connect,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,B5,USB_CC2,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,B4A9,VBUS_USB,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,B1A12,GND,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,1,GND,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,2,GND,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,3,GND,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+J1,4,GND,TYPE-C-31-M-12,electrical,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
+D6,1,USB_DP_CONN,USBLC6-2SC6,electrical,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
+D6,2,GND,USBLC6-2SC6,electrical,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
+D6,3,USB_DN_CONN,USBLC6-2SC6,electrical,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
+D6,4,USB_D_N,USBLC6-2SC6,electrical,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
+D6,5,VBUS_USB,USBLC6-2SC6,electrical,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
+D6,6,USB_D_P,USBLC6-2SC6,electrical,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
+R6,1,USB_CC1,0603WAF5101T5E,electrical,projects/beebox/05_schematic_audit/usb_support_search.json
+R6,2,GND,0603WAF5101T5E,electrical,projects/beebox/05_schematic_audit/usb_support_search.json
+R7,1,USB_CC2,0603WAF5101T5E,electrical,projects/beebox/05_schematic_audit/usb_support_search.json
+R7,2,GND,0603WAF5101T5E,electrical,projects/beebox/05_schematic_audit/usb_support_search.json
+C21,1,VBUS_USB,CL21B475KOFNNNE,electrical,datasheets/C21_Samsung_CL21B475KOFNNNE.pdf: Samsung part numbering; c21_inrush_revision_search.json; TI_BQ24074.pdf section9.3.1 USB inrush discussion:10uF total ceiling
+C21,2,GND,CL21B475KOFNNNE,electrical,datasheets/C21_Samsung_CL21B475KOFNNNE.pdf: Samsung part numbering; c21_inrush_revision_search.json; TI_BQ24074.pdf section9.3.1 USB inrush discussion:10uF total ceiling
+C22,1,VBUS_USB,CL10B103KB8NNNC,electrical,projects/beebox/05_schematic_audit/usb_support_search.json
+C22,2,GND,CL10B103KB8NNNC,electrical,projects/beebox/05_schematic_audit/usb_support_search.json

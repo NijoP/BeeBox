@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "v": {
+    "scope": "CURRENT_PARTIAL_SCHEMATIC_ONLY",
+    "strict": true,
+    "userInterface": true,
+    "includeVerboseError": false,
+    "result": false
+  }
+}

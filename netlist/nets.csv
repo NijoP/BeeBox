@@ -1,5 +1,6 @@
 net,board,purpose,status
 +3V3,main,canonical net; see pin_to_pin.csv,preliminary
++3V3_FPC,main↔fpc,canonical net; see pin_to_pin.csv,preliminary
 AUDIO_SEL,main,canonical net; see pin_to_pin.csv,preliminary
 DOCK_BCLK,main↔fpc,canonical net; see pin_to_pin.csv,preliminary
 DOCK_PRESENT_ID,main↔fpc,canonical net; see pin_to_pin.csv,preliminary
@@ -15,19 +16,28 @@ I2S_SD,main,canonical net; see pin_to_pin.csv,preliminary
 I2S_SD_EXT,main,canonical net; see pin_to_pin.csv,preliminary
 I2S_WS,main,canonical net; see pin_to_pin.csv,preliminary
 LED_B,main,canonical net; see pin_to_pin.csv,preliminary
+LED_B_A,main,canonical net; see pin_to_pin.csv,preliminary
 LED_G,main,canonical net; see pin_to_pin.csv,preliminary
+LED_G_A,main,canonical net; see pin_to_pin.csv,preliminary
 LED_R,main,canonical net; see pin_to_pin.csv,preliminary
+LED_R_A,main,canonical net; see pin_to_pin.csv,preliminary
+LOCAL_SCL,main,canonical net; see pin_to_pin.csv,preliminary
+LOCAL_SDA,main,canonical net; see pin_to_pin.csv,preliminary
 SD_CS,main,canonical net; see pin_to_pin.csv,preliminary
 SPI_MISO,main,canonical net; see pin_to_pin.csv,preliminary
 SPI_MOSI,main,canonical net; see pin_to_pin.csv,preliminary
 SPI_SCLK,main,canonical net; see pin_to_pin.csv,preliminary
 UART1_RX,main,canonical net; see pin_to_pin.csv,preliminary
 UART1_TX,main,canonical net; see pin_to_pin.csv,preliminary
+USB_DN_CONN,main,canonical net; see pin_to_pin.csv,preliminary
+USB_DP_CONN,main,canonical net; see pin_to_pin.csv,preliminary
 USB_D_N,main,canonical net; see pin_to_pin.csv,preliminary
 USB_D_P,main,canonical net; see pin_to_pin.csv,preliminary
 VBAT,main,canonical net; see pin_to_pin.csv,preliminary
 VBUS_USB,main,canonical net; see pin_to_pin.csv,preliminary
-VFPC,main↔fpc,canonical net; see pin_to_pin.csv,preliminary
+VDOCK,main↔fpc,canonical net; see pin_to_pin.csv,preliminary
 VIN_CHARGER,main,canonical net; see pin_to_pin.csv,preliminary
 VIN_EXT_PROTECTED,main,canonical net; see pin_to_pin.csv,preliminary
 VSYS,main,canonical net; see pin_to_pin.csv,preliminary
+USB_CC1,main,reviewed USB subcircuit; see usb_checkpoint_pin_to_net.csv,USB subset only; system release pending
+USB_CC2,main,reviewed USB subcircuit; see usb_checkpoint_pin_to_net.csv,USB subset only; system release pending

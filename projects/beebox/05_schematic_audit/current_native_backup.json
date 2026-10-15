@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "err": "No EDA window connected. Please connect an EDA window first.",
+  "http": 500
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "ref": "J4",
+    "mpn": "XY-S2B-PH-SM4-TB",
+    "recordUrl": "https://item.szlcsc.com/datasheet/XY-S2B-PH-SM4-TB/57972444.html",
+    "pdfUrl": "https://atta.szlcsc.com/upload/public/pdf/source/20260420/655B156C7A022114A1079D2797E7C036.pdf",
+    "path": "datasheets\\J4_manufacturer_record.pdf",
+    "sha256": "70fb19c196ee3cc9a549fdea6c0e649e184a1e1c8870190f8f35e24d17b35237",
+    "pages": 1,
+    "status": "DOWNLOADED_REQUIRES_REVIEW"
+  },
+  {
+    "ref": "U7",
+    "mpn": "SHT45-AD1B-R2",
+    "recordUrl": "https://item.szlcsc.com/datasheet/SHT45-AD1B-R2/5920594.html",
+    "pdfUrl": "https://atta.szlcsc.com/upload/public/pdf/source/20221222/7E65BA0469BFB70F67A49DC350D54F25.pdf",
+    "path": "datasheets\\U7_manufacturer_record.pdf",
+    "sha256": "18d89156c67f1c2c8aed70d2dd1abc5d619490dc32867ca7d286bd4a07a7ccaa",
+    "pages": 18,
+    "status": "DOWNLOADED_REQUIRES_REVIEW"
+  },
+  {
+    "ref": "J2",
+    "mpn": "FH34SRJ-12S-0.5SH(50)",
+    "recordUrl": "https://item.szlcsc.com/datasheet/FH34SRJ-12S-0.5SH(50)/418176.html",
+    "pdfUrl": "https://atta.szlcsc.com/upload/public/pdf/source/20190903/C424660_13F2CCC518A089E10A5EDDF0ACBC803F.pdf",
+    "path": "datasheets\\J2_manufacturer_record.pdf",
+    "sha256": "3900598d148ce66486019ffe8119351b28b4fbc03a01315ce6d09ab6c088612d",
+    "pages": 12,
+    "status": "DOWNLOADED_REQUIRES_REVIEW"
+  },
+  {
+    "ref": "U9",
+    "mpn": "ICM-42688-P",
+    "recordUrl": "https://item.szlcsc.com/datasheet/ICM-42688-P/1941231.html",
+    "pdfUrl": "https://atta.szlcsc.com/upload/public/pdf/source/20210703/CF24204867ACE5B754A2B035F23E5931.pdf",
+    "path": "datasheets\\U9_manufacturer_record.pdf",
+    "sha256": "4d7c04e3e86f37defe27c20a82b9fcd9d4ddbd3b9d68a525c2d49595d52cf97a",
+    "pages": 109,
+    "status": "DOWNLOADED_REQUIRES_REVIEW"
+  },
+  {
+    "ref": "D2",
+    "mpn": "LTST-C193KRKT-5A",
+    "recordUrl": "https://item.szlcsc.com/datasheet/LTST-C193KRKT-5A/169089.html",
+    "status": "FAILED",
+    "error": "No direct PDF link in library datasheet page"
+  },
+  {
+    "ref": "D3",
+    "mpn": "LTST-C193KGKT-5A",
+    "recordUrl": "https://item.szlcsc.com/datasheet/LTST-C193KGKT-5A/136378.html",
+    "status": "FAILED",
+    "error": "No direct PDF link in library datasheet page"
+  },
+  {
+    "ref": "D4",
+    "mpn": "LTST-C193TBKT-5A",
+    "recordUrl": "https://item.szlcsc.com/datasheet/LTST-C193TBKT-5A/136379.html",
+    "pdfUrl": "https://atta.szlcsc.com/upload/public/pdf/source/20171230/C125103_15146280496221222053.pdf",
+    "path": "datasheets\\D4_manufacturer_record.pdf",
+    "sha256": "fe21bdb4051eba554e63424ca820d060117843593d6bd03bb7cdd7a980da8a89",
+    "pages": 11,
+    "status": "DOWNLOADED_REQUIRES_REVIEW"
+  }
+]

@@ -1,0 +1,1 @@
+const p=await eda.dmt_Schematic.getCurrentSchematicPageInfo();return {page:p.uuid,project:(await eda.dmt_Project.getCurrentProjectInfo()).uuid};
