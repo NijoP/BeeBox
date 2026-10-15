@@ -1,0 +1,24 @@
+{
+  "capturedAt": "2026-10-14T13:50:16.381810+00:00",
+  "health": {
+    "service": "easyeda-bridge",
+    "status": "ok",
+    "edaConnected": false,
+    "edaWindowCount": 0,
+    "activeWindowId": null,
+    "pendingRequests": 0,
+    "timestamp": 1791985823832
+  },
+  "windows": {
+    "windows": [],
+    "activeWindowId": null,
+    "count": 0
+  },
+  "extensionInstallEvidence": {
+    "uuid": "bded3619ce6a4e60a35c7f4a84739702",
+    "indexedDbRecordsDetected": true,
+    "installedRecordTimestampObserved": true
+  },
+  "verdict": "EXTENSION_INSTALLED_BUT_NOT_ACTIVATED_IN_CURRENT_EASYEDA_PROCESS",
+  "nextDocumentedRecovery": "Fully quit and reopen EasyEDA Pro, open BEEBOX/Schematic1/P1, then API Gateway > Reconnect."
+}

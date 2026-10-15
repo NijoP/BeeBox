@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "err": "TypeError: Cannot set properties of undefined (setting 'valueVisible')",
+  "http": 500
+}

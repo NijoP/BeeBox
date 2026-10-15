@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "result": {
+    "status": "READBACK_NOT_FINAL_APPROVAL",
+    "projectUuid": "d84c4be0ef2e467fa17955faa23c6314",
+    "pageUuid": "d5e34c82cc3ba89c",
+    "components": [
+      {
+        "id": "80ce3d8a54da0af7",
+        "type": "sheet",
+        "pins": []
+      }
+    ],
+    "wires": [],
+    "requiredRemainingChecks": [
+      "complete released physical-pin canonical dictionary",
+      "native netlist parity",
+      "strict native ERC",
+      "actual PDF/PNG visual review"
+    ]
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

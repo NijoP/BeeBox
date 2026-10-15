@@ -1,0 +1,592 @@
+{
+  "success": true,
+  "result": {
+    "SN74LVC1G3157DBVR": [
+      {
+        "uuid": "13b1b3c8a4924f3ea433519bbd83e191",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G3157DBVR",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "SN74LVC1G3157DBVR",
+        "supplierId": "C10426",
+        "symbolUuid": "ca1500d3594b48ed8db9cb3b4c07fa11",
+        "footprintUuid": "ebc5370dc87d4461ad5320a48450ab14",
+        "description": "Switch Circuit:2:1 Number of Channels:1 Ron:6\u03a9 Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Con:17.3pF Turn-on time:5.7ns Turn-off time:3.8ns Bandwidth:300MHz Operating Temperature:-40\u2103~+85\u2103 Operating Temperature:-40\u2103~+85\u2103 Propagation Delay (tp"
+      },
+      {
+        "uuid": "e5fbc3eafa5a4f64b720f83f706505ff",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G3157DBVR-GK",
+        "manufacturer": "GOODWORK(\u56fa\u5f97\u6c83\u514b)",
+        "manufacturerId": "SN74LVC1G3157DBVR-GK",
+        "supplierId": "C55454052",
+        "symbolUuid": "8277dbb9c2df4153bb73e4f7e968a8a0",
+        "footprintUuid": "60b14e8d47fb45109dfde245fc9cee41",
+        "description": "Switch Circuit:2:1 Number of Channels:1 Ron:2.2\u03a9@4.5V Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Con:20pF Turn-on time:11ns Turn-off time:8ns Bandwidth:300MHz Operating Temperature:-65\u2103~+150\u2103 Operating Temperature:-65\u2103~+150\u2103 Charge Injection:"
+      },
+      {
+        "uuid": "7cabe5a14e244de7a551236206697ff2",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G3157DBVR(UMW)",
+        "manufacturer": "UMW(\u53cb\u53f0\u534a\u5bfc\u4f53)",
+        "manufacturerId": "SN74LVC1G3157DBVR(UMW)",
+        "supplierId": "C3040658",
+        "symbolUuid": "4dabe8ecc4fd4a6f93d83e3390d2a7ce",
+        "footprintUuid": "136db59d42184a44ac8441e35d752b13",
+        "description": "Switch Circuit:2:1 Number of Channels:- Ron:12\u03a9 Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Con:15.5pF Turn-on time:24ns Turn-off time:5.7ns Bandwidth:350MHz Operating Temperature:-55\u2103~+125\u2103 Operating Temperature:-55\u2103~+125\u2103 Propagation Delay ("
+      },
+      {
+        "uuid": "1395d64f375a40a0b1b20eef6a3bfd95",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G3157DBVR_C41431794",
+        "manufacturer": "TECH PUBLIC(\u53f0\u821f)",
+        "manufacturerId": "SN74LVC1G3157DBVR",
+        "supplierId": "C41431794",
+        "symbolUuid": "367380a7c8d442f8814495877df9e10e",
+        "footprintUuid": "044d8cf8298647169a2aed60d4cddc4b",
+        "description": "Switch Circuit:2:1 Number of Channels:1 Ron:6\u03a9 Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Con:7pF Turn-on time:200ns Turn-off time:200ns Bandwidth:350MHz Operating Temperature:-40\u2103~+85\u2103 Operating Temperature:-40\u2103~+85\u2103 Propagation Delay (tpd):"
+      },
+      {
+        "uuid": "333cb9575ee4402287aefd49d87077dd",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G3157DBVR-JSM",
+        "manufacturer": "JSMSEMI(\u6770\u76db\u5fae)",
+        "manufacturerId": "SN74LVC1G3157DBVR-JSM",
+        "supplierId": "C44512789",
+        "symbolUuid": "fa4d2814610c42c6afcbcdcef27618f0",
+        "footprintUuid": "044d8cf8298647169a2aed60d4cddc4b",
+        "description": ""
+      },
+      {
+        "uuid": "3d734beed35b4fedb73b2eb3511c242d",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G3157DBVR-TUDI",
+        "manufacturer": "Tudi(\u948d\u5730\u534a\u5bfc\u4f53)",
+        "manufacturerId": "SN74LVC1G3157DBVR-TUDI",
+        "supplierId": "C36533656",
+        "symbolUuid": "c49d40b7f7c64c1d9f9deb9e20b5faf1",
+        "footprintUuid": "4fa07b5015e34899ac0fb867d70488eb",
+        "description": "Switch Circuit:2:1 Number of Channels:1 Ron:4\u03a9@4.5V Voltage - Supply:1.8V~5.5V Voltage - Supply:1.8V~5.5V Con:15.5pF Turn-on time:20ns Turn-off time:15ns Bandwidth:300MHz Operating Temperature:-10\u2103~+85\u2103 Operating Temperature:-10\u2103~+85\u2103 Propagation Delay (t"
+      },
+      {
+        "uuid": "3d0e2c4ed5f94a90b7bcfd9c6004f97b",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G3157DBVR(AT)",
+        "manufacturer": "AOTE(\u5965\u7279)",
+        "manufacturerId": "SN74LVC1G3157DBVR(AT)",
+        "supplierId": "C55089940",
+        "symbolUuid": "ceda4463478844c1981490c42f2b196c",
+        "footprintUuid": "044d8cf8298647169a2aed60d4cddc4b",
+        "description": "Switch Circuit:2:1 Number of Channels:1 Ron:4.5\u03a9 Voltage - Supply:1.8V~5.5V Voltage - Supply:1.8V~5.5V Turn-on time:40ns Turn-off time:30ns Bandwidth:300MHz Operating Temperature:-40\u2103~+125\u2103 Operating Temperature:-40\u2103~+125\u2103 Features:- "
+      },
+      {
+        "uuid": "d563fff121e249efb0f9b2da9bd1aca1",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G3157DBVR-MS",
+        "manufacturer": "MSKSEMI(\u7f8e\u68ee\u79d1)",
+        "manufacturerId": "SN74LVC1G3157DBVR-MS",
+        "supplierId": "C7434169",
+        "symbolUuid": "a5d6ea63ca1345ae836a7b2f64bdd78b",
+        "footprintUuid": "ebc5370dc87d4461ad5320a48450ab14",
+        "description": "Logic Type:- Number of Gates:1 Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Quiescent Current:1uA Current - Output Low(IOL):- Current - Output High(IOH):- Input Logic Level - High:1.5V\uff1b2.4V Input Logic Level - High:1.5V\uff1b2.4V Input Logic Level -"
+      },
+      {
+        "uuid": "944ebdc14340427c9d6ead24ffbe3227",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "COSN74LVC1G3157DBVR",
+        "manufacturer": "COSINE(\u79d1\u5c71\u82af\u521b)",
+        "manufacturerId": "COSN74LVC1G3157DBVR",
+        "supplierId": "C42428252",
+        "symbolUuid": "983f7642033b42c69160fd7d946a47eb",
+        "footprintUuid": "ebc5370dc87d4461ad5320a48450ab14",
+        "description": "Switch Circuit:2:1 Number of Channels:2 Ron:8.5\u03a9@5V Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Con:15pF Turn-on time:30ns Turn-off time:9ns Bandwidth:300MHz Operating Temperature:-40\u2103~+85\u2103 Operating Temperature:-40\u2103~+85\u2103 Propagation Delay (tp"
+      },
+      {
+        "uuid": "878f02c805954ac7939b3c4a5b37b8e2",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "L-SN74LVC1G3157DBVR",
+        "manufacturer": "PIELENST(\u6d3e\u91cf)",
+        "manufacturerId": "L-SN74LVC1G3157DBVR",
+        "supplierId": "C42417267",
+        "symbolUuid": "4dd65d8de4e1499e8a0f0f992729e651",
+        "footprintUuid": "ebc5370dc87d4461ad5320a48450ab14",
+        "description": "Switch Circuit:2:1 Number of Channels:- Ron:15\u03a9@5V Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Con:18pF Turn-on time:6.1ns Turn-off time:4.3ns Bandwidth:300MHz Operating Temperature:-40\u2103~+105\u2103 Operating Temperature:-40\u2103~+105\u2103 Propagation Delay"
+      }
+    ],
+    "TPD4E05U06": [
+      {
+        "uuid": "71bd5434893a460c8be823067c2f4e47",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06DQAR",
+        "manufacturer": "",
+        "manufacturerId": "TPD4E05U06DQAR",
+        "supplierId": "C125795",
+        "symbolUuid": "e01821e4f66f482a8ad0a4d760c52463",
+        "footprintUuid": "4ce7a14d2ffb44e6a6ad31cbc9695682",
+        "description": ""
+      },
+      {
+        "uuid": "7624980f81fe49a5b4e34c5cbf88b205",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06DQAR_C5337182",
+        "manufacturer": "HXY MOSFET(\u534e\u8f69\u9633\u7535\u5b50)",
+        "manufacturerId": "TPD4E05U06DQAR",
+        "supplierId": "C5337182",
+        "symbolUuid": "9c87be7cab2740d8842cfd8ac277b96f",
+        "footprintUuid": "4ce7a14d2ffb44e6a6ad31cbc9695682",
+        "description": "Polarity:Unidirectional Reverse Stand-Off Voltage (Vrwm):3.3V Clamping Voltage:15V Peak Pulse Current (Ipp):5A Peak Pulse Power Dissipation (Ppp):150W Voltage - Breakdown:6V Reverse Leakage Current (Ir):1uA Number of Channels:Four channels Operating Tempe"
+      },
+      {
+        "uuid": "3878fc20a62d48b796ba495eb88ba759",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06DQAR-ES",
+        "manufacturer": "ElecSuper(\u9759\u82af)",
+        "manufacturerId": "TPD4E05U06DQAR-ES",
+        "supplierId": "C5199181",
+        "symbolUuid": "fee08d47561642f485bf1a6e84d5fddb",
+        "footprintUuid": "1d25830e46384362b3e25d5bba9d894b",
+        "description": "Polarity:Unidirectional Reverse Stand-Off Voltage (Vrwm):5V Clamping Voltage:12V Peak Pulse Current (Ipp):4.5A Peak Pulse Power Dissipation (Ppp):60W Voltage - Breakdown:6V Reverse Leakage Current (Ir):1uA Number of Channels:Four channels Operating Temper"
+      },
+      {
+        "uuid": "f82af2806cda4fd09610df93af88e7ab",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06DQAR_C22390021",
+        "manufacturer": "DOWO(\u4e1c\u6c83)",
+        "manufacturerId": "TPD4E05U06DQAR",
+        "supplierId": "C22390021",
+        "symbolUuid": "33108db2bf384a66ac38ae382c7f6203",
+        "footprintUuid": "f02970bfef1b40a3ad372a8166a47ee8",
+        "description": "Polarity:Unidirectional Reverse Stand-Off Voltage (Vrwm):5V Clamping Voltage:15V Peak Pulse Power Dissipation (Ppp):60W@8/20us Voltage - Breakdown:9V Reverse Leakage Current (Ir):1uA Number of Channels:Four channels level of protection:IEC 61000-4-5\uff1bIEC 6"
+      },
+      {
+        "uuid": "0594d2fdab544819a1bbc5d1e473b530",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06DQAR-N",
+        "manufacturer": "BORN(\u4f2f\u6069\u534a\u5bfc\u4f53)",
+        "manufacturerId": "TPD4E05U06DQAR-N",
+        "supplierId": "C920310",
+        "symbolUuid": "a84c747676d14b518c34f1117def9c45",
+        "footprintUuid": "4ce7a14d2ffb44e6a6ad31cbc9695682",
+        "description": "Polarity:Unidirectional Reverse Stand-Off Voltage (Vrwm):5V Clamping Voltage:10V Peak Pulse Current (Ipp):3.5A@8/20us Peak Pulse Power Dissipation (Ppp):60W@8/20us Voltage - Breakdown:7.8V Reverse Leakage Current (Ir):500nA level of protection:IEC 61000-4"
+      },
+      {
+        "uuid": "5c2646845166417a931844dcbab0799b",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06QDQARQ1",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "TPD4E05U06QDQARQ1",
+        "supplierId": "C81353",
+        "symbolUuid": "94f85014363d4442b82f091b056a6037",
+        "footprintUuid": "4ce7a14d2ffb44e6a6ad31cbc9695682",
+        "description": "Polarity:Unidirectional Reverse Stand-Off Voltage (Vrwm):5.5V Clamping Voltage:14V Peak Pulse Current (Ipp):2.5A@8/20us Peak Pulse Power Dissipation (Ppp):40W@8/20us Voltage - Breakdown:8.7V Reverse Leakage Current (Ir):10nA Number of Channels:Four channe"
+      },
+      {
+        "uuid": "9485ba29afbb436788c6d125ba90733c",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06DAQR-TP",
+        "manufacturer": "TECH PUBLIC(\u53f0\u821f)",
+        "manufacturerId": "TPD4E05U06DAQR-TP",
+        "supplierId": "C587162",
+        "symbolUuid": "7d4bb0f037b344839871be1e0c7e587a",
+        "footprintUuid": "f02970bfef1b40a3ad372a8166a47ee8",
+        "description": "Reverse Stand-Off Voltage (Vrwm):5V Clamping Voltage:25V Peak Pulse Current (Ipp):4A@8/20us Peak Pulse Power Dissipation (Ppp):120W@8/20us Voltage - Breakdown:9V Reverse Leakage Current (Ir):200nA Operating Temperature:-55\u2103~+125\u2103 Operating Temperature:-55"
+      },
+      {
+        "uuid": "491483732efb4c77b2089a533ec5261b",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06DQAR_C2972498",
+        "manufacturer": "Leiditech(\u96f7\u536f\u7535\u5b50)",
+        "manufacturerId": "TPD4E05U06DQAR",
+        "supplierId": "C2972498",
+        "symbolUuid": "124ba2e1dbc94148b4a7bdebfc4aa574",
+        "footprintUuid": "f02970bfef1b40a3ad372a8166a47ee8",
+        "description": "Reverse Stand-Off Voltage (Vrwm):5V Clamping Voltage:9.8V\uff1b15V Peak Pulse Current (Ipp):5A@8/20us Peak Pulse Power Dissipation (Ppp):75W@8/20us Voltage - Breakdown:6V Reverse Leakage Current (Ir):100nA Number of Channels:Four channels level of protection:I"
+      },
+      {
+        "uuid": "55e8e89a57cc4da4aedc4531f38b2c90",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06DQAR_C138714",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "TPD4E05U06DQAR",
+        "supplierId": "C138714",
+        "symbolUuid": "a2ebe745ac99405baeb03361ac001eb1",
+        "footprintUuid": "4ce7a14d2ffb44e6a6ad31cbc9695682",
+        "description": "Polarity:Unidirectional Reverse Stand-Off Voltage (Vrwm):5.5V Clamping Voltage:14V Peak Pulse Current (Ipp):2.5A@8/20us Peak Pulse Power Dissipation (Ppp):40W@8/20us Voltage - Breakdown:6.5V Reverse Leakage Current (Ir):10nA Number of Channels:Four channe"
+      },
+      {
+        "uuid": "d37835f3a04f466abf72d263a5caa266",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPD4E05U06DQAR-MS",
+        "manufacturer": "MSKSEMI(\u7f8e\u68ee\u79d1)",
+        "manufacturerId": "TPD4E05U06DQAR-MS",
+        "supplierId": "C2836386",
+        "symbolUuid": "c61ff55b6b7c4127acc8adb25e2b3491",
+        "footprintUuid": "4ce7a14d2ffb44e6a6ad31cbc9695682",
+        "description": "Reverse Stand-Off Voltage (Vrwm):3.3V Clamping Voltage:15V Peak Pulse Current (Ipp):5A Peak Pulse Power Dissipation (Ppp):150W Voltage - Breakdown:6V Reverse Leakage Current (Ir):1uA Number of Channels:Four channels level of protection:IEC 61000-4-4\uff1bIEC 6"
+      }
+    ],
+    "FH34SRJ-12S-0.5SH(50)": [
+      {
+        "uuid": "0317c12649054b9285e3960ac616091e",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "X50328MSB2GI",
+        "manufacturer": "YXC(\u626c\u5174\u6676\u632f)",
+        "manufacturerId": "X50328MSB2GI",
+        "supplierId": "C115962",
+        "symbolUuid": "6daac966a74b429dba9b6b95548e2ee4",
+        "footprintUuid": "c7e916202ad24f3fb93d868b8a6f17eb",
+        "description": "Type:Crystal Oscillator Frequency:8MHz Normal temperature Frequency Tolerance:\u00b110ppm Normal temperature Frequency Tolerance:\u00b110ppm Load Capacitance:20pF Frequency Stability:\u00b120ppm Frequency Stability:\u00b120ppm Equivalent Series Resistance(ESR):80\u03a9 Operating "
+      },
+      {
+        "uuid": "092cec0121ae4cf39fe05b080c6ea16c",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SS8550 Y2(RANGE:200-350)",
+        "manufacturer": "CJ(\u6c5f\u82cf\u957f\u7535/\u957f\u6676)",
+        "manufacturerId": "SS8550 Y2(RANGE:200-350)",
+        "supplierId": "C8542",
+        "symbolUuid": "cdf761fe8c954c7c91b489f1caa40902",
+        "footprintUuid": "18f92042a8ba46109ed61a02a6753de7",
+        "description": "type:PNP Current - Collector(Ic):1.5A Collector - Emitter Voltage VCEO:25V Pd - Power Dissipation:300mW DC Current Gain:200 DC Current Gain:200 Transition frequency(fT):100MHz Current - Collector Cutoff:100nA Vce Saturation(VCE(sat)):500mV Operating Tempe"
+      },
+      {
+        "uuid": "9f5129c689b24277b7e72832c14f1ba5",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF1500T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF1500T5E",
+        "supplierId": "C22808",
+        "symbolUuid": "9bb1f8cb8e714c09aba8ca42638c0687",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistors Resistance: Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts): Overload Voltage (Max): Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature Range:-55\u2103~+155\u2103 Operating Temperature Range:-55\u2103~+155\u2103 "
+      },
+      {
+        "uuid": "5113adfe807347da81b3cfc48b242e08",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "1206B103K500NT",
+        "manufacturer": "FH(\u98ce\u534e)",
+        "manufacturerId": "1206B103K500NT",
+        "supplierId": "C1846",
+        "symbolUuid": "e20de7a9ba6844539d29ba0fb2821a37",
+        "footprintUuid": "662a139c6673408a9f29eec4494c53e9",
+        "description": "Capacitance:10nF Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rating:50V Temperature Coefficient:X7R "
+      },
+      {
+        "uuid": "b90224654c714e0eb5c5c9ab439ae4b4",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0402B223K500NT",
+        "manufacturer": "FH(\u98ce\u534e)",
+        "manufacturerId": "0402B223K500NT",
+        "supplierId": "C1532",
+        "symbolUuid": "c5a39047b0a543e291ef25e1255db989",
+        "footprintUuid": "6fbbb009724a4aee93b46abcd7ad26b6",
+        "description": "Capacitance:22nF Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rating:50V Temperature Coefficient:X7R "
+      },
+      {
+        "uuid": "64c850194ee54f9c8b4df4d63a31cc76",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0805W8F1500T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0805W8F1500T5E",
+        "supplierId": "C17471",
+        "symbolUuid": "43e6918047e84c7e8323982d4fb1c993",
+        "footprintUuid": "ccc4e0b0d3734ba393745f2774fd8d65",
+        "description": "Type:Thick Film Resistor Resistance:150\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):125mW Voltage-Supply(Max):150V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      },
+      {
+        "uuid": "e17ab213143c40eaa2fb2c6b3acc766a",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0402CG101J500NT",
+        "manufacturer": "FH(\u98ce\u534e)",
+        "manufacturerId": "0402CG101J500NT",
+        "supplierId": "C1546",
+        "symbolUuid": "dee61461fae74c53a4aa9e14ec0608a6",
+        "footprintUuid": "6fbbb009724a4aee93b46abcd7ad26b6",
+        "description": "Capacitance:100pF Tolerance:\u00b15% Tolerance:\u00b15% Voltage Rating:50V Temperature Coefficient:C0G "
+      },
+      {
+        "uuid": "2f3515b5316249fea79dd8cc02e78997",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "S9013 J3(RANGE:200-350)",
+        "manufacturer": "CJ(\u6c5f\u82cf\u957f\u7535/\u957f\u6676)",
+        "manufacturerId": "S9013 J3(RANGE:200-350)",
+        "supplierId": "C6749",
+        "symbolUuid": "7e0aec2e8d634473be5575d6e57ef4c1",
+        "footprintUuid": "18f92042a8ba46109ed61a02a6753de7",
+        "description": "type:NPN Current - Collector(Ic):500mA Collector - Emitter Voltage VCEO:25V Pd - Power Dissipation:300mW DC Current Gain:120 DC Current Gain:120 Transition frequency(fT):150MHz Current - Collector Cutoff:100nA Vce Saturation(VCE(sat)):600mV Operating Temp"
+      },
+      {
+        "uuid": "5a5ba8db3efe4a4faf8328cf031b538f",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0402CG150J500NT",
+        "manufacturer": "FH(\u98ce\u534e)",
+        "manufacturerId": "0402CG150J500NT",
+        "supplierId": "C1548",
+        "symbolUuid": "8710eebde0a94c7ba5137fed96d3fa95",
+        "footprintUuid": "6fbbb009724a4aee93b46abcd7ad26b6",
+        "description": "Capacitance:15pF Tolerance:\u00b15% Tolerance:\u00b15% Voltage Rating:50V Temperature Coefficient:C0G "
+      },
+      {
+        "uuid": "f901b78b03684624b84fd9ec62311e87",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603CG300J500NT",
+        "manufacturer": "FH(\u98ce\u534e)",
+        "manufacturerId": "0603CG300J500NT",
+        "supplierId": "C1658",
+        "symbolUuid": "bb68074573ff4f569ef78a86b503d644",
+        "footprintUuid": "f499007f726c45dbbd59d7d6a82bc126",
+        "description": "Capacitance:30pF Tolerance:\u00b15% Tolerance:\u00b15% Voltage Rating:50V Temperature Coefficient:C0G "
+      }
+    ],
+    "ICS-43434": [
+      {
+        "uuid": "69d33240c27d4d8da21600b8e1093b78",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SP3485EN-L/TR",
+        "manufacturer": "MaxLinear(\u8fc8\u51cc)",
+        "manufacturerId": "SP3485EN-L/TR",
+        "supplierId": "C8963",
+        "symbolUuid": "d79d354c075448999126248ba9f7e8dd",
+        "footprintUuid": "a21abe53057c4752a13d1e8ec2866de7",
+        "description": "Type:Transceiver Number of Drivers:1 Number of Receivers:1 Voltage - Supply:3.3V Voltage - Supply:3.3V Data Rate:10Mbps Data Rate:10Mbps Number of Nodes:32 ESD Protect:- ESD Protect:- Operating Temperature:-40\u2103~+85\u2103 Operating Temperature:-40\u2103~+85\u2103 Quiesce"
+      },
+      {
+        "uuid": "f95afaff9a384b13a5551270fa0fce83",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SP485EEN-L/TR",
+        "manufacturer": "MaxLinear(\u8fc8\u51cc)",
+        "manufacturerId": "SP485EEN-L/TR",
+        "supplierId": "C6855",
+        "symbolUuid": "78b26f5530b944a09f6a035866178b9b",
+        "footprintUuid": "a21abe53057c4752a13d1e8ec2866de7",
+        "description": "Type:Transceiver Number of Drivers:1 Number of Receivers:1 Voltage - Supply:4.75V~5.25V Voltage - Supply:4.75V~5.25V Data Rate:10Mbps Data Rate:10Mbps ESD Protect:\u00b115kV ESD Protect:\u00b115kV Operating Temperature:-40\u2103~+85\u2103 Operating Temperature:-40\u2103~+85\u2103 Quie"
+      },
+      {
+        "uuid": "d0a75d96f2494e49b95cfb01661e6248",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SP3232EEY-L/TR",
+        "manufacturer": "MaxLinear(\u8fc8\u51cc)",
+        "manufacturerId": "SP3232EEY-L/TR",
+        "supplierId": "C13482",
+        "symbolUuid": "1311ee674c5143bca3428635491716bd",
+        "footprintUuid": "a11950ceac50438289ff689a35fd9574",
+        "description": "Type:Transceiver Number of Drivers:2 Number of Receivers:2 Data Rate:235Kbps Data Rate:235Kbps Voltage - Supply:3V~5.5V Voltage - Supply:3V~5.5V ESD Protect:\u00b115kV ESD Protect:\u00b115kV charge pump:Yes Operating Temperature:-40\u2103~+85\u2103 Operating Temperature:-40\u2103"
+      },
+      {
+        "uuid": "685d9d92219c4abf95df34bf494f0498",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICS-43434",
+        "manufacturer": "",
+        "manufacturerId": "ICS-43434",
+        "supplierId": "C9900000518",
+        "symbolUuid": "fdcb666c4fae4c9ab873ca2852e31715",
+        "footprintUuid": "927802d0ec86406aaff3089c921517ff",
+        "description": ""
+      },
+      {
+        "uuid": "aa33bab06a7f47f482ae3d46fc3836d1",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICS-43434_1",
+        "manufacturer": "",
+        "manufacturerId": "ICS-43434",
+        "supplierId": "C9900197203",
+        "symbolUuid": "a908964753204fd4b029999ca42174e9",
+        "footprintUuid": "927802d0ec86406aaff3089c921517ff",
+        "description": ""
+      },
+      {
+        "uuid": "ea6d3dad996d464d91983d780e0fb112",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICS-43434_C5656610",
+        "manufacturer": "TDK InvenSense(\u5e94\u7f8e\u76db)",
+        "manufacturerId": "ICS-43434",
+        "supplierId": "C5656610",
+        "symbolUuid": "985412c5c7e9479098ae7c9d5e6ecd43",
+        "footprintUuid": "927802d0ec86406aaff3089c921517ff",
+        "description": "Direction:Omnidirectional Voltage - Supply:1.65V~3.63V Voltage - Supply:1.65V~3.63V Current Consumption:550uA Current Consumption:550uA S/N Ratio:64dB Sensitivity:-26dB Sensitivity:-26dB Impedance:- Output Type:I2S Length:3.5mm Width:2.65mm Height:0.98mm "
+      },
+      {
+        "uuid": "9fa4c627d25844459eea737a65e9cf1e",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "DS14C88M",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "DS14C88M",
+        "supplierId": "C3199487",
+        "symbolUuid": "618faa3b406743a282aee07d6ba04d5d",
+        "footprintUuid": "ffc76db8ffa142c1a7872c93f2ae0661",
+        "description": "Types:\u9a71\u52a8\u5668 Driver/receiver:4/0 Supply Voltage:4.5V~12.6V Supply Voltage:4.5V~12.6V Operating Temperature:0\u2103~+70\u2103 Operating Temperature:0\u2103~+70\u2103 "
+      },
+      {
+        "uuid": "61d76a1ff22144d08973b76ea5a9b6e1",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MAX232DE4",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "MAX232DE4",
+        "supplierId": "C17325260",
+        "symbolUuid": "ae6c94e24f24432f9016771e96cbf08f",
+        "footprintUuid": "4959e4dfa86f4201a35b5dde58e69895",
+        "description": "Type:Transceiver Number of Drivers:2 Number of Receivers:2 Data Rate:120Kbps Data Rate:120Kbps Voltage - Supply:4.5V~5.5V Voltage - Supply:4.5V~5.5V Operating Temperature:0\u2103~+70\u2103 Operating Temperature:0\u2103~+70\u2103 "
+      },
+      {
+        "uuid": "ae0618c4d2e640ff9604140dc979341a",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "DS14C335MSA",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "DS14C335MSA",
+        "supplierId": "C3200649",
+        "symbolUuid": "b25cc39f876a430abdfb76da36f5ae70",
+        "footprintUuid": "fbea7c851c5f443f9c72449091c36387",
+        "description": "Types:transceiver Driver/receiver:3/5 Data Rate:128Kbps Data Rate:128Kbps Supply Voltage:3V~3.6V Supply Voltage:3V~3.6V Operating Temperature:0\u2103~+70\u2103 Operating Temperature:0\u2103~+70\u2103 "
+      },
+      {
+        "uuid": "c09472620ee34fed87531996ee4f9a51",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN75LVDS386DGG",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "SN75LVDS386DGG",
+        "supplierId": "C2863314",
+        "symbolUuid": "fc2a76d471c3473d816c7319738043c7",
+        "footprintUuid": "b9252be4e2724bd0ab2e5061325edc9b",
+        "description": ""
+      }
+    ],
+    "SHT45-AD1B-R2": [
+      {
+        "uuid": "d2ae2b1001894b88873ae8d8ab95ec2d",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SHT45-AD1B-R2",
+        "manufacturer": "Sensirion(\u745e\u58eb\u76db\u601d\u9510)",
+        "manufacturerId": "SHT45-AD1B-R2",
+        "supplierId": "C5221601",
+        "symbolUuid": "0499bf9a0b6541d58eb0f76207d933e9",
+        "footprintUuid": "47d2e0411bdb485fb0e41153c809e17e",
+        "description": "Detection Temperature Range:-40\u2103~+125\u2103 Detection Temperature Range:-40\u2103~+125\u2103 Tolerance:\u00b10.1\u2103 Tolerance:\u00b10.1\u2103 Voltage - Supply:1.08V~3.6V Voltage - Supply:1.08V~3.6V Standby Current:1uA Interface:I2C Temperature Conversion Time:8.3ms Temperature Resolutio"
+      }
+    ],
+    "ICM-42688-P": [
+      {
+        "uuid": "ccb38aea83654994a5b8f36c8d82113e",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICM_42688_P",
+        "manufacturer": "",
+        "manufacturerId": "ICM_42688_P",
+        "supplierId": "C9900096044",
+        "symbolUuid": "03454d82e3eb46df8d17a79272106c2c",
+        "footprintUuid": "b3ab650c1f5544258fc70ffcd489f790",
+        "description": ""
+      },
+      {
+        "uuid": "9c90c0323548437396a685b3b34c6dd6",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICM-42688-P",
+        "manufacturer": "TDK InvenSense(\u5e94\u7f8e\u76db)",
+        "manufacturerId": "ICM-42688-P",
+        "supplierId": "C1850418",
+        "symbolUuid": "65404844c7a845ad98838c9a3ab66818",
+        "footprintUuid": "b3ab650c1f5544258fc70ffcd489f790",
+        "description": "Accelerometer Sensing Axis:X,Y,Z Acceleration Measurement Range (MAX):\u00b116g Acceleration Measurement Range (MAX):\u00b116g Gyroscope Sensing Axis:X,Y,Z Gyroscope Measurement Range (MAX):\u00b12000dps Gyroscope Measurement Range (MAX):\u00b12000dps Sensor Type:IMU (accele"
+      },
+      {
+        "uuid": "aa18dec2d72143afaf35725e6bba64cf",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICM42688P",
+        "manufacturer": "",
+        "manufacturerId": "ICM42688P",
+        "supplierId": "C20619370",
+        "symbolUuid": "22373d3adb3f4147874ac530031e219d",
+        "footprintUuid": "b3ab650c1f5544258fc70ffcd489f790",
+        "description": ""
+      },
+      {
+        "uuid": "af83915d845b4bd796e43c32a80a2dbc",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICM-42688P-HXY",
+        "manufacturer": "HXY MOSFET(\u534e\u8f69\u9633\u7535\u5b50)",
+        "manufacturerId": "ICM-42688P-HXY",
+        "supplierId": "C46550687",
+        "symbolUuid": "1ef29f437a1241bdb519672e083a8d7b",
+        "footprintUuid": "b3ab650c1f5544258fc70ffcd489f790",
+        "description": "Accelerometer Sensing Axis:X,Y,Z Acceleration Measurement Range (MAX):\u00b116g Acceleration Measurement Range (MAX):\u00b116g Gyroscope Sensing Axis:X,Y,Z Gyroscope Measurement Range (MAX):\u00b12000dps Gyroscope Measurement Range (MAX):\u00b12000dps Sensor Type:IMU (accele"
+      },
+      {
+        "uuid": "fc5112dcdf034634be510373d3866428",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICM42688-P",
+        "manufacturer": "",
+        "manufacturerId": "ICM42688-P",
+        "supplierId": "C9900012404",
+        "symbolUuid": "53c779805b4b4260bf09ea49a66b2c6e",
+        "footprintUuid": "b3ab650c1f5544258fc70ffcd489f790",
+        "description": ""
+      },
+      {
+        "uuid": "b83e3cb91553451cbec395687b4c3747",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICM-42688-PC",
+        "manufacturer": "Tokmas(\u6258\u514b\u9a6c\u65af)",
+        "manufacturerId": "ICM-42688-PC",
+        "supplierId": "C48586483",
+        "symbolUuid": "bfca7eb5e90544fb8a5c937318c5b031",
+        "footprintUuid": "b3ab650c1f5544258fc70ffcd489f790",
+        "description": "Accelerometer Sensing Axis:X,Y,Z Acceleration Measurement Range (MAX):\u00b116g Acceleration Measurement Range (MAX):\u00b116g Gyroscope Sensing Axis:X,Y,Z Gyroscope Measurement Range (MAX):\u00b12048dps Gyroscope Measurement Range (MAX):\u00b12048dps Sensor Type:IMU (accele"
+      },
+      {
+        "uuid": "28e73d5126d04ca1a8ca2f8cad9d57b2",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICM-42688-P(TOKMAS)",
+        "manufacturer": "Tokmas(\u6258\u514b\u9a6c\u65af)",
+        "manufacturerId": "ICM-42688-P(TOKMAS)",
+        "supplierId": "C54308212",
+        "symbolUuid": "ce9a24ca0f4945c98dd0d3de0d056e23",
+        "footprintUuid": "fa54ec6f93cd4e26bc7297bcecd602ba",
+        "description": "Accelerometer Sensing Axis:X,Y,Z Acceleration Measurement Range (MAX):\u00b116g Acceleration Measurement Range (MAX):\u00b116g Gyroscope Sensing Axis:X,Y,Z Gyroscope Measurement Range (MAX):\u00b12000dps Gyroscope Measurement Range (MAX):\u00b12000dps Sensor Type:IMU (accele"
+      }
+    ],
+    "SGP40": [
+      {
+        "uuid": "baa9b59bc81b4087bcc6ddbfa94331a6",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SGP400TZ",
+        "manufacturer": "onsemi(\u5b89\u68ee\u7f8e)",
+        "manufacturerId": "SGP400TZ",
+        "supplierId": "C3094536",
+        "symbolUuid": "1cbcddacc4cd465dafec4998d63a5879",
+        "footprintUuid": "ea6410f6da114280b16592079379ced6",
+        "description": "Isolation:Isolation Voltage - Supply:8V~30V Voltage - Supply:8V~30V Frequency - Switching:62kHz~68kHz Frequency - Switching:62kHz~68kHz Output Current:- Pd - Power Dissipation:247mW Duty Cycle(Max):75% Voltage - Breakdown:- Topology:Flyback Features:Const"
+      },
+      {
+        "uuid": "29feb27cb09b4dae9ad7a052aa927968",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SGP40N60UFTU",
+        "manufacturer": "onsemi(\u5b89\u68ee\u7f8e)",
+        "manufacturerId": "SGP40N60UFTU",
+        "supplierId": "C3193414",
+        "symbolUuid": "14a289dab2ab4b0d92fd60edda69465c",
+        "footprintUuid": "d1a344187c8242aa8367d79a30798863",
+        "description": "Type:- Collector-Emitter Breakdown Voltage (Vces):600V Collector Current (Ic):40A Power Dissipation (Pd):160W Gate-Emitter Threshold Voltage (Vge(th)@Ic):2.6V@15V,20A Total Gate Charge (Qg@Ic,Vge):97nC Input Capacitance (Cies@Vce):- Turn?on Delay Time (Td"
+      },
+      {
+        "uuid": "1f16391a948e4758ba7cc9664f1e9494",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SGP400TZ-FS",
+        "manufacturer": "onsemi(\u5b89\u68ee\u7f8e)",
+        "manufacturerId": "SGP400TZ-FS",
+        "supplierId": "C3193178",
+        "symbolUuid": "ed8746dd00894ff08bac53a30881e056",
+        "footprintUuid": "07f50267f5e5490baf39023469a95c8c",
+        "description": "Isolation:Isolation Voltage - Supply:22.7V Voltage - Supply:22.7V Frequency - Switching:65kHz Frequency - Switching:65kHz Output Current:- Pd - Power Dissipation:247mW Duty Cycle(Max):75% Voltage - Breakdown:- Topology:Flyback Features:Constant Voltage (C"
+      },
+      {
+        "uuid": "1f48591a84b84edc91e84bf358e7049d",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SGP40-D-R4",
+        "manufacturer": "Sensirion(\u745e\u58eb\u76db\u601d\u9510)",
+        "manufacturerId": "SGP40-D-R4",
+        "supplierId": "C2874215",
+        "symbolUuid": "42980c6bd05148cfba672e269d292fbb",
+        "footprintUuid": "dbb8acfa6f8e448bbca0d09dbfb76fc5",
+        "description": "Type:- Measurement Range:0ppm~1000ppm Measurement Range:0ppm~1000ppm Voltage - Supply:1.7V~3.6V Voltage - Supply:1.7V~3.6V Interface:I2C Operating Temperature:-10\u2103~+50\u2103 Operating Temperature:-10\u2103~+50\u2103 Length:2.44mm\uff1b2.44mm Height:0.85mm "
+      }
+    ]
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

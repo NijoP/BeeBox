@@ -1,0 +1,217 @@
+{
+  "success": true,
+  "result": {
+    "buildId": "BEEBOX-MASTER-20261015-R1",
+    "requestedPhase": "PRECHECK",
+    "status": "BLOCKED_NO_MUTATION",
+    "elapsedMs": 5196,
+    "active": {
+      "projectUuid": "d84c4be0ef2e467fa17955faa23c6314",
+      "projectName": "BEEBOX",
+      "pageUuid": "d5e34c82cc3ba89c",
+      "pageName": "P1",
+      "pageSize": "A0",
+      "width": 4681.102362204724,
+      "height": 3311.023622047244
+    },
+    "nativeBackupAvailable": true,
+    "nativeSourceLength": 10547,
+    "duplicateReferences": [],
+    "identityChecks": [
+      {
+        "ref": "J1",
+        "pass": true,
+        "observed": {
+          "uuid": "730e76758f9742ca9ca85c73f4ec0ecd",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "mpn": "TYPE-C-31-M-12",
+          "manufacturer": "\u97e9\u56fd\u97e9\u8363",
+          "symbolUuid": "e30d694d838e433dbe5423a6e817759e",
+          "footprintUuid": "45d257a27a304edd865bdb43b1945b61"
+        }
+      },
+      {
+        "ref": "D6",
+        "pass": true,
+        "observed": {
+          "uuid": "5f9a995bc73746278024add8c7b330e3",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "mpn": "USBLC6-2SC6",
+          "manufacturer": "ST(\u610f\u6cd5\u534a\u5bfc\u4f53)",
+          "symbolUuid": "a1ce4cdfd8c34673b2774988c19b159e",
+          "footprintUuid": "136db59d42184a44ac8441e35d752b13"
+        }
+      },
+      {
+        "ref": "R6",
+        "pass": true,
+        "observed": {
+          "uuid": "5e5266518f0e41f791738aa9f7251c1d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "mpn": "0603WAF5101T5E",
+          "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+          "symbolUuid": "b4fa75aca573465ea40a9fa52694d51f",
+          "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+        }
+      },
+      {
+        "ref": "R7",
+        "pass": true,
+        "observed": {
+          "uuid": "5e5266518f0e41f791738aa9f7251c1d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "mpn": "0603WAF5101T5E",
+          "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+          "symbolUuid": "b4fa75aca573465ea40a9fa52694d51f",
+          "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+        }
+      },
+      {
+        "ref": "C21",
+        "pass": true,
+        "observed": {
+          "uuid": "e17be92a8eac408885c635361c15f72c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "mpn": "CL21B475KOFNNNE",
+          "manufacturer": "SAMSUNG(\u4e09\u661f)",
+          "symbolUuid": "b1d9f24967ef4fe499c86faec02c4ca4",
+          "footprintUuid": "9376364c15854e01b3fabcf032810a22"
+        }
+      },
+      {
+        "ref": "C22",
+        "pass": true,
+        "observed": {
+          "uuid": "860ad348098247a18e65be2d4651b260",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "mpn": "CL10B103KB8NNNC",
+          "manufacturer": "SAMSUNG(\u4e09\u661f)",
+          "symbolUuid": "aa71f1470a514f8c891201f3071c3ab2",
+          "footprintUuid": "f499007f726c45dbbd59d7d6a82bc126"
+        }
+      }
+    ],
+    "reviewedUsbPhysicalPinMap": {
+      "J1": {
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "GND",
+        "A1B12": "GND",
+        "A4B9": "VBUS_USB",
+        "B8": null,
+        "A5": "USB_CC1",
+        "B7": "USB_DN_CONN",
+        "A6": "USB_DP_CONN",
+        "A7": "USB_DN_CONN",
+        "B6": "USB_DP_CONN",
+        "A8": null,
+        "B5": "USB_CC2",
+        "B4A9": "VBUS_USB",
+        "B1A12": "GND"
+      },
+      "D6": {
+        "1": "USB_DP_CONN",
+        "2": "GND",
+        "3": "USB_DN_CONN",
+        "4": "USB_D_N",
+        "5": "VBUS_USB",
+        "6": "USB_D_P"
+      },
+      "R6": {
+        "1": "USB_CC1",
+        "2": "GND"
+      },
+      "R7": {
+        "1": "USB_CC2",
+        "2": "GND"
+      },
+      "C21": {
+        "1": "VBUS_USB",
+        "2": "GND"
+      },
+      "C22": {
+        "1": "VBUS_USB",
+        "2": "GND"
+      }
+    },
+    "failures": [],
+    "unresolved": [
+      {
+        "phase": "PHASE_01",
+        "blocker": "BATTERY_TS_TOPOLOGY"
+      },
+      {
+        "phase": "PHASE_01",
+        "blocker": "EXTERNAL_INPUT_CONNECTOR_TVS_AND_TPS26600_VALUES"
+      },
+      {
+        "phase": "PHASE_01",
+        "blocker": "TPS2121_CONFIGURATION"
+      },
+      {
+        "phase": "PHASE_01",
+        "blocker": "BQ24074_CONFIGURATION"
+      },
+      {
+        "phase": "PHASE_02",
+        "blocker": "DEPLETED_1S_CANNOT_SUPPORT_FIXED_3V3_BUCK_OUTPUT"
+      },
+      {
+        "phase": "PHASE_02",
+        "blocker": "MCU_SUPPORT_PASSIVE_IDENTITIES"
+      },
+      {
+        "phase": "PHASE_03",
+        "blocker": "MICROPHONE_LIBRARY_PIN_REVIEW"
+      },
+      {
+        "phase": "PHASE_03",
+        "blocker": "I2C_MUX_RESET_PULLUP_IDENTITY"
+      },
+      {
+        "phase": "PHASE_04",
+        "blocker": "EXACT_DNI_CONNECTOR_FOOTPRINTS"
+      },
+      {
+        "phase": "PHASE_05",
+        "blocker": "TWELVE_MILL_MAX_CONTACT_LIBRARY_AND_LAND_PATTERN"
+      },
+      {
+        "phase": "PHASE_05",
+        "blocker": "DOCK_ESD_LINE_ALLOCATION"
+      },
+      {
+        "phase": "PHASE_05",
+        "blocker": "POWERED_OFF_SIGNAL_ISOLATION"
+      },
+      {
+        "phase": "PHASE_06",
+        "blocker": "DEDICATED_FPC_PAGE_AND_BOARD_MISSING"
+      },
+      {
+        "phase": "PHASE_06",
+        "blocker": "J2_LIBRARY_IDENTITY"
+      },
+      {
+        "phase": "PHASE_06",
+        "blocker": "FPC_POWER_AND_BACKPOWER_POLICY"
+      },
+      {
+        "phase": "PHASE_07",
+        "blocker": "D4_EXACT_LIBRARY_IDENTITY"
+      },
+      {
+        "phase": "PHASE_07",
+        "blocker": "TEST_POINT_EXACT_FOOTPRINT"
+      },
+      {
+        "phase": "PHASE_08",
+        "blocker": "PHASES_01_TO_07_NOT_VERIFIED"
+      }
+    ],
+    "mutationCount": 0,
+    "evidenceRule": "Script completion is not an electrical PASS. Use physical-pin, native-netlist/ERC and PDF visual evidence."
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

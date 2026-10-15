@@ -1,0 +1,296 @@
+{
+  "ok": true,
+  "v": {
+    "section": "01A_USB_CHECKPOINT_NOT_FULL_POWER",
+    "readback": [
+      {
+        "ref": "J1",
+        "id": "54da7c3541404b81",
+        "mpn": "TYPE-C-31-M-12",
+        "value": "TYPE-C-31-M-12",
+        "x": 195,
+        "y": 3000,
+        "pins": [
+          {
+            "number": "A1B12",
+            "name": "GND",
+            "x": 230,
+            "y": 3055
+          },
+          {
+            "number": "A4B9",
+            "name": "VBUS",
+            "x": 230,
+            "y": 3045
+          },
+          {
+            "number": "B8",
+            "name": "SBU2",
+            "x": 230,
+            "y": 3035
+          },
+          {
+            "number": "A5",
+            "name": "CC1",
+            "x": 230,
+            "y": 3025
+          },
+          {
+            "number": "B7",
+            "name": "DN2",
+            "x": 230,
+            "y": 3015
+          },
+          {
+            "number": "A6",
+            "name": "DP1",
+            "x": 230,
+            "y": 3005
+          },
+          {
+            "number": "A7",
+            "name": "DN1",
+            "x": 230,
+            "y": 2995
+          },
+          {
+            "number": "B6",
+            "name": "DP2",
+            "x": 230,
+            "y": 2985
+          },
+          {
+            "number": "A8",
+            "name": "SBU1",
+            "x": 230,
+            "y": 2975
+          },
+          {
+            "number": "B5",
+            "name": "CC2",
+            "x": 230,
+            "y": 2965
+          },
+          {
+            "number": "B4A9",
+            "name": "VBUS",
+            "x": 230,
+            "y": 2955
+          },
+          {
+            "number": "B1A12",
+            "name": "GND",
+            "x": 230,
+            "y": 2945
+          },
+          {
+            "number": "4",
+            "name": "EH",
+            "x": 160,
+            "y": 2975
+          },
+          {
+            "number": "3",
+            "name": "EH",
+            "x": 160,
+            "y": 2965
+          },
+          {
+            "number": "2",
+            "name": "EH",
+            "x": 160,
+            "y": 2955
+          },
+          {
+            "number": "1",
+            "name": "EH",
+            "x": 160,
+            "y": 2945
+          }
+        ]
+      },
+      {
+        "ref": "D6",
+        "id": "75ab5d349feb27ea",
+        "mpn": "USBLC6-2SC6",
+        "value": "USBLC6-2SC6_C7519",
+        "x": 635,
+        "y": 3000,
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 570,
+            "y": 3030
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 570,
+            "y": 3000
+          },
+          {
+            "number": "3",
+            "name": "3",
+            "x": 570,
+            "y": 2970
+          },
+          {
+            "number": "4",
+            "name": "4",
+            "x": 700,
+            "y": 2970
+          },
+          {
+            "number": "5",
+            "name": "5",
+            "x": 700,
+            "y": 3000
+          },
+          {
+            "number": "6",
+            "name": "6",
+            "x": 700,
+            "y": 3030
+          }
+        ]
+      },
+      {
+        "ref": "R6",
+        "id": "93f56bcc982aef6d",
+        "mpn": "0603WAF5101T5E",
+        "value": "5.1k",
+        "x": 330,
+        "y": 3160,
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 330,
+            "y": 3140
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 330,
+            "y": 3180
+          }
+        ]
+      },
+      {
+        "ref": "R7",
+        "id": "e6095b9cc28556a0",
+        "mpn": "0603WAF5101T5E",
+        "value": "5.1k",
+        "x": 400,
+        "y": 2860,
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 400,
+            "y": 2840
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 400,
+            "y": 2880
+          }
+        ]
+      },
+      {
+        "ref": "C21",
+        "id": "63f1fd0b7f64b884",
+        "mpn": "GRM21BR71A106KE51L",
+        "value": "10uF",
+        "x": 195,
+        "y": 2745,
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 195,
+            "y": 2765
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 195,
+            "y": 2725
+          }
+        ]
+      },
+      {
+        "ref": "C22",
+        "id": "04674d300ecc0fe3",
+        "mpn": "CL10B103KB8NNNC",
+        "value": "10nF",
+        "x": 325,
+        "y": 2745,
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 325,
+            "y": 2760
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 325,
+            "y": 2730
+          }
+        ]
+      }
+    ],
+    "wireIds": [
+      "5d61b9dfeafb9edb",
+      "5d61b9dfeafb9edb",
+      "1a8e8e17b31eb27e",
+      "1a8e8e17b31eb27e",
+      "e9a47c8d86534b52",
+      "71199dddbffa1ac6",
+      "ca5d86bce3cd55f6",
+      "719d1c5be03c265b",
+      "d09c64840aefe45d",
+      "e5169d205cda59d8",
+      "851fdfd2656e5f0c",
+      "f6facdb3ff873d3f",
+      "851fdfd2656e5f0c",
+      "f6facdb3ff873d3f",
+      "638a6a0ca74aeec3",
+      "9c23d2d74d3efac2",
+      "ec1b9ea448460651",
+      "0787bf658ccc130c",
+      "fc272aedb4bb9956",
+      "30239fb2fc2e2a8b",
+      "855033ca6aa3e475",
+      "61f372024d8c1361",
+      "debf66ba43b2dcf6",
+      "331a6f449f253a98"
+    ],
+    "graphics": [
+      {
+        "kind": "rectangle",
+        "id": "ce51957a5c2a9932"
+      },
+      {
+        "kind": "text",
+        "id": "3723e89683769199"
+      }
+    ],
+    "frame": {
+      "left": 70,
+      "right": 840,
+      "top": 3275,
+      "bottom": 2630
+    },
+    "assumptions": [
+      "No USB-PD negotiation;5V sink only",
+      "Higher USB current requires validated source advertisement/enumeration control",
+      "Complete power section still requires fuse/protected VBUS,external input,mux and charging circuits"
+    ],
+    "visualVerdict": "REQUIRES_ACTUAL_EXPORT_INSPECTION"
+  }
+}

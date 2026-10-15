@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "err": "proof rollback failed",
+  "http": 500
+}

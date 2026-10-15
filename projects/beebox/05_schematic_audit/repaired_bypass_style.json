@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "v": [
+    {
+      "wire": "60def3bea7a8680a",
+      "attribute": "b5e986edf1359f7f",
+      "x": 260,
+      "y": -2705,
+      "rotation": 0,
+      "value": "GND",
+      "valueVisible": true
+    },
+    {
+      "wire": "29cbcc3017a8200f",
+      "attribute": "b242915dc0ff81c1",
+      "x": 260,
+      "y": -2785,
+      "rotation": 0,
+      "value": "VBUS_USB",
+      "valueVisible": true
+    }
+  ]
+}

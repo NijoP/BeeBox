@@ -1,0 +1,30 @@
+{
+  "scope": "USB_CHECKPOINT_ONLY_NOT_FINISHED_SCHEMATIC",
+  "raw_media_box_pt": [
+    0.0,
+    0.0,
+    3376.8701171875,
+    2390.419921875
+  ],
+  "measured_native_A0_frame_pt": [
+    3.240000009536743,
+    3.239990234375,
+    3373.6298828125,
+    2387.179931640625
+  ],
+  "normalized_media_box_pt": [
+    0.0,
+    0.0,
+    3370.389892578125,
+    2383.93994140625
+  ],
+  "normalized_mm": [
+    1188.998656548394,
+    841.0010348849826
+  ],
+  "scale_factor": 1,
+  "operation": "Trim external export padding to measured native A0 frame; no circuit redraw/scaling",
+  "raw_sha256": "35df831b604c22a5a159872eb6b67db7bbd89cb132153380852efbe02650591b",
+  "normalized_sha256": "76bafb95e726f6bceaace9df18d8e53357ff08824f4626a37682451683afdb48",
+  "A0_geometry_verdict": "PASS"
+}

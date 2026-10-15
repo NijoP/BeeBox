@@ -1,1 +1,1 @@
-return {netlist:await eda.sch_Netlist.getNetlist()};
+const page=await eda.dmt_Schematic.getCurrentSchematicPageInfo();if(page.uuid!=='d5e34c82cc3ba89c')throw Error('Wrong page');if(!await eda.sch_Document.save())throw Error('Save failed');const f=await eda.sch_ManufactureData.getNetlistFile('beebox_native','EasyEDA');if(!f)throw Error('Native netlist export unavailable');return {page:page.uuid,name:f.name,netlist:await f.text(),method:'SUPPORTED_FILE_EXPORT_NOT_OBSOLETE_SCH_Netlist.getNetlist'};

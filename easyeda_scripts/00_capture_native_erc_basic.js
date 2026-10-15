@@ -1,0 +1,1 @@
+const p=await eda.dmt_Schematic.getCurrentSchematicPageInfo();if(p.uuid!=='d5e34c82cc3ba89c')throw Error('Wrong page');return {scope:'CURRENT_PARTIAL_SCHEMATIC_ONLY',strict:true,userInterface:true,includeVerboseError:false,result:await eda.sch_Drc.check(true,true,false)};

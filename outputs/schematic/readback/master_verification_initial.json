@@ -1,0 +1,137 @@
+{
+  "success": true,
+  "result": {
+    "buildId": "BEEBOX-VERIFY-20261015-R1",
+    "status": "VERIFIED_FAIL",
+    "elapsedMs": 6,
+    "projectUuid": "d84c4be0ef2e467fa17955faa23c6314",
+    "pageUuid": "d5e34c82cc3ba89c",
+    "inventory": {
+      "componentObjects": 1,
+      "wires": 0,
+      "missingRequiredRefs": [
+        "J1",
+        "D6",
+        "F1",
+        "R6",
+        "R7",
+        "C21",
+        "C22",
+        "U2",
+        "U6",
+        "U11",
+        "J4",
+        "U3",
+        "Q1",
+        "Q2",
+        "L1",
+        "U1",
+        "U4",
+        "U7",
+        "MIC1",
+        "U12",
+        "D5",
+        "J2",
+        "U8",
+        "MIC2",
+        "U9",
+        "D2",
+        "D3",
+        "D4",
+        "R1",
+        "R2",
+        "R3",
+        "J3-01",
+        "J3-02",
+        "J3-03",
+        "J3-04",
+        "J3-05",
+        "J3-06",
+        "J3-07",
+        "J3-08",
+        "J3-09",
+        "J3-10",
+        "J3-11",
+        "J3-12",
+        "TP1",
+        "TP2",
+        "TP3",
+        "TP4",
+        "TP5",
+        "TP6",
+        "TP7",
+        "TP8",
+        "TP9",
+        "TP10",
+        "TP11",
+        "TP12"
+      ],
+      "duplicateRefs": [],
+      "nonFinite": [],
+      "outOfBounds": [
+        {
+          "id": "80ce3d8a54da0af7",
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    "reviewedPinInventory": [
+      {
+        "ref": "D6",
+        "status": "VERIFIED_FAIL",
+        "reason": "component missing"
+      },
+      {
+        "ref": "J1",
+        "status": "VERIFIED_FAIL",
+        "reason": "component missing"
+      },
+      {
+        "ref": "J4",
+        "status": "VERIFIED_FAIL",
+        "reason": "component missing"
+      },
+      {
+        "ref": "R6",
+        "status": "VERIFIED_FAIL",
+        "reason": "component missing"
+      },
+      {
+        "ref": "R7",
+        "status": "VERIFIED_FAIL",
+        "reason": "component missing"
+      },
+      {
+        "ref": "C21",
+        "status": "VERIFIED_FAIL",
+        "reason": "component missing"
+      },
+      {
+        "ref": "C22",
+        "status": "VERIFIED_FAIL",
+        "reason": "component missing"
+      }
+    ],
+    "components": [
+      {
+        "id": "80ce3d8a54da0af7",
+        "type": "sheet",
+        "x": 0,
+        "y": 0,
+        "pins": []
+      }
+    ],
+    "wires": [],
+    "checks": {
+      "exactMpnAndFootprint": "NOT_TESTED_FOR_WHOLE_DESIGN",
+      "physicalPinInventory": "VERIFIED_FAIL",
+      "canonicalNetComparison": "NOT_TESTED_NATIVE_NETLIST_UNAVAILABLE_OR_TIMEOUT_PRONE",
+      "nativeErc": "NOT_TESTED_RUN_IN_GUI_AND_RETAIN_RESULTS",
+      "pdfVisualReview": "NOT_TESTED_REQUIRES_REAL_EASYEDA_EXPORT",
+      "fpcBoardAssignment": "VERIFIED_FAIL_PAGE_NOT_PRESENT"
+    },
+    "release": "BLOCKED_NOT_MANUFACTURING_READY"
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "v": {
+    "scope": "CURRENT_PARTIAL_SCHEMATIC_NOT_RELEASE",
+    "page": "d5e34c82cc3ba89c",
+    "strict": true,
+    "userInterface": false,
+    "violations": [
+      {
+        "type": "warn",
+        "count": 5
+      }
+    ]
+  }
+}

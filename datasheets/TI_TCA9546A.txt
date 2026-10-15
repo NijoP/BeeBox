@@ -1,0 +1,2421 @@
+TCA9546A
+Slaves A , A ...A
+0
+1
+N
+Slaves B , B ...B
+0
+1
+N
+Slaves C , C ...C
+0
+1
+N
+Slaves D , D ...D
+0
+1
+N
+I2C or SMBus
+Master
+(e.g. Processor)
+SDA
+SCL
+SD0
+SC0
+Channel 0
+Channel 1
+Channel 2
+Channel 3
+RESET
+SD1
+SC1
+SD2
+SC2
+SD3
+SC3
+VCC
+A1
+A2
+GND
+A0
+Product
+Folder
+Order
+Now
+Technical
+Documents
+Tools &
+Software
+Support &
+Community
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+TCA9546A Low Voltage 4-Channel I2C and SMBus Switch with Reset Function
+1
+1
+Features
+1•
+1-of-4 Bidirectional translating switches
+•
+I2C Bus and SMBus compatible
+•
+Active-low reset input
+•
+Three address pins, allowing up to eight
+TCA9546A devices on the I2C bus
+•
+Channel selection via I2C Bus, in any combination
+•
+Power-up with all switch channels deselected
+•
+Low RON switches
+•
+Allows voltage-level translation between
+1.8-V, 2.5-V, 3.3-V, and 5-V buses
+•
+No glitch on power-up
+•
+Supports hot insertion
+•
+Low standby current
+•
+Operating power-supply voltage range of 1.65 V to
+5.5 V
+•
+5.5 V Tolerant inputs
+•
+0 to 400-kHz Clock frequency
+•
+Latch-up performance exceeds 100 mA Per JESD
+78
+•
+ESD Protection exceeds JESD 22
+–
+4000-V Human-body model (A114-A)
+–
+1500-V Charged-device model (C101)
+(1)
+For all available packages, see the orderable addendum at
+the end of the datasheet.
+2
+Applications
+•
+Servers
+•
+Routers (telecom switching equipment)
+•
+Factory automation
+•
+Products with I2C slave address conflicts (multiple,
+identical temp sensors)
+3
+Description
+The TCA9546A is a quad bidirectional translating
+switch controlled via the I2C bus. The SCL/SDA
+upstream pair fans out to four downstream pairs, or
+channels.
+Any
+individual
+SCn/SDn
+channel
+or
+combination of channels can be selected, determined
+by the contents of the programmable control register.
+An
+active-low
+reset
+(RESET)
+input
+allows
+the
+TCA9546A to recover from a situation in which one of
+the downstream I2C buses is stuck in a low state.
+Pulling RESET low resets the I2C state machine and
+causes all the channels to be deselected, as does the
+internal power-on reset function.
+The pass gates of the switches are constructed such
+that the VCC pin can be used to limit the maximum
+high voltage, which will be passed by the TCA9546A.
+This allows the use of different bus voltages on each
+pair,
+so
+that
+1.8-V,
+2.5-V,
+or
+3.3-V
+parts
+can
+communicate with 5-V parts without any additional
+protection. External pull-up resistors pull the bus up
+to the desired voltage level for each channel. All I/O
+pins are 5.5-V tolerant.
+Device Information(1)
+DEVICE NAME
+PACKAGE
+BODY SIZE (NOM)
+TCA9546A
+TSSOP (16)
+5.00 mm x 4.40 mm
+SOIC (16)
+9.90 mm x 3.91 mm
+Simplified Application Diagram
+
+2
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+Table of Contents
+1
+Features.................................................................. 1
+2
+Applications ........................................................... 1
+3
+Description ............................................................. 1
+4
+Revision History..................................................... 2
+5
+Pin Configuration and Functions......................... 3
+6
+Specifications......................................................... 4
+6.1
+Absolute Maximum Ratings .................................... 4
+6.2
+ESD Ratings.............................................................. 4
+6.3
+Recommended Operating Conditions ..................... 4
+6.4
+Thermal Information.................................................. 4
+6.5
+Electrical Characteristics.......................................... 5
+6.6
+I2C Interface Timing Requirements.......................... 6
+6.7
+Switching Characteristics......................................... 6
+6.8
+Interrupt and Reset Timing Requirements............... 7
+6.9
+Typical Characteristics.............................................. 7
+7
+Parameter Measurement Information .................. 8
+8
+Detailed Description ............................................ 10
+8.1
+Overview ................................................................. 10
+8.2
+Functional Block Diagram ....................................... 10
+8.3
+Feature Description................................................. 11
+8.4
+Device Functional Modes........................................ 11
+8.5
+Programming........................................................... 11
+8.6
+Control Register ...................................................... 14
+9
+Application and Implementation ........................ 16
+9.1
+Application Information............................................ 16
+9.2
+Typical Application .................................................. 16
+10
+Power Supply Recommendations ..................... 19
+10.1
+Power-On Reset Requirements ........................... 19
+11
+Layout................................................................... 21
+11.1
+Layout Guidelines ................................................. 21
+11.2
+Layout Example .................................................... 21
+12
+Device and Documentation Support ................. 22
+12.1
+Receiving Notification of Documentation Updates 22
+12.2
+Support Resources ............................................... 22
+12.3
+Trademarks........................................................... 22
+12.4
+Electrostatic Discharge Caution............................ 22
+12.5
+Glossary................................................................ 22
+13
+Mechanical, Packaging, and Orderable
+Information ........................................................... 22
+4
+Revision History
+Changes from Revision A (February 2015) to Revision B
+Page
+•
+Changed the Pin Configuration image appearance ............................................................................................................... 3
+•
+Changed VCC = 3.3 V to VCC = 2.5 V in Figure 15................................................................................................................ 16
+Changes from Original (April 2014) to Revision A
+Page
+•
+Added D package to the datasheet. ...................................................................................................................................... 1
+•
+Changed Handling Ratings table to ESD Ratings. ................................................................................................................ 4
+•
+Added D package to the Thermal Information table. ............................................................................................................. 4
+
+1
+A0
+16
+ VCC
+2
+A1
+15
+ SDA
+3
+RESET
+14
+ SCL
+4
+SD0
+13
+ A2
+5
+SC0
+12
+ SC3
+6
+SD1
+11
+ SD3
+7
+SC1
+10
+ SC2
+8
+GND
+9
+ SD2
+Not to scale
+3
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+5
+Pin Configuration and Functions
+(1)
+VDPUX is the pull-up reference voltage for the associated data line. VDPUM is the master I2C master reference voltage and VDPU0-VDPU3
+are the slave channel reference voltages.
+D or PW Package
+TSSOP and SOIC 16 Pins
+Top View
+Pin Functions
+PIN
+DESCRIPTION
+NAME
+NO.
+A0
+1
+Address input 0. Connect directly to VCC or ground.
+A1
+2
+Address input 1. Connect directly to VCC or ground.
+RESET
+3
+Active low reset input. Connect to VCC or VDPUM(1) through a pull-up resistor, if not used.
+SD0
+4
+Serial data 0. Connect to VDPU0(1) through a pull-up resistor.
+SC0
+5
+Serial clock 0. Connect to VDPU0(1) through a pull-up resistor.
+SD1
+6
+Serial data 1. Connect to VDPU1(1) through a pull-up resistor.
+SC1
+7
+Serial clock 1. Connect to VDPU1(1) through a pull-up resistor.
+GND
+8
+Ground
+SD2
+9
+Serial data 2. Connect to VDPU2(1) through a pull-up resistor.
+SC2
+10
+Serial clock 2. Connect to VDPU2(1) through a pull-up resistor.
+SD3
+11
+Serial data 3. Connect to VDPU3(1) through a pull-up resistor.
+SC3
+12
+Serial clock 3. Connect to VDPU3
+(1) through a pull-up resistor.
+A2
+13
+Address input 2. Connect directly to VCC or ground.
+SCL
+14
+Serial clock line. Connect to VDPUM(1) through a pull-up resistor.
+SDA
+15
+Serial data line. Connect to VDPUM
+(1) through a pull-up resistor.
+VCC
+16
+Supply power
+
+4
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+(1)
+Stresses beyond those listed under "absolute maximum ratings" may cause permanent damage to the device. These are stress ratings
+only, and functional operation of the device at these or any other conditions beyond those indicated under "recommended operating
+conditions" is not implied. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability.
+(2)
+The input negative-voltage and output voltage ratings may be exceeded if the input and output current ratings are observed.
+6
+Specifications
+6.1
+Absolute Maximum Ratings(1)
+over operating free-air temperature range (unless otherwise noted)
+MIN
+MAX
+UNIT
+VCC
+Supply voltage range
+–0.5
+7
+V
+VI
+Input voltage range(2)
+–0.5
+7
+V
+II
+Input current
+±20
+mA
+IO
+Output current
+±25
+mA
+Continuous current through VCC
+±100
+mA
+Continuous current through GND
+±100
+mA
+Ptot
+Total power dissipation
+400
+mW
+TA
+Operating free-air temperature range
+–40
+85
+°C
+Tstg
+Storage temperature range
+-65
+150
+°C
+(1)
+JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process. Manufacturing with
+less than 500-V HBM is possible with the necessary precautions.
+(2)
+JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process. Manufacturing with
+less than 250-V CDM is possible with the necessary precautions.
+6.2
+ESD Ratings
+VALUE
+UNIT
+V(ESD)
+Electrostatic discharge
+Human-body model (HBM), per ANSI/ESDA/JEDEC JS-001(1)
+±4000
+V
+Charged-device model (CDM), per JEDEC specification JESD22-
+C101(2)
+±1500
+(1)
+All unused inputs of the device must be held at VCC or GND to ensure proper device operation. Refer to the TI application report,
+Implications of Slow or Floating CMOS Inputs, literature number SCBA004.
+6.3
+Recommended Operating Conditions(1)
+MIN
+MAX
+UNIT
+VCC
+Supply voltage
+1.65
+5.5
+V
+VIH
+High-level input voltage
+SCL, SDA
+0.7 × VCC
+6
+V
+A2–A0, RESET
+0.7 × VCC
+VCC + 0.5
+VIL
+Low-level input voltage
+SCL, SDA
+–0.5
+0.3 × VCC
+V
+A2–A0, RESET
+–0.5
+0.3 × VCC
+TA
+Operating free-air temperature
+–40
+85
+°C
+(1)
+For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application
+report.
+6.4
+Thermal Information
+THERMAL METRIC(1)
+TCA9546A
+UNIT
+D
+PW
+16 PINS
+16 PINS
+RθJA
+Junction-to-ambient thermal resistance
+92.3
+122.3
+°C/W
+RθJCtop
+Junction-to-case (top) thermal resistance
+52.3
+56.6
+RθJB
+Junction-to-board thermal resistance
+50.1
+57.4
+ψJT
+Junction-to-top characterization parameter
+17.7
+10.9
+ψJB
+Junction-to-board characterization parameter
+49.8
+66.8
+
+5
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+(1)
+For operation between specified voltage ranges, refer to the worst-case parameter in both applicable ranges.
+(2)
+All typical values are at nominal supply voltage (1.8-V, 2.5-V, 3.3-V, or 5-V VCC), TA = 25°C.
+(3)
+RESET = VCC (held high) when all other input voltages, VI = GND.
+(4)
+The power-on reset circuit resets the I2C bus logic with VCC < VPORF.
+(5)
+Cio(ON) depends on internal capacitance and external capacitance added to the SCn lines when channels(s) are ON.
+6.5
+Electrical Characteristics(1)
+over recommended operating free-air temperature range (unless otherwise noted)
+PARAMETER
+TEST CONDITIONS
+VCC
+MIN
+TYP(2)
+MAX
+UNIT
+VPORR
+Power-on reset voltage, VCC
+rising
+No load,
+VI = VCC or
+GND(3)
+1.2
+1.5
+V
+VPORF
+Power-on reset voltage, VCC
+falling(4)
+No load,
+VI = VCC or
+GND(3)
+0.8
+1
+Vpass
+Switch output voltage
+VSWin = VCC,
+ISWout = –100 μA
+5 V
+3.6
+V
+4.5 V to 5.5 V
+2.6
+4.5
+3.3 V
+1.9
+3 V to 3.6 V
+1.6
+2.8
+2.5 V
+1.4
+2.3 V to 2.7 V
+1.0
+1.8
+1.8 V
+0.8
+1.65 V to 1.95 V
+0.5
+1.1
+IOL
+SDA
+VOL = 0.4 V
+1.65 V to 5.5 V
+3
+7
+mA
+VOL = 0.6 V
+6
+10
+II
+SCL, SDA
+VI = VCC or GND(3)
+1.65 V to 5.5 V
+±1
+μA
+SC3–SC0, SD3–SD0
+±1
+A2–A0
+±1
+RESET
+±1
+ICC
+Operating mode
+fSCL = 400 kHz
+VI = VCC or GND(3)
+IO = 0
+tr,max = 300 ns
+5.5 V
+50
+μA
+3.6 V
+20
+2.7 V
+11
+1.65 V
+6
+fSCL = 100 kHz
+VI = VCC or GND(3)
+IO = 0
+tr,max = 1 µs
+5.5 V
+35
+3.6 V
+14
+2.7 V
+5
+1.65 V
+2
+Standby mode
+Low inputs
+VI = GND(3)
+IO = 0
+5.5 V
+1.6
+2
+3.6 V
+1.0
+1.3
+2.7 V
+0.7
+1.1
+1.65 V
+0.4
+0.55
+High inputs
+VI = VCC
+IO = 0
+5.5 V
+1.6
+2
+3.6 V
+1.0
+1.3
+2.7 V
+0.7
+1.1
+1.65 V
+0.4
+0.55
+ΔICC
+Supply-current
+change
+SCL, SDA
+SCL or SDA input at 0.6 V,
+Other inputs at VCC or GND(3)
+1.65 V to 5.5 V
+2
+15
+μA
+SCL or SDA input at VCC – 0.6 V,
+Other inputs at VCC or GND(3)
+1.65 V to 5.5 V
+2
+15
+Ci
+A2–A0
+VI = VCC or GND(3)
+1.65 V to 5.5 V
+4.5
+6
+pF
+RESET
+4.5
+5.5
+Cio(OFF)
+(5)
+SCL, SDA
+VI = VCC or GND(3)
+Switch OFF
+1.65 V to 5.5 V
+15
+19
+pF
+SC3–SC0, SD3–SD0
+6
+8
+
+6
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+Electrical Characteristics(1) (continued)
+over recommended operating free-air temperature range (unless otherwise noted)
+PARAMETER
+TEST CONDITIONS
+VCC
+MIN
+TYP(2)
+MAX
+UNIT
+RON
+Switch on-state resistance
+VO = 0.4 V
+IO = 15 mA
+4.5 V to 5.5 V
+4
+10
+16
+Ω
+3 V to 3.6 V
+5
+13
+20
+VO = 0.4 V
+IO = 10 mA
+2.3 V to 2.7 V
+7
+16
+45
+1.65 V to 1.95 V
+10
+25
+70
+(1)
+A device internally must provide a hold time of at least 300 ns for the SDA signal (referred to the VIH min of the SCL signal), in order to
+bridge the undefined region of the falling edge of SCL.
+(2)
+Cb = total bus capacitance of one bus line in pF
+(3)
+Data taken using a 1-kΩpullup resistor and 50-pF load (see Figure 5)
+6.6
+I2C Interface Timing Requirements
+over recommended operating free-air temperature range (unless otherwise noted) (see Figure 5)
+STANDARD MODE
+I2C BUS
+FAST MODE
+I2C BUS
+UNIT
+MIN
+MAX
+MIN
+MAX
+fscl
+I2C clock frequency
+0
+100
+0
+400
+kHz
+tsch
+I2C clock high time
+4
+0.6
+μs
+tscl
+I2C clock low time
+4.7
+1.3
+μs
+tsp
+I2C spike time
+50
+50
+ns
+tsds
+I2C serial-data setup time
+250
+100
+ns
+tsdh
+I2C serial-data hold time
+0(1)
+0(1)
+μs
+ticr
+I2C input rise time
+1000
+20 + 0.1Cb (2)
+300
+ns
+ticf
+I2C input fall time
+300
+20 + 0.1Cb (2)
+300
+ns
+tocf
+I2C output fall time
+10-pF to 400-pF bus
+300
+20 + 0.1Cb (2)
+300
+ns
+tbuf
+I2C bus free time between stop and start
+4.7
+1.3
+μs
+tsts
+I2C start or repeated start condition setup
+4.7
+0.6
+μs
+tsth
+I2C start or repeated start condition hold
+4
+0.6
+μs
+tsps
+I2C stop condition setup
+4
+0.6
+μs
+tvdL(Data)
+Valid-data time (high to low)(3)
+SCL low to SDA output low valid
+1
+1
+μs
+tvdH(Data)
+Valid-data time (low to high)(3)
+SCL low to SDA output high valid
+0.6
+0.6
+μs
+tvd(ack)
+Valid-data time of ACK condition
+ACK signal from SCL low
+to SDA output low
+1
+1
+μs
+Cb
+I2C bus capacitive load
+400
+400
+pF
+(1)
+The propagation delay is the calculated RC time constant of the typical ON-state resistance of the switch and the specified load
+capacitance, when driven by an ideal voltage source (zero output impedance).
+6.7
+Switching Characteristics
+over recommended operating free-air temperature range, CL ≤100 pF (unless otherwise noted) (see Figure 5)
+PARAMETER
+FROM
+(INPUT)
+TO
+(OUTPUT)
+MIN
+MAX
+UNIT
+tpd (1)
+Propagation delay time
+RON = 20 Ω, CL = 15 pF
+SDA or SCL
+SDn or SCn
+0.3
+ns
+RON = 20 Ω, CL = 50 pF
+1
+
+VCC (V)
+CIO(OFF) (pF)
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+5.5
+4
+4.2
+4.4
+4.6
+4.8
+5
+5.2
+5.4
+5.6
+5.8
+6
+D006
+25ºC (Room Temperature)
+85ºC
+-40º
+VCC (V)
+RON (Ohm)
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+5.5
+0
+5
+10
+15
+20
+25
+30
+D001
+25ºC (Room Temperature)
+85ºC
+-40ºC
+IOL (mA)
+VOL (mV)
+0
+2
+4
+6
+8
+10
+12
+0
+100
+200
+300
+400
+500
+600
+700
+800
+D003
+VCC = 5.5V
+VCC = 3.3V
+VCC = 1.65V
+VCC (V)
+ICC, Standby Mode (µA)
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+5.5
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+1.6
+1.8
+D004
+25ºC (Room Temperature)
+85ºC
+-40ºC
+7
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+(1)
+trst is the propagation delay measured from the time the RESET pin is first asserted low to the time the SDA pin is asserted high,
+signaling a stop condition. It must be a minimum of tWL.
+6.8
+Interrupt and Reset Timing Requirements
+over recommended operating free-air temperature range (unless otherwise noted)
+PARAMETER
+MIN
+MAX
+UNIT
+tWL
+Pulse duration, RESET low
+6
+ns
+trst (1)
+RESET time (SDA clear)
+500
+ns
+tREC(STA)
+Recovery time from RESET to start
+0
+ns
+6.9
+Typical Characteristics
+Figure 1. SDA Output Low Voltage (VOL) vs Load Current
+(IOL) at Three VCC Levels
+Figure 2. Standby Current (ICC) vs Supply Voltage (VCC) at
+Three Temperature Points
+Figure 3. Slave channel (SCn/SDn) capacitance (Cio(OFF)) vs.
+Supply Voltage (VCC) at Three Temperature Points
+Figure 4. ON-Resistance (RON) vs Supply Voltage (VCC) at
+Three Temperatures
+
+RL = 1 kΩ
+VCC
+CL = 50 pF
+(See Note 1)
+tbuf
+ticr
+tsth
+tsds
+tsdh
+ticf
+ticr
+tscl
+tsch
+tsts
+tvd(ACK)
+or tvdL
+tvdH
+0.3 × VCC
+Stop
+Condition
+tsps
+Repeat
+Start
+Condition
+Start or Repeat
+Start Condition
+SCL
+SDA
+Start
+Condition
+(S)
+Address
+Bit 7
+(MSB)
+Data
+Bit 0
+(LSB)
+Stop
+Condition
+(P)
+Two Bytes for Complete
+Device Programming
+I2C PORT LOAD CONFIGURATION
+VOLTAGE WAVEFORMS
+ticf
+Stop
+Condition
+(P)
+tsp
+DUT
+SDn, SCn
+0.7 × VCC
+0.3 × VCC
+0.7 × VCC
+R/W
+Bit 0
+(LSB)
+ACK
+(A)
+Data
+Bit 7
+(MSB)
+Address
+Bit 1
+Address
+Bit 6
+ACK
+(A)
+BYTE
+DESCRIPTION
+I2C address + R/W
+Control register data
+1
+2
+Copyright © 2016, Texas Instruments Incorporated
+8
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+7
+Parameter Measurement Information
+A.
+CL includes probe and jig capacitance.
+B.
+All input pulses are supplied by generators having the following characteristics: PRR ≤10 MHz, ZO = 50 Ω,
+tr/tf ≤30 ns.
+C.
+The outputs are measured one at a time, with one transition per measurement.
+Figure 5. I2C Interface Load Circuit, Byte Descriptions, and Voltage Waveforms
+
+SCL
+SDA
+RESET
+30%
+50%
+ACK or Read Cycle
+Start
+tREC
+tWL
+trst
+9
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+Parameter Measurement Information (continued)
+Figure 6. Reset Timing
+
+Switch Control Logic
+I2C Bus Control
+Input Filter
+Power-On Reset
+TCA9546A
+SC0
+SDA
+SCL
+RESET
+GND
+SD3
+SD2
+SD1
+SD0
+SC3
+SC2
+SC1
+VCC
+A1
+A0
+A2
+5
+14
+3
+16
+8
+11
+9
+6
+4
+12
+10
+7
+15
+1
+2
+13
+10
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+8
+Detailed Description
+8.1
+Overview
+The TCA9546A is a 4-channel, bidirectional translating I2C switch. The master SCL/SDA signal pair is directed to
+four channels of slave devices, SC0/SD0-SC3/SD3. Any individual downstream channel can be selected as well
+as any combination of the four channels.
+The device offers an active-low RESET input which resets the state machine and allows the TCA9546A to
+recover should one of the downstream I2C buses get stuck in a low state. The state machine of the device can
+also be reset by cycling the power supply, VCC, also known as a power-on reset (POR). Both the RESET function
+and a POR will cause all channels to be deselected.
+The connections of the I2C data path are controlled by the same I2C master device that is switched to
+communicate with multiple I2C slaves. After the successful acknowledgment of the slave address (hardware
+selectable by A0 and A1 pins), a single 8-bit control register is written to or read from to determine the selected
+channels.
+The TCA9546A may also be used for voltage translation, allowing the use of different bus voltages on each
+SCn/SDn pair such that 1.8-V, 2.5-V, or 3.3-V parts can communicate with 5-V parts. This is achieved by using
+external pull-up resistors to pull the bus up to the desired voltage for the master and each slave channel.
+8.2
+Functional Block Diagram
+
+SDA
+SCL
+Data Line
+Stable;
+Data Valid
+Change
+of Data
+Allowed
+11
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+8.3
+Feature Description
+The TCA9546A is a 4-channel, bidirectional translating switch for I2C buses that supports Standard-Mode (100
+kHz) and Fast-Mode (400 kHz) operation. The TCA9546A features I2C control using a single 8-bit control register
+in which the four least significant bits control the enabling and disabling of the 4 switch channels of I2C data flow.
+Depending on the application, voltage translation of the I2C bus can also be achieved using the TCA9546A to
+allow 1.8-V, 2.5-V, or 3.3-V parts to communicate with 5-V parts. Additionally, in the event that communication on
+the I2C bus enters a fault state, the TCA9546A can be reset to resume normal operation using the RESET pin
+feature or by a power-on reset which results from cycling power to the device.
+8.4
+Device Functional Modes
+8.4.1
+RESET Input
+The RESET input is an active-low signal that may be used to recover from a bus-fault condition. When this signal
+is asserted low for a minimum of tWL, the TCA9546A resets its registers and I2C state machine and deselects all
+channels. The RESET input must be connected to VCC through a pull-up resistor.
+8.4.2
+Power-On Reset
+When power is applied to VCC, an internal power-on reset holds the TCA9546A in a reset condition until VCC has
+reached VPOR. At this point, the reset condition is released, and the TCA9546A registers and I2C state machine
+are initialized to their default states, all zeroes, causing all the channels to be deselected. Thereafter, VCC must
+be lowered below V POR to reset the device.
+8.5
+Programming
+8.5.1
+I2C Interface
+The I2C bus is for two-way two-line communication between different ICs or modules. The two lines are a serial
+data line (SDA) and a serial clock line (SCL). Both lines must be connected to a positive supply via a pullup
+resistor when connected to the output stages of a device. Data transfer can be initiated only when the bus is not
+busy.
+One data bit is transferred during each clock pulse. The data on the SDA line must remain stable during the high
+period of the clock pulse, as changes in the data line at this time are interpreted as control signals (see Figure 7).
+Figure 7. Bit Transfer
+Both data and clock lines remain high when the bus is not busy. A high-to-low transition of the data line while the
+clock is high is defined as the start condition (S). A low-to-high transition of the data line while the clock is high is
+defined as the stop condition (P) (see Figure 8).
+
+SCL
+Master
+Transmitter/
+Receiver
+Slave
+Receiver
+Slave
+Transmitter/
+Receiver
+Master
+Transmitter
+Master
+Transmitter/
+Receiver
+I2C
+Multiplexer
+Slave
+SDA
+SDA
+SCL
+Start Condition
+S
+Stop Condition
+P
+12
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+Programming (continued)
+Figure 8. Definition of Start and Stop Conditions
+A device generating a message is a transmitter; a device receiving is the receiver. The device that controls the
+message is the master, and the devices that are controlled by the master are the slaves (see Figure 9).
+Figure 9. System Configuration
+The number of data bytes transferred between the start and the stop conditions from transmitter to receiver is not
+limited. Each byte of eight bits is followed by one acknowledge (ACK) bit. The transmitter must release the SDA
+line before the receiver can send an ACK bit.
+When a slave receiver is addressed, it must generate an ACK after the reception of each byte. Also, a master
+must generate an ACK after the reception of each byte that has been clocked out of the slave transmitter. The
+device that acknowledges must pull down the SDA line during the ACK clock pulse so that the SDA line is stable
+low during the high pulse of the ACK-related clock period (see Figure 10). Setup and hold times must be taken
+into account.
+
+A
+NA
+S
+1
+1
+1
+0
+A2 A1
+A0
+1
+SDA
+P
+B3
+B2
+B1 B0
+Start Condition
+R/W
+ACK From Slave
+NACK From Master
+Stop Condition
+Slave Address
+Control Register
+0
+0
+0
+0
+A
+A
+S
+1
+1
+1
+0
+A2
+A1
+A0
+0
+Start Condition
+SDA
+R/W
+ACK From Slave
+ACK From Slave
+P
+B0
+B1
+B2
+B3
+X
+X
+X
+X
+Stop Condition
+Slave Address
+Control Register
+Data Output
+by Transmitter
+SCL From
+Master
+Start
+Condition
+S
+1
+2
+8
+9
+Data Output
+by Receiver
+Clock Pulse for ACK
+NACK
+ACK
+13
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+Programming (continued)
+Figure 10. Acknowledgment on the I2C Bus
+Data is transmitted to the TCA9546A control register using the write mode shown in Figure 11.
+Figure 11. Write Control Register
+Data is read from the TCA9546A control register using the read mode shown in Figure 12.
+Figure 12. Read Control Register
+
+Channel Selection Bits
+(Read/Write)
+Channel 0
+Channel 1
+Channel 2
+Channel 3
+B3
+B2
+B1
+B0
+3
+2
+1
+0
+X
+X
+X
+X
+4
+5
+6
+7
+1
+1
+1
+0
+A1
+A2
+A0
+Slave Address
+R/W
+Fixed
+Hardware
+Selectable
+14
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+8.6
+Control Register
+8.6.1
+Device Address
+Following a start condition, the bus master must output the address of the slave it is accessing. The address of
+the TCA9546A is shown in Figure 13. To conserve power, no internal pullup resistors are incorporated on the
+hardware-selectable address pins, and they must be pulled high or low.
+Figure 13. TCA9546A Address
+The last bit of the slave address defines the operation to be performed. When set to a logic 1, a read is selected,
+while a logic 0 selects a write operation.
+8.6.2
+Control Register Description
+Following the successful acknowledgment of the slave address, the bus master sends a byte to the TCA9546A,
+which is stored in the control register (see Figure 14). If multiple bytes are received by the TCA9546A, it will save
+the last byte received. This register can be written and read via the I2C bus.
+Figure 14. Control Register
+8.6.3
+Control Register Definition
+One or several SCn/SDn downstream pairs, or channels, are selected by the contents of the control register (see
+Table 1). This register is written after the TCA9546A has been addressed. The four LSBs of the control byte are
+used to determine which channel or channels are to be selected. When a channel is selected, the channel
+becomes active after a stop condition has been placed on the I2C bus. This ensures that all SCn/SDn lines are in
+a high state when the channel is made active, so that no false conditions are generated at the time of
+connection. A stop condition always must occur right after the acknowledge cycle.
+
+15
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+Control Register (continued)
+(1)
+Several channels can be enabled at the same time. For example, B3 =0, B2 = 1, B1 = 1, B0 = 0 means that channels 0 and 3 are
+disabled, and channels 1 and 2 are enabled. Care should be taken not to exceed the maximum bus capacity.
+Table 1. Control Register Write (Channel Selection), Control Register Read (Channel Status)(1)
+B7
+B6
+B5
+B4
+B3
+B2
+B1
+B0
+COMMAND
+X
+X
+X
+X
+X
+X
+X
+0
+Channel 0 disabled
+1
+Channel 0 enabled
+X
+X
+X
+X
+X
+X
+0
+X
+Channel 1 disabled
+1
+Channel 1 enabled
+X
+X
+X
+X
+X
+0
+X
+X
+Channel 2 disabled
+1
+Channel 2 enabled
+X
+X
+X
+X
+0
+X
+X
+X
+Channel 3 disabled
+1
+Channel 3 enabled
+0
+0
+0
+0
+0
+0
+0
+0
+No channel selected,
+power-up/reset default state
+
+TCA9546A
+SD1
+SDA
+Channel 0
+Channel 1
+Channel 2
+Channel 3
+I2C/SMBus
+Master
+SCL
+RESET
+SC1
+SD2
+SC2
+SD3
+SC3
+SD0
+SC0
+V
+= 1.65 V to 5.5 V
+DPUM
+VCC = 2.5 V
+V
+= 1.65 V to 5.5 V
+DPU0
+V
+= 1.65 V to 5.5 V
+DPU1
+V
+= 1.65 V to 5.5 V
+DPU2
+V
+= 1.65 V to 5.5 V
+DPU3
+SDA
+SCL
+A2
+A1
+A0
+GND
+15
+14
+3
+8
+1
+2
+13
+16
+12
+11
+10
+9
+7
+6
+5
+4
+VCC
+16
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+9
+Application and Implementation
+9.1
+Application Information
+Applications of the TCA9546A contains an I2C (or SMBus) master device and up to four I2C slave devices. The
+downstream channels are ideally used to resolve I2C slave address conflicts. For example, if four identical digital
+temperature sensors are needed in the application, one sensor can be connected at each channel: 0, 1, 2, and 3.
+When the temperature at a specific location needs to be read, the appropriate channel can be enabled and all
+other channels switched off, the data can be retrieved, and the I2C master can move on and read the next
+channel.
+In an application where the I2C bus contain many additional slave devices that do not result in I2C slave address
+conflicts, these slave devices can be connected to any desired channel to distribute the total bus capacitance
+across multiple channels. If multiple switches will be enabled simultaneously, additional design requirements
+must be considered (See Design Requirements and Detailed Design Procedure).
+9.2
+Typical Application
+A typical application of the TCA9546A contains anywhere from 1 to 5 separate data pull-up voltages, VDPUX , one
+for the master device (VDPUM) and one for each of the selectable slave channels (VDPU0 – VDPU3). In the event
+where the master device and all slave devices operate at the same voltage, then the pass voltage, Vpass = VDPUX.
+Once the maximum Vpass is known, Vcc can be selected easily using Figure 16. In an application where voltage
+translation is necessary, additional design requirements must be considered (See Design Requirements).
+Figure 15 shows an application in which the TCA9546A can be used.
+Figure 15. TCA9546A Typical Application Schematic
+
+r
+p(max)
+b
+t
+R
+0.8473
+C
+=
+´
+DPUX
+OL(max)
+p(min)
+OL
+V
+V
+R
+I
+-
+=
+17
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+Typical Application (continued)
+9.2.1
+Design Requirements
+The A0, A1, and A2 pins are hardware selectable to control the slave address of the TCA9546A. These pins may
+be tied directly to GND or VCC in the application.
+If multiple slave channels will be activated simultaneously in the application, then the total IOL from SCL/SDA to
+GND on the master side will be the sum of the currents through all pull-up resistors, Rp.
+The pass-gate transistors of the TCA9546A are constructed such that the VCC voltage can be used to limit the
+maximum voltage that is passed from one I2C bus to another.
+Figure 16 shows the voltage characteristics of the pass-gate transistors (note that the graph was generated using
+data specified in the Electrical Characteristics section of this data sheet). In order for the TCA9546A to act as a
+voltage translator, the Vpass voltage must be equal to or lower than the lowest bus voltage. For example, if the
+main bus is running at 5 V and the downstream buses are 3.3 V and 2.7 V, Vpass must be equal to or below 2.7 V
+to effectively clamp the downstream bus voltages. As shown in Figure 16, Vpass(max) is 2.7 V when the TCA9546A
+supply voltage is 4 V or lower, so the TCA9546A supply voltage could be set to 3.3 V. Pull-up resistors then can
+be used to bring the bus voltages to their appropriate levels (see Figure 15).
+9.2.2
+Detailed Design Procedure
+Once all the slaves are assigned to the appropriate slave channels and bus voltages are identified, the pull-up
+resistors, Rp, for each of the buses need to be selected appropriately. The minimum pull-up resistance is a
+function of VDPUX, VOL,(max), and IOL:
+(1)
+The maximum pull-up resistance is a function of the maximum rise time, tr (300 ns for fast-mode operation, fSCL =
+400 kHz) and bus capacitance, Cb:
+(2)
+The maximum bus capacitance for an I2C bus must not exceed 400 pF for fast-mode operation. The bus
+capacitance can be approximated by adding the capacitance of the TCA9546A, Cio(OFF), the capacitance of
+wires/connections/traces, and the capacitance of each individual slave on a given channel. If multiple channels
+will be activated simultaneously, each of the slaves on all channels will contribute to total bus capacitance.
+
+VDPUX (V)
+Rp(min) (kOhm)
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+5.5
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+1.6
+1.8
+D009
+VDPUX > 2V
+VDPUX <= 2
+VCC (V)
+Vpass (V)
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+5.5
+0
+1
+2
+3
+4
+5
+D007
+25ºC (Room Temperature)
+85ºC
+-40ºC
+Cb (pF)
+Rp(max) (kOhm)
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+0
+5
+10
+15
+20
+25
+D008
+Standard-mode
+Fast-mode
+18
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+Typical Application (continued)
+9.2.3
+TCA9546A Application Curves
+Standard-mode
+(fSCL kHz, tr
+SPACE
+(fSCL kHz, tr)
+Figure 16. Pass-Gate Voltage (Vpass) vs Supply Voltage
+(VCC) at Three Temperature Points
+Standard-mode
+(fSCL= 100 kHz, tr = 1 µs)
+Fast-mode
+(fSCL= 400 kHz, tr= 300 ns)
+Figure 17. Maximum Pull-Up resistance (Rp(max)) vs Bus
+Capacitance (Cb)
+VOL = 0.2*VDPUX, IOL = 2 mA when VDPUX ≤2 V
+VOL = 0.4 V, IOL = 3 mA when VDPUX > 2 V
+Figure 18. Minimum Pull-Up Resistance (Rp(min)) vs Pull-Up Reference Voltage (VDPUX)
+
+VCC
+Ramp-Up
+Time to Re-Ramp
+Time
+Ramp-Down
+VCC drops below V
+50 mV
+PORF –
+VCC_RT
+VCC_FT
+VCC_TRR
+19
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+(1)
+All supply sequencing and ramp rate values are measured at TA = 25°C
+10
+Power Supply Recommendations
+The operating power-supply voltage range of the TCA9546A is 1.65 V to 5.5 V applied at the VCC pin. When the
+TCA9546A is powered on for the first time or anytime the device needs to be reset by cycling the power supply,
+the power-on reset requirements must be followed to ensure the I2C bus logic is initialized properly.
+10.1
+Power-On Reset Requirements
+In the event of a glitch or data corruption, TCA9546A can be reset to its default conditions by using the power-on
+reset feature. Power-on reset requires that the device go through a power cycle to be completely reset. This
+reset also happens when the device is powered on for the first time in an application.
+A power-on reset is shown in Figure 19.
+Figure 19. VCC is Lowered Below the POR Threshold, Then Ramped Back Up to VCC
+Table 2 specifies the performance of the power-on reset feature for TCA9546A for both types of power-on reset.
+Table 2. Recommended Supply Sequencing And Ramp Rates(1)
+PARAMETER
+MIN
+TYP
+MAX
+UNIT
+VCC_FT
+Fall time
+See Figure 19
+1
+100
+ms
+VCC_RT
+Rise time
+See Figure 19
+0.1
+100
+ms
+VCC_TRR
+Time to re-ramp (when VCC drops below VPORF(min) – 50 mV or
+when VCC drops to GND)
+See Figure 19
+40
+μs
+VCC_GH
+Level that VCC can glitch down to, but not cause a functional
+disruption when VCC_GW = 1 μs
+See Figure 20
+1.2
+V
+VCC_GW
+Glitch width that will not cause a functional disruption when
+VCC_GH = 0.5 × VCC
+See Figure 20
+10
+μs
+VPORF
+Voltage trip point of POR on falling VCC
+See Figure 21
+0.8
+1.25
+V
+VPORR
+Voltage trip point of POR on rising VCC
+See Figure 21
+1.05
+1.5
+V
+
+VCC
+VPORR
+VPORF
+Time
+POR
+Time
+VCC
+Time
+VCC_GH
+VCC_GW
+20
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+Glitches in the power supply can also affect the power-on reset performance of this device. The glitch width
+(VCC_GW) and height (VCC_GH) are dependent on each other. The bypass capacitance, source impedance, and
+device impedance are factors that affect power-on reset performance. Figure 20 and Table 2 provide more
+information on how to measure these specifications.
+Figure 20. Glitch Width and Glitch Height
+VPOR is critical to the power-on reset. VPOR is the voltage level at which the reset condition is released and all the
+registers and the I2C/SMBus state machine are initialized to their default states. The value of VPOR differs based
+on the VCC being lowered to or from 0. Figure 21 and Table 2 provide more details on this specification.
+Figure 21. VPOR
+
+A0
+A1
+RESET
+SD0
+SC0
+SD1
+SC1
+GND
+VCC
+SDA
+SCL
+A2
+SC3
+SD3
+SC2
+SD2
+VDPU1
+VDPU0
+VIA to Power Plane
+Partial Power Plane
+VDPU3
+VDPUM
+VIA to GND Plane (Inner Layer)
+Polygonal
+Copper Pour
+VCC
+GND
+By-pass/De-coupling
+capacitors
+TCA9546A
+GND
+VDPU2
+To I2C Master
+To Slave Channel 3
+To Slave Channel 2
+To Slave Channel 1
+To Slave Channel 0
+LEGEND
+21
+TCA9546A
+www.ti.com
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+11
+Layout
+11.1
+Layout Guidelines
+For PCB layout of the TCA9546A, common PCB layout practices should be followed but additional concerns
+related to high-speed data transfer such as matched impedances and differential pairs are not a concern for I2C
+signal speeds. It is common to have a dedicated ground plane on an inner layer of the board and pins that are
+connected to ground should have a low-impedance path to the ground plane in the form of wide polygon pours
+and multiple vias. By-pass and de-coupling capacitors are commonly used to control the voltage on the VCC pin,
+using a larger capacitor to provide additional power in the event of a short power supply glitch and a smaller
+capacitor to filter out high-frequency ripple.
+In an application where voltage translation is not required, all VDPUX voltages and VCC could be at the same
+potential and a single copper plane could connect all of pull-up resistors to the appropriate reference voltage. In
+an application where voltage translation is required, VDPUM, VDPU0, VDPU1, VDPU2, and VDPU3 may all be on the
+same layer of the board with split planes to isolate different voltage potentials.
+To reduce the total I2C bus capacitance added by PCB parasitics, data lines (SCn and SDn) should be a short as
+possible and the widths of the traces should also be minimized (e.g. 5-10 mils depending on copper weight).
+11.2
+Layout Example
+
+22
+TCA9546A
+SCPS205B –APRIL 2014–REVISED NOVEMBER 2019
+www.ti.com
+Product Folder Links: TCA9546A
+Submit Documentation Feedback
+Copyright © 2014–2019, Texas Instruments Incorporated
+12
+Device and Documentation Support
+12.1
+Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. In the upper
+right corner, click on Alert me to register and receive a weekly digest of any product information that has
+changed. For change details, review the revision history included in any revised document.
+12.2
+Support Resources
+TI E2E™support forums are an engineer's go-to source for fast, verified answers and design help — straight
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do
+not necessarily reflect TI's views; see TI's Terms of Use.
+12.3
+Trademarks
+E2E is a trademark of Texas Instruments.
+All other trademarks are the property of their respective owners.
+12.4
+Electrostatic Discharge Caution
+This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled with
+appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may be more
+susceptible to damage because very small parametric changes could cause the device not to meet its published specifications.
+12.5
+Glossary
+SLYZ022 — TI Glossary.
+This glossary lists and explains terms, acronyms, and definitions.
+13
+Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation
+
+PACKAGE OPTION ADDENDUM
+www.ti.com
+10-Apr-2026
+PACKAGING INFORMATION
+Orderable part number
+Status
+(1)
+Material type
+(2)
+Package | Pins
+Package qty | Carrier
+RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C)
+Part marking
+(6)
+TCA9546ADR
+Active
+Production
+SOIC (D) | 16
+2500 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+TCA9546A
+TCA9546ADR.B
+Active
+Production
+SOIC (D) | 16
+2500 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+TCA9546A
+TCA9546APWR
+Active
+Production
+TSSOP (PW) | 16
+2000 | LARGE T&R
+Yes
+NIPDAU | SN
+Level-1-260C-UNLIM
+-40 to 85
+PW546A
+TCA9546APWR.B
+Active
+Production
+TSSOP (PW) | 16
+2000 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+PW546A
+TCA9546APWRG4
+Active
+Production
+TSSOP (PW) | 16
+2000 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+PW546A
+TCA9546APWRG4.B
+Active
+Production
+TSSOP (PW) | 16
+2000 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+PW546A
+ 
+(1) Status:  For more details on status, see our product life cycle.
+ 
+(2) Material type:  When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+ 
+(3) RoHS values:  Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+ 
+(4) Lead finish/Ball material:  Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+ 
+(5) MSL rating/Peak reflow:  The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+ 
+(6) Part marking:  There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+ 
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+ 
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+ 
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+Addendum-Page 1
+
+PACKAGE OPTION ADDENDUM
+www.ti.com
+10-Apr-2026
+ 
+Addendum-Page 2
+
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+4-Oct-2026
+TAPE AND REEL INFORMATION
+Reel Width (W1)
+REEL DIMENSIONS
+A0
+B0
+K0
+W
+Dimension designed to accommodate the component length
+Dimension designed to accommodate the component thickness
+Overall width of the carrier tape
+Pitch between successive cavity centers
+Dimension designed to accommodate the component width
+TAPE DIMENSIONS
+K0
+ P1
+B0 W
+A0
+Cavity
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+Pocket Quadrants
+Sprocket Holes
+Q1
+Q1
+Q2
+Q2
+Q3
+Q3
+Q4
+Q4
+User Direction of Feed
+P1
+Reel
+Diameter
+ 
+*All dimensions are nominal
+Device
+Package
+Type
+Package
+Drawing
+Pins
+SPQ
+Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+TCA9546ADR
+SOIC
+D
+16
+2500
+330.0
+16.4
+6.5
+10.3
+2.1
+8.0
+16.0
+Q1
+TCA9546APWR
+TSSOP
+PW
+16
+2000
+330.0
+12.4
+6.9
+5.6
+1.6
+8.0
+12.0
+Q1
+TCA9546APWR
+TSSOP
+PW
+16
+2000
+330.0
+12.4
+6.9
+5.6
+1.6
+8.0
+12.0
+Q1
+TCA9546APWRG4
+TSSOP
+PW
+16
+2000
+330.0
+12.4
+6.9
+5.6
+1.6
+8.0
+12.0
+Q1
+Pack Materials-Page 1
+
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+4-Oct-2026
+TAPE AND REEL BOX DIMENSIONS
+Width (mm)
+W
+L
+H
+ 
+*All dimensions are nominal
+Device
+Package Type
+Package Drawing
+Pins
+SPQ
+Length (mm)
+Width (mm)
+Height (mm)
+TCA9546ADR
+SOIC
+D
+16
+2500
+353.0
+353.0
+32.0
+TCA9546APWR
+TSSOP
+PW
+16
+2000
+356.0
+356.0
+35.0
+TCA9546APWR
+TSSOP
+PW
+16
+2000
+353.0
+353.0
+32.0
+TCA9546APWRG4
+TSSOP
+PW
+16
+2000
+353.0
+353.0
+32.0
+Pack Materials-Page 2
+
+www.ti.com
+PACKAGE OUTLINE
+C
+14X 0.65
+2X
+4.55
+16X 0.30
+0.17
+6.6
+6.2 TYP
+1.2 MAX
+0.15
+0.05
+0.25
+GAGE PLANE
+0 -8
+4X (0 -12 )
+B
+4.5
+4.3
+NOTE 4
+A
+5.1
+4.9
+NOTE 3
+0.75
+0.50
+(0.15) TYP
+TSSOP - 1.2 mm max height
+PW0016A
+SMALL OUTLINE PACKAGE
+4220204/B   12/2023
+1
+8
+9
+16
+0.1
+C A B
+PIN 1 INDEX AREA
+SEE DETAIL  A
+0.1 C
+NOTES: 
+ 
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+    per ASME Y14.5M. 
+2. This drawing is subject to change without notice. 
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+    exceed 0.15 mm per side. 
+4. This dimension does not include interlead flash. Interlead flash shall not exceed 0.25 mm per side.
+5. Reference JEDEC registration MO-153.
+ 
+SEATING
+PLANE
+A  20
+DETAIL A
+TYPICAL
+SCALE  2.500
+
+www.ti.com
+EXAMPLE BOARD LAYOUT
+0.05 MAX
+ALL AROUND
+0.05 MIN
+ALL AROUND
+16X (1.5)
+16X (0.45)
+14X (0.65)
+(5.8)
+(R0.05) TYP
+TSSOP - 1.2 mm max height
+PW0016A
+SMALL OUTLINE PACKAGE
+4220204/B   12/2023
+NOTES: (continued)
+ 
+6. Publication IPC-7351 may have alternate designs. 
+7. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+ 
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE: 10X
+SYMM
+SYMM
+1
+8
+9
+16
+15.000
+METAL
+SOLDER MASK
+OPENING
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+OPENING
+EXPOSED METAL
+EXPOSED METAL
+SOLDER MASK DETAILS
+NON-SOLDER MASK
+DEFINED
+(PREFERRED)
+SOLDER MASK
+DEFINED
+
+www.ti.com
+EXAMPLE STENCIL DESIGN
+16X (1.5)
+16X (0.45)
+14X (0.65)
+(5.8)
+(R0.05) TYP
+TSSOP - 1.2 mm max height
+PW0016A
+SMALL OUTLINE PACKAGE
+4220204/B   12/2023
+NOTES: (continued)
+ 
+8. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+    design recommendations.   
+9. Board assembly site may have different recommendations for stencil design.
+ 
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+SCALE: 10X
+SYMM
+SYMM
+1
+8
+9
+16
+
+
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE 
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” 
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD 
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate 
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable 
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an 
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license 
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully 
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on 
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable 
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products 
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2026, Texas Instruments Incorporated
+Last updated 10/2025

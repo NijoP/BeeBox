@@ -1,0 +1,119 @@
+{
+  "success": true,
+  "result": {
+    "BQ24074RGTR": [
+      {
+        "uuid": "a113361897bf47368d2912842c826e38",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "BQ24074RGTR",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "BQ24074RGTR",
+        "supplierId": "C54313",
+        "symbolUuid": "fbfd04ccc95c46c9a5f69ec7c5a80229",
+        "footprintUuid": "746583501b324e5394da1d17319812e0",
+        "description": "The Chip Type:Charging IC Voltage - Supply:4.35V~10.2V Voltage - Supply:4.35V~10.2V Charge Current - Max:1.5A Charging Saturation Voltage:4.2V End-Off Voltage:- Type of Battery:Lithium Battery Number of Cells:1 Number of Cells:1 Operating Temperature:-40\u2103"
+      },
+      {
+        "uuid": "8d20aa9e2f20417894e40353d29a2b2c",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "BQ24074RGTRG4",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "BQ24074RGTRG4",
+        "supplierId": "C3682481",
+        "symbolUuid": "86ce40838a7a41a89118b161414809ce",
+        "footprintUuid": "aef49373a0b14551946e29ad597a8bb4",
+        "description": "The Chip Type:Charging IC Voltage - Supply:4.35V~10.5V Voltage - Supply:4.35V~10.5V Charge Current - Max:1.5A Charging Saturation Voltage:4.2V End-Off Voltage:- Type of Battery:Lithium Battery Number of Cells:1 Number of Cells:1 Operating Temperature:-40\u2103"
+      }
+    ],
+    "TPS26600RHFT": [
+      {
+        "uuid": "05a2e38c78e6497c916bf07f413714dc",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPS26600RHFT",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "TPS26600RHFT",
+        "supplierId": "C181406",
+        "symbolUuid": "9661b6ae1580408c8963e53874947176",
+        "footprintUuid": "07da38ca591247f98c163cbf8af732a6",
+        "description": ""
+      }
+    ],
+    "TPS2121RUXR": [
+      {
+        "uuid": "f20458bd9d904b3e9e3f95079a88e857",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPS2121RUXR",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "TPS2121RUXR",
+        "supplierId": "C485916",
+        "symbolUuid": "c8ada9cc34644568ac22aef9fa639ad2",
+        "footprintUuid": "2d401afccc644e18a2442ee0fd5efd47",
+        "description": ""
+      }
+    ],
+    "TPS62162DSGR": [
+      {
+        "uuid": "288178fe83b849058a8c0b140e5b3697",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPS62162DSGR",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "TPS62162DSGR",
+        "supplierId": "C40256",
+        "symbolUuid": "b3a30743008944aabd1173d680a18075",
+        "footprintUuid": "d1e0fd3b5229425588e8b38d4ca63611",
+        "description": "Function:Step-down type Voltage - Supply:3V~17V Voltage - Supply:3V~17V Output Voltage:3.3V Output Voltage:3.3V Output Current:1A Frequency - Switching:2.25MHz Frequency - Switching:2.25MHz Operating Temperature:-40\u2103~+125\u2103@(TJ) Operating Temperature:-40\u2103~"
+      }
+    ],
+    "TCA9546APWR": [
+      {
+        "uuid": "0897bfcf35c248acb0cb439de2775d0d",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TCA9546APWR",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "TCA9546APWR",
+        "supplierId": "C201653",
+        "symbolUuid": "989d293b68b34c9da0bfc380335be496",
+        "footprintUuid": "a11950ceac50438289ff689a35fd9574",
+        "description": "Type:Bus Switch Voltage Supply Source:Single Supply Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Number of lines:- Number of lines:- Current - Output Low(IOL):7mA Current - Output High(IOH):- Operating temperature:-40\u2103~+85\u2103 Operating temperatur"
+      },
+      {
+        "uuid": "6e774578c2bb45ba9eae88dfb07a44fc",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TCA9546APWR(UMW)",
+        "manufacturer": "UMW(\u53cb\u53f0\u534a\u5bfc\u4f53)",
+        "manufacturerId": "TCA9546APWR(UMW)",
+        "supplierId": "C42420613",
+        "symbolUuid": "e385dd3c29714b5b875efbda5f370df5",
+        "footprintUuid": "a11950ceac50438289ff689a35fd9574",
+        "description": "Type:- Voltage Supply Source:- Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Number of lines:- Number of lines:- Current - Output Low(IOL):9.7mA Current - Output High(IOH):- Operating temperature:-40\u2103~+85\u2103 Operating temperature:-40\u2103~+85\u2103 Propaga"
+      }
+    ],
+    "TPS22919DCKR": [
+      {
+        "uuid": "8a1ce68047294bee82c2cb647ddd4cbb",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPS22919DCKR",
+        "manufacturer": "TI(\u5fb7\u5dde\u4eea\u5668)",
+        "manufacturerId": "TPS22919DCKR",
+        "supplierId": "C2149796",
+        "symbolUuid": "5a4247e4a9a845c3a0b7a2646ad74bdb",
+        "footprintUuid": "c70deea011bd48e885ea06ea566c316d",
+        "description": "Type:Load Switch Number of Channels:1 Control Input Logic:Active High Voltage - Supply:1.6V~5.5V Voltage - Supply:1.6V~5.5V Maximum Continuous Current:1.5A RDS(on):89m\u03a9 Features:Short-Circuit  Protection\uff1bOvercurrent Protection\uff1bOutput discharge function\uff1bSo"
+      }
+    ],
+    "ESP32-S3-WROOM-1-N16R8": [
+      {
+        "uuid": "d65778533f464ec4bc3c3732bd686263",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ESP32-S3-WROOM-1-N16R8",
+        "manufacturer": "ESPRESSIF(\u4e50\u946b)",
+        "manufacturerId": "ESP32-S3-WROOM-1-N16R8",
+        "supplierId": "C2913202",
+        "symbolUuid": "d219b3e194dd4186820eec0b92627f5c",
+        "footprintUuid": "dce0099a18df49d3b27bb46b31b62ebf",
+        "description": "Utilized IC / Part:ESP32-S3R8 Interface Type:I2C\uff1bGPIO\uff1bUART\uff1bSPI\uff1bUSB\uff1bI2S Frequency:2.4GHz Antenna Type:On-board PCB Antenna Output Power:20.5dBm Output Power:20.5dBm Voltage - Supply:3V~3.6V Voltage - Supply:3V~3.6V Receive  Current:95mA Send  Current:355mA"
+      }
+    ]
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

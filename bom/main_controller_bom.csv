@@ -1,16 +1,16 @@
 ref,mpn,function,qty_pilot,qty_rfq_low,qty_rfq_high,board,population,status
 U1,Espressif ESP32-S3-WROOM-1-N16R8,MCU/Wi-Fi/BLE,1,5,10,main,Yes,baseline
 U2,Texas Instruments BQ24074RGTR,1S charger/power path,1,5,10,main,Yes,baseline
-U3,Texas Instruments TPS62162DSG,3V3 buck,1,5,10,main,Yes,baseline
-U4,Texas Instruments TCA9546APWR,I2C branch switch,1,5,10,main,Yes,baseline
+U3,Texas Instruments TPS62162DSGR,fixed 3V3 buck; FB to AGND,1,5,10,main,Yes,reviewed identity; system verification pending
+U4,Texas Instruments TCA9546APWR,I2C branch switch,1,5,10,main,Yes,reviewed identity; system verification pending
 U5,Analog Devices MAX17048G+T10,fuel gauge,1,5,10,main,DNI/option,DNI/option
 U6,Texas Instruments TPS26600RHFT,6V input eFuse,1,5,10,main,Yes,baseline
 U11,Texas Instruments TPS2121RUXR,USB/external source power mux,1,5,10,main,Yes,baseline
 U12,Texas Instruments SN74LVC1G3157DBVR,I2S microphone data source switch,1,5,10,main,Yes,baseline
-Q1,Texas Instruments TPS22919DCK,VDOCK load switch,1,5,10,main,Yes,baseline
-D6,STMicroelectronics USBLC6-2SC6,USB data ESD,1,5,10,main,Yes,baseline
+Q1,Texas Instruments TPS22919DCKR,VDOCK load switch; QOD to VOUT,1,5,10,main,Yes,reviewed identity; system verification pending
+D6,STMicroelectronics USBLC6-2SC6,USB data flow-through ESD,1,5,10,main,Yes,reviewed identity; system verification pending
 D5,Texas Instruments TPD4E05U06,dock ESD,1,5,10,main,Yes,baseline
-J1,GCT TYPE-C-31-M-12,USB-C receptacle (reference baseline),1,5,10,main,Yes,baseline
+J1,HRO Electronics TYPE-C-31-M-12,USB-C USB2.0 sink receptacle,1,5,10,main,Yes,reviewed identity; system verification pending
 J2,Hirose FH34SRJ-12S-0.5SH(50),FPC ZIF,1,5,10,main,Yes,baseline
 J3,Mill-Max 0906-0-15-20-75-14-11-0 x12,pogo contacts,12,60,120,dock,Yes,baseline
 J4,JST S2B-PH-SM4-TB,battery connector,1,5,10,main,Yes,baseline
@@ -25,16 +25,14 @@ J-RF,TBD RF expansion header,SPI/UART expansion,1,5,10,main,DNI,DNI
 U-IMU,TDK ICM-42688-P,optional external/controller IMU,1,5,10,main,DNI,DNI
 R1-R3,Generic/Indian AVL 1.00k 1%,LED resistors,1,5,10,main,Yes,baseline
 R4-R5,Generic/Indian AVL 2.20k 1%,I2C pull-ups,1,5,10,main,Yes,baseline
-R6-R7,Generic/Indian AVL 5.10k 1%,USB-C CC pull-downs,1,5,10,main,Yes,baseline
-C21,Generic/Indian AVL 10uF X7R 10V,USB VBUS bulk capacitor,1,5,10,main,Yes,baseline
-C22,Generic/Indian AVL 10nF X7R 25V,USB VBUS high-frequency bypass,1,5,10,main,Yes,baseline
+R6-R7,UNI-ROYAL 0603WAF5101T5E,5.1k 1% USB-C CC pull-downs,1,5,10,main,Yes,reviewed identity; system verification pending
+C21,Samsung Electro-Mechanics CL21B475KOFNNNE,4.7uF X7R 16V USB VBUS bulk; revised for inrush budget,1,5,10,main,Yes,reviewed identity; system verification pending
+C22,Samsung Electro-Mechanics CL10B103KB8NNNC,10nF X7R 50V USB VBUS high-frequency bypass,1,5,10,main,Yes,reviewed identity; system verification pending
 R8,Generic/Indian AVL 1.0M 1%,battery divider high,1,5,10,main,Yes,baseline
 R9,Generic/Indian AVL 330k 1%,battery divider low,1,5,10,main,Yes,baseline
 R11,Generic/Indian AVL 1.78k 1%,BQ24074 ISET,1,5,10,main,Yes,baseline
 R12,Generic/Indian AVL 1.54k 1%,BQ24074 ILIM,1,5,10,main,Yes,baseline
 R13,Generic/Indian AVL 46.4k 1%,BQ24074 timer,1,5,10,main,Yes,baseline
-R14,Generic/Indian AVL 316k 1%,TPS62162 FB upper,1,5,10,main,Yes,baseline
-R15,Generic/Indian AVL 100k 1%,TPS62162 FB lower,1,5,10,main,Yes,baseline
 C1-C12,Generic/Indian AVL 100nF X7R 16V,IC decoupling,1,5,10,main,Yes,baseline
 C13-C17,Generic/Indian AVL 1uF X7R 10V,local rail support,1,5,10,main,Yes,baseline
 C18-C20,Generic/Indian AVL 22uF X7R 10V,rail bulk/charger OUT,1,5,10,main,Yes,baseline

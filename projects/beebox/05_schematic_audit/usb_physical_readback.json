@@ -1,0 +1,695 @@
+{
+  "ok": true,
+  "v": {
+    "projectUuid": "d84c4be0ef2e467fa17955faa23c6314",
+    "pageUuid": "d5e34c82cc3ba89c",
+    "components": [
+      {
+        "id": "54da7c3541404b81",
+        "type": "part",
+        "ref": "J1",
+        "name": "TYPE-C-31-M-12",
+        "mpn": "TYPE-C-31-M-12",
+        "manufacturer": "\u97e9\u56fd\u97e9\u8363",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e4a06c96ed8ff60d",
+          "name": "TYPE-C-31-M-12"
+        },
+        "symbol": {
+          "uuid": "5c1d78c57b2cfbf1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TYPE-C-31-M-12"
+        },
+        "footprint": {
+          "uuid": "988b3b1b1574c8b9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "USB-C_SMD-TYPE-C-31-M-12_1"
+        },
+        "x": 195,
+        "y": 3000,
+        "pins": [
+          {
+            "number": "A1B12",
+            "name": "GND",
+            "x": 230,
+            "y": 3055,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "A4B9",
+            "name": "VBUS",
+            "x": 230,
+            "y": 3045,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "B8",
+            "name": "SBU2",
+            "x": 230,
+            "y": 3035,
+            "rotation": 0,
+            "noConnected": true
+          },
+          {
+            "number": "A5",
+            "name": "CC1",
+            "x": 230,
+            "y": 3025,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "B7",
+            "name": "DN2",
+            "x": 230,
+            "y": 3015,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "A6",
+            "name": "DP1",
+            "x": 230,
+            "y": 3005,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "A7",
+            "name": "DN1",
+            "x": 230,
+            "y": 2995,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "B6",
+            "name": "DP2",
+            "x": 230,
+            "y": 2985,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "A8",
+            "name": "SBU1",
+            "x": 230,
+            "y": 2975,
+            "rotation": 0,
+            "noConnected": true
+          },
+          {
+            "number": "B5",
+            "name": "CC2",
+            "x": 230,
+            "y": 2965,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "B4A9",
+            "name": "VBUS",
+            "x": 230,
+            "y": 2955,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "B1A12",
+            "name": "GND",
+            "x": 230,
+            "y": 2945,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "EH",
+            "x": 160,
+            "y": 2975,
+            "rotation": 180,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "EH",
+            "x": 160,
+            "y": 2965,
+            "rotation": 180,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "EH",
+            "x": 160,
+            "y": 2955,
+            "rotation": 180,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "EH",
+            "x": 160,
+            "y": 2945,
+            "rotation": 180,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "75ab5d349feb27ea",
+        "type": "part",
+        "ref": "D6",
+        "name": "USBLC6-2SC6_C7519",
+        "mpn": "USBLC6-2SC6",
+        "manufacturer": "ST(\u610f\u6cd5\u534a\u5bfc\u4f53)",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e038885bbe4d4fd8",
+          "name": "USBLC6-2SC6_C7519"
+        },
+        "symbol": {
+          "uuid": "f4f2ec63db53f36d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "USBLC6-2SC6"
+        },
+        "footprint": {
+          "uuid": "5bb28dece81db1e0",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL"
+        },
+        "x": 635,
+        "y": 3000,
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 570,
+            "y": 3030,
+            "rotation": 180,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 570,
+            "y": 3000,
+            "rotation": 180,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "3",
+            "x": 570,
+            "y": 2970,
+            "rotation": 180,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "4",
+            "x": 700,
+            "y": 2970,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "5",
+            "x": 700,
+            "y": 3000,
+            "rotation": 0,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "6",
+            "x": 700,
+            "y": 3030,
+            "rotation": 0,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "93f56bcc982aef6d",
+        "type": "part",
+        "ref": "R6",
+        "name": "5.1k",
+        "mpn": "0603WAF5101T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "870f501880e54ecd",
+          "name": "0603WAF5101T5E"
+        },
+        "symbol": {
+          "uuid": "9b2a66a24639788d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF5101T5E"
+        },
+        "footprint": {
+          "uuid": "40e4b5bdc72ea727",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "x": 330,
+        "y": 3160,
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 330,
+            "y": 3140,
+            "rotation": 270,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 330,
+            "y": 3180,
+            "rotation": 90,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "e6095b9cc28556a0",
+        "type": "part",
+        "ref": "R7",
+        "name": "5.1k",
+        "mpn": "0603WAF5101T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "870f501880e54ecd",
+          "name": "0603WAF5101T5E"
+        },
+        "symbol": {
+          "uuid": "9b2a66a24639788d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF5101T5E"
+        },
+        "footprint": {
+          "uuid": "40e4b5bdc72ea727",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "x": 400,
+        "y": 2860,
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 400,
+            "y": 2840,
+            "rotation": 270,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 400,
+            "y": 2880,
+            "rotation": 90,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "04674d300ecc0fe3",
+        "type": "part",
+        "ref": "C22",
+        "name": "10nF",
+        "mpn": "CL10B103KB8NNNC",
+        "manufacturer": "SAMSUNG(\u4e09\u661f)",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "468835573c65a84d",
+          "name": "CL10B103KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "390981570ceb0ef1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B103KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "2bdfc42b0da7d550",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "x": 325,
+        "y": 2745,
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 325,
+            "y": 2760,
+            "rotation": 90,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 325,
+            "y": 2730,
+            "rotation": 270,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "f0e28100733d4b5b",
+        "type": "part",
+        "ref": "C21",
+        "name": "4.7uF",
+        "mpn": "CL21B475KOFNNNE",
+        "manufacturer": "SAMSUNG(\u4e09\u661f)",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "5ca7c3c915cd62b2",
+          "name": "CL21B475KOFNNNE"
+        },
+        "symbol": {
+          "uuid": "3dce064272190efb",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL21B475KOFNNNE"
+        },
+        "footprint": {
+          "uuid": "5d07ddf7d59ace73",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0805"
+        },
+        "x": 195,
+        "y": 2745,
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 195,
+            "y": 2760,
+            "rotation": 90,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 195,
+            "y": 2730,
+            "rotation": 270,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "80ce3d8a54da0af7",
+        "type": "sheet",
+        "name": "Honeybee Research Sensor Platform",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "50a78bc34fc6efca",
+          "name": "Drawing-Symbol_A0"
+        },
+        "symbol": {
+          "uuid": "6214d101bbdad73f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "Drawing-Symbol_A0"
+        },
+        "x": 0,
+        "y": 0,
+        "pins": []
+      }
+    ],
+    "wires": [
+      {
+        "id": "5d61b9dfeafb9edb",
+        "line": [
+          570,
+          3030,
+          270,
+          3030,
+          270,
+          3030,
+          270,
+          3005,
+          270,
+          3005,
+          230,
+          3005,
+          270,
+          2985,
+          270,
+          3005,
+          270,
+          2985,
+          230,
+          2985
+        ],
+        "net": "USB_DP_CONN"
+      },
+      {
+        "id": "1a8e8e17b31eb27e",
+        "line": [
+          570,
+          2970,
+          295,
+          2970,
+          295,
+          2970,
+          295,
+          2995,
+          295,
+          2995,
+          230,
+          2995,
+          295,
+          3015,
+          295,
+          2995,
+          295,
+          3015,
+          230,
+          3015
+        ],
+        "net": "USB_DN_CONN"
+      },
+      {
+        "id": "e9a47c8d86534b52",
+        "line": [
+          770,
+          3030,
+          700,
+          3030
+        ],
+        "net": "USB_D_P"
+      },
+      {
+        "id": "71199dddbffa1ac6",
+        "line": [
+          770,
+          2970,
+          700,
+          2970
+        ],
+        "net": "USB_D_N"
+      },
+      {
+        "id": "ca5d86bce3cd55f6",
+        "line": [
+          330,
+          3180,
+          245,
+          3180,
+          245,
+          3180,
+          245,
+          3025,
+          245,
+          3025,
+          230,
+          3025
+        ],
+        "net": "USB_CC1"
+      },
+      {
+        "id": "719d1c5be03c265b",
+        "line": [
+          330,
+          3105,
+          330,
+          3140
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "d09c64840aefe45d",
+        "line": [
+          400,
+          2880,
+          245,
+          2880,
+          245,
+          2880,
+          245,
+          2965,
+          245,
+          2965,
+          230,
+          2965
+        ],
+        "net": "USB_CC2"
+      },
+      {
+        "id": "e5169d205cda59d8",
+        "line": [
+          400,
+          2805,
+          400,
+          2840
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "638a6a0ca74aeec3",
+        "line": [
+          340,
+          3045,
+          230,
+          3045
+        ],
+        "net": "VBUS_USB"
+      },
+      {
+        "id": "9c23d2d74d3efac2",
+        "line": [
+          340,
+          2955,
+          230,
+          2955
+        ],
+        "net": "VBUS_USB"
+      },
+      {
+        "id": "ec1b9ea448460651",
+        "line": [
+          340,
+          3055,
+          230,
+          3055
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "0787bf658ccc130c",
+        "line": [
+          340,
+          2945,
+          230,
+          2945
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "fc272aedb4bb9956",
+        "line": [
+          90,
+          2945,
+          160,
+          2945
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "30239fb2fc2e2a8b",
+        "line": [
+          90,
+          2955,
+          160,
+          2955
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "855033ca6aa3e475",
+        "line": [
+          90,
+          2965,
+          160,
+          2965
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "61f372024d8c1361",
+        "line": [
+          90,
+          2975,
+          160,
+          2975
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "debf66ba43b2dcf6",
+        "line": [
+          530,
+          3000,
+          570,
+          3000
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "331a6f449f253a98",
+        "line": [
+          740,
+          3000,
+          700,
+          3000
+        ],
+        "net": "VBUS_USB"
+      },
+      {
+        "id": "60def3bea7a8680a",
+        "line": [
+          325,
+          2730,
+          325,
+          2705,
+          325,
+          2705,
+          195,
+          2705,
+          195,
+          2705,
+          195,
+          2730
+        ],
+        "net": "GND"
+      },
+      {
+        "id": "29cbcc3017a8200f",
+        "line": [
+          325,
+          2760,
+          325,
+          2785,
+          325,
+          2785,
+          195,
+          2785,
+          195,
+          2785,
+          195,
+          2760
+        ],
+        "net": "VBUS_USB"
+      }
+    ]
+  }
+}

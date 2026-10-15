@@ -1,0 +1,25 @@
+{
+  "status": "OFFICIAL_PACKAGE_DOWNLOADED_NOT_INSTALLED",
+  "retrievedFromOfficialMarketplaceItem": "https://jlc-ext.com/item/oshwhub/run-api-gateway",
+  "packageUrlPublishedByMarketplace": "https://image.lceda.cn/extensions/files/c08acf892ea644fd818031014da102b9.eext",
+  "localPath": "C:/Users/HP/Downloads/run-api-gateway-official.eext",
+  "sha256": "97500fec6c9e85fd9c15ff76dbc33f235669a213d808ada2420f86fa2abef017",
+  "extension": {
+    "name": "run-api-gateway",
+    "displayName": "Run API Gateway",
+    "uuid": "bded3619ce6a4e60a35c7f4a84739702",
+    "publisher": "EasyEDA",
+    "version": "1.0.6",
+    "engine": "~3.2.0",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/easyeda/eext-run-api-gateway"
+  },
+  "compatibilityConclusion": "The official extension manifest explicitly supports EasyEDA Pro 3.2.x; desktop 3.2.149 is within the declared engine range. Availability of createNetLabel remains a live-introspection gate after connection.",
+  "requiredUiAction": "In EasyEDA Pro Extension Manager import the local .eext, enable Allow External Interaction and Show in Top Menu, then choose API Gateway > Reconnect.",
+  "bridgeHealthAtVerification": {
+    "service": "easyeda-bridge",
+    "port": 49620,
+    "edaConnected": false,
+    "edaWindowCount": 0
+  }
+}
