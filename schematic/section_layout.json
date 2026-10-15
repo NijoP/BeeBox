@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "coordinateUnits": "EasyEDA schematic units (10 mil)",
+  "releaseStatus": "LAYOUT_PLAN_VERIFIED_AGAINST_LIVE_A0_METADATA; PLACEMENT_BLOCKED_BY_ELECTRICAL_GATES",
+  "mainController": {
+    "projectUuid": "d84c4be0ef2e467fa17955faa23c6314",
+    "schematicUuid": "449f9b2562dabacc",
+    "pageUuid": "d5e34c82cc3ba89c",
+    "pageName": "P1",
+    "boardName": "Board1",
+    "pageSize": "A0 landscape",
+    "width": 4681.102362204724,
+    "height": 3311.023622047244,
+    "usableBoundary": {"left": 100, "top": 100, "right": 4550, "bottom": 3050},
+    "titleBlockExclusion": {"left": 3650, "top": 2700, "right": 4681.102362204724, "bottom": 3311.023622047244},
+    "sections": [
+      {"phase": 1, "id": "POWER_USB", "label": "USB, external input, mux, charger and battery", "x": 150, "y": 180, "width": 1900, "height": 850, "placementStyle": "compact functional circuit; no decorative frame"},
+      {"phase": 2, "id": "REGULATOR_MCU", "label": "3V3 regulator, ESP32-S3, boot/reset and debug", "x": 2150, "y": 180, "width": 2350, "height": 850, "placementStyle": "regulator left of MCU; local support parts at served pins"},
+      {"phase": 3, "id": "SENSORS_AUDIO", "label": "External SHT45, microphone and audio selector", "x": 150, "y": 1150, "width": 1350, "height": 750, "placementStyle": "sensor and microphone branches grouped by interface"},
+      {"phase": 4, "id": "STORAGE_RF", "label": "DNI storage and RF expansion", "x": 1600, "y": 1150, "width": 1250, "height": 750, "placementStyle": "DNI options clearly marked"},
+      {"phase": 5, "id": "DOCKING", "label": "Twelve-contact dock and protection", "x": 2950, "y": 1150, "width": 1550, "height": 750, "placementStyle": "twelve individual contacts; ESD at interface"},
+      {"phase": 7, "id": "STATUS_TEST", "label": "Status LEDs, programming and TP1-TP12", "x": 150, "y": 2100, "width": 3300, "height": 750, "placementStyle": "signal-flow rows; avoid title block"}
+    ]
+  },
+  "universalSensorFpc": {
+    "requiredBoardName": "Universal Sensor FPC",
+    "requiredPageName": "P2_FPC",
+    "currentPageUuid": null,
+    "status": "BLOCKED_PAGE_NOT_CREATED_AND_BOARD_ASSIGNMENT_NOT_VERIFIED",
+    "sections": [
+      {"phase": 6, "id": "FPC_CONNECTOR_SENSORS", "label": "FPC connector, SHT45, ICS-43434, ICM-42688-P and SGP40 DNI", "x": 150, "y": 180, "width": 2500, "height": 1200, "placementStyle": "separate logical and manufacturing assignment from controller"}
+    ]
+  },
+  "visualRules": [
+    "No decorative section rectangles or giant empty frames",
+    "USB connector at the left edge of its circuit and D6 adjacent to the data path",
+    "CC pull-downs and VBUS capacitors adjacent to J1",
+    "Support passives adjacent to the IC pins they serve",
+    "Use short local wires and genuine net ports only after electrical readback proof",
+    "GUI move operations require a fresh physical-pin and native-net audit"
+  ]
+}

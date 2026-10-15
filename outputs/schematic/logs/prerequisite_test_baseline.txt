@@ -1,0 +1,284 @@
+{
+  "status": "BLOCKED",
+  "scope": "PRE-MUTATION_CAPTURE_GATE",
+  "counts": {
+    "component_rows": 45,
+    "pin_to_pin_rows": 61,
+    "canonical_components": 15,
+    "verified_devices": 3,
+    "verified_passives": 4
+  },
+  "errors": [
+    {
+      "missing_verified_device_records": [
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "J2",
+        "J3",
+        "MIC1",
+        "MIC2",
+        "Q1",
+        "U1",
+        "U11",
+        "U12",
+        "U2",
+        "U3",
+        "U4",
+        "U6",
+        "U7",
+        "U8",
+        "U9"
+      ]
+    },
+    {
+      "missing_verified_passive_records": [
+        "C1",
+        "C10",
+        "C11",
+        "C12",
+        "C2",
+        "C3",
+        "L1",
+        "R1",
+        "R11",
+        "R12",
+        "R13",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ]
+    },
+    {
+      "missing_architecture_definition": "J4 is a 2-contact S2B-PH connector but TS/NTC is required and no approved thermal-sense connection is defined"
+    },
+    {
+      "missing_architecture_definition": "External ~6V input has no approved connector/TVS/threshold-divider component set"
+    },
+    {
+      "missing_architecture_definition": "TPS2121 PR1/CP2/OV1/OV2/ILM/SS networks and values are not fully specified"
+    },
+    {
+      "missing_architecture_definition": "TPS26600 UVLO/OVP/ILIM/dVdT/MODE/SHDN support values are not fully specified"
+    },
+    {
+      "missing_architecture_definition": "TPS62162 fixed-3V3 output cannot regulate at 3.3V over the full depleted 1S battery range"
+    },
+    {
+      "missing_architecture_definition": "Powered-off FPC signal isolation/back-power prevention is not resolved"
+    }
+  ],
+  "warnings": [],
+  "prohibition": "Do not execute sections 01-08 while status is BLOCKED; doing so would create arbitrary or incomplete circuitry."
+}
+{
+  "scope": "USB_CHECKPOINT_ONLY_NOT_COMPLETE_POWER_SECTION",
+  "electrical_component_count": 6,
+  "native_pin_count": 30,
+  "intentional_NC_count": 2,
+  "native_netlist_and_geometric_contact_parity": "PASS",
+  "errors": [],
+  "native_ERC": "WARNINGS_NOT_PASS",
+  "native_ERC_severity_counts": {
+    "warn": 5
+  },
+  "library_electrical_pin_types": "FAIL_REPAIR_REQUIRED",
+  "pin_type_mismatches": [
+    {
+      "ref": "J1",
+      "pin": "A1B12",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "A4B9",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "B8",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "A5",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "B7",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "A6",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "A7",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "B6",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "A8",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "B5",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "B4A9",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "B1A12",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "4",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "3",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "2",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "1",
+      "actual": "Undefined",
+      "expected": "Passive"
+    },
+    {
+      "ref": "D6",
+      "pin": "1",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "D6",
+      "pin": "2",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "D6",
+      "pin": "3",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "D6",
+      "pin": "4",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "D6",
+      "pin": "5",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "D6",
+      "pin": "6",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "R6",
+      "pin": "2",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "R6",
+      "pin": "1",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "R7",
+      "pin": "2",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "R7",
+      "pin": "1",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "C22",
+      "pin": "1",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "C22",
+      "pin": "2",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "C21",
+      "pin": "1",
+      "actual": "IN",
+      "expected": "Passive"
+    },
+    {
+      "ref": "C21",
+      "pin": "2",
+      "actual": "IN",
+      "expected": "Passive"
+    }
+  ],
+  "whole_schematic_release": "BLOCKED",
+  "limitations": [
+    "No inferred electrical approval from component counts or script completion",
+    "Only six USB subcircuit components are covered",
+    "Full USB inrush budget and source-current/firmware policy require complete power section",
+    "USB-PD negotiation is not implemented by this checkpoint",
+    "Aggregate native warnings lack rule/pin detail in the installed 3.2.206 client",
+    "Geometric wire crossings alone are not treated as junctions; actual native pin nets are compared independently"
+  ],
+  "native_netlist_sha256": "154145856d7aa5f70961e9c44247367ba0bf92938f1867afa87ec5bd01301dd5"
+}
+PASS: missing reviewed passive and intra-run duplicate references stop before mutation
+PASS: pinned UUID retrieval, identity checks, mandatory physical maps, pin inventory guards, ID-based updates
+PASS: genuine electrical net-port is placed on the short-stub endpoint; conflicts and unsupported APIs fail closed
+PASS: inverted capacitor geometry stops before any readability/wire mutation

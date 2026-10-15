@@ -1,0 +1,71 @@
+{
+  "success": true,
+  "result": {
+    "LTST-C193KRKT-5A": [
+      {
+        "uuid": "4a55a377e81146438a03d647082e57fe",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "LTST-C193KRKT-5A",
+        "manufacturer": "LITEON(\u5149\u5b9d)",
+        "manufacturerId": "LTST-C193KRKT-5A",
+        "supplierId": "C157741",
+        "symbolUuid": "1c878d2f016347bfb0c2d24182cc9e3b",
+        "footprintUuid": "ab8fcad6728e4197a69081eb9195186e",
+        "description": "Lamp Holder Type:- Illumination Color:Red Voltage - Forward(Vf):2V Voltage - Forward(Vf):2V Power(Watts):50mW Test Current:20mA Wavelength - Dominant:631nm Wavelength - Dominant:631nm Peak Wavelength:639nm Peak Wavelength:639nm Diode Configuration:Discret"
+      }
+    ],
+    "LTST-C193KGKT-5A": [
+      {
+        "uuid": "3af2bbc946074e28952bfb24ed145297",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "LTST-C193KGKT-5A",
+        "manufacturer": "LITEON(\u5149\u5b9d)",
+        "manufacturerId": "LTST-C193KGKT-5A",
+        "supplierId": "C125102",
+        "symbolUuid": "2748a8bb2bb2488f8bb70afabcc47ccb",
+        "footprintUuid": "ab8fcad6728e4197a69081eb9195186e",
+        "description": "Lamp Holder Type:- Illumination Color:Yellow Green Voltage - Forward(Vf):2V Voltage - Forward(Vf):2V Power(Watts):75mW Forward Current:5mA Wavelength - Dominant:567.5nm~576.5nm Wavelength - Dominant:567.5nm~576.5nm Peak Wavelength:574nm Diode Configuratio"
+      }
+    ],
+    "LTST-C193KBKT-5A": [],
+    "MF-MSMF050-2": [
+      {
+        "uuid": "04225af78e114371a62e9643207f607a",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MF-MSMF050-2",
+        "manufacturer": "BOURNS",
+        "manufacturerId": "MF-MSMF050-2",
+        "supplierId": "C17313",
+        "symbolUuid": "5c5c4122a62c442eabb53da634af56b8",
+        "footprintUuid": "6b4c4e1add6246e08a84ef66416abda1",
+        "description": "Voltage - Max:15V Current - Max:100A Hold Current:500mA Trip Current:1A Power Dissipation:800mW Resistance - Initial (Ri) (Min):150m\u03a9 Resistance - Post Trip (R1) (Max):1\u03a9 Time to Trip(Max):150ms Operating Temperature:-40\u2103~+85\u2103 Operating Temperature:-40\u2103~+"
+      },
+      {
+        "uuid": "a2a245c306df4a9eb8904c59f1afd20c",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MF-MSMF050-2500MA",
+        "manufacturer": "",
+        "manufacturerId": "MF-MSMF050-2500MA",
+        "supplierId": "C3040235",
+        "symbolUuid": "bd0d7b9af5c441c3b593183fa6b3fd7a",
+        "footprintUuid": "9af1693ff666470f93a7b3476fc72497",
+        "description": ""
+      }
+    ],
+    "0906-0-15-20-75-14-11-0": [],
+    "MAX17048G+T10": [
+      {
+        "uuid": "c5501ae7c06a4077bb589b1bac78f492",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MAX17048G+T10",
+        "manufacturer": "ADI(\u4e9a\u5fb7\u8bfa)/MAXIM(\u7f8e\u4fe1)",
+        "manufacturerId": "MAX17048G+T10",
+        "supplierId": "C2682616",
+        "symbolUuid": "0a9e10662cac419e9768cd4f508399d7",
+        "footprintUuid": "c8d0e2b6a601473896f790eadc7fa2cc",
+        "description": "The Chip Type:Monitoring IC Voltage - Supply:2.5V~4.5V Voltage - Supply:2.5V~4.5V Charge Current - Max:- Charging Saturation Voltage:- End-Off Voltage:- Type of Battery:Lithium Battery Number of Cells:1 Number of Cells:1 Operating Temperature:-40\u2103~+85\u2103 Op"
+      }
+    ]
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

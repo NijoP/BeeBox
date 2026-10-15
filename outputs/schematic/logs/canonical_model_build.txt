@@ -1,0 +1,7 @@
+{
+  "parts": 88,
+  "physicalPins": 292,
+  "netMembershipRows": 244,
+  "verifiedLibraryParts": 7,
+  "blockedLibraryParts": 62
+}
