@@ -111,7 +111,7 @@ BQ24074RGTR, TPS26600RHFT, TPS2121RUXR, TPS62162DSGR, TCA9546APWR, TPS22919DCKR 
 - Existing failed/intermediate exports are in `projects/beebox/05_schematic_audit/`.
 - The prior real EasyEDA A0 USB-only checkpoint is retained explicitly as `outputs/schematic/prior_usb_checkpoint_NOT_FULL_PHASE01.pdf` with rendered inspection image `outputs/schematic/prior_usb_checkpoint_NOT_FULL_PHASE01.png`. Its filename prevents confusing it with a completed power phase.
 
-The repository's own visual audit states that both reference PDFs are sparse and are not clean engineering references. Only local symbol/text conventions and compact circuit motifs may be reused. No new final EasyEDA PDF was exported because there is no electrically defensible complete circuit to export. GUI placement cleanup was therefore **NOT TESTED** and would be inappropriate at this gate.
+The repository's own visual audit states that both reference PDFs are sparse and are not clean engineering references. Direct inspection of the retained USB checkpoint rendering also shows a small USB block in the upper-left of an otherwise almost empty A0 page; it is a **visual FAIL** for a completed phase even though the local USB grouping is readable. Only local symbol/text conventions and compact circuit motifs may be reused. No new final EasyEDA PDF was exported because there is no electrically defensible complete circuit to export. GUI placement cleanup was therefore **NOT TESTED** and would be inappropriate at this gate.
 
 ## Verification status
 
@@ -141,6 +141,10 @@ node tools/test_usb_readability.cjs
 
 Through the bridge, execute `easyeda_scripts/BeeBox_Master_Generator.js` first. It must return build ID `BEEBOX-MASTER-20261015-R1`. Until all listed blockers are closed it must also return `BLOCKED_NO_MUTATION` and `mutationCount: 0`. Use `BeeBox_Master_Verification.js` only as readback; reaching its final line is not a PASS.
 
+## Independent review
+
+A context-isolated review using a different model family found no false claims, unsafe EasyEDA mutation path, schema gap or contradictory pin/net assertion in the reviewed canonical-model/master-script scope. The review was consistency-focused, not electrical functional validation. It reviewed an earlier generated count snapshot (88 parts/62 blocked); subsequent parent refinements added provisional Q2 and exact U7/U8/D5 suffixes, producing the current tested count of 89 parts/59 blocked without changing the fail-closed result.
+
 ## Honest completion statement
 
-This work completes the repository/Git inspection, reference identification, bridge/project/page verification, pre-mutation backup, source audit, canonical-model foundation, A0 layout plan and fail-closed master automation architecture. It does **not** complete the electrical schematic, final PDF, ERC, GitHub pull request release or manufacturing package because the cited engineering inputs are missing or contradictory.
+This work completes the repository/Git inspection, reference identification, bridge/project/page verification, pre-mutation backup, source audit, canonical-model foundation, A0 layout plan, labeled prior PDF evidence and fail-closed master automation architecture. It does **not** complete the electrical schematic, final PDF, ERC or manufacturing package because the cited engineering inputs are missing or contradictory. The feature branch is published and draft PR #1 is open specifically as a blocked/WIP review package; it must not be merged as a completed schematic release.
