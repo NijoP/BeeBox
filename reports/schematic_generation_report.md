@@ -109,6 +109,7 @@ BQ24074RGTR, TPS26600RHFT, TPS2121RUXR, TPS62162DSGR, TCA9546APWR, TPS22919DCKR 
 - Repository rendering: `projects/beebox/03_easyeda_init/reference_pdf_1.png`.
 - Failed generated example: `C:/Users/HP/Downloads/SCH_Schematic1_2026-10-12 (4).pdf`.
 - Existing failed/intermediate exports are in `projects/beebox/05_schematic_audit/`.
+- The prior real EasyEDA A0 USB-only checkpoint is retained explicitly as `outputs/schematic/prior_usb_checkpoint_NOT_FULL_PHASE01.pdf` with rendered inspection image `outputs/schematic/prior_usb_checkpoint_NOT_FULL_PHASE01.png`. Its filename prevents confusing it with a completed power phase.
 
 The repository's own visual audit states that both reference PDFs are sparse and are not clean engineering references. Only local symbol/text conventions and compact circuit motifs may be reused. No new final EasyEDA PDF was exported because there is no electrically defensible complete circuit to export. GUI placement cleanup was therefore **NOT TESTED** and would be inappropriate at this gate.
 
