@@ -78,6 +78,13 @@ def exact_candidate(mpn: str, manufacturer: str):
 
 
 row_by_ref = {row["ref"]: row for row in component_rows if "-" not in row["ref"] or row["ref"] in {"J-SD", "J-RF", "U-IMU"}}
+# Exact suffixes already established by reviewed manufacturer/library evidence.
+for ref, exact_mpn in {"U7":"SHT45-AD1B-R2", "U8":"SHT45-AD1B-R2", "D5":"TPD4E05U06DQAR"}.items():
+    row_by_ref[ref] = {**row_by_ref[ref], "mpn": exact_mpn}
+# Q2 is the provisional second TPS22919 needed to create a switched regulated
+# +3V3_FPC rail; its system-level isolation policy remains an explicit gate.
+row_by_ref["Q2"] = {**row_by_ref["Q1"], "ref":"Q2", "function":"provisional +3V3_FPC load switch",
+    "source":"schematic/canonical_physical_pin_maps.json; datasheets/TI_TPS22919.pdf"}
 # Explicit expansion avoids hiding distinct electrical components in grouped BOM rows.
 for grouped, refs in {
     "R1-R3": ["R1", "R2", "R3"], "R4-R5": ["R4", "R5"], "R6-R7": ["R6", "R7"],
@@ -109,6 +116,8 @@ for ref, row in sorted(row_by_ref.items()):
         status = "LIBRARY_CANDIDATE_PIN_MAP_PENDING" if candidate else "BLOCKED_BY_MISSING_LIBRARY_IDENTITY"
     if row["population"].upper().startswith("DNI"):
         status = "PROVISIONAL_DNI" if not identity else "DNI_LIBRARY_CANDIDATE"
+    if ref == "Q2":
+        status = "PROVISIONAL_SUPPORT_PART_ARCHITECTURE_GATE"
     old = historical_by_ref.get(ref, {})
     package = identity.get("package") or row.get("package_or_note") or old.get("footprint", {}).get("name")
     manifest.append({

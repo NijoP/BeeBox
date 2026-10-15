@@ -33,6 +33,9 @@ assert passives["C22"]["value"] == "10nF" and passives["C22"]["mpn"] == "CL10B10
 assert pin[("U3", "5")]["canonical_net"] == "GND"  # FB on fixed-output variant
 assert "R14" not in part and "R15" not in part
 assert pin[("U4", "3")]["canonical_net"] == "I2C_MUX_RESET"
+assert part["U7"]["manufacturerPartNumber"] == part["U8"]["manufacturerPartNumber"] == "SHT45-AD1B-R2"
+assert part["D5"]["manufacturerPartNumber"] == "TPD4E05U06DQAR"
+assert part["Q2"]["manufacturerPartNumber"] == "TPS22919DCKR" and part["Q2"]["verificationStatus"] == "PROVISIONAL_SUPPORT_PART_ARCHITECTURE_GATE"
 assert [(r["physical_pin_number"], r["canonical_net"]) for r in pins if r["component_reference"] == "J4"] == [("1", "VBAT"), ("2", "GND")]
 j3 = [r for r in parts if r.get("assemblyReference") == "J3"]
 assert len(j3) == 12 and len({r["reference"] for r in j3}) == 12

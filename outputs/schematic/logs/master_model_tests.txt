@@ -1,13 +1,6 @@
 {
-  "parts": 88,
-  "physicalPins": 290,
-  "netMembershipRows": 244,
-  "verifiedLibraryParts": 7,
-  "blockedLibraryParts": 62
-}
-{
   "status": "PASS",
-  "parts": 88,
+  "parts": 89,
   "physicalPins": 290,
   "membershipRows": 244,
   "highRiskAssertions": 29

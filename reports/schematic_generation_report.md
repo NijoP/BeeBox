@@ -37,7 +37,7 @@ The old A4 statement in historical logs is stale. The live title metadata curren
 
 Generated reproducibly by `python tools/build_canonical_design_model.py`:
 
-- `schematic/part_manifest.json` — 88 explicit part/contact records.
+- `schematic/part_manifest.json` — 89 explicit part/contact records (including provisional Q2 for the separately switched +3V3_FPC rail).
 - `schematic/physical_pin_manifest.csv` — 290 physical-pin rows.
 - `schematic/verified_passive_library.json` — reviewed USB passives only; missing selections are not fabricated.
 - `netlist/canonical_net_membership.csv` — 244 pin-membership rows with row-level verification status.
@@ -49,11 +49,11 @@ Model build summary:
 
 | Metric | Result |
 |---|---:|
-| Part/contact records | 88 |
+| Part/contact records | 89 |
 | Physical pins | 290 |
 | Net membership rows | 244 |
 | Reviewed exact library identities | 7 |
-| Parts blocked by missing exact library evidence | 62 |
+| Parts blocked by missing exact library evidence | 59 |
 
 Historical physical-pin inventory is retained but explicitly classified `PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION`; it is not silently promoted to canonical truth.
 
@@ -71,7 +71,7 @@ Historical physical-pin inventory is retained but explicitly classified `PROVISI
 
 ### PROVISIONAL — exact live-library candidate found, pin/footprint review incomplete
 
-BQ24074RGTR, TPS26600RHFT, TPS2121RUXR, TPS62162DSGR, TCA9546APWR, TPS22919DCKR, ESP32-S3-WROOM-1-N16R8, SN74LVC1G3157DBVR, SHT45-AD1B-R2, ICM-42688-P, D2, D3, F1 and MAX17048G+T10.
+BQ24074RGTR, TPS26600RHFT, TPS2121RUXR, TPS62162DSGR, TCA9546APWR, TPS22919DCKR (Q1 and provisional Q2), ESP32-S3-WROOM-1-N16R8, SN74LVC1G3157DBVR, TPD4E05U06DQAR, SHT45-AD1B-R2, ICM-42688-P, D2, D3, F1 and MAX17048G+T10.
 
 ### BLOCKED BY MISSING EVIDENCE
 
@@ -101,7 +101,7 @@ BQ24074RGTR, TPS26600RHFT, TPS2121RUXR, TPS62162DSGR, TCA9546APWR, TPS22919DCKR,
 | 5 — docking | **BLOCKED BY MISSING EVIDENCE** | twelve individual contacts and powered-off isolation unresolved |
 | 6 — universal sensor FPC | **BLOCKED BY MISSING EVIDENCE** | separate page/board absent; power policy unresolved |
 | 7 — status and test | **BLOCKED BY MISSING EVIDENCE** | exact blue LED and test-pad identities absent |
-| 8 — final verification | **VERIFIED FAIL** | master verifier found 42 required references missing, zero wires |
+| 8 — final verification | **VERIFIED FAIL** | master verifier found 55 required references missing (including Q2 and twelve individually modeled J3 contacts), zero wires |
 
 ## PDF and visual evidence
 

@@ -10,7 +10,7 @@
 - Built `schematic/part_manifest.json`, `schematic/physical_pin_manifest.csv`, `netlist/canonical_net_membership.csv`, `netlist/canonical_pin_to_pin.csv`, `schematic/section_layout.json` and `schematic/design_decisions.md` without promoting old readback to verified truth.
 - Added `BeeBox_Master_Generator.js` and `BeeBox_Master_Verification.js`. Both compile as async EasyEDA script bodies.
 - Executed master build `BEEBOX-MASTER-20261015-R1` through the live bridge. Result: `BLOCKED_NO_MUTATION`, 18 open engineering gates, zero mutations. Active project/page/A0, rollback source, duplicates and reviewed USB library identities passed precheck.
-- Executed verification build `BEEBOX-VERIFY-20261015-R1`. Result: `VERIFIED_FAIL`; current page has one drawing object, zero wires and 42 required references missing.
+- Executed verification build `BEEBOX-VERIFY-20261015-R1`. Result: `VERIFIED_FAIL`; current page has one drawing object, zero wires and 55 required references missing (including Q2 and twelve individually modeled J3 contacts).
 - No section placement, final PDF, native ERC or GUI cleanup was performed. The reasons and consequences are recorded in `reports/schematic_generation_report.md`. Manufacturing readiness is **VERIFIED FAIL**.
 
 ## Current root-cause revision (supersedes historical statuses below)

@@ -2,7 +2,7 @@
 const BUILD_ID='BEEBOX-VERIFY-20261015-R1';
 const TARGET_PROJECT='d84c4be0ef2e467fa17955faa23c6314';
 const TARGET_PAGE='d5e34c82cc3ba89c';
-const REQUIRED_REFS=['J1','D6','F1','R6','R7','C21','C22','U2','U6','U11','J4','U3','Q1','L1','U1','U4','U7','MIC1','U12','D5','J2','U8','MIC2','U9','D2','D3','D4','R1','R2','R3',...Array.from({length:12},(_,i)=>`TP${i+1}`)];
+const REQUIRED_REFS=['J1','D6','F1','R6','R7','C21','C22','U2','U6','U11','J4','U3','Q1','Q2','L1','U1','U4','U7','MIC1','U12','D5','J2','U8','MIC2','U9','D2','D3','D4','R1','R2','R3',...Array.from({length:12},(_,i)=>`J3-${String(i+1).padStart(2,'0')}`),...Array.from({length:12},(_,i)=>`TP${i+1}`)];
 const EXPECTED_REVIEWED_PINS={
  D6:{'1':'USB_DP_CONN','2':'GND','3':'USB_DN_CONN','4':'USB_D_N','5':'VBUS_USB','6':'USB_D_P'},
  J1:{A1B12:'GND',A4B9:'VBUS_USB',B8:null,A5:'USB_CC1',B7:'USB_DN_CONN',A6:'USB_DP_CONN',A7:'USB_DN_CONN',B6:'USB_DP_CONN',A8:null,B5:'USB_CC2',B4A9:'VBUS_USB',B1A12:'GND','1':'GND','2':'GND','3':'GND','4':'GND'},
