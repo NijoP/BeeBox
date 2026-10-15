@@ -1,0 +1,329 @@
+{
+  "success": true,
+  "result": {
+    "section": "REGULATORS",
+    "status": "MUTATED_REQUIRES_NATIVE_VERIFICATION",
+    "log": [
+      "OK U3 <- TPS62162DSGR (TPS62162DSGR)",
+      "OK Q1 <- TPS22919DCKR (TPS22919DCKR)",
+      "OK Q2 <- TPS22919DCKR (TPS22919DCKR)",
+      "OK L1 2.2u BUCK_SW-+3V3 <- DFE252012PD-2R2M=P2",
+      "OK R25 10k REG_PG-+3V3 <- 0603WAF1002T5E",
+      "OK C29 22u VSYS-GND <- CL31A226KAHNNNE",
+      "OK C30 22u +3V3-GND <- CL31A226KAHNNNE"
+    ],
+    "connections": [
+      {
+        "ownerRef": "U3",
+        "pin": "1",
+        "net": "GND",
+        "pinX": 3400,
+        "pinY": 460,
+        "labelX": 3520,
+        "labelY": 460,
+        "stubId": "40d3eb5193349243",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U3",
+        "pin": "2",
+        "net": "VSYS",
+        "pinX": 3300,
+        "pinY": 540,
+        "labelX": 3180,
+        "labelY": 540,
+        "stubId": "fc80c827fb2535c6",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U3",
+        "pin": "3",
+        "net": "VSYS",
+        "pinX": 3300,
+        "pinY": 520,
+        "labelX": 3180,
+        "labelY": 520,
+        "stubId": "1ca8bba548ec0e96",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U3",
+        "pin": "4",
+        "net": "GND",
+        "pinX": 3400,
+        "pinY": 470,
+        "labelX": 3520,
+        "labelY": 470,
+        "stubId": "90f22f304a2beffe",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U3",
+        "pin": "5",
+        "net": "GND",
+        "pinX": 3400,
+        "pinY": 500,
+        "labelX": 3520,
+        "labelY": 500,
+        "stubId": "ca481951bf68e716",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U3",
+        "pin": "6",
+        "net": "+3V3",
+        "pinX": 3400,
+        "pinY": 520,
+        "labelX": 3520,
+        "labelY": 520,
+        "stubId": "c0e119ab3ead8f24",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U3",
+        "pin": "7",
+        "net": "BUCK_SW",
+        "pinX": 3400,
+        "pinY": 540,
+        "labelX": 3520,
+        "labelY": 540,
+        "stubId": "afea2de7792e238c",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U3",
+        "pin": "8",
+        "net": "REG_PG",
+        "pinX": 3300,
+        "pinY": 500,
+        "labelX": 3180,
+        "labelY": 500,
+        "stubId": "9a263bfb813affb1",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U3",
+        "pin": "9",
+        "net": "GND",
+        "pinX": 3400,
+        "pinY": 480,
+        "labelX": 3520,
+        "labelY": 480,
+        "stubId": "4e89d788cb4d5266",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q1",
+        "pin": "1",
+        "net": "VSYS",
+        "pinX": 3660,
+        "pinY": 510,
+        "labelX": 3540,
+        "labelY": 510,
+        "stubId": "6ca337bad833ee7c",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q1",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 3660,
+        "pinY": 500,
+        "labelX": 3540,
+        "labelY": 500,
+        "stubId": "7466cdce73d9c517",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q1",
+        "pin": "3",
+        "net": "DOCK_EN",
+        "pinX": 3660,
+        "pinY": 490,
+        "labelX": 3540,
+        "labelY": 490,
+        "stubId": "e3d3bb5136a8a987",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q1",
+        "pin": "4",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "Q1",
+        "pin": "5",
+        "net": "VDOCK",
+        "pinX": 3740,
+        "pinY": 500,
+        "labelX": 3860,
+        "labelY": 500,
+        "stubId": "abc2520474174f4d",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q1",
+        "pin": "6",
+        "net": "VDOCK",
+        "pinX": 3740,
+        "pinY": 510,
+        "labelX": 3860,
+        "labelY": 510,
+        "stubId": "8067cc12392c67a5",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q2",
+        "pin": "1",
+        "net": "+3V3",
+        "pinX": 4010,
+        "pinY": 510,
+        "labelX": 3890,
+        "labelY": 510,
+        "stubId": "4dfd8539bdc25ce6",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q2",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 4010,
+        "pinY": 500,
+        "labelX": 3890,
+        "labelY": 500,
+        "stubId": "10ff4f652d0f5af9",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q2",
+        "pin": "3",
+        "net": "DOCK_EN",
+        "pinX": 4010,
+        "pinY": 490,
+        "labelX": 3890,
+        "labelY": 490,
+        "stubId": "3fc4f0127f6d4154",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q2",
+        "pin": "4",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "Q2",
+        "pin": "5",
+        "net": "+3V3_FPC",
+        "pinX": 4090,
+        "pinY": 500,
+        "labelX": 4210,
+        "labelY": 500,
+        "stubId": "751c80d36e89c6e8",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "Q2",
+        "pin": "6",
+        "net": "+3V3_FPC",
+        "pinX": 4090,
+        "pinY": 510,
+        "labelX": 4210,
+        "labelY": 510,
+        "stubId": "6e8f6aaa14cd50ab",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "L1",
+        "pin": "1",
+        "net": "BUCK_SW",
+        "pinX": 3630,
+        "pinY": 800,
+        "labelX": 3510,
+        "labelY": 800,
+        "stubId": "873dc148f0ea8881",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "L1",
+        "pin": "2",
+        "net": "+3V3",
+        "pinX": 3670,
+        "pinY": 800,
+        "labelX": 3790,
+        "labelY": 800,
+        "stubId": "72bf6176baff1db6",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R25",
+        "pin": "1",
+        "net": "REG_PG",
+        "pinX": 3990,
+        "pinY": 800,
+        "labelX": 3870,
+        "labelY": 800,
+        "stubId": "990ac2ef703bf597",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R25",
+        "pin": "2",
+        "net": "+3V3",
+        "pinX": 4030,
+        "pinY": 800,
+        "labelX": 4150,
+        "labelY": 800,
+        "stubId": "51e0cd443900e168",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C29",
+        "pin": "1",
+        "net": "VSYS",
+        "pinX": 4355,
+        "pinY": 800,
+        "labelX": 4235,
+        "labelY": 800,
+        "stubId": "1bceba92fd84c5d2",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C29",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 4385,
+        "pinY": 800,
+        "labelX": 4505,
+        "labelY": 800,
+        "stubId": "4f9c9917ba582f4f",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C30",
+        "pin": "1",
+        "net": "+3V3",
+        "pinX": 4715,
+        "pinY": 800,
+        "labelX": 4595,
+        "labelY": 800,
+        "stubId": "b25d4fc2413b8773",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C30",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 4745,
+        "pinY": 800,
+        "labelX": 4865,
+        "labelY": 800,
+        "stubId": "673c9fb7a3668628",
+        "labelObjectType": "named-wire"
+      }
+    ],
+    "verification": "LABEL_OBJECT_AND_STUB_READBACK_ONLY; NATIVE_NETLIST_COMPARISON_REQUIRED"
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

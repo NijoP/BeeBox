@@ -1,0 +1,809 @@
+{
+  "success": true,
+  "result": {
+    "status": "READBACK_NOT_FINAL_APPROVAL",
+    "projectUuid": "d84c4be0ef2e467fa17955faa23c6314",
+    "pageUuid": "d5e34c82cc3ba89c",
+    "components": [
+      {
+        "id": "80ce3d8a54da0af7",
+        "type": "sheet",
+        "pins": []
+      },
+      {
+        "id": "e5c40cba10340f6f",
+        "type": "part",
+        "ref": "J1",
+        "name": "J1",
+        "mpn": "TYPE-C-31-M-12",
+        "manufacturer": "韩国韩荣",
+        "symbol": {
+          "uuid": "a5da8a0e78abf8c9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TYPE-C-31-M-12"
+        },
+        "pins": [
+          {
+            "number": "A1B12",
+            "name": "GND",
+            "x": 534.9999999999999,
+            "y": 595.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "A4B9",
+            "name": "VBUS",
+            "x": 535,
+            "y": 605.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "B8",
+            "name": "SBU2",
+            "x": 535,
+            "y": 615.0000000000001,
+            "noConnected": true
+          },
+          {
+            "number": "A5",
+            "name": "CC1",
+            "x": 535,
+            "y": 625.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "B7",
+            "name": "DN2",
+            "x": 535,
+            "y": 635.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "A6",
+            "name": "DP1",
+            "x": 535,
+            "y": 645.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "A7",
+            "name": "DN1",
+            "x": 535,
+            "y": 655.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "B6",
+            "name": "DP2",
+            "x": 535,
+            "y": 665.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "A8",
+            "name": "SBU1",
+            "x": 535,
+            "y": 675.0000000000001,
+            "noConnected": true
+          },
+          {
+            "number": "B5",
+            "name": "CC2",
+            "x": 535,
+            "y": 685.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "B4A9",
+            "name": "VBUS",
+            "x": 535,
+            "y": 695.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "B1A12",
+            "name": "GND",
+            "x": 535,
+            "y": 705.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "EH",
+            "x": 464.9999999999999,
+            "y": 675.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "EH",
+            "x": 464.9999999999999,
+            "y": 685.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "EH",
+            "x": 464.9999999999999,
+            "y": 695.0000000000001,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "EH",
+            "x": 464.9999999999999,
+            "y": 705.0000000000001,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "afd0d666f6b6f71a",
+        "type": "part",
+        "ref": "D6",
+        "name": "D6",
+        "mpn": "USBLC6-2SC6",
+        "manufacturer": "ST(意法半导体)",
+        "symbol": {
+          "uuid": "f92db2ae8a15124b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "USBLC6-2SC6"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 785,
+            "y": 680,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 785,
+            "y": 650,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "3",
+            "x": 785,
+            "y": 620,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "4",
+            "x": 915,
+            "y": 620,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "5",
+            "x": 915,
+            "y": 650,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "6",
+            "x": 915,
+            "y": 680,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "cc4abd56fc1f7ef5",
+        "type": "part",
+        "ref": "C21",
+        "name": "C21",
+        "mpn": "CL21B475KOFNNNE",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "d098dc14ba06bb71",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL21B475KOFNNNE"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 765,
+            "y": 500,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 795,
+            "y": 500,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "c53ffc7a1792ab6e",
+        "type": "part",
+        "ref": "R6",
+        "name": "R6",
+        "mpn": "0603WAF5101T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "132076e439f2ac40",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF5101T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 670,
+            "y": 520,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 630,
+            "y": 520,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "fb9b43a45e8741ec",
+        "type": "part",
+        "ref": "C22",
+        "name": "C22",
+        "mpn": "CL10B103KB8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "a8b61dce17b663dc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B103KB8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 765,
+            "y": 560,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 795,
+            "y": 560,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "098563e0e160bc57",
+        "type": "part",
+        "ref": "R7",
+        "name": "R7",
+        "mpn": "0603WAF5101T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "132076e439f2ac40",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF5101T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 670,
+            "y": 780,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 630,
+            "y": 780,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "4689d686c98901ef",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 700,
+            "y": 600,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "0f9af8327a84c7d8",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 730,
+            "y": 700,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "e4ff9997086ed84b",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 990,
+            "y": 680,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "a14caabd99dddd8a",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 990,
+            "y": 620,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "60f8e7d5c1a530d9",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 725,
+            "y": 650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "2fc66d50dc50206a",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 975,
+            "y": 650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "fe4292a3f97fa87a",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 670,
+            "y": 480,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "5510a4f936068caa",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 670,
+            "y": 820,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "787def5379532fef",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 710,
+            "y": 500,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "33debf358bf67435",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 850,
+            "y": 500,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "a92f1a723f09cbde",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 600,
+            "y": 605,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "425f9824913bc873",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 600,
+            "y": 695,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "4088062abe984657",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 600,
+            "y": 595,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "a9986af4e8300a0a",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 600,
+            "y": 705,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "71f97315a2951f06",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 390,
+            "y": 690,
+            "noConnected": false
+          }
+        ]
+      }
+    ],
+    "wires": [
+      {
+        "id": "a462ba248c6924d8",
+        "net": "USB_D_N_CONN",
+        "line": [
+          620,
+          635.0000000000001,
+          535,
+          635.0000000000001,
+          620,
+          655.0000000000001,
+          620,
+          635.0000000000001,
+          535,
+          655.0000000000001,
+          620,
+          655.0000000000001,
+          700,
+          635.0000000000001,
+          620,
+          635.0000000000001,
+          700,
+          620,
+          700,
+          635.0000000000001,
+          785,
+          620,
+          700,
+          620,
+          700,
+          600.0000000000001,
+          700,
+          620
+        ]
+      },
+      {
+        "id": "1a001a30b8bd0f97",
+        "net": "USB_D_P_CONN",
+        "line": [
+          650,
+          645.0000000000001,
+          535,
+          645.0000000000001,
+          650,
+          665.0000000000001,
+          650,
+          645.0000000000001,
+          535,
+          665.0000000000001,
+          650,
+          665.0000000000001,
+          730,
+          665.0000000000001,
+          650,
+          665.0000000000001,
+          730,
+          680,
+          730,
+          665.0000000000001,
+          785,
+          680,
+          730,
+          680,
+          730,
+          700.0000000000001,
+          730,
+          680
+        ]
+      },
+      {
+        "id": "3ea5f029d2a722eb",
+        "net": "USB_D_P",
+        "line": [
+          990,
+          680,
+          915,
+          680
+        ]
+      },
+      {
+        "id": "8cfdc4eedd7da105",
+        "net": "USB_D_N",
+        "line": [
+          990,
+          620,
+          915,
+          620
+        ]
+      },
+      {
+        "id": "e9b24942395a8e96",
+        "net": "GND",
+        "line": [
+          725,
+          650,
+          785,
+          650
+        ]
+      },
+      {
+        "id": "5013c1685b698c55",
+        "net": "VBUS_USB",
+        "line": [
+          975,
+          650,
+          915,
+          650
+        ]
+      },
+      {
+        "id": "b77245acb43e3dfd",
+        "net": "USB_CC1",
+        "line": [
+          580,
+          625.0000000000001,
+          535,
+          625.0000000000001,
+          580,
+          520,
+          580,
+          625.0000000000001,
+          630,
+          520,
+          580,
+          520
+        ]
+      },
+      {
+        "id": "51d5319735611ae0",
+        "net": "GND",
+        "line": [
+          670,
+          480,
+          670,
+          520
+        ]
+      },
+      {
+        "id": "4f61c9897ec24298",
+        "net": "USB_CC2",
+        "line": [
+          580,
+          685.0000000000001,
+          535,
+          685.0000000000001,
+          580,
+          780,
+          580,
+          685.0000000000001,
+          630,
+          780,
+          580,
+          780
+        ]
+      },
+      {
+        "id": "376900dd56534573",
+        "net": "GND",
+        "line": [
+          670,
+          820,
+          670,
+          780
+        ]
+      },
+      {
+        "id": "5aec6e9f690ab1da",
+        "net": "VBUS_USB",
+        "line": [
+          740,
+          500,
+          765,
+          500,
+          740,
+          560,
+          740,
+          500,
+          765,
+          560,
+          740,
+          560,
+          710,
+          500,
+          740,
+          500
+        ]
+      },
+      {
+        "id": "ccf522b367f2b423",
+        "net": "GND",
+        "line": [
+          820,
+          500,
+          795,
+          500,
+          820,
+          560,
+          820,
+          500,
+          795,
+          560,
+          820,
+          560,
+          850,
+          500,
+          820,
+          500
+        ]
+      },
+      {
+        "id": "8c2178e0408f7974",
+        "net": "VBUS_USB",
+        "line": [
+          600,
+          605.0000000000001,
+          535,
+          605.0000000000001
+        ]
+      },
+      {
+        "id": "22dad02c5f996e8d",
+        "net": "VBUS_USB",
+        "line": [
+          600,
+          695.0000000000001,
+          535,
+          695.0000000000001
+        ]
+      },
+      {
+        "id": "dee236896c7ffe6f",
+        "net": "GND",
+        "line": [
+          599.9999999999999,
+          595.0000000000001,
+          534.9999999999999,
+          595.0000000000001
+        ]
+      },
+      {
+        "id": "27ec63e59a55f4ae",
+        "net": "GND",
+        "line": [
+          600,
+          705.0000000000001,
+          535,
+          705.0000000000001
+        ]
+      },
+      {
+        "id": "f909ffbea05392ea",
+        "net": "GND",
+        "line": [
+          434.9999999999999,
+          705.0000000000001,
+          464.9999999999999,
+          705.0000000000001,
+          434.9999999999999,
+          705.0000000000001,
+          434.9999999999999,
+          695.0000000000001,
+          434.9999999999999,
+          695.0000000000001,
+          464.9999999999999,
+          695.0000000000001,
+          434.9999999999999,
+          695.0000000000001,
+          434.9999999999999,
+          690.0000000000001,
+          389.9999999999999,
+          690.0000000000001,
+          434.9999999999999,
+          690.0000000000001,
+          434.9999999999999,
+          685.0000000000001,
+          434.9999999999999,
+          690.0000000000001,
+          434.9999999999999,
+          685.0000000000001,
+          464.9999999999999,
+          685.0000000000001,
+          434.9999999999999,
+          675.0000000000001,
+          434.9999999999999,
+          685.0000000000001,
+          434.9999999999999,
+          675.0000000000001,
+          464.9999999999999,
+          675.0000000000001
+        ]
+      }
+    ],
+    "requiredRemainingChecks": [
+      "complete released physical-pin canonical dictionary",
+      "native netlist parity",
+      "strict native ERC",
+      "actual PDF/PNG visual review"
+    ]
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

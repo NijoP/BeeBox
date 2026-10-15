@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "result": {
+    "status": "COLLISIONS_REPAIRED",
+    "targets": [
+      [
+        "DOCK_BCLK",
+        2765,
+        2340
+      ],
+      [
+        "USB_D_N",
+        3820,
+        2650
+      ],
+      [
+        "ESP_EN",
+        4140,
+        2650
+      ]
+    ]
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

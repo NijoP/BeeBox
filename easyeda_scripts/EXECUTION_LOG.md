@@ -1,88 +1,52 @@
-# EasyEDA script execution log
+# BeeBox EasyEDA execution log
 
-## Master controlled-rebuild preflight — 2026-10-15
+## 2026-10-15 — standalone script release gate
 
-- Created feature branch `feature/beebox-complete-schematic-rebuild` from fetched `origin/main` SHA `3a28622a0cb72f3f600b85153cd1ba4df8667b52` and preserved all pre-existing modified/untracked engineering work in commit `2f9b76d`.
-- Rechecked bridge port 49620: one active EasyEDA window; active project is BEEBOX (`d84c4be0ef2e467fa17955faa23c6314`) and active page is Schematic1/P1 (`d5e34c82cc3ba89c`).
-- Current live metadata is A0 landscape (`Drawing-Symbol_A0`, 4681.1024 × 3311.0236 schematic units), superseding stale A4 records.
-- Captured `outputs/schematic/checkpoints/pre_master_rebuild_native_backup.json` before any new mutation.
-- Identified the Cloud Code/reference candidate as `C:/Users/HP/Downloads/SCH_Schematic1_2026-10-12 (1).pdf`; repository audit confirms it is only a limited style/symbol reference, not an electrical or complete layout authority.
-- Built `schematic/part_manifest.json`, `schematic/physical_pin_manifest.csv`, `netlist/canonical_net_membership.csv`, `netlist/canonical_pin_to_pin.csv`, `schematic/section_layout.json` and `schematic/design_decisions.md` without promoting old readback to verified truth.
-- Added `BeeBox_Master_Generator.js` and `BeeBox_Master_Verification.js`. Both compile as async EasyEDA script bodies.
-- Executed master build `BEEBOX-MASTER-20261015-R1` through the live bridge. Result: `BLOCKED_NO_MUTATION`, 18 open engineering gates, zero mutations. Active project/page/A0, rollback source, duplicates and reviewed USB library identities passed precheck.
-- Executed verification build `BEEBOX-VERIFY-20261015-R1`. Result: `VERIFIED_FAIL`; current page has one drawing object, zero wires and 55 required references missing (including Q2 and twelve individually modeled J3 contacts).
-- No section placement, final PDF, native ERC or GUI cleanup was performed. The reasons and consequences are recorded in `reports/schematic_generation_report.md`. Manufacturing readiness is **VERIFIED FAIL**.
+### Generated script set
 
-## Current root-cause revision (supersedes historical statuses below)
+`01_usb_power_entry.js` through `11_final_verification.js` were generated/updated as independent copy-pasteable scripts. The old combined section scripts were removed to prevent accidental duplicate placement.
 
-- Verified BEEBOX project UUID `d84c4be0ef2e467fa17955faa23c6314`, P1 UUID `d5e34c82cc3ba89c`.
-- Captured native source and 55-component/240-wire/292-pin readback.
-- Recovery probe actually reapplied the exact native source and preserved all 55 references.
-- Successfully API-exported `projects/beebox/05_schematic_audit/before_rootcause.pdf` and rendered/inspected its PNG locally: visual FAIL.
-- Observed 45 wire net names missing from the preliminary net dictionary; 52 pins without geometric wire contact, including possible intended NCs. Not an ERC error count.
-- Native DRC and native netlist extraction exceeded bridge deadlines; retained actual timeout results, no PASS.
-- Reset the verified page: removed 55 devices and 240 wires; preserved project/page/title metadata. Live readback now has zero components and zero wires.
-- Removed unsafe passive guessing/fallbacks; full-section preflight, intra-run duplicate rejection, and identity readback added.
-- Corrected source nets for charger R12, buck L1, LED series paths, and inactive U4 reset; restored specified D4 MPN.
-- Regression tests pass for fail-before-mutation cases. All scripts compile as asynchronous function bodies.
-- Actual power-section preflight rejected ambiguous/unresolved D6 identity before placement. Subsequent live readback remained empty. Section 01 is NOT complete; other sections were NOT executed in this revision.
-- Complete power support design, verified passive manifest, physical-pin canonical table, geometry-aware placement, A0 boundary and final ERC/visual approval are not yet complete. Existing generated section configurations remain preliminary and must not be treated as release-ready.
+### Offline validation
 
+- `tools/validate_standalone_scripts.py`: **PASS**
+  - 11 scripts
+  - 60 unique placed references
+  - 330 physical pin/contact rows
+  - 68 nets
+  - 237 graph links
+  - all 15 high-risk checks passed
+- Canonical model verifier: **PASS**
+- Four Node regression tests: **PASS**
+- Node async syntax compilation of all 11 scripts: **PASS**
+- Live read-only validation of 37 unique pinned EasyEDA UUID records: **PASS**, zero mismatches.
 
-**Date:** 2026-10-12
+Evidence:
 
-The installed EasyEDA API skill documentation was inspected. The documented signatures used by the scripts are:
+- `outputs/schematic/logs/standalone_script_validation.json`
+- `outputs/schematic/readback/standalone_library_uuid_validation.json`
+- `netlist/canonical_net_membership.csv`
+- `netlist/canonical_pin_to_pin.csv`
 
-- `eda.dmt_Project.getCurrentProjectInfo()`
-- `eda.dmt_Schematic.getCurrentSchematicInfo()`
-- `eda.lib_Device.search('', undefined, undefined, undefined, 200, 1)`
-- `eda.sch_PrimitiveComponent.create(device, x, y, subPartName, rotation, mirror, addIntoBom, addIntoPcb)`
-- `eda.sch_PrimitiveComponent.modify(primitiveId, property)`
-- `component.getAllPins()`
-- `eda.sch_PrimitiveWire.create(line, net, color, lineWidth, lineType)`
-- `eda.sch_PrimitiveComponent.getAllPrimitiveId(undefined, true)`
-- `eda.dmt_Schematic.getCurrentSchematicInfo()`
+### Live mutation
 
-## Connection result
+No completed placement is claimed in this entry.
 
-The bridge was initially started on port 49620 and returned the disconnected state. A later environment check confirmed one active EasyEDA window (`edaConnected:true`) for project `BEEBOX`, schematic `Schematic1`, page `P1`.
+## 2026-10-15 — visual reset and reference-study gate
 
-The bridge was started on port 49620 and returned:
-
-```json
-{"service":"easyeda-bridge","status":"ok","edaConnected":false,"edaWindowCount":0,"activeWindowId":null}
-```
-
-The first run of PCB Flow's `automation/easyeda/api_probe.js` returned HTTP 500: `No EDA window connected. Please connect an EDA window first.` After the later connection, a guarded exact 0603 resistor probe was executed using `{libraryUuid, uuid}`; it created, read back two pins and footprint `R0603`, then deleted the test object. No BeeBox section was placed. The active page reports A4 (4676 × 3304 internal units), not A0; this discrepancy is recorded in `projects/beebox/03_easyeda_init/a0_layout_map.json` and the page was not changed.
-
-## Section status
-
-| Script | Result |
-|---|---|
-| `00_API_preflight.js` | API contract PASS via guarded equivalent probe; PCB Flow probe itself returned no value; exact resistor create/readback/delete PASS |
-| `01_power_inputs_charging.js` | NOT RUN — preflight prerequisite |
-| `02_regulators_power.js` | NOT RUN — preflight prerequisite |
-| `03_esp32_core.js` | NOT RUN — preflight prerequisite |
-| `04_external_sensors_audio.js` | NOT RUN — preflight prerequisite |
-| `05_storage_rf_expansion.js` | NOT RUN — preflight prerequisite |
-| `06_docking_interface.js` | NOT RUN — preflight prerequisite |
-| `07_universal_sensor_fpc.js` | NOT RUN — preflight prerequisite |
-| `08_status_debug_test.js` | NOT RUN — preflight prerequisite |
-| `09_final_verification.js` | NOT RUN — preflight prerequisite |
-
-Scripts intentionally throw on missing library matches rather than silently placing a generic symbol. After each successful run, inspect the returned object report and save it to the project checkpoint before running the next section.
-
-The EasyEDA API reference version inspected exposes no ERC invocation method in the installed skill reference. Native EasyEDA ERC must be run manually after the sections are executed; the final verification script reports this limitation.
-
-## Controlled rebuild audit — 2026-10-12
-
-The latest PDF was extracted and rendered to:
-
-- `projects/beebox/03_easyeda_init/current_pdf_overview.png`
-- `projects/beebox/03_easyeda_init/current_pdf_lower_detail.png`
-
-The PDF/live mismatch report is `projects/beebox/05_schematic_audit/root_cause_audit.md`. The active page still reports A4. The existing generated live objects were backed up before the reference-style power rebuild. The reference USB baseline was verified against live EasyEDA library records: `TYPE-C-31-M-12` and `USBLC6-2SC6`. No ERC claim is made.
-
-## Luna-only execution update
-
-The visual-auditor sub-agent was removed at the user's request. Generation proceeded with Luna-only API/readback checks. Section 01 produced a partial live result: U2, U6, U11, J1, D1, J4 and R11-R13 are present; the live readback recorded 11 total component objects including two pre-existing artifacts and 74 wires. This is not an ERC or final schematic sign-off. The passive generator was corrected to create verified 0603 library exemplars, write the requested value, and wire both terminals rather than logging-only.
+- Stopped section expansion before any non-USB section was run.
+- Preserved the two failed USB visual attempts as native checkpoints:
+  - `outputs/schematic/checkpoints/pre_reset_usb_failed_layout_native_backup.json`
+  - `outputs/schematic/checkpoints/pre_second_reset_usb_layout_test_backup.json`
+- Restored the known empty native A0 source. Readback after reset: one `sheet` object, zero circuit components and zero wires; project/page/title settings retained.
+- Inspected the supplied PDF at full-page scale and USB/charger/MCU close zoom.
+- Generated `schematic/reference_layout_knowledge_graph.json` and `projects/beebox/05_schematic_audit/reference_pdf_layout_knowledge.md`.
+- Confirmed the failed generator defects: 12-unit label clearance, fixed rotation-zero ports, arrow-port clutter, detached passive rows and crossing duplicate-contact buses.
+- Increased named-stub clearance and derived direction from actual EasyEDA pin rotation. The dedicated USB generator was rebuilt in the reference style and passed offline checks.
+- Subsequently executed sections 01–10. Final live readback contains 72 designator-bearing references, 97 total component objects and 279 named wires.
+- `outputs/schematic/readback/final_physical_pin_parity.json`: **PASS**, 314 checked physical pins, zero mismatches.
+- Three endpoint collisions found during parity (`MIC2/U9`, `R1/TP11`, `R2/TP12`) were corrected in place; generator/test-point coordinates were then changed so clean future execution avoids those collisions without an orphan repair stage.
+- Final visual cleanup moved C30 inside the usable boundary, moved TP11/TP12 above the lower boundary, removed two obsolete colliding net ports, and replaced the malformed LED backtracking stubs.
+- Independent datasheet review found that TPS62162 is the fixed 5.0 V member, not 3.3 V. Transactional script `03a_replace_u3_3v3_variant.js` replaced live U3 with exact TPS62161DSGR/C2864193 and reconstructed all nine named pin stubs.
+- Latest live readback: 72 designator-bearing references, 95 total component objects, 279 wires. `tools/verify_live_schematic_readback.py`: **PASS**, 314 physical pins and exact live identities checked, no boundary/backtracking/different-net endpoint errors.
+- Actual EasyEDA PDF/PNG export is under `outputs/schematic/final/`; file-signature/page/dimension/hash evidence is in `export-verification.txt`.
+- Native GUI ERC: **NOT TESTED**. Separate P2/Board-B universal sensor FPC assignment: **FAIL release gate / pending**. Manufacturing readiness is not claimed.

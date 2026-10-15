@@ -6,7 +6,7 @@ sheet,ref,mpn,function,net_or_interface,status
 01_INPUT_POWER,R6-R7,0603WAF5101T5E,5.1k 1% USB-C CC pull-downs,USB_CC1/USB_CC2 to GND,datasheet-reviewed; full section pending
 01_INPUT_POWER,C21,CL21B475KOFNNNE,4.7uF X7R 16V USB VBUS bulk; revised for inrush budget,VBUS_USB/GND,datasheet-reviewed; full section pending
 01_INPUT_POWER,C22,CL10B103KB8NNNC,10nF X7R 50V USB VBUS high-frequency bypass,VBUS_USB/GND,datasheet-reviewed; full section pending
-02_3V3_REGULATOR,U3,TPS62162DSGR,fixed 3V3 buck; FB to AGND,VSYS/+3V3,datasheet-reviewed; full section pending
+02_3V3_REGULATOR,U3,TPS62161DSGR,fixed 3V3 buck; FB to AGND,VSYS/+3V3,datasheet-reviewed; full section pending
 03_ESP32S3_DEBUG_USB,U1,ESP32-S3-WROOM-1-N16R8,MCU WiFi BLE USB,+3V3/USB/I2C/SPI/I2S/UART,baseline-provisional
 04_LOCAL_SENSORS,U-EXT1,SHT45,external temperature RH,I2C_MAIN,baseline
 04_LOCAL_SENSORS,MIC-EXT,ICS-43434,external ambient microphone,I2S,baseline

@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "result": {
+    "status": "FINAL_LAYOUT_CLEANUP_COMPLETE",
+    "moved": {
+      "C30": [
+        4370,
+        950
+      ],
+      "TP11": [
+        2850,
+        2900
+      ],
+      "TP12": [
+        3150,
+        2900
+      ]
+    }
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

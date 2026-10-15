@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checkedPhysicalPins": 314,
+  "uniqueReferences": 72,
+  "componentObjects": 95,
+  "wires": 279,
+  "errors": [],
+  "warnings": []
+}

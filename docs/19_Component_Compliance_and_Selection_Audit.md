@@ -12,7 +12,7 @@ This audit challenges the previous candidate list. Datasheet links and exact-sou
 | U3 | TDK ICM-42688-P | optional IMU | 3.3 V concept; SPI/I²C | Requirement says “if required”; no experiment justification or final bus assignment | CLIENT DECISION REQUIRED |
 | U4 | Sensirion SGP40 | VOC | 3.3 V concept; I²C; heated gas sensor | Warm-up/heater current, airflow and contamination need design treatment | INVESTIGATE |
 | U5 | TI BQ24074 | 1-cell charger/power path | 1-cell linear charger/power-path candidate | At 6 V/0.5 A, screening heat is 0.9–1.5 W; exact thermal/package/charge config required | INVESTIGATE; do not freeze |
-| U6 | TI TPS62162 | 3.3 V buck | Candidate buck from battery/system rail | 0.67 A assumed peak leaves 0.33 A arithmetic margin; exact transient/thermal margin unknown | RETAIN provisionally |
+| U6 | TI TPS62161 | 3.3 V buck | Candidate buck from battery/system rail | 0.67 A assumed peak leaves 0.33 A arithmetic margin; exact transient/thermal margin unknown | RETAIN provisionally |
 | U7 | ADI MAX17048 | fuel gauge | 1-cell gauge, 2.5–4.5 V class | Compatible with VBAT concept; optional and cost trade remains | INVESTIGATE |
 | D1 | TI TPD4E05U06 or equivalent | exposed-line ESD | low-capacitance data protection candidate | Not an OVP/reverse protection device for an unqualified ~6 V input | RETAIN only for suitable data lines |
 | J1 | USB-C exact MPN TBD | charging/data | CC resistors, ESD, anchors required | No exact part, current rating or mechanical drawing | CLIENT DECISION REQUIRED |
@@ -32,7 +32,7 @@ This audit challenges the previous candidate list. Datasheet links and exact-sou
 
 ## Alternatives
 - **Charger/power path:** compare BQ24074 with a current TI/ADI 1-cell power-path device against input range, thermal dissipation, charge current and Indian availability. Do not substitute a charge-only IC without adding ideal-diode/load-share circuitry.
-- **Regulator:** compare TPS62162 with a lower-cost, India-sourced 3.3 V buck whose transient/thermal data support the ESP32 load. An LDO is simpler but likely dissipates substantially more at external power or high battery current.
+- **Regulator:** compare TPS62161 with a lower-cost, India-sourced 3.3 V buck whose transient/thermal data support the ESP32 load. An LDO is simpler but likely dissipates substantially more at external power or high battery current.
 - **Dock:** retain I²C only for a short, low-speed, measured link; otherwise compare a complete RS-485/CAN-FD or other differential implementation including two endpoint transceivers and protocol firmware.
 - **Environmental sensor:** retain SHT45 as a candidate, but compare HDC2080/BME280-class parts on accuracy, self-heating, package opening, cost and legitimate Indian sourcing.
 

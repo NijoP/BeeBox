@@ -1,0 +1,475 @@
+{
+  "success": true,
+  "result": {
+    "section": "UNIVERSAL_SENSOR_FPC",
+    "status": "MUTATED_REQUIRES_NATIVE_VERIFICATION",
+    "log": [
+      "OK J2 <- FH34SRJ-12S-0.5SH(50) (FH34SRJ-12S-0.5SH(50))",
+      "OK U8 <- SHT45-AD1B-R2 (SHT45-AD1B-R2)",
+      "OK MIC2 <- ICS-43434_C5656610 (ICS-43434)",
+      "OK U9 <- ICM-42688-P (ICM-42688-P)",
+      "OK C10 100n +3V3_FPC-GND <- CL10B104KO8NNNC",
+      "OK C11 100n +3V3_FPC-GND <- CL10B104KO8NNNC",
+      "OK C12 100n +3V3_FPC-GND <- CL10B104KO8NNNC"
+    ],
+    "connections": [
+      {
+        "ownerRef": "J2",
+        "pin": "1",
+        "net": "GND",
+        "pinX": 1830,
+        "pinY": 2405,
+        "labelX": 1710,
+        "labelY": 2405,
+        "stubId": "dab1671a60127792",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 1830,
+        "pinY": 2395,
+        "labelX": 1710,
+        "labelY": 2395,
+        "stubId": "d04e9839ed3c3ed0",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "3",
+        "net": "GND",
+        "pinX": 1830,
+        "pinY": 2385,
+        "labelX": 1710,
+        "labelY": 2385,
+        "stubId": "7a1777cb5f852f48",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "4",
+        "net": "VDOCK",
+        "pinX": 1830,
+        "pinY": 2375,
+        "labelX": 1710,
+        "labelY": 2375,
+        "stubId": "e067d86e974a8242",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "5",
+        "net": "VDOCK",
+        "pinX": 1830,
+        "pinY": 2365,
+        "labelX": 1710,
+        "labelY": 2365,
+        "stubId": "337766c6a688edb6",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "6",
+        "net": "+3V3_FPC",
+        "pinX": 1830,
+        "pinY": 2355,
+        "labelX": 1710,
+        "labelY": 2355,
+        "stubId": "206859f4ad0569b7",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "7",
+        "net": "DOCK_SDA",
+        "pinX": 1830,
+        "pinY": 2345,
+        "labelX": 1710,
+        "labelY": 2345,
+        "stubId": "57b3aa7bf2c98f4a",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "8",
+        "net": "DOCK_SCL",
+        "pinX": 1830,
+        "pinY": 2335,
+        "labelX": 1710,
+        "labelY": 2335,
+        "stubId": "e9ee20b186e0233b",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "9",
+        "net": "DOCK_BCLK",
+        "pinX": 1830,
+        "pinY": 2325,
+        "labelX": 1710,
+        "labelY": 2325,
+        "stubId": "5bbe87c93d0c460b",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "10",
+        "net": "DOCK_WS",
+        "pinX": 1830,
+        "pinY": 2315,
+        "labelX": 1710,
+        "labelY": 2315,
+        "stubId": "261b912908f0c31c",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "11",
+        "net": "DOCK_SD",
+        "pinX": 1830,
+        "pinY": 2305,
+        "labelX": 1710,
+        "labelY": 2305,
+        "stubId": "f5f3b585fc7d0f6b",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "12",
+        "net": "DOCK_PRESENT_ID",
+        "pinX": 1830,
+        "pinY": 2295,
+        "labelX": 1710,
+        "labelY": 2295,
+        "stubId": "d32717dbc04ddf13",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "13",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "J2",
+        "pin": "14",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U8",
+        "pin": "1",
+        "net": "DOCK_SDA",
+        "pinX": 2165,
+        "pinY": 2355,
+        "labelX": 2045,
+        "labelY": 2355,
+        "stubId": "56651a28b1f0fc7c",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U8",
+        "pin": "2",
+        "net": "DOCK_SCL",
+        "pinX": 2165,
+        "pinY": 2345,
+        "labelX": 2045,
+        "labelY": 2345,
+        "stubId": "bcdb0f215c19c5df",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U8",
+        "pin": "3",
+        "net": "+3V3_FPC",
+        "pinX": 2235,
+        "pinY": 2345,
+        "labelX": 2355,
+        "labelY": 2345,
+        "stubId": "28f14606cbb32a47",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U8",
+        "pin": "4",
+        "net": "GND",
+        "pinX": 2235,
+        "pinY": 2355,
+        "labelX": 2355,
+        "labelY": 2355,
+        "stubId": "2e53bfa7764a262e",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U8",
+        "pin": "5",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "MIC2",
+        "pin": "1",
+        "net": "DOCK_WS",
+        "pinX": 2515,
+        "pinY": 2360,
+        "labelX": 2395,
+        "labelY": 2360,
+        "stubId": "4f2eda002cfbdf91",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "MIC2",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 2515,
+        "pinY": 2350,
+        "labelX": 2395,
+        "labelY": 2350,
+        "stubId": "7a3b5efdd338baad",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "MIC2",
+        "pin": "3",
+        "net": "GND",
+        "pinX": 2515,
+        "pinY": 2340,
+        "labelX": 2395,
+        "labelY": 2340,
+        "stubId": "98ced6cd2fd4c849",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "MIC2",
+        "pin": "4",
+        "net": "DOCK_BCLK",
+        "pinX": 2585,
+        "pinY": 2340,
+        "labelX": 2705,
+        "labelY": 2340,
+        "stubId": "79291b9f1515fc63",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "MIC2",
+        "pin": "5",
+        "net": "+3V3_FPC",
+        "pinX": 2585,
+        "pinY": 2350,
+        "labelX": 2705,
+        "labelY": 2350,
+        "stubId": "d79e6a12ddb7a595",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "MIC2",
+        "pin": "6",
+        "net": "DOCK_SD",
+        "pinX": 2585,
+        "pinY": 2360,
+        "labelX": 2705,
+        "labelY": 2360,
+        "stubId": "25ea9901d7a436fb",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "1",
+        "net": "GND",
+        "pinX": 2765,
+        "pinY": 2380,
+        "labelX": 2645,
+        "labelY": 2380,
+        "stubId": "142e218dde827810",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "2",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "3",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "4",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "5",
+        "net": "+3V3_FPC",
+        "pinX": 2765,
+        "pinY": 2340,
+        "labelX": 2645,
+        "labelY": 2340,
+        "stubId": "79291b9f1515fc63",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "6",
+        "net": "GND",
+        "pinX": 2765,
+        "pinY": 2330,
+        "labelX": 2645,
+        "labelY": 2330,
+        "stubId": "356c1929bd9d0f59",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "7",
+        "net": "GND",
+        "pinX": 2765,
+        "pinY": 2320,
+        "labelX": 2645,
+        "labelY": 2320,
+        "stubId": "ad7df92bb80de7ed",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "8",
+        "net": "+3V3_FPC",
+        "pinX": 3035,
+        "pinY": 2320,
+        "labelX": 3155,
+        "labelY": 2320,
+        "stubId": "8bb01134ba0e7037",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "9",
+        "net": "GND",
+        "pinX": 3035,
+        "pinY": 2330,
+        "labelX": 3155,
+        "labelY": 2330,
+        "stubId": "f5a6c18624a1a03e",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "10",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "11",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "12",
+        "net": "+3V3_FPC",
+        "pinX": 3035,
+        "pinY": 2360,
+        "labelX": 3155,
+        "labelY": 2360,
+        "stubId": "5e169a260a33ad15",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "13",
+        "net": "DOCK_SCL",
+        "pinX": 3035,
+        "pinY": 2370,
+        "labelX": 3155,
+        "labelY": 2370,
+        "stubId": "6ff3c8ff206891a9",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U9",
+        "pin": "14",
+        "net": "DOCK_SDA",
+        "pinX": 3035,
+        "pinY": 2380,
+        "labelX": 3155,
+        "labelY": 2380,
+        "stubId": "67e6825b426d8315",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C10",
+        "pin": "1",
+        "net": "+3V3_FPC",
+        "pinX": 2135,
+        "pinY": 2650,
+        "labelX": 2015,
+        "labelY": 2650,
+        "stubId": "dec2f09821c0ef52",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C10",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 2165,
+        "pinY": 2650,
+        "labelX": 2285,
+        "labelY": 2650,
+        "stubId": "74bddeb8dfdad436",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C11",
+        "pin": "1",
+        "net": "+3V3_FPC",
+        "pinX": 2495,
+        "pinY": 2650,
+        "labelX": 2375,
+        "labelY": 2650,
+        "stubId": "228415afe411e963",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C11",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 2525,
+        "pinY": 2650,
+        "labelX": 2645,
+        "labelY": 2650,
+        "stubId": "85913c3b57f64b2d",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C12",
+        "pin": "1",
+        "net": "+3V3_FPC",
+        "pinX": 2855,
+        "pinY": 2650,
+        "labelX": 2735,
+        "labelY": 2650,
+        "stubId": "1cbcb02abfaed56c",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "C12",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 2885,
+        "pinY": 2650,
+        "labelX": 3005,
+        "labelY": 2650,
+        "stubId": "148d2b432c60ab69",
+        "labelObjectType": "named-wire"
+      }
+    ],
+    "verification": "LABEL_OBJECT_AND_STUB_READBACK_ONLY; NATIVE_NETLIST_COMPARISON_REQUIRED"
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

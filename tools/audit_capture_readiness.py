@@ -46,7 +46,7 @@ for ref,spec in devices.items():
 # Known contradictions are explicit gates, not silently normalized.
 text=(Path('projects/beebox/04_schematic/build_sheet.md').read_text(encoding='utf8')+'\n'+Path('projects/beebox/04_schematic/net_connection.md').read_text(encoding='utf8'))
 for token,reason in [
- ('R14/R15 feedback baseline','fixed TPS62162 must use FB→AGND; divider must not be populated'),
+ ('R14/R15 feedback baseline','fixed TPS62161 must use FB→AGND; divider must not be populated'),
  ('VIN_USB_PROTECTED','no approved VBUS current/protection device creates this rail'),
  ('`VFPC`','connector pinout instead defines separate VDOCK and +3V3_FPC rails'),
  ('J1.VBUS, D1.VBUS','USB protection identity conflicts with reviewed D6, which is data-line ESD only'),
@@ -59,7 +59,7 @@ errors += [
  {'missing_architecture_definition':'External ~6V input has no approved connector/TVS/threshold-divider component set'},
  {'missing_architecture_definition':'TPS2121 PR1/CP2/OV1/OV2/ILM/SS networks and values are not fully specified'},
  {'missing_architecture_definition':'TPS26600 UVLO/OVP/ILIM/dVdT/MODE/SHDN support values are not fully specified'},
- {'missing_architecture_definition':'TPS62162 fixed-3V3 output cannot regulate at 3.3V over the full depleted 1S battery range'},
+ {'missing_architecture_definition':'TPS62161 fixed-3V3 output cannot regulate at 3.3V over the full depleted 1S battery range'},
  {'missing_architecture_definition':'Powered-off FPC signal isolation/back-power prevention is not resolved'},
 ]
 report={'status':'BLOCKED' if errors else 'READY','scope':'PRE-MUTATION_CAPTURE_GATE','counts':{'component_rows':len(components),'pin_to_pin_rows':len(pins),'canonical_components':len(canonical),'verified_devices':len(devices),'verified_passives':len(passives)},'errors':errors,'warnings':warnings,'prohibition':'Do not execute sections 01-08 while status is BLOCKED; doing so would create arbitrary or incomplete circuitry.'}

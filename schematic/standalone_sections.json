@@ -1,0 +1,402 @@
+{
+  "01_usb_power_entry.js": {
+    "section": "USB_POWER_ENTRY",
+    "parts": [
+      "J1",
+      "D6"
+    ],
+    "passives": [
+      {
+        "ref": "R6",
+        "kind": "R",
+        "value": "5.1k",
+        "netA": "USB_CC1",
+        "netB": "GND"
+      },
+      {
+        "ref": "R7",
+        "kind": "R",
+        "value": "5.1k",
+        "netA": "USB_CC2",
+        "netB": "GND"
+      },
+      {
+        "ref": "C21",
+        "kind": "C",
+        "value": "4.7uF",
+        "netA": "VBUS_USB",
+        "netB": "GND"
+      },
+      {
+        "ref": "C22",
+        "kind": "C",
+        "value": "10nF",
+        "netA": "VBUS_USB",
+        "netB": "GND"
+      }
+    ],
+    "note": "",
+    "base": [
+      350,
+      500
+    ]
+  },
+  "02_external_power_charging.js": {
+    "section": "EXTERNAL_POWER_CHARGING",
+    "parts": [
+      "U6",
+      "U11",
+      "U2",
+      "J4"
+    ],
+    "passives": [
+      {
+        "ref": "R11",
+        "kind": "R",
+        "value": "1.78k",
+        "netA": "CHARGER_ISET",
+        "netB": "GND"
+      },
+      {
+        "ref": "R12",
+        "kind": "R",
+        "value": "1.54k",
+        "netA": "CHARGER_ILIM",
+        "netB": "GND"
+      },
+      {
+        "ref": "R13",
+        "kind": "R",
+        "value": "46.4k",
+        "netA": "CHARGER_TMR",
+        "netB": "GND"
+      },
+      {
+        "ref": "R16",
+        "kind": "R",
+        "value": "10k",
+        "netA": "CHARGER_TS",
+        "netB": "GND"
+      },
+      {
+        "ref": "R17",
+        "kind": "R",
+        "value": "10k",
+        "netA": "CHARGER_PGOOD",
+        "netB": "+3V3"
+      },
+      {
+        "ref": "R18",
+        "kind": "R",
+        "value": "10k",
+        "netA": "CHARGER_CHG",
+        "netB": "+3V3"
+      },
+      {
+        "ref": "C23",
+        "kind": "C",
+        "value": "1u",
+        "netA": "VIN_CHARGER",
+        "netB": "GND"
+      },
+      {
+        "ref": "C24",
+        "kind": "C",
+        "value": "22u",
+        "netA": "VSYS",
+        "netB": "GND"
+      },
+      {
+        "ref": "C25",
+        "kind": "C",
+        "value": "1u",
+        "netA": "VBAT",
+        "netB": "GND"
+      },
+      {
+        "ref": "R20",
+        "kind": "R",
+        "value": "11.8k",
+        "netA": "EXT_ILIM",
+        "netB": "GND"
+      },
+      {
+        "ref": "R21",
+        "kind": "R",
+        "value": "576k",
+        "netA": "VIN_EXT_RAW",
+        "netB": "EXT_OVP"
+      },
+      {
+        "ref": "R22",
+        "kind": "R",
+        "value": "100k",
+        "netA": "EXT_OVP",
+        "netB": "GND"
+      },
+      {
+        "ref": "C26",
+        "kind": "C",
+        "value": "100n",
+        "netA": "EXT_DVDT",
+        "netB": "GND"
+      },
+      {
+        "ref": "R23",
+        "kind": "R",
+        "value": "10k",
+        "netA": "EXT_FLT",
+        "netB": "+3V3"
+      },
+      {
+        "ref": "R24",
+        "kind": "R",
+        "value": "80.6k",
+        "netA": "PWRMUX_ILM",
+        "netB": "GND"
+      },
+      {
+        "ref": "C27",
+        "kind": "C",
+        "value": "100n",
+        "netA": "PWRMUX_SS",
+        "netB": "GND"
+      }
+    ],
+    "note": "VIN_EXT_RAW is an explicit external-input boundary net; exact field connector remains provisional/DNI.",
+    "base": [
+      1550,
+      500
+    ]
+  },
+  "03_regulators_power.js": {
+    "section": "REGULATORS",
+    "parts": [
+      "U3",
+      "Q1",
+      "Q2"
+    ],
+    "passives": [
+      {
+        "ref": "L1",
+        "kind": "L",
+        "value": "2.2u",
+        "netA": "BUCK_SW",
+        "netB": "+3V3"
+      },
+      {
+        "ref": "R25",
+        "kind": "R",
+        "value": "10k",
+        "netA": "REG_PG",
+        "netB": "+3V3"
+      },
+      {
+        "ref": "C29",
+        "kind": "C",
+        "value": "22u",
+        "netA": "VSYS",
+        "netB": "GND"
+      },
+      {
+        "ref": "C30",
+        "kind": "C",
+        "value": "22u",
+        "netA": "+3V3",
+        "netB": "GND"
+      }
+    ],
+    "note": "TPS62161 is fixed 3.3V; FB is grounded and no divider is fitted. Battery-end dropout remains a documented system limitation.",
+    "base": [
+      3000,
+      500
+    ]
+  },
+  "04_esp32_core.js": {
+    "section": "ESP32_CORE",
+    "parts": [
+      "U1",
+      "U12"
+    ],
+    "passives": [
+      {
+        "ref": "C1",
+        "kind": "C",
+        "value": "100n",
+        "netA": "+3V3",
+        "netB": "GND"
+      },
+      {
+        "ref": "C2",
+        "kind": "C",
+        "value": "1u",
+        "netA": "+3V3",
+        "netB": "GND"
+      },
+      {
+        "ref": "C4",
+        "kind": "C",
+        "value": "100n",
+        "netA": "ESP_EN",
+        "netB": "GND"
+      },
+      {
+        "ref": "R26",
+        "kind": "R",
+        "value": "10k",
+        "netA": "ESP_EN",
+        "netB": "+3V3"
+      },
+      {
+        "ref": "R27",
+        "kind": "R",
+        "value": "10k",
+        "netA": "ESP_BOOT",
+        "netB": "+3V3"
+      }
+    ],
+    "note": "",
+    "base": [
+      350,
+      1450
+    ]
+  },
+  "05_external_sensors_audio.js": {
+    "section": "EXTERNAL_SENSORS_AUDIO",
+    "parts": [
+      "U7",
+      "MIC1"
+    ],
+    "passives": [
+      {
+        "ref": "C3",
+        "kind": "C",
+        "value": "100n",
+        "netA": "+3V3",
+        "netB": "GND"
+      },
+      {
+        "ref": "C5",
+        "kind": "C",
+        "value": "100n",
+        "netA": "+3V3",
+        "netB": "GND"
+      }
+    ],
+    "note": "",
+    "base": [
+      1850,
+      1450
+    ]
+  },
+  "06_storage_rf_expansion.js": {
+    "section": "STORAGE_RF",
+    "parts": [],
+    "passives": [],
+    "note": "J-SD and J-RF are intentional DNI until exact connectors/footprints are selected; SPI/UART nets remain reserved on U1.",
+    "base": [
+      3000,
+      1450
+    ]
+  },
+  "07_docking_interface.js": {
+    "section": "DOCKING",
+    "parts": [
+      "U4",
+      "D5"
+    ],
+    "passives": [
+      {
+        "ref": "R4",
+        "kind": "R",
+        "value": "2.2k",
+        "netA": "I2C_MAIN_SDA",
+        "netB": "+3V3"
+      },
+      {
+        "ref": "R5",
+        "kind": "R",
+        "value": "2.2k",
+        "netA": "I2C_MAIN_SCL",
+        "netB": "+3V3"
+      },
+      {
+        "ref": "R28",
+        "kind": "R",
+        "value": "10k",
+        "netA": "I2C_MUX_RESET",
+        "netB": "+3V3"
+      }
+    ],
+    "note": "J3-01..J3-12 are explicit provisional boundary contacts; no false 12-pin replacement component is used.",
+    "base": [
+      350,
+      2350
+    ]
+  },
+  "08_universal_sensor_fpc.js": {
+    "section": "UNIVERSAL_SENSOR_FPC",
+    "parts": [
+      "J2",
+      "U8",
+      "MIC2",
+      "U9"
+    ],
+    "passives": [
+      {
+        "ref": "C10",
+        "kind": "C",
+        "value": "100n",
+        "netA": "+3V3_FPC",
+        "netB": "GND"
+      },
+      {
+        "ref": "C11",
+        "kind": "C",
+        "value": "100n",
+        "netA": "+3V3_FPC",
+        "netB": "GND"
+      },
+      {
+        "ref": "C12",
+        "kind": "C",
+        "value": "100n",
+        "netA": "+3V3_FPC",
+        "netB": "GND"
+      }
+    ],
+    "note": "BOARD B logical assignment. U10 SGP40 is DNI.",
+    "base": [
+      1650,
+      2350
+    ]
+  },
+  "09_status_debug.js": {
+    "section": "STATUS_TEST",
+    "parts": [
+      "D2",
+      "D3"
+    ],
+    "passives": [
+      {
+        "ref": "R1",
+        "kind": "R",
+        "value": "1k",
+        "netA": "LED_R",
+        "netB": "LED_R_A"
+      },
+      {
+        "ref": "R2",
+        "kind": "R",
+        "value": "1k",
+        "netA": "LED_G",
+        "netB": "LED_G_A"
+      }
+    ],
+    "note": "D4 blue LED is explicit DNI because exact LTST-C193KBKT-5A library identity is unavailable; no TBKT substitution.",
+    "base": [
+      3500,
+      2350
+    ]
+  }
+}

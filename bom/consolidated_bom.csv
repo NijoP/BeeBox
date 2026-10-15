@@ -1,7 +1,7 @@
 ref,mpn,function,qty_pilot,qty_rfq_low,qty_rfq_high,board,population,status
 U1,Espressif ESP32-S3-WROOM-1-N16R8,MCU/Wi-Fi/BLE,1,5,10,main,Yes,baseline
 U2,Texas Instruments BQ24074RGTR,1S charger/power path,1,5,10,main,Yes,baseline
-U3,Texas Instruments TPS62162DSGR,fixed 3V3 buck; FB to AGND,1,5,10,main,Yes,reviewed identity; system verification pending
+U3,Texas Instruments TPS62161DSGR,fixed 3V3 buck; FB to AGND,1,5,10,main,Yes,exact C2864193; depleted-cell limitation
 U4,Texas Instruments TCA9546APWR,I2C branch switch,1,5,10,main,Yes,reviewed identity; system verification pending
 U5,Analog Devices MAX17048G+T10,fuel gauge,1,5,10,main,DNI/option,DNI/option
 U6,Texas Instruments TPS26600RHFT,6V input eFuse,1,5,10,main,Yes,baseline
@@ -23,7 +23,7 @@ U9,TDK ICM-42688-P,internal FPC IMU,1,5,10,fpc,Yes,baseline
 U10,Sensirion SGP40,VOC option,1,5,10,fpc,DNI,DNI
 D2,Lite-On LTST-C193KRKT-5A,red status LED,1,5,10,main,Yes,baseline
 D3,Lite-On LTST-C193KGKT-5A,green status LED,1,5,10,main,Yes,baseline
-D4,Lite-On LTST-C193KBKT-5A,blue status LED,1,5,10,main,Yes,baseline
+D4,Lite-On LTST-C193KBKT-5A,blue status LED,1,5,10,main,DNI,DNI: exact approved library identity unresolved
 J-SD,TBD microSD socket,SPI storage,1,5,10,main,DNI,DNI
 J-RF,TBD RF expansion header,SPI/UART expansion,1,5,10,main,DNI,DNI
 U-IMU,TDK ICM-42688-P,optional external/controller IMU,1,5,10,main,DNI,DNI

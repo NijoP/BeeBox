@@ -8,7 +8,7 @@
 | RETAIN provisionally | ESP32-S3 architecture | directly required by RFQ; exact module suffix and GPIO map still required |
 | RETAIN provisionally | ICS-43434-class digital microphone | compatible 3.3 V/I²S concept; audio storage mode must be defined |
 | RETAIN provisionally | SHT45-class external T/RH | plausible electrical candidate; enclosure/self-heating evidence required |
-| RETAIN provisionally | TPS62162-class buck | arithmetic current headroom exists under assumptions; exact transient/thermal check required |
+| RETAIN provisionally | TPS62161-class buck | arithmetic current headroom exists under assumptions; exact transient/thermal check required |
 | INVESTIGATE | BQ24074 charger/power path | plausible, but ~0.9–1.5 W screening heat at 6 V/0.5 A is material |
 | INVESTIGATE | MAX17048 fuel gauge | useful but optional; compare Indian landed cost and pilot value |
 | INVESTIGATE | ICM-42688-P | RFQ says IMU “if required”; client must define experiment |

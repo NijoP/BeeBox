@@ -15,7 +15,7 @@ The AVL shall prioritize legitimate Indian distributors and assemblers (for exam
 | U3 | optional IMU | TDK ICM-42688-P | 0/1 | 0/1 | LGA; verify assembly | [official PDF](https://invensense.tdk.com/wp-content/uploads/2020/04/DS-000347-ICM-42688-P-v1.3.pdf) / optional |
 | U4 | optional VOC | Sensirion SGP40 | 0/1 | 0/1 | DFN; gas opening | [official](https://sensirion.com/products/catalog/SGP40) / optional |
 | U5 | charger/path | TI BQ24074 | 1 | — | WQFN/QFN; thermal review | [datasheet](https://www.ti.com/lit/ds/symlink/bq24074.pdf) / topology candidate |
-| U6 | regulator | TI TPS62162 | 1 | — | QFN; inductor required | [datasheet](https://www.ti.com/lit/ds/symlink/tps62162.pdf) / candidate |
+| U6 | regulator | TI TPS62161 | 1 | — | QFN; inductor required | [datasheet](https://www.ti.com/lit/ds/symlink/tps62162.pdf) / candidate |
 | U7 | fuel gauge | ADI MAX17048 | 0/1 | — | TDFN; optional | [datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/max17048-max17049.pdf) / optional |
 | D1.. | protection | TI TPD4E05U06 or equivalent | as exposed lines | as docked lines | low-C ESD | [datasheet](https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf) / select after pinout |
 | J1 | USB-C | exact MPN TBD | 1 | — | anchored SMT/THT TBD | sourcing action |
@@ -34,7 +34,7 @@ The following baseline expands the earlier candidate list into schematic-level l
 |---|---|---:|---|---|
 | U1 | Espressif ESP32-S3-WROOM-1-N16R8 | 1 | MCU/Wi-Fi/BLE; [baseline map](23_Baseline_Resolution_and_Schematic_Capture_Package.md) | provisional exact suffix |
 | U2 | TI BQ24074 | 1 | 1S charger/power path | thermal/input review |
-| U3 | TI TPS62162 | 1 | 3.3 V buck | provisional |
+| U3 | TI TPS62161 | 1 | 3.3 V buck | provisional |
 | U4 | TI TCA9546A | 1 | I²C branch/address isolation | recommended |
 | U5 | ADI MAX17048 | 1 | battery gauge | optional pilot; investigate cost |
 | U6 | TI TPS2660 | 1 | external-input eFuse/OVP candidate | verify 6 V/thermal configuration |
@@ -51,7 +51,7 @@ The following baseline expands the earlier candidate list into schematic-level l
 | R6–R7 | USB-C 5.1 kΩ CC resistors | 1 each | USB-C sink advertisement | USB-C baseline |
 | R8–R9 | battery divider, values TBD | 1 each | ADC battery monitor | leakage/ADC calculation |
 | C* | 100 nF per IC; 1 µF local; 10–22 µF rail bulk | design qty | decoupling/transient support | exact datasheets/fab AVL |
-| L1 | TPS62162 inductor per datasheet | 1 | buck energy storage | select exact saturation/current |
+| L1 | TPS62161 inductor per datasheet | 1 | buck energy storage | select exact saturation/current |
 | F1 | input fuse/PTC TBD | 1 | source fault limitation | input study |
 | Q/IC | VDOCK load switch/current limiter TBD | 1 | hot-plug/dock protection | select after load |
 | TP* | labelled test pads | ≥10 | VBUS, VIN_EXT, VBAT, VSYS, 3V3, GND, buses | required |

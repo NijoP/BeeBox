@@ -1,0 +1,237 @@
+{
+  "success": true,
+  "result": {
+    "0603WAF1001T5E": [
+      {
+        "uuid": "2340647df7144fc5a30489ed06518eb5",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF1001T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF1001T5E",
+        "supplierId": "C21190",
+        "symbolUuid": "9a91e91e9eed4d1398253ad92400dfec",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:1k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF2201T5E": [
+      {
+        "uuid": "be60f304bdf4486e908bd15535a43c6d",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF2201T5E_C4190",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF2201T5E",
+        "supplierId": "C4190",
+        "symbolUuid": "2a6523e6463949f58184a25fade1f911",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:2.2k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      },
+      {
+        "uuid": "827f83542071496498529f857cc975f6",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF2201T5E",
+        "manufacturer": "",
+        "manufacturerId": "0603WAF2201T5E",
+        "supplierId": "C145170",
+        "symbolUuid": "cfe5591931514db68ed9192ecf020c24",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistors Resistance:2.2k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts): Overload Voltage (Max): Operating Temperature Range:-55\u2103~+155\u2103 Operating Temperature Range:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF1004T5E": [
+      {
+        "uuid": "60479e0364284da4a2720dc86428b721",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF1004T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF1004T5E",
+        "supplierId": "C22935",
+        "symbolUuid": "632b89fdc2444237940e0938b4c13e8d",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:1M\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF3303T5E": [
+      {
+        "uuid": "a0420ebef65b40d0b64f64eaa00e77a1",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF3303T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF3303T5E",
+        "supplierId": "C23137",
+        "symbolUuid": "023ae81f213841b69759a0f3641c08aa",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistors Resistance:330k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts): Overload Voltage (Max): Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature Range:-55\u2103~+155\u2103 Operating Temperature Range:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF1003T5E": [
+      {
+        "uuid": "c728373c421046ff8f40bf82a79ee519",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF1003T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF1003T5E",
+        "supplierId": "C25803",
+        "symbolUuid": "400e1481e6ba4cd7adb37ee3a9f82641",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:100k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF1781T5E": [
+      {
+        "uuid": "bdf846a22e53454ea6837f05f9042df9",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF1781T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF1781T5E",
+        "supplierId": "C22849",
+        "symbolUuid": "9ad7e80fcf9a4f29b43ce7520e5f349c",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:1.78k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF1541T5E": [
+      {
+        "uuid": "8a4fd331ec6041d3a857f0da45730847",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF1541T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF1541T5E",
+        "supplierId": "C22842",
+        "symbolUuid": "f1a5ec006c5944c68bf88955b19192b3",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:1.54k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF4642T5E": [
+      {
+        "uuid": "eb48769a7646462696d362b079325099",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF4642T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF4642T5E",
+        "supplierId": "C23059",
+        "symbolUuid": "e566fd81b3fb4d429fdaa2aba6767978",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:46.4k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF1002T5E": [
+      {
+        "uuid": "b0602c6e20fc41faa226d9f001a9bead",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF1002T5E",
+        "supplierId": "C25804",
+        "symbolUuid": "1eab50de005c4ea7b3f97449e24958e7",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:10k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF4422T5E": [
+      {
+        "uuid": "54291d7f4f6d4d029ea5f3e8e2c8ae83",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF4422T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF4422T5E",
+        "supplierId": "C23056",
+        "symbolUuid": "ea6bdcb8f6af4e2285e047a31e5db8c5",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:44.2k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF8002T5E": [],
+    "0603WAF1182T5E": [
+      {
+        "uuid": "faf1661bb8b1468cb61289692111ac13",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF1182T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF1182T5E",
+        "supplierId": "C22861",
+        "symbolUuid": "228003277e6c4c7c9a65abccf9c13dee",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:11.8k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "0603WAF5763T5E": [
+      {
+        "uuid": "21d5abcd591a424ea527847c1f1591b0",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "0603WAF5763T5E",
+        "manufacturer": "UNI-ROYAL(\u539a\u58f0)",
+        "manufacturerId": "0603WAF5763T5E",
+        "supplierId": "C23207",
+        "symbolUuid": "82739e40dbb44212871b3de3c947f6e8",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8",
+        "description": "Type:Thick Film Resistor Resistance:576k\u03a9 Tolerance:\u00b11% Tolerance:\u00b11% Power(Watts):100mW Voltage-Supply(Max):75V Temperature Coefficient:\u00b1100ppm/\u2103 Temperature Coefficient:\u00b1100ppm/\u2103 Operating Temperature:-55\u2103~+155\u2103 Operating Temperature:-55\u2103~+155\u2103 "
+      }
+    ],
+    "CL10B104KO8NNNC": [
+      {
+        "uuid": "60ed22c737ac42f8917fb4a0bf26eb07",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(\u4e09\u661f)",
+        "manufacturerId": "CL10B104KO8NNNC",
+        "supplierId": "C66501",
+        "symbolUuid": "bddc141996644bdc8659ccc3da539b55",
+        "footprintUuid": "f499007f726c45dbbd59d7d6a82bc126",
+        "description": "Capacitance:100nF Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rating:16V Temperature Coefficient:X7R "
+      }
+    ],
+    "CL10B105KP8NNNC": [
+      {
+        "uuid": "adfe864079e94354b546b5adf3adfee6",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CL10B105KP8NNNC",
+        "manufacturer": "SAMSUNG(\u4e09\u661f)",
+        "manufacturerId": "CL10B105KP8NNNC",
+        "supplierId": "C95843",
+        "symbolUuid": "ed24539b10a9442e90d188b66ef30c07",
+        "footprintUuid": "f499007f726c45dbbd59d7d6a82bc126",
+        "description": "Capacitance:1uF Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rating:10V Temperature Coefficient:X7R "
+      }
+    ],
+    "CL31A226KAHNNNE": [
+      {
+        "uuid": "508c6d58b15440aaa060c987c88750dc",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CL31A226KAHNNNE",
+        "manufacturer": "SAMSUNG(\u4e09\u661f)",
+        "manufacturerId": "CL31A226KAHNNNE",
+        "supplierId": "C12891",
+        "symbolUuid": "c3339bf968214ac1a3364da72e3bd888",
+        "footprintUuid": "662a139c6673408a9f29eec4494c53e9",
+        "description": "Capacitance:22uF Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rating:25V Temperature Coefficient:X5R "
+      }
+    ],
+    "CL10B104KB8NNNC": [
+      {
+        "uuid": "49c50a09a6674d6b9c72fcc3adebcbca",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CL10B104KB8NNNC",
+        "manufacturer": "SAMSUNG(\u4e09\u661f)",
+        "manufacturerId": "CL10B104KB8NNNC",
+        "supplierId": "C1591",
+        "symbolUuid": "1d8eb70469a74734be8683fed29855b6",
+        "footprintUuid": "f499007f726c45dbbd59d7d6a82bc126",
+        "description": "Capacitance:100nF Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rating:50V Temperature Coefficient:X7R "
+      },
+      {
+        "uuid": "0ec35925ae8c4443a3f80923044ca27f",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CL10B104KB8NNNC_C9900008356",
+        "manufacturer": "",
+        "manufacturerId": "CL10B104KB8NNNC",
+        "supplierId": "C9900008356",
+        "symbolUuid": "14acee8857bd4bfba4814d4ca38ecca2",
+        "footprintUuid": "f499007f726c45dbbd59d7d6a82bc126",
+        "description": ""
+      }
+    ]
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

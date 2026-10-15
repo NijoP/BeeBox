@@ -1,0 +1,7 @@
+BeeBox schematic export verification
+Source: active EasyEDA schematic page d5e34c82cc3ba89c (BEEBOX/Schematic1/P1)
+Objects modified: none
+PNG: beebox-schematic-final.png | 139169 bytes | PNG signature | 1570x630 RGBA
+PDF: beebox-schematic-final.pdf | 66550 bytes | PDF-1.4 signature | 1 page
+SHA256 PNG: 46b64aef3d53a8be277ceda24ea39da8412b568e45c969b606849724138a8e88
+SHA256 PDF: ecd9f7d643aa4dbe372a97259fa17a56927ef7ff9e890af15d19f57b99ff931d

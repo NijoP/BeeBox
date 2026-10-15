@@ -1,0 +1,105 @@
+{
+  "success": true,
+  "result": {
+    "section": "STATUS_TEST",
+    "status": "MUTATED_REQUIRES_NATIVE_VERIFICATION",
+    "log": [
+      "OK D2 <- LTST-C193KRKT-5A (LTST-C193KRKT-5A)",
+      "OK D3 <- LTST-C193KGKT-5A (LTST-C193KGKT-5A)",
+      "OK R1 1k LED_R-LED_R_A <- 0603WAF1001T5E",
+      "OK R2 1k LED_G-LED_G_A <- 0603WAF1001T5E"
+    ],
+    "connections": [
+      {
+        "ownerRef": "D2",
+        "pin": "2",
+        "net": "LED_R_A",
+        "pinX": 3520,
+        "pinY": 2350,
+        "labelX": 3640,
+        "labelY": 2350,
+        "stubId": "32360933d117ee2d",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D2",
+        "pin": "1",
+        "net": "GND",
+        "pinX": 3480,
+        "pinY": 2350,
+        "labelX": 3360,
+        "labelY": 2350,
+        "stubId": "b1fe34cf62c28a44",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D3",
+        "pin": "2",
+        "net": "LED_G_A",
+        "pinX": 3870,
+        "pinY": 2350,
+        "labelX": 3990,
+        "labelY": 2350,
+        "stubId": "5752bbfba9cbdf9f",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D3",
+        "pin": "1",
+        "net": "GND",
+        "pinX": 3830,
+        "pinY": 2350,
+        "labelX": 3710,
+        "labelY": 2350,
+        "stubId": "5d38751382eecff3",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R1",
+        "pin": "1",
+        "net": "LED_R",
+        "pinX": 3780,
+        "pinY": 2650,
+        "labelX": 3660,
+        "labelY": 2650,
+        "stubId": "d012a381e3a48a40",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R1",
+        "pin": "2",
+        "net": "LED_R_A",
+        "pinX": 3820,
+        "pinY": 2650,
+        "labelX": 3940,
+        "labelY": 2650,
+        "stubId": "0e4325229877dee9",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R2",
+        "pin": "1",
+        "net": "LED_G",
+        "pinX": 4140,
+        "pinY": 2650,
+        "labelX": 4020,
+        "labelY": 2650,
+        "stubId": "817783f08fa68c3d",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R2",
+        "pin": "2",
+        "net": "LED_G_A",
+        "pinX": 4180,
+        "pinY": 2650,
+        "labelX": 4300,
+        "labelY": 2650,
+        "stubId": "a9707b3eed8252fd",
+        "labelObjectType": "named-wire"
+      }
+    ],
+    "verification": "LABEL_OBJECT_AND_STUB_READBACK_ONLY; NATIVE_NETLIST_COMPARISON_REQUIRED"
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

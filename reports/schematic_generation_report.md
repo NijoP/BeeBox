@@ -1,150 +1,88 @@
-# BeeBox master schematic generation report
+# BeeBox schematic generation report
 
-**Build ID:** `BEEBOX-MASTER-20261015-R1`  
-**Verification ID:** `BEEBOX-VERIFY-20261015-R1`  
 **Branch:** `feature/beebox-complete-schematic-rebuild`  
-**Overall result:** **BLOCKED BY MISSING EVIDENCE — no placement performed, not manufacturing-ready**
+**Current gate:** all ordered sections executed; physical-pin parity PASS; PDF/visual/ERC release evidence pending
+**Manufacturing readiness:** **NOT CLAIMED**
 
-## Executive result
+## Standalone-script deliverable
 
-The prerequisite investigation found that blindly executing the existing section scripts would recreate known electrical errors. The current live EasyEDA page is connected and is genuinely A0 landscape, but it contains no electrical circuit (one drawing/title object and zero wires). The controlled master precheck validated the active project/page, rollback source, duplicate-reference state and reviewed USB library records, then correctly returned `BLOCKED_NO_MUTATION` with 18 open engineering gates and `mutationCount: 0`.
+The former combined/ambiguous section files were replaced by an ordered set in `easyeda_scripts/`. Each section script embeds its own reviewed device/passive records and helper functions; it does not depend on variables created by another script.
 
-This is a safe and verified stop, not completion of the requested schematic. No final schematic PDF is claimed.
+1. `01_usb_power_entry.js` — USB-C, separate CC pull-downs, USB2 data and D6 ESD.
+2. `02_external_power_charging.js` — TPS26600, TPS2121, BQ24074, battery connector and support networks.
+3. `03_regulators_power.js` — fixed-output TPS62161, inductor, rail capacitors and switched VDOCK/+3V3_FPC.
+4. `04_esp32_core.js` — ESP32-S3, decoupling, EN/BOOT and audio selection.
+5. `05_external_sensors_audio.js` — local SHT45 and I2S microphone.
+6. `06_storage_rf_expansion.js` — explicit DNI section; no unverified connector substitution.
+7. `07_docking_interface.js` — TCA9546A, ESD and twelve explicit provisional J3 contact boundaries.
+8. `08_universal_sensor_fpc.js` — Board-B FPC connector, SHT45, microphone and IMU.
+9. `09_status_debug.js` — verified red/green LEDs; D4 remains explicit DNI.
+10. `10_status_testpoints.js` — twelve named one-pin test points.
+11. `11_final_verification.js` — native component/wire/net-port readback.
 
-## Repository and Git evidence
+Source template/configuration:
 
-- Starting branch: `main` at `3a28622a0cb72f3f600b85153cd1ba4df8667b52`.
-- `origin/main` after fetch: `3a28622a0cb72f3f600b85153cd1ba4df8667b52`.
-- Pre-existing modified and untracked audit work was preserved on the feature branch in commit `2f9b76d` rather than reset or discarded.
-- Initial unstaged/staged diffs and untracked/ignored inventories were inspected before mutation.
-- No force push, history rewrite, merge to `main`, or destructive clean/reset was performed.
+- `easyeda_scripts/section_generator.template.js`
+- `schematic/standalone_sections.json`
+- `tools/generate_pcbflow_section_scripts.py`
+- `tools/complete_generation_manifests.py`
+- `tools/validate_standalone_scripts.py`
 
-## EasyEDA connection and page
+## Validation evidence
 
-| Check | Result |
-|---|---|
-| Bridge health | **VERIFIED PASS** — `easyeda-bridge`, port 49620 |
-| Connected windows | **VERIFIED PASS** — one active window |
-| Active project | **VERIFIED PASS** — BEEBOX / `d84c4be0ef2e467fa17955faa23c6314` |
-| Active page | **VERIFIED PASS** — Schematic1/P1 / `d5e34c82cc3ba89c` |
-| Page metadata | **VERIFIED PASS** — A0, 4681.1024 × 3311.0236 schematic units |
-| Pre-mutation native backup | **VERIFIED PASS** — `outputs/schematic/checkpoints/pre_master_rebuild_native_backup.json` |
-| Current electrical inventory | **VERIFIED FAIL** for completion — zero wires and all required circuit references missing |
+`python tools/validate_standalone_scripts.py` result: **PASS**
 
-The old A4 statement in historical logs is stale. The live title metadata currently reports A0 and was checked directly by the master preflight.
+- 11 ordered standalone scripts checked.
+- 60 unique placed references checked.
+- 330 physical-pin/contact membership rows emitted.
+- 68 canonical nets and 237 deterministic pin-to-pin graph rows emitted.
+- No duplicate reference, missing reviewed identity, passive-value mismatch or physical-map conflict.
+- High-risk assertions passed: D6 pins 2/5 and both USB data directions; separate CC1/CC2; SBU NC; fixed TPS62161 FB-to-GND; TCA9546A RESET# pull-up; BQ24074 support; TPS2121 support; TPS26600 support; two-contact J4; twelve independent J3 contacts; no false D4 substitution.
 
-## Canonical engineering model
+Live EasyEDA read-only UUID validation: **PASS**
 
-Generated reproducibly by `python tools/build_canonical_design_model.py`:
+- 37 unique library UUID records re-read through `eda.lib_Device.get(uuid, libraryUuid)`.
+- UUID, library UUID, manufacturer, manufacturer MPN, supplier ID, symbol UUID and footprint UUID matched the pinned manifests.
+- Evidence: `outputs/schematic/readback/standalone_library_uuid_validation.json`.
 
-- `schematic/part_manifest.json` — 89 explicit part/contact records (including provisional Q2 for the separately switched +3V3_FPC rail).
-- `schematic/physical_pin_manifest.csv` — 290 physical-pin rows.
-- `schematic/verified_passive_library.json` — reviewed USB passives only; missing selections are not fabricated.
-- `netlist/canonical_net_membership.csv` — 244 pin-membership rows with row-level verification status.
-- `netlist/canonical_pin_to_pin.csv` — 201 physical pin-to-pin graph rows (10 fully verified; provisional and single-pin rows remain explicitly classified).
-- `schematic/section_layout.json` — current A0 plan and separate required FPC page assignment.
-- `schematic/design_decisions.md` — the 20 known discrepancies, evidence, result and release gates.
+Other checks:
 
-Model build summary:
+- `python tools/verify_canonical_design_model.py` — **PASS** (89 part/contact records, 290 source-manifest pins, 330 executable membership rows, 29 model assertions).
+- `node tools/test_section_generator.cjs` — **PASS**.
+- `node tools/test_library_selection.cjs` — **PASS**.
+- `node tools/test_net_label_generator.cjs` — **PASS**.
+- `node tools/test_usb_readability.cjs` — **PASS**.
+- Async-function syntax compilation for all 11 scripts — **PASS**.
+- Machine-readable results: `outputs/schematic/logs/standalone_script_validation.json`.
 
-| Metric | Result |
-|---|---:|
-| Part/contact records | 89 |
-| Physical pins | 290 |
-| Net membership rows | 244 |
-| Reviewed exact library identities | 7 |
-| Parts blocked by missing exact library evidence | 59 |
+## Canonical electrical artifacts
 
-Historical physical-pin inventory is retained but explicitly classified `PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION`; it is not silently promoted to canonical truth.
+- `schematic/canonical_physical_pin_maps.json`
+- `schematic/verified_device_library.json`
+- `schematic/verified_passive_library.json`
+- `netlist/canonical_net_membership.csv`
+- `netlist/canonical_pin_to_pin.csv`
 
-## Exact identity results
+The executable netlist keeps physical pins explicit and records intentional NCs. J3 contacts and generic test pads are marked provisional instead of being promoted to verified manufacturer components.
 
-### VERIFIED PASS
+## Electrical decisions and limits
 
-- J1 `TYPE-C-31-M-12` / HRO / C165948.
-- D6 `USBLC6-2SC6` / ST / C7519.
-- J4 `S2B-PH-SM4-TB(LF)(SN)` / JST / C295747.
-- R6/R7 `0603WAF5101T5E`, 5.1 kΩ, 1%, 0603.
-- C21 `CL21B475KOFNNNE`, 4.7 µF, X7R, 16 V, 0805.
-- C22 `CL10B103KB8NNNC`, 10 nF, X7R, 50 V, 0603.
-- Master precheck re-read all six reviewed USB library device records from EasyEDA and found no identity mismatch.
+- D6 is normalized to pin 2 = GND and pin 5 = VBUS_USB; connector-side and MCU-side USB nets remain distinct.
+- BQ24074 CE is enabled, EN1/EN2 select the 500 mA mode, TS uses a fixed 10 kΩ ground network because J4 has no NTC contact, and status outputs have pull-ups.
+- TPS26600 uses the documented ILIM/OVP/dVdT support approach; the exact external field connector/TVS remains DNI at the `VIN_EXT_RAW` boundary.
+- TPS2121 uses the datasheet priority/comparator configuration with an 80.6 kΩ ILM resistor and SS capacitor.
+- TPS62161 is represented honestly as a fixed 3.3 V buck with FB grounded. Its inability to maintain 3.3 V over the full depleted 1S range remains a documented system limitation, not hidden by a fictitious feedback divider.
+- Storage/RF connectors, D4, optional U10 and an exact manufacturable J3 land pattern remain explicit DNI/provisional items.
+- Powered-off back-power behavior and the final physical Board-B assignment still require system-level sign-off.
 
-### PROVISIONAL — exact live-library candidate found, pin/footprint review incomplete
+## Reference PDF review
 
-BQ24074RGTR, TPS26600RHFT, TPS2121RUXR, TPS62162DSGR, TCA9546APWR, TPS22919DCKR (Q1 and provisional Q2), ESP32-S3-WROOM-1-N16R8, SN74LVC1G3157DBVR, TPD4E05U06DQAR, SHT45-AD1B-R2, ICM-42688-P, D2, D3, F1 and MAX17048G+T10.
+Reference: `C:/Users/HP/Downloads/SCH_Schematic1_2026-10-12 (1).pdf` (page 1 inspected as a full-page render and quadrant crops at high resolution).
 
-### BLOCKED BY MISSING EVIDENCE
+Useful conventions retained: horizontal signal stubs, readable horizontal labels, IC-centered functional groupings and nearby passives. The reference itself is very sparse across an A0 page, so its excessive whitespace and isolated passives were not copied. New section bases use compact functional rows, short local stubs and named nets; giant decorative rectangles were removed.
 
-- D4 `LTST-C193KBKT-5A`: no exact EasyEDA search result; the old `TBKT` substitution is rejected.
-- J3: twelve single Mill-Max contacts require exact library/land-pattern evidence; the old 14-pin header is rejected.
-- J2: physical contact versus metal-fitting classification is datasheet-reviewed, but the exact library record is not pinned.
-- Many support passives, exact test pads, external-input connector/TVS and power-control values are not selected.
+## Live execution status
 
-## Electrical blockers
+Two USB visual attempts exposed unacceptable label/port clutter and were preserved as native checkpoints, then removed from the active page. Current verified live state is one A0 sheet object and zero circuit wires/components. The supplied reference was re-inspected at full-page and 250% section zoom; findings are captured in `schematic/reference_layout_knowledge_graph.json` and `projects/beebox/05_schematic_audit/reference_pdf_layout_knowledge.md`.
 
-1. Exact battery MPN/protection/NTC is absent; the approved J4 connector has only two contacts, so BQ24074 TS cannot be assigned to a pack NTC without another interface.
-2. External-input connector/TVS and TPS26600 UVLO/OVP/ILIM/dVdT/MODE/SHDN values are absent.
-3. TPS2121 CP2, OV1/OV2, PR1, ILM and SS configuration is absent.
-4. BQ24074 ITERM, TS, CE, EN1/EN2 and status pull-up policy is incomplete.
-5. TPS62162 is a fixed 3.3 V buck and cannot hold 3.3 V across a depleted 1S cell; this is an architectural failure, not a schematic-label problem.
-6. `+3V3_FPC` source and powered-off signal isolation/back-power prevention are unresolved.
-7. The dedicated FPC page/board assignment is missing in the live project.
-
-## Phase results
-
-| Phase | Status | Evidence |
-|---|---|---|
-| 1 — power and USB | **BLOCKED BY MISSING EVIDENCE** | Charger/eFuse/mux support networks unresolved; reviewed USB subset retained as evidence only |
-| 2 — regulator and ESP32-S3 | **VERIFIED FAIL / BLOCKED** | Fixed buck cannot support full depleted-cell range; support identities incomplete |
-| 3 — sensors and audio | **BLOCKED BY MISSING EVIDENCE** | microphone identity/pin review and mux reset pull-up selection incomplete |
-| 4 — storage/RF | **PROVISIONAL / DNI** | exact connector footprints absent |
-| 5 — docking | **BLOCKED BY MISSING EVIDENCE** | twelve individual contacts and powered-off isolation unresolved |
-| 6 — universal sensor FPC | **BLOCKED BY MISSING EVIDENCE** | separate page/board absent; power policy unresolved |
-| 7 — status and test | **BLOCKED BY MISSING EVIDENCE** | exact blue LED and test-pad identities absent |
-| 8 — final verification | **VERIFIED FAIL** | master verifier found 55 required references missing (including Q2 and twelve individually modeled J3 contacts), zero wires |
-
-## PDF and visual evidence
-
-- Cloud Code/reference candidate: `C:/Users/HP/Downloads/SCH_Schematic1_2026-10-12 (1).pdf`.
-- Repository rendering: `projects/beebox/03_easyeda_init/reference_pdf_1.png`.
-- Failed generated example: `C:/Users/HP/Downloads/SCH_Schematic1_2026-10-12 (4).pdf`.
-- Existing failed/intermediate exports are in `projects/beebox/05_schematic_audit/`.
-- The prior real EasyEDA A0 USB-only checkpoint is retained explicitly as `outputs/schematic/prior_usb_checkpoint_NOT_FULL_PHASE01.pdf` with rendered inspection image `outputs/schematic/prior_usb_checkpoint_NOT_FULL_PHASE01.png`. Its filename prevents confusing it with a completed power phase.
-
-The repository's own visual audit states that both reference PDFs are sparse and are not clean engineering references. Direct inspection of the retained USB checkpoint rendering also shows a small USB block in the upper-left of an otherwise almost empty A0 page; it is a **visual FAIL** for a completed phase even though the local USB grouping is readable. Only local symbol/text conventions and compact circuit motifs may be reused. No new final EasyEDA PDF was exported because there is no electrically defensible complete circuit to export. GUI placement cleanup was therefore **NOT TESTED** and would be inappropriate at this gate.
-
-## Verification status
-
-| Gate | Status |
-|---|---|
-| Master JavaScript syntax | **VERIFIED PASS** |
-| Canonical model build | **VERIFIED PASS** |
-| Master precheck through live bridge | **VERIFIED PASS** as a fail-closed check (`BLOCKED_NO_MUTATION`) |
-| Exact reviewed USB library identity readback | **VERIFIED PASS** |
-| Whole-design required inventory | **VERIFIED FAIL** |
-| Whole-design physical-pin parity | **VERIFIED FAIL / incomplete** |
-| Canonical native netlist comparison | **NOT TESTED** — native extraction is timeout-prone and circuit is absent |
-| Native ERC | **NOT TESTED** — installed API has no reliable documented automated ERC route; must be run in GUI |
-| Final EasyEDA PDF export | **NOT TESTED** |
-| Final visual review and GUI cleanup | **NOT TESTED** |
-| Manufacturing readiness | **VERIFIED FAIL** |
-
-## Execution commands
-
-```bash
-python tools/build_canonical_design_model.py
-node tools/test_section_generator.cjs
-node tools/test_library_selection.cjs
-node tools/test_net_label_generator.cjs
-node tools/test_usb_readability.cjs
-```
-
-Through the bridge, execute `easyeda_scripts/BeeBox_Master_Generator.js` first. It must return build ID `BEEBOX-MASTER-20261015-R1`. Until all listed blockers are closed it must also return `BLOCKED_NO_MUTATION` and `mutationCount: 0`. Use `BeeBox_Master_Verification.js` only as readback; reaching its final line is not a PASS.
-
-## Independent review
-
-A context-isolated review using a different model family found no false claims, unsafe EasyEDA mutation path, schema gap or contradictory pin/net assertion in the reviewed canonical-model/master-script scope. The review was consistency-focused, not electrical functional validation. It reviewed an earlier generated count snapshot (88 parts/62 blocked); subsequent parent refinements added provisional Q2 and exact U7/U8/D5 suffixes, producing the current tested count of 89 parts/59 blocked without changing the fail-closed result.
-
-## Honest completion statement
-
-This work completes the repository/Git inspection, reference identification, bridge/project/page verification, pre-mutation backup, source audit, canonical-model foundation, A0 layout plan, labeled prior PDF evidence and fail-closed master automation architecture. It does **not** complete the electrical schematic, final PDF, ERC or manufacturing package because the cited engineering inputs are missing or contradictory. The feature branch is published and draft PR #1 is open specifically as a blocked/WIP review package; it must not be merged as a completed schematic release.
+The dedicated USB generator now uses the reference-style pin-orientation and named-wire-stub layout and remains protected from overwrite by the generic generator. Ordered live generation completed with 72 designator-bearing references, 97 total component objects and 279 named wires. `outputs/schematic/readback/final_physical_pin_parity.json` reports **PASS** for 314 checked physical pins. This report does **not** yet claim GUI ERC, final PDF visual acceptance or manufacturing readiness.

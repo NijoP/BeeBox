@@ -1,0 +1,6406 @@
+{
+  "success": true,
+  "result": {
+    "status": "READBACK_NOT_FINAL_APPROVAL",
+    "projectUuid": "d84c4be0ef2e467fa17955faa23c6314",
+    "pageUuid": "d5e34c82cc3ba89c",
+    "components": [
+      {
+        "id": "80ce3d8a54da0af7",
+        "type": "sheet",
+        "pins": []
+      },
+      {
+        "id": "bf5fa56b810cd60b",
+        "type": "part",
+        "ref": "J1",
+        "name": "J1",
+        "mpn": "TYPE-C-31-M-12",
+        "manufacturer": "韩国韩荣",
+        "symbol": {
+          "uuid": "a5da8a0e78abf8c9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TYPE-C-31-M-12"
+        },
+        "pins": [
+          {
+            "number": "A1B12",
+            "name": "GND",
+            "x": 615,
+            "y": 905,
+            "noConnected": false
+          },
+          {
+            "number": "A4B9",
+            "name": "VBUS",
+            "x": 615,
+            "y": 895,
+            "noConnected": false
+          },
+          {
+            "number": "B8",
+            "name": "SBU2",
+            "x": 615,
+            "y": 885,
+            "noConnected": true
+          },
+          {
+            "number": "A5",
+            "name": "CC1",
+            "x": 615,
+            "y": 875,
+            "noConnected": false
+          },
+          {
+            "number": "B7",
+            "name": "DN2",
+            "x": 615,
+            "y": 865,
+            "noConnected": false
+          },
+          {
+            "number": "A6",
+            "name": "DP1",
+            "x": 615,
+            "y": 855,
+            "noConnected": false
+          },
+          {
+            "number": "A7",
+            "name": "DN1",
+            "x": 615,
+            "y": 845,
+            "noConnected": false
+          },
+          {
+            "number": "B6",
+            "name": "DP2",
+            "x": 615,
+            "y": 835,
+            "noConnected": false
+          },
+          {
+            "number": "A8",
+            "name": "SBU1",
+            "x": 615,
+            "y": 825,
+            "noConnected": true
+          },
+          {
+            "number": "B5",
+            "name": "CC2",
+            "x": 615,
+            "y": 815,
+            "noConnected": false
+          },
+          {
+            "number": "B4A9",
+            "name": "VBUS",
+            "x": 615,
+            "y": 805,
+            "noConnected": false
+          },
+          {
+            "number": "B1A12",
+            "name": "GND",
+            "x": 615,
+            "y": 795,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "EH",
+            "x": 685,
+            "y": 825,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "EH",
+            "x": 685,
+            "y": 815,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "EH",
+            "x": 685,
+            "y": 805,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "EH",
+            "x": 685,
+            "y": 795,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "5210885398aec98b",
+        "type": "part",
+        "ref": "D6",
+        "name": "D6",
+        "mpn": "USBLC6-2SC6",
+        "manufacturer": "ST(意法半导体)",
+        "symbol": {
+          "uuid": "f92db2ae8a15124b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "USBLC6-2SC6"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1280,
+            "y": 915,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1250,
+            "y": 915,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "3",
+            "x": 1220,
+            "y": 915,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "4",
+            "x": 1220,
+            "y": 785,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "5",
+            "x": 1250,
+            "y": 785,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "6",
+            "x": 1280,
+            "y": 785,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "b8ff23c72b613715",
+        "type": "part",
+        "ref": "R6",
+        "name": "R6",
+        "mpn": "0603WAF5101T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "132076e439f2ac40",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF5101T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 720,
+            "y": 1200,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 680,
+            "y": 1200,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "e45e4b4f40f9b66a",
+        "type": "part",
+        "ref": "R7",
+        "name": "R7",
+        "mpn": "0603WAF5101T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "132076e439f2ac40",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF5101T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1070,
+            "y": 1200,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1030,
+            "y": 1200,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "998f96c783ab341d",
+        "type": "part",
+        "ref": "C21",
+        "name": "C21",
+        "mpn": "CL21B475KOFNNNE",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "d098dc14ba06bb71",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL21B475KOFNNNE"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1385,
+            "y": 1200,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1415,
+            "y": 1200,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "a34604b68352c90e",
+        "type": "part",
+        "ref": "C22",
+        "name": "C22",
+        "mpn": "CL10B103KB8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "a8b61dce17b663dc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B103KB8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1685,
+            "y": 1200,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1715,
+            "y": 1200,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "4382921ac430b10e",
+        "type": "part",
+        "ref": "U6",
+        "name": "TPS26600RHFT",
+        "mpn": "TPS26600RHFT",
+        "manufacturer": "TI(德州仪器)",
+        "symbol": {
+          "uuid": "28a9473d03a031a8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TPS26600RHFT"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "N.C",
+            "x": 1470,
+            "y": 530,
+            "noConnected": true
+          },
+          {
+            "number": "2",
+            "name": "N.C",
+            "x": 1470,
+            "y": 520,
+            "noConnected": true
+          },
+          {
+            "number": "3",
+            "name": "N.C",
+            "x": 1470,
+            "y": 510,
+            "noConnected": true
+          },
+          {
+            "number": "4",
+            "name": "N.C",
+            "x": 1470,
+            "y": 500,
+            "noConnected": true
+          },
+          {
+            "number": "5",
+            "name": "N.C",
+            "x": 1470,
+            "y": 490,
+            "noConnected": true
+          },
+          {
+            "number": "6",
+            "name": "N.C",
+            "x": 1470,
+            "y": 480,
+            "noConnected": true
+          },
+          {
+            "number": "7",
+            "name": "N.C",
+            "x": 1470,
+            "y": 470,
+            "noConnected": true
+          },
+          {
+            "number": "8",
+            "name": "IN",
+            "x": 1530,
+            "y": 420,
+            "noConnected": false
+          },
+          {
+            "number": "9",
+            "name": "IN",
+            "x": 1540,
+            "y": 420,
+            "noConnected": false
+          },
+          {
+            "number": "10",
+            "name": "UVLO",
+            "x": 1550,
+            "y": 420,
+            "noConnected": false
+          },
+          {
+            "number": "11",
+            "name": "N.C",
+            "x": 1560,
+            "y": 420,
+            "noConnected": true
+          },
+          {
+            "number": "12",
+            "name": "OVP",
+            "x": 1570,
+            "y": 420,
+            "noConnected": false
+          },
+          {
+            "number": "13",
+            "name": "MODE",
+            "x": 1640,
+            "y": 470,
+            "noConnected": false
+          },
+          {
+            "number": "14",
+            "name": "SHDN#",
+            "x": 1640,
+            "y": 480,
+            "noConnected": false
+          },
+          {
+            "number": "15",
+            "name": "RTN",
+            "x": 1640,
+            "y": 490,
+            "noConnected": false
+          },
+          {
+            "number": "16",
+            "name": "N.C",
+            "x": 1640,
+            "y": 500,
+            "noConnected": true
+          },
+          {
+            "number": "17",
+            "name": "GND",
+            "x": 1640,
+            "y": 510,
+            "noConnected": false
+          },
+          {
+            "number": "18",
+            "name": "IMON",
+            "x": 1640,
+            "y": 520,
+            "noConnected": true
+          },
+          {
+            "number": "19",
+            "name": "ILIM",
+            "x": 1640,
+            "y": 530,
+            "noConnected": false
+          },
+          {
+            "number": "20",
+            "name": "dVdT",
+            "x": 1580,
+            "y": 570,
+            "noConnected": false
+          },
+          {
+            "number": "21",
+            "name": "N.C",
+            "x": 1570,
+            "y": 570,
+            "noConnected": true
+          },
+          {
+            "number": "22",
+            "name": "FLT#",
+            "x": 1560,
+            "y": 570,
+            "noConnected": false
+          },
+          {
+            "number": "23",
+            "name": "OUT",
+            "x": 1550,
+            "y": 570,
+            "noConnected": false
+          },
+          {
+            "number": "24",
+            "name": "OUT",
+            "x": 1540,
+            "y": 570,
+            "noConnected": false
+          },
+          {
+            "number": "25",
+            "name": "EP",
+            "x": 1530,
+            "y": 570,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "e1227285f981643f",
+        "type": "part",
+        "ref": "U11",
+        "name": "TPS2121RUXR",
+        "mpn": "TPS2121RUXR",
+        "manufacturer": "TI(德州仪器)",
+        "symbol": {
+          "uuid": "442f24f332b39531",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TPS2121RUXR"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "OUT",
+            "x": 1865,
+            "y": 525,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "IN2",
+            "x": 1865,
+            "y": 515,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "CP2",
+            "x": 1865,
+            "y": 505,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "OV2",
+            "x": 1865,
+            "y": 495,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "OV1",
+            "x": 1865,
+            "y": 485,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "PR1",
+            "x": 1865,
+            "y": 475,
+            "noConnected": false
+          },
+          {
+            "number": "7",
+            "name": "IN1",
+            "x": 1935,
+            "y": 475,
+            "noConnected": false
+          },
+          {
+            "number": "8",
+            "name": "OUT",
+            "x": 1935,
+            "y": 485,
+            "noConnected": false
+          },
+          {
+            "number": "9",
+            "name": "ST",
+            "x": 1935,
+            "y": 495,
+            "noConnected": false
+          },
+          {
+            "number": "10",
+            "name": "ILM",
+            "x": 1935,
+            "y": 505,
+            "noConnected": false
+          },
+          {
+            "number": "11",
+            "name": "SS",
+            "x": 1935,
+            "y": 515,
+            "noConnected": false
+          },
+          {
+            "number": "12",
+            "name": "GND",
+            "x": 1935,
+            "y": 525,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "c1a95e89d2334aaa",
+        "type": "part",
+        "ref": "U2",
+        "name": "BQ24074RGTR",
+        "mpn": "BQ24074RGTR",
+        "manufacturer": "TI(德州仪器)",
+        "symbol": {
+          "uuid": "af766583b845fb35",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "BQ24074RGTR"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "TS",
+            "x": 2190,
+            "y": 465,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "BAT",
+            "x": 2190,
+            "y": 435,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "BAT",
+            "x": 2190,
+            "y": 425,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "CE#",
+            "x": 2310,
+            "y": 455,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "EN2",
+            "x": 2310,
+            "y": 495,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "EN1",
+            "x": 2310,
+            "y": 505,
+            "noConnected": false
+          },
+          {
+            "number": "7",
+            "name": "PGOOD#",
+            "x": 2310,
+            "y": 525,
+            "noConnected": false
+          },
+          {
+            "number": "8",
+            "name": "VSS",
+            "x": 2310,
+            "y": 425,
+            "noConnected": false
+          },
+          {
+            "number": "9",
+            "name": "CHG#",
+            "x": 2310,
+            "y": 545,
+            "noConnected": false
+          },
+          {
+            "number": "10",
+            "name": "OUT",
+            "x": 2310,
+            "y": 575,
+            "noConnected": false
+          },
+          {
+            "number": "11",
+            "name": "OUT",
+            "x": 2310,
+            "y": 565,
+            "noConnected": false
+          },
+          {
+            "number": "12",
+            "name": "ILIM",
+            "x": 2190,
+            "y": 555,
+            "noConnected": false
+          },
+          {
+            "number": "13",
+            "name": "IN",
+            "x": 2190,
+            "y": 575,
+            "noConnected": false
+          },
+          {
+            "number": "14",
+            "name": "TMR",
+            "x": 2310,
+            "y": 475,
+            "noConnected": false
+          },
+          {
+            "number": "15",
+            "name": "ITERM",
+            "x": 2190,
+            "y": 505,
+            "noConnected": true
+          },
+          {
+            "number": "16",
+            "name": "ISET",
+            "x": 2190,
+            "y": 485,
+            "noConnected": false
+          },
+          {
+            "number": "17",
+            "name": "EP",
+            "x": 2310,
+            "y": 435,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "e441a915fd21b1af",
+        "type": "part",
+        "ref": "J4",
+        "name": "S2B-PH-SM4-TB(LF)(SN)",
+        "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+        "manufacturer": "JST",
+        "symbol": {
+          "uuid": "8673b6db8c883be0",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2B-PH-SM4-TB(LF)(SN)"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2585,
+            "y": 505,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2585,
+            "y": 495,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "3",
+            "x": 2615,
+            "y": 475,
+            "noConnected": true
+          },
+          {
+            "number": "4",
+            "name": "4",
+            "x": 2615,
+            "y": 525,
+            "noConnected": true
+          }
+        ]
+      },
+      {
+        "id": "1acf784ae220fb63",
+        "type": "part",
+        "ref": "R11",
+        "name": "1.78k",
+        "mpn": "0603WAF1781T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "5bd493543d9420f3",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1781T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1870,
+            "y": 800,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1830,
+            "y": 800,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "54807fb9ce4f3eaf",
+        "type": "part",
+        "ref": "R12",
+        "name": "1.54k",
+        "mpn": "0603WAF1541T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "18e7c5bf07e0d9cf",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1541T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2230,
+            "y": 800,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2190,
+            "y": 800,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "561f8c110331415f",
+        "type": "part",
+        "ref": "R13",
+        "name": "46.4k",
+        "mpn": "0603WAF4642T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "58d72bd61fb10953",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF4642T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2590,
+            "y": 800,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2550,
+            "y": 800,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "28e3a9af8999868a",
+        "type": "part",
+        "ref": "R16",
+        "name": "10k",
+        "mpn": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "4e27dc7ca5f1a88b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2950,
+            "y": 800,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2910,
+            "y": 800,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "748a6cedee612b51",
+        "type": "part",
+        "ref": "R17",
+        "name": "10k",
+        "mpn": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "4e27dc7ca5f1a88b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1870,
+            "y": 950,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1830,
+            "y": 950,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "e0599f9d1bd25720",
+        "type": "part",
+        "ref": "R18",
+        "name": "10k",
+        "mpn": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "4e27dc7ca5f1a88b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2230,
+            "y": 950,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2190,
+            "y": 950,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "1dfedd562b3f4d34",
+        "type": "part",
+        "ref": "C23",
+        "name": "1u",
+        "mpn": "CL10B105KP8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "20d8c88cdac51402",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B105KP8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2590,
+            "y": 950,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2550,
+            "y": 950,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "81339dd807a7ec51",
+        "type": "part",
+        "ref": "C24",
+        "name": "22u",
+        "mpn": "CL31A226KAHNNNE",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "c2e6ed81742b8ad4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL31A226KAHNNNE"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2915,
+            "y": 950,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2945,
+            "y": 950,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "86959a5709a8dfac",
+        "type": "part",
+        "ref": "C25",
+        "name": "1u",
+        "mpn": "CL10B105KP8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "20d8c88cdac51402",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B105KP8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1870,
+            "y": 1100,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1830,
+            "y": 1100,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "fa163a27133f73d8",
+        "type": "part",
+        "ref": "R20",
+        "name": "11.8k",
+        "mpn": "0603WAF1182T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "167bff9f41e2f7b0",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1182T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2230,
+            "y": 1100,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2190,
+            "y": 1100,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "ec7c3b61b2bf742c",
+        "type": "part",
+        "ref": "R21",
+        "name": "576k",
+        "mpn": "0603WAF5763T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "3ffedb789845c1c6",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF5763T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2590,
+            "y": 1100,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2550,
+            "y": 1100,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "14bb1f61f61b1db1",
+        "type": "part",
+        "ref": "R22",
+        "name": "100k",
+        "mpn": "0603WAF1003T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "5e352b4cf1744320",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1003T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2950,
+            "y": 1100,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2910,
+            "y": 1100,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "b09515635667f4d4",
+        "type": "part",
+        "ref": "C26",
+        "name": "100n",
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "1df7a0c6de54392c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B104KO8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1835,
+            "y": 1250,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1865,
+            "y": 1250,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "32f3660d674daefd",
+        "type": "part",
+        "ref": "R23",
+        "name": "10k",
+        "mpn": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "4e27dc7ca5f1a88b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2230,
+            "y": 1250,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2190,
+            "y": 1250,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "c5fe88f356c7b924",
+        "type": "part",
+        "ref": "R24",
+        "name": "80.6k",
+        "mpn": "0603WAF8062T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "80c1d404d55fd6ef",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF8062T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2590,
+            "y": 1250,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2550,
+            "y": 1250,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "d9025d321b76da2a",
+        "type": "part",
+        "ref": "C27",
+        "name": "100n",
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "1df7a0c6de54392c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B104KO8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2915,
+            "y": 1250,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2945,
+            "y": 1250,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "079511e8ddedcf66",
+        "type": "part",
+        "ref": "Q1",
+        "name": "TPS22919DCKR",
+        "mpn": "TPS22919DCKR",
+        "manufacturer": "TI(德州仪器)",
+        "symbol": {
+          "uuid": "56d5ade3432c3dbc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TPS22919DCKR"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "IN",
+            "x": 3660,
+            "y": 510,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "GND",
+            "x": 3660,
+            "y": 500,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "ON",
+            "x": 3660,
+            "y": 490,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "NC",
+            "x": 3740,
+            "y": 490,
+            "noConnected": true
+          },
+          {
+            "number": "5",
+            "name": "QOD",
+            "x": 3740,
+            "y": 500,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "VOUT",
+            "x": 3740,
+            "y": 510,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "9fe3bbbcc7ccf5f0",
+        "type": "part",
+        "ref": "Q2",
+        "name": "TPS22919DCKR",
+        "mpn": "TPS22919DCKR",
+        "manufacturer": "TI(德州仪器)",
+        "symbol": {
+          "uuid": "56d5ade3432c3dbc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TPS22919DCKR"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "IN",
+            "x": 4010,
+            "y": 510,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "GND",
+            "x": 4010,
+            "y": 500,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "ON",
+            "x": 4010,
+            "y": 490,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "NC",
+            "x": 4090,
+            "y": 490,
+            "noConnected": true
+          },
+          {
+            "number": "5",
+            "name": "QOD",
+            "x": 4090,
+            "y": 500,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "VOUT",
+            "x": 4090,
+            "y": 510,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "3640d51afce6fca7",
+        "type": "part",
+        "ref": "L1",
+        "name": "2.2u",
+        "mpn": "DFE252012PD-2R2M=P2",
+        "manufacturer": "muRata(村田)",
+        "symbol": {
+          "uuid": "be678481432aa2c4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "DFE252012PD-2R2M=P2"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 3670,
+            "y": 800,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3630,
+            "y": 800,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "a669bbefcfef653d",
+        "type": "part",
+        "ref": "R25",
+        "name": "10k",
+        "mpn": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "4e27dc7ca5f1a88b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 4030,
+            "y": 800,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3990,
+            "y": 800,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "74c91aae01e5ea16",
+        "type": "part",
+        "ref": "C29",
+        "name": "22u",
+        "mpn": "CL31A226KAHNNNE",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "c2e6ed81742b8ad4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL31A226KAHNNNE"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 4355,
+            "y": 800,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 4385,
+            "y": 800,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "c2b1e92fe9225c94",
+        "type": "part",
+        "ref": "C30",
+        "name": "22u",
+        "mpn": "CL31A226KAHNNNE",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "c2e6ed81742b8ad4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL31A226KAHNNNE"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 4355,
+            "y": 950,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 4385,
+            "y": 950,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "65bdcaf6facb375c",
+        "type": "part",
+        "ref": "U1",
+        "name": "ESP32-S3-WROOM-1-N16R8",
+        "mpn": "ESP32-S3-WROOM-1-N16R8",
+        "manufacturer": "ESPRESSIF(乐鑫)",
+        "symbol": {
+          "uuid": "f3fd50f239894c1a",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "ESP32-S3-WROOM-1(N16R8)"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "GND",
+            "x": 265,
+            "y": 1495,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "3V3",
+            "x": 265,
+            "y": 1485,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "EN",
+            "x": 265,
+            "y": 1475,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "IO4",
+            "x": 265,
+            "y": 1465,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "IO5",
+            "x": 265,
+            "y": 1455,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "IO6",
+            "x": 265,
+            "y": 1445,
+            "noConnected": false
+          },
+          {
+            "number": "7",
+            "name": "IO7",
+            "x": 265,
+            "y": 1435,
+            "noConnected": false
+          },
+          {
+            "number": "8",
+            "name": "IO15",
+            "x": 265,
+            "y": 1425,
+            "noConnected": false
+          },
+          {
+            "number": "9",
+            "name": "IO16",
+            "x": 265,
+            "y": 1415,
+            "noConnected": false
+          },
+          {
+            "number": "10",
+            "name": "IO17",
+            "x": 265,
+            "y": 1405,
+            "noConnected": false
+          },
+          {
+            "number": "11",
+            "name": "IO18",
+            "x": 265,
+            "y": 1395,
+            "noConnected": false
+          },
+          {
+            "number": "12",
+            "name": "IO8",
+            "x": 265,
+            "y": 1385,
+            "noConnected": false
+          },
+          {
+            "number": "13",
+            "name": "IO19",
+            "x": 265,
+            "y": 1375,
+            "noConnected": false
+          },
+          {
+            "number": "14",
+            "name": "IO20",
+            "x": 265,
+            "y": 1365,
+            "noConnected": false
+          },
+          {
+            "number": "15",
+            "name": "IO3",
+            "x": 300,
+            "y": 1310,
+            "noConnected": true
+          },
+          {
+            "number": "16",
+            "name": "IO46",
+            "x": 310,
+            "y": 1310,
+            "noConnected": true
+          },
+          {
+            "number": "17",
+            "name": "IO9",
+            "x": 320,
+            "y": 1310,
+            "noConnected": false
+          },
+          {
+            "number": "18",
+            "name": "IO10",
+            "x": 330,
+            "y": 1310,
+            "noConnected": false
+          },
+          {
+            "number": "19",
+            "name": "IO11",
+            "x": 340,
+            "y": 1310,
+            "noConnected": false
+          },
+          {
+            "number": "20",
+            "name": "IO12",
+            "x": 350,
+            "y": 1310,
+            "noConnected": false
+          },
+          {
+            "number": "21",
+            "name": "IO13",
+            "x": 360,
+            "y": 1310,
+            "noConnected": false
+          },
+          {
+            "number": "22",
+            "name": "IO14",
+            "x": 370,
+            "y": 1310,
+            "noConnected": false
+          },
+          {
+            "number": "23",
+            "name": "IO21",
+            "x": 380,
+            "y": 1310,
+            "noConnected": false
+          },
+          {
+            "number": "24",
+            "name": "IO47",
+            "x": 390,
+            "y": 1310,
+            "noConnected": false
+          },
+          {
+            "number": "25",
+            "name": "IO48",
+            "x": 400,
+            "y": 1310,
+            "noConnected": false
+          },
+          {
+            "number": "26",
+            "name": "IO45",
+            "x": 410,
+            "y": 1310,
+            "noConnected": true
+          },
+          {
+            "number": "27",
+            "name": "IO0",
+            "x": 435,
+            "y": 1365,
+            "noConnected": false
+          },
+          {
+            "number": "28",
+            "name": "IO35",
+            "x": 435,
+            "y": 1375,
+            "noConnected": true
+          },
+          {
+            "number": "29",
+            "name": "IO36",
+            "x": 435,
+            "y": 1385,
+            "noConnected": true
+          },
+          {
+            "number": "30",
+            "name": "IO37",
+            "x": 435,
+            "y": 1395,
+            "noConnected": true
+          },
+          {
+            "number": "31",
+            "name": "IO38",
+            "x": 435,
+            "y": 1405,
+            "noConnected": false
+          },
+          {
+            "number": "32",
+            "name": "IO39",
+            "x": 435,
+            "y": 1415,
+            "noConnected": false
+          },
+          {
+            "number": "33",
+            "name": "IO40",
+            "x": 435,
+            "y": 1425,
+            "noConnected": false
+          },
+          {
+            "number": "34",
+            "name": "IO41",
+            "x": 435,
+            "y": 1435,
+            "noConnected": false
+          },
+          {
+            "number": "35",
+            "name": "IO42",
+            "x": 435,
+            "y": 1445,
+            "noConnected": false
+          },
+          {
+            "number": "36",
+            "name": "RXD0",
+            "x": 435,
+            "y": 1455,
+            "noConnected": false
+          },
+          {
+            "number": "37",
+            "name": "TXD0",
+            "x": 435,
+            "y": 1465,
+            "noConnected": false
+          },
+          {
+            "number": "38",
+            "name": "IO2",
+            "x": 435,
+            "y": 1475,
+            "noConnected": false
+          },
+          {
+            "number": "39",
+            "name": "IO1",
+            "x": 435,
+            "y": 1485,
+            "noConnected": false
+          },
+          {
+            "number": "40",
+            "name": "GND",
+            "x": 435,
+            "y": 1495,
+            "noConnected": false
+          },
+          {
+            "number": "41",
+            "name": "GND",
+            "x": 435,
+            "y": 1510,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "5abcd4fd43bfd656",
+        "type": "part",
+        "ref": "U12",
+        "name": "SN74LVC1G3157DBVR",
+        "mpn": "SN74LVC1G3157DBVR",
+        "manufacturer": "TI(德州仪器)",
+        "symbol": {
+          "uuid": "9060e2cf563bf570",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SN74LVC1G3157DBVR"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "B2",
+            "x": 660,
+            "y": 1460,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "GND",
+            "x": 660,
+            "y": 1450,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "B1",
+            "x": 660,
+            "y": 1440,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "A",
+            "x": 740,
+            "y": 1440,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "VCC",
+            "x": 740,
+            "y": 1450,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "S",
+            "x": 740,
+            "y": 1460,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "7cdd20c9b37ebb65",
+        "type": "part",
+        "ref": "C1",
+        "name": "100n",
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "1df7a0c6de54392c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B104KO8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 635,
+            "y": 1750,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 665,
+            "y": 1750,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "3273e995f8337abe",
+        "type": "part",
+        "ref": "C2",
+        "name": "1u",
+        "mpn": "CL10B105KP8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "20d8c88cdac51402",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B105KP8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1030,
+            "y": 1750,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 990,
+            "y": 1750,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "19d7b877c221263a",
+        "type": "part",
+        "ref": "C4",
+        "name": "100n",
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "1df7a0c6de54392c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B104KO8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1355,
+            "y": 1750,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1385,
+            "y": 1750,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "e6a10a462795df83",
+        "type": "part",
+        "ref": "R26",
+        "name": "10k",
+        "mpn": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "4e27dc7ca5f1a88b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1750,
+            "y": 1750,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1710,
+            "y": 1750,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "0045999a7b94f4a1",
+        "type": "part",
+        "ref": "R27",
+        "name": "10k",
+        "mpn": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "4e27dc7ca5f1a88b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 670,
+            "y": 1900,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 630,
+            "y": 1900,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "faa87c46c946fe00",
+        "type": "part",
+        "ref": "U7",
+        "name": "SHT45-AD1B-R2",
+        "mpn": "SHT45-AD1B-R2",
+        "manufacturer": "Sensirion(瑞士盛思锐)",
+        "symbol": {
+          "uuid": "e525dc5124021162",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SHT45-AD1B-R2"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "SDA",
+            "x": 1815,
+            "y": 1455,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "SCL",
+            "x": 1815,
+            "y": 1445,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "VDD",
+            "x": 1885,
+            "y": 1445,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "VSS",
+            "x": 1885,
+            "y": 1455,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "5",
+            "x": 1850,
+            "y": 1475,
+            "noConnected": true
+          }
+        ]
+      },
+      {
+        "id": "e1c25926077166b8",
+        "type": "part",
+        "ref": "MIC1",
+        "name": "ICS-43434_C5656610",
+        "mpn": "ICS-43434",
+        "manufacturer": "TDK InvenSense(应美盛)",
+        "symbol": {
+          "uuid": "29abcad6aaae286e",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "ICS-43434_C5656610"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "WS",
+            "x": 2165,
+            "y": 1460,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "LR",
+            "x": 2165,
+            "y": 1450,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "GND",
+            "x": 2165,
+            "y": 1440,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "SCK",
+            "x": 2235,
+            "y": 1440,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "VDD",
+            "x": 2235,
+            "y": 1450,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "SD",
+            "x": 2235,
+            "y": 1460,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "f865d3830256c3e1",
+        "type": "part",
+        "ref": "C3",
+        "name": "100n",
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "1df7a0c6de54392c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B104KO8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2135,
+            "y": 1750,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2165,
+            "y": 1750,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "0a96ee4af9e87e4b",
+        "type": "part",
+        "ref": "C5",
+        "name": "100n",
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "1df7a0c6de54392c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B104KO8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2495,
+            "y": 1750,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2525,
+            "y": 1750,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "cd3b6a9e1186ff11",
+        "type": "part",
+        "ref": "U4",
+        "name": "TCA9546APWR",
+        "mpn": "TCA9546APWR",
+        "manufacturer": "TI(德州仪器)",
+        "symbol": {
+          "uuid": "e441e811fd1e85b0",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TCA9546APWR"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "A0",
+            "x": 305,
+            "y": 2385,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "A1",
+            "x": 305,
+            "y": 2375,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "RESET#",
+            "x": 305,
+            "y": 2365,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "SD0",
+            "x": 305,
+            "y": 2355,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "SC0",
+            "x": 305,
+            "y": 2345,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "SD1",
+            "x": 305,
+            "y": 2335,
+            "noConnected": false
+          },
+          {
+            "number": "7",
+            "name": "SC1",
+            "x": 305,
+            "y": 2325,
+            "noConnected": false
+          },
+          {
+            "number": "8",
+            "name": "GND",
+            "x": 305,
+            "y": 2315,
+            "noConnected": false
+          },
+          {
+            "number": "9",
+            "name": "SD2",
+            "x": 395,
+            "y": 2315,
+            "noConnected": true
+          },
+          {
+            "number": "10",
+            "name": "SC2",
+            "x": 395,
+            "y": 2325,
+            "noConnected": true
+          },
+          {
+            "number": "11",
+            "name": "SD3",
+            "x": 395,
+            "y": 2335,
+            "noConnected": true
+          },
+          {
+            "number": "12",
+            "name": "SC3",
+            "x": 395,
+            "y": 2345,
+            "noConnected": true
+          },
+          {
+            "number": "13",
+            "name": "A2",
+            "x": 395,
+            "y": 2355,
+            "noConnected": false
+          },
+          {
+            "number": "14",
+            "name": "SCL",
+            "x": 395,
+            "y": 2365,
+            "noConnected": false
+          },
+          {
+            "number": "15",
+            "name": "SDA",
+            "x": 395,
+            "y": 2375,
+            "noConnected": false
+          },
+          {
+            "number": "16",
+            "name": "VCC",
+            "x": 395,
+            "y": 2385,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "b2d3ea23da86a9e4",
+        "type": "part",
+        "ref": "D5",
+        "name": "TPD4E05U06DQAR_C138714",
+        "mpn": "TPD4E05U06DQAR",
+        "manufacturer": "TI(德州仪器)",
+        "symbol": {
+          "uuid": "aca8df1a58ec6f29",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TPD4E05U06DQAR_C138714"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "D1+",
+            "x": 660,
+            "y": 2370,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "D1-",
+            "x": 660,
+            "y": 2360,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "GND",
+            "x": 660,
+            "y": 2350,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "D2+",
+            "x": 660,
+            "y": 2340,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "D2-",
+            "x": 660,
+            "y": 2330,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "NC",
+            "x": 740,
+            "y": 2330,
+            "noConnected": true
+          },
+          {
+            "number": "7",
+            "name": "NC",
+            "x": 740,
+            "y": 2340,
+            "noConnected": true
+          },
+          {
+            "number": "8",
+            "name": "GND",
+            "x": 740,
+            "y": 2350,
+            "noConnected": false
+          },
+          {
+            "number": "9",
+            "name": "NC",
+            "x": 740,
+            "y": 2360,
+            "noConnected": false
+          },
+          {
+            "number": "10",
+            "name": "NC",
+            "x": 740,
+            "y": 2370,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "3c553d6caa1ae065",
+        "type": "part",
+        "ref": "R4",
+        "name": "2.2k",
+        "mpn": "0603WAF2201T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "ead27bff2af67a07",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF2201T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 670,
+            "y": 2650,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 630,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "06f5e130c3ffb779",
+        "type": "part",
+        "ref": "R5",
+        "name": "2.2k",
+        "mpn": "0603WAF2201T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "ead27bff2af67a07",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF2201T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1030,
+            "y": 2650,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 990,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "8b9e850c020cf508",
+        "type": "part",
+        "ref": "R28",
+        "name": "10k",
+        "mpn": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "4e27dc7ca5f1a88b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1390,
+            "y": 2650,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1350,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "e9fbda70dc548ecc",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 350,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "a52617e258f0843a",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 450,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "882f1a9f83c8a53d",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 550,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "60b07813df6d8183",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 650,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "5418e727e01b35fa",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 750,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "36549e763f7498fc",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 850,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "596968915fe76a2b",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 950,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "6d62384d1b899bbe",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 1050,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "8339cff8faaea13a",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 1150,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "d715d134d7aa6fa4",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 1250,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "94be467d13fd75c6",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 1350,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "a1e5157968579ad4",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 1450,
+            "y": 3000,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "82353a48b064a338",
+        "type": "part",
+        "ref": "J2",
+        "name": "FH34SRJ-12S-0.5SH(50)",
+        "mpn": "FH34SRJ-12S-0.5SH(50)",
+        "manufacturer": "HRS(广濑)",
+        "symbol": {
+          "uuid": "b018ec80548fd928",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FH34SRJ-12S-0.5SH(50)"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 1830,
+            "y": 2405,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 1830,
+            "y": 2395,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "3",
+            "x": 1830,
+            "y": 2385,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "4",
+            "x": 1830,
+            "y": 2375,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "5",
+            "x": 1830,
+            "y": 2365,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "6",
+            "x": 1830,
+            "y": 2355,
+            "noConnected": false
+          },
+          {
+            "number": "7",
+            "name": "7",
+            "x": 1830,
+            "y": 2345,
+            "noConnected": false
+          },
+          {
+            "number": "8",
+            "name": "8",
+            "x": 1830,
+            "y": 2335,
+            "noConnected": false
+          },
+          {
+            "number": "9",
+            "name": "9",
+            "x": 1830,
+            "y": 2325,
+            "noConnected": false
+          },
+          {
+            "number": "10",
+            "name": "10",
+            "x": 1830,
+            "y": 2315,
+            "noConnected": false
+          },
+          {
+            "number": "11",
+            "name": "11",
+            "x": 1830,
+            "y": 2305,
+            "noConnected": false
+          },
+          {
+            "number": "12",
+            "name": "12",
+            "x": 1830,
+            "y": 2295,
+            "noConnected": false
+          },
+          {
+            "number": "13",
+            "name": "13",
+            "x": 1865,
+            "y": 2275,
+            "noConnected": true
+          },
+          {
+            "number": "14",
+            "name": "14",
+            "x": 1865,
+            "y": 2425,
+            "noConnected": true
+          }
+        ]
+      },
+      {
+        "id": "ce8aa9576444d145",
+        "type": "part",
+        "ref": "U8",
+        "name": "SHT45-AD1B-R2",
+        "mpn": "SHT45-AD1B-R2",
+        "manufacturer": "Sensirion(瑞士盛思锐)",
+        "symbol": {
+          "uuid": "e525dc5124021162",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SHT45-AD1B-R2"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "SDA",
+            "x": 2165,
+            "y": 2355,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "SCL",
+            "x": 2165,
+            "y": 2345,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "VDD",
+            "x": 2235,
+            "y": 2345,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "VSS",
+            "x": 2235,
+            "y": 2355,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "5",
+            "x": 2200,
+            "y": 2375,
+            "noConnected": true
+          }
+        ]
+      },
+      {
+        "id": "d89f2f1d197f4a77",
+        "type": "part",
+        "ref": "MIC2",
+        "name": "ICS-43434_C5656610",
+        "mpn": "ICS-43434",
+        "manufacturer": "TDK InvenSense(应美盛)",
+        "symbol": {
+          "uuid": "29abcad6aaae286e",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "ICS-43434_C5656610"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "WS",
+            "x": 2515,
+            "y": 2360,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "LR",
+            "x": 2515,
+            "y": 2350,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "GND",
+            "x": 2515,
+            "y": 2340,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "SCK",
+            "x": 2585,
+            "y": 2340,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "VDD",
+            "x": 2585,
+            "y": 2350,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "SD",
+            "x": 2585,
+            "y": 2360,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "36f779ce93d98d16",
+        "type": "part",
+        "ref": "U9",
+        "name": "ICM-42688-P",
+        "mpn": "ICM-42688-P",
+        "manufacturer": "TDK InvenSense(应美盛)",
+        "symbol": {
+          "uuid": "712b8e9ab953275e",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "ICM-42688-P"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "AP_SDO/AP_AD0",
+            "x": 2765,
+            "y": 2380,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "RESV",
+            "x": 2765,
+            "y": 2370,
+            "noConnected": true
+          },
+          {
+            "number": "3",
+            "name": "RESV",
+            "x": 2765,
+            "y": 2360,
+            "noConnected": true
+          },
+          {
+            "number": "4",
+            "name": "INT1/INT",
+            "x": 2765,
+            "y": 2350,
+            "noConnected": true
+          },
+          {
+            "number": "5",
+            "name": "VDDIO",
+            "x": 2765,
+            "y": 2340,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "GND",
+            "x": 2765,
+            "y": 2330,
+            "noConnected": false
+          },
+          {
+            "number": "7",
+            "name": "RESV",
+            "x": 2765,
+            "y": 2320,
+            "noConnected": false
+          },
+          {
+            "number": "8",
+            "name": "VDD",
+            "x": 3035,
+            "y": 2320,
+            "noConnected": false
+          },
+          {
+            "number": "9",
+            "name": "INT2/FSYNC/CLKIN",
+            "x": 3035,
+            "y": 2330,
+            "noConnected": false
+          },
+          {
+            "number": "10",
+            "name": "RESV",
+            "x": 3035,
+            "y": 2340,
+            "noConnected": true
+          },
+          {
+            "number": "11",
+            "name": "RESV",
+            "x": 3035,
+            "y": 2350,
+            "noConnected": true
+          },
+          {
+            "number": "12",
+            "name": "AP_CS",
+            "x": 3035,
+            "y": 2360,
+            "noConnected": false
+          },
+          {
+            "number": "13",
+            "name": "AP_SCL/AP_SCLK",
+            "x": 3035,
+            "y": 2370,
+            "noConnected": false
+          },
+          {
+            "number": "14",
+            "name": "AP_SDA/AP_SDIO/AP_SDI",
+            "x": 3035,
+            "y": 2380,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "e1a1eac3cd13d882",
+        "type": "part",
+        "ref": "C10",
+        "name": "100n",
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "1df7a0c6de54392c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B104KO8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2135,
+            "y": 2650,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2165,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "4ace211c64c84ab2",
+        "type": "part",
+        "ref": "C11",
+        "name": "100n",
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "1df7a0c6de54392c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B104KO8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2495,
+            "y": 2650,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2525,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "4374b84f80000006",
+        "type": "part",
+        "ref": "C12",
+        "name": "100n",
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "symbol": {
+          "uuid": "1df7a0c6de54392c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B104KO8NNNC"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2855,
+            "y": 2650,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 2885,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "5732175d8dd8a1e8",
+        "type": "part",
+        "ref": "D2",
+        "name": "LTST-C193KRKT-5A",
+        "mpn": "LTST-C193KRKT-5A",
+        "manufacturer": "LITEON(光宝)",
+        "symbol": {
+          "uuid": "bfb2f602a43145ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "LTST-C193KRKT-5A"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "A",
+            "x": 3520,
+            "y": 2350,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "K",
+            "x": 3480,
+            "y": 2350,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "14cd412ab711bfd8",
+        "type": "part",
+        "ref": "D3",
+        "name": "LTST-C193KGKT-5A",
+        "mpn": "LTST-C193KGKT-5A",
+        "manufacturer": "LITEON(光宝)",
+        "symbol": {
+          "uuid": "01fd786ca6d7c964",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "LTST-C193KGKT-5A"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "+",
+            "x": 3870,
+            "y": 2350,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "-",
+            "x": 3830,
+            "y": 2350,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "6a7bbc81f207921a",
+        "type": "part",
+        "ref": "R1",
+        "name": "1k",
+        "mpn": "0603WAF1001T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "9b27c13d3f1bf7a1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1001T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 3820,
+            "y": 2650,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3780,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "f17ba92186d95424",
+        "type": "part",
+        "ref": "R2",
+        "name": "1k",
+        "mpn": "0603WAF1001T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "symbol": {
+          "uuid": "9b27c13d3f1bf7a1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1001T5E"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 4180,
+            "y": 2650,
+            "noConnected": false
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 4140,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "8ab339d975543ab3",
+        "type": "part",
+        "ref": "TP1",
+        "name": "TP1",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3390,
+            "y": 2450,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "2aeb6ca66a7209c0",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 3430,
+            "y": 2450,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "d11ca9cbfd6b0864",
+        "type": "part",
+        "ref": "TP2",
+        "name": "TP2",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3610,
+            "y": 2450,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "45f37d0362dcca73",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 3650,
+            "y": 2450,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "f1e844db95f5d9e1",
+        "type": "part",
+        "ref": "TP3",
+        "name": "TP3",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3830,
+            "y": 2450,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "5331cd5ebafef33e",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 3870,
+            "y": 2450,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "df9649e1f6abf278",
+        "type": "part",
+        "ref": "TP4",
+        "name": "TP4",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 4050,
+            "y": 2450,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "90645cff35f3d476",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 4090,
+            "y": 2450,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "a4f1819dd2fcb83d",
+        "type": "part",
+        "ref": "TP5",
+        "name": "TP5",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3390,
+            "y": 2550,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "59bb6c9f2bde5050",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 3430,
+            "y": 2550,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "dac758e92305bcbc",
+        "type": "part",
+        "ref": "TP6",
+        "name": "TP6",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3610,
+            "y": 2550,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "c9cf5f0a94fe3c25",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 3650,
+            "y": 2550,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "2f91e5fcefba9b5b",
+        "type": "part",
+        "ref": "TP7",
+        "name": "TP7",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3830,
+            "y": 2550,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "c830535088e88b04",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 3870,
+            "y": 2550,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "a0f3e7347723b277",
+        "type": "part",
+        "ref": "TP8",
+        "name": "TP8",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 4050,
+            "y": 2550,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "b131f8cc87f44175",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 4090,
+            "y": 2550,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "d2bca2150c6f43fb",
+        "type": "part",
+        "ref": "TP9",
+        "name": "TP9",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3390,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "f455470ec694c28e",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 3430,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "5cc77cccc5911190",
+        "type": "part",
+        "ref": "TP10",
+        "name": "TP10",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3610,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "739db05708ef7a5c",
+        "type": "netport",
+        "pins": [
+          {
+            "number": "1",
+            "name": "BI",
+            "x": 3650,
+            "y": 2650,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "f036b227d1cccb0e",
+        "type": "part",
+        "ref": "TP11",
+        "name": "TP11",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 2840,
+            "y": 2900,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "0a10a2dd4766e08b",
+        "type": "part",
+        "ref": "TP12",
+        "name": "TP12",
+        "mpn": "5011-Testpointblack",
+        "manufacturer": "",
+        "symbol": {
+          "uuid": "6a89dcc9cff190ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "5011-TESTPOINTBLACK"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 3140,
+            "y": 2900,
+            "noConnected": false
+          }
+        ]
+      },
+      {
+        "id": "aa5b70538adc6436",
+        "type": "part",
+        "ref": "U3",
+        "name": "TPS62161DSGR",
+        "mpn": "TPS62161DSGR",
+        "manufacturer": "TI(德州仪器)",
+        "symbol": {
+          "uuid": "f01ebf921412464d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TPS62161DSGR"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "PGND",
+            "x": 3310,
+            "y": 515,
+            "noConnected": false
+          },
+          {
+            "number": "2",
+            "name": "VIN",
+            "x": 3310,
+            "y": 505,
+            "noConnected": false
+          },
+          {
+            "number": "3",
+            "name": "EN",
+            "x": 3310,
+            "y": 495,
+            "noConnected": false
+          },
+          {
+            "number": "4",
+            "name": "AGND",
+            "x": 3310,
+            "y": 485,
+            "noConnected": false
+          },
+          {
+            "number": "5",
+            "name": "FB",
+            "x": 3390,
+            "y": 485,
+            "noConnected": false
+          },
+          {
+            "number": "6",
+            "name": "VOS",
+            "x": 3390,
+            "y": 495,
+            "noConnected": false
+          },
+          {
+            "number": "7",
+            "name": "SW",
+            "x": 3390,
+            "y": 505,
+            "noConnected": false
+          },
+          {
+            "number": "8",
+            "name": "PG",
+            "x": 3390,
+            "y": 515,
+            "noConnected": false
+          },
+          {
+            "number": "9",
+            "name": "EP",
+            "x": 3350,
+            "y": 535,
+            "noConnected": false
+          }
+        ]
+      }
+    ],
+    "wires": [
+      {
+        "id": "8febe2874f92f3ea",
+        "net": "GND",
+        "line": [
+          850,
+          795,
+          685,
+          795
+        ]
+      },
+      {
+        "id": "5036a1c4d2be9164",
+        "net": "GND",
+        "line": [
+          850,
+          805,
+          685,
+          805
+        ]
+      },
+      {
+        "id": "710224aee3d3b564",
+        "net": "GND",
+        "line": [
+          850,
+          815,
+          685,
+          815
+        ]
+      },
+      {
+        "id": "cb3373b1587acf28",
+        "net": "GND",
+        "line": [
+          850,
+          825,
+          685,
+          825
+        ]
+      },
+      {
+        "id": "197dac0a2025ee4f",
+        "net": "GND",
+        "line": [
+          450,
+          905,
+          615,
+          905
+        ]
+      },
+      {
+        "id": "79f8a25c6d23c2b0",
+        "net": "VBUS_USB",
+        "line": [
+          450,
+          895,
+          615,
+          895
+        ]
+      },
+      {
+        "id": "98e2d2dd3d657550",
+        "net": "USB_CC1",
+        "line": [
+          450,
+          875,
+          615,
+          875
+        ]
+      },
+      {
+        "id": "1893533777151f0f",
+        "net": "USB_D_N_CONN",
+        "line": [
+          450,
+          865,
+          615,
+          865
+        ]
+      },
+      {
+        "id": "8c0f54238291bf49",
+        "net": "USB_D_P_CONN",
+        "line": [
+          450,
+          855,
+          615,
+          855
+        ]
+      },
+      {
+        "id": "2389c2341dc2e1de",
+        "net": "USB_D_N_CONN",
+        "line": [
+          450,
+          845,
+          615,
+          845
+        ]
+      },
+      {
+        "id": "b0bc234ede47d7fa",
+        "net": "USB_D_P_CONN",
+        "line": [
+          450,
+          835,
+          615,
+          835
+        ]
+      },
+      {
+        "id": "cc249553a5f995c8",
+        "net": "USB_CC2",
+        "line": [
+          450,
+          815,
+          615,
+          815
+        ]
+      },
+      {
+        "id": "6f59d169f548b43b",
+        "net": "VBUS_USB",
+        "line": [
+          450,
+          805,
+          615,
+          805
+        ]
+      },
+      {
+        "id": "e9de18510af8eed3",
+        "net": "GND",
+        "line": [
+          450,
+          795,
+          615,
+          795
+        ]
+      },
+      {
+        "id": "64de9d613abb58e7",
+        "net": "USB_D_P_CONN",
+        "line": [
+          1280,
+          1060,
+          1280,
+          915
+        ]
+      },
+      {
+        "id": "74ccc953078dd84c",
+        "net": "GND",
+        "line": [
+          1250,
+          1060,
+          1250,
+          915
+        ]
+      },
+      {
+        "id": "0a57b5e720010aeb",
+        "net": "USB_D_N_CONN",
+        "line": [
+          1220,
+          1060,
+          1220,
+          915
+        ]
+      },
+      {
+        "id": "02f21d935e0eb142",
+        "net": "USB_D_N",
+        "line": [
+          1220,
+          640,
+          1220,
+          785
+        ]
+      },
+      {
+        "id": "b97374066bcf0851",
+        "net": "VBUS_USB",
+        "line": [
+          1250,
+          640,
+          1250,
+          785
+        ]
+      },
+      {
+        "id": "23c5dc989de06d99",
+        "net": "USB_D_P",
+        "line": [
+          1280,
+          640,
+          1280,
+          785
+        ]
+      },
+      {
+        "id": "2f609d7db6ad635e",
+        "net": "USB_CC1",
+        "line": [
+          560,
+          1200,
+          680,
+          1200
+        ]
+      },
+      {
+        "id": "eba90398dfeaff5a",
+        "net": "GND",
+        "line": [
+          840,
+          1200,
+          720,
+          1200
+        ]
+      },
+      {
+        "id": "bd87a31e2468b76f",
+        "net": "USB_CC2",
+        "line": [
+          910,
+          1200,
+          1030,
+          1200
+        ]
+      },
+      {
+        "id": "e11df87f67278979",
+        "net": "GND",
+        "line": [
+          1190,
+          1200,
+          1070,
+          1200
+        ]
+      },
+      {
+        "id": "e9519f09676850d8",
+        "net": "VBUS_USB",
+        "line": [
+          1265,
+          1200,
+          1385,
+          1200
+        ]
+      },
+      {
+        "id": "a5fe3aaaa704cbfe",
+        "net": "GND",
+        "line": [
+          1535,
+          1200,
+          1415,
+          1200
+        ]
+      },
+      {
+        "id": "2c0cd45cc4f7a8be",
+        "net": "VBUS_USB",
+        "line": [
+          1565,
+          1200,
+          1685,
+          1200
+        ]
+      },
+      {
+        "id": "1c0de1079b46d70d",
+        "net": "GND",
+        "line": [
+          1835,
+          1200,
+          1715,
+          1200
+        ]
+      },
+      {
+        "id": "ee4c6e376b736f2e",
+        "net": "VIN_EXT_RAW",
+        "line": [
+          1530,
+          300,
+          1530,
+          420
+        ]
+      },
+      {
+        "id": "82500d4f2eee8616",
+        "net": "VIN_EXT_RAW",
+        "line": [
+          1540,
+          300,
+          1540,
+          420
+        ]
+      },
+      {
+        "id": "3689fa5bb53182c2",
+        "net": "VIN_EXT_RAW",
+        "line": [
+          1550,
+          300,
+          1550,
+          420
+        ]
+      },
+      {
+        "id": "c95b0639ce724bd2",
+        "net": "EXT_OVP",
+        "line": [
+          1570,
+          300,
+          1570,
+          420
+        ]
+      },
+      {
+        "id": "9169e619384f731b",
+        "net": "GND",
+        "line": [
+          1760,
+          470,
+          1640,
+          470
+        ]
+      },
+      {
+        "id": "824c384fdad90a68",
+        "net": "VIN_EXT_RAW",
+        "line": [
+          1760,
+          480,
+          1640,
+          480
+        ]
+      },
+      {
+        "id": "e6983d77978b029a",
+        "net": "GND",
+        "line": [
+          1760,
+          490,
+          1640,
+          490
+        ]
+      },
+      {
+        "id": "7287e5d7719d1611",
+        "net": "GND",
+        "line": [
+          1760,
+          510,
+          1640,
+          510
+        ]
+      },
+      {
+        "id": "4f70332da49a9bad",
+        "net": "EXT_ILIM",
+        "line": [
+          1760,
+          530,
+          1640,
+          530
+        ]
+      },
+      {
+        "id": "390530f223a4fe42",
+        "net": "EXT_DVDT",
+        "line": [
+          1580,
+          690,
+          1580,
+          570
+        ]
+      },
+      {
+        "id": "934bb951f37efd17",
+        "net": "EXT_FLT",
+        "line": [
+          1560,
+          690,
+          1560,
+          570
+        ]
+      },
+      {
+        "id": "954e270490365fa7",
+        "net": "VIN_EXT_PROTECTED",
+        "line": [
+          1550,
+          690,
+          1550,
+          570
+        ]
+      },
+      {
+        "id": "515b4b18607656c7",
+        "net": "VIN_EXT_PROTECTED",
+        "line": [
+          1540,
+          690,
+          1540,
+          570
+        ]
+      },
+      {
+        "id": "61a179f9562cb559",
+        "net": "GND",
+        "line": [
+          1530,
+          690,
+          1530,
+          570
+        ]
+      },
+      {
+        "id": "f35909b6b819e9bc",
+        "net": "VIN_CHARGER",
+        "line": [
+          1745,
+          525,
+          1865,
+          525
+        ]
+      },
+      {
+        "id": "1f1592ce240239e7",
+        "net": "VIN_EXT_PROTECTED",
+        "line": [
+          1745,
+          515,
+          1865,
+          515
+        ]
+      },
+      {
+        "id": "2fd2561d5996b7cc",
+        "net": "GND",
+        "line": [
+          1745,
+          505,
+          1865,
+          505
+        ]
+      },
+      {
+        "id": "74f96bfc6aea3344",
+        "net": "GND",
+        "line": [
+          1745,
+          495,
+          1865,
+          495
+        ]
+      },
+      {
+        "id": "7691b04e168837d8",
+        "net": "GND",
+        "line": [
+          1745,
+          485,
+          1865,
+          485
+        ]
+      },
+      {
+        "id": "a29a52c6b82d00e5",
+        "net": "GND",
+        "line": [
+          1745,
+          475,
+          1865,
+          475
+        ]
+      },
+      {
+        "id": "9037b5004c6f5f27",
+        "net": "VBUS_USB",
+        "line": [
+          2055,
+          475,
+          1935,
+          475
+        ]
+      },
+      {
+        "id": "3f5b7922312316c3",
+        "net": "VIN_CHARGER",
+        "line": [
+          2055,
+          485,
+          1935,
+          485
+        ]
+      },
+      {
+        "id": "30938ccdc055f018",
+        "net": "PWRMUX_ST",
+        "line": [
+          2055,
+          495,
+          1935,
+          495
+        ]
+      },
+      {
+        "id": "10bd59800ca27c95",
+        "net": "PWRMUX_ILM",
+        "line": [
+          2055,
+          505,
+          1935,
+          505
+        ]
+      },
+      {
+        "id": "9be4ce831f99d067",
+        "net": "PWRMUX_SS",
+        "line": [
+          2055,
+          515,
+          1935,
+          515
+        ]
+      },
+      {
+        "id": "461752b842e1678f",
+        "net": "GND",
+        "line": [
+          2055,
+          525,
+          1935,
+          525
+        ]
+      },
+      {
+        "id": "93ca982eaebb2177",
+        "net": "CHARGER_TS",
+        "line": [
+          2070,
+          465,
+          2190,
+          465
+        ]
+      },
+      {
+        "id": "e5db148d19e60829",
+        "net": "VBAT",
+        "line": [
+          2070,
+          435,
+          2190,
+          435
+        ]
+      },
+      {
+        "id": "c4cdc646ede24c98",
+        "net": "VBAT",
+        "line": [
+          2070,
+          425,
+          2190,
+          425
+        ]
+      },
+      {
+        "id": "e03760b17a9f33e6",
+        "net": "GND",
+        "line": [
+          2430,
+          455,
+          2310,
+          455
+        ]
+      },
+      {
+        "id": "e369dc6f9339878b",
+        "net": "GND",
+        "line": [
+          2430,
+          495,
+          2310,
+          495
+        ]
+      },
+      {
+        "id": "8380171c78f02f73",
+        "net": "VIN_CHARGER",
+        "line": [
+          2430,
+          505,
+          2310,
+          505
+        ]
+      },
+      {
+        "id": "2a72d34e44185fb5",
+        "net": "CHARGER_PGOOD",
+        "line": [
+          2430,
+          525,
+          2310,
+          525
+        ]
+      },
+      {
+        "id": "46e27bbc42517e91",
+        "net": "GND",
+        "line": [
+          2430,
+          425,
+          2310,
+          425
+        ]
+      },
+      {
+        "id": "afea54ab7e8a003e",
+        "net": "CHARGER_CHG",
+        "line": [
+          2430,
+          545,
+          2310,
+          545
+        ]
+      },
+      {
+        "id": "a0432c5876b08baa",
+        "net": "VSYS",
+        "line": [
+          2430,
+          575,
+          2310,
+          575
+        ]
+      },
+      {
+        "id": "8ec1d0eb9db52e96",
+        "net": "VSYS",
+        "line": [
+          2430,
+          565,
+          2310,
+          565
+        ]
+      },
+      {
+        "id": "a2c795ccba250a7c",
+        "net": "CHARGER_ILIM",
+        "line": [
+          2070,
+          555,
+          2190,
+          555
+        ]
+      },
+      {
+        "id": "a658aadfbd23d35f",
+        "net": "VIN_CHARGER",
+        "line": [
+          2070,
+          575,
+          2190,
+          575
+        ]
+      },
+      {
+        "id": "81d6bee88cacb9c1",
+        "net": "CHARGER_TMR",
+        "line": [
+          2430,
+          475,
+          2310,
+          475
+        ]
+      },
+      {
+        "id": "0f5d387fb0c47b94",
+        "net": "CHARGER_ISET",
+        "line": [
+          2070,
+          485,
+          2190,
+          485
+        ]
+      },
+      {
+        "id": "864f836b0b425466",
+        "net": "GND",
+        "line": [
+          2430,
+          435,
+          2310,
+          435
+        ]
+      },
+      {
+        "id": "c8e65d84d2bb8ad2",
+        "net": "VBAT",
+        "line": [
+          2465,
+          505,
+          2585,
+          505
+        ]
+      },
+      {
+        "id": "0289994ea012a647",
+        "net": "GND",
+        "line": [
+          2465,
+          495,
+          2585,
+          495
+        ]
+      },
+      {
+        "id": "3ff082d0af2e3ffa",
+        "net": "CHARGER_ISET",
+        "line": [
+          1710,
+          800,
+          1830,
+          800
+        ]
+      },
+      {
+        "id": "1df57638d9fc53b6",
+        "net": "GND",
+        "line": [
+          1990,
+          800,
+          1870,
+          800
+        ]
+      },
+      {
+        "id": "7c20b827e44e700d",
+        "net": "CHARGER_ILIM",
+        "line": [
+          2070,
+          800,
+          2190,
+          800
+        ]
+      },
+      {
+        "id": "dd870c708d75b856",
+        "net": "GND",
+        "line": [
+          2350,
+          800,
+          2230,
+          800
+        ]
+      },
+      {
+        "id": "2483def5a4aa1c05",
+        "net": "CHARGER_TMR",
+        "line": [
+          2430,
+          800,
+          2550,
+          800
+        ]
+      },
+      {
+        "id": "0cec19c092e899ee",
+        "net": "GND",
+        "line": [
+          2710,
+          800,
+          2590,
+          800
+        ]
+      },
+      {
+        "id": "75c711a7594f5c3a",
+        "net": "CHARGER_TS",
+        "line": [
+          2790,
+          800,
+          2910,
+          800
+        ]
+      },
+      {
+        "id": "2ee3908213899200",
+        "net": "GND",
+        "line": [
+          3070,
+          800,
+          2950,
+          800
+        ]
+      },
+      {
+        "id": "e2d87f89a26a4b6c",
+        "net": "CHARGER_PGOOD",
+        "line": [
+          1710,
+          950,
+          1830,
+          950
+        ]
+      },
+      {
+        "id": "4fae95579d25646f",
+        "net": "+3V3",
+        "line": [
+          1990,
+          950,
+          1870,
+          950
+        ]
+      },
+      {
+        "id": "148d36a368861913",
+        "net": "CHARGER_CHG",
+        "line": [
+          2070,
+          950,
+          2190,
+          950
+        ]
+      },
+      {
+        "id": "00d639183400fc17",
+        "net": "+3V3",
+        "line": [
+          2350,
+          950,
+          2230,
+          950
+        ]
+      },
+      {
+        "id": "1833a986cc1c5f77",
+        "net": "VIN_CHARGER",
+        "line": [
+          2710,
+          950,
+          2590,
+          950
+        ]
+      },
+      {
+        "id": "677d7f32eccc6e6f",
+        "net": "GND",
+        "line": [
+          2430,
+          950,
+          2550,
+          950
+        ]
+      },
+      {
+        "id": "f5478cf65ab4986e",
+        "net": "VSYS",
+        "line": [
+          2795,
+          950,
+          2915,
+          950
+        ]
+      },
+      {
+        "id": "ab0136953dd10ed2",
+        "net": "GND",
+        "line": [
+          3065,
+          950,
+          2945,
+          950
+        ]
+      },
+      {
+        "id": "3ff376db6bc04b7d",
+        "net": "VBAT",
+        "line": [
+          1990,
+          1100,
+          1870,
+          1100
+        ]
+      },
+      {
+        "id": "0f9d96de436a6463",
+        "net": "GND",
+        "line": [
+          1710,
+          1100,
+          1830,
+          1100
+        ]
+      },
+      {
+        "id": "9d3914de9874a597",
+        "net": "EXT_ILIM",
+        "line": [
+          2070,
+          1100,
+          2190,
+          1100
+        ]
+      },
+      {
+        "id": "133b1cc7f0fe67de",
+        "net": "GND",
+        "line": [
+          2350,
+          1100,
+          2230,
+          1100
+        ]
+      },
+      {
+        "id": "3022ea57671a9673",
+        "net": "VIN_EXT_RAW",
+        "line": [
+          2430,
+          1100,
+          2550,
+          1100
+        ]
+      },
+      {
+        "id": "fbbe1f0f88d44334",
+        "net": "EXT_OVP",
+        "line": [
+          2710,
+          1100,
+          2590,
+          1100
+        ]
+      },
+      {
+        "id": "9f5ed9f25cb08035",
+        "net": "EXT_OVP",
+        "line": [
+          2790,
+          1100,
+          2910,
+          1100
+        ]
+      },
+      {
+        "id": "750dd3ddbf827c59",
+        "net": "GND",
+        "line": [
+          3070,
+          1100,
+          2950,
+          1100
+        ]
+      },
+      {
+        "id": "167f18d4ae17a812",
+        "net": "EXT_DVDT",
+        "line": [
+          1715,
+          1250,
+          1835,
+          1250
+        ]
+      },
+      {
+        "id": "197a894d692b0381",
+        "net": "GND",
+        "line": [
+          1985,
+          1250,
+          1865,
+          1250
+        ]
+      },
+      {
+        "id": "a65f259f1ae770cc",
+        "net": "EXT_FLT",
+        "line": [
+          2070,
+          1250,
+          2190,
+          1250
+        ]
+      },
+      {
+        "id": "544bae0aabacf993",
+        "net": "+3V3",
+        "line": [
+          2350,
+          1250,
+          2230,
+          1250
+        ]
+      },
+      {
+        "id": "32e483b2fa9acbb3",
+        "net": "PWRMUX_ILM",
+        "line": [
+          2430,
+          1250,
+          2550,
+          1250
+        ]
+      },
+      {
+        "id": "ca9df2630d734654",
+        "net": "GND",
+        "line": [
+          2710,
+          1250,
+          2590,
+          1250
+        ]
+      },
+      {
+        "id": "ed784a86c52ba2ba",
+        "net": "PWRMUX_SS",
+        "line": [
+          2795,
+          1250,
+          2915,
+          1250
+        ]
+      },
+      {
+        "id": "e12282c2aeda22db",
+        "net": "GND",
+        "line": [
+          3065,
+          1250,
+          2945,
+          1250
+        ]
+      },
+      {
+        "id": "6ca337bad833ee7c",
+        "net": "VSYS",
+        "line": [
+          3540,
+          510,
+          3660,
+          510
+        ]
+      },
+      {
+        "id": "7466cdce73d9c517",
+        "net": "GND",
+        "line": [
+          3540,
+          500,
+          3660,
+          500
+        ]
+      },
+      {
+        "id": "e3d3bb5136a8a987",
+        "net": "DOCK_EN",
+        "line": [
+          3540,
+          490,
+          3660,
+          490
+        ]
+      },
+      {
+        "id": "abc2520474174f4d",
+        "net": "VDOCK",
+        "line": [
+          3860,
+          500,
+          3740,
+          500
+        ]
+      },
+      {
+        "id": "8067cc12392c67a5",
+        "net": "VDOCK",
+        "line": [
+          3860,
+          510,
+          3740,
+          510
+        ]
+      },
+      {
+        "id": "4dfd8539bdc25ce6",
+        "net": "+3V3",
+        "line": [
+          3890,
+          510,
+          4010,
+          510
+        ]
+      },
+      {
+        "id": "10ff4f652d0f5af9",
+        "net": "GND",
+        "line": [
+          3890,
+          500,
+          4010,
+          500
+        ]
+      },
+      {
+        "id": "3fc4f0127f6d4154",
+        "net": "DOCK_EN",
+        "line": [
+          3890,
+          490,
+          4010,
+          490
+        ]
+      },
+      {
+        "id": "751c80d36e89c6e8",
+        "net": "+3V3_FPC",
+        "line": [
+          4210,
+          500,
+          4090,
+          500
+        ]
+      },
+      {
+        "id": "6e8f6aaa14cd50ab",
+        "net": "+3V3_FPC",
+        "line": [
+          4210,
+          510,
+          4090,
+          510
+        ]
+      },
+      {
+        "id": "873dc148f0ea8881",
+        "net": "BUCK_SW",
+        "line": [
+          3510,
+          800,
+          3630,
+          800
+        ]
+      },
+      {
+        "id": "72bf6176baff1db6",
+        "net": "+3V3",
+        "line": [
+          3790,
+          800,
+          3670,
+          800
+        ]
+      },
+      {
+        "id": "990ac2ef703bf597",
+        "net": "REG_PG",
+        "line": [
+          3870,
+          800,
+          3990,
+          800
+        ]
+      },
+      {
+        "id": "51e0cd443900e168",
+        "net": "+3V3",
+        "line": [
+          4150,
+          800,
+          4030,
+          800
+        ]
+      },
+      {
+        "id": "d7a0481f372bb974",
+        "net": "GND",
+        "line": [
+          145,
+          1495,
+          265,
+          1495
+        ]
+      },
+      {
+        "id": "600a89b318923f4d",
+        "net": "+3V3",
+        "line": [
+          145,
+          1485,
+          265,
+          1485
+        ]
+      },
+      {
+        "id": "a468ecc20582e635",
+        "net": "ESP_EN",
+        "line": [
+          145,
+          1475,
+          265,
+          1475
+        ]
+      },
+      {
+        "id": "0feb834b2e412588",
+        "net": "I2C_MAIN_SDA",
+        "line": [
+          145,
+          1465,
+          265,
+          1465
+        ]
+      },
+      {
+        "id": "7f1aff94968e1056",
+        "net": "I2C_MAIN_SCL",
+        "line": [
+          145,
+          1455,
+          265,
+          1455
+        ]
+      },
+      {
+        "id": "2d7332cacea3596b",
+        "net": "SPI_SCLK",
+        "line": [
+          145,
+          1445,
+          265,
+          1445
+        ]
+      },
+      {
+        "id": "425e897eeda5b1d0",
+        "net": "SPI_MOSI",
+        "line": [
+          145,
+          1435,
+          265,
+          1435
+        ]
+      },
+      {
+        "id": "293daf043c94f6f5",
+        "net": "RF_RST",
+        "line": [
+          145,
+          1425,
+          265,
+          1425
+        ]
+      },
+      {
+        "id": "7a5c3f33072f5a75",
+        "net": "RF_EN",
+        "line": [
+          145,
+          1415,
+          265,
+          1415
+        ]
+      },
+      {
+        "id": "30e697c7cc250822",
+        "net": "UART1_RX",
+        "line": [
+          145,
+          1405,
+          265,
+          1405
+        ]
+      },
+      {
+        "id": "cbb6f242560a0389",
+        "net": "UART1_TX",
+        "line": [
+          145,
+          1395,
+          265,
+          1395
+        ]
+      },
+      {
+        "id": "132f38e9173b8114",
+        "net": "SPI_MISO",
+        "line": [
+          145,
+          1385,
+          265,
+          1385
+        ]
+      },
+      {
+        "id": "44385a1830b413c6",
+        "net": "USB_D_N",
+        "line": [
+          145,
+          1375,
+          265,
+          1375
+        ]
+      },
+      {
+        "id": "adba15ee5ae704c7",
+        "net": "USB_D_P",
+        "line": [
+          145,
+          1365,
+          265,
+          1365
+        ]
+      },
+      {
+        "id": "1b793f6865cbfedd",
+        "net": "SD_CS",
+        "line": [
+          320,
+          1190,
+          320,
+          1310
+        ]
+      },
+      {
+        "id": "73828712d596e6ad",
+        "net": "RF_CS",
+        "line": [
+          330,
+          1190,
+          330,
+          1310
+        ]
+      },
+      {
+        "id": "59c3f42c60d542bb",
+        "net": "I2S_BCLK",
+        "line": [
+          340,
+          1190,
+          340,
+          1310
+        ]
+      },
+      {
+        "id": "f8f94a850a8c812d",
+        "net": "I2S_WS",
+        "line": [
+          350,
+          1190,
+          350,
+          1310
+        ]
+      },
+      {
+        "id": "9453b3fbcb196674",
+        "net": "I2S_SD",
+        "line": [
+          360,
+          1190,
+          360,
+          1310
+        ]
+      },
+      {
+        "id": "a2d012941fe4d6fb",
+        "net": "DOCK_EN",
+        "line": [
+          370,
+          1190,
+          370,
+          1310
+        ]
+      },
+      {
+        "id": "facc62f9070823f0",
+        "net": "PWRMUX_ST",
+        "line": [
+          380,
+          1190,
+          380,
+          1310
+        ]
+      },
+      {
+        "id": "8cf514071f9f380a",
+        "net": "LED_R",
+        "line": [
+          390,
+          1190,
+          390,
+          1310
+        ]
+      },
+      {
+        "id": "cfab6edeeb6b63dc",
+        "net": "LED_B",
+        "line": [
+          400,
+          1190,
+          400,
+          1310
+        ]
+      },
+      {
+        "id": "6a1235a91fa961aa",
+        "net": "ESP_BOOT",
+        "line": [
+          555,
+          1365,
+          435,
+          1365
+        ]
+      },
+      {
+        "id": "1e6a21753290613a",
+        "net": "DOCK_PRESENT_ID",
+        "line": [
+          555,
+          1405,
+          435,
+          1405
+        ]
+      },
+      {
+        "id": "0500ab0c62b0fc16",
+        "net": "AUDIO_SEL",
+        "line": [
+          555,
+          1415,
+          435,
+          1415
+        ]
+      },
+      {
+        "id": "10a22a73e72cc299",
+        "net": "LED_G",
+        "line": [
+          555,
+          1425,
+          435,
+          1425
+        ]
+      },
+      {
+        "id": "391c08f62018c5bc",
+        "net": "CHARGER_PGOOD",
+        "line": [
+          555,
+          1435,
+          435,
+          1435
+        ]
+      },
+      {
+        "id": "f374c11188e87bbc",
+        "net": "CHARGER_CHG",
+        "line": [
+          555,
+          1445,
+          435,
+          1445
+        ]
+      },
+      {
+        "id": "e1e81939b8d50cfc",
+        "net": "DEBUG_RX",
+        "line": [
+          555,
+          1455,
+          435,
+          1455
+        ]
+      },
+      {
+        "id": "d7be7769e50a4b28",
+        "net": "DEBUG_TX",
+        "line": [
+          555,
+          1465,
+          435,
+          1465
+        ]
+      },
+      {
+        "id": "b0628cb12d7b8961",
+        "net": "VBAT_ADC",
+        "line": [
+          555,
+          1475,
+          435,
+          1475
+        ]
+      },
+      {
+        "id": "64f1395d4f04e2e0",
+        "net": "EXT_SENSOR_INT",
+        "line": [
+          555,
+          1485,
+          435,
+          1485
+        ]
+      },
+      {
+        "id": "0ad68afe5751c2ba",
+        "net": "GND",
+        "line": [
+          555,
+          1495,
+          435,
+          1495
+        ]
+      },
+      {
+        "id": "867b609f87903a19",
+        "net": "GND",
+        "line": [
+          555,
+          1510,
+          435,
+          1510
+        ]
+      },
+      {
+        "id": "9f53ea9fb98bc14a",
+        "net": "DOCK_SD",
+        "line": [
+          540,
+          1460,
+          660,
+          1460
+        ]
+      },
+      {
+        "id": "a2e5aa4ed2ceb19b",
+        "net": "GND",
+        "line": [
+          540,
+          1450,
+          660,
+          1450
+        ]
+      },
+      {
+        "id": "00a78eca15060d0c",
+        "net": "I2S_SD_EXT",
+        "line": [
+          540,
+          1440,
+          660,
+          1440
+        ]
+      },
+      {
+        "id": "7790c9981a134b95",
+        "net": "I2S_SD",
+        "line": [
+          860,
+          1440,
+          740,
+          1440
+        ]
+      },
+      {
+        "id": "40e35f0e21568391",
+        "net": "+3V3",
+        "line": [
+          860,
+          1450,
+          740,
+          1450
+        ]
+      },
+      {
+        "id": "7e9d7cce1d71c5a0",
+        "net": "AUDIO_SEL",
+        "line": [
+          860,
+          1460,
+          740,
+          1460
+        ]
+      },
+      {
+        "id": "068ff5cacb3bba4e",
+        "net": "+3V3",
+        "line": [
+          515,
+          1750,
+          635,
+          1750
+        ]
+      },
+      {
+        "id": "eb8e799aee51c0c3",
+        "net": "GND",
+        "line": [
+          785,
+          1750,
+          665,
+          1750
+        ]
+      },
+      {
+        "id": "4c0a7bd8698125da",
+        "net": "+3V3",
+        "line": [
+          1150,
+          1750,
+          1030,
+          1750
+        ]
+      },
+      {
+        "id": "7686b1eb61f82cba",
+        "net": "GND",
+        "line": [
+          870,
+          1750,
+          990,
+          1750
+        ]
+      },
+      {
+        "id": "8e8de14db67da861",
+        "net": "ESP_EN",
+        "line": [
+          1235,
+          1750,
+          1355,
+          1750
+        ]
+      },
+      {
+        "id": "a3db112a482ad9c3",
+        "net": "GND",
+        "line": [
+          1505,
+          1750,
+          1385,
+          1750
+        ]
+      },
+      {
+        "id": "7ece10c4f9acd692",
+        "net": "ESP_EN",
+        "line": [
+          1590,
+          1750,
+          1710,
+          1750
+        ]
+      },
+      {
+        "id": "a99e86eca45846bf",
+        "net": "+3V3",
+        "line": [
+          1870,
+          1750,
+          1750,
+          1750
+        ]
+      },
+      {
+        "id": "4dded9a43f20ae90",
+        "net": "ESP_BOOT",
+        "line": [
+          510,
+          1900,
+          630,
+          1900
+        ]
+      },
+      {
+        "id": "fc023c798ba2cf9d",
+        "net": "+3V3",
+        "line": [
+          790,
+          1900,
+          670,
+          1900
+        ]
+      },
+      {
+        "id": "99526f5f0b931e99",
+        "net": "LOCAL_SDA",
+        "line": [
+          1695,
+          1455,
+          1815,
+          1455
+        ]
+      },
+      {
+        "id": "3f8e438b1f9f242f",
+        "net": "LOCAL_SCL",
+        "line": [
+          1695,
+          1445,
+          1815,
+          1445
+        ]
+      },
+      {
+        "id": "23f443d6cd27925b",
+        "net": "+3V3",
+        "line": [
+          2005,
+          1445,
+          1885,
+          1445
+        ]
+      },
+      {
+        "id": "41116a0a43d9d50e",
+        "net": "GND",
+        "line": [
+          2005,
+          1455,
+          1885,
+          1455
+        ]
+      },
+      {
+        "id": "251b103b3e8f8ab2",
+        "net": "I2S_WS",
+        "line": [
+          2045,
+          1460,
+          2165,
+          1460
+        ]
+      },
+      {
+        "id": "c84cab947947ff2b",
+        "net": "GND",
+        "line": [
+          2045,
+          1450,
+          2165,
+          1450
+        ]
+      },
+      {
+        "id": "587b52e1f13a31f0",
+        "net": "GND",
+        "line": [
+          2045,
+          1440,
+          2165,
+          1440
+        ]
+      },
+      {
+        "id": "190236bad411bf4d",
+        "net": "I2S_BCLK",
+        "line": [
+          2355,
+          1440,
+          2235,
+          1440
+        ]
+      },
+      {
+        "id": "b0fb493ce6fa4d52",
+        "net": "+3V3",
+        "line": [
+          2355,
+          1450,
+          2235,
+          1450
+        ]
+      },
+      {
+        "id": "b5628daaca22fdc7",
+        "net": "I2S_SD_EXT",
+        "line": [
+          2355,
+          1460,
+          2235,
+          1460
+        ]
+      },
+      {
+        "id": "2347a9e3073ba1de",
+        "net": "+3V3",
+        "line": [
+          2015,
+          1750,
+          2135,
+          1750
+        ]
+      },
+      {
+        "id": "74d3afa2ebf61ed8",
+        "net": "GND",
+        "line": [
+          2285,
+          1750,
+          2165,
+          1750
+        ]
+      },
+      {
+        "id": "b7a01fb18042dec6",
+        "net": "+3V3",
+        "line": [
+          2375,
+          1750,
+          2495,
+          1750
+        ]
+      },
+      {
+        "id": "4fe9d8131fe14511",
+        "net": "GND",
+        "line": [
+          2645,
+          1750,
+          2525,
+          1750
+        ]
+      },
+      {
+        "id": "4279ad956add4f0d",
+        "net": "GND",
+        "line": [
+          185,
+          2385,
+          305,
+          2385
+        ]
+      },
+      {
+        "id": "58f9b64c3b0e7b91",
+        "net": "GND",
+        "line": [
+          185,
+          2375,
+          305,
+          2375
+        ]
+      },
+      {
+        "id": "48221f32bafe46bc",
+        "net": "I2C_MUX_RESET",
+        "line": [
+          185,
+          2365,
+          305,
+          2365
+        ]
+      },
+      {
+        "id": "f421247998207b67",
+        "net": "DOCK_SDA",
+        "line": [
+          185,
+          2355,
+          305,
+          2355
+        ]
+      },
+      {
+        "id": "d2d84195da0693d5",
+        "net": "DOCK_SCL",
+        "line": [
+          185,
+          2345,
+          305,
+          2345
+        ]
+      },
+      {
+        "id": "ca72bf2a9c2f2ee3",
+        "net": "LOCAL_SDA",
+        "line": [
+          185,
+          2335,
+          305,
+          2335
+        ]
+      },
+      {
+        "id": "76b815e7b58a39ed",
+        "net": "LOCAL_SCL",
+        "line": [
+          185,
+          2325,
+          305,
+          2325
+        ]
+      },
+      {
+        "id": "278922407305223a",
+        "net": "GND",
+        "line": [
+          185,
+          2315,
+          305,
+          2315
+        ]
+      },
+      {
+        "id": "53213ada1ed15cbb",
+        "net": "GND",
+        "line": [
+          515,
+          2355,
+          395,
+          2355
+        ]
+      },
+      {
+        "id": "2f7dbc4787bc88e5",
+        "net": "I2C_MAIN_SCL",
+        "line": [
+          515,
+          2365,
+          395,
+          2365
+        ]
+      },
+      {
+        "id": "2214ba00c122bf01",
+        "net": "I2C_MAIN_SDA",
+        "line": [
+          515,
+          2375,
+          395,
+          2375
+        ]
+      },
+      {
+        "id": "1894fa6e529495fb",
+        "net": "+3V3",
+        "line": [
+          515,
+          2385,
+          395,
+          2385
+        ]
+      },
+      {
+        "id": "202a9e8eb3229468",
+        "net": "DOCK_SDA",
+        "line": [
+          540,
+          2370,
+          660,
+          2370
+        ]
+      },
+      {
+        "id": "e206fb53dca8d39f",
+        "net": "DOCK_SCL",
+        "line": [
+          540,
+          2360,
+          660,
+          2360
+        ]
+      },
+      {
+        "id": "e6d6b5725eff033c",
+        "net": "GND",
+        "line": [
+          540,
+          2350,
+          660,
+          2350
+        ]
+      },
+      {
+        "id": "a2db0b76c1c295b3",
+        "net": "DOCK_BCLK",
+        "line": [
+          540,
+          2340,
+          660,
+          2340
+        ]
+      },
+      {
+        "id": "78442ae6e86d91ab",
+        "net": "DOCK_WS",
+        "line": [
+          540,
+          2330,
+          660,
+          2330
+        ]
+      },
+      {
+        "id": "8d4b959a6faf0978",
+        "net": "GND",
+        "line": [
+          860,
+          2350,
+          740,
+          2350
+        ]
+      },
+      {
+        "id": "817885ff57eb24e5",
+        "net": "DOCK_SD",
+        "line": [
+          860,
+          2360,
+          740,
+          2360
+        ]
+      },
+      {
+        "id": "4aa445828c437b04",
+        "net": "DOCK_PRESENT_ID",
+        "line": [
+          860,
+          2370,
+          740,
+          2370
+        ]
+      },
+      {
+        "id": "70eb22dc506af60f",
+        "net": "I2C_MAIN_SDA",
+        "line": [
+          510,
+          2650,
+          630,
+          2650
+        ]
+      },
+      {
+        "id": "d7413155d9ef1329",
+        "net": "+3V3",
+        "line": [
+          790,
+          2650,
+          670,
+          2650
+        ]
+      },
+      {
+        "id": "885e614482f50449",
+        "net": "I2C_MAIN_SCL",
+        "line": [
+          870,
+          2650,
+          990,
+          2650
+        ]
+      },
+      {
+        "id": "76c8c0340625a4cf",
+        "net": "+3V3",
+        "line": [
+          1150,
+          2650,
+          1030,
+          2650
+        ]
+      },
+      {
+        "id": "90aaa4563604afb2",
+        "net": "I2C_MUX_RESET",
+        "line": [
+          1230,
+          2650,
+          1350,
+          2650
+        ]
+      },
+      {
+        "id": "23a3231398e9c7f6",
+        "net": "+3V3",
+        "line": [
+          1510,
+          2650,
+          1390,
+          2650
+        ]
+      },
+      {
+        "id": "dab1671a60127792",
+        "net": "GND",
+        "line": [
+          1710,
+          2405,
+          1830,
+          2405
+        ]
+      },
+      {
+        "id": "d04e9839ed3c3ed0",
+        "net": "GND",
+        "line": [
+          1710,
+          2395,
+          1830,
+          2395
+        ]
+      },
+      {
+        "id": "7a1777cb5f852f48",
+        "net": "GND",
+        "line": [
+          1710,
+          2385,
+          1830,
+          2385
+        ]
+      },
+      {
+        "id": "e067d86e974a8242",
+        "net": "VDOCK",
+        "line": [
+          1710,
+          2375,
+          1830,
+          2375
+        ]
+      },
+      {
+        "id": "337766c6a688edb6",
+        "net": "VDOCK",
+        "line": [
+          1710,
+          2365,
+          1830,
+          2365
+        ]
+      },
+      {
+        "id": "206859f4ad0569b7",
+        "net": "+3V3_FPC",
+        "line": [
+          1710,
+          2355,
+          1830,
+          2355
+        ]
+      },
+      {
+        "id": "57b3aa7bf2c98f4a",
+        "net": "DOCK_SDA",
+        "line": [
+          1710,
+          2345,
+          1830,
+          2345
+        ]
+      },
+      {
+        "id": "e9ee20b186e0233b",
+        "net": "DOCK_SCL",
+        "line": [
+          1710,
+          2335,
+          1830,
+          2335
+        ]
+      },
+      {
+        "id": "5bbe87c93d0c460b",
+        "net": "DOCK_BCLK",
+        "line": [
+          1710,
+          2325,
+          1830,
+          2325
+        ]
+      },
+      {
+        "id": "261b912908f0c31c",
+        "net": "DOCK_WS",
+        "line": [
+          1710,
+          2315,
+          1830,
+          2315
+        ]
+      },
+      {
+        "id": "f5f3b585fc7d0f6b",
+        "net": "DOCK_SD",
+        "line": [
+          1710,
+          2305,
+          1830,
+          2305
+        ]
+      },
+      {
+        "id": "d32717dbc04ddf13",
+        "net": "DOCK_PRESENT_ID",
+        "line": [
+          1710,
+          2295,
+          1830,
+          2295
+        ]
+      },
+      {
+        "id": "56651a28b1f0fc7c",
+        "net": "DOCK_SDA",
+        "line": [
+          2045,
+          2355,
+          2165,
+          2355
+        ]
+      },
+      {
+        "id": "bcdb0f215c19c5df",
+        "net": "DOCK_SCL",
+        "line": [
+          2045,
+          2345,
+          2165,
+          2345
+        ]
+      },
+      {
+        "id": "28f14606cbb32a47",
+        "net": "+3V3_FPC",
+        "line": [
+          2355,
+          2345,
+          2235,
+          2345
+        ]
+      },
+      {
+        "id": "2e53bfa7764a262e",
+        "net": "GND",
+        "line": [
+          2355,
+          2355,
+          2235,
+          2355
+        ]
+      },
+      {
+        "id": "4f2eda002cfbdf91",
+        "net": "DOCK_WS",
+        "line": [
+          2395,
+          2360,
+          2515,
+          2360
+        ]
+      },
+      {
+        "id": "7a3b5efdd338baad",
+        "net": "GND",
+        "line": [
+          2395,
+          2350,
+          2515,
+          2350
+        ]
+      },
+      {
+        "id": "98ced6cd2fd4c849",
+        "net": "GND",
+        "line": [
+          2395,
+          2340,
+          2515,
+          2340
+        ]
+      },
+      {
+        "id": "d79e6a12ddb7a595",
+        "net": "+3V3_FPC",
+        "line": [
+          2705,
+          2350,
+          2585,
+          2350
+        ]
+      },
+      {
+        "id": "25ea9901d7a436fb",
+        "net": "DOCK_SD",
+        "line": [
+          2705,
+          2360,
+          2585,
+          2360
+        ]
+      },
+      {
+        "id": "142e218dde827810",
+        "net": "GND",
+        "line": [
+          2645,
+          2380,
+          2765,
+          2380
+        ]
+      },
+      {
+        "id": "356c1929bd9d0f59",
+        "net": "GND",
+        "line": [
+          2645,
+          2330,
+          2765,
+          2330
+        ]
+      },
+      {
+        "id": "ad7df92bb80de7ed",
+        "net": "GND",
+        "line": [
+          2645,
+          2320,
+          2765,
+          2320
+        ]
+      },
+      {
+        "id": "8bb01134ba0e7037",
+        "net": "+3V3_FPC",
+        "line": [
+          3155,
+          2320,
+          3035,
+          2320
+        ]
+      },
+      {
+        "id": "f5a6c18624a1a03e",
+        "net": "GND",
+        "line": [
+          3155,
+          2330,
+          3035,
+          2330
+        ]
+      },
+      {
+        "id": "5e169a260a33ad15",
+        "net": "+3V3_FPC",
+        "line": [
+          3155,
+          2360,
+          3035,
+          2360
+        ]
+      },
+      {
+        "id": "6ff3c8ff206891a9",
+        "net": "DOCK_SCL",
+        "line": [
+          3155,
+          2370,
+          3035,
+          2370
+        ]
+      },
+      {
+        "id": "67e6825b426d8315",
+        "net": "DOCK_SDA",
+        "line": [
+          3155,
+          2380,
+          3035,
+          2380
+        ]
+      },
+      {
+        "id": "dec2f09821c0ef52",
+        "net": "+3V3_FPC",
+        "line": [
+          2015,
+          2650,
+          2135,
+          2650
+        ]
+      },
+      {
+        "id": "74bddeb8dfdad436",
+        "net": "GND",
+        "line": [
+          2285,
+          2650,
+          2165,
+          2650
+        ]
+      },
+      {
+        "id": "228415afe411e963",
+        "net": "+3V3_FPC",
+        "line": [
+          2375,
+          2650,
+          2495,
+          2650
+        ]
+      },
+      {
+        "id": "85913c3b57f64b2d",
+        "net": "GND",
+        "line": [
+          2645,
+          2650,
+          2525,
+          2650
+        ]
+      },
+      {
+        "id": "1cbcb02abfaed56c",
+        "net": "+3V3_FPC",
+        "line": [
+          2735,
+          2650,
+          2855,
+          2650
+        ]
+      },
+      {
+        "id": "148d2b432c60ab69",
+        "net": "GND",
+        "line": [
+          3005,
+          2650,
+          2885,
+          2650
+        ]
+      },
+      {
+        "id": "32360933d117ee2d",
+        "net": "LED_R_A",
+        "line": [
+          3640,
+          2350,
+          3520,
+          2350
+        ]
+      },
+      {
+        "id": "b1fe34cf62c28a44",
+        "net": "GND",
+        "line": [
+          3360,
+          2350,
+          3480,
+          2350
+        ]
+      },
+      {
+        "id": "5752bbfba9cbdf9f",
+        "net": "LED_G_A",
+        "line": [
+          3990,
+          2350,
+          3870,
+          2350
+        ]
+      },
+      {
+        "id": "5d38751382eecff3",
+        "net": "GND",
+        "line": [
+          3710,
+          2350,
+          3830,
+          2350
+        ]
+      },
+      {
+        "id": "d012a381e3a48a40",
+        "net": "LED_R",
+        "line": [
+          3660,
+          2650,
+          3780,
+          2650
+        ]
+      },
+      {
+        "id": "a9707b3eed8252fd",
+        "net": "LED_G_A",
+        "line": [
+          4300,
+          2650,
+          4180,
+          2650
+        ]
+      },
+      {
+        "id": "dae221ce8735c5e6",
+        "net": "GND",
+        "line": [
+          3430,
+          2450,
+          3390,
+          2450
+        ]
+      },
+      {
+        "id": "dd186a6c55068fc9",
+        "net": "+3V3",
+        "line": [
+          3650,
+          2450,
+          3610,
+          2450
+        ]
+      },
+      {
+        "id": "9c986edabd0b6420",
+        "net": "VSYS",
+        "line": [
+          3870,
+          2450,
+          3830,
+          2450
+        ]
+      },
+      {
+        "id": "10aed2507efe19f5",
+        "net": "VDOCK",
+        "line": [
+          4090,
+          2450,
+          4050,
+          2450
+        ]
+      },
+      {
+        "id": "466b9b28c37d3b32",
+        "net": "I2C_MAIN_SDA",
+        "line": [
+          3430,
+          2550,
+          3390,
+          2550
+        ]
+      },
+      {
+        "id": "dc24146a5b0df8fc",
+        "net": "I2C_MAIN_SCL",
+        "line": [
+          3650,
+          2550,
+          3610,
+          2550
+        ]
+      },
+      {
+        "id": "6df8d01bf4182cab",
+        "net": "I2S_BCLK",
+        "line": [
+          3870,
+          2550,
+          3830,
+          2550
+        ]
+      },
+      {
+        "id": "a50bef3ad8f73f08",
+        "net": "I2S_WS",
+        "line": [
+          4090,
+          2550,
+          4050,
+          2550
+        ]
+      },
+      {
+        "id": "3b033c15fac51f00",
+        "net": "I2S_SD",
+        "line": [
+          3430,
+          2650,
+          3390,
+          2650
+        ]
+      },
+      {
+        "id": "f6702bda8a010e45",
+        "net": "USB_D_P",
+        "line": [
+          3650,
+          2650,
+          3610,
+          2650
+        ]
+      },
+      {
+        "id": "54783689b1764771",
+        "net": "DOCK_BCLK",
+        "line": [
+          2640,
+          2340,
+          2585,
+          2340
+        ]
+      },
+      {
+        "id": "242e64109eda8577",
+        "net": "+3V3_FPC",
+        "line": [
+          2710,
+          2340,
+          2765,
+          2340
+        ]
+      },
+      {
+        "id": "2c9269ef63ba67a2",
+        "net": "USB_D_N",
+        "line": [
+          2785,
+          2900,
+          2840,
+          2900
+        ]
+      },
+      {
+        "id": "9b4611da8419b2f9",
+        "net": "ESP_EN",
+        "line": [
+          3085,
+          2900,
+          3140,
+          2900
+        ]
+      },
+      {
+        "id": "e7baa5341a4b292f",
+        "net": "+3V3",
+        "line": [
+          4265,
+          950,
+          4355,
+          950
+        ]
+      },
+      {
+        "id": "36a36b7b362fb92c",
+        "net": "GND",
+        "line": [
+          4475,
+          950,
+          4385,
+          950
+        ]
+      },
+      {
+        "id": "a1c33389139b32af",
+        "net": "VSYS",
+        "line": [
+          4265,
+          800,
+          4355,
+          800
+        ]
+      },
+      {
+        "id": "8d637207f4895baf",
+        "net": "GND",
+        "line": [
+          4475,
+          800,
+          4385,
+          800
+        ]
+      },
+      {
+        "id": "2eb89012afdba173",
+        "net": "LED_R_A",
+        "line": [
+          3890,
+          2650,
+          3820,
+          2650
+        ]
+      },
+      {
+        "id": "db0f2cdf9a87b2a9",
+        "net": "LED_G",
+        "line": [
+          4070,
+          2650,
+          4140,
+          2650
+        ]
+      },
+      {
+        "id": "357a26635c64fbc0",
+        "net": "GND",
+        "line": [
+          3190,
+          515,
+          3310,
+          515
+        ]
+      },
+      {
+        "id": "a2c7be73780d3b72",
+        "net": "VSYS",
+        "line": [
+          3190,
+          505,
+          3310,
+          505
+        ]
+      },
+      {
+        "id": "9677874e8f48d709",
+        "net": "VSYS",
+        "line": [
+          3190,
+          495,
+          3310,
+          495
+        ]
+      },
+      {
+        "id": "1080c521b505d0a3",
+        "net": "GND",
+        "line": [
+          3190,
+          485,
+          3310,
+          485
+        ]
+      },
+      {
+        "id": "c1fc01dce997d510",
+        "net": "GND",
+        "line": [
+          3510,
+          485,
+          3390,
+          485
+        ]
+      },
+      {
+        "id": "dcdd5ecec9463fca",
+        "net": "+3V3",
+        "line": [
+          3510,
+          495,
+          3390,
+          495
+        ]
+      },
+      {
+        "id": "29dca065247332fd",
+        "net": "BUCK_SW",
+        "line": [
+          3510,
+          505,
+          3390,
+          505
+        ]
+      },
+      {
+        "id": "1ad14bbefeb607cb",
+        "net": "REG_PG",
+        "line": [
+          3510,
+          515,
+          3390,
+          515
+        ]
+      },
+      {
+        "id": "a436bbcd4109175c",
+        "net": "GND",
+        "line": [
+          3350,
+          655,
+          3350,
+          535
+        ]
+      }
+    ],
+    "requiredRemainingChecks": [
+      "complete released physical-pin canonical dictionary",
+      "native netlist parity",
+      "strict native ERC",
+      "actual PDF/PNG visual review"
+    ]
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

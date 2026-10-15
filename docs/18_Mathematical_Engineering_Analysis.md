@@ -12,7 +12,7 @@ The script uses an explicit screening assumption set: 3.7 V, 2.0 Ah cell; 80% us
 |---|---|---|
 | CAL-PWR-01 | Assumed normal logging: 0.362 A at 3.7 V, 1.339 W; screening runtime 3.89 h | PROVISIONAL |
 | CAL-PWR-02 | Assumed Wi-Fi/logging + RF expansion: 0.462 A, 1.709 W; screening runtime 3.05 h | PROVISIONAL |
-| CAL-PWR-03 | Assumed peak: 0.670 A, 2.479 W; TPS62162 1 A class output would have 0.33 A arithmetic headroom, but transient stability and exact module peak are unverified | PROVISIONAL |
+| CAL-PWR-03 | Assumed peak: 0.670 A, 2.479 W; TPS62161 1 A class output would have 0.33 A arithmetic headroom, but transient stability and exact module peak are unverified | PROVISIONAL |
 | CAL-PWR-04 | Linear charger screening dissipation at 6 V/0.5 A is 0.90–1.50 W over 4.2–3.0 V battery | HARDWARE VALIDATION REQUIRED |
 
 Runtime uses `t = C_Ah × usable_fraction × efficiency / I_A`; it is not a battery discharge or thermal model. Battery internal resistance, cutoff, temperature, cell capacity at load and charge-load sharing are missing.
@@ -36,7 +36,7 @@ For continuous mono 16 kHz, 24-bit audio: `16,000 × 24 = 384 kb/s` raw; with th
 ## 5. Rail compatibility findings
 - ESP32-S3, SHT45, ICS-43434, SGP40, MAX17048 and ICM-42688-P candidates are intended for a 3.3 V logic domain, but exact module/device variants and tolerances must be checked before release.
 - BQ24074 is a plausible 1-cell charger/power-path candidate; input range, charge programming, thermal limits and battery protection must be checked against the exact package/datasheet revision.
-- TPS62162 is a plausible buck candidate for a 3.3 V rail from a 1-cell power-path rail; inductor, compensation/layout, minimum input and transient response must be verified. A nominal “1 A” label is not a complete thermal or transient proof.
+- TPS62161 is a plausible buck candidate for a 3.3 V rail from a 1-cell power-path rail; inductor, compensation/layout, minimum input and transient response must be verified. A nominal “1 A” label is not a complete thermal or transient proof.
 - TPD4E05U06 is a low-capacitance exposed-line protection candidate, not a substitute for an input OVP/reverse-polarity circuit. Do not connect an unprotected ~6 V source to a protection device whose line rating is lower than that source.
 
 ## 6. Physical feasibility

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scripts": [
+    "01_usb_power_entry.js",
+    "02_external_power_charging.js",
+    "03_regulators_power.js",
+    "04_esp32_core.js",
+    "05_external_sensors_audio.js",
+    "06_storage_rf_expansion.js",
+    "07_docking_interface.js",
+    "08_universal_sensor_fpc.js",
+    "09_status_debug.js",
+    "10_status_testpoints.js",
+    "11_final_verification.js"
+  ],
+  "references": 60,
+  "physicalPinRows": 330,
+  "nets": 68,
+  "links": 237,
+  "highRiskChecks": {
+    "D6.2 GND": true,
+    "D6.5 VBUS": true,
+    "D6 DP sides": true,
+    "D6 DN sides": true,
+    "J1 CC separate": true,
+    "J1 SBU NC": true,
+    "U3 fixed FB ground": true,
+    "U4 reset pullup net": true,
+    "BQ TS network": true,
+    "BQ support": true,
+    "TPS2121 support": true,
+    "TPS26600 support": true,
+    "J4 two contacts": true,
+    "D4 not substituted": true,
+    "dock 12 contacts": true
+  },
+  "errors": []
+}

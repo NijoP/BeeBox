@@ -7,7 +7,7 @@ This is the controlled preliminary capture baseline. It is not a released manufa
 ## Sheet hierarchy
 
 1. `01_INPUT_POWER` — J1 USB-C 5 V sink, JEXT 6 V input, TPS26600RGET protection, F1, ESD, BQ24074RGT, BT1, battery protection responsibility, VSYS and test points.
-2. `02_3V3_REGULATOR` — TPS62162DSG, L1, feedback, input/output decoupling, +3V3 test point.
+2. `02_3V3_REGULATOR` — TPS62161DSG, L1, feedback, input/output decoupling, +3V3 test point.
 3. `03_ESP32S3_DEBUG_USB` — ESP32-S3-WROOM-1-N16R8, EN, BOOT, USB D+/D−, UART0, strapping, programming pads, antenna keepout note.
 4. `04_LOCAL_SENSORS_AUDIO` — external SHT45, external ICS-43434, ICM-42688-P option, I²C, I²S source selection, sensor interrupts.
 5. `05_STORAGE_RF_EXPANSION` — SPI bus, SD CS option, UART1 RF expansion, reset/enable/IRQ, 3V3/GND.

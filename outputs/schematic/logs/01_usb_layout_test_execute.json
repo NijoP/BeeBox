@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "result": {
+    "status": "USB_LAYOUT_TEST_MUTATED_REQUIRES_READBACK",
+    "refs": [
+      "J1",
+      "D6",
+      "R6",
+      "R7",
+      "C21",
+      "C22"
+    ],
+    "orientation": {
+      "J1": 180,
+      "D6": 0
+    },
+    "canonicalD6": {
+      "1": "USB_DP_CONN",
+      "2": "GND",
+      "3": "USB_DN_CONN",
+      "4": "USB_D_N",
+      "5": "VBUS_USB",
+      "6": "USB_D_P"
+    }
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

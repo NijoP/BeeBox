@@ -9,4 +9,4 @@
 - Footprint release gate: compare every castellated pad number/position, courtyard, antenna keepout, paste/mask behavior and exposed thermal/ground requirements against the manufacturer drawing, then run KiCad footprint checker and 1:1 print review.
 
 ## Other selected parts
-The following parts require manufacturer CAD/drawing attachment before PCB release: BQ24074RGT, TPS62162DSG, TCA9546APWR, TPS26600RGET, MAX17048G+T10, Hirose FH34SRJ-12S-0.5SH(50), and Mill-Max 0906-0-15-20-75-14-11-0. Their schematic-level MPN selection is complete; footprint verification remains a layout/manufacturing gate, not a reason to block the preliminary electrical schematic.
+The following parts require manufacturer CAD/drawing attachment before PCB release: BQ24074RGT, TPS62161DSG, TCA9546APWR, TPS26600RGET, MAX17048G+T10, Hirose FH34SRJ-12S-0.5SH(50), and Mill-Max 0906-0-15-20-75-14-11-0. Their schematic-level MPN selection is complete; footprint verification remains a layout/manufacturing gate, not a reason to block the preliminary electrical schematic.

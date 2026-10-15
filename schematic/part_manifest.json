@@ -193,7 +193,7 @@
       "supplierId": null,
       "population": "Yes",
       "board": "main",
-      "datasheetReference": "BQ24074/TPS62162 support",
+      "datasheetReference": "BQ24074/TPS62161 support",
       "verificationStatus": "BLOCKED_BY_MISSING_LIBRARY_IDENTITY",
       "notes": ""
     },
@@ -210,7 +210,7 @@
       "supplierId": null,
       "population": "Yes",
       "board": "main",
-      "datasheetReference": "BQ24074/TPS62162 support",
+      "datasheetReference": "BQ24074/TPS62161 support",
       "verificationStatus": "BLOCKED_BY_MISSING_LIBRARY_IDENTITY",
       "notes": ""
     },
@@ -244,7 +244,7 @@
       "supplierId": null,
       "population": "Yes",
       "board": "main",
-      "datasheetReference": "BQ24074/TPS62162 support",
+      "datasheetReference": "BQ24074/TPS62161 support",
       "verificationStatus": "BLOCKED_BY_MISSING_LIBRARY_IDENTITY",
       "notes": ""
     },
@@ -829,7 +829,7 @@
       "supplierId": null,
       "population": "Yes",
       "board": "main",
-      "datasheetReference": "TPS62162 reference design",
+      "datasheetReference": "TPS62161 reference design",
       "verificationStatus": "BLOCKED_BY_MISSING_LIBRARY_IDENTITY",
       "notes": "Historical capture identity is not accepted as evidence"
     },
@@ -1431,7 +1431,7 @@
     {
       "reference": "U3",
       "function": "fixed 3V3 buck; FB to AGND",
-      "manufacturerPartNumber": "TPS62162DSGR",
+      "manufacturerPartNumber": "TPS62161DSGR",
       "manufacturer": "Texas Instruments",
       "easyedaLibraryUuid": "0819f05c4eef4c71ace90d822a990e87",
       "easyedaDeviceUuid": "288178fe83b849058a8c0b140e5b3697",
@@ -1441,9 +1441,10 @@
       "supplierId": "C40256",
       "population": "Yes",
       "board": "main",
-      "datasheetReference": "datasheets/TI_TPS62162.pdf",
+      "datasheetReference": "datasheets/TI_TPS62162.txt, Device Voltage Options table",
       "verificationStatus": "LIBRARY_CANDIDATE_PIN_MAP_PENDING",
-      "notes": ""
+      "notes": "",
+      "supplierPartNumber": "C2864193"
     },
     {
       "reference": "U4",

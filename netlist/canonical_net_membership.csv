@@ -1,245 +1,331 @@
-canonical_net,component_reference,physical_pin_number,pin_name,verification_status,evidence
-+3V3,C1,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,C2,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,C3,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,L1,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,MIC1,5,VDD,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,Q2,1,1,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-+3V3,R4,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,R5,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,TP2,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,U1,2,3V3,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,U12,5,VCC,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_SN74LVC1G3157.pdf: pin functions and function table
-+3V3,U2,6,EN1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3,U3,6,VOS,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS62162.pdf: sections 5 and 6
-+3V3,U4,16,VCC,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-+3V3,U7,3,VDD,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U7_manufacturer_record.pdf: section5.4 Figure14
-+3V3_FPC,C10,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3_FPC,C11,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3_FPC,C12,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3_FPC,J2,6,6,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3_FPC,J3-06,1,DOCK_CONTACT_6,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-+3V3_FPC,MIC2,5,VDD,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-+3V3_FPC,Q2,5,5,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-+3V3_FPC,Q2,6,6,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-+3V3_FPC,U8,3,VDD,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U7_manufacturer_record.pdf: section5.4 Figure14
-+3V3_FPC,U9,12,AP_CS,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5
-+3V3_FPC,U9,5,VDDIO,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5
-+3V3_FPC,U9,8,VDD,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5
-AUDIO_SEL,U1,32,IO39,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-AUDIO_SEL,U12,6,IN,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_SN74LVC1G3157.pdf: pin functions and function table
-BATT_TS,U2,1,TS,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-BUCK_SW,L1,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-BUCK_SW,U3,7,SW,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS62162.pdf: sections 5 and 6
-CHARGER_CHG,U2,9,CHG#,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-CHARGER_ILIM,R12,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-CHARGER_ILIM,U2,12,ILIM,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-CHARGER_ISET,R11,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-CHARGER_ISET,U2,16,ISET,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-CHARGER_ITERM,U2,15,ITERM,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-CHARGER_PGOOD,U2,7,PGOOD#,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-CHARGER_TMR,R13,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-CHARGER_TMR,U2,14,TMR,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DEBUG_RX,U1,36,RXD0,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DEBUG_TX,U1,37,TXD0,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_BCLK,J2,9,9,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_BCLK,J3-09,1,DOCK_CONTACT_9,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-DOCK_BCLK,MIC2,4,SCK,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_D1_N,D5,2,D1-,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_D1_P,D5,1,D1+,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_D2_N,D5,5,D2-,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_D2_P,D5,4,D2+,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_EN,Q1,3,ON,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-DOCK_EN,Q2,3,3,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-DOCK_PRESENT_ID,J2,12,12,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_PRESENT_ID,J3-12,1,DOCK_CONTACT_12,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-DOCK_PRESENT_ID,U1,23,IO21,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_SCL,J2,8,8,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_SCL,J3-08,1,DOCK_CONTACT_8,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-DOCK_SCL,U4,5,SC0,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-DOCK_SCL,U8,2,SCL,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U7_manufacturer_record.pdf: section5.4 Figure14
-DOCK_SCL,U9,13,AP_SCL/AP_SCLK,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5
-DOCK_SD,J2,11,11,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_SD,J3-11,1,DOCK_CONTACT_11,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-DOCK_SD,MIC2,6,SD,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_SD,U12,1,NO,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_SN74LVC1G3157.pdf: pin functions and function table
-DOCK_SDA,J2,7,7,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_SDA,J3-07,1,DOCK_CONTACT_7,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-DOCK_SDA,U4,4,SD0,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-DOCK_SDA,U8,1,SDA,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U7_manufacturer_record.pdf: section5.4 Figure14
-DOCK_SDA,U9,14,AP_SDA/AP_SDIO/AP_SDI,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5
-DOCK_WS,J2,10,10,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-DOCK_WS,J3-10,1,DOCK_CONTACT_10,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-DOCK_WS,MIC2,1,WS,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-ESP_BOOT,U1,27,IO0,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-ESP_EN,TP12,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-ESP_EN,U1,3,EN,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-EXT_DVDT,U6,20,dVdT,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-EXT_FLT,U6,22,FLT#,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-EXT_ILIM,U6,19,ILIM,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-EXT_IMON,U6,18,IMON,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-EXT_MODE,U6,13,MODE,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-EXT_OVP,U6,12,OVP,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-EXT_SHDN,U6,14,SHDN#,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-EXT_UVLO,U6,10,UVLO,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,C1,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,C10,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,C11,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,C12,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,C2,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,C21,2,2,VERIFIED,datasheets/C21_Samsung_CL21B475KOFNNNE.pdf: Samsung part numbering; c21_inrush_revision_search.json; TI_BQ24074.pdf section9.3.1 USB inrush discussion:10uF total ceiling
-GND,C22,2,2,VERIFIED,projects/beebox/05_schematic_audit/usb_support_search.json
-GND,C3,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,D2,1,K,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,D3,1,-,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,D4,1,K,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,D5,3,GND,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,D5,8,GND,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,D6,2,2,VERIFIED,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
-GND,J1,1,EH,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-GND,J1,2,EH,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-GND,J1,3,EH,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-GND,J1,4,EH,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-GND,J1,A1B12,GND,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-GND,J1,B1A12,GND,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-GND,J2,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,J2,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,J2,3,3,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,J3-01,1,DOCK_CONTACT_1,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-GND,J3-02,1,DOCK_CONTACT_2,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-GND,J3-03,1,DOCK_CONTACT_3,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-GND,J4,2,2,VERIFIED,projects/beebox/05_schematic_audit/power_library_candidates.json exact JST C295747 record; 1x2P
-GND,MIC1,2,LR,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,MIC1,3,GND,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,MIC2,2,LR,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,MIC2,3,GND,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,Q1,2,GND,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-GND,Q2,2,2,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-GND,R11,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,R12,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,R13,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,R6,2,2,VERIFIED,projects/beebox/05_schematic_audit/usb_support_search.json
-GND,R7,2,2,VERIFIED,projects/beebox/05_schematic_audit/usb_support_search.json
-GND,TP1,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U1,1,GND,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U1,40,GND,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U1,41,GND,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U11,12,GND,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U12,2,GND,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_SN74LVC1G3157.pdf: pin functions and function table
-GND,U2,17,EP,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U2,4,CE#,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U2,5,EN2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U2,8,VSS,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U3,1,PGND,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS62162.pdf: sections 5 and 6
-GND,U3,4,AGND,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS62162.pdf: sections 5 and 6
-GND,U3,5,FB,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS62162.pdf: sections 5 and 6
-GND,U3,9,EP,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS62162.pdf: sections 5 and 6
-GND,U4,1,A0,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-GND,U4,13,A2,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-GND,U4,2,A1,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-GND,U4,8,GND,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-GND,U6,15,RTN,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U6,17,GND,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U6,25,EP,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-GND,U7,4,VSS,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U7_manufacturer_record.pdf: section5.4 Figure14
-GND,U8,4,VSS,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U7_manufacturer_record.pdf: section5.4 Figure14
-GND,U9,1,AP_SDO/AP_AD0,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5
-GND,U9,6,GND,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5
-GND,U9,7,RESV,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5
-GND,U9,9,INT2/FSYNC/CLKIN,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U9_manufacturer_record.pdf: DS-000347 Rev1.2 Table9 and Figure5
-I2C_MAIN_SCL,R5,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2C_MAIN_SCL,TP6,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2C_MAIN_SCL,U1,5,IO5,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2C_MAIN_SCL,U4,14,SCL,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-I2C_MAIN_SDA,R4,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2C_MAIN_SDA,TP5,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2C_MAIN_SDA,U1,4,IO4,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2C_MAIN_SDA,U4,15,SDA,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-I2C_MUX_RESET,U4,3,RESET#,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-I2S_BCLK,MIC1,4,SCK,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2S_BCLK,TP7,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2S_BCLK,U1,19,IO11,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2S_SD,TP9,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2S_SD,U1,21,IO13,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2S_SD,U12,4,COM,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_SN74LVC1G3157.pdf: pin functions and function table
-I2S_SD_EXT,MIC1,6,SD,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2S_SD_EXT,U12,3,NC,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_SN74LVC1G3157.pdf: pin functions and function table
-I2S_WS,MIC1,1,WS,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2S_WS,TP8,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-I2S_WS,U1,20,IO12,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_B,R3,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_B,U1,25,IO48,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_B_A,D4,2,A,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_B_A,R3,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_G,R2,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_G,U1,33,IO40,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_G_A,D3,2,+,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_G_A,R2,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_R,R1,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_R,U1,24,IO47,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_R_A,D2,2,A,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LED_R_A,R1,2,2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-LOCAL_SCL,U4,7,SC1,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-LOCAL_SCL,U7,2,SCL,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U7_manufacturer_record.pdf: section5.4 Figure14
-LOCAL_SDA,U4,6,SD1,DATASHEET_REVIEWED_LIBRARY_PENDING,"datasheets/TI_TCA9546A.pdf: pin functions, address and channel-control description"
-LOCAL_SDA,U7,1,SDA,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/U7_manufacturer_record.pdf: section5.4 Figure14
-PWRMUX_CP2,U11,3,CP2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-PWRMUX_ILM,U11,10,ILM,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-PWRMUX_OV1,U11,5,OV1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-PWRMUX_OV2,U11,4,OV2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-PWRMUX_PR1,U11,6,PR1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-PWRMUX_SS,U11,11,SS,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-PWRMUX_ST,U11,9,ST,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-REG_PG,U3,8,PG,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS62162.pdf: sections 5 and 6
-SD_CS,U1,17,IO9,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-SPI_MISO,U1,12,IO8,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-SPI_MOSI,U1,7,IO7,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-SPI_SCLK,U1,6,IO6,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-UART1_RX,U1,10,IO17,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-UART1_TX,U1,11,IO18,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-USB_CC1,J1,A5,CC1,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-USB_CC1,R6,1,1,VERIFIED,projects/beebox/05_schematic_audit/usb_support_search.json
-USB_CC2,J1,B5,CC2,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-USB_CC2,R7,1,1,VERIFIED,projects/beebox/05_schematic_audit/usb_support_search.json
-USB_DN_CONN,D6,3,3,VERIFIED,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
-USB_DN_CONN,J1,A7,DN1,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-USB_DN_CONN,J1,B7,DN2,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-USB_DP_CONN,D6,1,1,VERIFIED,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
-USB_DP_CONN,J1,A6,DP1,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-USB_DP_CONN,J1,B6,DP2,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-USB_D_N,D6,4,4,VERIFIED,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
-USB_D_N,TP11,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-USB_D_N,U1,13,IO19,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-USB_D_P,D6,6,6,VERIFIED,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
-USB_D_P,TP10,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-USB_D_P,U1,14,IO20,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VBAT,J4,1,1,VERIFIED,projects/beebox/05_schematic_audit/power_library_candidates.json exact JST C295747 record; 1x2P
-VBAT,U2,2,BAT,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VBAT,U2,3,BAT,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VBUS_USB,C21,1,1,VERIFIED,datasheets/C21_Samsung_CL21B475KOFNNNE.pdf: Samsung part numbering; c21_inrush_revision_search.json; TI_BQ24074.pdf section9.3.1 USB inrush discussion:10uF total ceiling
-VBUS_USB,C22,1,1,VERIFIED,projects/beebox/05_schematic_audit/usb_support_search.json
-VBUS_USB,D6,5,5,VERIFIED,"datasheets/ST_USBLC6-2.pdf: Figure 1, Doc ID11265 Rev5"
-VBUS_USB,J1,A4B9,VBUS,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-VBUS_USB,J1,B4A9,VBUS,VERIFIED,"datasheets/J1_HRO_TYPE_C_31_M_12.pdf manufacturer drawing, reviewed J1_pin_drawing.png; usb_support_search.json C165948"
-VBUS_USB,U11,7,IN1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VDOCK,J2,4,4,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VDOCK,J2,5,5,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VDOCK,J3-04,1,DOCK_CONTACT_4,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-VDOCK,J3-05,1,DOCK_CONTACT_5,BLOCKED_BY_MISSING_MANUFACTURER_LAND_PATTERN,docs/23_Baseline_Resolution_and_Schematic_Capture_Package.md
-VDOCK,Q1,5,QOD,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-VDOCK,Q1,6,VOUT,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-VDOCK,TP4,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VIN_CHARGER,U11,1,OUT,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VIN_CHARGER,U11,8,OUT,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VIN_CHARGER,U2,13,IN,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VIN_EXT_PROTECTED,U11,2,IN2,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VIN_EXT_PROTECTED,U6,23,OUT,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VIN_EXT_PROTECTED,U6,24,OUT,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VIN_EXT_RAW,U6,8,IN,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VIN_EXT_RAW,U6,9,IN,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VSYS,Q1,1,IN,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS22919.pdf: section 6 Pin Functions
-VSYS,TP3,1,1,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VSYS,U2,10,OUT,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VSYS,U2,11,OUT,PROVISIONAL_REQUIRES_DATASHEET_RECONCILIATION,projects/beebox/05_schematic_audit/physical_pins_before_rootcause.json and observed_pin_contacts.csv
-VSYS,U3,2,VIN,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS62162.pdf: sections 5 and 6
-VSYS,U3,3,EN,DATASHEET_REVIEWED_LIBRARY_PENDING,datasheets/TI_TPS62162.pdf: sections 5 and 6
+canonical_net,component_reference,physical_pin_number,pin_name,classification,verification_status,source_script
+,D5,6,6,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+,D5,7,7,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+,J1,A8,A8,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+,J1,B8,B8,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+,J2,13,13,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+,J2,14,14,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+,J4,3,3,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,J4,4,4,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,Q1,4,4,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+,Q2,4,4,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+,U1,15,15,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+,U1,16,16,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+,U1,26,26,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+,U1,28,28,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+,U1,29,29,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+,U1,30,30,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+,U2,15,15,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U4,10,10,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+,U4,11,11,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+,U4,12,12,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+,U4,9,9,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+,U6,1,1,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,11,11,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,16,16,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,18,18,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,2,2,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,21,21,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,3,3,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,4,4,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,5,5,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,6,6,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U6,7,7,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+,U7,5,5,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
+,U8,5,5,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+,U9,10,10,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+,U9,11,11,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+,U9,2,2,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+,U9,3,3,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+,U9,4,4,INTENTIONAL_NC,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
++3V3,C1,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
++3V3,C2,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
++3V3,C3,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,05_external_sensors_audio.js
++3V3,C30,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,03_regulators_power.js
++3V3,C5,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,05_external_sensors_audio.js
++3V3,L1,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,03_regulators_power.js
++3V3,MIC1,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
++3V3,Q2,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
++3V3,R17,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
++3V3,R18,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
++3V3,R23,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
++3V3,R25,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,03_regulators_power.js
++3V3,R26,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
++3V3,R27,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
++3V3,R28,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,07_docking_interface.js
++3V3,R4,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,07_docking_interface.js
++3V3,R5,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,07_docking_interface.js
++3V3,TP2,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
++3V3,U1,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
++3V3,U12,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
++3V3,U3,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
++3V3,U4,16,16,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
++3V3,U7,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
++3V3_FPC,C10,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,08_universal_sensor_fpc.js
++3V3_FPC,C11,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,08_universal_sensor_fpc.js
++3V3_FPC,C12,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,08_universal_sensor_fpc.js
++3V3_FPC,J2,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
++3V3_FPC,J3-06,1,CONTACT_6,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
++3V3_FPC,MIC2,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
++3V3_FPC,Q2,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
++3V3_FPC,Q2,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
++3V3_FPC,U8,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
++3V3_FPC,U9,12,12,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
++3V3_FPC,U9,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
++3V3_FPC,U9,8,8,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+AUDIO_SEL,U1,32,32,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+AUDIO_SEL,U12,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+BUCK_SW,L1,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,03_regulators_power.js
+BUCK_SW,U3,7,7,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+CHARGER_CHG,R18,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+CHARGER_CHG,U1,35,35,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+CHARGER_CHG,U2,9,9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+CHARGER_ILIM,R12,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+CHARGER_ILIM,U2,12,12,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+CHARGER_ISET,R11,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+CHARGER_ISET,U2,16,16,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+CHARGER_PGOOD,R17,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+CHARGER_PGOOD,U1,34,34,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+CHARGER_PGOOD,U2,7,7,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+CHARGER_TMR,R13,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+CHARGER_TMR,U2,14,14,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+CHARGER_TS,R16,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+CHARGER_TS,U2,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+DEBUG_RX,U1,36,36,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+DEBUG_TX,U1,37,37,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+DOCK_BCLK,D5,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+DOCK_BCLK,J2,9,9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_BCLK,J3-09,1,CONTACT_9,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+DOCK_BCLK,MIC2,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_EN,Q1,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+DOCK_EN,Q2,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+DOCK_EN,U1,22,22,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+DOCK_PRESENT_ID,D5,10,10,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+DOCK_PRESENT_ID,J2,12,12,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_PRESENT_ID,J3-12,1,CONTACT_12,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+DOCK_PRESENT_ID,U1,31,31,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+DOCK_SCL,D5,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+DOCK_SCL,J2,8,8,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_SCL,J3-08,1,CONTACT_8,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+DOCK_SCL,U4,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+DOCK_SCL,U8,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_SCL,U9,13,13,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_SD,D5,9,9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+DOCK_SD,J2,11,11,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_SD,J3-11,1,CONTACT_11,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+DOCK_SD,MIC2,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_SD,U12,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+DOCK_SDA,D5,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+DOCK_SDA,J2,7,7,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_SDA,J3-07,1,CONTACT_7,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+DOCK_SDA,U4,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+DOCK_SDA,U8,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_SDA,U9,14,14,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_WS,D5,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+DOCK_WS,J2,10,10,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+DOCK_WS,J3-10,1,CONTACT_10,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+DOCK_WS,MIC2,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+ESP_BOOT,R27,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
+ESP_BOOT,U1,27,27,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+ESP_EN,C4,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
+ESP_EN,R26,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
+ESP_EN,TP12,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+ESP_EN,U1,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+EXT_DVDT,C26,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+EXT_DVDT,U6,20,20,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+EXT_FLT,R23,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+EXT_FLT,U6,22,22,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+EXT_ILIM,R20,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+EXT_ILIM,U6,19,19,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+EXT_OVP,R21,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+EXT_OVP,R22,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+EXT_OVP,U6,12,12,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+EXT_SENSOR_INT,U1,39,39,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+GND,C1,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
+GND,C10,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,08_universal_sensor_fpc.js
+GND,C11,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,08_universal_sensor_fpc.js
+GND,C12,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,08_universal_sensor_fpc.js
+GND,C2,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
+GND,C21,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,01_usb_power_entry.js
+GND,C22,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,01_usb_power_entry.js
+GND,C23,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,C24,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,C25,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,C26,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,C27,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,C29,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,03_regulators_power.js
+GND,C3,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,05_external_sensors_audio.js
+GND,C30,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,03_regulators_power.js
+GND,C4,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,04_esp32_core.js
+GND,C5,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,05_external_sensors_audio.js
+GND,D2,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,09_status_debug.js
+GND,D3,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,09_status_debug.js
+GND,D5,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+GND,D5,8,8,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+GND,D6,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+GND,J1,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+GND,J1,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+GND,J1,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+GND,J1,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+GND,J1,A1B12,A1B12,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+GND,J1,B1A12,B1A12,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+GND,J2,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+GND,J2,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+GND,J2,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+GND,J3-01,1,CONTACT_1,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+GND,J3-02,1,CONTACT_2,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+GND,J3-03,1,CONTACT_3,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+GND,J4,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,MIC1,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
+GND,MIC1,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
+GND,MIC2,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+GND,MIC2,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+GND,Q1,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+GND,Q2,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+GND,R11,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,R12,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,R13,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,R16,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,R20,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,R22,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,R24,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+GND,R6,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,01_usb_power_entry.js
+GND,R7,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,01_usb_power_entry.js
+GND,TP1,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+GND,U1,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+GND,U1,40,40,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+GND,U1,41,41,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+GND,U11,12,12,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U11,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U11,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U11,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U11,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U12,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+GND,U2,17,17,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U2,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U2,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U2,8,8,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U3,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+GND,U3,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+GND,U3,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+GND,U3,9,9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+GND,U4,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+GND,U4,13,13,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+GND,U4,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+GND,U4,8,8,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+GND,U6,13,13,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U6,15,15,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U6,17,17,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U6,25,25,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+GND,U7,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
+GND,U8,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+GND,U9,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+GND,U9,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+GND,U9,7,7,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+GND,U9,9,9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+I2C_MAIN_SCL,R5,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,07_docking_interface.js
+I2C_MAIN_SCL,TP6,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+I2C_MAIN_SCL,U1,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+I2C_MAIN_SCL,U4,14,14,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+I2C_MAIN_SDA,R4,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,07_docking_interface.js
+I2C_MAIN_SDA,TP5,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+I2C_MAIN_SDA,U1,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+I2C_MAIN_SDA,U4,15,15,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+I2C_MUX_RESET,R28,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,07_docking_interface.js
+I2C_MUX_RESET,U4,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+I2S_BCLK,MIC1,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
+I2S_BCLK,TP7,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+I2S_BCLK,U1,19,19,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+I2S_SD,TP9,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+I2S_SD,U1,21,21,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+I2S_SD,U12,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+I2S_SD_EXT,MIC1,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
+I2S_SD_EXT,U12,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+I2S_WS,MIC1,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
+I2S_WS,TP8,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+I2S_WS,U1,20,20,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+LED_B,U1,25,25,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+LED_G,R2,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,09_status_debug.js
+LED_G,U1,33,33,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+LED_G_A,D3,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,09_status_debug.js
+LED_G_A,R2,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,09_status_debug.js
+LED_R,R1,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,09_status_debug.js
+LED_R,U1,24,24,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+LED_R_A,D2,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,09_status_debug.js
+LED_R_A,R1,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,09_status_debug.js
+LOCAL_SCL,U4,7,7,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+LOCAL_SCL,U7,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
+LOCAL_SDA,U4,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,07_docking_interface.js
+LOCAL_SDA,U7,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,05_external_sensors_audio.js
+PWRMUX_ILM,R24,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+PWRMUX_ILM,U11,10,10,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+PWRMUX_SS,C27,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+PWRMUX_SS,U11,11,11,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+PWRMUX_ST,U1,23,23,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+PWRMUX_ST,U11,9,9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+REG_PG,R25,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,03_regulators_power.js
+REG_PG,U3,8,8,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+RF_CS,U1,18,18,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+RF_EN,U1,9,9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+RF_RST,U1,8,8,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+SD_CS,U1,17,17,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+SPI_MISO,U1,12,12,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+SPI_MOSI,U1,7,7,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+SPI_SCLK,U1,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+UART1_RX,U1,10,10,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+UART1_TX,U1,11,11,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+USB_CC1,J1,A5,A5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+USB_CC1,R6,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,01_usb_power_entry.js
+USB_CC2,J1,B5,B5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+USB_CC2,R7,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,01_usb_power_entry.js
+USB_D_N,D6,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+USB_D_N,TP11,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+USB_D_N,U1,13,13,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+USB_D_N_CONN,D6,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+USB_D_N_CONN,J1,A7,A7,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+USB_D_N_CONN,J1,B7,B7,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+USB_D_P,D6,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+USB_D_P,TP10,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+USB_D_P,U1,14,14,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+USB_D_P_CONN,D6,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+USB_D_P_CONN,J1,A6,A6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+USB_D_P_CONN,J1,B6,B6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+VBAT,C25,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+VBAT,J4,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VBAT,U2,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VBAT,U2,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VBAT_ADC,U1,38,38,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,04_esp32_core.js
+VBUS_USB,C21,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,01_usb_power_entry.js
+VBUS_USB,C22,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,01_usb_power_entry.js
+VBUS_USB,D6,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+VBUS_USB,J1,A4B9,A4B9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+VBUS_USB,J1,B4A9,B4A9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,01_usb_power_entry.js
+VBUS_USB,U11,7,7,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VDOCK,J2,4,4,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+VDOCK,J2,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,08_universal_sensor_fpc.js
+VDOCK,J3-04,1,CONTACT_4,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+VDOCK,J3-05,1,CONTACT_5,PROVISIONAL_BOUNDARY_CONTACT,PROVISIONAL_MILL_MAX_LAND_PATTERN,07_docking_interface.js
+VDOCK,Q1,5,5,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+VDOCK,Q1,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+VDOCK,TP4,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+VIN_CHARGER,C23,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+VIN_CHARGER,U11,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_CHARGER,U11,8,8,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_CHARGER,U2,13,13,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_CHARGER,U2,6,6,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_EXT_PROTECTED,U11,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_EXT_PROTECTED,U6,23,23,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_EXT_PROTECTED,U6,24,24,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_EXT_RAW,R21,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+VIN_EXT_RAW,U6,10,10,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_EXT_RAW,U6,14,14,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_EXT_RAW,U6,8,8,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VIN_EXT_RAW,U6,9,9,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VSYS,C24,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,02_external_power_charging.js
+VSYS,C29,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_VALUE,03_regulators_power.js
+VSYS,Q1,1,1,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+VSYS,TP3,1,TEST,SCRIPT_CONNECTION,PROVISIONAL_TEST_PAD_LIBRARY,10_status_testpoints.js
+VSYS,U2,10,10,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VSYS,U2,11,11,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,02_external_power_charging.js
+VSYS,U3,2,2,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js
+VSYS,U3,3,3,SCRIPT_CONNECTION,VERIFIED_LIBRARY_AND_PIN_MAP,03_regulators_power.js

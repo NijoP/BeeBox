@@ -1,0 +1,450 @@
+{
+  "status": "PASS",
+  "count": 37,
+  "records": [
+    {
+      "mpn": "USBLC6-2SC6",
+      "uuid": "5f9a995bc73746278024add8c7b330e3",
+      "pass": true,
+      "actual": {
+        "mpn": "USBLC6-2SC6",
+        "manufacturer": "ST(意法半导体)",
+        "supplierId": "C7519",
+        "symbolUuid": "a1ce4cdfd8c34673b2774988c19b159e",
+        "footprintUuid": "136db59d42184a44ac8441e35d752b13"
+      }
+    },
+    {
+      "mpn": "TYPE-C-31-M-12",
+      "uuid": "730e76758f9742ca9ca85c73f4ec0ecd",
+      "pass": true,
+      "actual": {
+        "mpn": "TYPE-C-31-M-12",
+        "manufacturer": "韩国韩荣",
+        "supplierId": "C165948",
+        "symbolUuid": "e30d694d838e433dbe5423a6e817759e",
+        "footprintUuid": "45d257a27a304edd865bdb43b1945b61"
+      }
+    },
+    {
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "uuid": "e36262a38c7e4ab8a1efe0df793ebdea",
+      "pass": true,
+      "actual": {
+        "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+        "manufacturer": "JST",
+        "supplierId": "C295747",
+        "symbolUuid": "949051c2dc9b46d28b8116ac48c62b1a",
+        "footprintUuid": "09ed7394b5f04eccb36be7738c45b2ef"
+      }
+    },
+    {
+      "mpn": "BQ24074RGTR",
+      "uuid": "a113361897bf47368d2912842c826e38",
+      "pass": true,
+      "actual": {
+        "mpn": "BQ24074RGTR",
+        "manufacturer": "TI(德州仪器)",
+        "supplierId": "C54313",
+        "symbolUuid": "fbfd04ccc95c46c9a5f69ec7c5a80229",
+        "footprintUuid": "746583501b324e5394da1d17319812e0"
+      }
+    },
+    {
+      "mpn": "TPS26600RHFT",
+      "uuid": "05a2e38c78e6497c916bf07f413714dc",
+      "pass": true,
+      "actual": {
+        "mpn": "TPS26600RHFT",
+        "manufacturer": "TI(德州仪器)",
+        "supplierId": "C181406",
+        "symbolUuid": "9661b6ae1580408c8963e53874947176",
+        "footprintUuid": "07da38ca591247f98c163cbf8af732a6"
+      }
+    },
+    {
+      "mpn": "TPS2121RUXR",
+      "uuid": "f20458bd9d904b3e9e3f95079a88e857",
+      "pass": true,
+      "actual": {
+        "mpn": "TPS2121RUXR",
+        "manufacturer": "TI(德州仪器)",
+        "supplierId": "C485916",
+        "symbolUuid": "c8ada9cc34644568ac22aef9fa639ad2",
+        "footprintUuid": "2d401afccc644e18a2442ee0fd5efd47"
+      }
+    },
+    {
+      "mpn": "TPS62161DSGR",
+      "uuid": "db3eae09aeb44f329568f626523c8822",
+      "pass": true,
+      "actual": {
+        "mpn": "TPS62161DSGR",
+        "manufacturer": "TI(德州仪器)",
+        "supplierId": "C2864193",
+        "symbolUuid": "0bfeced1455544118ab86e566b6c26df",
+        "footprintUuid": "d1e0fd3b5229425588e8b38d4ca63611"
+      }
+    },
+    {
+      "mpn": "TPS22919DCKR",
+      "uuid": "8a1ce68047294bee82c2cb647ddd4cbb",
+      "pass": true,
+      "actual": {
+        "mpn": "TPS22919DCKR",
+        "manufacturer": "TI(德州仪器)",
+        "supplierId": "C2149796",
+        "symbolUuid": "5a4247e4a9a845c3a0b7a2646ad74bdb",
+        "footprintUuid": "c70deea011bd48e885ea06ea566c316d"
+      }
+    },
+    {
+      "mpn": "ESP32-S3-WROOM-1-N16R8",
+      "uuid": "d65778533f464ec4bc3c3732bd686263",
+      "pass": true,
+      "actual": {
+        "mpn": "ESP32-S3-WROOM-1-N16R8",
+        "manufacturer": "ESPRESSIF(乐鑫)",
+        "supplierId": "C2913202",
+        "symbolUuid": "d219b3e194dd4186820eec0b92627f5c",
+        "footprintUuid": "dce0099a18df49d3b27bb46b31b62ebf"
+      }
+    },
+    {
+      "mpn": "TCA9546APWR",
+      "uuid": "0897bfcf35c248acb0cb439de2775d0d",
+      "pass": true,
+      "actual": {
+        "mpn": "TCA9546APWR",
+        "manufacturer": "TI(德州仪器)",
+        "supplierId": "C201653",
+        "symbolUuid": "989d293b68b34c9da0bfc380335be496",
+        "footprintUuid": "a11950ceac50438289ff689a35fd9574"
+      }
+    },
+    {
+      "mpn": "SN74LVC1G3157DBVR",
+      "uuid": "13b1b3c8a4924f3ea433519bbd83e191",
+      "pass": true,
+      "actual": {
+        "mpn": "SN74LVC1G3157DBVR",
+        "manufacturer": "TI(德州仪器)",
+        "supplierId": "C10426",
+        "symbolUuid": "ca1500d3594b48ed8db9cb3b4c07fa11",
+        "footprintUuid": "ebc5370dc87d4461ad5320a48450ab14"
+      }
+    },
+    {
+      "mpn": "SHT45-AD1B-R2",
+      "uuid": "d2ae2b1001894b88873ae8d8ab95ec2d",
+      "pass": true,
+      "actual": {
+        "mpn": "SHT45-AD1B-R2",
+        "manufacturer": "Sensirion(瑞士盛思锐)",
+        "supplierId": "C5221601",
+        "symbolUuid": "0499bf9a0b6541d58eb0f76207d933e9",
+        "footprintUuid": "47d2e0411bdb485fb0e41153c809e17e"
+      }
+    },
+    {
+      "mpn": "ICM-42688-P",
+      "uuid": "9c90c0323548437396a685b3b34c6dd6",
+      "pass": true,
+      "actual": {
+        "mpn": "ICM-42688-P",
+        "manufacturer": "TDK InvenSense(应美盛)",
+        "supplierId": "C1850418",
+        "symbolUuid": "65404844c7a845ad98838c9a3ab66818",
+        "footprintUuid": "b3ab650c1f5544258fc70ffcd489f790"
+      }
+    },
+    {
+      "mpn": "ICS-43434",
+      "uuid": "ea6d3dad996d464d91983d780e0fb112",
+      "pass": true,
+      "actual": {
+        "mpn": "ICS-43434",
+        "manufacturer": "TDK InvenSense(应美盛)",
+        "supplierId": "C5656610",
+        "symbolUuid": "985412c5c7e9479098ae7c9d5e6ecd43",
+        "footprintUuid": "927802d0ec86406aaff3089c921517ff"
+      }
+    },
+    {
+      "mpn": "TPD4E05U06DQAR",
+      "uuid": "55e8e89a57cc4da4aedc4531f38b2c90",
+      "pass": true,
+      "actual": {
+        "mpn": "TPD4E05U06DQAR",
+        "manufacturer": "TI(德州仪器)",
+        "supplierId": "C138714",
+        "symbolUuid": "a2ebe745ac99405baeb03361ac001eb1",
+        "footprintUuid": "4ce7a14d2ffb44e6a6ad31cbc9695682"
+      }
+    },
+    {
+      "mpn": "FH34SRJ-12S-0.5SH(50)",
+      "uuid": "56d0813866664aa693617cc16753ea47",
+      "pass": true,
+      "actual": {
+        "mpn": "FH34SRJ-12S-0.5SH(50)",
+        "manufacturer": "HRS(广濑)",
+        "supplierId": "C424659",
+        "symbolUuid": "08543122a5e54ba59f2957045792b34b",
+        "footprintUuid": "9d822e13faa7478aa5d16e99415b0cc0"
+      }
+    },
+    {
+      "mpn": "LTST-C193KRKT-5A",
+      "uuid": "4a55a377e81146438a03d647082e57fe",
+      "pass": true,
+      "actual": {
+        "mpn": "LTST-C193KRKT-5A",
+        "manufacturer": "LITEON(光宝)",
+        "supplierId": "C157741",
+        "symbolUuid": "1c878d2f016347bfb0c2d24182cc9e3b",
+        "footprintUuid": "ab8fcad6728e4197a69081eb9195186e"
+      }
+    },
+    {
+      "mpn": "LTST-C193KGKT-5A",
+      "uuid": "3af2bbc946074e28952bfb24ed145297",
+      "pass": true,
+      "actual": {
+        "mpn": "LTST-C193KGKT-5A",
+        "manufacturer": "LITEON(光宝)",
+        "supplierId": "C125102",
+        "symbolUuid": "2748a8bb2bb2488f8bb70afabcc47ccb",
+        "footprintUuid": "ab8fcad6728e4197a69081eb9195186e"
+      }
+    },
+    {
+      "mpn": "0603WAF5101T5E",
+      "uuid": "5e5266518f0e41f791738aa9f7251c1d",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF5101T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C23186",
+        "symbolUuid": "b4fa75aca573465ea40a9fa52694d51f",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "CL21B475KOFNNNE",
+      "uuid": "e17be92a8eac408885c635361c15f72c",
+      "pass": true,
+      "actual": {
+        "mpn": "CL21B475KOFNNNE",
+        "manufacturer": "SAMSUNG(三星)",
+        "supplierId": "C107365",
+        "symbolUuid": "b1d9f24967ef4fe499c86faec02c4ca4",
+        "footprintUuid": "9376364c15854e01b3fabcf032810a22"
+      }
+    },
+    {
+      "mpn": "CL10B103KB8NNNC",
+      "uuid": "860ad348098247a18e65be2d4651b260",
+      "pass": true,
+      "actual": {
+        "mpn": "CL10B103KB8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "supplierId": "C1589",
+        "symbolUuid": "aa71f1470a514f8c891201f3071c3ab2",
+        "footprintUuid": "f499007f726c45dbbd59d7d6a82bc126"
+      }
+    },
+    {
+      "mpn": "0603WAF1001T5E",
+      "uuid": "2340647df7144fc5a30489ed06518eb5",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF1001T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C21190",
+        "symbolUuid": "9a91e91e9eed4d1398253ad92400dfec",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF2201T5E",
+      "uuid": "be60f304bdf4486e908bd15535a43c6d",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF2201T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C4190",
+        "symbolUuid": "2a6523e6463949f58184a25fade1f911",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF1004T5E",
+      "uuid": "60479e0364284da4a2720dc86428b721",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF1004T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C22935",
+        "symbolUuid": "632b89fdc2444237940e0938b4c13e8d",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF3303T5E",
+      "uuid": "a0420ebef65b40d0b64f64eaa00e77a1",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF3303T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C23137",
+        "symbolUuid": "023ae81f213841b69759a0f3641c08aa",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF1003T5E",
+      "uuid": "c728373c421046ff8f40bf82a79ee519",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF1003T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C25803",
+        "symbolUuid": "400e1481e6ba4cd7adb37ee3a9f82641",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF1781T5E",
+      "uuid": "bdf846a22e53454ea6837f05f9042df9",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF1781T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C22849",
+        "symbolUuid": "9ad7e80fcf9a4f29b43ce7520e5f349c",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF1541T5E",
+      "uuid": "8a4fd331ec6041d3a857f0da45730847",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF1541T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C22842",
+        "symbolUuid": "f1a5ec006c5944c68bf88955b19192b3",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF4642T5E",
+      "uuid": "eb48769a7646462696d362b079325099",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF4642T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C23059",
+        "symbolUuid": "e566fd81b3fb4d429fdaa2aba6767978",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "DFE252012PD-2R2M=P2",
+      "uuid": "e39f1054b6d6456295a19594c649e000",
+      "pass": true,
+      "actual": {
+        "mpn": "DFE252012PD-2R2M=P2",
+        "manufacturer": "muRata(村田)",
+        "supplierId": "C237482",
+        "symbolUuid": "a4022fcbc6354031bc55a67e4d3e393a",
+        "footprintUuid": "7ffa6d48304542a09d02f031acdec789"
+      }
+    },
+    {
+      "mpn": "CL10B104KO8NNNC",
+      "uuid": "60ed22c737ac42f8917fb4a0bf26eb07",
+      "pass": true,
+      "actual": {
+        "mpn": "CL10B104KO8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "supplierId": "C66501",
+        "symbolUuid": "bddc141996644bdc8659ccc3da539b55",
+        "footprintUuid": "f499007f726c45dbbd59d7d6a82bc126"
+      }
+    },
+    {
+      "mpn": "CL10B105KP8NNNC",
+      "uuid": "adfe864079e94354b546b5adf3adfee6",
+      "pass": true,
+      "actual": {
+        "mpn": "CL10B105KP8NNNC",
+        "manufacturer": "SAMSUNG(三星)",
+        "supplierId": "C95843",
+        "symbolUuid": "ed24539b10a9442e90d188b66ef30c07",
+        "footprintUuid": "f499007f726c45dbbd59d7d6a82bc126"
+      }
+    },
+    {
+      "mpn": "CL31A226KAHNNNE",
+      "uuid": "508c6d58b15440aaa060c987c88750dc",
+      "pass": true,
+      "actual": {
+        "mpn": "CL31A226KAHNNNE",
+        "manufacturer": "SAMSUNG(三星)",
+        "supplierId": "C12891",
+        "symbolUuid": "c3339bf968214ac1a3364da72e3bd888",
+        "footprintUuid": "662a139c6673408a9f29eec4494c53e9"
+      }
+    },
+    {
+      "mpn": "0603WAF1002T5E",
+      "uuid": "b0602c6e20fc41faa226d9f001a9bead",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF1002T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C25804",
+        "symbolUuid": "1eab50de005c4ea7b3f97449e24958e7",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF1182T5E",
+      "uuid": "faf1661bb8b1468cb61289692111ac13",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF1182T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C22861",
+        "symbolUuid": "228003277e6c4c7c9a65abccf9c13dee",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF5763T5E",
+      "uuid": "21d5abcd591a424ea527847c1f1591b0",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF5763T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C23207",
+        "symbolUuid": "82739e40dbb44212871b3de3c947f6e8",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    },
+    {
+      "mpn": "0603WAF8062T5E",
+      "uuid": "d303bb94994a46dbb71d814b96bcbd72",
+      "pass": true,
+      "actual": {
+        "mpn": "0603WAF8062T5E",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "supplierId": "C23249",
+        "symbolUuid": "946ff15929bb4a46b6d94c3d3dc7154d",
+        "footprintUuid": "b44c1b381d26462586b8a8d9fac22ec8"
+      }
+    }
+  ]
+}

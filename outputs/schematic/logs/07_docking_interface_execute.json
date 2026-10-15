@@ -1,0 +1,436 @@
+{
+  "success": true,
+  "result": {
+    "section": "DOCKING",
+    "status": "MUTATED_REQUIRES_NATIVE_VERIFICATION",
+    "log": [
+      "OK U4 <- TCA9546APWR (TCA9546APWR)",
+      "OK D5 <- TPD4E05U06DQAR_C138714 (TPD4E05U06DQAR)",
+      "OK R4 2.2k I2C_MAIN_SDA-+3V3 <- 0603WAF2201T5E_C4190",
+      "OK R5 2.2k I2C_MAIN_SCL-+3V3 <- 0603WAF2201T5E_C4190",
+      "OK R28 10k I2C_MUX_RESET-+3V3 <- 0603WAF1002T5E"
+    ],
+    "connections": [
+      {
+        "ownerRef": "U4",
+        "pin": "1",
+        "net": "GND",
+        "pinX": 305,
+        "pinY": 2385,
+        "labelX": 185,
+        "labelY": 2385,
+        "stubId": "4279ad956add4f0d",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "2",
+        "net": "GND",
+        "pinX": 305,
+        "pinY": 2375,
+        "labelX": 185,
+        "labelY": 2375,
+        "stubId": "58f9b64c3b0e7b91",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "3",
+        "net": "I2C_MUX_RESET",
+        "pinX": 305,
+        "pinY": 2365,
+        "labelX": 185,
+        "labelY": 2365,
+        "stubId": "48221f32bafe46bc",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "4",
+        "net": "DOCK_SDA",
+        "pinX": 305,
+        "pinY": 2355,
+        "labelX": 185,
+        "labelY": 2355,
+        "stubId": "f421247998207b67",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "5",
+        "net": "DOCK_SCL",
+        "pinX": 305,
+        "pinY": 2345,
+        "labelX": 185,
+        "labelY": 2345,
+        "stubId": "d2d84195da0693d5",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "6",
+        "net": "LOCAL_SDA",
+        "pinX": 305,
+        "pinY": 2335,
+        "labelX": 185,
+        "labelY": 2335,
+        "stubId": "ca72bf2a9c2f2ee3",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "7",
+        "net": "LOCAL_SCL",
+        "pinX": 305,
+        "pinY": 2325,
+        "labelX": 185,
+        "labelY": 2325,
+        "stubId": "76b815e7b58a39ed",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "8",
+        "net": "GND",
+        "pinX": 305,
+        "pinY": 2315,
+        "labelX": 185,
+        "labelY": 2315,
+        "stubId": "278922407305223a",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "9",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "10",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "11",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "12",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "13",
+        "net": "GND",
+        "pinX": 395,
+        "pinY": 2355,
+        "labelX": 515,
+        "labelY": 2355,
+        "stubId": "53213ada1ed15cbb",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "14",
+        "net": "I2C_MAIN_SCL",
+        "pinX": 395,
+        "pinY": 2365,
+        "labelX": 515,
+        "labelY": 2365,
+        "stubId": "2f7dbc4787bc88e5",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "15",
+        "net": "I2C_MAIN_SDA",
+        "pinX": 395,
+        "pinY": 2375,
+        "labelX": 515,
+        "labelY": 2375,
+        "stubId": "2214ba00c122bf01",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "U4",
+        "pin": "16",
+        "net": "+3V3",
+        "pinX": 395,
+        "pinY": 2385,
+        "labelX": 515,
+        "labelY": 2385,
+        "stubId": "1894fa6e529495fb",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "1",
+        "net": "DOCK_SDA",
+        "pinX": 660,
+        "pinY": 2370,
+        "labelX": 540,
+        "labelY": 2370,
+        "stubId": "202a9e8eb3229468",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "2",
+        "net": "DOCK_SCL",
+        "pinX": 660,
+        "pinY": 2360,
+        "labelX": 540,
+        "labelY": 2360,
+        "stubId": "e206fb53dca8d39f",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "3",
+        "net": "GND",
+        "pinX": 660,
+        "pinY": 2350,
+        "labelX": 540,
+        "labelY": 2350,
+        "stubId": "e6d6b5725eff033c",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "4",
+        "net": "DOCK_BCLK",
+        "pinX": 660,
+        "pinY": 2340,
+        "labelX": 540,
+        "labelY": 2340,
+        "stubId": "a2db0b76c1c295b3",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "5",
+        "net": "DOCK_WS",
+        "pinX": 660,
+        "pinY": 2330,
+        "labelX": 540,
+        "labelY": 2330,
+        "stubId": "78442ae6e86d91ab",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "6",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "7",
+        "net": null,
+        "noConnect": true
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "8",
+        "net": "GND",
+        "pinX": 740,
+        "pinY": 2350,
+        "labelX": 860,
+        "labelY": 2350,
+        "stubId": "8d4b959a6faf0978",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "9",
+        "net": "DOCK_SD",
+        "pinX": 740,
+        "pinY": 2360,
+        "labelX": 860,
+        "labelY": 2360,
+        "stubId": "817885ff57eb24e5",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "D5",
+        "pin": "10",
+        "net": "DOCK_PRESENT_ID",
+        "pinX": 740,
+        "pinY": 2370,
+        "labelX": 860,
+        "labelY": 2370,
+        "stubId": "4aa445828c437b04",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R4",
+        "pin": "1",
+        "net": "I2C_MAIN_SDA",
+        "pinX": 630,
+        "pinY": 2650,
+        "labelX": 510,
+        "labelY": 2650,
+        "stubId": "70eb22dc506af60f",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R4",
+        "pin": "2",
+        "net": "+3V3",
+        "pinX": 670,
+        "pinY": 2650,
+        "labelX": 790,
+        "labelY": 2650,
+        "stubId": "d7413155d9ef1329",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R5",
+        "pin": "1",
+        "net": "I2C_MAIN_SCL",
+        "pinX": 990,
+        "pinY": 2650,
+        "labelX": 870,
+        "labelY": 2650,
+        "stubId": "885e614482f50449",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R5",
+        "pin": "2",
+        "net": "+3V3",
+        "pinX": 1030,
+        "pinY": 2650,
+        "labelX": 1150,
+        "labelY": 2650,
+        "stubId": "76c8c0340625a4cf",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R28",
+        "pin": "1",
+        "net": "I2C_MUX_RESET",
+        "pinX": 1350,
+        "pinY": 2650,
+        "labelX": 1230,
+        "labelY": 2650,
+        "stubId": "90aaa4563604afb2",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "R28",
+        "pin": "2",
+        "net": "+3V3",
+        "pinX": 1390,
+        "pinY": 2650,
+        "labelX": 1510,
+        "labelY": 2650,
+        "stubId": "23a3231398e9c7f6",
+        "labelObjectType": "named-wire"
+      },
+      {
+        "ownerRef": "J3-01",
+        "pin": "1",
+        "net": "GND",
+        "labelId": "e9fbda70dc548ecc",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-02",
+        "pin": "1",
+        "net": "GND",
+        "labelId": "a52617e258f0843a",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-03",
+        "pin": "1",
+        "net": "GND",
+        "labelId": "882f1a9f83c8a53d",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-04",
+        "pin": "1",
+        "net": "VDOCK",
+        "labelId": "60b07813df6d8183",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-05",
+        "pin": "1",
+        "net": "VDOCK",
+        "labelId": "5418e727e01b35fa",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-06",
+        "pin": "1",
+        "net": "+3V3_FPC",
+        "labelId": "36549e763f7498fc",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-07",
+        "pin": "1",
+        "net": "DOCK_SDA",
+        "labelId": "596968915fe76a2b",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-08",
+        "pin": "1",
+        "net": "DOCK_SCL",
+        "labelId": "6d62384d1b899bbe",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-09",
+        "pin": "1",
+        "net": "DOCK_BCLK",
+        "labelId": "8339cff8faaea13a",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-10",
+        "pin": "1",
+        "net": "DOCK_WS",
+        "labelId": "d715d134d7aa6fa4",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-11",
+        "pin": "1",
+        "net": "DOCK_SD",
+        "labelId": "94be467d13fd75c6",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      },
+      {
+        "ownerRef": "J3-12",
+        "pin": "1",
+        "net": "DOCK_PRESENT_ID",
+        "labelId": "a1e5157968579ad4",
+        "labelObjectType": "netport",
+        "provisionalPhysicalContact": true
+      }
+    ],
+    "verification": "LABEL_OBJECT_AND_STUB_READBACK_ONLY; NATIVE_NETLIST_COMPARISON_REQUIRED"
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

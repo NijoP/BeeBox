@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "result": {
+    "section": "STORAGE_RF",
+    "status": "ALREADY_PRESENT_NO_MUTATION",
+    "log": [],
+    "connections": [],
+    "verification": "INDEPENDENT_NATIVE_NETLIST_COMPARISON_REQUIRED"
+  },
+  "windowId": "29a9de34-b35d-4450-a2fa-c5af66befab3"
+}

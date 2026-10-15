@@ -8,7 +8,7 @@ def write(name,fields,rows):
 components=[
 ('U1','Espressif','ESP32-S3-WROOM-1-N16R8','MCU/Wi-Fi/BLE','main','Yes','official datasheet Figure 11-1','symbol/footprint verify'),
 ('U2','Texas Instruments','BQ24074RGTR','1S charger/power path','main','Yes','SLUS810N','RGT package'),
-('U3','Texas Instruments','TPS62162DSGR','fixed 3V3 buck; FB to AGND','main','Yes','datasheets/TI_TPS62162.pdf','DSG/WSON-8+EP'),
+('U3','Texas Instruments','TPS62161DSGR','fixed 3V3 buck; FB to AGND','main','Yes','datasheets/TI_TPS62162.pdf','DSG/WSON-8+EP'),
 ('U4','Texas Instruments','TCA9546APWR','I2C branch switch','main','Yes','datasheets/TI_TCA9546A.pdf','TSSOP-16'),
 ('U5','Analog Devices','MAX17048G+T10','fuel gauge','main','DNI/option','MAX17048 datasheet','TDFN'),
 ('U6','Texas Instruments','TPS26600RHFT','6V input eFuse','main','Yes','TPS2660 family datasheet','VQFN'),
@@ -45,11 +45,11 @@ components=[
 ('R11','Generic/Indian AVL','1.78k 1%','BQ24074 ISET','main','Yes','BQ24074 equation','0603'),
 ('R12','Generic/Indian AVL','1.54k 1%','BQ24074 ILIM','main','Yes','BQ24074 equation','0603'),
 ('R13','Generic/Indian AVL','46.4k 1%','BQ24074 timer','main','Yes','BQ24074 equation','0603'),
-# R14/R15 removed, not arbitrarily DNI: TPS62162 is fixed3.3V; manufacturer specifies FB to AGND.
+# R14/R15 removed, not arbitrarily DNI: TPS62161 is fixed3.3V; manufacturer specifies FB to AGND.
 ('C1-C12','Generic/Indian AVL','100nF X7R 16V','IC decoupling','main','Yes','manufacturer local-bypass rules','0603'),
 ('C13-C17','Generic/Indian AVL','1uF X7R 10V','local rail support','main','Yes','power transient calculation','0603'),
-('C18-C20','Generic/Indian AVL','22uF X7R 10V','rail bulk/charger OUT','main','Yes','BQ24074/TPS62162 support','0805/1206 exception'),
-('L1','Indian AVL','2.2uH shielded >=1.5A','buck inductor','main','Yes','TPS62162 reference design','power inductor'),
+('C18-C20','Generic/Indian AVL','22uF X7R 10V','rail bulk/charger OUT','main','Yes','BQ24074/TPS62161 support','0805/1206 exception'),
+('L1','Indian AVL','2.2uH shielded >=1.5A','buck inductor','main','Yes','TPS62161 reference design','power inductor'),
 ('F1','Bourns','MF-MSMF050-2','input resettable fuse','main','Yes','source fault protection','1206'),
 ('TP1-TP12','Indian PCB fab','labelled copper test pads','bring-up test points','main','Yes','validation/test plan','PCB pads'),
 ]

@@ -18,7 +18,7 @@ The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Captur
 |---|---|---:|---|---|---|---|
 | U1 | Espressif ESP32-S3-WROOM-1-N16R8 | 1 | module, PCB antenna | Yes | ESP32-S3 RFQ requirement; official datasheet | N16, N8R8 variants; exact AVL confirm |
 | U2 | Texas Instruments BQ24074RGT | 1 | 16-pin RGT package | Yes | 1S charger/power path; 4.2 V regulation, 10.5 V OVP variant | BQ24075/modern equivalent; thermal review |
-| U3 | Texas Instruments TPS62162DSG | 1 | 8-pin WSON | Yes | 3–17 V input, 1 A class 3.3 V buck | equivalent India-sourced buck after efficiency comparison |
+| U3 | Texas Instruments TPS62161DSG | 1 | 8-pin WSON | Yes | 3–17 V input, 1 A class 3.3 V buck | equivalent India-sourced buck after efficiency comparison |
 | U4 | Texas Instruments TCA9546APWR | 1 | TSSOP-24 | Yes | four I²C branches; avoids equal-address collision | TCA9517/TCA4307 where topology requires |
 | U5 | Analog Devices MAX17048G+T10 | 1 | TDFN | Yes/option | 1S fuel-gauge telemetry | omit for cost-down only with client approval |
 | U6 | Texas Instruments TPS26600RGET | 1 | 24-pin VQFN | Yes | external ~6 V input eFuse, reverse polarity/OVP family | discrete fuse + reverse MOSFET, lower integration |
@@ -30,7 +30,7 @@ The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Captur
 | J3 | Mill-Max 0906-0-15-20-75-14-11-0 | 12 contacts | SMT spring contact | Yes | repeated dock contact candidate | Harwin spring contact comparison |
 | BT1 | Protected 1S LiPo, 3.7 V nominal, 2,000 mAh target, ≥1 A continuous/≥2 A transient | 1 | off-board cell | Yes | runtime/current baseline | exact Indian cell MPN required |
 | J4 | JST S2B-PH-SM4-TB | 1 | 2-position PH SMT battery connector | Yes | replaceable cell connection | locking equivalent after mechanical review |
-| L1 | Shielded 2.2 µH inductor, ≥1.5 A saturation, low DCR; exact AVL MPN after quote | 1 | power inductor | Yes | TPS62162 reference design 2.2 µH class | India AVL/saturation verification |
+| L1 | Shielded 2.2 µH inductor, ≥1.5 A saturation, low DCR; exact AVL MPN after quote | 1 | power inductor | Yes | TPS62161 reference design 2.2 µH class | India AVL/saturation verification |
 | F1 | Bourns MF-MSMF050-2 or rated equivalent | 1 | resettable fuse | Yes | source fault limitation | exact hold/trip review |
 | Q1 | Texas Instruments TPS22919DCK | 1 | 1.5 A load switch | Yes | VDOCK hot-plug/current control | TPS22918/19 alternative |
 | D2 | Lite-On LTST-C193KRKT-5A | 1 | 0603 red LED | Yes | fault/charge indication | equivalent 0603 red; Indian AVL verify |
@@ -46,7 +46,7 @@ The 12-contact allocation is in [23](23_Baseline_Resolution_and_Schematic_Captur
 | R11 | 1.78 kΩ, 1%, 0603 | 1 | BQ24074 ISET | Yes | 0.5 A charge setting, `890 Ω A / 0.5 A` | verify final BQ revision |
 | R12 | 1.54 kΩ, 1%, 0603 | 1 | BQ24074 ILIM | Yes | approximately 1.0 A input limit | verify source budget |
 | R13 | 46.4 kΩ, 1%, 0603 | 1 | BQ24074 TMR | Yes | approximately 6.25 h safety timer | shorten if thermal/cell study requires |
-| R14 | — | 0 | Removed: TPS62162DSGR is the fixed3.3V variant | Do not populate | FB connects directly to AGND per manufacturer datasheet | corrected after exact-variant review |
+| R14 | — | 0 | Removed: TPS62161DSGR is the fixed3.3V variant | Do not populate | FB connects directly to AGND per manufacturer datasheet | corrected after exact-variant review |
 | R15 | — | 0 | Removed: no adjustable feedback divider on fixed3.3V variant | Do not populate | no FB divider | corrected after exact-variant review |
 | C1–C* | 100 nF X7R 0603, one per IC | 10–15 | local decoupling | Yes | datasheet placement rule | exact manufacturer AVL |
 | C* | 1 µF X7R 0603 | 5–8 | local rail transient support | Yes | regulator/sensor support | voltage rating verified |
@@ -98,4 +98,4 @@ DNP for the pilot unless approved: nRF52/nRF53/nRF54 module, LoRa/Sub-GHz module
 Add 5–10% passive and connector spares, and one extra exact MPN reel/strip quantity where the assembler requires setup material. Preferred Indian sourcing route is to obtain dated quotes from Mouser India, Digi-Key India, element14 India, RS India and a qualified Indian PCB/FPC assembler; Robu.in may be considered for commodity/prototype parts only after exact manufacturer variant and authenticity are checked. No live stock, price or lead-time claim is made in this revision. Indian supplier price, stock and lead time remain **NOT VERIFIED** until dated quotations are obtained from authorized/traceable sources.
 
 ## 0603 policy
-General resistors and capacitors use 0603/1608 metric by default. Exceptions are allowed for the 10–22 µF rail bulk parts if DC-bias, ripple, voltage rating or available capacitance requires 0805/1206; for the TPS62162 inductor, USB-C, connectors, FPC parts, eFuse, charger and thermal/power components, use the manufacturer package rather than forcing 0603.
+General resistors and capacitors use 0603/1608 metric by default. Exceptions are allowed for the 10–22 µF rail bulk parts if DC-bias, ripple, voltage rating or available capacitance requires 0805/1206; for the TPS62161 inductor, USB-C, connectors, FPC parts, eFuse, charger and thermal/power components, use the manufacturer package rather than forcing 0603.

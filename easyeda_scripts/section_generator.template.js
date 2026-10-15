@@ -17,7 +17,7 @@
  */
 
  /* ============================ ENGINE (do not edit) ============================ */
-const LOCAL_STUB = 12;                           // pin-to-label stub, schematic 10mil units
+const LOCAL_STUB = 120;                          // reference-style text-clearance corridor
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const CONNECTION_RECORDS = [];
 const CONNECTION_AT = new Map();
@@ -74,46 +74,36 @@ async function pickPassive(ref, kind, val) {
   if (kind === 'C' && !spec.dielectric) throw new Error(`${ref}: missing dielectric`);
   return await getReviewedRecord(spec);
 }
-function pinDir(pin, mx, my) {                        // stub direction from rotation + centroid
-  const r = ((+pin.rotation || 0) % 360 + 360) % 360;
-  if (r === 0 || r === 180) return [Math.sign(pin.x - mx) || 1, 0];
-  return [0, Math.sign(pin.y - my) || 1];
+function pinDir(pin, mx, my) {                        // actual EasyEDA pin orientation
+  const r=((+pin.rotation||0)%360+360)%360;
+  if(r===0)return[1,0];if(r===180)return[-1,0];if(r===90)return[0,1];if(r===270)return[0,-1];
+  throw new Error(`unsupported physical pin rotation ${r}`);
 }
 
 /**
- * Attach a canonical net to a component pin through a short local stub and a
- * genuine EasyEDA electrical net-port. createNetLabel() is documented as EDA
- * v4-only and returns undefined in the installed 3.2.149 build; createNetPort()
- * is the verified native 3.2 electrical alternative, not visual text.
+ * Attach a canonical named wire stub in the same visual style as the supplied
+ * reference PDF. EasyEDA stores the native net name on the wire itself; no
+ * arrow-shaped port is placed against the symbol.
  */
 async function attachNetLabel(pin, net, mx, my, ownerRef) {
   if(typeof net!=="string"||!net.trim()||net!==net.trim())throw new Error(`${ownerRef}: invalid canonical net label ${String(net)}`);
-  if(typeof eda.sch_PrimitiveComponent?.createNetPort!=="function")throw new Error('Installed EasyEDA API does not expose a genuine electrical net-port API; refuse visual-only labels');
   const px=pin.getState_X(),py=pin.getState_Y(),pr=pin.getState_Rotation()||0;
   if(![px,py,pr].every(Number.isFinite))throw new Error(`${ownerRef}: nonfinite physical pin geometry`);
-  const [dx,dy]=pinDir({rotation:pr,x:px,y:py},mx,my);
-  const lx=px+dx*LOCAL_STUB,ly=py+dy*LOCAL_STUB;
-  const locationKey=`${lx},${ly}`;
-  const prior=CONNECTION_AT.get(locationKey);
-  if(prior&&prior!==net)throw new Error(`${ownerRef}: conflicting nets ${prior}/${net} at label coordinate ${locationKey}`);
+  const [dx,dy]=pinDir({rotation:pr,x:px,y:py},mx,my),lx=px+dx*LOCAL_STUB,ly=py+dy*LOCAL_STUB;
+  const locationKey=`${lx},${ly}`,prior=CONNECTION_AT.get(locationKey);
+  if(prior&&prior!==net)throw new Error(`${ownerRef}: conflicting nets ${prior}/${net} at stub endpoint ${locationKey}`);
   if(prior===net)return CONNECTION_RECORDS.find(r=>r.labelX===lx&&r.labelY===ly&&r.net===net);
   const stub=await eda.sch_PrimitiveWire.create([px,py,lx,ly],net);
-  if(!stub)throw new Error(`${ownerRef}: failed short net stub ${net}`);
-  const port=await eda.sch_PrimitiveComponent.createNetPort('BI',net,lx,ly,0,false);
-  if(!port){await eda.sch_PrimitiveWire.delete(stub.getState_PrimitiveId());throw new Error(`${ownerRef}: failed genuine electrical net-port ${net}`);}
-  const portId=port.getState_PrimitiveId();
-  const refreshed=await eda.sch_PrimitiveComponent.get(portId);
-  if(!refreshed||refreshed.getState_ComponentType?.()!=='netport'||refreshed.getState_Net?.()!==net){
-    await eda.sch_PrimitiveComponent.delete(portId);await eda.sch_PrimitiveWire.delete(stub.getState_PrimitiveId());
-    throw new Error(`${ownerRef}: electrical net-port readback mismatch for ${net}`);
-  }
+  if(!stub||stub.getState_Net?.()!==net)throw new Error(`${ownerRef}: named-wire readback mismatch ${net}`);
   CONNECTION_AT.set(locationKey,net);
-  const record={ownerRef,pin:String(pin.getState_PinNumber()),net,pinX:px,pinY:py,labelX:lx,labelY:ly,stubId:stub.getState_PrimitiveId(),labelId:portId,labelObjectType:'netport'};
+  const record={ownerRef,pin:String(pin.getState_PinNumber()),net,pinX:px,pinY:py,labelX:lx,labelY:ly,stubId:stub.getState_PrimitiveId(),labelObjectType:'named-wire'};
   CONNECTION_RECORDS.push(record);return record;
 }
 
 async function markNoConnect(pin,ref,key){
-  const updated=await eda.sch_PrimitivePin.modify(pin,{noConnected:true});
+  const asyncPin=pin.toAsync();
+  asyncPin.setState_NoConnected(true);
+  const updated=await asyncPin.done();
   if(!updated||updated.getState_NoConnected()!==true)throw new Error(`${ref}.${key}: explicit NC marker readback failed`);
   CONNECTION_RECORDS.push({ownerRef:ref,pin:String(pin.getState_PinNumber()),net:null,noConnect:true});
 }
@@ -175,7 +165,8 @@ async function placePassive(ref, kind, val, netA, netB, x, y) {
   for (const p of pins) { mx += p.getState_X(); my += p.getState_Y(); }
   mx /= pins.length; my /= pins.length;
 
-  // Attach net labels to both pins
+  // Physical pin 1 is canonical netA and physical pin 2 is canonical netB.
+  pins.sort((a,b)=>String(a.getState_PinNumber()).localeCompare(String(b.getState_PinNumber()),undefined,{numeric:true}));
   await attachNetLabel(pins[0], netA, mx, my, ref);
   await attachNetLabel(pins[1], netB, mx, my, ref);
   return c;
@@ -189,9 +180,10 @@ const TARGET_PROJECT='d84c4be0ef2e467fa17955faa23c6314';
 const TARGET_PAGE='d5e34c82cc3ba89c';
 const SECTION = "<BLOCK NAME>";
 const SECTION_HEADING = "<BLOCK HEADING>";
+const SECTION_NOTE = "";
 const BASE = [200, 200];
 const FRAME = [100,100,1600,700];                    // x,y,width,height; generated per A0 zone
-const GRID_X = 250;
+const GRID_X = 500;
 const GRID_Y = 250;
 
 // PARTS: one entry per IC/discrete. pinMap keys = EXACT library pin names.
@@ -205,6 +197,8 @@ const PASSIVES = [
   ["R1", "R", "5.1k", "<netA>", "<netB>"],
   ["C1", "C", "10u",  "<netA>", "<netB>"],
 ];
+// Explicit interface contacts for which no false substitute library component is allowed.
+const BOUNDARY_CONTACTS = [];
 
 /* ============================ DRIVER ======================================== */
 return await (async()=>{
@@ -224,24 +218,23 @@ return await (async()=>{
     seen.add(ref);
   }
   const resolved = new Map();
-  for (const p of PARTS) {
-    if (p.ref === 'J3' && p.query === '0906-0-15-20-75-14-11-0')
-      throw new Error('J3 requires twelve independently mapped Mill-Max contacts; a one-contact part cannot implement a 12-pin connector');
-    const part = await pick(p.query, p.token, p.ref);
-    if (!part) throw new Error(`missing exact library part ${p.ref}`);
-    resolved.set(p.ref, part);
-  }
-  for(const [ref,kind,val]of PASSIVES)resolved.set(ref,await pickPassive(ref,kind,val));
+  await Promise.all(PARTS.map(async p=>{
+    if(p.ref==='J3'&&p.query==='0906-0-15-20-75-14-11-0')throw new Error('J3 requires twelve independently mapped Mill-Max contacts');
+    const part=await pick(p.query,p.token,p.ref);if(!part)throw new Error(`missing exact library part ${p.ref}`);resolved.set(p.ref,part);
+  }));
+  await Promise.all(PASSIVES.map(async([ref,kind,val])=>resolved.set(ref,await pickPassive(ref,kind,val))));
   for(const p of PARTS){const old=existing.get(p.ref),part=resolved.get(p.ref);if(old&&old.getState_ManufacturerId()!==part.manufacturerId)throw new Error(`${p.ref}: existing identity conflicts with reviewed record`);}
   for(const [ref,,val]of PASSIVES){const old=existing.get(ref),part=resolved.get(ref);if(old&&(old.getState_ManufacturerId()!==part.manufacturerId||old.getState_Name()!==val))throw new Error(`${ref}: existing passive identity/value conflict`);}
   const missing=[...requested].filter(ref=>!existing.has(ref));
-  if(!missing.length)return {section:SECTION,status:'ALREADY_PRESENT_NO_MUTATION',log,connections:[],verification:'INDEPENDENT_NATIVE_NETLIST_COMPARISON_REQUIRED'};
+  if(missing.length!==requested.length&&missing.length)throw new Error(`${SECTION}: partial pre-existing section; refuse mutation and require native-source reset/readback`);
+  if(!missing.length)return {section:SECTION,status:'EXISTING_REQUIRES_VERIFICATION_NO_MUTATION',log,connections:[],verification:'COMPONENT_PRESENCE_IS_NOT_CONNECTIVITY_PROOF; RUN FINAL PHYSICAL-PIN PARITY'};
   const source=await eda.sys_FileManager.getDocumentSource();if(!source)throw new Error('Native rollback source unavailable');
   try{
-    await eda.sch_PrimitiveRectangle.create(FRAME[0],FRAME[1],FRAME[2],FRAME[3],0,0,'#777777',null,1,'dashed','none');
-    await eda.sch_PrimitiveText.create(FRAME[0]+25,FRAME[1]+25,SECTION_HEADING,0,'#222222',null,13,true);
+    await eda.sch_PrimitiveText.create(BASE[0],BASE[1]-140,SECTION_HEADING,0,'#222222',null,13,true);
+    if(SECTION_NOTE)await eda.sch_PrimitiveText.create(BASE[0],BASE[1]-105,SECTION_NOTE,0,'#444444',null,9,false);
     for(const p of PARTS){const part=resolved.get(p.ref);if(existing.has(p.ref)){log.push(`REUSE ${p.ref}; connection migration/verification required`);continue;}const x=BASE[0]+p.col*GRID_X,y=BASE[1]+p.row*GRID_Y;const comp=await placeIC(part,x,y,p.rot,p.ref);await wirePinsWithNetLabels(comp,p.pinMap,p.ref);log.push(`OK ${p.ref} <- ${part.name} (${part.manufacturerId||'?'})`);}
-    let passiveIndex=0;for(const [ref,kind,val,a,b]of PASSIVES){const part=resolved.get(ref);if(existing.has(ref)){log.push(`REUSE ${ref}; connection migration/verification required`);continue;}await placePassive(ref,kind,val,a,b,BASE[0]+300+(passiveIndex%4)*150,BASE[1]+250+Math.floor(passiveIndex/4)*120);passiveIndex++;log.push(`OK ${ref} ${val} ${a}-${b} <- ${part.name}`);}
+    let passiveIndex=0;for(const [ref,kind,val,a,b]of PASSIVES){const part=resolved.get(ref);if(existing.has(ref)){log.push(`REUSE ${ref}; connection migration/verification required`);continue;}await placePassive(ref,kind,val,a,b,BASE[0]+300+(passiveIndex%4)*360,BASE[1]+300+Math.floor(passiveIndex/4)*150);passiveIndex++;log.push(`OK ${ref} ${val} ${a}-${b} <- ${part.name}`);}
+    let contactIndex=0;for(const contact of BOUNDARY_CONTACTS){const x=BASE[0]+contactIndex*100,y=BASE[1]+650;const port=await eda.sch_PrimitiveComponent.createNetPort('BI',contact.net,x,y,0,false);if(!port||port.getState_Net?.()!==contact.net)throw new Error(`${contact.ref}: boundary net-port failed`);await eda.sch_PrimitiveText.create(x,y-35,`${contact.ref} ${contact.net}`,0,'#333333',null,8,false);CONNECTION_RECORDS.push({ownerRef:contact.ref,pin:'1',net:contact.net,labelId:port.getState_PrimitiveId(),labelObjectType:'netport',provisionalPhysicalContact:true});contactIndex++;}
     return {section:SECTION,status:'MUTATED_REQUIRES_NATIVE_VERIFICATION',log,connections:CONNECTION_RECORDS,verification:'LABEL_OBJECT_AND_STUB_READBACK_ONLY; NATIVE_NETLIST_COMPARISON_REQUIRED'};
   }catch(e){const now=await eda.dmt_Schematic.getCurrentSchematicPageInfo();if(now?.uuid!==TARGET_PAGE)throw new Error(`Refuse rollback on changed page after: ${String(e)}`);await eda.sys_FileManager.setDocumentSource(source);throw e;}
 })();

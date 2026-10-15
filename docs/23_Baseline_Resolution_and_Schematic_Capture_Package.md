@@ -11,7 +11,7 @@
 | Battery | Protected 1S LiPo, nominal 3.7 V, 2,000 mAh target, ≥1 A continuous and ≥2 A transient capability, JST-PH or locking equivalent only after mechanical review | CLIENT APPROVAL REQUIRED |
 | External input | USB-C 5 V sink baseline plus protected 6 V DC/solar input; USB-PD controller reserved, not populated in baseline | CLIENT APPROVAL REQUIRED because RFQ mentions USB-PD |
 | Charger/path | TI BQ24074-class 1-cell charger/power-path candidate; charge current baseline 0.5 A | INVESTIGATE; thermal review required |
-| Logic regulator | TI TPS62162 set to 3.3 V, 1 A class buck candidate | PROVISIONAL; exact efficiency/transient/thermal check required |
+| Logic regulator | TI TPS62161 set to 3.3 V, 1 A class buck candidate | PROVISIONAL; exact efficiency/transient/thermal check required |
 | Dock | 12-contact keyed pogo/FPC interface; 100 kHz I²C for environmental/IMU data plus I²S clock/data for the internal microphone | PROVISIONAL; physical SI and cycle validation required |
 | Dock buffering | TCA4307-class hot-swap I²C buffer on controller side is an option; do not add until exact bus topology and capacitance are measured | INVESTIGATE |
 | Audio | Internal microphone is event/window capture, not continuous raw audio by default; external microphone is separate local I²S channel | RECOMMENDED; research mode approval required |
@@ -117,7 +117,7 @@ flowchart LR
  OVP --> CHG
  BAT[Protected 1S 3.7 V LiPo] <--> CHG
  CHG --> VSYS[System/battery rail]
- VSYS --> BUCK[TPS62162 3.3 V buck]
+ VSYS --> BUCK[TPS62161 3.3 V buck]
  BUCK --> LOADS[ESP32-S3, sensors, storage, RF]
  VSYS --> SW[VDOCK load switch/current limit]
  SW --> FPC[Universal FPC]
